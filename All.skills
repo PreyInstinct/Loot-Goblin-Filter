@@ -1,0 +1,251 @@
+CLASS	ID	DESCRIPTION	ABRV
+AMAZON	CLSK0	Amazon Skills	AMA
+SORCERESS	CLSK1	Sorceress Skills	SOR
+NECROMANCER	CLSK2	Necromancer Skills	NEC
+PALADIN	CLSK3	Paladin Skills	PAL
+BARBARIAN	CLSK4	Barbarian Skills	BAR
+DRUID	CLSK5	Druid Skills	DRU
+ASSASSIN	CLSK6	Assassin Skills	ASS
+AMAZON	TABSK0	Bow and Crossbow Skills	BOW
+AMAZON	TABSK1	Passive and Magic Skills	PASS
+AMAZON	TABSK2	Javelin and Spear Skills	JAV
+SORCERESS	TABSK8	Fire Spells	FIRE
+SORCERESS	TABSK9	Lightning Spells	LIGHT
+SORCERESS	TABSK10	Cold Spells	COLD
+NECROMANCER	TABSK16	Curses	CURSE
+NECROMANCER	TABSK17	Poison & Bone Spells	PB
+NECROMANCER	TABSK18	Summoning Spells	SUM
+PALADIN	TABSK24	Combat Skills	COM
+PALADIN	TABSK25	Offensive Auras	OFF
+PALADIN	TABSK26	Defensive Auras	DEF
+BARBARIAN	TABSK32	Combat Skills	COM
+BARBARIAN	TABSK33	Combat Masteries	MAST
+BARBARIAN	TABSK34	Warcries	CRIES
+DRUID	TABSK40	Summoning	SUM
+DRUID	TABSK41	Shape Shifting	SS
+DRUID	TABSK42	Elemental	ELEM
+ASSASSIN	TABSK48	Traps	TRAP
+ASSASSIN	TABSK49	Shadow Disciplines	SHADOW
+ASSASSIN	TABSK50	Martial Arts	MA
+AMAZON	6	Magic Arrow	magA
+AMAZON	7	Fire Arrow	firA
+AMAZON	8	Inner Sight	sight
+AMAZON	9	Critical Strike	crit
+AMAZON	10	Jab	jab
+AMAZON	11	Cold Arrow	cArr
+AMAZON	12	Multiple Shot	MS
+AMAZON	13	Dodge	dge
+AMAZON	14	Power Strike	powS
+AMAZON	15	Poison Javelin	psJav
+AMAZON	16	Exploding Arrow	expA
+AMAZON	17	Slow Movement	slow
+AMAZON	18	Avoid	avd
+AMAZON	19	Javelin and Spear Mastery	javM
+AMAZON	20	Lightning Bolt	lBolt
+AMAZON	21	Ice Arrow	iceA
+AMAZON	22	Guided Arrow	gudA
+AMAZON	23	Penetrate	pen
+AMAZON	24	Charged Strike	chgS
+AMAZON	25	Plague Javelin	plJav
+AMAZON	26	Strafe	strf
+AMAZON	27	Immolation Arrow	immo
+AMAZON	28	Decoy	deco
+AMAZON	29	Evade	evd
+AMAZON	30	Fend	fend
+AMAZON	31	Freezing Arrow	frzA
+AMAZON	32	Valkyrie	val
+AMAZON	33	Pierce	prc
+AMAZON	34	Lightning Strike	litS
+AMAZON	35	Lightning Fury	lfury
+ASSASSIN	251	Fire Blast	fBla
+ASSASSIN	252	Claw and Dagger Mastery	mast
+ASSASSIN	253	Psychic Hammer	psyH
+ASSASSIN	254	Tiger Strike	tStk
+ASSASSIN	255	Dragon Talon	dTal
+ASSASSIN	256	Shock Web	sWeb
+ASSASSIN	257	Blade Sentinel	bSent
+ASSASSIN	258	Burst of Speed	bSpd
+ASSASSIN	259	Fists of Fire	fFire
+ASSASSIN	260	Dragon Claw	dClaw
+ASSASSIN	261	Charged Bolt Sentry	cBolt
+ASSASSIN	262	Wake of Fire	wFire
+ASSASSIN	263	Weapon Block	wBlk
+ASSASSIN	264	Cloak of Shadows	cloak
+ASSASSIN	265	Cobra Strike	cobra
+ASSASSIN	266	Blade Fury	bFury
+ASSASSIN	267	Fade	fade
+ASSASSIN	268	Shadow Warrior	sWar
+ASSASSIN	269	Claws of Thunder	cThu
+ASSASSIN	270	Dragon Tail	dTail
+ASSASSIN	271	Chain Lightning Sentry	chainL
+ASSASSIN	272	Wake of Inferno	nfrno
+ASSASSIN	273	Mind Blast	mBlast
+ASSASSIN	274	Blades of Ice	bIce
+ASSASSIN	275	Dragon Flight	dFlt
+ASSASSIN	276	Death Sentry	death
+ASSASSIN	277	Blade Shield	blaSh
+ASSASSIN	278	Venom	vnm
+ASSASSIN	279	Shadow Master	sMas
+ASSASSIN	280	Phoenix Strike	phoe
+ASSASSIN	366	Lightning Sentry	lightS
+BARBARIAN	126	Bash	bash
+BARBARIAN	127	Sword Mastery	
+BARBARIAN	128	General Mastery	gen
+BARBARIAN	129	Mace Mastery	
+BARBARIAN	130	Howl	howl
+BARBARIAN	131	Find Potion	fPot
+BARBARIAN	132	Leap	leap
+BARBARIAN	133	Double Swing	2xSw
+BARBARIAN	134	Polearm and Spear Mastery	
+BARBARIAN	135	Throwing Mastery	throw
+BARBARIAN	136	Spear Mastery	
+BARBARIAN	137	Taunt	taunt
+BARBARIAN	138	Shout	shout
+BARBARIAN	139	Stun	stun
+BARBARIAN	140	Double Throw	2xTh
+BARBARIAN	141	Combat Reflexes	cmbRef
+BARBARIAN	142	Find Item	fItem
+BARBARIAN	143	Leap Attack	lAtk
+BARBARIAN	144	Concentrate	conc
+BARBARIAN	145	Iron Skin	iDef
+BARBARIAN	146	Battle Cry	bCry
+BARBARIAN	147	Frenzy	fren
+BARBARIAN	148	Increased Speed	iSpd
+BARBARIAN	149	Battle Orders	BO
+BARBARIAN	150	Grim Ward	grim
+BARBARIAN	151	Whirlwind	WW
+BARBARIAN	152	Berserk	zerk
+BARBARIAN	153	Natural Resistance	iRes
+BARBARIAN	154	War Cry	wCry
+BARBARIAN	155	Battle Command	BC
+BARBARIAN	368	Deep Wounds	dWnd
+DRUID	221	Raven	rvn
+DRUID	222	Poison Creeper	psnC
+DRUID	223	Werewolf	werW
+DRUID	224	Lycanthropy	lyc
+DRUID	225	Firestorm	fstm
+DRUID	226	Oak Sage	oak
+DRUID	227	Summon Spirit Wolf	sWolf
+DRUID	228	Werebear	werB
+DRUID	229	Molten Boulder	boul
+DRUID	230	Arctic Blast	arctB
+DRUID	231	Carrion Vine	vine
+DRUID	232	Feral Rage	rage
+DRUID	233	Maul	maul
+DRUID	234	Fissure	fiss
+DRUID	235	Cyclone Armor	cycA
+DRUID	236	Heart of Wolverine	heart
+DRUID	237	Summon Dire Wolf	dWolf
+DRUID	238	Rabies	rab
+DRUID	239	Fire Claws	fCla
+DRUID	240	Twister	twst
+DRUID	241	Solar Creeper	solC
+DRUID	242	Hunger	hun
+DRUID	243	Shock Wave	sWav
+DRUID	244	Volcano	vol
+DRUID	245	Tornado	nado
+DRUID	246	Spirit of Barbs	barb
+DRUID	247	Summon Grizzly	grz
+DRUID	248	Fury	fury
+DRUID	249	Armageddon	arm
+DRUID	250	Hurricane	hur
+DRUID	370	Gust	gust
+NECROMANCER	66	Amplify Damage	amp
+NECROMANCER	67	Teeth	thth
+NECROMANCER	68	Bone Armor	bArm
+NECROMANCER	69	Skeleton Mastery	sMas
+NECROMANCER	70	Skeleton Warrior	sWar
+NECROMANCER	71	Dim Vision	dim
+NECROMANCER	72	Weaken	weak
+NECROMANCER	73	Poison Strike	pStk
+NECROMANCER	74	Corpse Explosion	CE
+NECROMANCER	75	Clay Golem	cGol
+NECROMANCER	76	Iron Maiden	iMaid
+NECROMANCER	77	Terror	terr
+NECROMANCER	78	Bone Wall	bWal
+NECROMANCER	79	Golem Mastery	gMas
+NECROMANCER	80	Raise Skeletal Mage	sMag
+NECROMANCER	81	Confuse	conf
+NECROMANCER	82	Life Tap	lTap
+NECROMANCER	83	Desecrate	des
+NECROMANCER	84	Bone Spear	bSpe
+NECROMANCER	85	Blood Golem	bGol
+NECROMANCER	86	Attract	attr
+NECROMANCER	87	Decrepify	dec
+NECROMANCER	88	Bone Prison	bPri
+NECROMANCER	89	Raise Skeleton Archer	sArc
+NECROMANCER	90	Iron Golem	iGol
+NECROMANCER	91	Lower Resist	lRes
+NECROMANCER	92	Poison Nova	pNov
+NECROMANCER	93	Bone Spirit	bSpi
+NECROMANCER	94	Fire Golem	fGol
+NECROMANCER	95	Revive	rev
+NECROMANCER	367	Blood Warp	warp
+NECROMANCER	374	Curse Mastery	cMas
+NECROMANCER	381	Dark Pact	pact
+PALADIN	96	Sacrifice	sac
+PALADIN	97	Smite	smt
+PALADIN	98	Might	mght
+PALADIN	99	Prayer	pra
+PALADIN	100	Resist Fire	rFir
+PALADIN	101	Holy Bolt	hBol
+PALADIN	102	Holy Fire	hFir
+PALADIN	103	Thorns	thn
+PALADIN	104	Defiance	def
+PALADIN	105	Resist Cold	rCol
+PALADIN	106	Zeal	zeal
+PALADIN	107	Charge	chg
+PALADIN	108	Blessed Aim	aim
+PALADIN	109	Cleansing	clns
+PALADIN	110	Resist Lightning	rLit
+PALADIN	111	Vengeance	veng
+PALADIN	112	Blessed Hammer	bHam
+PALADIN	113	Concentration	conc
+PALADIN	114	Holy Freeze	hFre
+PALADIN	115	Vigor	vig
+PALADIN	116	Holy Sword	hSwo
+PALADIN	117	Holy Shield	hShld
+PALADIN	118	Holy Shock	hShk
+PALADIN	119	Sanctuary	sanc
+PALADIN	120	Meditation	med
+PALADIN	121	Fist of the Heavens	FotH
+PALADIN	122	Fanaticism	fana
+PALADIN	123	Conviction	conv
+PALADIN	124	Redemption	red
+PALADIN	125	Salvation	sal
+PALADIN	364	Holy Nova	hNov
+PALADIN	371	Holy Light	hLt
+PALADIN	378	Joust	jst
+SORCERESS	36	Fire Bolt	fBolt
+SORCERESS	37	Warmth	warm
+SORCERESS	38	Charged Bolt	cBolt
+SORCERESS	39	Ice Bolt	iBolt
+SORCERESS	40	Cold Enchant	cEnch
+SORCERESS	41	Inferno	inf
+SORCERESS	42	Static Field	stat
+SORCERESS	43	Telekinesis	tkns
+SORCERESS	44	Frost Nova	fNov
+SORCERESS	45	Ice Blast	iBlst
+SORCERESS	46	Blaze	blz
+SORCERESS	47	Fire Ball	fBal
+SORCERESS	48	Nova	lNov
+SORCERESS	49	Lightning	light
+SORCERESS	50	Shiver Armor	sArm
+SORCERESS	51	Fire Wall	fWal
+SORCERESS	52	Enchant Fire	fEnch
+SORCERESS	53	Chain Lightning	chnL
+SORCERESS	54	Teleport	tele
+SORCERESS	55	Glacial Spike	gSpk
+SORCERESS	56	Meteor	met
+SORCERESS	57	Thunder Storm	TS
+SORCERESS	58	Energy Shield	ES
+SORCERESS	59	Blizzard	bliz
+SORCERESS	60	Chilling Armor	cArm
+SORCERESS	61	Fire Mastery	fMas
+SORCERESS	62	Hydra	hyd
+SORCERESS	63	Lightning Mastery	lMas
+SORCERESS	64	Frozen Orb	fOrb
+SORCERESS	65	Cold Mastery	cMas
+SORCERESS	369	Ice Barrage	iBar
+SORCERESS	376	Combustion	comb
+SORCERESS	383	Lesser Hydra	lHyd

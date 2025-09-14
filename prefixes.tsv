@@ -1,0 +1,323 @@
+ID	Affix	Attributes	Item Types	Magic Only	alvl	rlvl	freq	group	Changes
+143/144	Sturdy	+[20-30]% Enhanced Defense	Armor		1-41	3	14	101	added max alvl, increased frequency
+145	Strong	+[31-40]% Enhanced Defense	Armor		9-49	6	12	101	added max alvl, increased frequency
+146	Glorious	+[41-50]% Enhanced Defense	Armor		19-59	14	12	101	added max alvl, increased frequency
+147	Blessed	+[51-65]% Enhanced Defense	Armor		25	18	11	101	increased frequency
+148	Saintly	+[66-80]% Enhanced Defense	Armor		31	23	11	101	increased frequency
+149	Holy	+[81-100]% Enhanced Defense	Armor		36	27	9	101	increased frequency
+150	Godly	+[101-200]% Enhanced Defense	Armor		45	38	6	101	was 1, increased frequency
+520	Faithful (Paleoscene)	+[0-49] Defense (+0.5 per Level)	Gloves, Boots, Belt, Shield		30	22	3	101	
+521	Faithful (Paleoscene)	+[3-297] Defense (+3 per Level)	Chest		30	22	4	101	
+166	Scarlet	+[1-4] to Minimum Damage	Quiver		8	6	4	103	new*
+167	Crimson	+[5-8] to Minimum Damage	Quiver		38	30	4	103	new
+784	Cardinal	+[10-14] to Minimum Damage	Quiver		38	30	4	103	new
+183	Carbuncle	+[1-5] to Maximum Damage	Quiver		12	9	4	104	new*
+184	Carmine	+[6-9] to Maximum Damage	Quiver		35	27	4	104	new*
+185	Vermillion	+[11-15] to Maximum Damage	Quiver		58	50	4	104	new*
+531	Gritty	+[0-74] to Maximum Damage (+0.75 per Level)	WeaponP		50	37	7	105	
+186	Jagged	+[10-20]% Enhanced Damage	WeaponP, Circlet		1-41	1	9	105	added max alvl
+799	Jagged	+[10-20]% Enhanced Damage	Quiver		1	1	9	105	new
+187	Deadly	+[21-30]% Enhanced Damage	WeaponP, Circlet		5-45	3	9	105	added max alvl
+800	Deadly	+[21-30]% Enhanced Damage	Quiver		5	3	9	105	new
+188	Vicious	+[31-40]% Enhanced Damage	WeaponP		8-48	6	8	105	added max alvl
+801	Vicious	+[31-40]% Enhanced Damage	Quiver		8	6	8	105	new
+189	Brutal	+[41-50]% Enhanced Damage	WeaponP		14-54	10	8	105	added max alvl
+802	Brutal	+[41-50]% Enhanced Damage	Quiver		14	10	8	105	new
+190	Massive	+[51-65]% Enhanced Damage	WeaponP		20-60	15	7	105	added max alvl
+803	Massive	+[51-65]% Enhanced Damage	Quiver		20	15	7	105	new
+191	Savage	+[66-80]% Enhanced Damage	WeaponP		26	19	7	105	
+783	Savage	+[66-80]% Enhanced Damage	Quiver	1	26	19	7	105	new
+18	Merciless	+[81-100]% Enhanced Damage	WeaponP		32	24	6	105	
+193	Ferocious	+[101-200]% Enhanced Damage	WeaponP		41	33	6	105	
+194	Cruel	+[201-300]% Enhanced Damage	WeaponP		51	43	5	105	was 1
+753	Visceral	+[301-400]% Enhanced Damage	Missile Weapon, Amazon Javelin, Knife, Club, Tipped Mace, Throwing Axe		75	69	2	105	new, increased frequency
+757	Supporting	+[10-20]% Enhanced Damage	Chest, Shield		25	18	2	105	new
+758	Reinforcing	+[20-40]% Enhanced Damage	Chest, Shield		35	28	2	105	new
+759	Empowering	+[40-60]% Enhanced Damage	Chest, Shield		45	38	2	105	new
+760	Bolstering	+[60-80]% Enhanced Damage	Chest, Shield		55	48	2	105	new
+761	Fortifying	+[80-120]% Enhanced Damage	Chest, Shield		65	58	2	105	new
+762	Embattled	+[120-160]% Enhanced Damage	Chest, Shield		75	68	2	105	new
+763	Rampaging	+[160-200]% Enhanced Damage	Chest		85	78	1	105	new
+199	Vulpine	[7-12]% Damage Taken Gained as Mana when Hit	Shield, Amulet, Orb, Staff		9-49	6	3	107	added max alvl
+662	Tireless	Heal Stamina Plus 10%	Boots		1-5	1	4	108	
+201	Tireless	Heal Stamina Plus 25%	Boots		6	4	4	108	
+24 / 202?	Tireless	Heal Stamina Plus 50%	Boots		14	10	4	108	
+26	Bronze	+[10-20] to Attack Rating	WeaponP, Ring, Circlet, Helm, Chest, Gloves, Amulet		1-41	1	8	110	added max alvl, added Helm, Chest, Gloves
+27	Iron	+[21-40] to Attack Rating	WeaponP, Ring, Circlet, Helm, Chest, Gloves		4-44	3	8	110	added max alvl, added Helm, Chest, Gloves
+28	Steel	+[41-60] to Attack Rating	WeaponP, Ring, Circlet, Helm, Chest, Gloves		8	6	7	110	added Helm, Chest, Gloves
+29	Silver	+[61-80] to Attack Rating	WeaponP, Ring, Circlet, Helm, Chest, Gloves, Quiver		12	9	7	110	added Helm, Chest, Gloves, Quiver
+31	Gold	+[81-100] to Attack Rating	WeaponP, Ring, Circlet, Helm, Chest, Gloves, Quiver		17	12	6	110	added Helm, Chest, Gloves, Quiver
+32	Platinum	+[101-120] to Attack Rating	WeaponP, Ring, Circlet, Helm, Chest, Gloves, Quiver		22	16	6	110	added Helm, Chest, Gloves, Quiver
+33	Meteoric	+[121-150] to Attack Rating	WeaponP, Quiver		27	20	5	110	added Quiver
+245	Strange	+[151-300] to Attack Rating	WeaponP		32	24	5	110	
+780	Strange	+[151-300] to Attack Rating	Quiver	1	32	24	5	110	new
+246	Weird	+[301-450] to Attack Rating	WeaponP	1	37	27	4	110	
+34	Sharp	[10-20] to Attack Rating, +[10-20]% Enhanced Damage	WeaponP		5-45	3	9	111	added max alvl
+35/258	Fine	[21-40] to Attack Rating, +[21-30]% Enhanced Damage	WeaponP		12-52	9	9	111	added max alvl
+36/259	Warrior's	[41-60] to Attack Rating, +[31-40]% Enhanced Damage	WeaponP		19-59	13	8	111	added max alvl
+	Soldier's	[61-80] to Attack Rating, +[41-50]% Enhanced Damage	WeaponP		27	19	8	111	
+	Knight's	[81-100] to Attack Rating, +[51-65]% Enhanced Damage	WeaponP		38	30	7	111	
+	Lord's	[101-120] to Attack Rating, +[66-80]% Enhanced Damage	WeaponP		47	39	6	111	
+	King's	[121-150] to Attack Rating, +[81-100]% Enhanced Damage	WeaponP		56	48	5	111	
+	Master's	[151-250] to Attack Rating, +[101-150]% Enhanced Damage	WeaponP		56	48	5	111	
+	Grandmaster's	[251-300] to Attack Rating, +[151-200]% Enhanced Damage	WeaponP	1	69	61	4	111	
+	Grandmaster's	+[251-300] to Attack Rating, +[151-200]% Enhanced Damage	Missile Weapon		69	61	4	111	new
+	Fool's	+[0-49] to Maximum Damage (+0.5 per Level), +[16-1633] to Attack Rating (+16.5 per Level)	WeaponP		50	37	7	111	
+	Hawkeye	+[6-594] to Attack Rating (+6 per Level)	WeaponP	1	35	26	7	111	
+	Visionary	[1-99]% Bonus to Attack Rating (1% per Level)	Helm, Missile Weapon		25	18	1	111	
+266	Glimmering	+1 to Light Radius	Armor, Wand, Staff, Ring, Amulet, Orb		1-41	1	1	112	added max alvl
+267	Glowing	+2 to Light Radius	Armor, Wand, Staff, Ring, Amulet, Orb		6-46	4	1	112	added max alvl
+	Screaming	Hit Causes Monster to Flee 12%	Missile Weapon		10	7	4	113	
+	Screaming	Hit Causes Monster to Flee 25%	Blunt Weapon, Knife, Claw, Orb		10	7	3	113	
+	Howling	Hit Causes Monster to Flee 18%	Missile Weapon		16	12	4	113	
+	Howling	Hit Causes Monster to Flee 50%	Blunt Weapon, Knife, Claw, Orb		16	12	3	113	
+	Wailing	Hit Causes Monster to Flee 25%	Missile Weapon	1	24	18	4	113	
+	Wailing	Hit Causes Monster to Flee 100%	Blunt Weapon, Knife, Claw, Orb		20	13	3	113	
+	Felicitous	[5-10]% Better Chance of Getting Magic Items	Ring, Amulet, Circlet, Helm		5	3	4	114	added Helm
+	Fortuitous	[11-15]% Better Chance of Getting Magic Items	Ring, Amulet, Circlet, Helm		12	8	4	114	was 1, added Helm
+	Lizard's	+[1-2] to Mana	Chest, Helm, Shield, Belt, Ring, Amulet, Rod, Orb		1-2	1	4	115	
+	Lizard's	+[3-5] to Mana	Chest, Helm, Shield, Belt, Ring, Amulet, Rod, Orb		3-43	2	4	115	added max alvl
+	Snake's	+[5-10] to Mana	Shield, Rod, Belt, Ring, Amulet, Circlet, Quiver		6-46	4	4	115	added max alvl, added Quiver
+	Serpent's	+[11-20] to Mana	Shield, Rod, Circlet, Quiver		14-54	10	3	115	split off Belt, Ring, Amulet, added max alvl
+	Serpent's	+[11-20] to Mana	Belt, Ring, Amulet		14	10	3	115	new (split off)
+	Serpent's	+[11-20] to Mana	Chest, Non-Rod Weapon		37-77	27	2	115	split off Boots, Gloves, added max alvl
+	Serpent's	+[11-20] to Mana	Boots, Gloves		37	27	2	115	new (split off)
+308	Drake's	+[21-30] to Mana	Rod, Ring, Amulet, Orb, Circlet, Quiver		20	15	2	115	added Quiver
+309	Dragon's	+[31-40] to Mana	Rod, Ring, Amulet, Orb, Circlet, Quiver		24	18	2	115	added Quiver
+310	Dragon's	+[31-40] to Mana	Chest, Boots, Gloves		52	39	2	115	
+311	Wyrm's	+[41-60] to Mana	Rod, Ring, Amulet, Orb, Circlet, Chest, Shield		30	22	2	115	added chest & shield
+312	Great Wyrm's	+[61-90] to Mana	Rod, Ring, Amulet, Orb, Circlet, Chest, Shield		37	29	2	115	added chest & shield
+313	Bahamut's	+[91-120] to Mana	Rod, Ring, Amulet, Orb, Circlet		45	37	2	115	was 1
+540	Mnemonic	+[0-74] to Mana (+0.75 per Level)	Helm		25	18	1	115	
+323	Shimmering	All Resistances +[3-7]	Shield, Chest		6-46	4	5	116	added max alvl, added Chest
+328	Shimmering	All Resistances +[3-7]	Amulet, Circlet, Helm		8-48	6	5	116	added max alvl, added Helm
+333	Shimmering	All Resistances +[3-7]	Ring		45	37	3	116	
+336	Shimmering	All Resistances +[5-10]	Quiver		16	12	1	116	new*
+324	Rainbow	All Resistances +[8-11]	Shield, Chest		18	13	5	116	added Chest
+329	Rainbow	All Resistances +[8-11]	Amulet, Circlet, Helm		21	15	5	116	added Helm
+334	Rainbow	All Resistances +[8-11]	Ring		56	48	2	116	
+325	Scintillating	All Resistances +[12-15]	Shield, Chest		28	21	5	116	added Chest
+330	Scintillating	All Resistances +[12-15]	Amulet, Circlet, Quiver, Helm		34	25	5	116	added Quiver & Helm
+335	Scintillating	All Resistances +[12-15]	Ring	1	67	59	2	116	
+326	Prismatic	All Resistances +[16-20]	Shield, Chest		39	31	4	116	added Chest
+331	Prismatic	All Resistances +[16-20]	Amulet, Circlet		42	31	4	116	added Helm
+327	Chromatic	All Resistances +[21-30]	Shield, Chest, Helm		50	42	4	116	was 1, added Chest & Helm
+332	Chromatic	All Resistances +[21-30]	Amulet, Circlet	1	55	41	3	116	
+	Azure	Cold Resist +5%	Armor, Ring, Amulet, Orb, Circlet		1-4	1	3	117	
+	Azure	Cold Resist +[5-10]%	Armor, Weapon, Ring, Amulet, Circlet, Quiver		5-45	3	2	117	added max alvl, added Quiver
+	Lapis	Cold Resist +[11-20]%	Armor, Ring, Amulet, Orb, Circlet, Quiver		12	9	4	117	added Quiver
+	Lapis	Cold Resist +[11-20]%	Non-Orb Weapon		35	26	2	117	
+	Cobalt	Cold Resist +[21-30]%	Armor, Ring, Amulet, Orb, Circlet, Quiver		18	13	3	117	added Quiver
+	Cobalt	Cold Resist +[21-30]%	Non-Orb Weapon		55	41	2	117	
+355	Sapphire	Cold Resist +[31-40]%	Rod, Boots, Amulet, Orb, Circlet, Chest, Helm, Shield		25	18	3	117	added Chest, Helm & Shield
+	Crimson	Fire Resist +5%	Armor, Ring, Amulet, Orb, Circlet		1-4	1	3	118	
+	Crimson	Fire Resist +[5-10]%	Armor, Weapon, Ring, Amulet, Circlet, Quiver		5-45	3	4	118	added max alvl, added Quiver
+	Russet	Fire Resist +[11-20]%	Armor, Ring, Amulet, Orb, Circlet, Quiver		12	9	4	118	added Quiver
+	Russet	Fire Resist +[11-20]%	Non-Orb Weapon		35	26	1	118	
+	Garnet	Fire Resist +[21-30]%	Armor, Ring, Amulet, Orb, Circlet, Quiver		18	13	3	118	added Quiver
+	Garnet	Fire Resist +[21-30]%	Non-Orb Weapon		55	41	1	118	
+374	Ruby	Fire Resist +[31-40]%	Rod, Boots, Amulet, Orb, Circlet, Chest, Helm, Shield		25	18	3	118	added Chest, Helm & Shield
+	Tangerine	Lightning Resist +5%	Armor, Ring, Amulet, Orb, Circlet		1-4	1	3	119	
+	Tangerine	Lightning Resist +[5-10]%	Armor, Weapon, Ring, Amulet, Circlet, Quiver		5-45	3	4	119	added max alvl, added Quiver
+	Ocher	Lightning Resist +[11-20]%	Armor, Ring, Amulet, Orb, Circlet, Quiver		12	9	4	119	added Quiver
+	Ocher	Lightning Resist +[11-20]%	Non-Orb Weapon		35	26	1	119	
+	Coral	Lightning Resist +[21-30]%	Armor, Ring, Amulet, Orb, Circlet, Quiver		18	13	3	119	added Quiver
+	Coral	Lightning Resist +[21-30]%	Non-Orb Weapon		55	41	1	119	
+394	Amber	Lightning Resist +[31-40]%	Rod, Boots, Amulet, Orb, Circlet, Chest, Helm, Shield		25	18	3	119	added Chest, Helm & Shield
+	Beryl	Poison Resist +5%	Armor, Ring, Amulet, Orb, Circlet		1-4	1	3	120	
+	Beryl	Poison Resist +[5-10]%	Armor, Weapon, Ring, Amulet, Circlet, Quiver		5-45	3	4	120	added max alvl, added Quiver
+	Viridian	Poison Resist +[11-20]%	Armor, Ring, Amulet, Orb, Circlet, Quiver		12	9	4	120	added Quiver
+	Viridian	Poison Resist +[11-20]%	Non-Orb Weapon		35	26	1	120	
+	Jade	Poison Resist +[21-30]%	Armor, Ring, Amulet, Orb, Circlet, Quiver		18	13	3	120	added Quiver
+	Jade	Poison Resist +[21-30]%	Non-Orb Weapon		55	41	1	120	
+414	Emerald	Poison Resist +[31-40]%	Rod, Boots, Amulet, Orb, Circlet, Chest, Helm, Shield		25	18	3	120	added Chest, Helm & Shield
+	Triumphant	+1 to Mana after each Kill	Weapon, Ring, Circlet, Chest, Helm, Shield, Quiver		3-43	2	4	121	added max alvl, added Chest, Helm, Shield, Quiver
+	Aureolic	+[1-3] to Mana after each Kill	Chest, Helm, Shield, Quiver		12	9	4	121	new*
+	Victorious	+[2-5] to Mana after each Kill	Weapon, Circlet, Chest, Helm, Shield, Quiver		17	12	4	121	added Chest, Helm, Shield, Quiver
+	Mechanist's	Socketed ([1-2])	Weapon, Shield, Helm, Chest, Circlet		10	7	3	122	
+	Artisan's	Socketed (3)	Weapon, Shield, Chest		33	25	2	122	new
+	Artisan's	Socketed (3)	Weapon, Shield, Helm, Chest	1	33	25	2	122	new
+	Artisan's	Socketed (3)	Weapon, Shield, Helm, Chest	1	33	25	2	122	
+	Jeweler's	Socketed (4)	Weapon, Shield, Helm, Chest	1	55	47	1	122	
+	Lunar	+[25-50] to Attack Rating against Demons, +[10-25]% Damage to Demons	WeaponPS, Circlet		3-43	1	2	123	added max alvl
+	Lunar	+[25-50] to Attack Rating against Demons, +[10-25]% Damage to Demons	Quiver		3-43	1	2	123	new
+	Arcadian	+[51-100] to Attack Rating against Demons, +[26-50]% Damage to Demons	WeaponPS, Circlet, Helm		15-55	11	2	123	added max alvl, added Helm
+	Arcadian	+[51-100] to Attack Rating against Demons, +[26-50]% Damage to Demons	Quiver		15-55	11	2	123	new
+	Unearthly	+[101-150] to Attack Rating against Demons, +[51-100]% Damage to Demons	WeaponPS		25	18	1	123	
+	Unearthly	+[101-150] to Attack Rating against Demons, +[51-100]% Damage to Demons	Quiver	1	25	18	1	123	new
+	Astral	+[151-200] to Attack Rating against Demons, +[101-150]% Damage to Demons	WeaponPS		35	26	1	123	
+	Elysian	+[201-300] to Attack Rating against Demons, +[151-200]% Damage to Demons	WeaponPS		45	33	1	123	
+	Celestial	+[301-400] to Attack Rating against Demons, +[201-300]% Damage to Demons	WeaponPS	1	55	41	1	123	
+	Celestial	+[301-400] to Attack Rating against Demons, +[201-300]% Damage to Demons	Missile Weapon		55	41	1	123	new
+	Maiden's	+1 to Amazon Skill Levels	Chest, ShieldNC, HelmNC		36	27	1	125	new
+	Maiden's	+1 to Amazon Skill Levels	Amulet, Circlet		36	27	4	125	
+	Maiden's	+1 to Amazon Skill Levels	Missile Weapon, Spear		30	22	4	125	
+	Valkyrie's	+2 to Amazon Skill Levels	Missile Weapon, Spear		50	42	2	125	
+	Valkyrie's	+2 to Amazon Skill Levels	Amulet, Circlet		90	67	2	125	
+	Fletcher's	+1 to Bow and Crossbow Skills (Amazon Only)	Missile Weapon, Gloves, Circlet, Quiver, Amulet		20	15	1	125	added Circlet, Quiver, Amulet
+	Bowyer's	+2 to Bow and Crossbow Skills (Amazon Only)	Missile Weapon, Gloves, Circlet, Quiver, Amulet		40	30	1	125	added Circlet, Quiver, Amulet
+	Archer's	+3 to Bow and Crossbow Skills (Amazon Only)	Missile Weapon, Gloves, Circlet, Quiver, Amulet	1	60	45	1	125	added Circlet, Quiver, Amulet
+	Archer's	+3 to Bow and Crossbow Skills (Amazon Only)	Missile WeaponNC		60	45	1	125	new
+	Acrobat's	+1 to Passive and Magic Skills (Amazon Only)	Gloves, Amulet, Circlet, Quiver		20	15	1	125	added Quiver
+	Gymnast's	+2 to Passive and Magic Skills (Amazon Only)	Gloves, Amulet, Circlet, Quiver		40	30	1	125	added Quiver
+	Athlete's	+3 to Passive and Magic Skills (Amazon Only)	Gloves, Amulet, Circlet, Quiver	1	60	45	1	125	added Quiver
+	Harpoonist's	+1 to Javelin and Spear Skills (Amazon Only)	Spear, Gloves, Amulet, Circlet		20	15	1	125	added Amulet, Circlet
+	Spearmaiden's	+2 to Javelin and Spear Skills (Amazon Only)	Spear, Gloves, Amulet, Circlet		40	30	1	125	added Amulet, Circlet
+	Lancer's	+3 to Javelin and Spear Skills (Amazon Only)	Amazon Spear		60	45	1	125	new
+	Lancer's	+3 to Javelin and Spear Skills (Amazon Only)	Spear		60	45	1	125	split off Gloves, was 1
+	Lancer's	+3 to Javelin and Spear Skills (Amazon Only)	Circlet, Gloves	1	60	45	1	125	new (split off), added Circlet
+	Lancer's	+3 to Javelin and Spear Skills (Amazon Only)	Amulet	1	60	45	1	125	new
+	Angel's	+1 to Sorceress Skill Levels	Chest, ShieldNC, HelmNC		36	27	1	125	new
+	Angel's	+1 to Sorceress Skill Levels	Amulet, Circlet		36	27	4	125	
+	Angel's	+1 to Sorceress Skill Levels	Staff, Orb		30	22	4	125	
+	Arch-Angel's	+2 to Sorceress Skill Levels	Staff, Orb		50	42	2	125	
+	Arch-Angel's	+2 to Sorceress Skill Levels	Amulet, Circlet		90	67	2	125	
+	Burning	+1 to Fire Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet		20	15	1	125	
+	Blazing	+2 to Fire Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet		40	30	1	125	
+	Volcanic	+3 to Fire Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet	1	60	45	1	125	
+	Sparking	+1 to Lightning Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet		20	15	1	125	
+	Charged	+2 to Lightning Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet		40	30	1	125	
+	Powered	+3 to Lightning Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet	1	60	45	1	125	
+	Chilling	+1 to Cold Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet		20	15	1	125	
+	Freezing	+2 to Cold Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet		40	30	1	125	
+	Glacial	+3 to Cold Spells (Sorceress Only)	Staff, Orb, Amulet, Circlet	1	60	45	1	125	
+	Summoner's	+1 to Necromancer Skill Levels	Chest, Non-Paladin Shield, HelmNC		36	27	1	125	new
+	Summoner's	+1 to Necromancer Skill Levels	Amulet, Circlet		36	27	4	125	
+	Summoner's	+1 to Necromancer Skill Levels	Wand, Dagger, Necromancer Shield		30	22	4	125	removed Throwing Knife
+	Necromancer's	+2 to Necromancer Skill Levels	Wand, Dagger, Necromancer Shield		50	42	2	125	removed Throwing Knife
+	Necromancer's	+2 to Necromancer Skill Levels	Amulet, Circlet		90	67	2	125	
+	Hexing	+1 to Curses (Necromancer Only)	Wand, Necromancer Shield, Amulet, Circlet		20	15	1	125	
+	Blighting	+2 to Curses (Necromancer Only)	Wand, Necromancer Shield, Amulet, Circlet		40	30	1	125	
+	Accursed	+3 to Curses (Necromancer Only)	Wand, Necromancer Shield, Amulet, Circlet	1	60	45	1	125	
+	Fungal	+1 to Poison and Bone Spells (Necromancer Only)	Wand, Necromancer Shield, Amulet, Dagger, Circlet		20	15	1	125	
+	Noxious	+2 to Poison and Bone Spells (Necromancer Only)	Wand, Necromancer Shield, Amulet, Dagger, Circlet		40	30	1	125	
+	Venomous	+3 to Poison and Bone Spells (Necromancer Only)	Wand, Necromancer Shield, Amulet, Dagger, Circlet	1	60	45	1	125	
+	Graverobber's	+1 to Summoning Spells (Necromancer Only)	Wand, Necromancer Shield, Amulet, Circlet		20	15	1	125	
+	Vodoun	+2 to Summoning Spells (Necromancer Only)	Wand, Necromancer Shield, Amulet, Circlet		40	30	1	125	
+	Golemlord's	+3 to Summoning Spells (Necromancer Only)	Wand, Necromancer Shield, Amulet, Circlet	1	60	45	1	125	
+	Monk's	+1 to Paladin Skill Levels	Chest, Non-Necromancer Shield, HelmNC		36	27	1	125	new
+	Monk's	+1 to Paladin Skill Levels	Amulet, Circlet		36	27	4	125	
+	Monk's	+1 to Paladin Skill Levels	Scepter, Paladin Shield		30	22	4	125	
+	Monk's	+1 to Paladin Skill Levels	Sword, Tipped Mace, Hammer, Non-Necromancer Shield		35	27	4	125	
+	Priest's	+2 to Paladin Skill Levels	Scepter, Paladin Shield		50	42	2	125	
+	Priest's	+2 to Paladin Skill Levels	Sword, Tipped Mace, Hammer, Non-Necromancer Shield		65	58	2	125	
+	Priest's	+2 to Paladin Skill Levels	Amulet, Circlet		90	67	2	125	
+	Lion Branded	+1 to Combat Skills (Paladin Only)	Scepter, Sword, Tipped Mace, Non-Necromancer Shield, Amulet, Circlet		20	15	1	125	
+	Hawk Branded	+2 to Combat Skills (Paladin Only)	Scepter, Sword, Tipped Mace, Non-Necromancer Shield, Amulet, Circlet		40	30	1	125	
+	Rose Branded	+3 to Combat Skills (Paladin Only)	Scepter, Sword, Tipped Mace, Non-Necromancer Shield, Amulet, Circlet	1	60	45	1	125	
+	Captain's	+1 to Offensive Auras (Paladin Only)	Scepter, Sword, Tipped Mace, Non-Necromancer Shield, Amulet, Circlet		20	15	1	125	
+	Commander's	+2 to Offensive Auras (Paladin Only)	Scepter, Sword, Tipped Mace, Non-Necromancer Shield, Amulet, Circlet		40	30	1	125	
+	Marshal's	+3 to Offensive Auras (Paladin Only)	Scepter, Sword, Tipped Mace, Non-Necromancer Shield, Amulet, Circlet	1	60	45	1	125	
+	Preserver's	+1 to Defensive Auras (Paladin Only)	Non-Necromancer Shield, Amulet, Circlet		20	15	1	125	
+	Warder's	+2 to Defensive Auras (Paladin Only)	Non-Necromancer Shield, Amulet, Circlet		40	30	1	125	
+	Guardian's	+3 to Defensive Auras (Paladin Only)	Non-Necromancer Shield, Amulet, Circlet	1	60	45	1	125	
+	Slayer's	+1 to Barbarian Skill Levels	Chest, ShieldNC, Non-Druid Helm		36	27	1	125	new
+	Slayer's	+1 to Barbarian Skill Levels	Amulet, Circlet		36	27	4	125	
+	Slayer's	+1 to Barbarian Skill Levels	Barbarian Helm		30	22	4	125	
+	Slayer's	+1 to Barbarian Skill Levels	Axe, Any Mace, Sword, Throwing Knife, Two-Handed SpearNC		30	22	4	125	
+	Berserker's	+2 to Barbarian Skill Levels	Axe, Any Mace, Sword, Throwing Knife, Two-Handed SpearNC		50	42	1	125	
+	Berserker's	+2 to Barbarian Skill Levels	Barbarian Helm		50	42	2	125	
+	Berserker's	+2 to Barbarian Skill Levels	Amulet, Circlet		90	67	2	125	
+	Expert's	+1 to Combat Skills (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Non-Druid Helm		20	15	1	125	removed Knife
+	Veteran's	+2 to Combat Skills (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Non-Druid Helm		40	30	1	125	removed Knife
+	Master's	+3 to Combat Skills (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Non-Druid Helm	1	60	45	1	125	removed Knife
+	Fanatic	+1 to Combat Masteries (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Barbarian Helm, Amulet		20	15	1	125	removed Knife
+	Raging	+2 to Combat Masteries (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Barbarian Helm, Amulet		40	30	1	125	removed Knife
+	Furious	+3 to Combat Masteries (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Barbarian Helm, Amulet	1	60	45	1	125	removed Knife
+	Sounding	+1 to Warcries (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Barbarian Helm, Amulet		20	15	1	125	removed Knife
+	Resonant	+2 to Warcries (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Barbarian Helm, Amulet		40	30	1	125	removed Knife
+	Echoing	+3 to Warcries (Barbarian Only)	Axe, Any Mace, Sword, Polearm, SpearNC, Barbarian Helm, Amulet	1	60	45	1	125	removed Knife
+	Shaman's	+1 to Druid Skill Levels	Chest, ShieldNC, Non-Barbarian Helm		36	27	1	125	new
+	Shaman's	+1 to Druid Skill Levels	Amulet, Circlet		36	27	4	125	
+	Shaman's	+1 to Druid Skill Levels	Club, Druid Helm		30	22	4	125	
+	Hierophant's	+2 to Druid Skill Levels	Club, Druid Helm		50	42	2	125	
+	Hierophant's	+2 to Druid Skill Levels	Amulet, Circlet		90	67	2	125	
+	Trainer's	+1 to Summoning Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet		20	15	1	125	
+	Caretaker's	+2 to Summoning Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet		40	30	1	125	
+	Keeper's	+3 to Summoning Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet	1	60	45	1	125	
+	Spiritual	+1 to Shape Shifting Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet		20	15	1	125	
+	Feral	+2 to Shape Shifting Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet		40	30	1	125	
+	Communal	+3 to Shape Shifting Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet	1	60	45	1	125	
+	Nature's	+1 to Elemental Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet		20	15	1	125	
+	Terra's	+2 to Elemental Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet		40	30	1	125	
+	Gaea's	+3 to Elemental Skills (Druid Only)	Club, Druid Helm, Amulet, Circlet	1	60	45	1	125	
+	Magekiller's	+1 to Assassin Skills	Chest, ShieldNC, HelmNC		36	27	1	125	new
+	Magekiller's	+1 to Assassin Skills	Amulet, Circlet		36	27	4	125	
+	Magekiller's	+1 to Assassin Skills	Claw, Dagger		30	22	4	125	added Dagger
+	Witch-hunter's	+2 to Assassin Skills	Claw, Dagger		50	42	2	125	added Dagger
+	Witch-hunter's	+2 to Assassin Skills	Amulet, Circlet		90	67	2	125	
+	Entrapping	+1 to Traps (Assassin Only)	Claw, Dagger, Amulet, Circlet		20	15	1	125	added Dagger
+	Trickster's	+2 to Traps (Assassin Only)	Claw, Dagger, Amulet, Circlet		40	30	1	125	added Dagger
+	Cunning	+3 to Traps (Assassin Only)	Claw, Dagger, Amulet, Circlet	1	60	45	1	125	added Dagger
+	Mentalist's	+1 to Shadow Disciplines (Assassin Only)	Claw, Dagger, Amulet, HelmNC, Circlet		20	15	1	125	added Dagger
+	Psychic	+2 to Shadow Disciplines (Assassin Only)	Claw, Dagger, Amulet, HelmNC, Circlet		40	30	1	125	added Dagger
+	Shadow	+3 to Shadow Disciplines (Assassin Only)	Claw, Dagger, Amulet, HelmNC, Circlet	1	60	45	1	125	added Dagger
+	Shogukusha's	+1 to Martial Arts (Assassin Only)	Claw, Dagger, Amulet, Gloves, Circlet		20	15	1	125	added Dagger
+	Sensei's	+2 to Martial Arts (Assassin Only)	Claw, Dagger, Amulet, Gloves, Circlet		40	30	1	125	added Dagger
+	Kenshi's	+3 to Martial Arts (Assassin Only)	Claw, Dagger, Amulet, Gloves, Circlet	1	60	45	1	125	added Dagger
+	Snowy	Adds [20-30] to [64-101] Cold Damage (1 second chill)	Weapon, Circlet, Quiver		25-65	18	3	137	added max alvl, split off Circlet, added Quiver, damage was [6-9] to [19-30]
+	Snowy	Adds [6-9] to [19-30] Cold Damage (1 second chill)	Circlet		25-65	18	3	137	new (split off), added max alvl
+	Shivering	Adds [37-56] to [115-166] Cold Damage (2 second chill)	Weapon, Quiver		35	26	2	137	added Quiver, damage was [10-15] to [31-45]
+	Boreal	Adds [46-62] to [131-256] Cold Damage (3 second chill)	Weapon, Quiver		50	40	1	137	added Quiver, damage was [16-23] to [46-90]
+	Hibernal	Adds [60-112] to [226-348] Cold Damage (4 second chill)	Weapon, Quiver		70	60	1	137	added Quiver, damage was [24-45] to [91-140]
+	Fiery	Adds [28-43] to [53-103] Fire Damage	Weapon, Quiver		25-65	18	3	138	added max alvl, split off Circlet, added Quiver, damage was [16-25] to [31-60]
+	Fiery	Adds [16-25] to [31-60] Fire Damage	Circlet		25-65	18	3	138	new (split off), added max alvl
+	Smoldering	Adds [47-72] to [109-161] Fire Damage	Weapon, Quiver		35	26	2	138	added Quiver, damage was [26-50] to [61-90]
+	Smoking	Adds [81-128] to [145-208] Fire Damage	Weapon, Quiver		47	37	1	138	added Quiver, damage was [51-80] to [91-130]
+	Flaming	Adds [138-204] to [224-306] Fire Damage	Weapon, Quiver		61	51	1	138	added Quiver, damage was [81-120] to [131-180]
+	Scorching	Adds [217-306] to [325-432] Fire Damage	Weapon, Quiver		77	67	1	138	added Quiver, damage was [121-170] to [181-240]
+	Static	Adds 1 to [49-120] Lightning Damage	Weapon, Circlet, Quiver		25-65	18	3	139	added max alvl, added Quiver
+	Glowing	Adds 1 to [121-180] Lightning Damage	Weapon, Quiver		34	25	2	139	added Quiver
+	Buzzing	Adds 1 to [181-260] Lightning Damage	Weapon, Quiver		46	36	1	139	added Quiver
+	Arcing	Adds 1 to [287-396] Lightning Damage	Weapon, Quiver		60	50	1	139	added Quiver, damage was 1 to [261-360]
+	Shocking	Adds 1 to [433-576] Lightning Damage	Weapon, Quiver		76	66	1	139	added Quiver, damage was 1 to [361-480]
+	Septic	+6 Poison Damage over 2 seconds	Weapon, Circlet, Quiver		1-41	1	3	140	added max alvl, added Quiver
+	Foul	+24 Poison Damage over 2 seconds	Weapon, Quiver		10-50	7	2	140	added max alvl, added Quiver, damage was 12 over 3 seconds
+	Corrosive	+78 Poison Damage over 2 seconds	Weapon, Quiver		20	15	1	140	added Quiver, damage was 80 over 4 seconds
+	Toxic	+226 Poison Damage over 2 seconds	Weapon, Quiver		35	26	1	140	added Quiver, damage was 150 over 5 seconds
+	Pestilent	+384 Poison Damage over 2 seconds	Weapon, Quiver		50	37	1	140	was 1, added Quiver, damage was 275 over 6 seconds
+	Plague	+366 Poison Damage over 6 seconds	Weapon, Quiver		50	37	1	140	new
+	Virulent	+738 Poison Damage over 2 seconds	Weapon, Quiver		76	66	1	140	new
+	Infectious	+885 Poison Damage over 2 seconds	Dagger, Scythe		76	66	1	140	new
+	Devout	+[25-50] to Attack Rating against Undead, +[10-25]% Damage to Undead	Quiver		3	1	4	142	new
+	Consecrated	+[25-75] to Attack Rating against Undead, +[25-75]% Damage to Undead	WeaponPS		1-41	1	4	142	added max alvl
+	Consecrated	+[25-75] to Attack Rating against Undead, +[25-75]% Damage to Undead	Quiver		15	11	4	142	new
+	Pure	+[76-175] to Attack Rating against Undead, +[76-125]% Damage to Undead	WeaponPS		15	11	3	142	
+	Pure	+[76-175] to Attack Rating against Undead, +[76-125]% Damage to Undead	Quiver	1	25	18	3	142	new
+	Sacred	+[175-250] to Attack Rating against Undead, +[126-200]% Damage to Undead	WeaponPS		25	18	2	142	
+	Hallowed	+[251-325] to Attack Rating against Undead, +[201-275]% Damage to Undead	WeaponPS		35	27	1	142	
+	Divine	+[326-450] to Attack Rating against Undead, +[276-350]% Damage to Undead	WeaponPS	1	45	37	1	142	
+	Divine	+[326-450] to Attack Rating against Undead, +[276-350]% Damage to Undead	Missile Weapon		45	37	1	142	new
+	Penetrating	+[5-10]% Chance to Pierce	Quiver		15	10	4	143	new
+	Puncturing	+[11-20]% Chance to Pierce	Quiver		30	25	3	143	new
+	Piercing	+[21-30]% Chance to Pierce	Quiver		45	40	2	143	new
+	Impaling	+[31-40]% Chance to Pierce	Quiver	1	60	55	2	143	new
+	Cultist's	20% Chance of Open Wounds, +[30-40] Open Wounds Damage per Second	WeaponP, Quiver		28-68	25	4	170	new
+807	Bloodthirster's	20% Chance of Open Wounds, +[204-285] Open Wounds Damage per Second	WeaponP, Quiver		48	45	4	170	new
+808	Gorelust's	20% Chance of Open Wounds, +[407-563] Open Wounds Damage per Second	WeaponP, Quiver		68	65	4	170	new
+	Blood Letting	+1 Life after each Kill	Weapon, Ring, Circlet, Chest, Helm, Shield, Quiver		13-53	12	3	200	new
+	Murderous	+[2-5] Life after each Kill	Weapon, Circlet, Chest, Helm, Shield, Quiver		51	44	1	200	new
+	Blood Sucking	+[1-3] Life after each Kill	Chest, Helm, Shield, Weapon, Ring, Quiver		32	26	2	200	new
+822	Sizzling	-[2-4] to Enemy Fire Resistance	Missile Weapon, Scepter, Crystal Sword, Orb, Claw, Druid Helm		10-29	8	2	171	new
+822	Sizzling	-[3-6] to Enemy Fire Resistance	Staff		10-29	8	2	171	new
+823	Singeing	-[4-6] to Enemy Fire Resistance	Missile Weapon, Scepter, Crystal Sword, Orb, Claw, Druid Helm		30-59	26	2	171	new
+823	Singeing	-[6-10] to Enemy Fire Resistance	Staff		30-59	26	2	171	new
+824	Infernal	-[6-10] to Enemy Fire Resistance	Missile Weapon, Scepter, Crystal Sword, Orb, Claw, Druid Helm		60	53	2	171	new
+824	Infernal	-[10-15] to Enemy Fire Resistance	Staff		60	53	2	171	new
+825	Frigid	-[2-4] to Enemy Cold Resistance	Missile Weapon, Scepter, Crystal Sword, Orb, Claw, Druid Helm		10-29	8	2	171	new
+825	Frigid	-[3-6] to Enemy Cold Resistance	Staff		10-29	8	2	171	new
+826	Frostbitten	-[4-6] to Enemy Cold Resistance	Missile Weapon, Scepter, Crystal Sword, Orb, Claw, Druid Helm		30-59	26	2	171	new
+826	Frostbitten	-[6-10] to Enemy Cold Resistance	Staff		30-59	26	2	171	new
+827	Subzero	-[6-10] to Enemy Cold Resistance	Missile Weapon, Scepter, Crystal Sword, Orb, Claw, Druid Helm		60	53	2	171	new
+827	Subzero	-[10-15] to Enemy Cold Resistance	Staff		60	53	2	171	new
+828	Crackling	-[2-4] to Enemy Lightning Resistance	Amazon Javelin, Scepter, Crystal Sword, Orb, Claw		10-29	8	2	171	new
+828	Crackling	-[3-6] to Enemy Lightning Resistance	Staff, Amazon Spear		10-29	8	2	171	new
+829	Jolting	-[4-6] to Enemy Lightning Resistance	Amazon Javelin, Scepter, Crystal Sword, Orb, Claw		30-59	26	2	171	new
+829	Jolting	-[6-10] to Enemy Lightning Resistance	Staff, Amazon Spear		30-59	26	2	171	new
+830	Surging	-[6-10] to Enemy Lightning Resistance	Amazon Javelin, Scepter, Crystal Sword, Orb, Claw		60	53	2	171	new
+830	Surging	-[10-15] to Enemy Lightning Resistance	Staff, Amazon Spear		60	53	2	171	new
+831	Decaying	-[2-4] to Enemy Poison Resistance	Amazon Javelin, Wand, Claw		10-29	9	2	171	new
+832	Festering	-[4-6] to Enemy Poison Resistance	Amazon Javelin, Wand, Claw		30-59	26	2	171	new
+833	Necrotic	-[6-10] to Enemy Poison Resistance	Amazon Javelin, Wand, Claw		60	53	2	171	new
+891	Tricky	[13-20]% damage taken goes to mana	orbs, staves, shields, amulets		29	21	3	107	new
+892	Devious	[21-30]% damage taken goes to mana	orbs, staves, shields, amulets		49	41	3	107	new

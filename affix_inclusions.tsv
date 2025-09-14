@@ -1,0 +1,67 @@
+	HELM AND !CLASS	DRU	BAR	CHEST	SHIELD AND !CLASS	DIN	NEC	BOOTS	BELT	CIRC	GLOVES	amu	rin	aqv OR cqv	AXE AND !THROWING	TMACE	CLUB	HAMMER	SCEPTER	SWORD AND !(crs OR 9cr OR 7cr)	(crs OR 9cr OR 7cr)	DAGGER AND !THROWING	SIN	THROWING AND DAGGER	THROWING AND AXE	JAV AND !ZON	JAV AND ZON	SPEAR AND !ZON	SPEAR AND ZON	POLEARM AND !(scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc)	(scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc)	BOW AND !ZON	BOW AND ZON	XBOW	STAFF	SOR	WAND
+	Non-class Helms	Druid Helms	Barbarian Helms	Chests	Non-class Shields	Paladin Shields	Necromancer Shields	Boots	Belts	Circlets	Gloves	Amulets	Rings	Bow and Crossbow Quivers	Melee Axes	Tipped Maces	Clubs	Hammers	Scepters	Swords (except Crystal Swords)	Crystal Swords	Melee Daggers	Claws	Throwing Daggers	Throwing Axes	Non-class Javelins	Amazon Javelins	Non-class Spears	Amazon Spears	Polearms (except Scythes)	Scythes	Non-class Bows	Amazon Bows	Crossbows	Staves	Orbs	Wands
+Armor	1	1	1	1	1	1	1	1	1	1	1																										
+Non-Gloves Armor	1	1	1	1	1	1	1	1	1	1																											
+Helm	1	1	1																																		
+HelmNC	1																																				
+Non-Barbarian Helm	1	1																																			
+Non-Druid Helm	1		1																																		
+Druid Helm		1																																			
+Barbarian Helm			1																																		
+Chest				1																																	
+Shield					1	1	1																														
+ShieldNC					1																																
+Non-Necromancer Shield					1	1																															
+Non-Paladin Shield					1		1																														
+Paladin Shield						1																															
+Necromancer Shield							1																														
+Boots								1																													
+Belt									1																												
+Circlet										1																											
+Gloves											1																										
+Amulet												1																									
+Ring													1																								
+Quiver														1																							
+Weapon															1	1	1	1	1	1		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+WeaponPS															1	1	1	1	1	1		1	1	1	1	1	1	1	1	1	1	1	1	1	1		
+WeaponP															1	1	1	1	1	1		1	1	1	1	1	1	1	1	1	1	1	1	1			
+Axe															1										1												
+Throwing Axe																									1												
+Any Mace																1	1	1	1																		
+Tipped Mace																1																					
+Club																	1																				
+Hammer																		1																			
+Scepter																			1																		
+Sword																				1	1																
+Crystal Sword																					1																
+Knife																						1															
+Dagger																						1															
+Throwing Knife																								1													
+Claw																							1														
+Spear																										1	1	1	1								
+SpearNC																										1		1									
+Two-Handed SpearNC																												1									
+Amazon Javelin																											1										
+Amazon Spear																													1								
+Polearm																														1	1						
+Scythe																															1						
+Missile Weapon																																1	1	1			
+Missile WeaponNC																																1		1			
+Melee Weapon															1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1				1		1
+Melee WeaponPS															1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1				1		
+Melee WeaponP															1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1						
+Non-Throwing Melee Weapon															1	1	1	1	1	1	1	1	1					1	1	1	1				1		1
+Blunt Weapon																1	1	1	1																1		1
+Non-Blunt Melee Weapon															1					1	1	1	1	1	1	1	1	1	1	1	1						
+Amazon Weapon																											1		1				1				
+Amazon Javelin																											1										
+Amazon Spear																													1								
+Staff																																			1		
+Wand																																					1
+Orb																																				1	
+Non-Orb Weapon															1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1		1
+Rod																			1																1		1
+Non-Rod Weapon															1	1	1	1		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1		1	
+non-Staff Rods																			1																		1
+Non-Scepter Weapon															1	1	1	1		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+Non-Scepter WeaponP															1	1	1	1		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1			
