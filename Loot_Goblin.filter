@@ -1,10 +1,13 @@
 -*- coding: windows-1252 -*-
 
-//	Kryszard's PD2 Loot Filter for Season 11: ver 11.4.2
+//	Loot Goblin Filter
+//	https://github.com/PreyInstinct/Loot-Goblin-Filter
 //
-//	twitch.tv/kryszard
+//	Forked from Kryszard's PD2 Loot Filter
+//	https://github.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter
 //
-//	For Casual and EndGame Players
+//	Note: This file must be edited and saved using Windows-1225 (ANSI) encoding, otherwise some symbols will not render properly.
+
 
 //Define Filter Strict Levels
 ItemDisplayFilterName[]: Hide Just Trash Items
