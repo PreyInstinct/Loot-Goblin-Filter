@@ -27,6 +27,42 @@ Points are color coded by their broad utility class. Since you are usually tryin
 |Utility            |Teal       |Pierce, tele charges, etc     |
 |Other              |Sage       |                              |
 
-## Skill Tags
+## Skill Tags (Pointmods)
 
-I personally find Kryszard's three letter skill abbreviations a bit obtuse. I think there are just too many skills, with many of them having very similar names, for a three letter system to be legible. I have thus replaced them with my own abbreviations using camelCase for single skills and ALLCAPS for skill trees, class skills, and all skills. It takes up more space, but I hope you find it easier to find the class items you're hunting for.
+While generally very good, I have re-worked Kryszard's pointmod tags to suit my preference. In general, my aims have been to 1) improve legibility, 2) show more information while using as litte additional space as possible, and 3) extend the usefulness of this feature to magic, rare, and crafted item hunting in addition to picking bases.
+
+### Inclusion of Skill Trees
+
+Class-focused items don't have all +ALLSK, +CLSK (e.g. Paladin Skills), or +TABSK (e.g. Combat Skills) automods, with the exception of Amazon bows, which don't have +SK (single skill) automods, so there is no need to worry about these mods when hunting for bases. However, magic and rare items that combine +TABSK and +SK can be quite useful. Kryszard's approach to these is to add a "+High Skill Roll" tag on these items, which is quite reasonable considering these mods can't be seen until IDed. I like having this information in a consistent place (the name line), though, so I've opted to include them.
+
+### New Skill Abbreviations
+I personally find the three letter skill abbreviations a bit obtuse. I think there are just too many skills, with many of them having very similar names, for a three letter system to be legible. I have thus implemented a slightly more complex, but hopefully more legible and intuitive system.
+ - All Skills is ALL(caps).
+ - Acronyms are also in ALLCAPS. E.g. SS (Shape Shifting), BO (Battle Orders), CDM (Claw & Dagger Mastery), ES (Energy Shield).
+ - Bonuses to skill trees (including CLSK and TABSK) use Proper Capitalization E.g. Cries, Cold, JvSp, Mast.
+ - Single skill bonuses (that aren't acronyms) use camelCaps. E.g. fOrb, maul, zerk, bFury.
+ - Where possible, skills that have common words in the same tree are shortened as much as possible and always in the same way. E.g. Assasin "Dragon" skills are dTal, dClaw, dTail, and dFlt, while Amazon "Arrow" skills are magA, firA, colA, expA, iceA, gudA, immA, and frzA, and "Strike" skills are powA, chgS, litS, tigS, cbrS, PhoS, psnS.
+ - Some simple skills are named after their primary affect, rather than the actual skill name. E.g. +def, +hp, +spd, +res, and bleed for Barb masteries, and +AR for Amazon's Penetrate.
+
+See All.skills for the full list of abbreviations.
+
+### Color Coding
+
+Skill bonuses use the D2 rarity colors: +1 is rendered blue, +2 is rendered yellow, and +3 is rendered gold.
+
+Simlarly, the skills themselves use the D2 rarity colors: single skills are white, skill tabs are blue, class skills are yellow, and all skills is gold.
+
+Last, the braces themselves use the same rarity colors to denote potentially desirable combos.
+
+First, I categorized the skills into a few types - most importantly "primary" skills, which are those skills that some build is likely to spam or try to maximize. You can see all the categorizations in All.skills. My knowledge is not encyclopedic, and I welcome suggestions for recategorization.
+
+Next, the highest total bonus to a primary skill determines the color of the {% raw %}{braces}{% endraw %}.
+ - Gray: The item only has bonuses to non-primary skills, even if those bonuses are large.
+ - Blue: +1-3 in a primary skill.
+ - Yellow: +4 in a primary skill.
+ - Gold: +5 or greater in a primary skill.
+
+### +High Skills Roll
+
+For the time being, I left Kryszard's colorful tag in, though at some point in the future I may replace this with more nuanced tags.
+
