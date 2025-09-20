@@ -56,7 +56,7 @@ Last, the braces themselves use the same rarity colors to denote potentially des
 
 First, I categorized the skills into a few types - most importantly "primary" skills, which are those skills that some build is likely to spam or try to maximize. You can see all the categorizations in All.skills. My knowledge is not encyclopedic, and I welcome suggestions for recategorization.
 
-Next, the highest total bonus to a primary skill determines the color of the {% raw %}{braces}{% endraw %}.
+Next, the highest total bonus to a primary skill determines the color of the {braces}.
  - Gray: The item only has bonuses to non-primary skills, even if those bonuses are large.
  - Blue: +1-3 in a primary skill.
  - Yellow: +4 in a primary skill.
