@@ -3600,6 +3600,59 @@ ItemDisplay[STAFF RARE !ID FILTLVL<6]: %NAME%
 //--------------------------------
 
 //----------------------------------------------------------------------------------------------------------------
+// Point system for Gloves
+//----------------------------------------------------------------------------------------------------------------
+
+// --- Magic Gloves ---
+
+// +3 Skill gloves
+ItemDisplay[GLOVES MAG (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3 Gloves{%NAME%}%CONTINUE%
+ItemDisplay[GLOVES MAG IAS>9 (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3/10 Gloves{%NAME%}%CONTINUE%
+ItemDisplay[GLOVES MAG IAS>19 (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3/20 Gloves{%NAME%}%CONTINUE%
+
+// --- Rare Gloves ---
+
+// Close: Show max theoretical points.
+ItemDisplay[GLOVES RARE]: %NAME%{%LIGHT_GRAY%••••••••%NL%%NAME%}%CONTINUE%
+
+// Prefixes
+// # Skills (2 pts)
+ItemDisplay[GLOVES RARE (TABSK0>0 OR TABSK2>0 OR TABSK50>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[GLOVES RARE (TABSK0>1 OR TABSK2>1 OR TABSK50>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[GLOVES RARE (TABSK1>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// Resistances (1 pt each)
+ItemDisplay[GLOVES RARE (FRES+CRES+LRES+PRES>22)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[GLOVES RARE (FRES+CRES+LRES+PRES>45)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[GLOVES RARE (FRES+CRES+LRES+PRES>67)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Defense (1 pt)
+ItemDisplay[GLOVES RARE ED>100]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Attack Rating (1 pt)
+ItemDisplay[GLOVES RARE AR>80]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Suffixes
+// Increased Attack Speed (2 pts)
+ItemDisplay[GLOVES RARE IAS>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[GLOVES RARE IAS>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Faster Cast Rate (2 pts)
+ItemDisplay[GLOVES RARE FCR>4]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[GLOVES RARE FCR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Half Freeze Duration (1 pt)
+ItemDisplay[GLOVES RARE STAT118]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Life Steal (1 pt)
+ItemDisplay[GLOVES RARE STAT60>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Mana Steal (1 pt)
+ItemDisplay[GLOVES RARE STAT62>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Strength & Dexterity (1 pt each)
+ItemDisplay[GLOVES RARE STR+DEX>12]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+ItemDisplay[GLOVES RARE STR+DEX>24]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+// # Magic & Gold Find (1 pt each)
+ItemDisplay[GLOVES RARE MFIND>19]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[GLOVES RARE GFIND>51]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+//Open
+ItemDisplay[GLOVES RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+
+//----------------------------------------------------------------------------------------------------------------
 // Point system for Belts
 //----------------------------------------------------------------------------------------------------------------
 
@@ -4173,8 +4226,8 @@ ItemDisplay[(ARMOR OR WEAPON) !leg SOCK>1 NMAG !RW !SHOP]:%NAME%{%WHITE%Look at 
 //Recipes
 ItemDisplay[ARMOR NORM RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O%NL%%NAME%}%CONTINUE%
 ItemDisplay[ARMOR EXC RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Pul%WHITE%, Perf %PURPLE%O%NL%%NAME%}%CONTINUE%
-ItemDisplay[WEAPON NORM RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ort%WHITE%, %ORANGE%Amn%WHITE%, Perf %BLUE%O}%CONTINUE%
-ItemDisplay[WEAPON EXC RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Fal%WHITE%, %ORANGE%Um%WHITE%, Perf %BLUE%O}%CONTINUE%
+ItemDisplay[WEAPON NORM RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ort%WHITE%, %ORANGE%Amn%WHITE%, Perf %BLUE%O%NL%%NAME%}%CONTINUE%
+ItemDisplay[WEAPON EXC RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Fal%WHITE%, %ORANGE%Um%WHITE%, Perf %BLUE%O%NL%%NAME%}%CONTINUE%
 ItemDisplay[ARMOR NORM CRAFT ID]: %NAME%{%ORANGE%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O}%CONTINUE%
 ItemDisplay[ARMOR EXC CRAFT ID]: %NAME%{%ORANGE%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Pul%WHITE%, Perf %PURPLE%O}%CONTINUE%
 ItemDisplay[WEAPON NORM CRAFT ID]: %NAME%{%ORANGE%This Item%WHITE%, %ORANGE%Ort%WHITE%, %ORANGE%Amn%WHITE%, Perf %BLUE%O}%CONTINUE%
