@@ -45,6 +45,9 @@ affix_lists = {f:[] for f in filters}
 
 for line in fh:
     line = line.strip('\n').split('\t')
+    # Standardize this confusing affix
+    if 'damage taken goes to mana' in line[2]:
+        line[2] = line[2].replace('damage taken goes to mana', 'Damage Taken Gained as Mana when Hit')
     # Split up the comma-separated list of item-types
     affects = [t.strip() for t in line[3].split(',')]
     # Toss the old item-types column
@@ -59,46 +62,8 @@ for line in fh:
 
 
 # Print out the new affix lists.
-
 print(new_header)
 for f, affixes in affix_lists.items():
     category = '{}\t{}\t'.format(descriptions_by_filter[f], f)
     for affix in affixes:
         print(category+affix)
-
-
-sys.exit()
-
-
-
-lines = [line.strip('\n').split('\t') for line in fh]
-
-by_type = {}
-
-
-
-
-for line in lines:
-    affects = [t.strip() for t in line[3].split(',')]
-    new_line = line[:3]+line[4:]
-    for t in affects:
-        if t in replacements:
-            t = replacements[t]
-        try:
-            by_type[t].append(new_line)
-        except KeyError:
-            by_type[t] = [new_line]
-
-types = sorted(list(by_type.keys()))
-for t in types:
-    print(t)
-sys.exit()
-                
-new_header = '\t'.join(header[:3]+header[4:])
-for t, affixes in by_type.items():
-    print(t)
-    print(new_header)
-    for affix in affixes:
-        print('\t'.join(affix))
-    print()
-
