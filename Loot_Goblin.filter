@@ -3592,12 +3592,48 @@ ItemDisplay[STAFF RARE !ID FILTLVL<6]: %NAME%
 // Damage		%RED%
 // Damage Effects	%CORAL%
 // Elemental Damage	%ORANGE%
-// Resistances		%PURPLE%
+// Resistances/EDR	%PURPLE%
 // HP/MP		%BLUE%
+// Defense/Block/PDR	%TEAL%
 // Stats		%DARK_GREEN%
-// Utility		%TEAL%
 // Other		%SAGE%
 //--------------------------------
+
+//----------------------------------------------------------------------------------------------------------------
+// Point system for Belts
+//----------------------------------------------------------------------------------------------------------------
+
+// Close: Show max theoretical points.
+ItemDisplay[BELT RARE]: %NAME%{%LIGHT_GRAY%•••••••••%NL%%NAME%}%CONTINUE%
+
+// Prefixes
+// Resistances (1 pt each)
+ItemDisplay[BELT RARE (FRES+CRES+LRES+PRES>22)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BELT RARE (FRES+CRES+LRES+PRES>45)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BELT RARE (FRES+CRES+LRES+PRES>67)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Defense (1 pt)
+ItemDisplay[BELT RARE ED>100]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// Suffixes
+// # Faster Cast Rate (2 pts)
+ItemDisplay[BELT RARE FCR>4]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BELT RARE FCR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Faster Hit Recovery (2 pts)
+ItemDisplay[BELT RARE FHR>11]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BELT RARE FHR>23]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Physical Damage Taken Reduced (2 pts)
+ItemDisplay[BELT RARE STAT36>4]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[BELT RARE STAT36>8]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Life (2 pts)
+ItemDisplay[BELT RARE LIFE>46]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[BELT RARE LIFE>73]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Strength (1 pt)
+ItemDisplay[BELT RARE STR>15]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+// # Extra Gold (1 pt)
+ItemDisplay[BELT RARE GFIND>51]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+//Open
+ItemDisplay[BELT RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Jewels
@@ -3719,13 +3755,13 @@ ItemDisplay[amu RARE FCR>0]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 ItemDisplay[amu RARE MINDMG+MAXDMG>7]: %NAME%{%NAME%%RED%•}%CONTINUE% // High single or 2 low
 ItemDisplay[amu RARE MINDMG+MAXDMG>14]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 Affixes
 ItemDisplay[amu RARE MINDMG+MAXDMG>20]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 High rolls
-// # Damage Taken Reduced
-ItemDisplay[amu RARE STAT34+STAT35>9]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-ItemDisplay[amu RARE STAT34+STAT35>18]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 // # Half Freeze Duration
 ItemDisplay[amu RARE STAT118]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 // # Poison Length Reduced
 ItemDisplay[amu RARE STAT110>65]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Damage Taken Reduced
+ItemDisplay[amu RARE STAT35>10]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[amu RARE STAT34>10]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 // # Life
 ItemDisplay[amu RARE LIFE>30]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 ItemDisplay[amu RARE LIFE>45]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
@@ -3737,7 +3773,7 @@ ItemDisplay[amu RARE STAT62>4]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 ItemDisplay[amu RARE STR+DEX>20]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
 ItemDisplay[amu RARE STR+DEX>40]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
 // # Teleport Charges
-ItemDisplay[amu RARE CHSK54>0]: %NAME%{%NAME%%TEAL%••}%CONTINUE%
+ItemDisplay[amu RARE CHSK54>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
 // # Attack Rating
 ItemDisplay[amu RARE AR>120]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Magic & Gold Find
@@ -3780,11 +3816,11 @@ ItemDisplay[rin RARE FCR>0]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 ItemDisplay[rin RARE MINDMG+MAXDMG>7]: %NAME%{%NAME%%RED%•}%CONTINUE% // High single or 2 low
 ItemDisplay[rin RARE MINDMG+MAXDMG>14]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 Affixes
 ItemDisplay[rin RARE MINDMG+MAXDMG>20]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 High rolls
-// # Damage Taken Reduced
-ItemDisplay[rin RARE STAT34+STAT35>5]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-ItemDisplay[rin RARE STAT34+STAT35>10]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 // # Half Freeze Duration
 ItemDisplay[rin RARE STAT118]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Damage Taken Reduced
+ItemDisplay[rin RARE STAT35>5]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[rin RARE STAT34>5]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 // # Life
 ItemDisplay[rin RARE LIFE>20]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 ItemDisplay[rin RARE LIFE>30]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
@@ -3838,14 +3874,14 @@ ItemDisplay[(aqv OR cqv) RARE STAT86>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Total Resistances (Based off >9 AllRes) (1 pt)
 ItemDisplay[(aqv OR cqv) RARE (FRES+CRES+LRES+PRES>36)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 // # Knockback (1 pt)
-ItemDisplay[(aqv OR cqv) RARE STAT81]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[(aqv OR cqv) RARE STAT81]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 // Suffixes
 // # Increase Attack Speed (2 pts)
 ItemDisplay[(aqv OR cqv) RARE IAS>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 ItemDisplay[(aqv OR cqv) RARE IAS>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 // # % Pierce (2 pt)
-ItemDisplay[(aqv OR cqv) RARE STAT156>17]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[(aqv OR cqv) RARE STAT156>17]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Elemental Damage (1 pt each)
 ItemDisplay[(aqv OR cqv) RARE SUFFIX48+SUFFIX49>259]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
 ItemDisplay[(aqv OR cqv) RARE SUFFIX50+SUFFIX51>204]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
@@ -3971,8 +4007,9 @@ ItemDisplay[MAG cm3 (MFIND>9 OR GFIND>29)]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 //Open
 ItemDisplay[MAG (cm1 OR cm2 OR cm3)]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 
-
-//Sum all res sources
+//----------------------------------------------------------------------------------------------------------------
+// Show sum of all res sources
+//----------------------------------------------------------------------------------------------------------------
 ItemDisplay[(FRES+CRES+LRES+PRES>30) (FRES+CRES+LRES+PRES<41)]: %NAME%{%GRAY%RES>30%NL%%NAME%}%CONTINUE%
 ItemDisplay[(FRES+CRES+LRES+PRES>40) (FRES+CRES+LRES+PRES<51)]: %NAME%{%GRAY%RES>40%NL%%NAME%}%CONTINUE%
 ItemDisplay[(FRES+CRES+LRES+PRES>50) (FRES+CRES+LRES+PRES<61)]: %NAME%{%BLUE%RES>50%NL%%NAME%}%CONTINUE%
@@ -3985,7 +4022,7 @@ ItemDisplay[(FRES+CRES+LRES+PRES>110) (FRES+CRES+LRES+PRES<121)]: %NAME%{%GOLD%R
 ItemDisplay[(FRES+CRES+LRES+PRES>120) (FRES+CRES+LRES+PRES<131)]: %NAME%{%GOLD%RES>120%NL%%NAME%}%CONTINUE%
 ItemDisplay[FRES+CRES+LRES+PRES>130]: %NAME%{%GOLD%RES>130%NL%%NAME%}%CONTINUE%
 
-
+//----------------------------------------------------------------------------------------------------------------
 //Notes about socketing recipes
 ItemDisplay[CHEST !INF !SUP SOCK=0 NMAG !SHOP]: %NAME%{%WHITE%This Item, %ORANGE%Tal%WHITE%, %ORANGE%Thul%WHITE%, Perf %YELLOW%O%CL%%TAN%Note%WHITE%: Socketing Recipe:}%CONTINUE%
 ItemDisplay[(WEAPON AND !THROWPOTS) !INF !SUP SOCK=0 NMAG !SHOP]: %NAME%{%WHITE%This Item, %ORANGE%Ral%WHITE%, %ORANGE%Amn%WHITE%, Perf %PURPLE%O%CL%%TAN%Note%WHITE%: Socketing Recipe:}%CONTINUE%
@@ -4134,8 +4171,8 @@ ItemDisplay[(ARMOR OR WEAPON) !leg SOCK>1 NMAG !RW !SHOP]:%NAME%{%WHITE%Look at 
 
 //Notes for upgrading
 //Recipes
-ItemDisplay[ARMOR NORM RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O}%CONTINUE%
-ItemDisplay[ARMOR EXC RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Pul%WHITE%, Perf %PURPLE%O}%CONTINUE%
+ItemDisplay[ARMOR NORM RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O%NL%%NAME%}%CONTINUE%
+ItemDisplay[ARMOR EXC RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Pul%WHITE%, Perf %PURPLE%O%NL%%NAME%}%CONTINUE%
 ItemDisplay[WEAPON NORM RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ort%WHITE%, %ORANGE%Amn%WHITE%, Perf %BLUE%O}%CONTINUE%
 ItemDisplay[WEAPON EXC RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Fal%WHITE%, %ORANGE%Um%WHITE%, Perf %BLUE%O}%CONTINUE%
 ItemDisplay[ARMOR NORM CRAFT ID]: %NAME%{%ORANGE%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O}%CONTINUE%
