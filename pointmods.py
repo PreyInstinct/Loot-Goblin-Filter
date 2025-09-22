@@ -91,14 +91,27 @@ class Skill(object):
 
         # Begin constructing different conditions for highlighting/tagging.
 
+
         # If there is a non-prime skill bonus AND no prime skill bonus, use gray braces.
         subprime = []
-        # If any prime skill is 1 or greater AND no prime skill is 4 or greater, use blue braces.
+
+        # MAG/RARE item conditions
+        # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
         prime1 = []
+        # If any prime skill is 3 or greater AND no prime skill is 4 or greater, use blue braces.
+        prime3 = []
         # If any prime skill is 4 AND no prime skill is 5 or greater, use yellow braces.
         prime4 = []
         # If any prime skill is 5 or greater, use gold braces.
         prime5 = []
+
+        # NMAG conditions
+        # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
+        # If any prime skill is 3 AND the total number of points is not greater than 5, use blue braces.
+        sksum = ''
+        # If any prime skill is 3 AND the total number of points is 6-7, use yellow braces.
+        # If any prime skill is 3 AND the total number of points is 8-9, use gold braces.
+
         # Else, there are no skills so no need for braces.
 
         for tree, skills in groups.items():
@@ -110,56 +123,101 @@ class Skill(object):
                 tree = tree.parent
 
             # Construct the summation giving the total of each skill
-            sum_ancestors = '+'.join([s.mID for s in ancestors])
+            sum_ancestors = '+'.join([s.mID for s in ancestors])  # Note that this will = 0 for NMAG items.
             sum_primes = [sum_ancestors+'+'+s.mID for s in primes]
             sum_nonprimes = [sum_ancestors+'+'+s.mID for s in nonprimes]
+
+            # Construct the summation giving the total of all single skills
+            sksum += '+'.join([s.mID for s in primes+nonprimes])
 
             # Construct the conditionals for this tree
             if nonprimes:
                 subprime.append(' OR '.join([s+'>0' for s in sum_nonprimes]))
             if primes:
                 prime1.append(' OR '.join([s+'>0' for s in sum_primes]))
+                prime3.append(' OR '.join([s+'>2' for s in sum_primes]))
                 prime4.append(' OR '.join([s+'>3' for s in sum_primes]))
                 prime5.append(' OR '.join([s+'>4' for s in sum_primes]))
 
-        # Combine conditionals for all trees to give a single long chain of ORs
-        full_subprime = ' OR '.join(subprime)
-        full_prime1 = ' OR '.join(prime1)
-        full_prime4 = ' OR '.join(prime4)
-        full_prime5 = ' OR '.join(prime5)
+        # Combine conditionals for all trees to give a single long chain of ORs.
+        # Create aliases for these to reduce the length of these blocks a little.
+        alias_template = 'Alias[{}]: ({})\n'
+        sksum_template = 'Alias[{}]: ({}>{})\n'
+        aliases = (alias_template.format('SUBPRIME', ' OR '.join(subprime)) + \
+                   alias_template.format('PRIME1', ' OR '.join(subprime)) + \
+                   alias_template.format('PRIME3', ' OR '.join(prime3)) + \
+                   alias_template.format('PRIME4', ' OR '.join(prime4)) + \
+                   alias_template.format('PRIME5', ' OR '.join(prime5)) + \
+                   sksum_template.format('SKSUM6', sksum, '5') + \
+                   sksum_template.format('SKSUM8', sksum, '7'))
 
         # If there is a non-prime skill bonus AND no prime skill bonus, use gray braces.
-        gray_braces = '('+full_subprime+') AND !('+full_prime1+')'
-        # If any prime skill is 1 or greater AND no prime skill is 4 or greater, use blue braces.
-        blue_braces = '('+full_prime1+') AND !('+full_prime4+')'
+        gray_braces = 'SUBPRIME !PRIME1'
+
+        # MAG/RARE item conditions
+        # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
+        white_braces = '!NMAG PRIME1 !PRIME3'
+        # If any prime skill is 3 or greater AND no prime skill is 4 or greater, use blue braces.
+        blue_braces = '!NMAG PRIME3 !PRIME4'
         # If any prime skill is 4 AND no prime skill is 5 or greater, use yellow braces.
-        yellow_braces = '('+full_prime4+') AND !('+full_prime5+')'
+        yellow_braces = '!NMAG PRIME4 !PRIME5'
         # If any prime skill is 5 or greater, use gold braces.
-        gold_braces = '('+full_prime5+')'
+        gold_braces = '!NMAG PRIME5'
+
+        # NMAG conditions
+        # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
+        nm_white_braces = 'NMAG PRIME1 !PRIME3'
+        # If any prime skill is 3 AND the total number of points is not greater than 5, use blue braces.
+        nm_blue_braces = 'NMAG PRIME3 !SKSUM6'
+        # If any prime skill is 3 AND the total number of points is 6-7, use yellow braces.
+        nm_yellow_braces = 'NMAG PRIME3 SKSUM6 !SKSUM8'
+        # If any prime skill is 3 AND the total number of points is 8-9, use gold braces.
+        nm_gold_braces = 'NMAG PRIME3 SKSUM8'
+        
         # Else, there are no skills so no need for braces.
 
         # Construct the filter statements to open and close braces.
         open_brace_template = 'ItemDisplay[{}]: {}{{%NAME%%CONTINUE%\n'
         close_brace_template = 'ItemDisplay[{}]: {}}}%NAME%%CONTINUE%\n'
         openers = (open_brace_template.format(gray_braces, '%GRAY%') + \
+                   open_brace_template.format(white_braces, '%WHITE%') + \
+                   open_brace_template.format(nm_white_braces, '%WHITE%') + \
                    open_brace_template.format(blue_braces, '%BLUE%') + \
+                   open_brace_template.format(nm_blue_braces, '%BLUE%') + \
                    open_brace_template.format(yellow_braces, '%YELLOW%') + \
-                   open_brace_template.format(gold_braces, '%GOLD%') )
+                   open_brace_template.format(nm_yellow_braces, '%YELLOW%') + \
+                   open_brace_template.format(gold_braces, '%GOLD%') + 
+                   open_brace_template.format(nm_gold_braces, '%GOLD%') )
         closers = (close_brace_template.format(gray_braces, '%GRAY%') + \
+                   close_brace_template.format(white_braces, '%WHITE%') + \
+                   close_brace_template.format(nm_white_braces, '%WHITE%') + \
                    close_brace_template.format(blue_braces, '%BLUE%') + \
+                   close_brace_template.format(nm_blue_braces, '%BLUE%') + \
                    close_brace_template.format(yellow_braces, '%YELLOW%') + \
-                   close_brace_template.format(gold_braces, '%GOLD%') )
+                   close_brace_template.format(nm_yellow_braces, '%YELLOW%') + \
+                   close_brace_template.format(gold_braces, '%GOLD%') + \
+                   close_brace_template.format(nm_gold_braces, '%GOLD%') )
+
+        # Construct the filter statements to hide NMAG items at higher stictness.
+        hide_template = 'ItemDisplay[{}]:\n'
+        hiders = (hide_template.format('NMAG CLASS !PRIME1 FILTLVL>1') + \
+                  hide_template.format('NMAG PRIME1 !PRIME3 FILTLVL>3') + \
+                  hide_template.format('NMAG PRIME3 !SKSUM6 FILTLVL>5') + \
+                  hide_template.format('NMAG PRIME3 !SKSUM8 FILTLVL>7') )
         
         print("// Skill Modifiers (aka pointmods) in a separate bracket")
         print()
+        print(aliases)
+        print("// Hide non-magic bases with poor rolls based on strictness")
+        print(hiders)
         # Start with bracket closers because things are constructed backwards
-        print(" // Close bracket")
+        print("// Close bracket")
         print(closers)
         # Fill the space between the brackets with the pointmods, working backwards
         for skill in self.bottom_up():
             skill.print_filter_block()
         # Close the block with the opening brackets
-        print(" // Open bracket")
+        print("// Open bracket")
         print(openers)
 
 
