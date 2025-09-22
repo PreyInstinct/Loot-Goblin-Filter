@@ -3615,12 +3615,106 @@ ItemDisplay[STAFF RARE !ID FILTLVL<6]: %NAME%
 // Damage		%RED%
 // Damage Effects	%CORAL%
 // Elemental Damage	%ORANGE%
-// Resistances/EDR	%PURPLE%
+// Resistances/MDR	%PURPLE%
 // HP/MP		%BLUE%
 // Defense/Block/PDR	%TEAL%
 // Stats		%DARK_GREEN%
 // Other		%SAGE%
+// Ethereal/repair	%GRAY%
 //--------------------------------
+
+//----------------------------------------------------------------------------------------------------------------
+// Point system for Chests
+//----------------------------------------------------------------------------------------------------------------
+
+// Close: Show max theoretical points.
+ItemDisplay[CHEST RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••%NL%%NAME%}%CONTINUE%
+
+// Prefixes
+// # Skills (1 pt)
+ItemDisplay[CHEST RARE (CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// # Enhanced Damage (2 pts)
+ItemDisplay[CHEST RARE EDAM>100]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[CHEST RARE EDAM>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Resistances (5 pts total)
+ItemDisplay[CHEST RARE (FRES+CRES+LRES+PRES>33)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[CHEST RARE (FRES+CRES+LRES+PRES>66)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[CHEST RARE (FRES+CRES+LRES+PRES>100)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[CHEST RARE (FRES+CRES+LRES+PRES>133)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[CHEST RARE (FRES+CRES+LRES+PRES>166)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// Life after each Kill (1 pt)
+ItemDisplay[CHEST RARE STAT86>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// Mana after each Kill (1 pt)
+ItemDisplay[CHEST RARE STAT138>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Defense (2 pt)
+ItemDisplay[CHEST RARE EDEF>80]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[CHEST RARE EDEF>140]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Socketed
+ItemDisplay[CHEST RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Suffixes
+// # Faster Cast Rate (2 pts)
+ItemDisplay[CHEST RARE FCR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[CHEST RARE FCR>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Faster Hit Recovery (2 pts)
+ItemDisplay[CHEST RARE FHR>11]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[CHEST RARE FHR>23]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Magic Damage Taken Reduced (0 pts - max is very low)
+ItemDisplay[CHEST RARE STAT35>11]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Poison Length Reduced (1 pt)
+ItemDisplay[CHEST RARE STAT110>49]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Life (3 pts)
+ItemDisplay[CHEST RARE LIFE>40]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[CHEST RARE LIFE>80]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[CHEST RARE STAT216>0]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Physical Damage Taken Reduced (2 pts each)
+ItemDisplay[CHEST RARE STAT34>11]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[CHEST RARE STAT34>18]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[CHEST RARE STAT36>6]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[CHEST RARE STAT36>13]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Strength & Dexterity (1 pt each)
+ItemDisplay[CHEST RARE STR+DEX>20]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+ItemDisplay[CHEST RARE STR+DEX>40]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+// # Requirements (1 pt)
+ItemDisplay[CHEST RARE STAT91>15]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// # Ethereal & Self-repair (2 pts)
+ItemDisplay[CHEST RARE ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
+
+//Open
+ItemDisplay[CHEST RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+
+
+//----------------------------------------------------------------------------------------------------------------
+// Point system for Boots
+//----------------------------------------------------------------------------------------------------------------
+
+// Close: Show max theoretical points.
+ItemDisplay[BOOTS RARE]: %NAME%{%LIGHT_GRAY%•••••••%NL%%NAME%}%CONTINUE%
+
+// Prefixes
+// # Resistances (1 pt each)
+ItemDisplay[BOOTS RARE (FRES+CRES+LRES+PRES>30)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BOOTS RARE (FRES+CRES+LRES+PRES>60)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BOOTS RARE (FRES+CRES+LRES+PRES>90)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Defense (1 pt)
+ItemDisplay[BOOTS RARE ED>100]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// Suffixes
+// # Faster Run/Walk (2 pts)
+ItemDisplay[BOOTS RARE FRW>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BOOTS RARE FRW>29]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Faster Hit Recovery (1 pt)
+ItemDisplay[BOOTS RARE FHR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Half Freeze Duration (1 pt)
+ItemDisplay[BOOTS RARE STAT118]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Dexterity (1 pt)
+ItemDisplay[BOOTS RARE DEX>12]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+// # Magic & Gold Find (1 pt each)
+ItemDisplay[BOOTS RARE MFIND>19]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[BOOTS RARE GFIND>60]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+//Open
+ItemDisplay[BOOTS RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Gloves
@@ -3643,7 +3737,7 @@ ItemDisplay[GLOVES RARE]: %NAME%{%LIGHT_GRAY%••••••••%NL%%NAME%}%CONTINUE%
 ItemDisplay[GLOVES RARE (TABSK0>0 OR TABSK2>0 OR TABSK50>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 ItemDisplay[GLOVES RARE (TABSK0>1 OR TABSK2>1 OR TABSK50>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 ItemDisplay[GLOVES RARE (TABSK1>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-// Resistances (1 pt each)
+// # Resistances (1 pt each)
 ItemDisplay[GLOVES RARE (FRES+CRES+LRES+PRES>22)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 ItemDisplay[GLOVES RARE (FRES+CRES+LRES+PRES>45)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 ItemDisplay[GLOVES RARE (FRES+CRES+LRES+PRES>67)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
@@ -3653,7 +3747,7 @@ ItemDisplay[GLOVES RARE ED>100]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 ItemDisplay[GLOVES RARE AR>80]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 // Suffixes
-// Increased Attack Speed (2 pts)
+// # Increased Attack Speed (2 pts)
 ItemDisplay[GLOVES RARE IAS>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 ItemDisplay[GLOVES RARE IAS>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 // # Faster Cast Rate (2 pts)
@@ -3670,7 +3764,7 @@ ItemDisplay[GLOVES RARE STR+DEX>12]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
 ItemDisplay[GLOVES RARE STR+DEX>24]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
 // # Magic & Gold Find (1 pt each)
 ItemDisplay[GLOVES RARE MFIND>19]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
-ItemDisplay[GLOVES RARE GFIND>51]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[GLOVES RARE GFIND>60]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 //Open
 ItemDisplay[GLOVES RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
@@ -3683,7 +3777,7 @@ ItemDisplay[GLOVES RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 ItemDisplay[BELT RARE]: %NAME%{%LIGHT_GRAY%•••••••••%NL%%NAME%}%CONTINUE%
 
 // Prefixes
-// Resistances (1 pt each)
+// # Resistances (1 pt each)
 ItemDisplay[BELT RARE (FRES+CRES+LRES+PRES>22)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 ItemDisplay[BELT RARE (FRES+CRES+LRES+PRES>45)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 ItemDisplay[BELT RARE (FRES+CRES+LRES+PRES>67)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%

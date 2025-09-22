@@ -14,18 +14,36 @@ A point represents a well rolled affix - either a rare/highly sought after affix
 
 Points are color coded by their broad utility class. Since you are usually trying to min-max your build, lots of the same or similar colored points will probably be better than "rainbow" arrays, but if something has a lot of points of any color on it you should probably take a look and assess for yourself.
 
-|Category           |Color      |Description                   |
-|-------------------|-----------|------------------------------|
-|Skills             |Gold       |Includes +% elemental damage  |
-|Speed              |Yellow     |IAS, FHR, FCR, FBR            |
-|Physical Damage    |Red        |% ED and flat min/max         |
-|Elemental Damage   |Orange     |Flat elemental/magic damage   |
-|Damage Effects     |Coral      |CB, DS, wounds, etc           |
-|Damage Reduction   |Purple     |Includes resistances & PDR    |
-|HP/MP              |Blue       |HP/MP, LL/ML, LaeK/MaeK       |
-|Abilities          |Dark Green |Str, Dex, Vit, Ene            |
-|Utility            |Teal       |Pierce, tele charges, etc     |
-|Other              |Sage       |                              |
+|Category           |Color      |Description                        |
+|-------------------|-----------|-----------------------------------|
+|Skills             |Gold       |Includes +% elemental damage       |
+|Speed              |Yellow     |IAS, FHR, FCR, FBR                 |
+|Physical Damage    |Red        |% ED and flat min/max              |
+|Damage Effects     |Coral      |CB, DS, wounds, etc                |
+|Elemental Damage   |Orange     |Flat elemental/magic damage        |
+|Magic Protection   |Purple     |Resistances & Magic Damage Reduced |
+|HP/MP              |Blue       |HP/MP, LL/ML, LaeK/MaeK            |
+|Physical Protection|Teal       |Defense, Block, & PDR              |
+|Statistics         |Dark Green |Str, Dex, Vit, Ene                 |
+|Other              |Sage       |AR, pierce, tele charges, etc      |
+
+Point systems are currently implemented for:
+ - Charms
+ - Quivers
+ - Jewels
+ - Rings
+ - Amulets
+ - Rare Gloves
+ - Rare Belts
+ - Rare Boots
+ - Rare Chests
+
+## Magic Item Callouts
+
+Some magic items with useful affix combinations have their names completely changed and colored to draw attention to them. This is similar to Kryszard's "Shop Hunting" tips, but puts the information right at the top. Right now my approach is a little bespoke depending on the item type, so I may unify the style in the future. It should be easy to spot the following, though:
+ - +3 skill gloves (w & w/o IAS)
+ - +3 skill amulets (w & w/o good combo affixes)
+ - Allres & FCR/DMG magic rings
 
 ## Skill Tags (Pointmods)
 
@@ -56,9 +74,17 @@ Last, the braces themselves use the same rarity colors to denote potentially des
 
 First, I categorized the skills into a few types - most importantly "primary" skills, which are those skills that some build is likely to spam or try to maximize. You can see all the categorizations in All.skills. My knowledge is not encyclopedic, and I welcome suggestions for recategorization.
 
+For non-magic items (i.e. class-focused bases), the bonus to a primary skill and the total value of pointmods determines the color of the {braces}.
+ - Gray: The item only has bonuses to non-primary skills, even if those bonuses are large.
+ - White: +1-+2 in a primary skill.
+ - Blue: +3 in a primary skill and a total of +3-5.
+ - Yellow: +3 in a primary skill and a total of +6-7.
+ - Gold: +3 in a primary skill and a total of +7-8.
+
 Next, the highest total bonus to a primary skill determines the color of the {braces}.
  - Gray: The item only has bonuses to non-primary skills, even if those bonuses are large.
- - Blue: +1-3 in a primary skill.
+ - White: +1-2 in a primary skill.
+ - Blue: +3 in a primary skill.
  - Yellow: +4 in a primary skill.
  - Gold: +5 or greater in a primary skill.
 
