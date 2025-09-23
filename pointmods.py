@@ -144,7 +144,7 @@ class Skill(object):
         alias_template = 'Alias[{}]: ({})\n'
         sksum_template = 'Alias[{}]: ({}>{})\n'
         aliases = (alias_template.format('SUBPRIME', ' OR '.join(subprime)) + \
-                   alias_template.format('PRIME1', ' OR '.join(subprime)) + \
+                   alias_template.format('PRIME1', ' OR '.join(prime1)) + \
                    alias_template.format('PRIME3', ' OR '.join(prime3)) + \
                    alias_template.format('PRIME4', ' OR '.join(prime4)) + \
                    alias_template.format('PRIME5', ' OR '.join(prime5)) + \
@@ -200,7 +200,7 @@ class Skill(object):
 
         # Construct the filter statements to hide NMAG items at higher stictness.
         hide_template = 'ItemDisplay[{}]:\n'
-        hiders = (hide_template.format('NMAG CLASS !PRIME1 FILTLVL>1') + \
+        hiders = (hide_template.format('NMAG (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON) !PRIME1 FILTLVL>1') + \
                   hide_template.format('NMAG PRIME1 !PRIME3 FILTLVL>3') + \
                   hide_template.format('NMAG PRIME3 !SKSUM6 FILTLVL>5') + \
                   hide_template.format('NMAG PRIME3 !SKSUM8 FILTLVL>7') )
