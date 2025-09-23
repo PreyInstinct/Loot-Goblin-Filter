@@ -146,177 +146,177 @@ Alias[ANYSTAFFEQ9]: (MULTI107,251+MULTI107,252+MULTI107,253+MULTI107,254+MULTI10
 
 // Abbreviate names of items with automods to prevent truncation of long names.
 
-ItemDisplay[!UNI !RWclb]: Club{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWspc]: Spiked Club{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdgr]: Dagger{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdir]: Dirk{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWkri]: Kris{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbld]: Blade{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam5]: Maiden Javelin{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam3]: Maiden Spear{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam4]: Maiden Pike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam1]: Stag Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam2]: Reflex Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWktr]: Katar{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWwrb]: Wrist Blade{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWaxf]: Hatchet Hands{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWces]: Cestus{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWclw]: Claws{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbtl]: Blade Talons{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWskr]: Scissors Katar{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWscp]: Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWgsc]: Grand Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWwsp]: War Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWsst]: Short Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWlst]: Long Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWcst]: Gnarled Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbst]: Battle Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWwst]: War Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWwnd]: Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWywn]: Yew Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbwn]: Bone Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWgwn]: Grim Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob1]: Eagle Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob2]: Sacred Globe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob3]: Smoked Sphere{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob4]: Clasped Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob5]: Jared's Stone{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9cl]: Cudgel{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9sp]: Barbed Club{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9dg]: Poignard{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9di]: Rondel{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9kr]: Cinquedeas{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9bl]: Stiletto{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWama]: Ceremonial Javelin{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam8]: Ceremonial Spear{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam9]: Ceremonial Pike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam6]: Ashwood Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWam7]: Ceremonial Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9ar]: Quhab{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9wb]: Wrist Spike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9xf]: Fascia{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9cs]: Hand Scythe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9lw]: Greater Claws{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9tw]: Greater Talons{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9qr]: Scissors Quhab{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9sc]: Rune Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9qs]: Holy Water Sprinkler{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9ws]: Divine Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW8ss]: Jo Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW8ls]: Quarterstaff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW8cs]: Cedar Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW8bs]: Gothic Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW8ws]: Rune Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9wn]: Burnt Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9yw]: Petrified Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9bw]: Tomb Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW9gw]: Grave Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob6]: Glowing Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob7]: Crystalline Globe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob8]: Cloudy Sphere{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWob9]: Sparkling Ball{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWoba]: Swirling Crystal{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7cl]: Truncheon{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7sp]: Tyrant Club{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7dg]: Bone Knife{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7di]: Mithril Point{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7kr]: Fanged Knife{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7bl]: Legend Spike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWamf]: Matriarchal Javelin{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWamd]: Matriarchal Spear{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWame]: Matriarchal Pike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWamb]: Matriarchal Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWamc]: Grand Matron Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7ar]: Suwayyah{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7wb]: Wrist Sword{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7xf]: War Fist{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7cs]: Battle Cestus{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7lw]: Feral Claws{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7tw]: Runic Talons{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7qr]: Scissors Suwayyah{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7sc]: Mighty Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7qs]: Seraph Rod{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7ws]: Caduceus{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW6ss]: Walking Stick{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW6ls]: Stalagmite{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW6cs]: Elder Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW6bs]: Shillelagh{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW6ws]: Archon Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7wn]: Polished Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7yw]: Ghost Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7bw]: Lich Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW7gw]: Unearthed Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWobb]: Heavenly Stone{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWobc]: Eldritch Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWobd]: Demon Heart{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWobe]: Vortex Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWobf]: Dimensional Shard{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWspk]: Spiked Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbsh]: Bone Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa1]: Targe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa2]: Rondache{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa3]: Heraldic Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa4]: Aerin Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa5]: Crown Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne1]: Preserved Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne2]: Zombie Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne3]: Unraveller Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne4]: Gargoyle Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne5]: Demon Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr1]: Wolf Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr2]: Hawk Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr3]: Antlers{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr4]: Falcon Mask{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr5]: Spirit Mask{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba1]: Jawbone Cap{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba2]: Fanged Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba3]: Horned Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba4]: Assault Helmet{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba5]: Avenger Guard{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWxpk]: Barbed Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWxsh]: Grim Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa6]: Akaran Targe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa7]: Akaran Rondache{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa8]: Protector Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpa9]: Gilded Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpaa]: Royal Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne6]: Mummified Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne7]: Fetish Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne8]: Sexton Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWne9]: Cantor Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWnea]: Heirophant Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr6]: Alpha Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr7]: Griffon Headress{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr8]: Hunter's Guise{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdr9]: Sacred Feathers{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdra]: Totemic Mask{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba6]: Jawbone Visor{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba7]: Lion Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba8]: Rage Mask{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWba9]: Savage Helmet{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbaa]: Slayer Guard{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWupk]: Blade Barrier{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWush]: Troll Nest{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpab]: Sacred Targe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpac]: Sacred Rondache{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpad]: Kurast Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpae]: Zakarum Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWpaf]: Vortex Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWneb]: Minion Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWneg]: Hellspawn Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWned]: Overseer Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWnee]: Succubus Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWnef]: Bloodlord Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdrb]: Blood Spirt{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdrc]: Sun Spirit{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdrd]: Earth Spirit{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdre]: Sky Spirit{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWdrf]: Dream Spirit{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbab]: Carnage Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbac]: Fury Visor{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbad]: Destroyer Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbae]: Conquerer Crown{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RWbaf]: Guardian Crown{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW clb]: Club{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW spc]: Spiked Club{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dgr]: Dagger{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dir]: Dirk{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW kri]: Kris{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW bld]: Blade{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am5]: Maiden Javelin{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am3]: Maiden Spear{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am4]: Maiden Pike{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am1]: Stag Bow{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am2]: Reflex Bow{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ktr]: Katar{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW wrb]: Wrist Blade{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW axf]: Hatchet Hands{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ces]: Cestus{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW clw]: Claws{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW btl]: Blade Talons{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW skr]: Scissors Katar{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW scp]: Scepter{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW gsc]: Grand Scepter{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW wsp]: War Scepter{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW sst]: Short Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW lst]: Long Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW cst]: Gnarled Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW bst]: Battle Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW wst]: War Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW wnd]: Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ywn]: Yew Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW bwn]: Bone Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW gwn]: Grim Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob1]: Eagle Orb{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob2]: Sacred Globe{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob3]: Smoked Sphere{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob4]: Clasped Orb{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob5]: Jared's Stone{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9cl]: Cudgel{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9sp]: Barbed Club{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9dg]: Poignard{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9di]: Rondel{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9kr]: Cinquedeas{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9bl]: Stiletto{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ama]: Ceremonial Javelin{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am8]: Ceremonial Spear{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am9]: Ceremonial Pike{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am6]: Ashwood Bow{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW am7]: Ceremonial Bow{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9ar]: Quhab{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9wb]: Wrist Spike{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9xf]: Fascia{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9cs]: Hand Scythe{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9lw]: Greater Claws{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9tw]: Greater Talons{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9qr]: Scissors Quhab{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9sc]: Rune Scepter{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9qs]: Holy Water Sprinkler{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9ws]: Divine Scepter{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 8ss]: Jo Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 8ls]: Quarterstaff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 8cs]: Cedar Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 8bs]: Gothic Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 8ws]: Rune Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9wn]: Burnt Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9yw]: Petrified Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9bw]: Tomb Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 9gw]: Grave Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob6]: Glowing Orb{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob7]: Crystalline Globe{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob8]: Cloudy Sphere{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ob9]: Sparkling Ball{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW oba]: Swirling Crystal{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7cl]: Truncheon{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7sp]: Tyrant Club{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7dg]: Bone Knife{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7di]: Mithril Point{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7kr]: Fanged Knife{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7bl]: Legend Spike{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW amf]: Matriarchal Javelin{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW amd]: Matriarchal Spear{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ame]: Matriarchal Pike{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW amb]: Matriarchal Bow{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW amc]: Grand Matron Bow{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7ar]: Suwayyah{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7wb]: Wrist Sword{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7xf]: War Fist{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7cs]: Battle Cestus{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7lw]: Feral Claws{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7tw]: Runic Talons{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7qr]: Scissors Suwayyah{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7sc]: Mighty Scepter{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7qs]: Seraph Rod{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7ws]: Caduceus{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 6ss]: Walking Stick{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 6ls]: Stalagmite{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 6cs]: Elder Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 6bs]: Shillelagh{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 6ws]: Archon Staff{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7wn]: Polished Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7yw]: Ghost Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7bw]: Lich Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW 7gw]: Unearthed Wand{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW obb]: Heavenly Stone{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW obc]: Eldritch Orb{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW obd]: Demon Heart{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW obe]: Vortex Orb{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW obf]: Dimensional Shard{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW spk]: Spiked Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW bsh]: Bone Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa1]: Targe{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa2]: Rondache{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa3]: Heraldic Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa4]: Aerin Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa5]: Crown Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne1]: Preserved Head{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne2]: Zombie Head{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne3]: Unraveller Head{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne4]: Gargoyle Head{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne5]: Demon Head{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr1]: Wolf Head{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr2]: Hawk Helm{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr3]: Antlers{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr4]: Falcon Mask{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr5]: Spirit Mask{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba1]: Jawbone Cap{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba2]: Fanged Helm{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba3]: Horned Helm{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba4]: Assault Helmet{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba5]: Avenger Guard{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW xpk]: Barbed Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW xsh]: Grim Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa6]: Akaran Targe{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa7]: Akaran Rondache{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa8]: Protector Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pa9]: Gilded Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW paa]: Royal Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne6]: Mummified Trophy{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne7]: Fetish Trophy{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne8]: Sexton Trophy{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ne9]: Cantor Trophy{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW nea]: Heirophant Trophy{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr6]: Alpha Helm{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr7]: Griffon Headress{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr8]: Hunter's Guise{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dr9]: Sacred Feathers{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dra]: Totemic Mask{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba6]: Jawbone Visor{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba7]: Lion Helm{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba8]: Rage Mask{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ba9]: Savage Helmet{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW baa]: Slayer Guard{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW upk]: Blade Barrier{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ush]: Troll Nest{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pab]: Sacred Targe{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pac]: Sacred Rondache{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pad]: Kurast Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW pae]: Zakarum Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW paf]: Vortex Shield{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW neb]: Minion Skull{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW neg]: Hellspawn Skull{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW ned]: Overseer Skull{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW nee]: Succubus Skull{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW nef]: Bloodlord Skull{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW drb]: Blood Spirt{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW drc]: Sun Spirit{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW drd]: Earth Spirit{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW dre]: Sky Spirit{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW drf]: Dream Spirit{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW bab]: Carnage Helm{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW bac]: Fury Visor{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW bad]: Destroyer Helm{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW bae]: Conquerer Crown{%NAME%}%CONTINUE%
+ItemDisplay[!UNI !RW baf]: Guardian Crown{%NAME%}%CONTINUE%
 
 //SHOP HUNTING HIGHLIGHTS
 //+SKILLS SHOP HUNTING HIGHLIGHTS
