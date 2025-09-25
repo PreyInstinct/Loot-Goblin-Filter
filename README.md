@@ -103,3 +103,7 @@ For the time being, I left Kryszard's colorful tag in, though at some point in t
 ## Gold and Sellables
 
 I dramatically increased the thresholds at which gold piles will be visible compared to Kryszard. I also removed the detailed sell value tags and replaced them with a simple $ when an item sells for >90% of the max sale price. These tags only show up on small (2 square) items, as picking up larger items is dramatically less efficient. The $ tag will also show up on unidentified small items that are likely to have a max sale price.
+
+## Revealed Unique Names
+
+The names of unidentified unique items will also show up, as in some other filters.
