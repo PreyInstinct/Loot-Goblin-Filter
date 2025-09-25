@@ -25,6 +25,7 @@ Points are color coded by their broad utility class. Since you are usually tryin
 |HP/MP              |Blue       |HP/MP, LL/ML, LaeK/MaeK            |
 |Physical Protection|Teal       |Defense, Block, & PDR              |
 |Statistics         |Dark Green |Str, Dex, Vit, Ene                 |
+|Etherealness       |Gray       |Ethereal w/ repair/indestructable  |
 |Other              |Sage       |AR, pierce, tele charges, etc      |
 
 Point systems are currently implemented for:
@@ -33,10 +34,17 @@ Point systems are currently implemented for:
  - Jewels
  - Rings
  - Amulets
- - Rare Gloves
- - Rare Belts
- - Rare Boots
- - Rare Chests
+ - Gloves
+ - Belts
+ - Boots
+ - Chests
+ - Shields, including Paladin shields 
+
+## Item Tier Superscripts
+
+Normal Item<sup>1</sup>
+Exceptional Item<sup>2</sup>
+Elite Item<sup>3</sup>
 
 ## Magic Item Callouts
 
@@ -92,3 +100,6 @@ Next, the highest total bonus to a primary skill determines the color of the {br
 
 For the time being, I left Kryszard's colorful tag in, though at some point in the future I may replace this with more nuanced tags.
 
+## Gold and Sellables
+
+I dramatically increased the thresholds at which gold piles will be visible compared to Kryszard. I also removed the detailed sell value tags and replaced them with a simple $ when an item sells for >90% of the max sale price. These tags only show up on small (2 square) items, as picking up larger items is dramatically less efficient. The $ tag will also show up on unidentified small items that are likely to have a max sale price.
