@@ -3469,8 +3469,8 @@ ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll) FILTLVL>0 (CLVL>39 OR FILTLVL>5)]: {%
 //  14. Keys
 //----------------------------------------------------------------------------------------------------------------
 
-// Hide keys for Assassin
-ItemDisplay[key FILTLVL>0 ((ASSASSIN DIFF>0) OR FILTLVL>5) !TOWN]: {%NAME%}
+// Hide keys for Assassin or higher filter levels
+ItemDisplay[key FILTLVL>0 ((ASSASSIN DIFF>0) OR FILTLVL>5) !TOWN]: {%NAME%}%CONTINUE%
 
 // Skeleton Key
 ItemDisplay[rkey (TOWN OR MAPID>132)]: %NAME%{%TAN%Note%WHITE%: You won't lose it in Cube recipes}%CONTINUE%
