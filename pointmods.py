@@ -128,7 +128,10 @@ class Skill(object):
             sum_nonprimes = [sum_ancestors+'+'+s.mID for s in nonprimes]
 
             # Construct the summation giving the total of all single skills
+            if sksum:
+                sksum += '+'
             sksum += '+'.join([s.mID for s in primes+nonprimes])
+            
 
             # Construct the conditionals for this tree
             if nonprimes:
@@ -156,13 +159,13 @@ class Skill(object):
 
         # MAG/RARE item conditions
         # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
-        white_braces = '!NMAG PRIME1 !PRIME3'
+        white_braces = '(MAG OR RARE OR CRAFT) PRIME1 !PRIME3'
         # If any prime skill is 3 or greater AND no prime skill is 4 or greater, use blue braces.
-        blue_braces = '!NMAG PRIME3 !PRIME4'
+        blue_braces = '(MAG OR RARE OR CRAFT) PRIME3 !PRIME4'
         # If any prime skill is 4 AND no prime skill is 5 or greater, use yellow braces.
-        yellow_braces = '!NMAG PRIME4 !PRIME5'
+        yellow_braces = '(MAG OR RARE OR CRAFT) PRIME4 !PRIME5'
         # If any prime skill is 5 or greater, use gold braces.
-        gold_braces = '!NMAG PRIME5'
+        gold_braces = '(MAG OR RARE OR CRAFT) PRIME5'
 
         # NMAG conditions
         # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
@@ -177,8 +180,8 @@ class Skill(object):
         # Else, there are no skills so no need for braces.
 
         # Construct the filter statements to open and close braces.
-        open_brace_template = 'ItemDisplay[{}]: {}{{%NAME%%CONTINUE%\n'
-        close_brace_template = 'ItemDisplay[{}]: {}}}%NAME%%CONTINUE%\n'
+        open_brace_template = 'ItemDisplay[{}]: %NAME%{} {{%CONTINUE%\n'
+        close_brace_template = 'ItemDisplay[{}]: %NAME%{}}}%CONTINUE%\n'
         openers = (open_brace_template.format(gray_braces, '%GRAY%') + \
                    open_brace_template.format(white_braces, '%WHITE%') + \
                    open_brace_template.format(nm_white_braces, '%WHITE%') + \
@@ -205,27 +208,25 @@ class Skill(object):
                   hide_template.format('NMAG PRIME3 !SKSUM6 FILTLVL>5') + \
                   hide_template.format('NMAG PRIME3 !SKSUM8 FILTLVL>7') )
         
-        print("// Skill Modifiers (aka pointmods) in a separate bracket")
-        print()
         print(aliases)
         print("// Hide non-magic bases with poor rolls based on strictness")
         print(hiders)
         # Start with bracket closers because things are constructed backwards
-        print("// Close bracket")
-        print(closers)
+        print("// Open bracket")
+        print(openers)
         # Fill the space between the brackets with the pointmods, working backwards
         for skill in self.bottom_up():
             skill.print_filter_block()
         # Close the block with the opening brackets
-        print("// Open bracket")
-        print(openers)
+        print("// Close bracket")
+        print(closers)
 
 
     def print_filter_block(self):
-        template = ("ItemDisplay[{SKID}=1]: %ORANGE%+%BLUE%1{COLOR}{ABRV}%NAME%%CONTINUE%\n" +\
-                    "ItemDisplay[{SKID}=2]: %ORANGE%+%YELLOW%2{COLOR}{ABRV}%NAME%%CONTINUE%\n" +\
-                    "ItemDisplay[{SKID}=3]: %ORANGE%+%GOLD%3{COLOR}{ABRV}%NAME%%CONTINUE%\n" +\
-                    "ItemDisplay[{SKID}>3]: %ORANGE%>%GOLD%3{COLOR}{ABRV}%NAME%%CONTINUE%\n")
+        template = ("ItemDisplay[!UNI !SET !RW {SKID}=1]: %NAME%%ORANGE%+%BLUE%1{COLOR}{ABRV}%CONTINUE%\n" +\
+                    "ItemDisplay[!UNI !SET !RW {SKID}=2]: %NAME%%ORANGE%+%YELLOW%2{COLOR}{ABRV}%CONTINUE%\n" +\
+                    "ItemDisplay[!UNI !SET !RW {SKID}=3]: %NAME%%ORANGE%+%GOLD%3{COLOR}{ABRV}%CONTINUE%\n" +\
+                    "ItemDisplay[!UNI !SET !RW {SKID}>3]: %NAME%%ORANGE%>%GOLD%3{COLOR}{ABRV}%CONTINUE%\n")
         if self.ID.isdigit():
             color = '%WHITE%'
         elif self.ID.startswith('TABSK'):
