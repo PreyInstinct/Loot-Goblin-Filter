@@ -19,28 +19,29 @@
 //        3.1 Abbreviation of Automodded & Pointmodded Items
 //        3.2 Inferior & Superior
 //        3.3 Uniques (Peeking)
-//     4. Shop Hunting
-//     5. Affix Callouts
-//     6. Sockets
-//     7. Sound Effects
-//     8. General Tags and Appearance
-//     9. Gold and Sale Prices
-//     10. Gambling Screen
-//     11. Non-magic Modifiers
-//     12. Skill Modifying Items (pointmods)
-//     13. Scrolls & Potions
-//     14. Keys
-//         14.1 Runeword Info
-//         14.2 Navigation Hints
-//     15. Gems & Runes
-//         15.1 Gems
-//         15.2 Runes
-//     16. Charms (Tags and appearance by Kryszard)
-//     17. Highlights & Notifications
-//         17.1 Uniques
-//         17.2 Sets
-//         17.3 Magic & Rare
-//         17.4 Crafting Materials
+//     4. Base Items
+//     5. Shop Hunting
+//     6. Affix Callouts
+//     7. Sockets
+//     8. Sound Effects
+//     9. General Tags and Appearance
+//     10. Gold and Sale Prices
+//     11. Gambling Screen
+//     12. Non-magic Modifiers
+//     13. Skill Modifying Items (pointmods)
+//     14. Scrolls & Potions
+//     15. Keys
+//         15.1 Runeword Info
+//         15.2 Navigation Hints
+//     16. Gems & Runes
+//         16.1 Gems
+//         16.2 Runes
+//     17. Charms (Tags and appearance by Kryszard)
+//     18. Highlights & Notifications
+//         18.1 Uniques
+//         18.2 Sets
+//         18.3 Magic & Rare
+//         18.4 Crafting Materials
 // III. Item Descriptions
 
 
@@ -169,6 +170,9 @@ Alias[SUPED]: (NMAG !RW SUP ED>0)
 Alias[EDARMOR]: ((((CHEST OR (HELM !(BAR OR DRU)) OR (SHIELD !(DIN OR NEC)))ELT) OR (DIN (EXC OR ELT) (RES>19 OR AR>100)) OR (gth OR ful OR aar) OR (xng OR xcl OR xhn OR xrs OR xpl OR xlt OR xld OR xtp) OR ci3 OR xsh OR xpk OR xhm OR (RW ARMOR)) !SOCK=1 !INF SUP NMAG ED~5-15)
 //Weapons
 Alias[EDWEAPON]: ((((WEAPON !SIN !SOR !WAND !SCEPTER !STAFF !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) !DAGGER) ELT) OR 8rx OR (RW WEAPON)) !SOCK=1 !INF SUP NMAG ED~5-15)
+
+// All item types with pointmods
+Alias[POINTMOD]: (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON)
 
 //STAFFMODS
 //Amazon STAFFMODS
@@ -1556,7 +1560,15 @@ ItemDisplay[UNI !ID 7bw]: %CONTINUE%Boneshade - Lich Wand
 ItemDisplay[UNI !ID 7gw]: %CONTINUE%Deaths Web - Unearthed Wand
 
 //----------------------------------------------------------------------------------------------------------------
-// 4. Shop Hunting
+// 4. Base Items
+//----------------------------------------------------------------------------------------------------------------
+
+// Hide normal and exceptional bases
+ItemDisplay[NMAG !POINTMOD NORM FILTLVL>3]:
+ItemDisplay[NMAG !POINTMOD EXC FILTLVL>5]:
+
+//----------------------------------------------------------------------------------------------------------------
+// 5. Shop Hunting
 //----------------------------------------------------------------------------------------------------------------
 
 //SHOP HUNTING HIGHLIGHTS
@@ -1706,7 +1718,7 @@ Alias[SHOPHUNT10]: ((RES>19) OR (STAT36~10-14 AND RES>9))
 Alias[SHOPHUNT11]: (BELT STAT36>4)
 
 //----------------------------------------------------------------------------------------------------------------
-// 5. Affix Callouts
+// 6. Affix Callouts
 //----------------------------------------------------------------------------------------------------------------
 
 //NOTICE ME, THAT's ME
@@ -1730,7 +1742,7 @@ Alias[NOTICEME08]: (WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=594 OR SUFFIX=595) !RW
 Alias[NOTICEME09]: (WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=578 OR SUFFIX=579) !RW !SHOP !EQUIPPED)
 
 //----------------------------------------------------------------------------------------------------------------
-// 6. Sockets
+// 7. Sockets
 //----------------------------------------------------------------------------------------------------------------
 
 //VARIABLE SOCKETS ROLLS
@@ -1783,7 +1795,7 @@ Alias[VSOCK312]: (ucl SET SOCK>0 TABSK49>0 STAT216>0 STAT110>0)
 Alias[VSOCK201]: ((ne6 OR neb) UNI SOCK>0 CLSK2=1 FBR>0 STAT20>0)
 
 //----------------------------------------------------------------------------------------------------------------
-// 7. Sound Effects
+// 8. Sound Effects
 //----------------------------------------------------------------------------------------------------------------
 
 //Special Items Exclusives
@@ -1813,7 +1825,7 @@ ItemDisplay[(ubtm OR dcma OR dcso OR dcbl OR dcho OR rtma OR rtmv OR rtmo OR cm2
 //ItemDisplay[]: %SOUNDID-705%%NAME%{%NAME%}%CONTINUE% //darkwanderer_death - spare sound for... ??? used later for unknown items
 
 //----------------------------------------------------------------------------------------------------------------
-// 8. General Tags and Appearance
+// 9. General Tags and Appearance
 //----------------------------------------------------------------------------------------------------------------
 
 //Let's keep orginal coloring for items
@@ -1840,7 +1852,7 @@ ItemDisplay[EXC]: %NAME%%BLUE%²%CONTINUE%
 ItemDisplay[ELT]: %NAME%%GOLD%³%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
-// 9. Gold & Sale Prices
+// 10. Gold & Sale Prices
 //----------------------------------------------------------------------------------------------------------------
 
 // Larger piles as you level
@@ -1863,10 +1875,10 @@ ItemDisplay[GOLD<10000 CLVL>79 FILTLVL>7]:
 Alias[SMALL1]: (amu OR rin)
 // 2x1: Belts
 // 1x2: Some daggers, wands, most orbs, throwing knives, some throwing axes
-Alias[SMALL2]: (BELT OR WAND OR (SOR !(ob3 OR oba OR obf)) OR dgr OR dir OR 9dg OR 9di OR 7dg OR 7di OR tkf OR bkf OR 9tk OR 9bk OR 7tk OR 7bk OR tax OR 9ta OR 7ta)
+Alias[SMALL2]: (BELT OR WAND OR (SOR !(ob5 OR oba OR obf)) OR dgr OR dir OR 9dg OR 9di OR 7dg OR 7di OR tkf OR bkf OR 9tk OR 9bk OR 7tk OR 7bk OR tax OR 9ta OR 7ta)
 
 // Unidentified small items that could sell for enough to pick up.
-ItemDisplay[SMALL2 (MAG OR RARE) !ID !TOWN !SHOP]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[SMALL2 (MAG OR RARE) !(NORM BELT) !ETH !ID !TOWN !SHOP]: %NAME% %TAN%${%NAME%}%CONTINUE%
 
 // Normal Act 1: 5k max
 ItemDisplay[DIFF=0 MAPID<40 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>2250]: %NAME% %TAN%${%NAME%}%CONTINUE%
@@ -1905,7 +1917,7 @@ ItemDisplay[DIFF=2 SMALL2 !TOWN !EQUIPPED !SHOP PRICE>31500]: %NAME% %TAN%${%NAM
 
 
 //----------------------------------------------------------------------------------------------------------------
-// 10. Gambling Screen
+// 11. Gambling Screen
 //----------------------------------------------------------------------------------------------------------------
 
 //Show me names of items in gambling screen
@@ -2085,7 +2097,7 @@ ItemDisplay[NMAG !ID SHOP gwn MAPID>132]: %NAME%%GOLD%Death's Web%NL%%WHITE%Elit
 ItemDisplay[NMAG !ID SHOP MAPID>132]: %NAME%%NL%%NL%%TAN%Note%WHITE%: Possible Uniques:
 
 //----------------------------------------------------------------------------------------------------------------
-// 11. Non-magic Modifiers 
+// 12. Non-magic Modifiers 
 //----------------------------------------------------------------------------------------------------------------
 
 // Close bracket
@@ -2133,7 +2145,7 @@ ItemDisplay[(VSOCK201)]: %NAME%%GRAY%/%LIGHT_GRAY%2%CONTINUE%
 ItemDisplay[SOCK>0]: %NAME%%TAN%]%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
-// 12. Skill Modifying Items (pointmods)
+// 13. Skill Modifying Items (pointmods)
 //----------------------------------------------------------------------------------------------------------------
 
 Alias[SUBPRIME]: (MULTI188,1+MULTI83,0+STAT127+MULTI107,8>0 OR MULTI188,1+MULTI83,0+STAT127+MULTI107,9>0 OR MULTI188,1+MULTI83,0+STAT127+MULTI107,13>0 OR MULTI188,1+MULTI83,0+STAT127+MULTI107,17>0 OR MULTI188,1+MULTI83,0+STAT127+MULTI107,18>0 OR MULTI188,1+MULTI83,0+STAT127+MULTI107,23>0 OR MULTI188,1+MULTI83,0+STAT127+MULTI107,28>0 OR MULTI188,1+MULTI83,0+STAT127+MULTI107,29>0 OR MULTI188,1+MULTI83,0+STAT127+MULTI107,33>0 OR MULTI188,2+MULTI83,0+STAT127+MULTI107,19>0 OR MULTI188,8+MULTI83,1+STAT127+MULTI107,36>0 OR MULTI188,8+MULTI83,1+STAT127+MULTI107,37>0 OR MULTI188,8+MULTI83,1+STAT127+MULTI107,46>0 OR MULTI188,8+MULTI83,1+STAT127+MULTI107,51>0 OR MULTI188,8+MULTI83,1+STAT127+MULTI107,61>0 OR MULTI188,8+MULTI83,1+STAT127+MULTI107,383>0 OR MULTI188,9+MULTI83,1+STAT127+MULTI107,42>0 OR MULTI188,9+MULTI83,1+STAT127+MULTI107,43>0 OR MULTI188,9+MULTI83,1+STAT127+MULTI107,54>0 OR MULTI188,9+MULTI83,1+STAT127+MULTI107,57>0 OR MULTI188,9+MULTI83,1+STAT127+MULTI107,58>0 OR MULTI188,9+MULTI83,1+STAT127+MULTI107,63>0 OR MULTI188,10+MULTI83,1+STAT127+MULTI107,39>0 OR MULTI188,10+MULTI83,1+STAT127+MULTI107,45>0 OR MULTI188,10+MULTI83,1+STAT127+MULTI107,50>0 OR MULTI188,10+MULTI83,1+STAT127+MULTI107,59>0 OR MULTI188,10+MULTI83,1+STAT127+MULTI107,60>0 OR MULTI188,10+MULTI83,1+STAT127+MULTI107,65>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,66>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,71>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,72>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,76>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,77>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,81>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,82>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,86>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,87>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,91>0 OR MULTI188,16+MULTI83,2+STAT127+MULTI107,374>0 OR MULTI188,17+MULTI83,2+STAT127+MULTI107,68>0 OR MULTI188,17+MULTI83,2+STAT127+MULTI107,78>0 OR MULTI188,17+MULTI83,2+STAT127+MULTI107,88>0 OR MULTI188,18+MULTI83,2+STAT127+MULTI107,69>0 OR MULTI188,18+MULTI83,2+STAT127+MULTI107,79>0 OR MULTI188,18+MULTI83,2+STAT127+MULTI107,367>0 OR MULTI188,24+MULTI83,3+STAT127+MULTI107,116>0 OR MULTI188,24+MULTI83,3+STAT127+MULTI107,117>0 OR MULTI188,24+MULTI83,3+STAT127+MULTI107,378>0 OR MULTI188,25+MULTI83,3+STAT127+MULTI107,98>0 OR MULTI188,25+MULTI83,3+STAT127+MULTI107,103>0 OR MULTI188,25+MULTI83,3+STAT127+MULTI107,108>0 OR MULTI188,25+MULTI83,3+STAT127+MULTI107,113>0 OR MULTI188,25+MULTI83,3+STAT127+MULTI107,119>0 OR MULTI188,25+MULTI83,3+STAT127+MULTI107,122>0 OR MULTI188,25+MULTI83,3+STAT127+MULTI107,123>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,99>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,100>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,104>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,105>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,109>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,110>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,115>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,120>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,124>0 OR MULTI188,26+MULTI83,3+STAT127+MULTI107,125>0 OR MULTI188,32+MULTI83,4+STAT127+MULTI107,126>0 OR MULTI188,32+MULTI83,4+STAT127+MULTI107,132>0 OR MULTI188,32+MULTI83,4+STAT127+MULTI107,139>0 OR MULTI188,32+MULTI83,4+STAT127+MULTI107,147>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,127>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,128>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,129>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,134>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,135>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,136>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,141>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,145>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,148>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,153>0 OR MULTI188,33+MULTI83,4+STAT127+MULTI107,368>0 OR MULTI188,34+MULTI83,4+STAT127+MULTI107,130>0 OR MULTI188,34+MULTI83,4+STAT127+MULTI107,131>0 OR MULTI188,34+MULTI83,4+STAT127+MULTI107,137>0 OR MULTI188,34+MULTI83,4+STAT127+MULTI107,138>0 OR MULTI188,34+MULTI83,4+STAT127+MULTI107,146>0 OR MULTI188,34+MULTI83,4+STAT127+MULTI107,149>0 OR MULTI188,34+MULTI83,4+STAT127+MULTI107,150>0 OR MULTI188,34+MULTI83,4+STAT127+MULTI107,155>0 OR MULTI188,40+MULTI83,5+STAT127+MULTI107,222>0 OR MULTI188,40+MULTI83,5+STAT127+MULTI107,226>0 OR MULTI188,40+MULTI83,5+STAT127+MULTI107,231>0 OR MULTI188,40+MULTI83,5+STAT127+MULTI107,236>0 OR MULTI188,40+MULTI83,5+STAT127+MULTI107,241>0 OR MULTI188,40+MULTI83,5+STAT127+MULTI107,246>0 OR MULTI188,41+MULTI83,5+STAT127+MULTI107,224>0 OR MULTI188,41+MULTI83,5+STAT127+MULTI107,232>0 OR MULTI188,41+MULTI83,5+STAT127+MULTI107,242>0 OR MULTI188,42+MULTI83,5+STAT127+MULTI107,235>0 OR MULTI188,42+MULTI83,5+STAT127+MULTI107,249>0 OR MULTI188,42+MULTI83,5+STAT127+MULTI107,250>0 OR MULTI188,42+MULTI83,5+STAT127+MULTI107,370>0 OR MULTI188,48+MULTI83,6+STAT127+MULTI107,277>0 OR MULTI188,49+MULTI83,6+STAT127+MULTI107,252>0 OR MULTI188,49+MULTI83,6+STAT127+MULTI107,258>0 OR MULTI188,49+MULTI83,6+STAT127+MULTI107,263>0 OR MULTI188,49+MULTI83,6+STAT127+MULTI107,264>0 OR MULTI188,49+MULTI83,6+STAT127+MULTI107,267>0 OR MULTI188,49+MULTI83,6+STAT127+MULTI107,278>0 OR MULTI188,50+MULTI83,6+STAT127+MULTI107,275>0)
@@ -2145,7 +2157,7 @@ Alias[SKSUM6]: (MULTI107,6+MULTI107,7+MULTI107,11+MULTI107,12+MULTI107,16+MULTI1
 Alias[SKSUM8]: (MULTI107,6+MULTI107,7+MULTI107,11+MULTI107,12+MULTI107,16+MULTI107,21+MULTI107,22+MULTI107,26+MULTI107,27+MULTI107,31+MULTI107,32+MULTI107,8+MULTI107,9+MULTI107,13+MULTI107,17+MULTI107,18+MULTI107,23+MULTI107,28+MULTI107,29+MULTI107,33+MULTI107,10+MULTI107,14+MULTI107,15+MULTI107,20+MULTI107,24+MULTI107,25+MULTI107,30+MULTI107,34+MULTI107,35+MULTI107,19+MULTI107,41+MULTI107,47+MULTI107,52+MULTI107,56+MULTI107,62+MULTI107,376+MULTI107,36+MULTI107,37+MULTI107,46+MULTI107,51+MULTI107,61+MULTI107,383+MULTI107,38+MULTI107,48+MULTI107,49+MULTI107,53+MULTI107,42+MULTI107,43+MULTI107,54+MULTI107,57+MULTI107,58+MULTI107,63+MULTI107,40+MULTI107,44+MULTI107,55+MULTI107,64+MULTI107,369+MULTI107,39+MULTI107,45+MULTI107,50+MULTI107,59+MULTI107,60+MULTI107,65+MULTI107,381+MULTI107,66+MULTI107,71+MULTI107,72+MULTI107,76+MULTI107,77+MULTI107,81+MULTI107,82+MULTI107,86+MULTI107,87+MULTI107,91+MULTI107,374+MULTI107,67+MULTI107,73+MULTI107,74+MULTI107,83+MULTI107,84+MULTI107,92+MULTI107,93+MULTI107,68+MULTI107,78+MULTI107,88+MULTI107,70+MULTI107,75+MULTI107,80+MULTI107,85+MULTI107,89+MULTI107,90+MULTI107,94+MULTI107,95+MULTI107,69+MULTI107,79+MULTI107,367+MULTI107,96+MULTI107,97+MULTI107,101+MULTI107,106+MULTI107,107+MULTI107,111+MULTI107,112+MULTI107,121+MULTI107,364+MULTI107,371+MULTI107,116+MULTI107,117+MULTI107,378+MULTI107,102+MULTI107,114+MULTI107,118+MULTI107,98+MULTI107,103+MULTI107,108+MULTI107,113+MULTI107,119+MULTI107,122+MULTI107,123+MULTI107,99+MULTI107,100+MULTI107,104+MULTI107,105+MULTI107,109+MULTI107,110+MULTI107,115+MULTI107,120+MULTI107,124+MULTI107,125+MULTI107,133+MULTI107,140+MULTI107,143+MULTI107,144+MULTI107,151+MULTI107,152+MULTI107,126+MULTI107,132+MULTI107,139+MULTI107,147+MULTI107,127+MULTI107,128+MULTI107,129+MULTI107,134+MULTI107,135+MULTI107,136+MULTI107,141+MULTI107,145+MULTI107,148+MULTI107,153+MULTI107,368+MULTI107,142+MULTI107,154+MULTI107,130+MULTI107,131+MULTI107,137+MULTI107,138+MULTI107,146+MULTI107,149+MULTI107,150+MULTI107,155+MULTI107,221+MULTI107,227+MULTI107,237+MULTI107,247+MULTI107,222+MULTI107,226+MULTI107,231+MULTI107,236+MULTI107,241+MULTI107,246+MULTI107,223+MULTI107,228+MULTI107,233+MULTI107,238+MULTI107,239+MULTI107,243+MULTI107,248+MULTI107,224+MULTI107,232+MULTI107,242+MULTI107,225+MULTI107,229+MULTI107,230+MULTI107,234+MULTI107,240+MULTI107,244+MULTI107,245+MULTI107,235+MULTI107,249+MULTI107,250+MULTI107,370+MULTI107,251+MULTI107,256+MULTI107,257+MULTI107,261+MULTI107,262+MULTI107,266+MULTI107,271+MULTI107,272+MULTI107,276+MULTI107,366+MULTI107,277+MULTI107,253+MULTI107,268+MULTI107,273+MULTI107,279+MULTI107,252+MULTI107,258+MULTI107,263+MULTI107,264+MULTI107,267+MULTI107,278+MULTI107,254+MULTI107,255+MULTI107,259+MULTI107,260+MULTI107,265+MULTI107,269+MULTI107,270+MULTI107,274+MULTI107,280+MULTI107,275>7)
 
 // Hide non-magic bases with poor rolls based on strictness
-ItemDisplay[NMAG (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON) !PRIME1 FILTLVL>1]:
+ItemDisplay[NMAG POINTMOD !PRIME1 FILTLVL>1]:
 ItemDisplay[NMAG PRIME1 !PRIME3 FILTLVL>3]:
 ItemDisplay[NMAG PRIME3 !SKSUM6 FILTLVL>5]:
 ItemDisplay[NMAG PRIME3 !SKSUM8 FILTLVL>7]:
@@ -3428,7 +3440,7 @@ ItemDisplay[(MAG OR RARE OR CRAFT) PRIME5]: %NAME%%GOLD%}%CONTINUE%
 ItemDisplay[NMAG PRIME3 SKSUM8]: %NAME%%GOLD%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
-// 13. Scrolls & Potions
+// 14. Scrolls & Potions
 //----------------------------------------------------------------------------------------------------------------
 
 //Health, Mana, & Rejuvenation Potions
@@ -3466,17 +3478,17 @@ ItemDisplay[(tpfm OR tpgm OR tpcm OR tplm) FILTLVL>0 (CLVL>23 OR FILTLVL>5)]: {%
 ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll) FILTLVL>0 (CLVL>39 OR FILTLVL>5)]: {%NAME%}
 
 //----------------------------------------------------------------------------------------------------------------
-//  14. Keys
+//  15. Keys
 //----------------------------------------------------------------------------------------------------------------
 
 // Hide keys for Assassin or higher filter levels
-ItemDisplay[key FILTLVL>0 ((ASSASSIN DIFF>0) OR FILTLVL>5) !TOWN]: {%NAME%}%CONTINUE%
+ItemDisplay[key ((FILTLVL>0 ASSASSIN) OR FILTLVL>5) !TOWN]: {%NAME%}%CONTINUE%
 
 // Skeleton Key
 ItemDisplay[rkey (TOWN OR MAPID>132)]: %NAME%{%TAN%Note%WHITE%: You won't lose it in Cube recipes}%CONTINUE%
 ItemDisplay[rkey (TOWN)]: %NAME%{%CORAL%Pathfinding%WHITE%/%TEAL%Map Reading %WHITE%Tips available outside Town%NL%%NAME%}%CONTINUE%
 
-// --- 14.1 Runeword Info ---
+// --- 15.1 Runeword Info ---
 
 ItemDisplay[key]: %GRAY%key%CONTINUE%
 //keys description in inventory
@@ -3672,7 +3684,7 @@ ItemDisplay[(key QTY=24 (TOWN OR MAPID>132) !SHOP) OR crfp]: %NAME%{Chest: [5-10
 ItemDisplay[(key QTY=24 (TOWN OR MAPID>132) !SHOP) OR crfp]: %NAME%{Shield: [5-10]% All Res, [10-20]% Block, H. F. D.%NL%%NAME%}%CONTINUE%
 ItemDisplay[(key QTY=24 (TOWN OR MAPID>132) !SHOP) OR crfp]: %NAME%{Weapon: [20-40]% ED, 20% IAS, [50-100] AR%NL%%NAME%}%CONTINUE%
 
-// --- 14.2 Navigation Hints ---
+// --- 15.2 Navigation Hints ---
 
 //Map Reading Notes on keys stack:
 ItemDisplay[(key OR rkey) !TOWN MAPID~1-132]: %NAME%{%TAN%Note%WHITE%: Pathfinding/Map Reading Tips:%NAME%}%CONTINUE%
@@ -4146,10 +4158,10 @@ ItemDisplay[(key OR rkey) !TOWN MAPID=131]: %NAME%{%GOLD%Baal %WHITE%and %CORAL%
 ItemDisplay[(key OR rkey) !TOWN MAPID=132]: %NAME%{%LIGHT_GRAY%Map%WHITE%: Worldstone Chamber %BLACK%| %LIGHT_GRAY%Type%WHITE%: Static%NL%%NAME%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
-// 15. Gems and Runes
+// 16. Gems and Runes
 //----------------------------------------------------------------------------------------------------------------
 
-// --- 15.1 Gems ---
+// --- 16.1 Gems ---
 
 //Descriptions for GEMLEVEL1 and GEMLEVEL3
 ItemDisplay[GEM<5]:%NAME%{%WHITE%3x Gem of the same Type and Level = 1x Higher Level Gem%NL%%TAN% Note%WHITE%: Crafting Recipes:}%CONTINUE%
@@ -4183,7 +4195,7 @@ ItemDisplay[GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>5) !(gzv OR gpv OR glw OR gpw OR 
 ItemDisplay[(gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls) FILTLVL<8]: %DOT-70%%TIER-3%%NAME%%CONTINUE%
 ItemDisplay[(gpvs OR gpys OR gpbs OR gpgs OR gprs OR gpws OR skzs)]: %DOT-70%%NAME%%CONTINUE%
 
-// --- 15.2 Runes ---
+// --- 16.2 Runes ---
 
 //Runes Apperance
 ItemDisplay[RUNE<18]: %ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]{%NAME%}%CONTINUE%
@@ -4192,7 +4204,7 @@ ItemDisplay[RUNE~20-25]: %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%]{%N
 ItemDisplay[RUNE>25]: %ORANGE%%RUNENAME% Rune %GRAY%[%GREEN%%RUNENUM%%GRAY%]{%NAME%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
-// 16. Charms (Tags and appearance by Kryszard)
+// 17. Charms (Tags and appearance by Kryszard)
 //----------------------------------------------------------------------------------------------------------------
 
 //All Charms
@@ -4318,10 +4330,10 @@ ItemDisplay[cm1 MAG (((PRES>9 AND LIFE>0) OR (PRES>4 AND LIFE>9) OR (PRES>0 AND 
 ItemDisplay[cm1 MAG (HIGHVENGPFX OR (HIGHVENGSFX AND MIDVENGPFX) OR (MIDVENGPFX AND (MIDVENGSFX OR LOWVENGSFX)) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND GFIND>0) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND MFIND>0) OR ((MIDVENGPFX OR MIDVENGSFX) AND MFIND>4) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND DEX>0) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND STR>0) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND LIFE>0) OR ((MIDVENGPFX OR MIDVENGSFX) AND LIFE>9) OR ((LOWVENGPFX OR LOWVENGSFX) AND LIFE>14) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND MAXDMG>0) OR ((HIGHVENGPFX OR HIGHVENGSFX OR MIDVENGPFX OR MIDVENGSFX) AND FHR>0) OR ((HIGHVENGPFX OR HIGHVENGSFX OR MIDVENGPFX OR MIDVENGSFX) AND FRW>0) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND FRES>0) OR ((MIDVENGPFX OR MIDVENGSFX) AND FRES>4) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND LRES>0) OR ((MIDVENGPFX OR MIDVENGSFX) AND LRES>4) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND CRES>0) OR ((MIDVENGPFX OR MIDVENGSFX) AND CRES>4) OR ((HIGHVENGPFX OR HIGHVENGSFX) AND PRES>0) OR ((MIDVENGPFX OR MIDVENGSFX) AND PRES>4))]: %CORAL%V%TEAL%e%SAGE%n%YELLOW%g %NAME%{%NAME%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
-// 17. Highlights & Notifications
+// 18. Highlights & Notifications
 //----------------------------------------------------------------------------------------------------------------
 
-// --- 17.1 Uniques ---
+// --- 18.1 Uniques ---
 
 //NEW PD2 UNIQUES
 //PD2 UBERS DCLONE/DUNGEON/RATHMA/LUCION BOSSES UNIQUES
@@ -4348,7 +4360,7 @@ ItemDisplay[LODNOTIFYUNI1 OR LODNOTIFYUNI2]: %PX-68%%TIER-7%%NAME%
 //Rainbow Facet
 ItemDisplay[jew UNI !ID]: %BORDER-68%%RED%r%ORANGE%a%YELLOW%in%GREEN%b%BLUE%o%PURPLE%w     %NAME%%PURPLE%     r%BLUE%a%GREEN%in%YELLOW%b%ORANGE%o%RED%w
 
-// --- 17.2 Sets ---
+// --- 18.2 Sets ---
 
 //OK SET
 ItemDisplay[OKSETETH1 OR OKSET1]: %MAP-84%%DARK_GREEN%*%GREEN%*%WHITE%*     %NAME%     %WHITE%*%GREEN%*%DARK_GREEN%*
@@ -4359,7 +4371,7 @@ ItemDisplay[NOTIFYSET1]: %PX-84%%TIER-7%%NAME%
 ItemDisplay[UNI !ID (FILTLVL<4 OR (CLVL<80 AND FILTLVL<6))]: %PX-68%%NAME%%CONTINUE%
 ItemDisplay[SET !ID (FILTLVL<4 OR (CLVL<80 AND FILTLVL<6))]: %PX-84%%NAME%%CONTINUE%
 
-// --- 17.3 Magic & Rare ---
+// --- 18.3 Magic & Rare ---
 
 // Highlight jewel drops
 ItemDisplay[jew MAG !ID]: %DOT-9A%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%BLUE%
@@ -4440,7 +4452,7 @@ ItemDisplay[(BOW OR XBOW) RARE !ID (AMAZON OR FILTLVL<6)]: %NAME%
 ItemDisplay[(BOW OR XBOW) !(sbw OR 8sb OR 6sb OR hbw OR 8hb OR 6hb OR swb OR 8sw OR 6sw) RARE !ID]: %NAME%
 ItemDisplay[STAFF RARE !ID FILTLVL<6]: %NAME%
 
-// --- 17.4 Crafting Materials ---
+// --- 18.4 Crafting Materials ---
 
 //ItemDisplay[(jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR tax OR 9ta OR 7ta) NMAG ETH (ALVL>74 OR CRAFTALVL>74) STAT360=0 FILTLVL<6]: %DOT-A8%%PX-68%%TIER-3%%NAME%{%WHITE%Next: You Can %ORANGE%Craft %WHITE%With This Base%NL%%TAN%Note%WHITE%: You can %RED%Corrupt %WHITE%to Imbue into %YELLOW%Rare %GRAY%(%WHITE%50% Chance%GRAY%)}
 //ItemDisplay[(jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR tax OR 9ta OR 7ta) NMAG ETH (ALVL>74 OR CRAFTALVL>74) STAT360>0 FILTLVL<6]: %NAME%{%TAN%Note%WHITE%: Unlucky... Maybe Next Time :)}
@@ -5006,10 +5018,9 @@ ItemDisplay[rin RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 //Arrows & Bolts
 ItemDisplay[(aqv OR cqv) !NMAG !ID]: %NAME%%CONTINUE%
 // Hide non-magic
-ItemDisplay[(aqv OR cqv) NMAG (CLVL>6 OR FILTLVL>5) !SHOP]:
+ItemDisplay[(aqv OR cqv) NMAG (CLVL>6 OR FILTLVL>5) !SHOP]: {%NAME%}
 // Hide magic
-ItemDisplay[cqv MAG !ID ((!AMAZON AND FILTLVL>1 AND CLVL>79) OR FILTLVL>5)]:
-ItemDisplay[aqv MAG !ID ((!AMAZON AND FILTLVL>1 AND CLVL>79) OR FILTLVL>5)]:
+ItemDisplay[(aqv OR cqv) MAG !ID ((!AMAZON AND FILTLVL>1 AND CLVL>69) OR FILTLVL>5)]: 
 // Map dot for rare when playing Amazon
 ItemDisplay[(aqv OR cqv) RARE AMAZON !ID]: %DOT-A8%%TIER-7%%NAME%%CONTINUE%
 
