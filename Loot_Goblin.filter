@@ -19,6 +19,7 @@
 //        3.1 Abbreviation of Automodded & Pointmodded Items
 //        3.2 Inferior & Superior
 //        3.3 Uniques (Peeking)
+	  3.4 Sets (Peeking)
 //     4. Base Items
 //     5. Shop Hunting
 //     6. Affix Callouts
@@ -384,7 +385,7 @@ ItemDisplay[!UNI !RW bad]: Destroyer Helm{%NAME%}%CONTINUE%
 ItemDisplay[!UNI !RW bae]: Conquerer Crown{%NAME%}%CONTINUE%
 ItemDisplay[!UNI !RW baf]: Guardian Crown{%NAME%}%CONTINUE%
 
-// 3.2 --- Inferior & Superior ---
+// --- 3.2 Inferior & Superior ---
 // Shorten names of Superior and Inferior (tags will be applied at later step).
 ItemDisplay[(SUP OR INF) !RW cap]: Cap%CONTINUE%
 ItemDisplay[(SUP OR INF) !RW xap]: War Hat%CONTINUE%
@@ -880,7 +881,7 @@ ItemDisplay[(SUP OR INF) !RW am5]: Maiden Javelin%CONTINUE%
 ItemDisplay[(SUP OR INF) !RW ama]: Ceremonial Javelin%CONTINUE%
 ItemDisplay[(SUP OR INF) !RW amf]: Matriarchal Javelin%CONTINUE%
 
-// 3.3 --- Uniques (Peeking) ---
+// --- 3.3 Uniques (Peeking) ---
 // Copied from Hiimfilter with minor edits.
 // https://github.com/Maaaaaarrk/HiimFilter-PD2-Filter
 
@@ -1399,7 +1400,7 @@ ItemDisplay[UNI !ID 9vo]: %CONTINUE%Blackleach Blade - Bill
 ItemDisplay[UNI !ID 9s8]: %CONTINUE%Athenas Wrath - Battle Scythe
 ItemDisplay[UNI !ID 9pa]: %CONTINUE%Pierre Tombale Couant - Partizan
 ItemDisplay[UNI !ID 9h9]: %CONTINUE%Husoldal Evo - Bec-de-Corbin
-ItemDisplay[UNI !ID 9wc]: %CONTINUE%Grims Burning Dead Grim - Scythe
+ItemDisplay[UNI !ID 9wc]: %CONTINUE%Grims Burning Dead - Grim Scythe
 
 // Elite tier Polearms
 ItemDisplay[UNI !ID 7o7]: %CONTINUE%Bonehew - Ogre Axe
@@ -1558,6 +1559,195 @@ ItemDisplay[UNI !ID 7wn]: %CONTINUE%Polished Wand (No Unique for this base)
 ItemDisplay[UNI !ID 7yw]: %CONTINUE%Ghost Wand (No Unique for this base)
 ItemDisplay[UNI !ID 7bw]: %CONTINUE%Boneshade - Lich Wand
 ItemDisplay[UNI !ID 7gw]: %CONTINUE%Deaths Web - Unearthed Wand
+
+// Formatting for all unidentified uniques
+ItemDisplay[UNI !ID]: %CONTINUE%¿ %NAME% ?
+
+// --- 3.4 Sets (Peeking) ---
+// Copied from Hiimfilter with minor edits.
+// https://github.com/Maaaaaarrk/HiimFilter-PD2-Filter
+
+// These item bases belong to multiple sets, so you cannot know what one they are until identified
+ItemDisplay[SET !ID amu]: %CONTINUE%Amulet
+ItemDisplay[SET !ID rin]: %CONTINUE%Ring
+
+ItemDisplay[SET !ID cap]: %CONTINUE%Infernal or Sanders - Cap
+ItemDisplay[SET !ID crn]: %CONTINUE%Iratha or Milabrega - Crown
+ItemDisplay[SET !ID mbl]: %CONTINUE%Hsarus or Hwanin - Belt
+ItemDisplay[SET !ID tbl]: %CONTINUE%Infernal or Iratha - Heavy Belt
+ItemDisplay[SET !ID tgl]: %CONTINUE%Arctic or Iratha - Light Gauntlet
+ItemDisplay[SET !ID vbt]: %CONTINUE%Cow King or Sander - Heavy Boots
+
+// Angelic's
+ItemDisplay[SET !ID rng]: %CONTINUE%Angelic Mantle - Ring Mail
+ItemDisplay[SET !ID sbr]: %CONTINUE%Angelic Sickle - Sabre
+
+// Arcana's
+ItemDisplay[SET !ID skp]: %CONTINUE%Arcanna's Head - Skull Cap
+ItemDisplay[SET !ID ltp]: %CONTINUE%Arcanna's Flesh Light
+ItemDisplay[SET !ID wst]: %CONTINUE%Arcanna's Deathwand - War Staff
+
+// Arctic
+ItemDisplay[SET !ID qui]: %CONTINUE%Arctic Furs - Quilted Armor
+ItemDisplay[SET !ID vbl]: %CONTINUE%Arctic Binding - Light Belt
+ItemDisplay[SET !ID swb]: %CONTINUE%Arctic Horn - Short War Bow
+
+// Berzerker's
+ItemDisplay[SET !ID hlm]: %CONTINUE%Berserker's Headgear - Helm
+ItemDisplay[SET !ID spl]: %CONTINUE%Berserker's Hauberk - Splint Mail
+ItemDisplay[SET !ID 2ax]: %CONTINUE%Berserker's Hatchet - Double Axe
+
+// Cathan's
+ItemDisplay[SET !ID msk]: %CONTINUE%Cathan's Visage - Mask
+ItemDisplay[SET !ID chn]: %CONTINUE%Cathan's Mesh - Chain Mail
+ItemDisplay[SET !ID bst]: %CONTINUE%Cathan's Rule - Battle Staff
+
+// Civerb's
+ItemDisplay[SET !ID gsc]: %CONTINUE%Civerb's Cudgel - Grand Scepter
+ItemDisplay[SET !ID lrg]: %CONTINUE%Civerb's Ward - Large Shield
+
+// Cleglaw's
+ItemDisplay[SET !ID lsd]: %CONTINUE%Cleglaw's Tooth - Long Sword
+ItemDisplay[SET !ID mgl]: %CONTINUE%Cleglaw's Pincers - Chain Gloves
+ItemDisplay[SET !ID sml]: %CONTINUE%Cleglaw's Claw - Small Shield
+
+// Death's
+ItemDisplay[SET !ID wsd]: %CONTINUE%Death's Touch - War Sword
+ItemDisplay[SET !ID lgl]: %CONTINUE%Death's Hand - Leather Gloves
+ItemDisplay[SET !ID lbl]: %CONTINUE%Death's Guard - Sash
+
+// Hsarus'
+ItemDisplay[SET !ID buc]: %CONTINUE%Hsarus Iron Fist - Buckler
+// Hsarus Iron Stay Belt in "Set Multiple" section
+ItemDisplay[SET !ID mbt]: %CONTINUE%Hsarus Iron Heel - Chain Boots
+
+// Infernal
+ItemDisplay[SET !ID dgr]: %CONTINUE%Infernal Spine - Dagger
+
+// Isenhart
+ItemDisplay[SET !ID bsd]: %CONTINUE%Isenhart's Lightbrand - Broad Sword
+ItemDisplay[SET !ID fhl]: %CONTINUE%Isenhart's Horns - Full Helm
+ItemDisplay[SET !ID brs]: %CONTINUE%Isenhart's Case - Breast Plate
+ItemDisplay[SET !ID gts]: %CONTINUE%Isenhart's Parry - Gothic Shield
+
+// Milabregas
+ItemDisplay[SET !ID aar]: %CONTINUE%Milabrega's Robe - Ancient Armor
+ItemDisplay[SET !ID kit]: %CONTINUE%Milabrega's Orb - Kite Shield
+ItemDisplay[SET !ID wsp]: %CONTINUE%Milabrega's Rod - War Scepter
+
+// Sigon's
+ItemDisplay[SET !ID ghm]: %CONTINUE%Sigon's Visor - Great Helm
+ItemDisplay[SET !ID gth]: %CONTINUE%Sigon's Shelter - Gothic Plate
+ItemDisplay[SET !ID hbt]: %CONTINUE%Sigon's Sabot - Greaves
+ItemDisplay[SET !ID tow]: %CONTINUE%Sigon's Guard - Tower Shield
+ItemDisplay[SET !ID hbl]: %CONTINUE%Sigon's Wrap - Plated Belt
+ItemDisplay[SET !ID hgl]: %CONTINUE%Sigon's Gage - Gauntlets
+
+// Tancred's
+ItemDisplay[SET !ID bhm]: %CONTINUE%Tancred's Skull - Bone Helm
+ItemDisplay[SET !ID ful]: %CONTINUE%Tancred's Spine - Full Plate Mail
+ItemDisplay[SET !ID lbt]: %CONTINUE%Tancred's Hobnails - Boots
+ItemDisplay[SET !ID mpi]: %CONTINUE%Tancred's Crowbill - Military Pick
+
+// Vidala's
+ItemDisplay[SET !ID lbb]: %CONTINUE%Vidala's Barb Long - Battle Bow
+ItemDisplay[SET !ID lea]: %CONTINUE%Vidala's Ambush - Leather Armor
+ItemDisplay[SET !ID tbt]: %CONTINUE%Vidala's Fetlock - Light Plated Boots
+
+// Aldur's
+ItemDisplay[SET !ID dr8]: %CONTINUE%Aldur's Stony Gaze - Hunters Guise
+ItemDisplay[SET !ID xtb]: %CONTINUE%Aldur's Advance - Battle Boots
+ItemDisplay[SET !ID uul]: %CONTINUE%Aldur's Deception - Shadow Plate
+ItemDisplay[SET !ID 9mt]: %CONTINUE%Aldur's Rhythm - Jagged Star
+
+// Bul-Kathos
+ItemDisplay[SET !ID 7gd]: %CONTINUE%Bul-Katho's Sacred Charge// Colossus Blade 
+ItemDisplay[SET !ID 7fb]: %CONTINUE%Bul-Katho's Tribal Guardian// Colossus Sword
+ItemDisplay[SET !ID 7wd]: %CONTINUE%Bul-Katho's Tribal Guardian// Mythical Sword(legacy)
+
+// Cow King's
+ItemDisplay[SET !ID xap]: %CONTINUE%Cow King's Horns - War Hat
+ItemDisplay[SET !ID stu]: %CONTINUE%Cow King's Hide - Studded Leather
+
+// Disciple
+ItemDisplay[SET !ID ulg]: %CONTINUE%Laying of Hands - Bramble Mitts
+ItemDisplay[SET !ID uui]: %CONTINUE%Dark Adherent - Dusk Shroud
+ItemDisplay[SET !ID xlb]: %CONTINUE%Rite of Passage - Demonhide Boots
+ItemDisplay[SET !ID umc]: %CONTINUE%Credendum - Mithril Coil
+
+// Griswald's
+ItemDisplay[SET !ID xar]: %CONTINUE%Griswold's Heart - Ornate Plate
+ItemDisplay[SET !ID urn]: %CONTINUE%Griswold's Valor - Corona
+ItemDisplay[SET !ID 7ws]: %CONTINUE%Griswold's Redemption - Caduceus
+ItemDisplay[SET !ID paf]: %CONTINUE%Griswold's Honor - Vortex Shield
+
+// Heaven's
+ItemDisplay[SET !ID xrs]: %CONTINUE%Haemosus Adament - Cuirass
+ItemDisplay[SET !ID 7ma]: %CONTINUE%Dangoons Teaching - Reinforced Mace
+ItemDisplay[SET !ID uts]: %CONTINUE%Taebaeks Glory - Ward
+ItemDisplay[SET !ID uhm]: %CONTINUE%Ondals Almighty - Spired Helm
+
+// Hwain's
+ItemDisplay[SET !ID xrn]: %CONTINUE%Hwanin's Splendor - Grand Crown
+ItemDisplay[SET !ID 9vo]: %CONTINUE%Hwanin's Justice - Bill
+ItemDisplay[SET !ID xcl]: %CONTINUE%Hwanin's Refuge - Tigulated Mail
+
+// IK 
+ItemDisplay[SET !ID ba5]: %CONTINUE%Immortal Kings Will - Avenger Guard
+ItemDisplay[SET !ID 7m7]: %CONTINUE%Immortal Kings Stone Crusher - Ogre Maul
+ItemDisplay[SET !ID uar]: %CONTINUE%Immortal Kings Soul Cage - Sacred Armor
+ItemDisplay[SET !ID zhb]: %CONTINUE%Immortal Kings Detail - War Belt
+ItemDisplay[SET !ID xhg]: %CONTINUE%Immortal Kings Forge - War Gauntlets
+ItemDisplay[SET !ID xhb]: %CONTINUE%Immortal Kings Pillar - War Boots
+
+// Mavina
+ItemDisplay[SET !ID ci3]: %CONTINUE%Mavinas True Sight - Diadem
+ItemDisplay[SET !ID amc]: %CONTINUE%Mavinas Caster - Grand Matron Bow
+ItemDisplay[SET !ID uld]: %CONTINUE%Mavinas Embrace - Kraken Shell
+ItemDisplay[SET !ID xtg]: %CONTINUE%Mavinas Icy Clutch - Battle Gauntlets
+ItemDisplay[SET !ID zvb]: %CONTINUE%Mavinas Tenet - Sharkskin Belt
+
+// Natalya's
+ItemDisplay[SET !ID xh9]: %CONTINUE%Natalya's Totem - Grim Helm
+ItemDisplay[SET !ID 7qr]: %CONTINUE%Natalya's Mark - Scissors Suwayyah
+ItemDisplay[SET !ID ucl]: %CONTINUE%Natalya's Shadow - Loricated Mail
+ItemDisplay[SET !ID xmb]: %CONTINUE%Natalya's Soul - Mesh Boots
+
+// Naj's
+ItemDisplay[SET !ID ci0]: %CONTINUE%Naj's Circlet// Circlet
+ItemDisplay[SET !ID ult]: %CONTINUE%Naj's Light Plate// Hellforge Plate
+ItemDisplay[SET !ID 6cs]: %CONTINUE%Naj's Puzzler// Elder Staff
+
+// Orphan's
+ItemDisplay[SET !ID xhm]: %CONTINUE%Guillaumes Face// Winged Helm
+ItemDisplay[SET !ID xml]: %CONTINUE%Whitstans Guard - Round Shield
+ItemDisplay[SET !ID xvg]: %CONTINUE%Magnus Skin - Sharkskin Gloves
+ItemDisplay[SET !ID ztb]: %CONTINUE%Wilhelms Pride - Battle Belt
+
+// Sander's
+ItemDisplay[SET !ID bwn]: %CONTINUE%Sanders Superstition - Bone Wand
+ItemDisplay[SET !ID vgl]: %CONTINUE%Sanders Taboo - Heavy Gloves
+
+// Szabi's
+ItemDisplay[SET !ID xhl]: %CONTINUE%Sazabis Mental Sheath - Basinet
+ItemDisplay[SET !ID 7ls]: %CONTINUE%Sazabis Cobalt Redeemer - Cryptic Sword
+ItemDisplay[SET !ID upl]: %CONTINUE%Sazabis Ghost Liberator - Balrog Skin
+
+// Tal Rasha's
+ItemDisplay[SET !ID oba]: %CONTINUE%Tal Rasha's Lidless Eye - Swirling Crystal
+ItemDisplay[SET !ID xsk]: %CONTINUE%Tal Rasha's Horadric Crest - Death Mask
+ItemDisplay[SET !ID uth]: %CONTINUE%Tal Rasha's Guardianship - Lacquered Plate
+ItemDisplay[SET !ID zmb]: %CONTINUE%Tal Rasha's Fine-Spun Cloth - Mesh Belt
+
+// Trang's
+ItemDisplay[SET !ID uh9]: %CONTINUE%Trang-Oul's Guise - Bone Visage
+ItemDisplay[SET !ID xul]: %CONTINUE%Trang-Oul's Scales - Chaos Armor
+ItemDisplay[SET !ID ne9]: %CONTINUE%Trang-Oul's Wing - Cantor Trophy
+ItemDisplay[SET !ID utc]: %CONTINUE%Trang-Oul's Girthquake - Troll Belt
+ItemDisplay[SET !ID xmg]: %CONTINUE%Trang-Oul's Claws - Heavy Bracers
+
+// Formatting for all unidentified sets
+ItemDisplay[SET !ID]: %CONTINUE%¿ %NAME% ?
 
 //----------------------------------------------------------------------------------------------------------------
 // 4. Base Items
@@ -4428,8 +4618,8 @@ ItemDisplay[(DRU OR (clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp)) DRUID RARE !ID]: %
 ItemDisplay[BAR BARBARIAN RARE !ID]: %NAME%
 ItemDisplay[(SIN OR (DAGGER !THROWING)) ASSASSIN RARE !ID]: %NAME%
 
-//Hide Magic Ring and Amulets on Super Strict Level
-ItemDisplay[(rin OR amu) MAG !ID FILTLVL>7]: {%NAME%}
+//Hide Magic Ring and Amulets on Strict Level
+ItemDisplay[(rin OR amu) MAG !ID FILTLVL>5]: {%NAME%}
 
 //Circlets
 ItemDisplay[CIRC MAG !ID FILTLVL>7]: {%NAME%}
