@@ -173,7 +173,16 @@ Alias[EDARMOR]: ((((CHEST OR (HELM !(BAR OR DRU)) OR (SHIELD !(DIN OR NEC)))ELT)
 Alias[EDWEAPON]: ((((WEAPON !SIN !SOR !WAND !SCEPTER !STAFF !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) !DAGGER) ELT) OR 8rx OR (RW WEAPON)) !SOCK=1 !INF SUP NMAG ED~5-15)
 
 // All item types with pointmods
-Alias[POINTMOD]: (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON)
+Alias[POINTMOD]: (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON OR DAGGER OR CLUB)
+
+// SKILL TREE BONUSES
+Alias[CLASS1]: (CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0)
+Alias[CLASS2]: (CLSK0>1 OR CLSK1>1 OR CLSK2>1 OR CLSK3>1 OR CLSK4>1 OR CLSK5>1 OR CLSK6>1)
+Alias[TREE2]: (CLSK0>1 OR CLSK1>1 OR CLSK2>1 OR CLSK8>1 OR CLSK9>1 OR CLSK10>1 OR CLSK16>1 OR CLSK17>1 OR CLSK18>1 OR CLSK24>1 OR CLSK25>1 OR CLSK26>1 OR CLSK32>1 OR CLSK33>1 OR CLSK34>1 OR CLSK40>1 OR CLSK41>1 OR CLSK42>1 OR CLSK48>1 OR CLSK49>1 OR CLSK50>1)
+Alias[TREE3]: (CLSK0>2 OR CLSK1>2 OR CLSK2>2 OR CLSK8>2 OR CLSK9>2 OR CLSK10>2 OR CLSK16>2 OR CLSK17>2 OR CLSK18>2 OR CLSK24>2 OR CLSK25>2 OR CLSK26>2 OR CLSK32>2 OR CLSK33>2 OR CLSK34>2 OR CLSK40>2 OR CLSK41>2 OR CLSK42>2 OR CLSK48>2 OR CLSK49>2 OR CLSK50>2)
+Alias[TREE4]: (CLSK0>3 OR CLSK1>3 OR CLSK2>3 OR CLSK8>3 OR CLSK9>3 OR CLSK10>3 OR CLSK16>3 OR CLSK17>3 OR CLSK18>3 OR CLSK24>3 OR CLSK25>3 OR CLSK26>3 OR CLSK32>3 OR CLSK33>3 OR CLSK34>3 OR CLSK40>3 OR CLSK41>3 OR CLSK42>3 OR CLSK48>3 OR CLSK49>3 OR CLSK50>3)
+Alias[TREE5]: (CLSK0>4 OR CLSK1>4 OR CLSK2>4 OR CLSK8>4 OR CLSK9>4 OR CLSK10>4 OR CLSK16>4 OR CLSK17>4 OR CLSK18>4 OR CLSK24>4 OR CLSK25>4 OR CLSK26>4 OR CLSK32>4 OR CLSK33>4 OR CLSK34>4 OR CLSK40>4 OR CLSK41>4 OR CLSK42>4 OR CLSK48>4 OR CLSK49>4 OR CLSK50>4)
+Alias[TREE6]: (CLSK0>5 OR CLSK1>5 OR CLSK2>5 OR CLSK8>5 OR CLSK9>5 OR CLSK10>5 OR CLSK16>5 OR CLSK17>5 OR CLSK18>5 OR CLSK24>5 OR CLSK25>5 OR CLSK26>5 OR CLSK32>5 OR CLSK33>5 OR CLSK34>5 OR CLSK40>5 OR CLSK41>5 OR CLSK42>5 OR CLSK48>5 OR CLSK49>5 OR CLSK50>5)
 
 //STAFFMODS
 //Amazon STAFFMODS
@@ -1781,12 +1790,12 @@ ItemDisplay[!ID UNI]: %CONTINUE%¿ %NAME% %GOLD%?
 //----------------------------------------------------------------------------------------------------------------
 
 // Tier levels for item bases. "A" and "S" tiers reserved for superior/ethereal bases with good rolls.
-Alias[BBASE]: (hbl OR zhb OR uhc OR tbl OR ztb OR utc OR vbl OR zvb OR uvc OR hbt OR xhb OR uhb OR mbt OR xmb OR umb OR vbt OR xvb OR uvb OR lbt OR xlb OR ulb OR aar OR xar OR uar OR scl OR xcl OR ucl OR ltp OR xtp OR utp OR qui OR xui OR uui OR hgl OR xhg OR uhg OR tgl OR xtg OR utg OR vgl OR xvg OR uvg OR crn OR xrn OR urn OR bhm OR xh9 OR uh9 OR msk OR xsk OR usk OR cap OR xap OR uap OR ba5 OR baa OR baf OR ba3 OR ba8 OR bad OR dr5 OR dra OR drf OR dr2 OR dr7 OR drc OR tow OR xow OR uow OR bsh OR xsh OR ush OR kit OR xit OR uit OR lrg OR xrg OR urg OR sml OR xml OR uml OR buc OR xuc OR uuc OR ne5 OR nea OR nef OR ne4 OR ne9 OR nee OR ne1 OR ne6 OR neb OR pa5 OR paa OR paf OR pa1 OR pa6 OR pab)
-Alias[CBASE]: (mbl OR zmb OR umc OR lbl OR zlb OR ulc OR tbt OR xtb OR utb OR ful OR xul OR uul OR gth OR xth OR uth OR plt OR xlt OR ult OR rng OR xng OR ung OR brs OR xrs OR urs OR hla OR xla OR ula OR lea OR xea OR uea OR mgl OR xmg OR umg OR lgl OR xlg OR ulg OR ghm OR xhm OR uhm OR skp OR xkp OR ukp OR ba4 OR ba9 OR bae OR ba2 OR ba7 OR bac OR ba1 OR ba6 OR bab OR dr4 OR dr9 OR dre OR dr3 OR dr8 OR drd OR dr1 OR dr6 OR drb OR gts OR xts OR uts OR spk OR xpk OR upk OR ne3 OR ne8 OR ned OR ne2 OR ne7 OR neg OR pa4 OR pa9 OR pae OR pa3 OR pa8 OR pad OR pa2 OR pa7 OR pac)
-Alias[DBASE]: (fld OR xld OR uld OR spl OR xpl OR upl OR chn OR xhn OR uhn OR stu OR xtu OR utu OR fhl OR xhl OR uhl OR hlm OR xlm OR ulm)
 Alias[FBASE]: (ci0 OR ci2 OR ci3 OR ci1)
-Alias[ABASE]: (BBASE SUP ED~1-13)
-Alias[SBASE]: (BBASE SUP ED>13)
+Alias[DBASE]: (fld OR xld OR uld OR spl OR xpl OR upl OR chn OR xhn OR uhn OR stu OR xtu OR utu OR fhl OR xhl OR uhl OR hlm OR xlm OR ulm)
+Alias[CBASE]: (mbl OR zmb OR umc OR lbl OR zlb OR ulc OR tbt OR xtb OR utb OR ful OR xul OR uul OR gth OR xth OR uth OR plt OR xlt OR ult OR rng OR xng OR ung OR brs OR xrs OR urs OR hla OR xla OR ula OR lea OR xea OR uea OR mgl OR xmg OR umg OR lgl OR xlg OR ulg OR ghm OR xhm OR uhm OR skp OR xkp OR ukp OR ba4 OR ba9 OR bae OR ba2 OR ba7 OR bac OR ba1 OR ba6 OR bab OR dr4 OR dr9 OR dre OR dr3 OR dr8 OR drd OR dr1 OR dr6 OR drb OR gts OR xts OR uts OR spk OR xpk OR upk OR ne3 OR ne8 OR ned OR ne2 OR ne7 OR neg OR pa4 OR pa9 OR pae OR pa3 OR pa8 OR pad OR pa2 OR pa7 OR pac)
+Alias[BBASE]: (hbl OR zhb OR uhc OR tbl OR ztb OR utc OR vbl OR zvb OR uvc OR hbt OR xhb OR uhb OR mbt OR xmb OR umb OR vbt OR xvb OR uvb OR lbt OR xlb OR ulb OR aar OR xar OR uar OR scl OR xcl OR ucl OR ltp OR xtp OR utp OR qui OR xui OR uui OR hgl OR xhg OR uhg OR tgl OR xtg OR utg OR vgl OR xvg OR uvg OR crn OR xrn OR urn OR bhm OR xh9 OR uh9 OR msk OR xsk OR usk OR cap OR xap OR uap OR ba5 OR baa OR baf OR ba3 OR ba8 OR bad OR dr5 OR dra OR drf OR dr2 OR dr7 OR drc OR tow OR xow OR uow OR bsh OR xsh OR ush OR kit OR xit OR uit OR lrg OR xrg OR urg OR sml OR xml OR uml OR buc OR xuc OR uuc OR ne5 OR nea OR nef OR ne4 OR ne9 OR nee OR ne1 OR ne6 OR neb OR pa5 OR paa OR paf OR pa1 OR pa6 OR pab)
+Alias[ABASE]: ((hbl OR zhb OR uhc OR tbl OR ztb OR utc OR vbl OR zvb OR uvc OR hbt OR xhb OR uhb OR mbt OR xmb OR umb OR vbt OR xvb OR uvb OR lbt OR xlb OR ulb OR aar OR xar OR uar OR scl OR xcl OR ucl OR ltp OR xtp OR utp OR qui OR xui OR uui OR hgl OR xhg OR uhg OR tgl OR xtg OR utg OR vgl OR xvg OR uvg OR crn OR xrn OR urn OR bhm OR xh9 OR uh9 OR msk OR xsk OR usk OR cap OR xap OR uap OR ba5 OR baa OR baf OR ba3 OR ba8 OR bad OR dr5 OR dra OR drf OR dr2 OR dr7 OR drc OR tow OR xow OR uow OR bsh OR xsh OR ush OR kit OR xit OR uit OR lrg OR xrg OR urg OR sml OR xml OR uml OR buc OR xuc OR uuc OR ne5 OR nea OR nef OR ne4 OR ne9 OR nee OR ne1 OR ne6 OR neb OR pa5 OR paa OR paf OR pa1 OR pa6 OR pab) AND SUP AND ED~1-13)
+Alias[SBASE]: ((hbl OR zhb OR uhc OR tbl OR ztb OR utc OR vbl OR zvb OR uvc OR hbt OR xhb OR uhb OR mbt OR xmb OR umb OR vbt OR xvb OR uvb OR lbt OR xlb OR ulb OR aar OR xar OR uar OR scl OR xcl OR ucl OR ltp OR xtp OR utp OR qui OR xui OR uui OR hgl OR xhg OR uhg OR tgl OR xtg OR utg OR vgl OR xvg OR uvg OR crn OR xrn OR urn OR bhm OR xh9 OR uh9 OR msk OR xsk OR usk OR cap OR xap OR uap OR ba5 OR baa OR baf OR ba3 OR ba8 OR bad OR dr5 OR dra OR drf OR dr2 OR dr7 OR drc OR tow OR xow OR uow OR bsh OR xsh OR ush OR kit OR xit OR uit OR lrg OR xrg OR urg OR sml OR xml OR uml OR buc OR xuc OR uuc OR ne5 OR nea OR nef OR ne4 OR ne9 OR nee OR ne1 OR ne6 OR neb OR pa5 OR paa OR paf OR pa1 OR pa6 OR pab) SUP ED>13)
 
 // Hide normal and exceptional bases
 ItemDisplay[NMAG !POINTMOD NORM FILTLVL>3]:
@@ -2087,7 +2096,7 @@ Alias[SMALL1]: (amu OR rin)
 Alias[SMALL2]: (BELT OR WAND OR (SOR !(ob5 OR oba OR obf)) OR dgr OR dir OR 9dg OR 9di OR 7dg OR 7di OR tkf OR bkf OR 9tk OR 9bk OR 7tk OR 7bk OR tax OR 9ta OR 7ta)
 
 // Unidentified small items that could sell for enough to pick up.
-ItemDisplay[SMALL2 (MAG OR RARE) !(NORM BELT) !ETH !ID !TOWN !SHOP]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[SMALL2 (MAG OR RARE) !(NORM BELT) !ETH !ID !TOWN !SHOP]: %NAME% %GREEN%${%NAME%}%CONTINUE%
 
 // Normal Act 1: 5k max
 ItemDisplay[DIFF=0 MAPID<40 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>2250]: %NAME% %TAN%${%NAME%}%CONTINUE%
@@ -3690,16 +3699,16 @@ ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll) FILTLVL>0 (CLVL>39 OR FILTLVL>5)]: {%
 //  15. Keys
 //----------------------------------------------------------------------------------------------------------------
 
+ItemDisplay[key]: %GRAY%key %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+
 // Hide keys for Assassin or higher filter levels
-ItemDisplay[key ((FILTLVL>0 ASSASSIN) OR FILTLVL>5) !TOWN]: {%NAME%}%CONTINUE%
+ItemDisplay[key ((FILTLVL>0 ASSASSIN) OR FILTLVL>1) !TOWN]: {%NAME%}%CONTINUE%
 
 // Skeleton Key
 ItemDisplay[rkey (TOWN OR MAPID>132)]: %NAME%{%TAN%Note%WHITE%: You won't lose it in Cube recipes}%CONTINUE%
 ItemDisplay[rkey (TOWN)]: %NAME%{%CORAL%Pathfinding%WHITE%/%TEAL%Map Reading %WHITE%Tips available outside Town%NL%%NAME%}%CONTINUE%
 
 // --- 15.1 Runeword Info ---
-
-ItemDisplay[key]: %GRAY%key%CONTINUE%
 //keys description in inventory
 ItemDisplay[key (TOWN OR MAPID>132)]: %NAME%{%TAN%Pro-Tip%WHITE%: You can buy many}%CONTINUE%
 ItemDisplay[key (TOWN OR MAPID>132)]: %NAME%{%ORANGE%Crafting %WHITE%Bases from Vendors%NL%%NAME%}%CONTINUE%
@@ -4714,14 +4723,14 @@ ItemDisplay[(am2 OR am7 OR amc) (MAG OR RARE) !ID (ALVL>74 OR CRAFTALVL>74)]: %N
 // 
 // ignore target defense - rod, knife, claw
 // 
-// 40 aspd - !(rod)
-// 20 aspd - weaponPS
+// 40 aspd - !(orb wand staff)
+// 20 aspd - weaponPS = !(orb wand)
 // 
 // 40 fcr - staff
 // 30 fcr - other rods, orbs, clubs
 // 
 // +30 dex - missile weapons
-// +30 ene	- orb, wand, staff
+// +30 ene - orb, wand, staff
 // +15 ene - scepter
 // +30 str - club, hammer
 // +20 str - scepter, tipped mace
@@ -4744,49 +4753,276 @@ ItemDisplay[(am2 OR am7 OR amc) (MAG OR RARE) !ID (ALVL>74 OR CRAFTALVL>74)]: %N
 // 
 // DS, OW, CB - physical weapons
 //
-// Lower Res suffixes
-// 907 - 8% lvl 5 strike
-// 908 - 10% lvl 10 strike
-// 909 - 12% lvl 15 strike
-// 910 - 8% lvl 5 cast
-// 911 - 10% lvl 10 cast
-// 912 - 12% lvl 15 cast
-// Amp Damage suffixes
-//662 - 8% lvl 18 (no longer used?)
-//901 - 8% lvl 15 strike
-//898 or 902 - 10% lvl 23 strike
-//899 or 903 - 12% lvl 31 strike
-//904 - 8% lvl 15 cast
-//905 - 10% lvl 23 cast
-//906 - 12% lvl 31 cast
+// --- Charged/Proc Skill Attributes ---
+// Charge Skill: MULTI204,{ATTRIBUTE_ID} = current_charges + (max_charges * 256)
+// Cast on Striking: MULTI198,{ATTRIBUTE_ID} = % chanc
+// Cast on Casting: MULTI200,{ATTRIBUTE_ID} = % chanc
+// ATTRIBUTE_ID = (skill_id * 64) + skill_level
+//    10 bits for skill_ID, 6 bits for skill_level
+//    bits:  IIIIIIIIIILLLLLL
+//           31    
+//           268421         
+//           731000521      
+//           689942152631   
+//           8426842684268421
+//    82,1 = 0001010010000001 = life tap, level 1
+//    = 1+128+1024+4096 = 5249
+//    = 82*64+1 = 5249
+// ItemDisplay[EDGED RARE MULTI204,5249>0]: %NAME%{%NAME%%BLUE%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
+
+//----------------------------------------------------------------------------------------------------------------
+// Point system for Bludgeoning Weapons
+// (Maces and scepters)
+//----------------------------------------------------------------------------------------------------------------
+
+Alias[BLUDGEON]: (MACE OR SCEPTER)
+
+// Close: Show max theoretical points.
+ItemDisplay[HAMMER RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE% // 6+8=14
+ItemDisplay[(CLUB OR TMACE) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[SCEPTER RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%NL%%NAME%}%CONTINUE% // 9+8=17
+
+// Prefixes (max 6 pts hammers, 7 clubs & tipped maces, 9 scepters)
+// # Skills (2 pts, 5 pts scepters)
+ItemDisplay[BLUDGEON RARE CLASS1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE CLASS2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE TREE2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// ### Extra points for high skill combos on clubs and scepters
+ItemDisplay[BLUDGEON RARE PRIME3]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE PRIME4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE PRIME5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// # Enhanced Damage (4 pts hammers & scepters, 5 pts clubs & tipped maces)
+// Hammers & Scepters: 300%+150%=450%
+ItemDisplay[BLUDGEON RARE ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(HAMMER OR SCEPTER) RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Clubs & Tipped Maces: 400%+150%=550%
+ItemDisplay[BLUDGEON RARE ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Maximum Damage per Level (2 pts)
+ItemDisplay[BLUDGEON RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Damage to Demons (1 pt)
+ItemDisplay[BLUDGEON RARE STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Undead (1 pt)
+ItemDisplay[BLUDGEON RARE STAT122>275]: %NAME%{%NAME%%RED%•}%CONTINUE% // Account for 50% automod
+// # Enemy Resistances (2 pts, scepters only)
+ItemDisplay[SCEPTER RARE (STAT333>4 OR STAT334>4 OR STAT335>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[SCEPTER RARE (STAT333>7 OR STAT334>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+// Socketed (1 pt)
+ItemDisplay[BLUDGEON RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// Life after each Kill (1 pt)
+ItemDisplay[BLUDGEON RARE STAT86>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// Mana after each Kill (1 pt)
+ItemDisplay[BLUDGEON RARE STAT138>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Resistances (3 pts total, 4 scepters)
+ItemDisplay[BLUDGEON RARE (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// Suffixes (max 8 pts)
+// # Increased Attack Speed (3 pts)
+ItemDisplay[BLUDGEON RARE IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Faster Cast Rate (3 pts)
+ItemDisplay[BLUDGEON RARE FCR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE FCR>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE FCR>29]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Damage (1 pt)
+ItemDisplay[BLUDGEON RARE MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Chance to Cast on Striking (3 pts)
+ItemDisplay[BLUDGEON RARE MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
+ItemDisplay[BLUDGEON RARE MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
+ItemDisplay[BLUDGEON RARE MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+ItemDisplay[BLUDGEON RARE MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
+ItemDisplay[BLUDGEON RARE MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
+ItemDisplay[BLUDGEON RARE MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
+// # Crushing Blow (2 pts)
+ItemDisplay[BLUDGEON RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Deadly Strike (2 pt)
+ItemDisplay[BLUDGEON RARE STAT141>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE STAT141>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Strength (1 pt, club & hammer only)
+ItemDisplay[BLUDGEON RARE STR>20]:  %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+// # Life Steal (1 pt)
+ItemDisplay[BLUDGEON RARE STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Mana Steal (1 pt)
+ItemDisplay[BLUDGEON RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Prevent Monster Heal (1 pt)
+ItemDisplay[BLUDGEON RARE STAT117]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// # Ignore Target's Defense (2 pts, scepter only)
+ItemDisplay[BLUDGEON RARE STAT115]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+
+// Combined Prefixes & Suffixes
+// # Open Wounds (2 pts)
+// [P: 20% +563, S: 10% +325, Total: +888]
+ItemDisplay[BLUDGEON RARE STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Elemental Damage (3 pts each)
+// Fire [P: 306-432 (738), S: 214-302 (516)]
+ItemDisplay[BLUDGEON RARE STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[BLUDGEON RARE STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[BLUDGEON RARE STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// Lightning [P: 1-576 (577), S: 6-403 (409)]
+ItemDisplay[BLUDGEON RARE STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[BLUDGEON RARE STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[BLUDGEON RARE STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// Cold [P: 112-348 (460), S: 118-365 (483)]
+ItemDisplay[BLUDGEON RARE STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[BLUDGEON RARE STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[BLUDGEON RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+
+//Open
+ItemDisplay[BLUDGEON RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+
+//----------------------------------------------------------------------------------------------------------------
+// Point system for Edged Melee Weapons
+// (Axes, swords, daggers, spears, polearms, claws)
+//----------------------------------------------------------------------------------------------------------------
+
+Alias[EDGED]: ((AXE OR SWORD OR DAGGER OR SPEAR OR POLEARM OR SIN) !THROWING)
+
+ItemDisplay[EDGED !DAGGER !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE% // 6+8=14
+ItemDisplay[DAGGER !THROWING RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[ZON SPEAR RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE% // 8+8=16
+
+// Prefixes (max 6 pts, 7 daggers, 8 zon spears)
+// # Skills (2 pts, 1 pt polearms, 4 pts zon spears)
+// zon spears: class 2, tree 6
+// non-zon spears: class 2, tree 3
+// claws, crystal swords, axes, daggers, swords: class 2 tree 2
+// polearms: tree 2
+ItemDisplay[EDGED RARE CLASS1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED RARE CLASS2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED !ZON RARE TREE2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED RARE TREE3]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED RARE TREE4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED RARE TREE5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED RARE TREE6]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// # Enhanced Damage (4 pts, 5 pts daggers)
+// Most edged weapons: 300%+150%=450%
+ItemDisplay[EDGED RARE ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED RARE ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED RARE ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED !DAGGER RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Daggers: 400%+150%=550%
+ItemDisplay[EDGED RARE ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING RARE ED>200]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING RARE ED>300]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING RARE ED>550]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Maximum Damage per Level (2 pts)
+ItemDisplay[EDGED RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Damage to Demons (1 pt)
+ItemDisplay[EDGED RARE STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Undead (1 pt)
+ItemDisplay[EDGED RARE STAT122>225]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Enemy Resistances (2 pts, crystal sword and claws only)
+ItemDisplay[(SIN OR crs OR 9cr OR 7cr) RARE (STAT333>4 OR STAT334>4 OR STAT335>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[(SIN OR crs OR 9cr OR 7cr) RARE (STAT333>7 OR STAT334>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[SIN RARE (STAT336>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison claws only
+ItemDisplay[SIN RARE (STAT336>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison claws only
+// Socketed (1 pt)
+ItemDisplay[EDGED RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// Life after each Kill (1 pt)
+ItemDisplay[EDGED RARE STAT86>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// Mana after each Kill (1 pt)
+ItemDisplay[EDGED RARE STAT138>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Resistances (4 pts total)
+ItemDisplay[EDGED RARE (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED RARE (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED RARE (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED RARE (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// Suffixes (max 8 pts)
+// # Increased Attack Speed (3 pts)
+ItemDisplay[EDGED RARE IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED RARE IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Damage (1 pt)
+ItemDisplay[EDGED RARE MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Chance to Cast on Striking (3 pts)
+ItemDisplay[EDGED RARE MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
+ItemDisplay[EDGED RARE MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
+ItemDisplay[EDGED RARE MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+ItemDisplay[EDGED RARE MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
+ItemDisplay[EDGED RARE MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
+ItemDisplay[EDGED RARE MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
+// # Crushing Blow (2 pts)
+ItemDisplay[EDGED RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Deadly Strike (2 pts)
+ItemDisplay[EDGED RARE STAT141>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED RARE STAT141>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Life Steal (1 pt)
+ItemDisplay[EDGED RARE STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Mana Steal (1 pt)
+ItemDisplay[EDGED RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Life Tap Charges (2 pt, axe & dagger only)
+ItemDisplay[EDGED RARE MULTI204,5249>0]: %NAME%{%NAME%%BLUE%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
+// # Prevent Monster Heal (1 pt)
+ItemDisplay[EDGED RARE STAT117]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// # Ignore Target's Defense (2 pts, dagger & claw only)
+ItemDisplay[EDGED RARE STAT115]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+
+// Combined Prefixes & Suffixes
+// # Open Wounds (2 pts)
+// [P: 20% +563, S: 10% +325, Total: +888]
+ItemDisplay[EDGED RARE STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED RARE STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED RARE STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Elemental Damage (3 pts each)
+// Fire [P: 306-432 (738), S: 214-302 (516)]
+ItemDisplay[EDGED RARE STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[EDGED RARE STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[EDGED RARE STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// Lightning [P: 1-576 (577), S: 6-403 (409)]
+ItemDisplay[EDGED RARE STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[EDGED RARE STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[EDGED RARE STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// Cold [P: 112-348 (460), S: 118-365 (483)]
+ItemDisplay[EDGED RARE STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[EDGED RARE STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[EDGED RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+
+//Open
+ItemDisplay[EDGED RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Throwing Weapons
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[THROWING !AXE !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE%
-ItemDisplay[THROWING AXE RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE%
-ItemDisplay[THROWING ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[THROWING !AXE !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE% // 6+8=14
+ItemDisplay[THROWING AXE RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[THROWING ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE% // 8+8=16
 
 // Prefixes (max 6 pts, 7 pts axes, 8 pts zon javs)
-// # Skills (2 pts, 3 pts zon javs)
-ItemDisplay[THROWING RARE (CLSK0>0 OR CLSK4>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[THROWING RARE (CLSK0>1 OR CLSK4>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[THROWING !ZON RARE (TABSK2>1 OR TABSK32>1 OR TABSK33>1 OR TABSK34>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +2 affix
-ItemDisplay[THROWING RARE TABSK2>2]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod or +3 affix
-ItemDisplay[THROWING ZON RARE TABSK2>4]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +2 affix
-ItemDisplay[THROWING ZON RARE TABSK2>5]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +3 affix
+// # Skills (2 pts, 4 pts zon javs)
+ItemDisplay[THROWING RARE CLASS1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[THROWING RARE CLASS2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE TREE2]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +2 affix
+ItemDisplay[THROWING RARE TREE3]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod or +3 affix
+ItemDisplay[THROWING RARE TREE4]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +1 affix, OR +2/+2
+ItemDisplay[THROWING RARE TREE5]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +2 affix
+ItemDisplay[THROWING RARE TREE6]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +3 affix
 // # Enhanced Damage (4 pts javs & daggers, 5 pts zon javs & axes)
-ItemDisplay[THROWING !AXE !ZON RARE ED>149]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[THROWING !AXE !ZON RARE ED>249]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes or high roll
-ItemDisplay[THROWING !AXE !ZON RARE ED>349]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
-ItemDisplay[THROWING !AXE !ZON RARE ED>399]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
-ItemDisplay[THROWING (AXE OR ZON) RARE ED>199]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[THROWING (AXE OR ZON) RARE ED>299]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[THROWING (AXE OR ZON) RARE ED>399]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes or max roll
-ItemDisplay[THROWING (AXE OR ZON) RARE ED>499]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
-ItemDisplay[THROWING (AXE OR ZON) RARE ED>549]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// Javelins & Throwing Knives: 300%+150%=450%
+ItemDisplay[THROWING RARE ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING RARE ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING RARE ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING !AXE !ZON RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Amazon Javelins & Throwing Axes: 400%+150%=550%
+ItemDisplay[THROWING RARE ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Maximum Damage per Level (2 pts)
 ItemDisplay[THROWING RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
 ItemDisplay[THROWING RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
@@ -4817,12 +5053,12 @@ ItemDisplay[THROWING RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 // # Damage (1 pt)
 ItemDisplay[THROWING RARE MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Chance to Cast on Striking (3 pts)
-ItemDisplay[THROWING RARE (SUFFIX=662 OR SUFFIX=901)]: %NAME%{%NAME%%RED%•}%CONTINUE% // Amplify Damage
-ItemDisplay[THROWING RARE (SUFFIX=898 OR SUFFIX=902)]: %NAME%{%NAME%%RED%••}%CONTINUE% // Amplify Damage
-ItemDisplay[THROWING RARE (SUFFIX=899 OR SUFFIX=903)]: %NAME%{%NAME%%RED%•••}%CONTINUE% // Amplify Damage
-ItemDisplay[THROWING RARE SUFFIX=907]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lower Res
-ItemDisplay[THROWING RARE SUFFIX=908]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // Lower Res
-ItemDisplay[THROWING RARE SUFFIX=909]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // Lower Res
+ItemDisplay[THROWING RARE MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
+ItemDisplay[THROWING RARE MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
+ItemDisplay[THROWING RARE MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+ItemDisplay[THROWING RARE MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
+ItemDisplay[THROWING RARE MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
+ItemDisplay[THROWING RARE MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
 // # Crushing Blow (2 pts)
 ItemDisplay[THROWING RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
 ItemDisplay[THROWING RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
@@ -4857,27 +5093,29 @@ ItemDisplay[THROWING RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% 
 //Open
 ItemDisplay[THROWING RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 
-
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Missile Weapons
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[(BOW OR XBOW) !ZON RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE%
-ItemDisplay[BOW ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) !ZON RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[BOW ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE% // 8+8=16
 
 // Prefixes (max 7 pts, 8 pts zon bows)
 // # Skills (2 pts, 3 pts zon bows)
-ItemDisplay[(BOW OR XBOW) RARE CLSK0>0]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[(BOW OR XBOW) RARE CLSK0>1]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[(BOW OR XBOW) !ZON RARE TABSK0>1]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[BOW ZON RARE TABSK0>2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE CLASS1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE CLASS2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) !ZON RARE TREE2]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +2 affix
+ItemDisplay[(BOW OR XBOW) RARE TREE3]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod or +3 affix
+ItemDisplay[(BOW OR XBOW) RARE TREE4]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +1 affix, OR +2/+2
+ItemDisplay[(BOW OR XBOW) RARE TREE5]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +2 affix
 // # Enhanced Damage (5 pts)
-ItemDisplay[(BOW OR XBOW) RARE ED>199]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[(BOW OR XBOW) RARE ED>299]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[(BOW OR XBOW) RARE ED>399]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes or max roll
-ItemDisplay[(BOW OR XBOW) RARE ED>499]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
-ItemDisplay[(BOW OR XBOW) RARE ED>549]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// 400%+200%=600%
+ItemDisplay[(BOW OR XBOW) RARE ED>200]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE ED>300]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes or max roll
+ItemDisplay[(BOW OR XBOW) RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+ItemDisplay[(BOW OR XBOW) RARE ED>550]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
 // # Maximum Damage per Level (2 pts)
 ItemDisplay[(BOW OR XBOW) RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
 ItemDisplay[(BOW OR XBOW) RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
@@ -4921,12 +5159,12 @@ ItemDisplay[(BOW OR XBOW) RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 ItemDisplay[(BOW OR XBOW) RARE MINDMG+MAXDMG>27]: %NAME%{%NAME%%RED%•}%CONTINUE%
 ItemDisplay[(BOW OR XBOW) RARE MINDMG+MAXDMG>55]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Chance to Cast on Striking (3 pts)
-ItemDisplay[(BOW OR XBOW) RARE (SUFFIX=662 OR SUFFIX=901)]: %NAME%{%NAME%%RED%•}%CONTINUE% // Amplify Damage
-ItemDisplay[(BOW OR XBOW) RARE (SUFFIX=898 OR SUFFIX=902)]: %NAME%{%NAME%%RED%••}%CONTINUE% // Amplify Damage
-ItemDisplay[(BOW OR XBOW) RARE (SUFFIX=899 OR SUFFIX=903)]: %NAME%{%NAME%%RED%•••}%CONTINUE% // Amplify Damage
-ItemDisplay[(BOW OR XBOW) RARE SUFFIX=907]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lower Res
-ItemDisplay[(BOW OR XBOW) RARE SUFFIX=908]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // Lower Res
-ItemDisplay[(BOW OR XBOW) RARE SUFFIX=909]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // Lower Res
+ItemDisplay[(BOW OR XBOW) RARE MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
+ItemDisplay[(BOW OR XBOW) RARE MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
+ItemDisplay[(BOW OR XBOW) RARE MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+ItemDisplay[(BOW OR XBOW) RARE MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
+ItemDisplay[(BOW OR XBOW) RARE MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
+ItemDisplay[(BOW OR XBOW) RARE MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
 // # Crushing Blow (2 pts)
 ItemDisplay[(BOW OR XBOW) RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
 ItemDisplay[(BOW OR XBOW) RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
@@ -4951,14 +5189,15 @@ ItemDisplay[(BOW OR XBOW) RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CO
 
 // Close: Show max theoretical points.
 ItemDisplay[(HELM !CLASS) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••%NL%%NAME%}%CONTINUE%
-ItemDisplay[(BAR OR DRU) RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[(BAR OR DRU) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE%
 
-// Prefixes
-// # Skills (2 pts)
-ItemDisplay[HELM RARE (CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[HELM RARE (TABSK32>1 OR TABSK33>1 OR TABSK34>1 OR TABSK40>1 OR TABSK41>1 OR TABSK42>1 OR TABSK49>1 OR CLSK4>1 OR CLSK5>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// Prefixes (max 10 pts class, 6 pts non-class
+// # Skills (5 pts class helms, 1 pt non-class)
+ItemDisplay[HELM RARE CLASS1]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[HELM RARE CLASS2]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // class helms only
+ItemDisplay[HELM RARE TREE2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 // ### Extra points for high skill combos on Barb and Druid helms
-ItemDisplay[HELM RARE PRIME3 (TABSK32<3 TABSK33<3 TABSK34<3 TABSK40<3 TABSK41<3 TABSK42<3)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[HELM RARE PRIME3]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 ItemDisplay[HELM RARE PRIME4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 ItemDisplay[HELM RARE PRIME5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 // # Damage to Demons (1 pt)
@@ -4980,7 +5219,7 @@ ItemDisplay[HELM RARE EDEF>140]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 ItemDisplay[HELM RARE AR>80]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 ItemDisplay[HELM RARE STAT224>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
-// Suffixes
+// Suffixes (max 5 pts)
 // # Faster Hit Recovery (2 pts)
 ItemDisplay[HELM RARE FHR>11]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 ItemDisplay[HELM RARE FHR>23]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
@@ -5012,13 +5251,19 @@ ItemDisplay[HELM RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[(SHIELD AND !DIN) RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE%
-ItemDisplay[DIN RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[(SHIELD AND !CLASS) RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE% // 8+6=14
+ItemDisplay[DIN RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 9+6=15
+ItemDisplay[NEC RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%NL%%NAME%}%CONTINUE% // 11+6=17
 
-// Prefixes
-// # Skills (2 pts)
-ItemDisplay[SHIELD RARE (CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[SHIELD RARE (TABSK24>1 OR TABSK25>1 OR TABSK26>1 OR TABSK16>1 OR TABSK17>1 OR TABSK18>1 OR CLSK2>1 OR CLSK3>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// Prefixes (max 8 non-class, 9 paladin, 11 necromancer) 
+// # Skills (2 pts, 5 pts necromancer helms)
+ItemDisplay[SHIELD RARE CLASS1]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[SHIELD RARE CLASS2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[SHIELD RARE TREE2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// ### Extra points for high skill combos on Necromancer shields
+ItemDisplay[SHIELD RARE PRIME3]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[SHIELD RARE PRIME4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[SHIELD RARE PRIME5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 // # Enhanced Damage (3 pts)
 ItemDisplay[(SHIELD AND !DIN) RARE EDAM>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
 ItemDisplay[(SHIELD AND !DIN) RARE EDAM>80]: %NAME%{%NAME%%RED%•}%CONTINUE%
@@ -5051,7 +5296,7 @@ ItemDisplay[SHIELD RARE EDEF>140]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 // # Socketed
 ItemDisplay[SHIELD RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
-// Suffixes
+// Suffixes (max 6)
 // # Faster Cast Rate (2 pts)
 ItemDisplay[SHIELD RARE FCR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 ItemDisplay[SHIELD RARE FCR>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
@@ -5060,7 +5305,7 @@ ItemDisplay[SHIELD RARE FHR>11]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 ItemDisplay[SHIELD RARE FHR>23]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 // # Poison Length Reduced (1 pt)
 ItemDisplay[SHIELD RARE STAT110>49]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-// # Life (3 pts)
+// # Life (3 pts total)
 ItemDisplay[SHIELD RARE LIFE>40]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 ItemDisplay[SHIELD RARE LIFE>80]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 ItemDisplay[SHIELD RARE STAT216>0]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
@@ -5093,7 +5338,7 @@ ItemDisplay[CHEST RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••%NL%%NAME%}%CONTINUE%
 
 // Prefixes
 // # Skills (1 pt)
-ItemDisplay[CHEST RARE (CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[CHEST RARE CLASS1]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 // # Enhanced Damage (2 pts)
 ItemDisplay[CHEST RARE EDAM>100]: %NAME%{%NAME%%RED%•}%CONTINUE%
 ItemDisplay[CHEST RARE EDAM>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
@@ -7761,7 +8006,7 @@ ItemDisplay[(NOTICEME09)]: %NAME%{%DARK_GREEN%Life Tap Charges%CL%%NAME%}%CONTIN
 //ALL ITEM DESCRIPTIONS CLOSER - DESCRIPTIONS ABOVE THIS LINE
 
 //Show me quantitiy of all stackables
-ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR aqv OR cqv OR (MAPTIER>0 !NMAG)) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR aqv OR cqv OR key OR (MAPTIER>0 !NMAG)) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
 
 //Fixing coloring for vendors pt.1
 ItemDisplay[UNI OR RW]: %NAME%%GOLD%{%NAME%}%CONTINUE%
@@ -8516,13 +8761,19 @@ ItemDisplay[NMAG !RW SORSTAFF (FILTLVL<2 OR (CLVL<80 AND FILTLVL~2-5))]: %NAME%{
 //Always show me those items
 ItemDisplay[UNI OR SET OR RW OR CRAFT OR GEMMED OR EQUIPPED OR SHOP OR leg]: %NAME%{%NAME%}
 
+//Show elite superior items
+ItemDisplay[ELT SUPED]: %NAME%{%NAME%}
+
 //Notifying for Unknown Items (future proofing) (Thanks to BetweenWalls)
 ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1) !(ARMOR OR WEAPON OR amu OR rin OR aqv OR cqv OR cm1 OR cm2 OR cm3 OR jew OR jewf OR RUNE>0 OR GEMTYPE>0 OR MAPTIER>-1 OR hp1 OR mp1 OR hp2 OR mp2 OR hp3 OR mp3 OR hp4 OR mp4 OR hp5 OR mp5 OR pvpp OR rvs OR rvl OR vps OR wms OR yps OR key OR tsc OR isc OR tbk OR ibk OR ear OR bks OR bkd OR box OR vip OR tr1 OR ass OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR toa OR tes OR ceh OR bet OR fed OR dhn OR bey OR mbr OR pk1 OR pk2 OR pk3 OR std OR wss OR cwss OR lpp OR lbox OR lmal OR crfb OR crfc OR crfh OR crfs OR crfv OR crfu OR crfp OR rtp OR rid OR rkey OR lsvl OR llmr OR ubtm OR uba OR ubaa OR ubab OR ubac OR dcma OR dcso OR dcho OR dcbl OR rtma OR rtmv OR rtmo OR cm2f OR rtmf OR iwss OR scrb OR upmp OR scou OR irma OR irra OR urma OR rrra OR imma OR imra OR upma OR rera OR fort OR ram OR luca OR lucb OR lucc OR lucd OR imrn OR cm1p OR cm2p OR cm3p)]: %SOUNDID-705%%MAP-0A%%PX-62%%NAME%{%NAME%%CL%%WHITE%Item description will be adjusted later during the season.%CL%%TAN%Note%WHITE%: This item is recently added to the game.}	// notifications for unknown items (the first group of conditions including ilvl/qty/price is a workaround for !GOLD>0 since that doesn't work like other conditions)
 
-//HIDE EVERYTHING ELSE
+
+// Show some magic and rare
 ItemDisplay[(ARMOR OR WEAPON) (MAG OR RARE) !ID (FILTLVL<2 OR (CLVL<41 FILTLVL<6))]: %NAME%
 ItemDisplay[(ARMOR OR WEAPON) (EXC OR ELT) (MAG OR RARE) !ID (FILTLVL<2 OR (CLVL<80 AND FILTLVL~2-5))]: %NAME%
 ItemDisplay[(CHEST OR HELM OR CIRC OR SHIELD) NORM RARE !ID (FILTLVL<2 OR (CLVL<80 AND FILTLVL~2-5))]: %NAME%
+
+// Show some non-magic items
 ItemDisplay[((CHEST OR HELM OR CIRC OR SHIELD) OR (WEAPON AND !THROWPOTS)) (EXC OR ELT) NMAG !ETH !INF !SOCK=1 (FILTLVL<2 OR (CLVL<80 AND FILTLVL~2-5))]: %NAME%{%NAME%}
 ItemDisplay[(WEAPON AND !THROWPOTS) (EXC OR ELT) NMAG ETH !INF !SOCK=1 (FILTLVL<2 OR (CLVL<80 AND FILTLVL~2-5))]: %NAME%{%NAME%}
 ItemDisplay[(CIRC OR HELM) NORM NMAG !ETH !INF SOCK=3 (FILTLVL<2 OR (CLVL<80 AND FILTLVL~2-5))]: %NAME%{%NAME%}
@@ -8536,6 +8787,8 @@ ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>1 (CLVL<61 FILTLVL<6)]: %NAME%{%
 ItemDisplay[(am5 OR ama OR amf) NMAG !RW TABSK2>2 (FILTLVL<2 OR (CLVL<80 AND FILTLVL~2-5))]: %NAME%{%NAME%}
 ItemDisplay[(GLOVES OR BOOTS OR BELT) NMAG !INF (CLVL<19 FILTLVL<6)]: %NAME%{%NAME%}
 ItemDisplay[((CHEST OR HELM OR CIRC OR SHIELD) OR WEAPON) !INF (CLVL<31 FILTLVL<6)]: %NAME%{%NAME%}
+
+//HIDE EVERYTHING ELSE
 ItemDisplay[(ARMOR OR WEAPON) TOWN FILTLVL>0]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%}
 ItemDisplay[(ARMOR OR WEAPON) !TOWN FILTLVL>0]: {%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%}
 ItemDisplay[(ARMOR OR WEAPON) INF FILTLVL>0]: {%NAME%}
