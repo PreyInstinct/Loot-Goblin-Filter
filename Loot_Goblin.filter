@@ -20,12 +20,12 @@
 //        3.2 Inferior & Superior
 //        3.3 Uniques (Peeking)
 	  3.4 Sets (Peeking)
+//     9. General Tags and Appearance
 //     4. Base Items
 //     5. Shop Hunting
 //     6. Affix Callouts
 //     7. Sockets
 //     8. Sound Effects
-//     9. General Tags and Appearance
 //     10. Gold and Sale Prices
 //     11. Gambling Screen
 //     12. Non-magic Modifiers
@@ -1502,7 +1502,7 @@ ItemDisplay[UNI !ID 92h]: %CONTINUE%Crainte Vomir - Espandon
 ItemDisplay[UNI !ID 9cm]: %CONTINUE%Bing Sz Wang - Dacian Falx
 ItemDisplay[UNI !ID 9gs]: %CONTINUE%The Vile Husk - Tusk Sword
 ItemDisplay[UNI !ID 9b9]: %CONTINUE%Cloudcrack - Gothic Sword
-ItemDisplay[UNI !ID 9fb]: %CONTINUE%Todesfaelle - Flamme Zweihander
+ItemDisplay[UNI !ID 9fb]: %CONTINUE%Todesfaelle Flamme - Zweihander
 ItemDisplay[UNI !ID 9gd]: %CONTINUE%Swordguard - Executioner Sword
 
 // Elite tier Swords
@@ -1560,9 +1560,6 @@ ItemDisplay[UNI !ID 7yw]: %CONTINUE%Ghost Wand (No Unique for this base)
 ItemDisplay[UNI !ID 7bw]: %CONTINUE%Boneshade - Lich Wand
 ItemDisplay[UNI !ID 7gw]: %CONTINUE%Deaths Web - Unearthed Wand
 
-// Formatting for all unidentified uniques
-ItemDisplay[UNI !ID]: %CONTINUE%¿ %NAME% ?
-
 // --- 3.4 Sets (Peeking) ---
 // Copied from Hiimfilter with minor edits.
 // https://github.com/Maaaaaarrk/HiimFilter-PD2-Filter
@@ -1584,7 +1581,7 @@ ItemDisplay[SET !ID sbr]: %CONTINUE%Angelic Sickle - Sabre
 
 // Arcana's
 ItemDisplay[SET !ID skp]: %CONTINUE%Arcanna's Head - Skull Cap
-ItemDisplay[SET !ID ltp]: %CONTINUE%Arcanna's Flesh Light
+ItemDisplay[SET !ID ltp]: %CONTINUE%Arcanna's Flesh - Light Plate
 ItemDisplay[SET !ID wst]: %CONTINUE%Arcanna's Deathwand - War Staff
 
 // Arctic
@@ -1746,16 +1743,64 @@ ItemDisplay[SET !ID ne9]: %CONTINUE%Trang-Oul's Wing - Cantor Trophy
 ItemDisplay[SET !ID utc]: %CONTINUE%Trang-Oul's Girthquake - Troll Belt
 ItemDisplay[SET !ID xmg]: %CONTINUE%Trang-Oul's Claws - Heavy Bracers
 
-// Formatting for all unidentified sets
-ItemDisplay[SET !ID]: %CONTINUE%¿ %NAME% ?
+//----------------------------------------------------------------------------------------------------------------
+// 9. General Tags and Appearance
+//----------------------------------------------------------------------------------------------------------------
+
+//Let's keep orginal coloring for items
+ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
+ItemDisplay[SET]: %GREEN%%NAME%%CONTINUE%
+ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) NMAG !ETH SOCK=0]: %WHITE%%NAME%%CONTINUE%
+ItemDisplay[(ARMOR OR WEAPON) NMAG (SOCK>0 OR ETH)]: %GRAY%%NAME%%CONTINUE%
+ItemDisplay[CRAFT]: %ORANGE%%NAME%%CONTINUE%
+
+//Add red "*" Stars on Corrupted items in Unique Stygian Caverns Map
+ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv OR rin OR amu)) (MAG OR RARE OR SET OR UNI OR CRAFT) !ID (MAPID=181 OR MAPID=182)]: %RED%*%NAME%%RED%*%CONTINUE%
+
+//"Sup" for superiors, and "Inf" for inferiors
+ItemDisplay[SUP ED<5]: %WHITE%Sup %NAME%%CONTINUE%
+ItemDisplay[WEAPON SUP ED>4]: %CORAL%Sup %NAME%%CONTINUE%
+ItemDisplay[ARMOR SUP ED>4]: %TEAL%Sup %NAME%%CONTINUE%
+ItemDisplay[INF !(rin OR amu) ID]: %GRAY%Inf %NAME%%CONTINUE%
+
+//Show item tier levels
+ItemDisplay[NORM]: %NAME%%WHITE%¹%CONTINUE%
+ItemDisplay[EXC]: %NAME%%BLUE%²%CONTINUE%
+ItemDisplay[ELT]: %NAME%%GOLD%³%CONTINUE%
+
+// Formatting for unidentified items
+ItemDisplay[!ID MAG]: %CONTINUE%¿ %NAME% %BLUE%?
+ItemDisplay[!ID RARE]: %CONTINUE%¿ %NAME% %YELLOW%?
+ItemDisplay[!ID SET]: %CONTINUE%¿ %NAME% %GREEN%?
+ItemDisplay[!ID UNI]: %CONTINUE%¿ %NAME% %GOLD%?
 
 //----------------------------------------------------------------------------------------------------------------
 // 4. Base Items
 //----------------------------------------------------------------------------------------------------------------
 
+// Tier levels for item bases. "A" and "S" tiers reserved for superior/ethereal bases with good rolls.
+Alias[BBASE]: (hbl OR zhb OR uhc OR tbl OR ztb OR utc OR vbl OR zvb OR uvc OR hbt OR xhb OR uhb OR mbt OR xmb OR umb OR vbt OR xvb OR uvb OR lbt OR xlb OR ulb OR aar OR xar OR uar OR scl OR xcl OR ucl OR ltp OR xtp OR utp OR qui OR xui OR uui OR hgl OR xhg OR uhg OR tgl OR xtg OR utg OR vgl OR xvg OR uvg OR crn OR xrn OR urn OR bhm OR xh9 OR uh9 OR msk OR xsk OR usk OR cap OR xap OR uap OR ba5 OR baa OR baf OR ba3 OR ba8 OR bad OR dr5 OR dra OR drf OR dr2 OR dr7 OR drc OR tow OR xow OR uow OR bsh OR xsh OR ush OR kit OR xit OR uit OR lrg OR xrg OR urg OR sml OR xml OR uml OR buc OR xuc OR uuc OR ne5 OR nea OR nef OR ne4 OR ne9 OR nee OR ne1 OR ne6 OR neb OR pa5 OR paa OR paf OR pa1 OR pa6 OR pab)
+Alias[CBASE]: (mbl OR zmb OR umc OR lbl OR zlb OR ulc OR tbt OR xtb OR utb OR ful OR xul OR uul OR gth OR xth OR uth OR plt OR xlt OR ult OR rng OR xng OR ung OR brs OR xrs OR urs OR hla OR xla OR ula OR lea OR xea OR uea OR mgl OR xmg OR umg OR lgl OR xlg OR ulg OR ghm OR xhm OR uhm OR skp OR xkp OR ukp OR ba4 OR ba9 OR bae OR ba2 OR ba7 OR bac OR ba1 OR ba6 OR bab OR dr4 OR dr9 OR dre OR dr3 OR dr8 OR drd OR dr1 OR dr6 OR drb OR gts OR xts OR uts OR spk OR xpk OR upk OR ne3 OR ne8 OR ned OR ne2 OR ne7 OR neg OR pa4 OR pa9 OR pae OR pa3 OR pa8 OR pad OR pa2 OR pa7 OR pac)
+Alias[DBASE]: (fld OR xld OR uld OR spl OR xpl OR upl OR chn OR xhn OR uhn OR stu OR xtu OR utu OR fhl OR xhl OR uhl OR hlm OR xlm OR ulm)
+Alias[FBASE]: (ci0 OR ci2 OR ci3 OR ci1)
+Alias[ABASE]: (BBASE SUP ED~1-13)
+Alias[SBASE]: (BBASE SUP ED>13)
+
 // Hide normal and exceptional bases
 ItemDisplay[NMAG !POINTMOD NORM FILTLVL>3]:
 ItemDisplay[NMAG !POINTMOD EXC FILTLVL>5]:
+
+// Hide lower tier bases at higher filter levels.
+ItemDisplay[NMAG FBASE FILTLVL>1]:
+ItemDisplay[NMAG !POINTMOD DBASE FILTLVL>3]:
+ItemDisplay[NMAG !POINTMOD CBASE FILTLVL>5]:
+ItemDisplay[NMAG !POINTMOD !(SUP OR ETH) BBASE FILTLVL>7]:
+
+// Highlight ideal bases
+ItemDisplay[SBASE NMAG !POINTMOD]: %NAME% %TAN%(Base)%CONTINUE%
+ItemDisplay[BBASE (MAG OR RARE)]: %NAME% %ORANGE%(Base)%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // 5. Shop Hunting
@@ -2014,32 +2059,6 @@ ItemDisplay[(ubtm OR dcma OR dcso OR dcbl OR dcho OR rtma OR rtmv OR rtmo OR cm2
 //Spare Interesting Sounds
 //ItemDisplay[]: %SOUNDID-705%%NAME%{%NAME%}%CONTINUE% //darkwanderer_death - spare sound for... ??? used later for unknown items
 
-//----------------------------------------------------------------------------------------------------------------
-// 9. General Tags and Appearance
-//----------------------------------------------------------------------------------------------------------------
-
-//Let's keep orginal coloring for items
-ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
-ItemDisplay[SET]: %GREEN%%NAME%%CONTINUE%
-ItemDisplay[RARE]: %YELLOW%%NAME%%CONTINUE%
-ItemDisplay[MAG]: %BLUE%%NAME%%CONTINUE%
-ItemDisplay[(ARMOR OR WEAPON) NMAG !ETH SOCK=0]: %WHITE%%NAME%%CONTINUE%
-ItemDisplay[(ARMOR OR WEAPON) NMAG (SOCK>0 OR ETH)]: %GRAY%%NAME%%CONTINUE%
-ItemDisplay[CRAFT]: %ORANGE%%NAME%%CONTINUE%
-
-//Add red "*" Stars on Corrupted items in Unique Stygian Caverns Map
-ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv OR rin OR amu)) (MAG OR RARE OR SET OR UNI OR CRAFT) !ID (MAPID=181 OR MAPID=182)]: %RED%*%NAME%%RED%*%CONTINUE%
-
-//"Sup" for superiors, and "Inf" for inferiors
-ItemDisplay[SUP ED<5]: %WHITE%Sup %NAME%%CONTINUE%
-ItemDisplay[WEAPON SUP ED>4]: %CORAL%Sup %NAME%%CONTINUE%
-ItemDisplay[ARMOR SUP ED>4]: %TEAL%Sup %NAME%%CONTINUE%
-ItemDisplay[INF !(rin OR amu) ID]: %GRAY%Inf %NAME%%CONTINUE%
-
-//Show item tier levels
-ItemDisplay[NORM]: %NAME%%WHITE%¹%CONTINUE%
-ItemDisplay[EXC]: %NAME%%BLUE%²%CONTINUE%
-ItemDisplay[ELT]: %NAME%%GOLD%³%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // 10. Gold & Sale Prices
@@ -2294,7 +2313,7 @@ ItemDisplay[NMAG !ID SHOP MAPID>132]: %NAME%%NL%%NL%%TAN%Note%WHITE%: Possible U
 ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR SUPED]: %GRAY%) %NAME%%CONTINUE%
 // Ethereal
 ItemDisplay[ETH]: %LIGHT_GRAY%eth%NAME%%CONTINUE%
-ItemDisplay[ETH AND ((DIN RES>0) OR (DIN EDAM>0) OR SUPED)]: %GRAY%|%NAME%%CONTINUE%
+ItemDisplay[ETH AND ((DIN NMAG !RW RES>0) OR (DIN  NMAG !RW EDAM>0) OR SUPED)]: %GRAY%|%NAME%%CONTINUE%
 // Paladin Shield Automods
 // # Resistances
 ItemDisplay[DIN NMAG !RW RES~1-10]: %WHITE%%RES%%PURPLE%r%NAME%%CONTINUE%
@@ -2353,7 +2372,7 @@ ItemDisplay[NMAG PRIME3 !SKSUM6 FILTLVL>5]:
 ItemDisplay[NMAG PRIME3 !SKSUM8 FILTLVL>7]:
 
 // Open bracket
-ItemDisplay[SUBPRIME !PRIME1]: %NAME%%GRAY% {%CONTINUE%
+ItemDisplay[!(SET OR UNI) SUBPRIME !PRIME1]: %NAME%%GRAY% {%CONTINUE%
 ItemDisplay[(MAG OR RARE OR CRAFT) PRIME1 !PRIME3]: %NAME%%WHITE% {%CONTINUE%
 ItemDisplay[NMAG PRIME1 !PRIME3]: %NAME%%WHITE% {%CONTINUE%
 ItemDisplay[(MAG OR RARE OR CRAFT) PRIME3 !PRIME4]: %NAME%%BLUE% {%CONTINUE%
@@ -3619,7 +3638,7 @@ ItemDisplay[!UNI !SET !RW ALLSK=3]: %NAME%%ORANGE%+%GOLD%3%GOLD%ALL%CONTINUE%
 ItemDisplay[!UNI !SET !RW ALLSK>3]: %NAME%%ORANGE%>%GOLD%3%GOLD%ALL%CONTINUE%
 
 // Close bracket
-ItemDisplay[SUBPRIME !PRIME1]: %NAME%%GRAY%}%CONTINUE%
+ItemDisplay[!(SET OR UNI) SUBPRIME !PRIME1]: %NAME%%GRAY%}%CONTINUE%
 ItemDisplay[(MAG OR RARE OR CRAFT) PRIME1 !PRIME3]: %NAME%%WHITE%}%CONTINUE%
 ItemDisplay[NMAG PRIME1 !PRIME3]: %NAME%%WHITE%}%CONTINUE%
 ItemDisplay[(MAG OR RARE OR CRAFT) PRIME3 !PRIME4]: %NAME%%BLUE%}%CONTINUE%
@@ -4676,6 +4695,255 @@ ItemDisplay[(am2 OR am7 OR amc) (MAG OR RARE) !ID (ALVL>74 OR CRAFTALVL>74)]: %N
 // Ethereal/repair	%GRAY%
 //--------------------------------
 
+// 300% ED + 150% ED & 250 AR - physical weapons
+// 
+// 400% ED - Missile weapons, amazon javelins, knife, club, tipped mace, throwing axe
+//  + 200% ED & 300 AR Missile weapons
+// 
+// 40 max damage - physical weapons
+// 63 max damage - missile weapons
+// 
+// 300% damage to demons, 350% damage to undead - missile weapons
+// 200% damage to demons, 275% damage to undead - physical weapons + staffs
+// 
+// 30% res - non-rods
+// 40% res - rods
+// 
+// -10 enemy res - missile weapon, scepter, crystal sword, orb, claw
+// -15 enemy res - staffs
+// 
+// ignore target defense - rod, knife, claw
+// 
+// 40 aspd - !(rod)
+// 20 aspd - weaponPS
+// 
+// 40 fcr - staff
+// 30 fcr - other rods, orbs, clubs
+// 
+// +30 dex - missile weapons
+// +30 ene	- orb, wand, staff
+// +15 ene - scepter
+// +30 str - club, hammer
+// +20 str - scepter, tipped mace
+// +15 str - non-blunt melee weapons
+// 
+// +240 AR & light radius - missile weapon
+// 
+// 9% ll - melee weapons
+// 5% ll - missile weapons
+// 9% ml - melee weapons
+// 5% ll - missile weapons
+// 
+// % chance to cast lvl 30 on casting - staffs
+// 
+// life tap charges - axe, wand, knife
+// 
+// 12% ctc lvl 31 amp - physical weapons
+// 12% ctc lvl 15 lower res - physical weapons
+// 12% ctc lvl 15 lower res on casting - staff
+// 
+// DS, OW, CB - physical weapons
+//
+// Lower Res suffixes
+// 907 - 8% lvl 5 strike
+// 908 - 10% lvl 10 strike
+// 909 - 12% lvl 15 strike
+// 910 - 8% lvl 5 cast
+// 911 - 10% lvl 10 cast
+// 912 - 12% lvl 15 cast
+// Amp Damage suffixes
+//662 - 8% lvl 18 (no longer used?)
+//901 - 8% lvl 15 strike
+//898 or 902 - 10% lvl 23 strike
+//899 or 903 - 12% lvl 31 strike
+//904 - 8% lvl 15 cast
+//905 - 10% lvl 23 cast
+//906 - 12% lvl 31 cast
+
+//----------------------------------------------------------------------------------------------------------------
+// Point system for Throwing Weapons
+//----------------------------------------------------------------------------------------------------------------
+
+// Close: Show max theoretical points.
+ItemDisplay[THROWING !AXE !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[THROWING AXE RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[THROWING ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE%
+
+// Prefixes (max 6 pts, 7 pts axes, 8 pts zon javs)
+// # Skills (2 pts, 3 pts zon javs)
+ItemDisplay[THROWING RARE (CLSK0>0 OR CLSK4>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[THROWING RARE (CLSK0>1 OR CLSK4>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE (TABSK2>1 OR TABSK32>1 OR TABSK33>1 OR TABSK34>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +2 affix
+ItemDisplay[THROWING RARE TABSK2>2]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod or +3 affix
+ItemDisplay[THROWING ZON RARE TABSK2>4]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +2 affix
+ItemDisplay[THROWING ZON RARE TABSK2>5]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +3 affix
+// # Enhanced Damage (4 pts javs & daggers, 5 pts zon javs & axes)
+ItemDisplay[THROWING !AXE !ZON RARE ED>149]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING !AXE !ZON RARE ED>249]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes or high roll
+ItemDisplay[THROWING !AXE !ZON RARE ED>349]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+ItemDisplay[THROWING !AXE !ZON RARE ED>399]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+ItemDisplay[THROWING (AXE OR ZON) RARE ED>199]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING (AXE OR ZON) RARE ED>299]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING (AXE OR ZON) RARE ED>399]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes or max roll
+ItemDisplay[THROWING (AXE OR ZON) RARE ED>499]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+ItemDisplay[THROWING (AXE OR ZON) RARE ED>549]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Maximum Damage per Level (2 pts)
+ItemDisplay[THROWING RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Damage to Demons (1 pt)
+ItemDisplay[THROWING RARE STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Undead (1 pt)
+ItemDisplay[THROWING RARE STAT122>225]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Enemy Resistances (2 pts, zon javs only)
+ItemDisplay[THROWING RARE (STAT334>4 OR STAT336>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[THROWING RARE (STAT334>7 OR STAT336>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+// Socketed
+ItemDisplay[THROWING RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// Life after each Kill (1 pt)
+ItemDisplay[THROWING RARE STAT86>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// Mana after each Kill (1 pt)
+ItemDisplay[THROWING RARE STAT138>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Resistances (4 pts total)
+ItemDisplay[THROWING RARE (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[THROWING RARE (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[THROWING RARE (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[THROWING RARE (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// Suffixes (max 8 pts)
+// # Increased Attack Speed (3 pts)
+ItemDisplay[THROWING RARE IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[THROWING RARE IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[THROWING RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Damage (1 pt)
+ItemDisplay[THROWING RARE MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Chance to Cast on Striking (3 pts)
+ItemDisplay[THROWING RARE (SUFFIX=662 OR SUFFIX=901)]: %NAME%{%NAME%%RED%•}%CONTINUE% // Amplify Damage
+ItemDisplay[THROWING RARE (SUFFIX=898 OR SUFFIX=902)]: %NAME%{%NAME%%RED%••}%CONTINUE% // Amplify Damage
+ItemDisplay[THROWING RARE (SUFFIX=899 OR SUFFIX=903)]: %NAME%{%NAME%%RED%•••}%CONTINUE% // Amplify Damage
+ItemDisplay[THROWING RARE SUFFIX=907]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lower Res
+ItemDisplay[THROWING RARE SUFFIX=908]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // Lower Res
+ItemDisplay[THROWING RARE SUFFIX=909]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // Lower Res
+// # Crushing Blow (2 pts)
+ItemDisplay[THROWING RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Deadly Strike (1 pt)
+ItemDisplay[THROWING RARE STAT141>19]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Life Steal (1 pt)
+ItemDisplay[THROWING RARE STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Mana Steal (1 pt)
+ItemDisplay[THROWING RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Knockback (1 pt)
+ItemDisplay[THROWING RARE STAT81]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Combined Prefixes & Suffixes
+// # Open Wounds (2 pts)
+ItemDisplay[THROWING RARE STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Elemental Damage (3 pts each)
+// Fire [P: 306-432 (738), S: 214-302 (516)]
+ItemDisplay[THROWING RARE STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[THROWING RARE STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[THROWING RARE STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// Lightning [P: 1-576 (577), S: 6-403 (409)]
+ItemDisplay[THROWING RARE STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[THROWING RARE STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[THROWING RARE STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// Cold [P: 112-348 (460), S: 118-365 (483)]
+ItemDisplay[THROWING RARE STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[THROWING RARE STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[THROWING RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+
+//Open
+ItemDisplay[THROWING RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+
+
+//----------------------------------------------------------------------------------------------------------------
+// Point system for Missile Weapons
+//----------------------------------------------------------------------------------------------------------------
+
+// Close: Show max theoretical points.
+ItemDisplay[(BOW OR XBOW) !ZON RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[BOW ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE%
+
+// Prefixes (max 7 pts, 8 pts zon bows)
+// # Skills (2 pts, 3 pts zon bows)
+ItemDisplay[(BOW OR XBOW) RARE CLSK0>0]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE CLSK0>1]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) !ZON RARE TABSK0>1]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BOW ZON RARE TABSK0>2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// # Enhanced Damage (5 pts)
+ItemDisplay[(BOW OR XBOW) RARE ED>199]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE ED>299]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE ED>399]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes or max roll
+ItemDisplay[(BOW OR XBOW) RARE ED>499]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+ItemDisplay[(BOW OR XBOW) RARE ED>549]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Maximum Damage per Level (2 pts)
+ItemDisplay[(BOW OR XBOW) RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Damage to Demons (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE STAT121>200]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Undead (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE STAT122>225]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Elemental Damage (2 pts each)
+// Fire [306-432 (738)]
+ItemDisplay[(BOW OR XBOW) RARE STAT48+STAT49>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[(BOW OR XBOW) RARE STAT48+STAT49>492]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// Lightning [1-576 (577)]
+ItemDisplay[(BOW OR XBOW) RARE STAT50+STAT51>192]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[(BOW OR XBOW) RARE STAT50+STAT51>384]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// Cold [112-348 (460)]
+ItemDisplay[(BOW OR XBOW) RARE STAT54+STAT55>153]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[(BOW OR XBOW) RARE STAT54+STAT55>306]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+// # Enemy Resistances (2 pts)
+ItemDisplay[(BOW OR XBOW) RARE (STAT333>4 OR STAT335>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE (STAT333>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+// Socketed
+ItemDisplay[(BOW OR XBOW) RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// # Hit Causes Monster to Flee (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE STAT112>1]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// Life after each Kill (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE STAT86>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// Mana after each Kill (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE STAT138>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Resistances (4 pts total)
+ItemDisplay[(BOW OR XBOW) RARE (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// Suffixes (max 8 pts)
+// # Increased Attack Speed (3 pts)
+ItemDisplay[(BOW OR XBOW) RARE IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Damage (2 pts)
+ItemDisplay[(BOW OR XBOW) RARE MINDMG+MAXDMG>27]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE MINDMG+MAXDMG>55]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Chance to Cast on Striking (3 pts)
+ItemDisplay[(BOW OR XBOW) RARE (SUFFIX=662 OR SUFFIX=901)]: %NAME%{%NAME%%RED%•}%CONTINUE% // Amplify Damage
+ItemDisplay[(BOW OR XBOW) RARE (SUFFIX=898 OR SUFFIX=902)]: %NAME%{%NAME%%RED%••}%CONTINUE% // Amplify Damage
+ItemDisplay[(BOW OR XBOW) RARE (SUFFIX=899 OR SUFFIX=903)]: %NAME%{%NAME%%RED%•••}%CONTINUE% // Amplify Damage
+ItemDisplay[(BOW OR XBOW) RARE SUFFIX=907]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lower Res
+ItemDisplay[(BOW OR XBOW) RARE SUFFIX=908]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // Lower Res
+ItemDisplay[(BOW OR XBOW) RARE SUFFIX=909]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // Lower Res
+// # Crushing Blow (2 pts)
+ItemDisplay[(BOW OR XBOW) RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Deadly Strike (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE STAT141>19]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Open Wounds (2 pts)
+ItemDisplay[(BOW OR XBOW) RARE STAT501>175]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE STAT501>250]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Life Steal (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Mana Steal (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// # Dexterity (1 pt)
+ItemDisplay[(BOW OR XBOW) RARE DEX>20]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+
+//Open
+ItemDisplay[(BOW OR XBOW) RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Helms
