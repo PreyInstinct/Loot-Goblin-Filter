@@ -178,11 +178,11 @@ Alias[POINTMOD]: (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR
 // SKILL TREE BONUSES
 Alias[CLASS1]: (CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0)
 Alias[CLASS2]: (CLSK0>1 OR CLSK1>1 OR CLSK2>1 OR CLSK3>1 OR CLSK4>1 OR CLSK5>1 OR CLSK6>1)
-Alias[TREE2]: (CLSK0>1 OR CLSK1>1 OR CLSK2>1 OR CLSK8>1 OR CLSK9>1 OR CLSK10>1 OR CLSK16>1 OR CLSK17>1 OR CLSK18>1 OR CLSK24>1 OR CLSK25>1 OR CLSK26>1 OR CLSK32>1 OR CLSK33>1 OR CLSK34>1 OR CLSK40>1 OR CLSK41>1 OR CLSK42>1 OR CLSK48>1 OR CLSK49>1 OR CLSK50>1)
-Alias[TREE3]: (CLSK0>2 OR CLSK1>2 OR CLSK2>2 OR CLSK8>2 OR CLSK9>2 OR CLSK10>2 OR CLSK16>2 OR CLSK17>2 OR CLSK18>2 OR CLSK24>2 OR CLSK25>2 OR CLSK26>2 OR CLSK32>2 OR CLSK33>2 OR CLSK34>2 OR CLSK40>2 OR CLSK41>2 OR CLSK42>2 OR CLSK48>2 OR CLSK49>2 OR CLSK50>2)
-Alias[TREE4]: (CLSK0>3 OR CLSK1>3 OR CLSK2>3 OR CLSK8>3 OR CLSK9>3 OR CLSK10>3 OR CLSK16>3 OR CLSK17>3 OR CLSK18>3 OR CLSK24>3 OR CLSK25>3 OR CLSK26>3 OR CLSK32>3 OR CLSK33>3 OR CLSK34>3 OR CLSK40>3 OR CLSK41>3 OR CLSK42>3 OR CLSK48>3 OR CLSK49>3 OR CLSK50>3)
-Alias[TREE5]: (CLSK0>4 OR CLSK1>4 OR CLSK2>4 OR CLSK8>4 OR CLSK9>4 OR CLSK10>4 OR CLSK16>4 OR CLSK17>4 OR CLSK18>4 OR CLSK24>4 OR CLSK25>4 OR CLSK26>4 OR CLSK32>4 OR CLSK33>4 OR CLSK34>4 OR CLSK40>4 OR CLSK41>4 OR CLSK42>4 OR CLSK48>4 OR CLSK49>4 OR CLSK50>4)
-Alias[TREE6]: (CLSK0>5 OR CLSK1>5 OR CLSK2>5 OR CLSK8>5 OR CLSK9>5 OR CLSK10>5 OR CLSK16>5 OR CLSK17>5 OR CLSK18>5 OR CLSK24>5 OR CLSK25>5 OR CLSK26>5 OR CLSK32>5 OR CLSK33>5 OR CLSK34>5 OR CLSK40>5 OR CLSK41>5 OR CLSK42>5 OR CLSK48>5 OR CLSK49>5 OR CLSK50>5)
+Alias[TREE2]: (TABSK0>1 OR TABSK1>1 OR TABSK2>1 OR TABSK8>1 OR TABSK9>1 OR TABSK10>1 OR TABSK16>1 OR TABSK17>1 OR TABSK18>1 OR TABSK24>1 OR TABSK25>1 OR TABSK26>1 OR TABSK32>1 OR TABSK33>1 OR TABSK34>1 OR TABSK40>1 OR TABSK41>1 OR TABSK42>1 OR TABSK48>1 OR TABSK49>1 OR TABSK50>1)
+Alias[TREE3]: (TABSK0>2 OR TABSK1>2 OR TABSK2>2 OR TABSK8>2 OR TABSK9>2 OR TABSK10>2 OR TABSK16>2 OR TABSK17>2 OR TABSK18>2 OR TABSK24>2 OR TABSK25>2 OR TABSK26>2 OR TABSK32>2 OR TABSK33>2 OR TABSK34>2 OR TABSK40>2 OR TABSK41>2 OR TABSK42>2 OR TABSK48>2 OR TABSK49>2 OR TABSK50>2)
+Alias[TREE4]: (TABSK0>3 OR TABSK1>3 OR TABSK2>3 OR TABSK8>3 OR TABSK9>3 OR TABSK10>3 OR TABSK16>3 OR TABSK17>3 OR TABSK18>3 OR TABSK24>3 OR TABSK25>3 OR TABSK26>3 OR TABSK32>3 OR TABSK33>3 OR TABSK34>3 OR TABSK40>3 OR TABSK41>3 OR TABSK42>3 OR TABSK48>3 OR TABSK49>3 OR TABSK50>3)
+Alias[TREE5]: (TABSK0>4 OR TABSK1>4 OR TABSK2>4 OR TABSK8>4 OR TABSK9>4 OR TABSK10>4 OR TABSK16>4 OR TABSK17>4 OR TABSK18>4 OR TABSK24>4 OR TABSK25>4 OR TABSK26>4 OR TABSK32>4 OR TABSK33>4 OR TABSK34>4 OR TABSK40>4 OR TABSK41>4 OR TABSK42>4 OR TABSK48>4 OR TABSK49>4 OR TABSK50>4)
+Alias[TREE6]: (TABSK0>5 OR TABSK1>5 OR TABSK2>5 OR TABSK8>5 OR TABSK9>5 OR TABSK10>5 OR TABSK16>5 OR TABSK17>5 OR TABSK18>5 OR TABSK24>5 OR TABSK25>5 OR TABSK26>5 OR TABSK32>5 OR TABSK33>5 OR TABSK34>5 OR TABSK40>5 OR TABSK41>5 OR TABSK42>5 OR TABSK48>5 OR TABSK49>5 OR TABSK50>5)
 
 //STAFFMODS
 //Amazon STAFFMODS
@@ -1780,10 +1780,10 @@ ItemDisplay[EXC]: %NAME%%BLUE%²%CONTINUE%
 ItemDisplay[ELT]: %NAME%%GOLD%³%CONTINUE%
 
 // Formatting for unidentified items
-ItemDisplay[!ID MAG]: %CONTINUE%¿ %NAME% %BLUE%?
-ItemDisplay[!ID RARE]: %CONTINUE%¿ %NAME% %YELLOW%?
-ItemDisplay[!ID SET]: %CONTINUE%¿ %NAME% %GREEN%?
-ItemDisplay[!ID UNI]: %CONTINUE%¿ %NAME% %GOLD%?
+ItemDisplay[!ID MAG]: %CONTINUE%%BLUE%¿ %NAME% %BLUE%?
+ItemDisplay[!ID RARE]: %CONTINUE%%YELLOW%¿ %NAME% %YELLOW%?
+ItemDisplay[!ID SET]: %CONTINUE%%GREEN%¿ %NAME% %GREEN%?
+ItemDisplay[!ID UNI]: %CONTINUE%%GOLD%¿ %NAME% %GOLD%?
 
 //----------------------------------------------------------------------------------------------------------------
 // 4. Base Items
@@ -1797,6 +1797,16 @@ Alias[BBASE]: (hbl OR zhb OR uhc OR tbl OR ztb OR utc OR vbl OR zvb OR uvc OR hb
 Alias[ABASE]: ((hbl OR zhb OR uhc OR tbl OR ztb OR utc OR vbl OR zvb OR uvc OR hbt OR xhb OR uhb OR mbt OR xmb OR umb OR vbt OR xvb OR uvb OR lbt OR xlb OR ulb OR aar OR xar OR uar OR scl OR xcl OR ucl OR ltp OR xtp OR utp OR qui OR xui OR uui OR hgl OR xhg OR uhg OR tgl OR xtg OR utg OR vgl OR xvg OR uvg OR crn OR xrn OR urn OR bhm OR xh9 OR uh9 OR msk OR xsk OR usk OR cap OR xap OR uap OR ba5 OR baa OR baf OR ba3 OR ba8 OR bad OR dr5 OR dra OR drf OR dr2 OR dr7 OR drc OR tow OR xow OR uow OR bsh OR xsh OR ush OR kit OR xit OR uit OR lrg OR xrg OR urg OR sml OR xml OR uml OR buc OR xuc OR uuc OR ne5 OR nea OR nef OR ne4 OR ne9 OR nee OR ne1 OR ne6 OR neb OR pa5 OR paa OR paf OR pa1 OR pa6 OR pab) AND SUP AND ED~1-13)
 Alias[SBASE]: ((hbl OR zhb OR uhc OR tbl OR ztb OR utc OR vbl OR zvb OR uvc OR hbt OR xhb OR uhb OR mbt OR xmb OR umb OR vbt OR xvb OR uvb OR lbt OR xlb OR ulb OR aar OR xar OR uar OR scl OR xcl OR ucl OR ltp OR xtp OR utp OR qui OR xui OR uui OR hgl OR xhg OR uhg OR tgl OR xtg OR utg OR vgl OR xvg OR uvg OR crn OR xrn OR urn OR bhm OR xh9 OR uh9 OR msk OR xsk OR usk OR cap OR xap OR uap OR ba5 OR baa OR baf OR ba3 OR ba8 OR bad OR dr5 OR dra OR drf OR dr2 OR dr7 OR drc OR tow OR xow OR uow OR bsh OR xsh OR ush OR kit OR xit OR uit OR lrg OR xrg OR urg OR sml OR xml OR uml OR buc OR xuc OR uuc OR ne5 OR nea OR nef OR ne4 OR ne9 OR nee OR ne1 OR ne6 OR neb OR pa5 OR paa OR paf OR pa1 OR pa6 OR pab) SUP ED>13)
 
+// Groups based on strength requirements.
+// Very Light: Dusk Shroud or lower
+Alias[VLIGHT]: (vbl OR zvb OR uvc OR lbt OR xlb OR ulb OR qui OR xui OR uui OR vgl OR xvg OR uvg OR cap OR xap OR uap OR buc OR xuc OR uuc OR ne1 OR ne6 OR neb OR lbl OR zlb OR ulc OR lgl OR xlg OR ulg OR ci0 OR ci2 OR ci3)
+// Light: Archon Plate or lower
+Alias[LIGHT]: (vbt OR xvb OR uvb OR ltp OR xtp OR utp OR msk OR xsk OR usk OR dr2 OR dr7 OR drc OR sml OR xml OR uml OR ne4 OR ne9 OR nee OR pa1 OR pa6 OR pab OR hla OR xla OR ula OR lea OR xea OR uea OR skp OR xkp OR ukp OR dr1 OR dr6 OR drb OR ne3 OR ne8 OR ned OR ne2 OR ne7 OR neg)
+// Medium: Monarch or lower
+Alias[MEDIUM]: (tbl OR ztb OR utc OR mbt OR xmb OR umb OR scl OR xcl OR ucl OR tgl OR xtg OR utg OR bhm OR xh9 OR uh9 OR ba3 OR ba8 OR bad OR dr5 OR dra OR drf OR bsh OR xsh OR ush OR kit OR xit OR uit OR lrg OR xrg OR urg OR ne5 OR nea OR nef OR pa5 OR paa OR paf OR mbl OR zmb OR umc OR rng OR xng OR ung OR brs OR xrs OR urs OR mgl OR xmg OR umg OR ba2 OR ba7 OR bac OR ba1 OR ba6 OR bab OR dr4 OR dr9 OR dre OR dr3 OR dr8 OR drd OR spk OR xpk OR upk OR pa4 OR pa9 OR pae OR pa3 OR pa8 OR pad OR pa2 OR pa7 OR pac OR stu OR xtu OR utu OR fhl OR xhl OR uhl OR hlm OR xlm OR ulm)
+// Heavy: Unlimited strength requirement
+Alias[HEAVY]: (hbl OR zhb OR uhc OR hbt OR xhb OR uhb OR aar OR xar OR uar OR hgl OR xhg OR uhg OR crn OR xrn OR urn OR ba5 OR baa OR baf OR tow OR xow OR uow OR tbt OR xtb OR utb OR ful OR xul OR uul OR gth OR xth OR uth OR plt OR xlt OR ult OR ghm OR xhm OR uhm OR ba4 OR ba9 OR bae OR gts OR xts OR uts OR fld OR xld OR uld OR spl OR xpl OR upl OR chn OR xhn OR uhn)
+
 // Hide normal and exceptional bases
 ItemDisplay[NMAG !POINTMOD NORM FILTLVL>3]:
 ItemDisplay[NMAG !POINTMOD EXC FILTLVL>5]:
@@ -1808,8 +1818,14 @@ ItemDisplay[NMAG !POINTMOD CBASE FILTLVL>5]:
 ItemDisplay[NMAG !POINTMOD !(SUP OR ETH) BBASE FILTLVL>7]:
 
 // Highlight ideal bases
-ItemDisplay[SBASE NMAG !POINTMOD]: %NAME% %TAN%(Base)%CONTINUE%
-ItemDisplay[BBASE (MAG OR RARE)]: %NAME% %ORANGE%(Base)%CONTINUE%
+ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) VLIGHT]: %NAME% %TAN%(VLight)%CONTINUE%
+ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) LIGHT]: %NAME% %TAN%(Light)%CONTINUE%
+ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) MEDIUM]: %NAME% %TAN%(Medium)%CONTINUE%
+ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) HEAVY]: %NAME% %TAN%(Heavy)%CONTINUE%
+ItemDisplay[BBASE (MAG OR RARE) VLIGHT]: %NAME% %ORANGE%(VLight)%CONTINUE%
+ItemDisplay[BBASE (MAG OR RARE) LIGHT]: %NAME% %ORANGE%(Light)%CONTINUE%
+ItemDisplay[BBASE (MAG OR RARE) MEDIUM]: %NAME% %ORANGE%(Medium)%CONTINUE%
+ItemDisplay[BBASE (MAG OR RARE) HEAVY]: %NAME% %ORANGE%(Heavy)%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // 5. Shop Hunting
@@ -2096,42 +2112,42 @@ Alias[SMALL1]: (amu OR rin)
 Alias[SMALL2]: (BELT OR WAND OR (SOR !(ob5 OR oba OR obf)) OR dgr OR dir OR 9dg OR 9di OR 7dg OR 7di OR tkf OR bkf OR 9tk OR 9bk OR 7tk OR 7bk OR tax OR 9ta OR 7ta)
 
 // Unidentified small items that could sell for enough to pick up.
-ItemDisplay[SMALL2 (MAG OR RARE) !(NORM BELT) !ETH !ID !TOWN !SHOP]: %NAME% %GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[SMALL2 (MAG OR RARE) !(NORM BELT) !ETH !ID !TOWN !SHOP]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
 
 // Normal Act 1: 5k max
-ItemDisplay[DIFF=0 MAPID<40 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>2250]: %NAME% %TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID<40 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>4500]: %NAME%%TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID<40 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP PRICE>4500]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID<40 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>2250]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID<40 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>4500]: %NAME%%DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID<40 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP ID PRICE>4500]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
 
 // Normal Act 2: 10k max
-ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>4500]: %NAME% %TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>9000]: %NAME%%TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP PRICE>9000]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>4500]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>9000]: %NAME%%DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP ID PRICE>9000]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
 
 // Normal Act 3: 15k max
-ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>6750]: %NAME% %TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>13500]: %NAME%%TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP PRICE>13500]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>6750]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>13500]: %NAME%%DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP ID PRICE>13500]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
 
 // Normal Act 4: 20k max
-ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>9000]: %NAME% %TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>18000]: %NAME%%TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP PRICE>18000]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>9000]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>18000]: %NAME%%DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP ID PRICE>18000]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
 
 // Normal Act 5: 25k max
-ItemDisplay[DIFF=0 MAPID>108 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>11250]: %NAME% %TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID>108 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>22500]: %NAME%%TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=0 MAPID>108 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP PRICE>22500]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID>108 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>11250]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID>108 DIFF=0 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>22500]: %NAME%%DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID>108 DIFF=0 SMALL2 !TOWN !EQUIPPED !SHOP ID PRICE>22500]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
 
 // Nightmare: 30k max
-ItemDisplay[DIFF=1 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>13500]: %NAME% %TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=1 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>27000]: %NAME%%TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=1 SMALL2 !TOWN !EQUIPPED !SHOP PRICE>27000]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=1 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>13500]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=1 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>27000]: %NAME%%DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=1 SMALL2 !TOWN !EQUIPPED !SHOP ID PRICE>27000]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
 
 // Hell: 35k max
-ItemDisplay[DIFF=2 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>15750]: %NAME% %TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=2 SMALL1 !TOWN !EQUIPPED !SHOP PRICE>31500]: %NAME%%TAN%${%NAME%}%CONTINUE%
-ItemDisplay[DIFF=2 SMALL2 !TOWN !EQUIPPED !SHOP PRICE>31500]: %NAME% %TAN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=2 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>15750]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=2 SMALL1 !TOWN !EQUIPPED !SHOP ID PRICE>31500]: %NAME%%DARK_GREEN%${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=2 SMALL2 !TOWN !EQUIPPED !SHOP ID PRICE>31500]: %NAME% %DARK_GREEN%${%NAME%}%CONTINUE%
 
 
 //----------------------------------------------------------------------------------------------------------------
@@ -4682,6 +4698,53 @@ ItemDisplay[SHIELD !(sml OR xml OR uml OR spk OR xpk OR upk) MAG ETH !ID]: %NAME
 ItemDisplay[CHEST MAG ETH !ID]: %NAME%
 ItemDisplay[GLOVES ((EXC OR ELT) !(utg OR uhg)) MAG !ETH !ID FILTLVL<6]: %NAME%
 ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR mst OR 9mt OR 7mt OR ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR wsd OR 9wd OR 7wd OR dgr OR 9dg OR 7dg OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR STAFF OR ktr OR wrb OR axf OR ces OR clw OR btl OR skr OR 9ar OR 9wb OR 9xf) MAG ETH !ID]: %NAME%
+// ethereal magic or rare bases
+//wax OR 9wa OR 7wa // war axe
+//gix OR 9gi OR 7gi // giant axe
+//btx OR 9bt OR 7bt // battle axe
+//jav OR 9ja OR 7ja // javelins
+//pil OR 9pi OR 7pi // pilums
+//ssp OR 9s9 OR 7s7 // short spears
+//glv OR 9gl OR 7gl // glaives
+//tsp OR 9ts OR 7ts // throwing spears
+//gma OR 9gm OR 7gm // great maul
+//whm OR 9wh OR 7wh // warhammer
+//mau OR 9m9 OR 7m7 // maul
+//pik OR 9p9 OR 7p7 // pikes
+//gsd OR 9gd OR 7gd // greatswords
+//flb OR 9fb OR 7fb // flamberges
+//bsw OR 9b9 OR 7b7 // bastard swords
+//gis OR 9gs OR 7gs // giant swords
+//tax OR 9ta OR 7ta // throwing axes
+//2ax OR 92a OR 72a // double axe
+//7xf OR 9xf OR axf // hatchet hands
+//7ar OR 9ar OR ktr // katars
+//7tw OR 9tw OR btl // blade talons
+//7qr OR 9qr OR skr // scissors katar
+// ethereal magic bases
+//hax OR 9ha OR 7ha // handaxes
+//axe OR 9ax OR 7ax // single blade axes
+//clb OR 9cl OR 7cl // clubs
+//spc OR 9sp OR 7sp // spiked clubs
+//mst OR 9mt OR 7mt // morning stars
+//ssd OR 9ss OR 7ss // shortswords
+//scm OR 9sm OR 7sm // scimitar
+//sbr OR 9sb OR 7sb // sabre
+//flc OR 9fc OR 7fc // falchion
+//wsd OR 9wd OR 7wd // war sword
+//dgr OR 9dg OR 7dg // dagger
+//dir OR 9di OR 7di // dirk
+//bld OR 9bl OR 7bl // blade
+//STAFF
+//ktr OR wrb OR axf OR ces OR clw OR btl OR skr // normal claws
+//OR 9ar OR 9wb OR 9xf // quhab, wrist spike, and fascia (exceptional claws)
+
+// amazon bases
+//6lw OR 6l7 OR 6lb OR 6s7 OR 6cb OR 6lx OR 6mx OR 6hx OR 6rx // elite bows except ward, blade, and spider, and elite crossbows
+
+//some more bases
+//am2 OR am7 OR amc (larger amazon bows)
+
 ItemDisplay[(6lw OR 6l7 OR 6lb OR 6s7 OR 6cb OR 6lx OR 6mx OR 6hx OR 6rx) MAG !ID ((AMAZON FILTLVL<8) OR FILTLVL<6)]: %NAME%
 ItemDisplay[(am2 OR am7 OR amc) (MAG OR RARE) !ID (ALVL>74 OR CRAFTALVL>74)]: %NAME%
 
@@ -4853,9 +4916,9 @@ ItemDisplay[BLUDGEON RARE STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Mana Steal (1 pt)
 ItemDisplay[BLUDGEON RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Prevent Monster Heal (1 pt)
-ItemDisplay[BLUDGEON RARE STAT117]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[BLUDGEON RARE STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Ignore Target's Defense (2 pts, scepter only)
-ItemDisplay[BLUDGEON RARE STAT115]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+ItemDisplay[BLUDGEON RARE STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
 
 // Combined Prefixes & Suffixes
 // # Open Wounds (2 pts)
@@ -4969,9 +5032,9 @@ ItemDisplay[EDGED RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Life Tap Charges (2 pt, axe & dagger only)
 ItemDisplay[EDGED RARE MULTI204,5249>0]: %NAME%{%NAME%%BLUE%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
 // # Prevent Monster Heal (1 pt)
-ItemDisplay[EDGED RARE STAT117]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[EDGED RARE STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Ignore Target's Defense (2 pts, dagger & claw only)
-ItemDisplay[EDGED RARE STAT115]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+ItemDisplay[EDGED RARE STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
 
 // Combined Prefixes & Suffixes
 // # Open Wounds (2 pts)
@@ -5069,7 +5132,7 @@ ItemDisplay[THROWING RARE STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Mana Steal (1 pt)
 ItemDisplay[THROWING RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Knockback (1 pt)
-ItemDisplay[THROWING RARE STAT81]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT81>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 // Combined Prefixes & Suffixes
 // # Open Wounds (2 pts)
@@ -5139,7 +5202,7 @@ ItemDisplay[(BOW OR XBOW) RARE (STAT333>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•
 // Socketed
 ItemDisplay[(BOW OR XBOW) RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Hit Causes Monster to Flee (1 pt)
-ItemDisplay[(BOW OR XBOW) RARE STAT112>1]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE STAT112>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // Life after each Kill (1 pt)
 ItemDisplay[(BOW OR XBOW) RARE STAT86>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // Mana after each Kill (1 pt)
@@ -5750,7 +5813,7 @@ ItemDisplay[(aqv OR cqv) RARE STAT86>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Total Resistances (Based off >9 AllRes) (1 pt)
 ItemDisplay[(aqv OR cqv) RARE (FRES+CRES+LRES+PRES>36)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 // # Knockback (1 pt)
-ItemDisplay[(aqv OR cqv) RARE STAT81]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[(aqv OR cqv) RARE STAT81>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 // Suffixes
 // # Increase Attack Speed (2 pts)
