@@ -202,7 +202,7 @@ class Skill(object):
                    close_brace_template.format(nm_gold_braces, '%GOLD%') )
 
         # Construct the filter statements to hide NMAG items at higher stictness.
-        hide_template = 'ItemDisplay[{}]:\n'
+        hide_template = 'ItemDisplay[FIELD {}]: {%FILTERWARN%}\nItemDisplay[!FIELD {}]: %NAME%{%FILTERWARN%}\n'
         hiders = (hide_template.format('NMAG (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON) !PRIME1 FILTLVL>1') + \
                   hide_template.format('NMAG PRIME1 !PRIME3 FILTLVL>3') + \
                   hide_template.format('NMAG PRIME3 !SKSUM6 FILTLVL>5') + \

@@ -84,9 +84,12 @@ ItemDisplay[box FILTLVL=6]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Setting
 ItemDisplay[box FILTLVL=7]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%7 - %ORANGE%Strict Filter %WHITE%- %RED%w/o Potions%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=8]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%8 - %RED%Max-Strictness Filter%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 
+
 //----------------------------------------------------------------------------------------------------------------
 // 2. Common Aliases
 //----------------------------------------------------------------------------------------------------------------
+
+Alias[FILTERWARN]: %PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%CL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%CL%WARNING%WHITE%: This item is hidden at the current filter level.%CL%%NAME%
 
 //Throwing Potions
 Alias[THROWPOTS]: (opm OR gpm OR opl OR ops OR gps OR gpl OR tpfs OR tpgs OR tpcs OR tpls OR tpfm OR tpgm OR tpcm OR tplm OR tpfl OR tpgl OR tpcl OR tpll)
@@ -100,6 +103,7 @@ Alias[MIDVENGSFX]: (SUFFIX=696 OR SUFFIX=700 OR SUFFIX=704 OR SUFFIX=708 OR SUFF
 Alias[LOWVENGSFX]: (SUFFIX=695 OR SUFFIX=699 OR SUFFIX=703 OR SUFFIX=707 OR SUFFIX=711 OR SUFFIX=715 OR SUFFIX=719 OR SUFFIX=723 OR SUFFIX=727)
 //Towns
 Alias[TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)
+Alias[FIELD]: (!EQUIPPED !SHOP !MAPID=1 !MAPID=40 !MAPID=75 !MAPID=103 !MAPID=109)
 //Known Maps
 Alias[KNOWNMAPS]: (t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t41 OR t42 OR t43 OR t44 OR t51 OR t52 OR t53 OR t54 OR t55)
 
@@ -220,179 +224,181 @@ Alias[ANYSTAFFEQ9]: (MULTI107,251+MULTI107,252+MULTI107,253+MULTI107,254+MULTI10
 // 3. Item Renaming
 //----------------------------------------------------------------------------------------------------------------
 
+Alias[RANDOM]: !(UNI OR RW OR SET)
+
 // --- 3.1 Abbreviation of Automodded & Pointmodded Items ---
 // Abbreviate names of items with automods to prevent truncation of long names.
-ItemDisplay[!UNI !RW clb]: Club{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW spc]: Spiked Club{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dgr]: Dagger{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dir]: Dirk{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW kri]: Kris{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW bld]: Blade{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am5]: Maiden Javelin{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am3]: Maiden Spear{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am4]: Maiden Pike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am1]: Stag Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am2]: Reflex Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ktr]: Katar{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW wrb]: Wrist Blade{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW axf]: Hatchet Hands{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ces]: Cestus{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW clw]: Claws{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW btl]: Blade Talons{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW skr]: Scissors Katar{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW scp]: Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW gsc]: Grand Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW wsp]: War Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW sst]: Short Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW lst]: Long Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW cst]: Gnarled Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW bst]: Battle Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW wst]: War Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW wnd]: Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ywn]: Yew Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW bwn]: Bone Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW gwn]: Grim Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob1]: Eagle Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob2]: Sacred Globe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob3]: Smoked Sphere{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob4]: Clasped Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob5]: Jared's Stone{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9cl]: Cudgel{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9sp]: Barbed Club{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9dg]: Poignard{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9di]: Rondel{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9kr]: Cinquedeas{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9bl]: Stiletto{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ama]: Ceremonial Javelin{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am8]: Ceremonial Spear{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am9]: Ceremonial Pike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am6]: Ashwood Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW am7]: Ceremonial Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9ar]: Quhab{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9wb]: Wrist Spike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9xf]: Fascia{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9cs]: Hand Scythe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9lw]: Greater Claws{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9tw]: Greater Talons{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9qr]: Scissors Quhab{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9sc]: Rune Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9qs]: Holy Water Sprinkler{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9ws]: Divine Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 8ss]: Jo Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 8ls]: Quarterstaff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 8cs]: Cedar Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 8bs]: Gothic Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 8ws]: Rune Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9wn]: Burnt Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9yw]: Petrified Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9bw]: Tomb Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 9gw]: Grave Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob6]: Glowing Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob7]: Crystalline Globe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob8]: Cloudy Sphere{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ob9]: Sparkling Ball{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW oba]: Swirling Crystal{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7cl]: Truncheon{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7sp]: Tyrant Club{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7dg]: Bone Knife{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7di]: Mithril Point{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7kr]: Fanged Knife{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7bl]: Legend Spike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW amf]: Matriarchal Javelin{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW amd]: Matriarchal Spear{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ame]: Matriarchal Pike{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW amb]: Matriarchal Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW amc]: Grand Matron Bow{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7ar]: Suwayyah{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7wb]: Wrist Sword{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7xf]: War Fist{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7cs]: Battle Cestus{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7lw]: Feral Claws{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7tw]: Runic Talons{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7qr]: Scissors Suwayyah{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7sc]: Mighty Scepter{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7qs]: Seraph Rod{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7ws]: Caduceus{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 6ss]: Walking Stick{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 6ls]: Stalagmite{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 6cs]: Elder Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 6bs]: Shillelagh{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 6ws]: Archon Staff{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7wn]: Polished Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7yw]: Ghost Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7bw]: Lich Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW 7gw]: Unearthed Wand{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW obb]: Heavenly Stone{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW obc]: Eldritch Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW obd]: Demon Heart{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW obe]: Vortex Orb{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW obf]: Dimensional Shard{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW spk]: Spiked Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW bsh]: Bone Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa1]: Targe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa2]: Rondache{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa3]: Heraldic Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa4]: Aerin Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa5]: Crown Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne1]: Preserved Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne2]: Zombie Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne3]: Unraveller Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne4]: Gargoyle Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne5]: Demon Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr1]: Wolf Head{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr2]: Hawk Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr3]: Antlers{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr4]: Falcon Mask{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr5]: Spirit Mask{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba1]: Jawbone Cap{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba2]: Fanged Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba3]: Horned Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba4]: Assault Helmet{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba5]: Avenger Guard{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW xpk]: Barbed Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW xsh]: Grim Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa6]: Akaran Targe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa7]: Akaran Rondache{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa8]: Protector Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pa9]: Gilded Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW paa]: Royal Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne6]: Mummified Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne7]: Fetish Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne8]: Sexton Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ne9]: Cantor Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW nea]: Heirophant Trophy{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr6]: Alpha Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr7]: Griffon Headress{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr8]: Hunter's Guise{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dr9]: Sacred Feathers{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dra]: Totemic Mask{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba6]: Jawbone Visor{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba7]: Lion Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba8]: Rage Mask{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ba9]: Savage Helmet{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW baa]: Slayer Guard{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW upk]: Blade Barrier{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ush]: Troll Nest{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pab]: Sacred Targe{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pac]: Sacred Rondache{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pad]: Kurast Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW pae]: Zakarum Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW paf]: Vortex Shield{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW neb]: Minion Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW neg]: Hellspawn Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW ned]: Overseer Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW nee]: Succubus Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW nef]: Bloodlord Skull{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW drb]: Blood Spirt{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW drc]: Sun Spirit{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW drd]: Earth Spirit{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW dre]: Sky Spirit{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW drf]: Dream Spirit{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW bab]: Carnage Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW bac]: Fury Visor{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW bad]: Destroyer Helm{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW bae]: Conquerer Crown{%NAME%}%CONTINUE%
-ItemDisplay[!UNI !RW baf]: Guardian Crown{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM clb]: Club{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM spc]: Spiked Club{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dgr]: Dagger{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dir]: Dirk{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM kri]: Kris{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM bld]: Blade{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am5]: Maiden Javelin{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am3]: Maiden Spear{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am4]: Maiden Pike{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am1]: Stag Bow{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am2]: Reflex Bow{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ktr]: Katar{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM wrb]: Wrist Blade{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM axf]: Hatchet Hands{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ces]: Cestus{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM clw]: Claws{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM btl]: Blade Talons{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM skr]: Scissors Katar{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM scp]: Scepter{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM gsc]: Grand Scepter{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM wsp]: War Scepter{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM sst]: Short Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM lst]: Long Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM cst]: Gnarled Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM bst]: Battle Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM wst]: War Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM wnd]: Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ywn]: Yew Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM bwn]: Bone Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM gwn]: Grim Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob1]: Eagle Orb{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob2]: Sacred Globe{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob3]: Smoked Sphere{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob4]: Clasped Orb{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob5]: Jared's Stone{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9cl]: Cudgel{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9sp]: Barbed Club{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9dg]: Poignard{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9di]: Rondel{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9kr]: Cinquedeas{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9bl]: Stiletto{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ama]: Ceremonial Javelin{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am8]: Ceremonial Spear{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am9]: Ceremonial Pike{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am6]: Ashwood Bow{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM am7]: Ceremonial Bow{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9ar]: Quhab{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9wb]: Wrist Spike{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9xf]: Fascia{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9cs]: Hand Scythe{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9lw]: Greater Claws{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9tw]: Greater Talons{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9qr]: Scissors Quhab{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9sc]: Rune Scepter{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9qs]: Holy Water Sprinkler{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9ws]: Divine Scepter{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 8ss]: Jo Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 8ls]: Quarterstaff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 8cs]: Cedar Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 8bs]: Gothic Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 8ws]: Rune Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9wn]: Burnt Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9yw]: Petrified Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9bw]: Tomb Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 9gw]: Grave Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob6]: Glowing Orb{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob7]: Crystalline Globe{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob8]: Cloudy Sphere{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ob9]: Sparkling Ball{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM oba]: Swirling Crystal{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7cl]: Truncheon{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7sp]: Tyrant Club{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7dg]: Bone Knife{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7di]: Mithril Point{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7kr]: Fanged Knife{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7bl]: Legend Spike{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM amf]: Matriarchal Javelin{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM amd]: Matriarchal Spear{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ame]: Matriarchal Pike{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM amb]: Matriarchal Bow{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM amc]: Grand Matron Bow{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7ar]: Suwayyah{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7wb]: Wrist Sword{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7xf]: War Fist{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7cs]: Battle Cestus{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7lw]: Feral Claws{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7tw]: Runic Talons{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7qr]: Scissors Suwayyah{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7sc]: Mighty Scepter{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7qs]: Seraph Rod{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7ws]: Caduceus{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 6ss]: Walking Stick{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 6ls]: Stalagmite{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 6cs]: Elder Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 6bs]: Shillelagh{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 6ws]: Archon Staff{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7wn]: Polished Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7yw]: Ghost Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7bw]: Lich Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM 7gw]: Unearthed Wand{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM obb]: Heavenly Stone{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM obc]: Eldritch Orb{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM obd]: Demon Heart{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM obe]: Vortex Orb{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM obf]: Dimensional Shard{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM spk]: Spiked Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM bsh]: Bone Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa1]: Targe{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa2]: Rondache{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa3]: Heraldic Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa4]: Aerin Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa5]: Crown Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne1]: Preserved Head{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne2]: Zombie Head{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne3]: Unraveller Head{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne4]: Gargoyle Head{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne5]: Demon Head{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr1]: Wolf Head{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr2]: Hawk Helm{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr3]: Antlers{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr4]: Falcon Mask{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr5]: Spirit Mask{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba1]: Jawbone Cap{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba2]: Fanged Helm{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba3]: Horned Helm{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba4]: Assault Helmet{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba5]: Avenger Guard{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM xpk]: Barbed Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM xsh]: Grim Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa6]: Akaran Targe{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa7]: Akaran Rondache{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa8]: Protector Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pa9]: Gilded Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM paa]: Royal Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne6]: Mummified Trophy{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne7]: Fetish Trophy{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne8]: Sexton Trophy{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ne9]: Cantor Trophy{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM nea]: Heirophant Trophy{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr6]: Alpha Helm{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr7]: Griffon Headress{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr8]: Hunter's Guise{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dr9]: Sacred Feathers{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dra]: Totemic Mask{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba6]: Jawbone Visor{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba7]: Lion Helm{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba8]: Rage Mask{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ba9]: Savage Helmet{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM baa]: Slayer Guard{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM upk]: Blade Barrier{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ush]: Troll Nest{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pab]: Sacred Targe{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pac]: Sacred Rondache{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pad]: Kurast Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM pae]: Zakarum Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM paf]: Vortex Shield{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM neb]: Minion Skull{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM neg]: Hellspawn Skull{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM ned]: Overseer Skull{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM nee]: Succubus Skull{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM nef]: Bloodlord Skull{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM drb]: Blood Spirt{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM drc]: Sun Spirit{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM drd]: Earth Spirit{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM dre]: Sky Spirit{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM drf]: Dream Spirit{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM bab]: Carnage Helm{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM bac]: Fury Visor{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM bad]: Destroyer Helm{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM bae]: Conquerer Crown{%NAME%}%CONTINUE%
+ItemDisplay[RANDOM baf]: Guardian Crown{%NAME%}%CONTINUE%
 
 // --- 3.2 Inferior & Superior ---
 // Shorten names of Superior and Inferior (tags will be applied at later step).
@@ -891,6 +897,541 @@ ItemDisplay[(SUP OR INF) !RW ama]: Ceremonial Javelin%CONTINUE%
 ItemDisplay[(SUP OR INF) !RW amf]: Matriarchal Javelin%CONTINUE%
 
 // --- 3.3 Uniques (Peeking) ---
+
+ItemDisplay[UNI !ID cm2]: %BORDER-D3%%GOLD%««««   ¿ Hellfire Torch - Large Charm ?   »»»»
+ItemDisplay[UNI !ID cm1]: %BORDER-D3%%GOLD%««««     ¿ Annihilus - Small Charm ?      »»»»
+ItemDisplay[UNI !ID cm3]: %BORDER-D3%%GOLD%««««   ¿ Gheeds Fortune - Grand Charm ?   »»»»
+ItemDisplay[UNI !ID ram]: %BORDER-D3%%GOLD%««««      ¿ The Third Eye - Amulet ?      »»»»
+ItemDisplay[UNI !ID rar]: %BORDER-D3%%GOLD%«««« ¿ Cage of the Unsullied - Boneweave ? »»»»
+ItemDisplay[UNI !ID rbe]: %BORDER-D3%%GOLD%««««   ¿ Band of Skulls - Troll Belt ?    »»»»
+ItemDisplay[UNI !ID amu]: %BORDER-D3%%GOLD%««««              ¿ Amulet ?              »»»»
+ItemDisplay[UNI !ID rin]: %BORDER-D3%%GOLD%««««               ¿ Ring ?               »»»»
+ItemDisplay[UNI !ID ci2]: %MAP-D3%%GOLD%«««       ¿ Kiras Guardian - Tiara ?       »»»
+ItemDisplay[UNI !ID ci3]: %BORDER-D3%%GOLD%««««      ¿ Griffons Eye - Diadem ?       »»»»
+ItemDisplay[UNI !ID am7]: %PX-D3%%GOLD%¿ Lycanders Aim - Ceremonial Bow ?
+ItemDisplay[UNI !ID amb]: %MAP-D3%%GOLD%«« ¿ Bloodravens Charge - Matriarchal Bow ? »»
+ItemDisplay[UNI !ID amc]: %MAP-D3%%GOLD%«««    ¿ Ebonbane - Grand Matron Bow ?     »»»
+ItemDisplay[UNI !ID am5 !ETH]: %DOT-D3%%GOLD%« ¿ True Silver - Maiden Javelin ? »
+ItemDisplay[UNI !ID am5 ETH]: %MAP-D3%%GOLD%«« %GRAY%eth %GOLD%¿ True Silver - Maiden Javelin ? »»
+ItemDisplay[UNI !ID ama]: %MAP-D3%%GOLD%««« ¿ Titans Revenge - Ceremonial Javelin ? »»»
+ItemDisplay[UNI !ID amf]: %MAP-D3%%GOLD%««« ¿ Thunderstroke - Matriarchal Javelin ? »»»
+ItemDisplay[UNI !ID am9]: %PX-D3%%GOLD%¿ Lycanders Flank - Ceremonial Pike ?
+ItemDisplay[UNI !ID amd]: %PX-D3%%GOLD%¿ Stoneraven - Matriarchal Spear ?
+ItemDisplay[UNI !ID ame]: %MAP-D3%%GOLD%««« ¿ Zerae's Resolve - Matriarchal Pike ? »»»
+ItemDisplay[UNI !ID 9ar]: %PX-D3%%GOLD%¿ Mage Slayer - Quhab ?
+ItemDisplay[UNI !ID 9tw]: %MAP-D3%%GOLD%«« ¿ Bartucs Cut-Throat - Greater Talons ? »»
+ItemDisplay[UNI !ID 7wb]: %PX-D3%%GOLD%¿ Jade Talon - Wrist Sword ?
+ItemDisplay[UNI !ID 7xf]: %MAP-D3%%GOLD%«««    ¿ War Fist - Whispering Mirage ?    »»»
+ItemDisplay[UNI !ID 7cs]: %MAP-D3%%GOLD%««  ¿ Shadowkiller - Battle Cestus ?  »»
+ItemDisplay[UNI !ID 7lw]: %MAP-D3%%GOLD%«««  ¿ Firelizards Talons - Feral Claws ?  »»»
+ItemDisplay[UNI !ID 7tw]: %MAP-D3%%GOLD%«««   ¿ Stalker's Cull - Runic Talons ?    »»»
+ItemDisplay[UNI !ID 7qr]: %BORDER-D3%%GOLD%«««« ¿ Aidans Scar - Scissors Suwayyah ?  »»»»
+ItemDisplay[UNI !ID ba6]: %MAP-D3%%GOLD%«« ¿ Cyclopean Roar - Jawbone Visor ? »»
+ItemDisplay[UNI !ID ba7]: %PX-D3%%GOLD%¿ Wildspeaker - Lion Helm ?
+ItemDisplay[UNI !ID baa]: %MAP-D3%%GOLD%«««    ¿ Arreats Face - Slayer Guard ?     »»»
+ItemDisplay[UNI !ID bac]: %MAP-D3%%GOLD%«««       ¿ Wolfhowl - Fury Visor ?        »»»
+ItemDisplay[UNI !ID bad]: %PX-D3%%GOLD%¿ Demonhorns Edge - Destroyer Helm ?
+ItemDisplay[UNI !ID bae]: %MAP-D3%%GOLD%««« ¿ Halaberds Reign - Conqueror Crown ?  »»»
+ItemDisplay[UNI !ID baf]: %BORDER-D3%%GOLD%«««« ¿ Raekor's Virtue - Guardian Crown ? »»»»
+ItemDisplay[UNI !ID dr2]: %MAP-D3%%GOLD%««    ¿ Quetzalcoatl - Hawk Helm ?    »»
+ItemDisplay[UNI !ID dr6]: %MAP-D3%%GOLD%«««        ¿ Fenris - Alpha Helm ?         »»»
+ItemDisplay[UNI !ID dra]: %MAP-D3%%GOLD%«««     ¿ Jalals Mane - Totemic Mask ?     »»»
+ItemDisplay[UNI !ID drb]: %PX-D3%%GOLD%¿ Cerebus Bite - Blood Spirit ?
+ItemDisplay[UNI !ID drc]: %MAP-D3%%GOLD%«««       ¿ Denmother - Sun Spirit ?       »»»
+ItemDisplay[UNI !ID drd]: %MAP-D3%%GOLD%«««    ¿ Spirit Keeper - Earth Spirit ?    »»»
+ItemDisplay[UNI !ID dre]: %MAP-D3%%GOLD%«««       ¿ Ravenlore - Sky Spirit ?       »»»
+ItemDisplay[UNI !ID drf]: %MAP-D3%%GOLD%«««  ¿ Ursa's Nightmare - Dream Spirit ?   »»»
+ItemDisplay[UNI !ID ne6]: %MAP-D3%%GOLD%«« ¿ Kalans Legacy - Mummified Trophy ? »»
+ItemDisplay[UNI !ID nea]: %MAP-D3%%GOLD%«««   ¿ Homunculus - Hierophant Trophy ?   »»»
+ItemDisplay[UNI !ID neg]: %MAP-D3%%GOLD%«««   ¿ Sacred Totem - Hellspawn Skull ?   »»»
+ItemDisplay[UNI !ID ned]: %MAP-D3%%GOLD%«««     ¿ Martyrdom - Overseer Skull ?     »»»
+ItemDisplay[UNI !ID nee]: %MAP-D3%%GOLD%«««     ¿ Boneflame - Succubus Skull ?     »»»
+ItemDisplay[UNI !ID nef]: %MAP-D3%%GOLD%««« ¿ Darkforce - Spawn Bloodlord Skull ?  »»»
+ItemDisplay[UNI !ID pa3]: %PX-D3%%GOLD%¿ Sankekurs Fall - Heraldic Shield ?
+ItemDisplay[UNI !ID pa9]: %MAP-D3%%GOLD%««« ¿ Herald of Zakarum - Gilded Shield ?  »»»
+ItemDisplay[UNI !ID pac]: %MAP-D3%%GOLD%«««    ¿ Alma Negra - Sacred Rondache ?    »»»
+ItemDisplay[UNI !ID pae]: %MAP-D3%%GOLD%«««    ¿ Dragonscale - Zakarum Shield ?    »»»
+ItemDisplay[UNI !ID paf]: %MAP-D3%%GOLD%«««     ¿ Skywarden - Vortex Shield ?      »»»
+ItemDisplay[UNI !ID ob6]: %PX-D3%%GOLD%¿ Tempest - Glowing Orb ?
+ItemDisplay[UNI !ID ob7]: %PX-D3%%GOLD%¿ Skorn - Crystalline Globe ?
+ItemDisplay[UNI !ID oba]: %MAP-D3%%GOLD%«««   ¿ The Oculus - Swirling Crystal ?    »»»
+ItemDisplay[UNI !ID obc]: %MAP-D3%%GOLD%«««   ¿ Eschutas Temper - Eldritch Orb ?   »»»
+ItemDisplay[UNI !ID obf]: %BORDER-D3%%GOLD%«««« ¿ Deaths Fathom - Dimensional Shard ? »»»»
+ItemDisplay[UNI !ID qui]: %PX-D3%%GOLD%¿ Greyform - Quilted Armor ?
+ItemDisplay[UNI !ID lea]: %PX-D3%%GOLD%¿ Blinkbats Form - Leather Armor ?
+ItemDisplay[UNI !ID hla]: %PX-D3%%GOLD%¿ The Centurion - Hard Leather Armor ?
+ItemDisplay[UNI !ID stu]: %PX-D3%%GOLD%¿ Twitchthroe - Studded Leather ?
+ItemDisplay[UNI !ID rng]: %PX-D3%%GOLD%¿ Darkglow - Ring Mail ?
+ItemDisplay[UNI !ID scl]: %PX-D3%%GOLD%¿ Hawkmail - Scale Mail ?
+ItemDisplay[UNI !ID brs]: %PX-D3%%GOLD%¿ Venom Ward - Breast Plate ?
+ItemDisplay[UNI !ID chn]: %PX-D3%%GOLD%¿ Sparking Mail - Chain Mail ?
+ItemDisplay[UNI !ID spl]: %PX-D3%%GOLD%¿ Iceblink - Splint Mail ?
+ItemDisplay[UNI !ID ltp]: %MAP-D3%%GOLD%««  ¿ Heavenly Garb - Light Plate ?   »»
+ItemDisplay[UNI !ID fld]: %PX-D3%%GOLD%¿ Rockfleece - Field Plate ?
+ItemDisplay[UNI !ID plt]: %DOT-D3%%GOLD%«   ¿ Boneflesh - Plate Mail ?   »
+ItemDisplay[UNI !ID gth]: %PX-D3%%GOLD%¿ Rattlecage - Gothic Plate ?
+ItemDisplay[UNI !ID ful]: %PX-D3%%GOLD%¿ Goldskin - Full Plate Mail ?
+ItemDisplay[UNI !ID aar]: %PX-D3%%GOLD%¿ Silks of the Victor - Ancient Armor ?
+ItemDisplay[UNI !ID xui]: %DOT-D3%%GOLD%« ¿ The Spirit Shroud - Ghost Armor ? »
+ItemDisplay[UNI !ID xea]: %MAP-D3%%GOLD%«««       ¿ Skin of the Vipermagi ?        »»»
+ItemDisplay[UNI !ID xla]: %PX-D3%%GOLD%¿ Skin of the Flayed One ?
+ItemDisplay[UNI !ID xtu]: %PX-D3%%GOLD%¿ Iron Pelt - Trellised Armor ?
+ItemDisplay[UNI !ID xng]: %PX-D3%%GOLD%¿ Spirit Forge - Linked Mail ?
+ItemDisplay[UNI !ID xcl]: %MAP-D3%%GOLD%««   ¿ Crow Caw - Tigulated Mail ?    »»
+ItemDisplay[UNI !ID xrs]: %DOT-D3%%GOLD%«  ¿ Duriels Shell - Cuirass ?   »
+ItemDisplay[UNI !ID xhn]: %MAP-D3%%GOLD%«««       ¿ Shaftstop - Mesh Armor ?       »»»
+ItemDisplay[UNI !ID xpl !ETH]: %MAP-D3%%GOLD%««  ¿ Skullders Ire - Russet Armor ?  »»
+ItemDisplay[UNI !ID xpl ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Skullders Ire - Russet Armor ? »»»
+ItemDisplay[UNI !ID xtp]: %MAP-D3%%GOLD%«« ¿ Que-Hegans Wisdom - Mage Plate ? »»
+ItemDisplay[UNI !ID xld]: %MAP-D3%%GOLD%««  ¿ Toothrow - Sharktooth Armor ?   »»
+ItemDisplay[UNI !ID xlt]: %MAP-D3%%GOLD%«««   ¿ Guardian Angel - Templar Coat ?    »»»
+ItemDisplay[UNI !ID xth]: %MAP-D3%%GOLD%««  ¿ Atmas Wail - Embossed Plate ?   »»
+ItemDisplay[UNI !ID xul]: %PX-D3%%GOLD%¿ Black Hades - Chaos Armor ?
+ItemDisplay[UNI !ID xar]: %DOT-D3%%GOLD%« ¿ Corpsemourn - Ornate Plate ? »
+ItemDisplay[UNI !ID uui]: %MAP-D3%%GOLD%«««     ¿ Ormus Robes - Dusk Shroud ?      »»»
+ItemDisplay[UNI !ID utu]: %MAP-D3%%GOLD%«««  ¿ The Gladiators Bane Wire Fleece ?   »»»
+ItemDisplay[UNI !ID ung]: %MAP-D3%%GOLD%«««     ¿ Wraithskin - Diamond Mail ?      »»»
+ItemDisplay[UNI !ID upl]: %MAP-D3%%GOLD%«««    ¿ Arkaines Valor - Balrog Skin ?    »»»
+ItemDisplay[UNI !ID utp !ETH]: %MAP-D3%%GOLD%«««      ¿ Purgatory - Archon Plate ?      »»»
+ItemDisplay[UNI !ID utp ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Purgatory - Archon Plate ? »»»»
+ItemDisplay[UNI !ID uld]: %MAP-D3%%GOLD%«««      ¿ Leviathan - Kraken Shell ?      »»»
+ItemDisplay[UNI !ID uth]: %BORDER-D3%%GOLD%««««   ¿ Dark Abyss - Lacquered Plate ?   »»»»
+ItemDisplay[UNI !ID uul !ETH]: %MAP-D3%%GOLD%«« ¿ Steel Carapace - Shadow Plate ?  »»
+ItemDisplay[UNI !ID uul ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Steel Carapace - Shadow Plate ? »»»
+ItemDisplay[UNI !ID uar]: %BORDER-D3%%GOLD%««««   ¿ Templars Might/Tyraels Might ?   »»»»
+ItemDisplay[UNI !ID lbl]: %PX-D3%%GOLD%¿ Lenymo - Sash ?
+ItemDisplay[UNI !ID vbl]: %PX-D3%%GOLD%¿ Snakecord - Light Belt ?
+ItemDisplay[UNI !ID mbl]: %PX-D3%%GOLD%¿ Nightsmoke - Belt ?
+ItemDisplay[UNI !ID tbl]: %DOT-D3%%GOLD%«   ¿ Goldwrap - Heavy Belt ?    »
+ItemDisplay[UNI !ID hbl]: %DOT-D3%%GOLD%« ¿ Bladebuckle - Plated Belt ?  »
+ItemDisplay[UNI !ID zlb]: %MAP-D3%%GOLD%«««  ¿ String of Ears - Demonhide Sash ?   »»»
+ItemDisplay[UNI !ID zvb]: %MAP-D3%%GOLD%«««     ¿ Razortail - Sharkskin Belt ?     »»»
+ItemDisplay[UNI !ID zmb]: %PX-D3%%GOLD%¿ Glooms Trap - Mesh Belt ?
+ItemDisplay[UNI !ID ztb]: %MAP-D3%%GOLD%«««      ¿ Snowclash - Battle Belt ?       »»»
+ItemDisplay[UNI !ID zhb]: %MAP-D3%%GOLD%«««    ¿ Thundergods Vigor - War Belt ?    »»»
+ItemDisplay[UNI !ID ulc]: %BORDER-D3%%GOLD%««««  ¿ Arachnid Mesh - Spiderweb Sash ?  »»»»
+ItemDisplay[UNI !ID uvc]: %MAP-D3%%GOLD%««« ¿ Nosferatus Coil - Vampirefang Belt ? »»»
+ItemDisplay[UNI !ID umc]: %MAP-D3%%GOLD%««« ¿ Verdungos Hearty Cord - Mithril Coil ? »»»
+ItemDisplay[UNI !ID uhc !ETH]: %MAP-D3%%GOLD%«««         ¿ Siggard's Staunch ?          »»»
+ItemDisplay[UNI !ID uhc ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Siggard's Staunch ? »»»»
+ItemDisplay[UNI !ID lbt]: %MAP-D3%%GOLD%«««          ¿ Hotspur - Boots ?           »»»
+ItemDisplay[UNI !ID vbt]: %PX-D3%%GOLD%¿ Gorefoot - Heavy Boots ?
+ItemDisplay[UNI !ID mbt]: %PX-D3%%GOLD%¿ Treads of Cthon - Chain Boots ?
+ItemDisplay[UNI !ID tbt]: %MAP-D3%%GOLD%«« ¿ Goblin Toe - Light Plated Boots ? »»
+ItemDisplay[UNI !ID hbt]: %PX-D3%%GOLD%¿ Tearhaunch - Greaves ?
+ItemDisplay[UNI !ID xlb]: %DOT-D3%%GOLD%« ¿ Infernostride - Demonhide Boots ? »
+ItemDisplay[UNI !ID xvb]: %MAP-D3%%GOLD%«««    ¿ Waterwalk - Sharkskin Boots ?     »»»
+ItemDisplay[UNI !ID xmb]: %MAP-D3%%GOLD%««     ¿ Silkweave - Mesh Boots ?     »»
+ItemDisplay[UNI !ID xtb]: %BORDER-D3%%GOLD%««««   ¿ War Traveler - Battle Boots ?    »»»»
+ItemDisplay[UNI !ID xhb]: %MAP-D3%%GOLD%«««       ¿ Gore Rider - War Boots ?       »»»
+ItemDisplay[UNI !ID ulb]: %MAP-D3%%GOLD%«« ¿ Merman's Spocket - Wyrmhide Boots ? »»
+ItemDisplay[UNI !ID uvb !ETH]: %DOT-D3%%GOLD%«       ¿ Sandstorm Trek ?       »
+ItemDisplay[UNI !ID uvb ETH]: %MAP-D3%%GOLD%«« %GRAY%eth %GOLD%¿ Sandstorm Trek ? »»
+ItemDisplay[UNI !ID umb]: %DOT-D3%%GOLD%« ¿ Marrowwalk - Boneweave Boots ? »
+ItemDisplay[UNI !ID utb]: %BORDER-D3%%GOLD%«««« ¿ Itheraels Path - Mirrored Boots ?  »»»»
+ItemDisplay[UNI !ID uhb]: %MAP-D3%%GOLD%«««  ¿ Shadow Dancer - Myrmidon Greaves ?  »»»
+ItemDisplay[UNI !ID lgl]: %PX-D3%%GOLD%¿ The Hand of Broc - Leather Gloves ?
+ItemDisplay[UNI !ID vgl]: %PX-D3%%GOLD%¿ Bloodfist - Heavy Gloves ?
+ItemDisplay[UNI !ID mgl]: %DOT-D3%%GOLD%« ¿ Chance Guards - Chain Gloves ? »
+ItemDisplay[UNI !ID tgl]: %DOT-D3%%GOLD%« ¿ Magefist - Light Gauntlets ? »
+ItemDisplay[UNI !ID hgl]: %DOT-D3%%GOLD%«   ¿ Frostburn - Gauntlets ?    »
+ItemDisplay[UNI !ID xlg]: %PX-D3%%GOLD%¿ Venom Grip - Demonhide Gloves ?
+ItemDisplay[UNI !ID xvg]: %PX-D3%%GOLD%¿ Gravepalm - Sharkskin Gloves ?
+ItemDisplay[UNI !ID xmg]: %PX-D3%%GOLD%¿ Ghoulhide - Heavy Bracers ?
+ItemDisplay[UNI !ID xtg]: %DOT-D3%%GOLD%« ¿ Lava Gout - Battle Gauntlets ? »
+ItemDisplay[UNI !ID xhg]: %DOT-D3%%GOLD%« ¿ Hellmouth - War Gauntlets ?  »
+ItemDisplay[UNI !ID ulg]: %MAP-D3%%GOLD%«««    ¿ Titans Grip - Bramble Mitts ?     »»»
+ItemDisplay[UNI !ID uvg]: %MAP-D3%%GOLD%««« ¿ Draculs Grasp - Vampirebone Gloves ? »»»
+ItemDisplay[UNI !ID umg]: %MAP-D3%%GOLD%«««      ¿ Soul Drainer - Vambraces ?      »»»
+ItemDisplay[UNI !ID utg]: %BORDER-D3%%GOLD%««««  ¿ Occultist - Crusader Gauntlets ?  »»»»
+ItemDisplay[UNI !ID uhg]: %MAP-D3%%GOLD%«««     ¿ Steelrend - Ogre Gauntlets ?     »»»
+ItemDisplay[UNI !ID cap]: %PX-D3%%GOLD%¿ Biggins Bonnet - Cap ?
+ItemDisplay[UNI !ID skp]: %PX-D3%%GOLD%¿ Tarnhelm - Skull Cap ?
+ItemDisplay[UNI !ID hlm]: %PX-D3%%GOLD%¿ Coif of Glory - Helm ?
+ItemDisplay[UNI !ID fhl]: %PX-D3%%GOLD%¿ Duskdeep - Full Helm ?
+ItemDisplay[UNI !ID ghm]: %PX-D3%%GOLD%¿ Howltusk - Great Helm ?
+ItemDisplay[UNI !ID msk]: %PX-D3%%GOLD%¿ The Face of Horror - Mask ?
+ItemDisplay[UNI !ID crn]: %PX-D3%%GOLD%¿ Undead Crown - Crown ?
+ItemDisplay[UNI !ID bhm]: %PX-D3%%GOLD%¿ Wormskull - Bone Helm ?
+ItemDisplay[UNI !ID xap]: %PX-D3%%GOLD%¿ Peasant Crown - War Hat ?
+ItemDisplay[UNI !ID xkp]: %PX-D3%%GOLD%¿ Rockstopper - Sallet ?
+ItemDisplay[UNI !ID xlm]: %PX-D3%%GOLD%¿ Stealskull - Casque ?
+ItemDisplay[UNI !ID xhl]: %DOT-D3%%GOLD%«  ¿ Darksight Helm - Basinet ?  »
+ItemDisplay[UNI !ID xhm]: %MAP-D3%%GOLD%«««    ¿ Valkyrie Wing - Winged Helm ?     »»»
+ItemDisplay[UNI !ID xsk]: %PX-D3%%GOLD%¿ Blackhorns Face - Death Mask ?
+ItemDisplay[UNI !ID xrn]: %DOT-D3%%GOLD%« ¿ Crown of Thieves - Grand Crown ? »
+ItemDisplay[UNI !ID xh9]: %MAP-D3%%GOLD%«««      ¿ Vampire Gaze - Grim Helm ?      »»»
+ItemDisplay[UNI !ID uap]: %BORDER-D3%%GOLD%««««     ¿ Harlequin Crest - Shako ?      »»»»
+ItemDisplay[UNI !ID ulm]: %MAP-D3%%GOLD%«««        ¿ Steel Shade - Armet ?         »»»
+ItemDisplay[UNI !ID uhl]: %BORDER-D3%%GOLD%««««   ¿ Overlords Helm - Giant Conch ?   »»»»
+ItemDisplay[UNI !ID uhm]: %BORDER-D3%%GOLD%««««  ¿ Veil of Steel/Nightwings Veil ?   »»»»
+ItemDisplay[UNI !ID usk]: %MAP-D3%%GOLD%«««    ¿ Andariels Visage - Demonhead ?    »»»
+ItemDisplay[UNI !ID urn]: %BORDER-D3%%GOLD%««««      ¿ Crown of Ages - Corona ?      »»»»
+ItemDisplay[UNI !ID uh9]: %MAP-D3%%GOLD%«««     ¿ Giant Skull - Bone Visage ?      »»»
+ItemDisplay[UNI !ID buc]: %PX-D3%%GOLD%¿ Pelta Lunata - Buckler ?
+ItemDisplay[UNI !ID sml]: %PX-D3%%GOLD%¿ Umbral Disk - Small Shield ?
+ItemDisplay[UNI !ID lrg]: %PX-D3%%GOLD%¿ Stormguild - Large Shield ?
+ItemDisplay[UNI !ID kit]: %PX-D3%%GOLD%¿ Steelclash - Kite Shield ?
+ItemDisplay[UNI !ID spk]: %PX-D3%%GOLD%¿ Swordback Hold - Spiked Shield ?
+ItemDisplay[UNI !ID tow]: %PX-D3%%GOLD%¿ Bverrit Keep - Tower Shield ?
+ItemDisplay[UNI !ID bsh]: %PX-D3%%GOLD%¿ Wall of the Eyeless - Bone Shield ?
+ItemDisplay[UNI !ID gts]: %PX-D3%%GOLD%¿ The Ward - Gothic Shield ?
+ItemDisplay[UNI !ID xuc]: %PX-D3%%GOLD%¿ Visceratuant Defender - Defender ?
+ItemDisplay[UNI !ID xml]: %PX-D3%%GOLD%¿ Mosers Blessed Circle - Round Shield ?
+ItemDisplay[UNI !ID xrg]: %DOT-D3%%GOLD%«    ¿ Stormchaser - Scutum ?    »
+ItemDisplay[UNI !ID xpk]: %PX-D3%%GOLD%¿ Lance Guard - Barbed Shield ?
+ItemDisplay[UNI !ID xit]: %DOT-D3%%GOLD%« ¿ Tiamats Rebuke - Dragon Shield ? »
+ItemDisplay[UNI !ID xsh]: %MAP-D3%%GOLD%«««     ¿ Lidless Wall - Grim Shield ?     »»»
+ItemDisplay[UNI !ID xow]: %MAP-D3%%GOLD%«««     ¿ Gerkes Sanctuary - Pavise ?      »»»
+ItemDisplay[UNI !ID xts]: %PX-D3%%GOLD%¿ Radaments Sphere - Ancient Shield ?
+ItemDisplay[UNI !ID uml]: %MAP-D3%%GOLD%««     ¿ Blackoak Shield - Luna ?     »»
+ItemDisplay[UNI !ID urg]: %MAP-D3%%GOLD%«««  ¿ Twilights Reflection - Hyperion ?   »»»
+ItemDisplay[UNI !ID uit]: %BORDER-D3%%GOLD%««««      ¿ Stormshield - Monarch ?       »»»»
+ItemDisplay[UNI !ID upk]: %MAP-D3%%GOLD%««  ¿ Spike Thorn - Blade Barrier ?   »»
+ItemDisplay[UNI !ID uow]: %MAP-D3%%GOLD%«««        ¿ Medusas Gaze - Aegis ?        »»»
+ItemDisplay[UNI !ID ush]: %MAP-D3%%GOLD%«« ¿ Head Hunters Glory - Troll Nest ? »»
+ItemDisplay[UNI !ID uts]: %MAP-D3%%GOLD%«««         ¿ Spirit Ward - Ward ?         »»»
+ItemDisplay[UNI !ID hax]: %PX-D3%%GOLD%¿ The Gnasher - Hand Axe ?
+ItemDisplay[UNI !ID axe]: %PX-D3%%GOLD%¿ Deathspade - Axe ?
+ItemDisplay[UNI !ID 2ax]: %PX-D3%%GOLD%¿ Bladebone - Double Axe ?
+ItemDisplay[UNI !ID mpi]: %PX-D3%%GOLD%¿ Skull Splitter - Military Pick ?
+ItemDisplay[UNI !ID wax]: %PX-D3%%GOLD%¿ Rakescar - War Axe ?
+ItemDisplay[UNI !ID lax]: %PX-D3%%GOLD%¿ Axe of Fechmar - Large Axe ?
+ItemDisplay[UNI !ID bax]: %PX-D3%%GOLD%¿ Goreshovel - Broad Axe ?
+ItemDisplay[UNI !ID btx]: %PX-D3%%GOLD%¿ The Chieftain - Battle Axe ?
+ItemDisplay[UNI !ID gax]: %PX-D3%%GOLD%¿ Brainhew - Great Axe ?
+ItemDisplay[UNI !ID gix]: %PX-D3%%GOLD%¿ Humongous - Giant Axe ?
+ItemDisplay[UNI !ID 9ha]: %PX-D3%%GOLD%¿ Coldkill - Hatchet ?
+ItemDisplay[UNI !ID 9ax]: %PX-D3%%GOLD%¿ Butchers Pupil - Cleaver ?
+ItemDisplay[UNI !ID 92a]: %PX-D3%%GOLD%¿ Islestrike -  Twin Axe ?
+ItemDisplay[UNI !ID 9mp]: %PX-D3%%GOLD%¿ Pompeiis Wrath - Crowbill ?
+ItemDisplay[UNI !ID 9wa]: %PX-D3%%GOLD%¿ Guardian Naga - Naga ?
+ItemDisplay[UNI !ID 9la !ETH]: %DOT-D3%%GOLD%« ¿ Warlords Trust - Military Axe ? »
+ItemDisplay[UNI !ID 9la ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Warlords Trust - Military Axe ? »»»
+ItemDisplay[UNI !ID 9ba]: %PX-D3%%GOLD%¿ Spellsteel - Bearded Axe ?
+ItemDisplay[UNI !ID 9bt]: %PX-D3%%GOLD%¿ Stormrider - Tabar ?
+ItemDisplay[UNI !ID 9ga]: %PX-D3%%GOLD%¿ Boneslayer Blade - Gothic Axe ?
+ItemDisplay[UNI !ID 9gi]: %PX-D3%%GOLD%¿ The Minotaur - Ancient Axe ?
+ItemDisplay[UNI !ID 7ha !ETH]: %MAP-D3%%GOLD%««     ¿ Razors Edge - Tomahawk ?     »»
+ItemDisplay[UNI !ID 7ha ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Razors Edge - Tomahawk ? »»»
+ItemDisplay[UNI !ID 72a]: %PX-D3%%GOLD%¿ Rune Master - Ettin Axe ?
+ItemDisplay[UNI !ID 7mp]: %PX-D3%%GOLD%¿ Cranebeak - War Spike ?
+ItemDisplay[UNI !ID 7wa !ETH]: %MAP-D3%%GOLD%«««   ¿ Death Cleaver - Berserker Axe ?    »»»
+ItemDisplay[UNI !ID 7wa ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Death Cleaver - Berserker Axe ? »»»»
+ItemDisplay[UNI !ID 7ba]: %PX-D3%%GOLD%¿ Ethereal Edge - Silver-Edged Axe ?
+ItemDisplay[UNI !ID 7bt]: %MAP-D3%%GOLD%««    ¿ Hellslayer - Decapitator ?    »»
+ItemDisplay[UNI !ID 7ga !ETH]: %DOT-D3%%GOLD%«   ¿ Messerschmidts Reaver ?    »
+ItemDisplay[UNI !ID 7ga ETH]: %MAP-D3%%GOLD%«« %GRAY%eth %GOLD%¿ Messerschmidts Reaver ? »»
+ItemDisplay[UNI !ID 7gi !ETH]: %DOT-D3%%GOLD%«    ¿ Executioners Justice ?    »
+ItemDisplay[UNI !ID 7gi ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Executioners Justice ? »»»
+ItemDisplay[UNI !ID sbw]: %PX-D3%%GOLD%¿ Pluckeye - Short Bow ?
+ItemDisplay[UNI !ID hbw]: %PX-D3%%GOLD%¿ Witherstring - Hunters Bow ?
+ItemDisplay[UNI !ID lbw]: %PX-D3%%GOLD%¿ Raven Claw - Long Bow ?
+ItemDisplay[UNI !ID cbw]: %PX-D3%%GOLD%¿ Rogues Bow - Composite Bow ?
+ItemDisplay[UNI !ID sbb]: %PX-D3%%GOLD%¿ Stormstrike - Short Battle Bow ?
+ItemDisplay[UNI !ID lbb]: %PX-D3%%GOLD%¿ Wizendraw - Long Battle Bow ?
+ItemDisplay[UNI !ID swb]: %PX-D3%%GOLD%¿ Hellclap - Short War Bow ?
+ItemDisplay[UNI !ID lwb]: %PX-D3%%GOLD%¿ Blastbark - Long War Bow ?
+ItemDisplay[UNI !ID 8sb]: %PX-D3%%GOLD%¿ Skystrike - Edge Bow ?
+ItemDisplay[UNI !ID 8hb]: %PX-D3%%GOLD%¿ Riphook - Razor Bow ?
+ItemDisplay[UNI !ID 8lb]: %PX-D3%%GOLD%¿ Kuko Shakaku - Cedar Bow ?
+ItemDisplay[UNI !ID 8cb]: %PX-D3%%GOLD%¿ Endlesshail - Double Bow ?
+ItemDisplay[UNI !ID 8s8]: %PX-D3%%GOLD%¿ Witchwild String - Short Siege Bow ?
+ItemDisplay[UNI !ID 8l8]: %PX-D3%%GOLD%¿ Cliffkiller - Large Siege Bow ?
+ItemDisplay[UNI !ID 8sw]: %PX-D3%%GOLD%¿ Magewrath - Rune Bow ?
+ItemDisplay[UNI !ID 8lw]: %PX-D3%%GOLD%¿ Goldstrike - Arch Gothic Bow ?
+ItemDisplay[UNI !ID 6l7]: %PX-D3%%GOLD%¿ Eaglehorn - Crusader Bow ?
+ItemDisplay[UNI !ID 6sw]: %PX-D3%%GOLD%¿ Widowmaker - Ward Bow ?
+ItemDisplay[UNI !ID 6lw]: %BORDER-D3%%GOLD%««««      ¿ Windforce - Hydra Bow ?       »»»»
+ItemDisplay[UNI !ID lxb]: %PX-D3%%GOLD%¿ Leadcrow - Light Crossbow ?
+ItemDisplay[UNI !ID mxb]: %PX-D3%%GOLD%¿ Ichorsting - Crossbow ?
+ItemDisplay[UNI !ID hxb]: %PX-D3%%GOLD%¿ Hellcast - Heavy Crossbow ?
+ItemDisplay[UNI !ID rxb]: %PX-D3%%GOLD%¿ Doomslinger - Repeating Crossbow ?
+ItemDisplay[UNI !ID 8lx]: %PX-D3%%GOLD%¿ Langer Briser - Arbalest ?
+ItemDisplay[UNI !ID 8mx]: %DOT-D3%%GOLD%« ¿ Pus Spitter - Siege Crossbow ? »
+ItemDisplay[UNI !ID 8hx]: %MAP-D3%%GOLD%««  ¿ Buriza-Do Kyanon - Ballista ?   »»
+ItemDisplay[UNI !ID 8rx]: %DOT-D3%%GOLD%« ¿ Demon Machine - Chu-Ko-Nu ?  »
+ItemDisplay[UNI !ID 6hx]: %MAP-D3%%GOLD%««  ¿ Hellrack - Colossus Crossbow ?  »»
+ItemDisplay[UNI !ID 6rx]: %PX-D3%%GOLD%¿ Gut Siphon - Demon Crossbow ?
+ItemDisplay[UNI !ID dgr]: %PX-D3%%GOLD%¿ Gull Dagger ?
+ItemDisplay[UNI !ID dir]: %PX-D3%%GOLD%¿ The Diggler - Dirk ?
+ItemDisplay[UNI !ID kri]: %PX-D3%%GOLD%¿ The Jade Tan Do - Kris ?
+ItemDisplay[UNI !ID bld]: %PX-D3%%GOLD%¿ Spectral Shard - Blade ?
+ItemDisplay[UNI !ID 9dg]: %PX-D3%%GOLD%¿ Spineripper - Poignard ?
+ItemDisplay[UNI !ID 9di]: %PX-D3%%GOLD%¿ Heart Carver - Rondel ?
+ItemDisplay[UNI !ID 9kr]: %PX-D3%%GOLD%¿ Blackbogs Sharp - Cinquedeas ?
+ItemDisplay[UNI !ID 9bl]: %PX-D3%%GOLD%¿ Stormspike - Stiletto ?
+ItemDisplay[UNI !ID 7dg]: %PX-D3%%GOLD%¿ Wizardspike - Bone Knife ?
+ItemDisplay[UNI !ID 7di]: %MAP-D3%%GOLD%«««    ¿ Shatterblade - Mithril Point ?    »»»
+ItemDisplay[UNI !ID 7kr]: %MAP-D3%%GOLD%««   ¿ Fleshripper - Fanged Knife ?   »»
+ItemDisplay[UNI !ID 7bl]: %MAP-D3%%GOLD%««   ¿ Ghostflame - Legend Spike ?    »»
+ItemDisplay[UNI !ID 7s7]: %PX-D3%%GOLD%¿ Demons Arch - Balrog Spear ?
+ItemDisplay[UNI !ID 7gl !ETH]: %MAP-D3%%GOLD%««  ¿ Wraith Flight - Ghost Glaive ?  »»
+ItemDisplay[UNI !ID 7gl ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Wraith Flight - Ghost Glaive ? »»»
+ItemDisplay[UNI !ID 7ts]: %MAP-D3%%GOLD%«««  ¿ Gargoyles Bite - Winged Harpoon ?   »»»
+ItemDisplay[UNI !ID clb]: %PX-D3%%GOLD%¿ Felloak - Club ?
+ItemDisplay[UNI !ID spc]: %PX-D3%%GOLD%¿ Stoutnail - Spiked Club ?
+ItemDisplay[UNI !ID mac]: %PX-D3%%GOLD%¿ Crushflange - Mace ?
+ItemDisplay[UNI !ID mst]: %PX-D3%%GOLD%¿ Bloodrise - Morning Star ?
+ItemDisplay[UNI !ID fla]: %PX-D3%%GOLD%¿ The Generals Tan Do Li Ga - Flail ?
+ItemDisplay[UNI !ID whm]: %PX-D3%%GOLD%¿ Ironstone - War Hammer ?
+ItemDisplay[UNI !ID mau !ETH]: %DOT-D3%%GOLD%«      ¿ Bonesnap - Maul ?       »
+ItemDisplay[UNI !ID mau ETH]: %MAP-D3%%GOLD%«« %GRAY%eth %GOLD%¿ Bonesnap - Maul ? »»
+ItemDisplay[UNI !ID gma]: %PX-D3%%GOLD%¿ Steeldriver - Great Maul ?
+ItemDisplay[UNI !ID 9cl]: %PX-D3%%GOLD%¿ Dark Clan Crusher - Cudgel ?
+ItemDisplay[UNI !ID 9sp]: %PX-D3%%GOLD%¿ Fleshrender - Barbed Club ?
+ItemDisplay[UNI !ID 9ma]: %PX-D3%%GOLD%¿ Sureshrill Frost - Flanged Mace ?
+ItemDisplay[UNI !ID 9mt]: %PX-D3%%GOLD%¿ Moonfall - Jagged Star ?
+ItemDisplay[UNI !ID 9fl]: %PX-D3%%GOLD%¿ Baezils Vortex - Knout ?
+ItemDisplay[UNI !ID 9wh]: %PX-D3%%GOLD%¿ Earthshaker - Battle Hammer ?
+ItemDisplay[UNI !ID 9m9]: %PX-D3%%GOLD%¿ Bloodtree Stump - War Club ?
+ItemDisplay[UNI !ID 9gm !ETH]: %MAP-D3%%GOLD%««       ¿ The Gavel Of Pain ?        »»
+ItemDisplay[UNI !ID 9gm ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ The Gavel Of Pain ? »»»»
+ItemDisplay[UNI !ID 7cl]: %PX-D3%%GOLD%¿ Nords Tenderizer - Truncheon ?
+ItemDisplay[UNI !ID 7sp]: %PX-D3%%GOLD%¿ Demon Limb - Tyrant Club ?
+ItemDisplay[UNI !ID 7mt]: %PX-D3%%GOLD%¿ Baranars Star - Devil Star ?
+ItemDisplay[UNI !ID 7fl]: %MAP-D3%%GOLD%««« ¿ Horizons Tornado/Stormlash - Scourge ? »»»
+ItemDisplay[UNI !ID 7wh !ETH]: %MAP-D3%%GOLD%«««   ¿ Stone Crusher/Schaefers Hammer ?   »»»
+ItemDisplay[UNI !ID 7wh ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Stone Crusher/Schaefers Hammer ? »»»»
+ItemDisplay[UNI !ID 7m7 !ETH]: %DOT-D3%%GOLD%«   ¿ Windhammer - Ogre Maul ?   »
+ItemDisplay[UNI !ID 7m7 ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Windhammer - Ogre Maul ? »»»
+ItemDisplay[UNI !ID 7gm !ETH]: %MAP-D3%%GOLD%«««    ¿ Earth Shifter/Cranium Basher ?    »»»
+ItemDisplay[UNI !ID 7gm ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Earth Shifter/Cranium Basher ? »»»»
+ItemDisplay[UNI !ID bar]: %PX-D3%%GOLD%¿ Dimoaks Hew - Bardiche ?
+ItemDisplay[UNI !ID vou]: %PX-D3%%GOLD%¿ Steelgoad - Voulge ?
+ItemDisplay[UNI !ID scy]: %PX-D3%%GOLD%¿ Soul Harvest - Scythe ?
+ItemDisplay[UNI !ID pax]: %PX-D3%%GOLD%¿ The Battlebranch - Poleaxe ?
+ItemDisplay[UNI !ID hal]: %PX-D3%%GOLD%¿ Woestave - Halberd ?
+ItemDisplay[UNI !ID wsc]: %PX-D3%%GOLD%¿ The Grim Reaper - War Scythe ?
+ItemDisplay[UNI !ID 9b7]: %PX-D3%%GOLD%¿ The Meat Scraper - Lochaber Axe ?
+ItemDisplay[UNI !ID 9vo]: %PX-D3%%GOLD%¿ Blackleach Blade - Bill ?
+ItemDisplay[UNI !ID 9s8]: %PX-D3%%GOLD%¿ Athenas Wrath - Battle Scythe ?
+ItemDisplay[UNI !ID 9pa]: %PX-D3%%GOLD%¿ Pierre Tombale Couant - Partizan ?
+ItemDisplay[UNI !ID 9h9]: %PX-D3%%GOLD%¿ Husoldal Evo - Bec-de-Corbin ?
+ItemDisplay[UNI !ID 9wc]: %PX-D3%%GOLD%¿ Grims Burning Dead - Grim Scythe ?
+ItemDisplay[UNI !ID 7o7]: %PX-D3%%GOLD%¿ Bonehew - Ogre Axe ?
+ItemDisplay[UNI !ID 7s8 !ETH]: %MAP-D3%%GOLD%«««    ¿ The Reapers Toll - Thresher ?     »»»
+ItemDisplay[UNI !ID 7s8 ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ The Reapers Toll - Thresher ? »»»»
+ItemDisplay[UNI !ID 7pa]: %MAP-D3%%GOLD%««   ¿ Tomb Reaver - Cryptic Axe ?    »»
+ItemDisplay[UNI !ID 7wc]: %MAP-D3%%GOLD%«««    ¿ Stormspire - Giant Thresher ?     »»»
+ItemDisplay[UNI !ID scp]: %PX-D3%%GOLD%¿ Knell Striker - Scepter ?
+ItemDisplay[UNI !ID gsc]: %PX-D3%%GOLD%¿ Rusthandle - Grand Scepter ?
+ItemDisplay[UNI !ID wsp]: %PX-D3%%GOLD%¿ Stormeye - War Scepter ?
+ItemDisplay[UNI !ID 9sc]: %PX-D3%%GOLD%¿ Zakarums Hand - Rune Scepter ?
+ItemDisplay[UNI !ID 9qs]: %PX-D3%%GOLD%¿ The Fetid Sprinkler ?
+ItemDisplay[UNI !ID 9ws]: %PX-D3%%GOLD%¿ Hand of Blessed Light ?
+ItemDisplay[UNI !ID 7sc]: %MAP-D3%%GOLD%««   ¿ Heavens Light/The Redeemer ?   »»
+ItemDisplay[UNI !ID 7qs]: %BORDER-D3%%GOLD%««««  ¿ Akarat's Devotion - Seraph Rod ?  »»»»
+ItemDisplay[UNI !ID 7ws]: %MAP-D3%%GOLD%«««   ¿ Astreons Iron Ward - Caduceus ?    »»»
+ItemDisplay[UNI !ID spr]: %PX-D3%%GOLD%¿ The Dragon Chang - Spear ?
+ItemDisplay[UNI !ID tri]: %PX-D3%%GOLD%¿ Razortine - Trident ?
+ItemDisplay[UNI !ID brn]: %PX-D3%%GOLD%¿ Bloodthief - Brandistock ?
+ItemDisplay[UNI !ID spt]: %PX-D3%%GOLD%¿ Lance of Yaggai - Spetum ?
+ItemDisplay[UNI !ID pik]: %PX-D3%%GOLD%¿ The Tannr Gorerod - Pike ?
+ItemDisplay[UNI !ID 9sr]: %PX-D3%%GOLD%¿ The Impaler - War Spear ?
+ItemDisplay[UNI !ID 9tr]: %PX-D3%%GOLD%¿ Kelpie Snare - Fuscina ?
+ItemDisplay[UNI !ID 9br]: %PX-D3%%GOLD%¿ Soulfeast Tine - War Fork ?
+ItemDisplay[UNI !ID 9st !ETH]: %DOT-D3%%GOLD%«     ¿ Hone Sundan - Yari ?     »
+ItemDisplay[UNI !ID 9st ETH]: %MAP-D3%%GOLD%«« %GRAY%eth %GOLD%¿ Hone Sundan - Yari ? »»
+ItemDisplay[UNI !ID 9p9]: %PX-D3%%GOLD%¿ Spire of Honor - Lance ?
+ItemDisplay[UNI !ID 7sr !ETH]: %DOT-D3%%GOLD%« ¿ Ariocs Needle - Hyperion Spear ? »
+ItemDisplay[UNI !ID 7sr ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Ariocs Needle - Hyperion Spear ? »»»
+ItemDisplay[UNI !ID 7br]: %MAP-D3%%GOLD%««     ¿ Viperfork - Mancatcher ?     »»
+ItemDisplay[UNI !ID 7st !ETH]: %MAP-D3%%GOLD%«««        ¿ Uldyssians Awakening ?        »»»
+ItemDisplay[UNI !ID 7st ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Uldyssians Awakening ? »»»»
+ItemDisplay[UNI !ID 7p7 !ETH]: %MAP-D3%%GOLD%«««      ¿ Steel Pillar - War Pike ?       »»»
+ItemDisplay[UNI !ID 7p7 ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Steel Pillar - War Pike ? »»»»
+ItemDisplay[UNI !ID sst]: %PX-D3%%GOLD%¿ Bane Ash - Short Staff ?
+ItemDisplay[UNI !ID lst]: %PX-D3%%GOLD%¿ Serpent - Lord Long Staff ?
+ItemDisplay[UNI !ID cst]: %PX-D3%%GOLD%¿ Spire of Lazarus - Gnarled Staff ?
+ItemDisplay[UNI !ID bst]: %PX-D3%%GOLD%¿ The Salamander - Battle Staff ?
+ItemDisplay[UNI !ID wst]: %PX-D3%%GOLD%¿ The Iron Jang Bong - War Staff ?
+ItemDisplay[UNI !ID 8ss]: %PX-D3%%GOLD%¿ Razorswitch - Jo Staff ?
+ItemDisplay[UNI !ID 8ls !ETH]: %DOT-D3%%GOLD%« ¿ Ribcracker - Quarterstaff ?  »
+ItemDisplay[UNI !ID 8ls ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Ribcracker - Quarterstaff ? »»»
+ItemDisplay[UNI !ID 8cs]: %PX-D3%%GOLD%¿ Chromatic Ire - Cedar Staff ?
+ItemDisplay[UNI !ID 8bs]: %PX-D3%%GOLD%¿ Warpspear - Gothic Staff ?
+ItemDisplay[UNI !ID 8ws]: %PX-D3%%GOLD%¿ Skull Collector - Rune Staff ?
+ItemDisplay[UNI !ID 6cs]: %PX-D3%%GOLD%¿ Ondals Wisdom - Elder Staff ?
+ItemDisplay[UNI !ID 6bs]: %BORDER-D3%%GOLD%««««   ¿ Brimstone Rain - Shillelagh ?    »»»»
+ItemDisplay[UNI !ID 6ws]: %BORDER-D3%%GOLD%«««« ¿ Mang Songs Lesson - Archon Staff ? »»»»
+ItemDisplay[UNI !ID ssd]: %PX-D3%%GOLD%¿ Rixots Keen - Short Sword ?
+ItemDisplay[UNI !ID scm]: %PX-D3%%GOLD%¿ Blood Crescent - Scimitar ?
+ItemDisplay[UNI !ID sbr]: %PX-D3%%GOLD%¿ Skewer of Krintiz - Sabre ?
+ItemDisplay[UNI !ID flc]: %PX-D3%%GOLD%¿ Gleamscythe - Falchion ?
+ItemDisplay[UNI !ID bsd]: %PX-D3%%GOLD%¿ Griswolds Edge - Broad Sword ?
+ItemDisplay[UNI !ID lsd]: %PX-D3%%GOLD%¿ Hellplague - Long Sword ?
+ItemDisplay[UNI !ID wsd]: %PX-D3%%GOLD%¿ Culwens Point - War Sword ?
+ItemDisplay[UNI !ID 2hs]: %PX-D3%%GOLD%¿ Shadowfang - Two-handed Sword ?
+ItemDisplay[UNI !ID clm]: %PX-D3%%GOLD%¿ Soulflay - Claymore ?
+ItemDisplay[UNI !ID gis]: %PX-D3%%GOLD%¿ Kinemils Awl - Giant Sword ?
+ItemDisplay[UNI !ID bsw]: %PX-D3%%GOLD%¿ Blacktongue - Bastard Sword ?
+ItemDisplay[UNI !ID flb]: %PX-D3%%GOLD%¿ Ripsaw - Flamberge ?
+ItemDisplay[UNI !ID gsd]: %PX-D3%%GOLD%¿ The Patriarch - Great Sword ?
+ItemDisplay[UNI !ID 9ss]: %DOT-D3%%GOLD%«   ¿ Bloodletter - Gladius ?    »
+ItemDisplay[UNI !ID 9sm]: %PX-D3%%GOLD%¿ Coldsteel Eye - Cutlass ?
+ItemDisplay[UNI !ID 9sb]: %PX-D3%%GOLD%¿ Hexfire - Shamshir ?
+ItemDisplay[UNI !ID 9fc]: %PX-D3%%GOLD%¿ Blade of Ali Baba - Tulwar ?
+ItemDisplay[UNI !ID 9cr]: %PX-D3%%GOLD%¿ Ginthers Rift - Dimensional Blade ?
+ItemDisplay[UNI !ID 9bs]: %DOT-D3%%GOLD%« ¿ Headstriker - Battle Sword ? »
+ItemDisplay[UNI !ID 9ls]: %PX-D3%%GOLD%¿ Plague Bearer - Rune Sword ?
+ItemDisplay[UNI !ID 9wd]: %PX-D3%%GOLD%¿ The Atlantean - Ancient Sword ?
+ItemDisplay[UNI !ID 92h]: %PX-D3%%GOLD%¿ Crainte Vomir - Espandon ?
+ItemDisplay[UNI !ID 9cm]: %PX-D3%%GOLD%¿ Bing Sz Wang - Dacian Falx ?
+ItemDisplay[UNI !ID 9gs]: %PX-D3%%GOLD%¿ The Vile Husk - Tusk Sword ?
+ItemDisplay[UNI !ID 9b9]: %PX-D3%%GOLD%¿ Cloudcrack - Gothic Sword ?
+ItemDisplay[UNI !ID 9fb]: %PX-D3%%GOLD%¿ Todesfaelle Flamme - Zweihander ?
+ItemDisplay[UNI !ID 9gd]: %PX-D3%%GOLD%¿ Swordguard - Executioner Sword ?
+ItemDisplay[UNI !ID 7sm]: %PX-D3%%GOLD%¿ Djinn Slayer - Ataghan ?
+ItemDisplay[UNI !ID 7sb]: %PX-D3%%GOLD%¿ Bloodmoon - Elegant Blade ?
+ItemDisplay[UNI !ID 7cr]: %MAP-D3%%GOLD%««« ¿ Lightsabre/Azurewrath - Phase Blade ? »»»
+ItemDisplay[UNI !ID 7bs]: %BORDER-D3%%GOLD%««««  ¿ Hadriels Hand - Conquest Sword ?  »»»»
+ItemDisplay[UNI !ID 7ls]: %MAP-D3%%GOLD%««   ¿ Frostwind - Cryptic Sword ?    »»
+ItemDisplay[UNI !ID 7cm !ETH]: %MAP-D3%%GOLD%««      ¿ Leorics Mithril Bane ?      »»
+ItemDisplay[UNI !ID 7cm ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Leorics Mithril Bane ? »»»»
+ItemDisplay[UNI !ID 7gs]: %PX-D3%%GOLD%¿ Flamebellow - Balrog Blade ?
+ItemDisplay[UNI !ID 7b7 !ETH]: %MAP-D3%%GOLD%««  ¿ Doombringer - Champion Sword ?  »»
+ItemDisplay[UNI !ID 7b7 ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Doombringer - Champion Sword ? »»»
+ItemDisplay[UNI !ID 7fb !ETH]: %MAP-D3%%GOLD%««     ¿ Odium - Colossus Sword ?     »»
+ItemDisplay[UNI !ID 7fb ETH]: %BORDER-D3%%GOLD%«««« %GRAY%eth %GOLD%¿ Odium - Colossus Sword ? »»»»
+ItemDisplay[UNI !ID 7gd]: %BORDER-D3%%GOLD%«««« ¿ The Grandfather - Colossus Blade ? »»»»
+ItemDisplay[UNI !ID 9tk]: %PX-D3%%GOLD%¿ Deathbit - Battle Dart ?
+ItemDisplay[UNI !ID 9ta]: %PX-D3%%GOLD%¿ The Scalper - Francisca ?
+ItemDisplay[UNI !ID 9b8 !ETH]: %MAP-D3%%GOLD%««   ¿ Achilles Strike - Hurlbat ?    »»
+ItemDisplay[UNI !ID 9b8 ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Achilles Strike - Hurlbat ? »»»
+ItemDisplay[UNI !ID 7bk !ETH]: %DOT-D3%%GOLD%«  ¿ Warshrike - Winged Knife ?  »
+ItemDisplay[UNI !ID 7bk ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Warshrike - Winged Knife ? »»»
+ItemDisplay[UNI !ID 7ta]: %PX-D3%%GOLD%¿ Gimmershred - Flying Axe ?
+ItemDisplay[UNI !ID 7b8 !ETH]: %DOT-D3%%GOLD%«   ¿ Lacerator - Winged Axe ?   »
+ItemDisplay[UNI !ID 7b8 ETH]: %MAP-D3%%GOLD%««« %GRAY%eth %GOLD%¿ Lacerator - Winged Axe ? »»»
+ItemDisplay[UNI !ID wnd]: %PX-D3%%GOLD%¿ Torch of Iro - Wand ?
+ItemDisplay[UNI !ID ywn]: %PX-D3%%GOLD%¿ Maelstrom - Yew Wand ?
+ItemDisplay[UNI !ID bwn]: %PX-D3%%GOLD%¿ Gravenspine - Bone Wand ?
+ItemDisplay[UNI !ID gwn]: %PX-D3%%GOLD%¿ Umes Lament - Grim Wand ?
+ItemDisplay[UNI !ID 9wn]: %PX-D3%%GOLD%¿ Suicide Branch - Burnt Wand ?
+ItemDisplay[UNI !ID 9yw]: %PX-D3%%GOLD%¿ Carin Shard - Petrified Wand ?
+ItemDisplay[UNI !ID 9bw]: %MAP-D3%%GOLD%«««   ¿ Arm of King Leoric - Tomb Wand ?   »»»
+ItemDisplay[UNI !ID 9gw]: %PX-D3%%GOLD%¿ Blackhand Key - Grave Wand ?
+ItemDisplay[UNI !ID 7bw]: %MAP-D3%%GOLD%«««       ¿ Boneshade - Lich Wand ?        »»»
+ItemDisplay[UNI !ID 7gw]: %BORDER-D3%%GOLD%««««   ¿ Deaths Web - Unearthed Wand ?    »»»»
+ItemDisplay[SET !ID amu]: %MAP-7D%%GREEN%«««               ¿ Amulet ?               »»»
+ItemDisplay[SET !ID rin]: %MAP-7D%%GREEN%«««                ¿ Ring ?                »»»
+ItemDisplay[SET !ID cap]: %PX-7D%%GREEN%¿ Infernal/Sanders - Cap ?
+ItemDisplay[SET !ID crn]: %PX-7D%%GREEN%¿ Iratha/Milabrega - Crown ?
+ItemDisplay[SET !ID mbl]: %PX-7D%%GREEN%¿ Hsarus/Hwanin - Belt ?
+ItemDisplay[SET !ID tbl]: %PX-7D%%GREEN%¿ Infernal/Iratha - Heavy Belt ?
+ItemDisplay[SET !ID tgl]: %PX-7D%%GREEN%¿ Arctic/Iratha - Light Gauntlet ?
+ItemDisplay[SET !ID vbt]: %PX-7D%%GREEN%¿ Cow King/Sander - Heavy Boots ?
+ItemDisplay[SET !ID rng]: %PX-7D%%GREEN%¿ Angelic Mantle - Ring Mail ?
+ItemDisplay[SET !ID sbr]: %PX-7D%%GREEN%¿ Angelic Sickle - Sabre ?
+ItemDisplay[SET !ID skp]: %PX-7D%%GREEN%¿ Arcanna's Head - Skull Cap ?
+ItemDisplay[SET !ID ltp]: %PX-7D%%GREEN%¿ Arcanna's Flesh - Light Plate ?
+ItemDisplay[SET !ID wst]: %PX-7D%%GREEN%¿ Arcanna's Deathwand - War Staff ?
+ItemDisplay[SET !ID qui]: %PX-7D%%GREEN%¿ Arctic Furs - Quilted Armor ?
+ItemDisplay[SET !ID vbl]: %PX-7D%%GREEN%¿ Arctic Binding - Light Belt ?
+ItemDisplay[SET !ID swb]: %PX-7D%%GREEN%¿ Arctic Horn - Short War Bow ?
+ItemDisplay[SET !ID hlm]: %PX-7D%%GREEN%¿ Berserker's Headgear - Helm ?
+ItemDisplay[SET !ID spl]: %PX-7D%%GREEN%¿ Berserker's Hauberk - Splint Mail ?
+ItemDisplay[SET !ID 2ax]: %PX-7D%%GREEN%¿ Berserker's Hatchet - Double Axe ?
+ItemDisplay[SET !ID msk]: %PX-7D%%GREEN%¿ Cathan's Visage - Mask ?
+ItemDisplay[SET !ID chn]: %PX-7D%%GREEN%¿ Cathan's Mesh - Chain Mail ?
+ItemDisplay[SET !ID bst]: %PX-7D%%GREEN%¿ Cathan's Rule - Battle Staff ?
+ItemDisplay[SET !ID gsc]: %PX-7D%%GREEN%¿ Civerb's Cudgel - Grand Scepter ?
+ItemDisplay[SET !ID lrg]: %PX-7D%%GREEN%¿ Civerb's Ward - Large Shield ?
+ItemDisplay[SET !ID lsd]: %PX-7D%%GREEN%¿ Cleglaw's Tooth - Long Sword ?
+ItemDisplay[SET !ID mgl]: %PX-7D%%GREEN%¿ Cleglaw's Pincers - Chain Gloves ?
+ItemDisplay[SET !ID sml]: %PX-7D%%GREEN%¿ Cleglaw's Claw - Small Shield ?
+ItemDisplay[SET !ID wsd]: %PX-7D%%GREEN%¿ Death's Touch - War Sword ?
+ItemDisplay[SET !ID lgl]: %PX-7D%%GREEN%¿ Death's Hand - Leather Gloves ?
+ItemDisplay[SET !ID lbl]: %PX-7D%%GREEN%¿ Death's Guard - Sash ?
+ItemDisplay[SET !ID buc]: %PX-7D%%GREEN%¿ Hsarus Iron Fist - Buckler ?
+ItemDisplay[SET !ID mbt]: %PX-7D%%GREEN%¿ Hsarus Iron Heel - Chain Boots ?
+ItemDisplay[SET !ID dgr]: %PX-7D%%GREEN%¿ Infernal Spine - Dagger ?
+ItemDisplay[SET !ID bsd]: %PX-7D%%GREEN%¿ Isenhart's Lightbrand - Broad Sword ?
+ItemDisplay[SET !ID fhl]: %PX-7D%%GREEN%¿ Isenhart's Horns - Full Helm ?
+ItemDisplay[SET !ID brs]: %PX-7D%%GREEN%¿ Isenhart's Case - Breast Plate ?
+ItemDisplay[SET !ID gts]: %PX-7D%%GREEN%¿ Isenhart's Parry - Gothic Shield ?
+ItemDisplay[SET !ID aar]: %PX-7D%%GREEN%¿ Milabrega's Robe - Ancient Armor ?
+ItemDisplay[SET !ID kit]: %PX-7D%%GREEN%¿ Milabrega's Orb - Kite Shield ?
+ItemDisplay[SET !ID wsp]: %PX-7D%%GREEN%¿ Milabrega's Rod - War Scepter ?
+ItemDisplay[SET !ID ghm]: %PX-7D%%GREEN%¿ Sigon's Visor - Great Helm ?
+ItemDisplay[SET !ID gth]: %PX-7D%%GREEN%¿ Sigon's Shelter - Gothic Plate ?
+ItemDisplay[SET !ID hbt]: %PX-7D%%GREEN%¿ Sigon's Sabot - Greaves ?
+ItemDisplay[SET !ID tow]: %PX-7D%%GREEN%¿ Sigon's Guard - Tower Shield ?
+ItemDisplay[SET !ID hbl]: %PX-7D%%GREEN%¿ Sigon's Wrap - Plated Belt ?
+ItemDisplay[SET !ID hgl]: %PX-7D%%GREEN%¿ Sigon's Gage - Gauntlets ?
+ItemDisplay[SET !ID bhm]: %PX-7D%%GREEN%¿ Tancred's Skull - Bone Helm ?
+ItemDisplay[SET !ID ful]: %PX-7D%%GREEN%¿ Tancred's Spine - Full Plate Mail ?
+ItemDisplay[SET !ID lbt]: %PX-7D%%GREEN%¿ Tancred's Hobnails - Boots ?
+ItemDisplay[SET !ID mpi]: %PX-7D%%GREEN%¿ Tancred's Crowbill - Military Pick ?
+ItemDisplay[SET !ID lbb]: %PX-7D%%GREEN%¿ Vidala's Barb Long - Battle Bow ?
+ItemDisplay[SET !ID lea]: %PX-7D%%GREEN%¿ Vidala's Ambush - Leather Armor ?
+ItemDisplay[SET !ID tbt]: %PX-7D%%GREEN%¿ Vidala's Fetlock ?
+ItemDisplay[SET !ID dr8]: %PX-7D%%GREEN%¿ Aldur's Stony Gaze - Hunters Guise ?
+ItemDisplay[SET !ID xtb]: %PX-7D%%GREEN%¿ Aldur's Advance - Battle Boots ?
+ItemDisplay[SET !ID uul]: %PX-7D%%GREEN%¿ Aldur's Deception - Shadow Plate ?
+ItemDisplay[SET !ID 9mt]: %PX-7D%%GREEN%¿ Aldur's Rhythm - Jagged Star ?
+ItemDisplay[SET !ID 7gd !ETH]: %MAP-7D%%GREEN%««   ¿ Bul-Katho's Sacred Charge ?    »»
+ItemDisplay[SET !ID 7gd ETH]: %MAP-7D%%GREEN%««« %GRAY%eth %GREEN%¿ Bul-Katho's Sacred Charge ? »»»
+ItemDisplay[SET !ID 7fb !ETH]: %MAP-7D%%GREEN%««  ¿ Bul-Katho's Tribal Guardian ?   »»
+ItemDisplay[SET !ID 7fb ETH]: %MAP-7D%%GREEN%««« %GRAY%eth %GREEN%¿ Bul-Katho's Tribal Guardian ? »»»
+ItemDisplay[SET !ID xap]: %PX-7D%%GREEN%¿ Cow King's Horns - War Hat ?
+ItemDisplay[SET !ID stu]: %PX-7D%%GREEN%¿ Cow King's Hide - Studded Leather ?
+ItemDisplay[SET !ID ulg]: %PX-7D%%GREEN%¿ Laying of Hands - Bramble Mitts ?
+ItemDisplay[SET !ID uui]: %PX-7D%%GREEN%¿ Dark Adherent - Dusk Shroud ?
+ItemDisplay[SET !ID xlb]: %PX-7D%%GREEN%¿ Rite of Passage - Demonhide Boots ?
+ItemDisplay[SET !ID umc]: %PX-7D%%GREEN%¿ Credendum - Mithril Coil ?
+ItemDisplay[SET !ID xar]: %DOT-7D%%GREEN%« ¿ Griswold's Heart - Ornate Plate ? »
+ItemDisplay[SET !ID urn]: %MAP-7D%%GREEN%«««     ¿ Griswold's Valor - Corona ?      »»»
+ItemDisplay[SET !ID 7ws]: %MAP-7D%%GREEN%«««  ¿ Griswold's Redemption - Caduceus ?  »»»
+ItemDisplay[SET !ID paf]: %MAP-7D%%GREEN%«««  ¿ Griswold's Honor - Vortex Shield ?  »»»
+ItemDisplay[SET !ID xrs]: %PX-7D%%GREEN%¿ Haemosus Adament - Cuirass ?
+ItemDisplay[SET !ID 7ma]: %PX-7D%%GREEN%¿ Dangoons Teaching - Reinforced Mace ?
+ItemDisplay[SET !ID uts]: %PX-7D%%GREEN%¿ Taebaeks Glory - Ward ?
+ItemDisplay[SET !ID uhm]: %PX-7D%%GREEN%¿ Ondals Almighty - Spired Helm ?
+ItemDisplay[SET !ID xrn]: %PX-7D%%GREEN%¿ Hwanin's Splendor - Grand Crown ?
+ItemDisplay[SET !ID 9vo]: %PX-7D%%GREEN%¿ Hwanin's Justice - Bill ?
+ItemDisplay[SET !ID xcl]: %PX-7D%%GREEN%¿ Hwanin's Refuge - Tigulated Mail ?
+ItemDisplay[SET !ID ba5]: %DOT-7D%%GREEN%« ¿ Immortal Kings Will - Avenger Guard ? »
+ItemDisplay[SET !ID 7m7 !ETH]: %MAP-7D%%GREEN%««  ¿ Immortal Kings Stone Crusher ?  »»
+ItemDisplay[SET !ID 7m7 ETH]: %MAP-7D%%GREEN%««« %GRAY%eth %GREEN%¿ Immortal Kings Stone Crusher ? »»»
+ItemDisplay[SET !ID uar]: %MAP-7D%%GREEN%«««      ¿ Immortal Kings Soul Cage ?      »»»
+ItemDisplay[SET !ID zhb]: %DOT-7D%%GREEN%« ¿ Immortal Kings Detail - War Belt ? »
+ItemDisplay[SET !ID xhg]: %DOT-7D%%GREEN%« ¿ Immortal Kings Forge - War Gauntlets ? »
+ItemDisplay[SET !ID xhb]: %DOT-7D%%GREEN%« ¿ Immortal Kings Pillar - War Boots ? »
+ItemDisplay[SET !ID ci3]: %MAP-7D%%GREEN%«««    ¿ Mavinas True Sight - Diadem ?     »»»
+ItemDisplay[SET !ID amc]: %DOT-7D%%GREEN%« ¿ Mavinas Caster - Grand Matron Bow ? »
+ItemDisplay[SET !ID uld]: %DOT-7D%%GREEN%« ¿ Mavinas Embrace - Kraken Shell ? »
+ItemDisplay[SET !ID xtg]: %DOT-7D%%GREEN%«     ¿ Mavinas Icy Clutch ?     »
+ItemDisplay[SET !ID zvb]: %DOT-7D%%GREEN%« ¿ Mavinas Tenet - Sharkskin Belt ? »
+ItemDisplay[SET !ID xh9]: %DOT-7D%%GREEN%« ¿ Natalya's Totem - Grim Helm ? »
+ItemDisplay[SET !ID 7qr]: %MAP-7D%%GREEN%««« ¿ Natalya's Mark - Scissors Suwayyah ? »»»
+ItemDisplay[SET !ID ucl]: %DOT-7D%%GREEN%« ¿ Natalya's Shadow - Loricated Mail ? »
+ItemDisplay[SET !ID xmb]: %DOT-7D%%GREEN%« ¿ Natalya's Soul - Mesh Boots ? »
+ItemDisplay[SET !ID ci0]: %PX-7D%%GREEN%¿ Naj's Circlet - Circlet ?
+ItemDisplay[SET !ID ult]: %PX-7D%%GREEN%¿ Naj's Light Plate - Hellforge Plate ?
+ItemDisplay[SET !ID 6cs]: %PX-7D%%GREEN%¿ Naj's Puzzler - Elder Staff ?
+ItemDisplay[SET !ID xhm]: %PX-7D%%GREEN%¿ Guillaumes Face - Winged Helm ?
+ItemDisplay[SET !ID xml]: %PX-7D%%GREEN%¿ Whitstans Guard - Round Shield ?
+ItemDisplay[SET !ID xvg]: %PX-7D%%GREEN%¿ Magnus Skin - Sharkskin Gloves ?
+ItemDisplay[SET !ID ztb]: %PX-7D%%GREEN%¿ Wilhelms Pride - Battle Belt ?
+ItemDisplay[SET !ID bwn]: %PX-7D%%GREEN%¿ Sanders Superstition - Bone Wand ?
+ItemDisplay[SET !ID vgl]: %PX-7D%%GREEN%¿ Sanders Taboo - Heavy Gloves ?
+ItemDisplay[SET !ID xhl]: %DOT-7D%%GREEN%« ¿ Sazabis Mental Sheath - Basinet ? »
+ItemDisplay[SET !ID 7ls !ETH]: %MAP-7D%%GREEN%««    ¿ Sazabis Cobalt Redeemer ?     »»
+ItemDisplay[SET !ID 7ls ETH]: %MAP-7D%%GREEN%««« %GRAY%eth %GREEN%¿ Sazabis Cobalt Redeemer ? »»»
+ItemDisplay[SET !ID upl]: %DOT-7D%%GREEN%«  ¿ Sazabis Ghost Liberator ?   »
+ItemDisplay[SET !ID oba]: %DOT-7D%%GREEN%«  ¿ Tal Rasha's Lidless Eye ?   »
+ItemDisplay[SET !ID xsk]: %DOT-7D%%GREEN%« ¿ Tal Rasha's Horadric Crest ? »
+ItemDisplay[SET !ID uth]: %MAP-7D%%GREEN%«««      ¿ Tal Rasha's Guardianship ?      »»»
+ItemDisplay[SET !ID zmb]: %DOT-7D%%GREEN%« ¿ Tal Rasha's Fine-Spun Cloth ? »
+ItemDisplay[SET !ID uh9]: %DOT-7D%%GREEN%« ¿ Trang-Oul's Guise - Bone Visage ? »
+ItemDisplay[SET !ID xul]: %DOT-7D%%GREEN%« ¿ Trang-Oul's Scales - Chaos Armor ? »
+ItemDisplay[SET !ID ne9]: %DOT-7D%%GREEN%« ¿ Trang-Oul's Wing - Cantor Trophy ? »
+ItemDisplay[SET !ID utc]: %DOT-7D%%GREEN%« ¿ Trang-Oul's Girthquake - Troll Belt ? »
+ItemDisplay[SET !ID xmg]: %DOT-7D%%GREEN%« ¿ Trang-Oul's Claws - Heavy Bracers ? »
+
+
 // Copied from Hiimfilter with minor edits.
 // https://github.com/Maaaaaarrk/HiimFilter-PD2-Filter
 
@@ -1030,7 +1571,7 @@ ItemDisplay[UNI !ID pab]: %CONTINUE%Sacred Targe (No Unique for this base)
 ItemDisplay[UNI !ID pac]: %CONTINUE%Alma Negra - Sacred Rondache
 ItemDisplay[UNI !ID pad]: %CONTINUE%Kurast Shield (No Unique for this base)
 ItemDisplay[UNI !ID pae]: %CONTINUE%Dragonscale - Zakarum Shield
-ItemDisplay[UNI !ID paf]: %CONTINUE%Vortex Shield - Skywarden
+ItemDisplay[UNI !ID paf]: %CONTINUE%Skywarden - Vortex Shield
 
 // Sorceress Orbs
 ItemDisplay[UNI !ID ob1]: %CONTINUE%Eagle Orb (No Unique for this base)
@@ -1777,7 +2318,7 @@ ItemDisplay[INF !(rin OR amu) ID]: %GRAY%Inf %NAME%%CONTINUE%
 //Show item tier levels
 ItemDisplay[NORM]: %NAME%%WHITE%¹%CONTINUE%
 ItemDisplay[EXC]: %NAME%%BLUE%²%CONTINUE%
-ItemDisplay[ELT]: %NAME%%GOLD%³%CONTINUE%
+ItemDisplay[ELT]: %CONTINUE%%NAME%%GOLD%³
 
 // Formatting for unidentified items
 ItemDisplay[!ID MAG]: %CONTINUE%%BLUE%¿ %NAME% %BLUE%?
@@ -1808,24 +2349,54 @@ Alias[MEDIUM]: (tbl OR ztb OR utc OR mbt OR xmb OR umb OR scl OR xcl OR ucl OR t
 Alias[HEAVY]: (hbl OR zhb OR uhc OR hbt OR xhb OR uhb OR aar OR xar OR uar OR hgl OR xhg OR uhg OR crn OR xrn OR urn OR ba5 OR baa OR baf OR tow OR xow OR uow OR tbt OR xtb OR utb OR ful OR xul OR uul OR gth OR xth OR uth OR plt OR xlt OR ult OR ghm OR xhm OR uhm OR ba4 OR ba9 OR bae OR gts OR xts OR uts OR fld OR xld OR uld OR spl OR xpl OR upl OR chn OR xhn OR uhn)
 
 // Hide normal and exceptional bases
-ItemDisplay[NMAG !POINTMOD NORM FILTLVL>3]:
-ItemDisplay[NMAG !POINTMOD EXC FILTLVL>5]:
+ItemDisplay[FIELD NMAG !RW !POINTMOD !leg NORM FILTLVL>3]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW !POINTMOD !leg NORM FILTLVL>3]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG !RW !POINTMOD !leg EXC FILTLVL>5]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW !POINTMOD !leg EXC FILTLVL>5]: %NAME%{%FILTERWARN%}
+
+// Hide non-magical equipment that can't be used for runewords.
+ItemDisplay[FIELD NMAG (GLOVES OR BOOTS OR BELT OR SOCKETS=1) FILTLVL>1]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG (GLOVES OR BOOTS OR BELT OR SOCKETS=1) FILTLVL>1]: %NAME%{%FILTERWARN%}
+
+// Hide non-magical weapons that aren't sufficiently high quality at higher tier levels.
+// Note: Phase Blade is excepted because of the imbue quest possibility to create Armagedon's Blade
+// Filter level 4+: must be superior or ethereal
+ItemDisplay[FIELD NMAG !RW WEAPON !7cr !POINTMOD !(SUP OR ETH) FILTLVL>3]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW WEAPON !7cr !POINTMOD !(SUP OR ETH) FILTLVL>3]: %NAME%{%FILTERWARN%}
+// Filter level 6+: must be superior with high ED or ethereal
+ItemDisplay[FIELD NMAG !RW WEAPON !7cr !POINTMOD !((SUP EDAM>10) OR ETH) FILTLVL>5]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW WEAPON !7cr !POINTMOD !((SUP EDAM>10) OR ETH) FILTLVL>5]: %NAME%{%FILTERWARN%}
+// Filter level 8: must be superior with high ED and ethereal
+ItemDisplay[FIELD NMAG !RW WEAPON !7cr !POINTMOD !(SUP EDAM>10 ETH) FILTLVL>7]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW WEAPON !7cr !POINTMOD !(SUP EDAM>10 ETH) FILTLVL>7]: %NAME%{%FILTERWARN%}
 
 // Hide lower tier bases at higher filter levels.
-ItemDisplay[NMAG FBASE FILTLVL>1]:
-ItemDisplay[NMAG !POINTMOD DBASE FILTLVL>3]:
-ItemDisplay[NMAG !POINTMOD CBASE FILTLVL>5]:
-ItemDisplay[NMAG !POINTMOD !(SUP OR ETH) BBASE FILTLVL>7]:
+ItemDisplay[FIELD NMAG !RW FBASE FILTLVL>1]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW FBASE FILTLVL>1]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG !RW !POINTMOD DBASE FILTLVL>3]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW !POINTMOD DBASE FILTLVL>3]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG !RW !POINTMOD CBASE FILTLVL>5]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW !POINTMOD CBASE FILTLVL>5]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG !RW !POINTMOD !(SUP OR ETH) BBASE FILTLVL>7]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW !POINTMOD !(SUP OR ETH) BBASE FILTLVL>7]: %NAME%{%FILTERWARN%}
 
-// Highlight ideal bases
-ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) VLIGHT]: %NAME% %TAN%(VLight)%CONTINUE%
-ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) LIGHT]: %NAME% %TAN%(Light)%CONTINUE%
-ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) MEDIUM]: %NAME% %TAN%(Medium)%CONTINUE%
-ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) HEAVY]: %NAME% %TAN%(Heavy)%CONTINUE%
+// Hide magic bases at higher filter levels.
+ItemDisplay[FIELD MAG !ID (ARMOR OR WEAPON) !(aqv OR cqv) !POINTMOD !(SUP OR ETH) FILTLVL>5]: {%FILTERWARN%}
+ItemDisplay[!FIELD MAG !ID (ARMOR OR WEAPON) !(aqv OR cqv) !POINTMOD !(SUP OR ETH) FILTLVL>5]: %NAME%{%FILTERWARN%}
+
+// Highlight ideal armor bases
+ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) VLIGHT]: %NAME% %LIGHT_GRAY%(VLight)%CONTINUE%
+ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) LIGHT]: %NAME% %LIGHT_GRAY%(Light)%CONTINUE%
+ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) MEDIUM]: %NAME% %LIGHT_GRAY%(Medium)%CONTINUE%
+ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) HEAVY]: %NAME% %LIGHT_GRAY%(Heavy)%CONTINUE%
 ItemDisplay[BBASE (MAG OR RARE) VLIGHT]: %NAME% %ORANGE%(VLight)%CONTINUE%
 ItemDisplay[BBASE (MAG OR RARE) LIGHT]: %NAME% %ORANGE%(Light)%CONTINUE%
 ItemDisplay[BBASE (MAG OR RARE) MEDIUM]: %NAME% %ORANGE%(Medium)%CONTINUE%
 ItemDisplay[BBASE (MAG OR RARE) HEAVY]: %NAME% %ORANGE%(Heavy)%CONTINUE%
+
+// Specific Runeword Bases
+ItemDisplay[NMAG (6cs OR 6bs or 6ws) (SOCKETS=0 OR SOCKETS=4)]: %NAME% %LIGHT_GRAY%(Infinity){%NAME%%CL%%LIGHT_GRAY%Infinity: Ber•Mal•Ber•Ist}
+
 
 //----------------------------------------------------------------------------------------------------------------
 // 5. Shop Hunting
@@ -2391,10 +2962,14 @@ Alias[SKSUM6]: (MULTI107,6+MULTI107,7+MULTI107,11+MULTI107,12+MULTI107,16+MULTI1
 Alias[SKSUM8]: (MULTI107,6+MULTI107,7+MULTI107,11+MULTI107,12+MULTI107,16+MULTI107,21+MULTI107,22+MULTI107,26+MULTI107,27+MULTI107,31+MULTI107,32+MULTI107,8+MULTI107,9+MULTI107,13+MULTI107,17+MULTI107,18+MULTI107,23+MULTI107,28+MULTI107,29+MULTI107,33+MULTI107,10+MULTI107,14+MULTI107,15+MULTI107,20+MULTI107,24+MULTI107,25+MULTI107,30+MULTI107,34+MULTI107,35+MULTI107,19+MULTI107,41+MULTI107,47+MULTI107,52+MULTI107,56+MULTI107,62+MULTI107,376+MULTI107,36+MULTI107,37+MULTI107,46+MULTI107,51+MULTI107,61+MULTI107,383+MULTI107,38+MULTI107,48+MULTI107,49+MULTI107,53+MULTI107,42+MULTI107,43+MULTI107,54+MULTI107,57+MULTI107,58+MULTI107,63+MULTI107,40+MULTI107,44+MULTI107,55+MULTI107,64+MULTI107,369+MULTI107,39+MULTI107,45+MULTI107,50+MULTI107,59+MULTI107,60+MULTI107,65+MULTI107,381+MULTI107,66+MULTI107,71+MULTI107,72+MULTI107,76+MULTI107,77+MULTI107,81+MULTI107,82+MULTI107,86+MULTI107,87+MULTI107,91+MULTI107,374+MULTI107,67+MULTI107,73+MULTI107,74+MULTI107,83+MULTI107,84+MULTI107,92+MULTI107,93+MULTI107,68+MULTI107,78+MULTI107,88+MULTI107,70+MULTI107,75+MULTI107,80+MULTI107,85+MULTI107,89+MULTI107,90+MULTI107,94+MULTI107,95+MULTI107,69+MULTI107,79+MULTI107,367+MULTI107,96+MULTI107,97+MULTI107,101+MULTI107,106+MULTI107,107+MULTI107,111+MULTI107,112+MULTI107,121+MULTI107,364+MULTI107,371+MULTI107,116+MULTI107,117+MULTI107,378+MULTI107,102+MULTI107,114+MULTI107,118+MULTI107,98+MULTI107,103+MULTI107,108+MULTI107,113+MULTI107,119+MULTI107,122+MULTI107,123+MULTI107,99+MULTI107,100+MULTI107,104+MULTI107,105+MULTI107,109+MULTI107,110+MULTI107,115+MULTI107,120+MULTI107,124+MULTI107,125+MULTI107,133+MULTI107,140+MULTI107,143+MULTI107,144+MULTI107,151+MULTI107,152+MULTI107,126+MULTI107,132+MULTI107,139+MULTI107,147+MULTI107,127+MULTI107,128+MULTI107,129+MULTI107,134+MULTI107,135+MULTI107,136+MULTI107,141+MULTI107,145+MULTI107,148+MULTI107,153+MULTI107,368+MULTI107,142+MULTI107,154+MULTI107,130+MULTI107,131+MULTI107,137+MULTI107,138+MULTI107,146+MULTI107,149+MULTI107,150+MULTI107,155+MULTI107,221+MULTI107,227+MULTI107,237+MULTI107,247+MULTI107,222+MULTI107,226+MULTI107,231+MULTI107,236+MULTI107,241+MULTI107,246+MULTI107,223+MULTI107,228+MULTI107,233+MULTI107,238+MULTI107,239+MULTI107,243+MULTI107,248+MULTI107,224+MULTI107,232+MULTI107,242+MULTI107,225+MULTI107,229+MULTI107,230+MULTI107,234+MULTI107,240+MULTI107,244+MULTI107,245+MULTI107,235+MULTI107,249+MULTI107,250+MULTI107,370+MULTI107,251+MULTI107,256+MULTI107,257+MULTI107,261+MULTI107,262+MULTI107,266+MULTI107,271+MULTI107,272+MULTI107,276+MULTI107,366+MULTI107,277+MULTI107,253+MULTI107,268+MULTI107,273+MULTI107,279+MULTI107,252+MULTI107,258+MULTI107,263+MULTI107,264+MULTI107,267+MULTI107,278+MULTI107,254+MULTI107,255+MULTI107,259+MULTI107,260+MULTI107,265+MULTI107,269+MULTI107,270+MULTI107,274+MULTI107,280+MULTI107,275>7)
 
 // Hide non-magic bases with poor rolls based on strictness
-ItemDisplay[NMAG POINTMOD !PRIME1 FILTLVL>1]:
-ItemDisplay[NMAG PRIME1 !PRIME3 FILTLVL>3]:
-ItemDisplay[NMAG PRIME3 !SKSUM6 FILTLVL>5]:
-ItemDisplay[NMAG PRIME3 !SKSUM8 FILTLVL>7]:
+ItemDisplay[FIELD NMAG POINTMOD !PRIME1 FILTLVL>1]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG POINTMOD !PRIME1 FILTLVL>1]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG PRIME1 !PRIME3 FILTLVL>3]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG PRIME1 !PRIME3 FILTLVL>3]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG PRIME3 !SKSUM6 FILTLVL>5]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG PRIME3 !SKSUM6 FILTLVL>5]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG PRIME3 !SKSUM8 FILTLVL>7]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG PRIME3 !SKSUM8 FILTLVL>7]: %NAME%{%FILTERWARN%}
 
 // Open bracket
 ItemDisplay[!(SET OR UNI) SUBPRIME !PRIME1]: %NAME%%GRAY% {%CONTINUE%
@@ -4663,7 +5238,8 @@ ItemDisplay[BAR BARBARIAN RARE !ID]: %NAME%
 ItemDisplay[(SIN OR (DAGGER !THROWING)) ASSASSIN RARE !ID]: %NAME%
 
 //Hide Magic Ring and Amulets on Strict Level
-ItemDisplay[(rin OR amu) MAG !ID FILTLVL>5]: {%NAME%}
+ItemDisplay[FIELD (rin OR amu) MAG !ID FILTLVL>5]: {%FILTERWARN%}
+ItemDisplay[!FIELD (rin OR amu) MAG !ID FILTLVL>5]: %NAME%{%FILTERWARN%}
 
 //Circlets
 ItemDisplay[CIRC MAG !ID FILTLVL>7]: {%NAME%}
@@ -4841,9 +5417,9 @@ ItemDisplay[(am2 OR am7 OR amc) (MAG OR RARE) !ID (ALVL>74 OR CRAFTALVL>74)]: %N
 Alias[BLUDGEON]: (MACE OR SCEPTER)
 
 // Close: Show max theoretical points.
-ItemDisplay[HAMMER RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE% // 6+8=14
-ItemDisplay[(CLUB OR TMACE) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 7+8=15
-ItemDisplay[SCEPTER RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%NL%%NAME%}%CONTINUE% // 9+8=17
+ItemDisplay[HAMMER RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 6+8=14
+ItemDisplay[(CLUB OR TMACE) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[SCEPTER RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%CL%%NAME%}%CONTINUE% // 9+8=17
 
 // Prefixes (max 6 pts hammers, 7 clubs & tipped maces, 9 scepters)
 // # Skills (2 pts, 5 pts scepters)
@@ -4919,6 +5495,8 @@ ItemDisplay[BLUDGEON RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 ItemDisplay[BLUDGEON RARE STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Ignore Target's Defense (2 pts, scepter only)
 ItemDisplay[BLUDGEON RARE STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+// # Ethereal & Self Repair (2 pts)
+ItemDisplay[BLUDGEON RARE ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
 
 // Combined Prefixes & Suffixes
 // # Open Wounds (2 pts)
@@ -4941,7 +5519,7 @@ ItemDisplay[BLUDGEON RARE STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% 
 ItemDisplay[BLUDGEON RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
 
 //Open
-ItemDisplay[BLUDGEON RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[BLUDGEON RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Edged Melee Weapons
@@ -4950,123 +5528,137 @@ ItemDisplay[BLUDGEON RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINU
 
 Alias[EDGED]: ((AXE OR SWORD OR DAGGER OR SPEAR OR POLEARM OR SIN) !THROWING)
 
-ItemDisplay[EDGED !DAGGER !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE% // 6+8=14
-ItemDisplay[DAGGER !THROWING RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 7+8=15
-ItemDisplay[ZON SPEAR RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE% // 8+8=16
+ItemDisplay[EDGED !DAGGER !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 6+8=14
+ItemDisplay[DAGGER !THROWING RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[ZON SPEAR RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE% // 8+8=16
+ItemDisplay[EDGED !DAGGER !ZON CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••%CL%%NAME%}%CONTINUE% // 4+6+3=13
+ItemDisplay[DAGGER !THROWING CRAFT]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 5+6+3=14
+ItemDisplay[ZON SPEAR CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 6+6+3=15
+
 
 // Prefixes (max 6 pts, 7 daggers, 8 zon spears)
-// # Skills (2 pts, 1 pt polearms, 4 pts zon spears)
+// # Skills (2 pts, 1 pt polearms, 4 pts zon spears) +1 Caster & Bountiful
 // zon spears: class 2, tree 6
 // non-zon spears: class 2, tree 3
 // claws, crystal swords, axes, daggers, swords: class 2 tree 2
 // polearms: tree 2
-ItemDisplay[EDGED RARE CLASS1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[EDGED RARE CLASS2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[EDGED !ZON RARE TREE2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[EDGED RARE TREE3]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[EDGED RARE TREE4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[EDGED RARE TREE5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[EDGED RARE TREE6]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-// # Enhanced Damage (4 pts, 5 pts daggers)
+ItemDisplay[EDGED CRAFT ALLSK>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) CLASS1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) CLASS2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED !ZON (RARE OR CRAFT) TREE2]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) TREE3]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) TREE4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) TREE5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) TREE6]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// # Enhanced Damage (4 pts, 5 pts daggers) +2 Blood, Hitpower, & Safety; +1 Brilliant
 // Most edged weapons: 300%+150%=450%
-ItemDisplay[EDGED RARE ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[EDGED RARE ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[EDGED RARE ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[EDGED !DAGGER RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
-// Daggers: 400%+150%=550%
-ItemDisplay[EDGED RARE ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[EDGED RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[DAGGER !THROWING RARE ED>200]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[DAGGER !THROWING RARE ED>300]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[DAGGER !THROWING RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[DAGGER !THROWING RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[DAGGER !THROWING RARE ED>550]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED !DAGGER (RARE OR CRAFT) ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Daggers: 400%+150%=550%; Most crafted weapons: 300%+150%+80=530%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Crafted Daggers: 400%+150%+80%=630%
+ItemDisplay[EDGED CRAFT ED>550]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT ED>600]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Maximum Damage per Level (2 pts)
-ItemDisplay[EDGED RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[EDGED RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
-// # Damage to Demons (1 pt)
-ItemDisplay[EDGED RARE STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
-// # Damage to Undead (1 pt)
-ItemDisplay[EDGED RARE STAT122>225]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Damage to Demons (1 pt) +1 crafted
+ItemDisplay[EDGED (RARE OR CRAFT) STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT STAT121>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Undead (1 pt) +1 crafted
+ItemDisplay[EDGED (RARE OR CRAFT) STAT122>225]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT STAT122>325]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Enemy Resistances (2 pts, crystal sword and claws only)
-ItemDisplay[(SIN OR crs OR 9cr OR 7cr) RARE (STAT333>4 OR STAT334>4 OR STAT335>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
-ItemDisplay[(SIN OR crs OR 9cr OR 7cr) RARE (STAT333>7 OR STAT334>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
-ItemDisplay[SIN RARE (STAT336>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison claws only
-ItemDisplay[SIN RARE (STAT336>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison claws only
+ItemDisplay[(SIN OR crs OR 9cr OR 7cr) (RARE OR CRAFT) (STAT333>4 OR STAT334>4 OR STAT335>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[(SIN OR crs OR 9cr OR 7cr) (RARE OR CRAFT) (STAT333>7 OR STAT334>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[SIN (RARE OR CRAFT) (STAT336>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison claws only
+ItemDisplay[SIN (RARE OR CRAFT) (STAT336>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison claws only
 // Socketed (1 pt)
-ItemDisplay[EDGED RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // Life after each Kill (1 pt)
-ItemDisplay[EDGED RARE STAT86>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT86>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // Mana after each Kill (1 pt)
-ItemDisplay[EDGED RARE STAT138>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT138>2]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Resistances (4 pts total)
-ItemDisplay[EDGED RARE (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-ItemDisplay[EDGED RARE (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-ItemDisplay[EDGED RARE (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-ItemDisplay[EDGED RARE (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 
 // Suffixes (max 8 pts)
-// # Increased Attack Speed (3 pts)
-ItemDisplay[EDGED RARE IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
-ItemDisplay[EDGED RARE IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
-ItemDisplay[EDGED RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Increased Attack Speed (3 pts) +2 Brilliant
+ItemDisplay[EDGED (RARE OR CRAFT) IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT IAS>45]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT IAS>55]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 // # Damage (1 pt)
-ItemDisplay[EDGED RARE MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Chance to Cast on Striking (3 pts)
-ItemDisplay[EDGED RARE MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
-ItemDisplay[EDGED RARE MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
-ItemDisplay[EDGED RARE MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
-ItemDisplay[EDGED RARE MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
-ItemDisplay[EDGED RARE MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
-ItemDisplay[EDGED RARE MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
 // # Crushing Blow (2 pts)
-ItemDisplay[EDGED RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-ItemDisplay[EDGED RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
 // # Deadly Strike (2 pts)
-ItemDisplay[EDGED RARE STAT141>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-ItemDisplay[EDGED RARE STAT141>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-// # Life Steal (1 pt)
-ItemDisplay[EDGED RARE STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[EDGED !DAGGER (RARE OR CRAFT) STAT141>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED !DAGGER (RARE OR CRAFT) STAT141>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING (RARE OR CRAFT) STAT141>36]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING (RARE OR CRAFT) STAT141>53]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Life Steal (1 pt) +1 Blood
+ItemDisplay[EDGED (RARE OR CRAFT) STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT STAT60>6]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Mana Steal (1 pt)
-ItemDisplay[EDGED RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Life Tap Charges (2 pt, axe & dagger only)
-ItemDisplay[EDGED RARE MULTI204,5249>0]: %NAME%{%NAME%%BLUE%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI204,5249>0]: %NAME%{%NAME%%BLUE%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
 // # Prevent Monster Heal (1 pt)
-ItemDisplay[EDGED RARE STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Ignore Target's Defense (2 pts, dagger & claw only)
-ItemDisplay[EDGED RARE STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+// # -% Target's Defense +1 Hitpower
+ItemDisplay[EDGED CRAFT STAT116>9]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// # Ethereal & Self Repair (2 pts)
+ItemDisplay[EDGED (RARE OR CRAFT) ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
 
 // Combined Prefixes & Suffixes
 // # Open Wounds (2 pts)
 // [P: 20% +563, S: 10% +325, Total: +888]
-ItemDisplay[EDGED RARE STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-ItemDisplay[EDGED RARE STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-ItemDisplay[EDGED RARE STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
 // # Elemental Damage (3 pts each)
 // Fire [P: 306-432 (738), S: 214-302 (516)]
-ItemDisplay[EDGED RARE STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
-ItemDisplay[EDGED RARE STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
-ItemDisplay[EDGED RARE STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[EDGED (RARE OR CRAFT) STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[EDGED (RARE OR CRAFT) STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[EDGED (RARE OR CRAFT) STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
 // Lightning [P: 1-576 (577), S: 6-403 (409)]
-ItemDisplay[EDGED RARE STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
-ItemDisplay[EDGED RARE STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
-ItemDisplay[EDGED RARE STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[EDGED (RARE OR CRAFT) STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[EDGED (RARE OR CRAFT) STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[EDGED (RARE OR CRAFT) STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
 // Cold [P: 112-348 (460), S: 118-365 (483)]
-ItemDisplay[EDGED RARE STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
-ItemDisplay[EDGED RARE STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
-ItemDisplay[EDGED RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[EDGED (RARE OR CRAFT) STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[EDGED (RARE OR CRAFT) STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[EDGED (RARE OR CRAFT) STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
 
 //Open
-ItemDisplay[EDGED RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT)]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Throwing Weapons
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[THROWING !AXE !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE% // 6+8=14
-ItemDisplay[THROWING AXE RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 7+8=15
-ItemDisplay[THROWING ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE% // 8+8=16
+ItemDisplay[THROWING !AXE !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 6+8=14
+ItemDisplay[THROWING AXE RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[THROWING ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE% // 8+8=16
 
 // Prefixes (max 6 pts, 7 pts axes, 8 pts zon javs)
 // # Skills (2 pts, 4 pts zon javs)
@@ -5154,15 +5746,15 @@ ItemDisplay[THROWING RARE STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% 
 ItemDisplay[THROWING RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
 
 //Open
-ItemDisplay[THROWING RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[THROWING RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Missile Weapons
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[(BOW OR XBOW) !ZON RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 7+8=15
-ItemDisplay[BOW ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%NL%%NAME%}%CONTINUE% // 8+8=16
+ItemDisplay[(BOW OR XBOW) !ZON RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[BOW ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE% // 8+8=16
 
 // Prefixes (max 7 pts, 8 pts zon bows)
 // # Skills (2 pts, 3 pts zon bows)
@@ -5242,9 +5834,11 @@ ItemDisplay[(BOW OR XBOW) RARE STAT60>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 ItemDisplay[(BOW OR XBOW) RARE STAT62>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
 // # Dexterity (1 pt)
 ItemDisplay[(BOW OR XBOW) RARE DEX>20]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+// # Ethereal & Self Repair (2 pts)
+ItemDisplay[(BOW OR XBOW) RARE ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
 
 //Open
-ItemDisplay[(BOW OR XBOW) RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[(BOW OR XBOW) RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Helms & Circlets
@@ -5252,9 +5846,9 @@ ItemDisplay[(BOW OR XBOW) RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CO
 Alias[HAT]: (HELM OR CIRC)
 
 // Close: Show max theoretical points.
-ItemDisplay[(HELM !CLASS) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••%NL%%NAME%}%CONTINUE% // 6+5=11
-ItemDisplay[(BAR OR DRU) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 10+5=15
-ItemDisplay[CIRC RARE]: %NAME%{%LIGHT_GRAY%••••••••••••%NL%%NAME%}%CONTINUE% // 6+6=12
+ItemDisplay[(HELM !CLASS) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••%CL%%NAME%}%CONTINUE% // 6+5=11
+ItemDisplay[(BAR OR DRU) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 10+5=15
+ItemDisplay[CIRC RARE]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE% // 6+6=12
 
 // Prefixes (max 10 pts class, 6 pts non-class & circlets)
 // # Skills (5 pts class helms, 1 pt non-class, 2 pts circlets)
@@ -5323,7 +5917,7 @@ ItemDisplay[HAT RARE CHSK54>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
 ItemDisplay[HAT RARE ETH REPAIR>0]: %NAME%{%NAME%%GRAY%•}%CONTINUE%
 
 //Open
-ItemDisplay[HAT RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[HAT RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 
 //----------------------------------------------------------------------------------------------------------------
@@ -5331,9 +5925,9 @@ ItemDisplay[HAT RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[(SHIELD AND !CLASS) RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%NL%%NAME%}%CONTINUE% // 8+6=14
-ItemDisplay[DIN RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%NL%%NAME%}%CONTINUE% // 9+6=15
-ItemDisplay[NEC RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%NL%%NAME%}%CONTINUE% // 11+6=17
+ItemDisplay[(SHIELD AND !CLASS) RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 8+6=14
+ItemDisplay[DIN RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 9+6=15
+ItemDisplay[NEC RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%CL%%NAME%}%CONTINUE% // 11+6=17
 
 // Prefixes (max 8 non-class, 9 paladin, 11 necromancer) 
 // # Skills (2 pts, 5 pts necromancer helms)
@@ -5406,7 +6000,7 @@ ItemDisplay[SHIELD RARE STAT91>15]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 ItemDisplay[SHIELD RARE ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
 
 //Open
-ItemDisplay[SHIELD RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[SHIELD RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 
 //----------------------------------------------------------------------------------------------------------------
@@ -5414,7 +6008,7 @@ ItemDisplay[SHIELD RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[CHEST RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[CHEST RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••%CL%%NAME%}%CONTINUE%
 
 // Prefixes
 // # Skills (1 pt)
@@ -5465,7 +6059,7 @@ ItemDisplay[CHEST RARE STAT91>15]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 ItemDisplay[CHEST RARE ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
 
 //Open
-ItemDisplay[CHEST RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[CHEST RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 
 //----------------------------------------------------------------------------------------------------------------
@@ -5473,7 +6067,7 @@ ItemDisplay[CHEST RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[BOOTS RARE]: %NAME%{%LIGHT_GRAY%•••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[BOOTS RARE]: %NAME%{%LIGHT_GRAY%•••••••%CL%%NAME%}%CONTINUE%
 
 // Prefixes
 // # Resistances (1 pt each)
@@ -5498,7 +6092,7 @@ ItemDisplay[BOOTS RARE MFIND>19]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 ItemDisplay[BOOTS RARE GFIND>60]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 //Open
-ItemDisplay[BOOTS RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[BOOTS RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Gloves
@@ -5514,7 +6108,7 @@ ItemDisplay[GLOVES MAG IAS>19 (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3/20 G
 // --- Rare Gloves ---
 
 // Close: Show max theoretical points.
-ItemDisplay[GLOVES RARE]: %NAME%{%LIGHT_GRAY%••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[GLOVES RARE]: %NAME%{%LIGHT_GRAY%••••••••%CL%%NAME%}%CONTINUE%
 
 // Prefixes
 // # Skills (2 pts)
@@ -5551,14 +6145,14 @@ ItemDisplay[GLOVES RARE MFIND>19]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 ItemDisplay[GLOVES RARE GFIND>60]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 //Open
-ItemDisplay[GLOVES RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[GLOVES RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Belts
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[BELT RARE]: %NAME%{%LIGHT_GRAY%•••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[BELT RARE]: %NAME%{%LIGHT_GRAY%•••••••••%CL%%NAME%}%CONTINUE%
 
 // Prefixes
 // # Resistances (1 pt each)
@@ -5587,15 +6181,15 @@ ItemDisplay[BELT RARE STR>15]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
 ItemDisplay[BELT RARE GFIND>51]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 //Open
-ItemDisplay[BELT RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[BELT RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Jewels
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[jew MAG]: %NAME%{%LIGHT_GRAY%••••%NL%%NAME%}%CONTINUE%
-ItemDisplay[jew RARE]: %NAME%{%LIGHT_GRAY%•••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[jew MAG]: %NAME%{%LIGHT_GRAY%••••%CL%%NAME%}%CONTINUE%
+ItemDisplay[jew RARE]: %NAME%{%LIGHT_GRAY%•••••••%CL%%NAME%}%CONTINUE%
 
 // Prefixes + Suffixes
 // # Damage (1pt each)
@@ -5639,7 +6233,7 @@ ItemDisplay[jew !UNI MFIND>14]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 ItemDisplay[jew !UNI GFIND>25]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 //Open
-ItemDisplay[jew !UNI]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[jew !UNI]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 
 //----------------------------------------------------------------------------------------------------------------
@@ -5660,32 +6254,32 @@ Alias[FCRAMU]: (amu MAG STAT360=0 (TABSK8=3 OR TABSK9=3 OR TABSK10=3 OR TABSK16=
 Alias[OTHERAMU]: (amu MAG STAT360=0 (TABSK0=3 OR TABSK2=3 OR TABSK18=3 OR TABSK24=3 OR TABSK25=3 OR TABSK40=3 OR TABSK49=3 OR TABSK50=3))
 
 // Squid, Whale, or Centaur
-ItemDisplay[SKAMU (LIFE>60 OR STAT216>0)]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%NL%%GOLD%««« Life & Skills »»»%NL%}%CONTINUE%
+ItemDisplay[SKAMU (LIFE>60 OR STAT216>0)]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« Life & Skills »»»%CL%}%CONTINUE%
 // Life Everlasting (Physical Damage Taken Reduced)
-ItemDisplay[(PHYSAMU OR OTHERAMU) STAT34>15]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%NL%%GOLD%««« PDR & Skills »»»%NL%}%CONTINUE%
+ItemDisplay[(PHYSAMU OR OTHERAMU) STAT34>15]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« PDR & Skills »»»%CL%}%CONTINUE%
 // # Faster Cast Rate
-ItemDisplay[FCRAMU FCR>0]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%NL%%GOLD%««« FCR & Skills »»»%NL%}%CONTINUE%
+ItemDisplay[FCRAMU FCR>0]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« FCR & Skills »»»%CL%}%CONTINUE%
 // # Damage
-ItemDisplay[PHYSAMU MINDMG+MAXDMG>10]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%NL%%GOLD%««« Damage & Skills »»»%NL%}%CONTINUE%
+ItemDisplay[PHYSAMU MINDMG+MAXDMG>10]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« Damage & Skills »»»%CL%}%CONTINUE%
 // Less valuable +3 skill amulets.
-ItemDisplay[SKAMU !(LIFE>60 OR STAT216>0) STAT34<16 FCR=0 MINDMG+MAXDMG<11]: %BLUE%»»»%NAME%%BLUE%«««{%NAME%%NL%%BLUE%««« Skills »»»%NL%}%CONTINUE%
+ItemDisplay[SKAMU !(LIFE>60 OR STAT216>0) STAT34<16 FCR=0 MINDMG+MAXDMG<11]: %BLUE%»»»%NAME%%BLUE%«««{%NAME%%CL%%BLUE%««« Skills »»»%CL%}%CONTINUE%
 
 // +2 Class Skills
 Alias[CLSAMU]: (amu MAG STAT360=0 (CLSK0=2 OR CLSK1=2 OR CLSK2=2 OR CLSK3=2 OR CLSK4=2 OR CLSK5=2 OR CLSK6=2))
 
 // Squid, Whale, or Centaur
-ItemDisplay[CLSAMU (LIFE>60 OR STAT216>0)]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%NL%%YELLOW%««« Life & Skills »»»%NL%}%CONTINUE%
+ItemDisplay[CLSAMU (LIFE>60 OR STAT216>0)]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« Life & Skills »»»%CL%}%CONTINUE%
 // Life Everlasting (Physical Damage Taken Reduced)
-ItemDisplay[CLSAMU STAT34>15]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%NL%%YELLOW%««« PDR & Skills »»»%NL%}%CONTINUE%
+ItemDisplay[CLSAMU STAT34>15]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« PDR & Skills »»»%CL%}%CONTINUE%
 // # Faster Cast Rate
-ItemDisplay[CLSAMU FCR>0]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%NL%%YELLOW%««« FCR & Skills »»»%NL%}%CONTINUE%
+ItemDisplay[CLSAMU FCR>0]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« FCR & Skills »»»%CL%}%CONTINUE%
 // # Damage
-ItemDisplay[CLSAMU MINDMG+MAXDMG>10]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%NL%%YELLOW%««« Damage & Skills »»»%NL%}%CONTINUE%
+ItemDisplay[CLSAMU MINDMG+MAXDMG>10]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« Damage & Skills »»»%CL%}%CONTINUE%
 
 // --- Rare Amulets ---
 
 // Close: Show max theoretical points.
-ItemDisplay[amu RARE]: %NAME%{%LIGHT_GRAY%••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[amu RARE]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
 
 // Prefixes (max 7 pts)
 // # Skills
@@ -5734,7 +6328,7 @@ ItemDisplay[amu RARE AR>120]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 ItemDisplay[amu RARE (MFIND>15 OR GFIND>40)]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 //Open
-ItemDisplay[amu RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[amu RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for Rings
@@ -5749,7 +6343,7 @@ ItemDisplay[rin MAG STAT360=0 RES>11 (FCR>0 OR MINDMG+MAXDMG>9)]: %TAN%Cool Ring
 // --- Rare Rings ---
 
 // Close: Show max theoretical points.
-ItemDisplay[rin RARE]: %NAME%{%LIGHT_GRAY%••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[rin RARE]: %NAME%{%LIGHT_GRAY%••••••••••%CL%%NAME%}%CONTINUE%
 
 // Prefixes (max 5 pts)
 // # Resistances
@@ -5791,7 +6385,7 @@ ItemDisplay[rin RARE AR>65]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 ItemDisplay[rin RARE (MFIND>15 OR GFIND>32)]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 //Open
-ItemDisplay[rin RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[rin RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 
 //----------------------------------------------------------------------------------------------------------------
@@ -5808,7 +6402,7 @@ ItemDisplay[(aqv OR cqv) MAG !ID ((!AMAZON AND FILTLVL>1 AND CLVL>69) OR FILTLVL
 ItemDisplay[(aqv OR cqv) RARE AMAZON !ID]: %DOT-A8%%TIER-7%%NAME%%CONTINUE%
 
 // Close: Show max theoretical points.
-ItemDisplay[(aqv OR cqv) RARE]: %NAME%{%LIGHT_GRAY%••••••••••••%NL%%NAME%}%CONTINUE%
+ItemDisplay[(aqv OR cqv) RARE]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
 
 // Prefixes
 // # Bow & Crossbow (2 pts)
@@ -5864,14 +6458,14 @@ ItemDisplay[(aqv OR cqv) RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTIN
 
 
 //Open
-ItemDisplay[(aqv OR cqv) RARE]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[(aqv OR cqv) RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Point system for charms
 //----------------------------------------------------------------------------------------------------------------
 
 // Close: Show max theoretical points.
-ItemDisplay[MAG (cm1 OR cm2 OR cm3)]: %NAME%{%NAME%%LIGHT_GRAY%••••%NL%}%CONTINUE%
+ItemDisplay[MAG (cm1 OR cm2 OR cm3)]: %NAME%{%NAME%%LIGHT_GRAY%••••%CL%}%CONTINUE%
 
 // Prefixes (Up to 3pts)
 // # Skill Trees
@@ -5984,22 +6578,22 @@ ItemDisplay[MAG cm3 STAT54+STAT55>110]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Col
 ItemDisplay[MAG cm3 STAT54+STAT55>136]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
 
 //Open
-ItemDisplay[MAG (cm1 OR cm2 OR cm3)]: %NAME%{%NAME%%NL%%LIGHT_GRAY%Affix Quality:}%CONTINUE%
+ItemDisplay[MAG (cm1 OR cm2 OR cm3)]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 // Show sum of all res sources
 //----------------------------------------------------------------------------------------------------------------
-ItemDisplay[(FRES+CRES+LRES+PRES>30) (FRES+CRES+LRES+PRES<41)]: %NAME%{%GRAY%RES>30%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>40) (FRES+CRES+LRES+PRES<51)]: %NAME%{%GRAY%RES>40%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>50) (FRES+CRES+LRES+PRES<61)]: %NAME%{%BLUE%RES>50%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>60) (FRES+CRES+LRES+PRES<71)]: %NAME%{%BLUE%RES>60%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>70) (FRES+CRES+LRES+PRES<81)]: %NAME%{%BLUE%RES>70%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>80) (FRES+CRES+LRES+PRES<91)]: %NAME%{%YELLOW%RES>80%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>90) (FRES+CRES+LRES+PRES<101)]: %NAME%{%YELLOW%RES>90%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>100) (FRES+CRES+LRES+PRES<111)]: %NAME%{%YELLOW%RES>100%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>110) (FRES+CRES+LRES+PRES<121)]: %NAME%{%GOLD%RES>110%NL%%NAME%}%CONTINUE%
-ItemDisplay[(FRES+CRES+LRES+PRES>120) (FRES+CRES+LRES+PRES<131)]: %NAME%{%GOLD%RES>120%NL%%NAME%}%CONTINUE%
-ItemDisplay[FRES+CRES+LRES+PRES>130]: %NAME%{%GOLD%RES>130%NL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>30) (FRES+CRES+LRES+PRES<41)]: %NAME%{%GRAY%RES>30%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>40) (FRES+CRES+LRES+PRES<51)]: %NAME%{%GRAY%RES>40%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>50) (FRES+CRES+LRES+PRES<61)]: %NAME%{%BLUE%RES>50%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>60) (FRES+CRES+LRES+PRES<71)]: %NAME%{%BLUE%RES>60%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>70) (FRES+CRES+LRES+PRES<81)]: %NAME%{%BLUE%RES>70%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>80) (FRES+CRES+LRES+PRES<91)]: %NAME%{%YELLOW%RES>80%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>90) (FRES+CRES+LRES+PRES<101)]: %NAME%{%YELLOW%RES>90%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>100) (FRES+CRES+LRES+PRES<111)]: %NAME%{%YELLOW%RES>100%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>110) (FRES+CRES+LRES+PRES<121)]: %NAME%{%GOLD%RES>110%CL%%NAME%}%CONTINUE%
+ItemDisplay[(FRES+CRES+LRES+PRES>120) (FRES+CRES+LRES+PRES<131)]: %NAME%{%GOLD%RES>120%CL%%NAME%}%CONTINUE%
+ItemDisplay[FRES+CRES+LRES+PRES>130]: %NAME%{%GOLD%RES>130%CL%%NAME%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------------------
 //Notes about socketing recipes
@@ -6150,22 +6744,22 @@ ItemDisplay[(ARMOR OR WEAPON) !leg SOCK>1 NMAG !RW !SHOP]:%NAME%{%WHITE%Look at 
 
 //Notes for upgrading
 //Recipes
-ItemDisplay[ARMOR NORM RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O%NL%%NAME%}%CONTINUE%
-ItemDisplay[ARMOR EXC RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Pul%WHITE%, Perf %PURPLE%O%NL%%NAME%}%CONTINUE%
-ItemDisplay[WEAPON NORM RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Ort%WHITE%, %ORANGE%Amn%WHITE%, Perf %BLUE%O%NL%%NAME%}%CONTINUE%
-ItemDisplay[WEAPON EXC RARE ID]: %NAME%{%YELLOW%This Item%WHITE%, %ORANGE%Fal%WHITE%, %ORANGE%Um%WHITE%, Perf %BLUE%O%NL%%NAME%}%CONTINUE%
-ItemDisplay[ARMOR NORM CRAFT ID]: %NAME%{%ORANGE%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O}%CONTINUE%
-ItemDisplay[ARMOR EXC CRAFT ID]: %NAME%{%ORANGE%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Pul%WHITE%, Perf %PURPLE%O}%CONTINUE%
-ItemDisplay[WEAPON NORM CRAFT ID]: %NAME%{%ORANGE%This Item%WHITE%, %ORANGE%Ort%WHITE%, %ORANGE%Amn%WHITE%, Perf %BLUE%O}%CONTINUE%
-ItemDisplay[WEAPON EXC CRAFT ID]: %NAME%{%ORANGE%This Item%WHITE%, %ORANGE%Fal%WHITE%, %ORANGE%Um%WHITE%, Perf %BLUE%O}%CONTINUE%
-ItemDisplay[ARMOR NORM UNI ID]: %NAME%{%GOLD%This Item%WHITE%, %ORANGE%Tal%WHITE%, %ORANGE%Shael%WHITE%, Perf O}%CONTINUE%
-ItemDisplay[ARMOR EXC UNI ID]: %NAME%{%GOLD%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Lem%WHITE%, Perf O}%CONTINUE%
-ItemDisplay[WEAPON NORM UNI ID]: %NAME%{%GOLD%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Sol%WHITE%, Perf %GREEN%O}%CONTINUE%
-ItemDisplay[WEAPON EXC UNI ID]: %NAME%{%GOLD%This Item%WHITE%, %ORANGE%Lum%WHITE%, %ORANGE%Pul%WHITE%, Perf %GREEN%O}%CONTINUE%
-ItemDisplay[ARMOR NORM SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Tal%WHITE%, %ORANGE%Shael%WHITE%, Perf O}%CONTINUE%
-ItemDisplay[ARMOR EXC SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Lem%WHITE%, Perf O}%CONTINUE%
-ItemDisplay[WEAPON NORM SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Sol%WHITE%, Perf %GREEN%O}%CONTINUE%
-ItemDisplay[WEAPON EXC SET ID]: %NAME%{%GREEN%This Item%WHITE%, %ORANGE%Lum%WHITE%, %ORANGE%Pul%WHITE%, Perf %GREEN%O}%CONTINUE%
+ItemDisplay[ARMOR NORM RARE ID]: %NAME%{%NAME%%YELLOW%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O}%CONTINUE%
+ItemDisplay[ARMOR EXC RARE ID]: %NAME%{%NAME%%YELLOW%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Pul%WHITE%, Perf %PURPLE%O}%CONTINUE%
+ItemDisplay[WEAPON NORM RARE ID]: %NAME%{%NAME%%YELLOW%This Item%WHITE%, %ORANGE%Ort%WHITE%, %ORANGE%Amn%WHITE%, Perf %BLUE%O}%CONTINUE%
+ItemDisplay[WEAPON EXC RARE ID]: %NAME%{%NAME%%YELLOW%This Item%WHITE%, %ORANGE%Fal%WHITE%, %ORANGE%Um%WHITE%, Perf %BLUE%O}%CONTINUE%
+ItemDisplay[ARMOR NORM CRAFT ID]: %NAME%{%NAME%%ORANGE%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Thul%WHITE%, Perf %PURPLE%O}%CONTINUE%
+ItemDisplay[ARMOR EXC CRAFT ID]: %NAME%{%NAME%%ORANGE%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Pul%WHITE%, Perf %PURPLE%O}%CONTINUE%
+ItemDisplay[WEAPON NORM CRAFT ID]: %NAME%{%NAME%%ORANGE%This Item%WHITE%, %ORANGE%Ort%WHITE%, %ORANGE%Amn%WHITE%, Perf %BLUE%O}%CONTINUE%
+ItemDisplay[WEAPON EXC CRAFT ID]: %NAME%{%NAME%%ORANGE%This Item%WHITE%, %ORANGE%Fal%WHITE%, %ORANGE%Um%WHITE%, Perf %BLUE%O}%CONTINUE%
+ItemDisplay[ARMOR NORM UNI ID]: %NAME%{%NAME%%GOLD%This Item%WHITE%, %ORANGE%Tal%WHITE%, %ORANGE%Shael%WHITE%, Perf O}%CONTINUE%
+ItemDisplay[ARMOR EXC UNI ID]: %NAME%{%NAME%%GOLD%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Lem%WHITE%, Perf O}%CONTINUE%
+ItemDisplay[WEAPON NORM UNI ID]: %NAME%{%NAME%%GOLD%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Sol%WHITE%, Perf %GREEN%O}%CONTINUE%
+ItemDisplay[WEAPON EXC UNI ID]: %NAME%{%NAME%%GOLD%This Item%WHITE%, %ORANGE%Lum%WHITE%, %ORANGE%Pul%WHITE%, Perf %GREEN%O}%CONTINUE%
+ItemDisplay[ARMOR NORM SET ID]: %NAME%{%NAME%%GREEN%This Item%WHITE%, %ORANGE%Tal%WHITE%, %ORANGE%Shael%WHITE%, Perf O}%CONTINUE%
+ItemDisplay[ARMOR EXC SET ID]: %NAME%{%NAME%%GREEN%This Item%WHITE%, %ORANGE%Ko%WHITE%, %ORANGE%Lem%WHITE%, Perf O}%CONTINUE%
+ItemDisplay[WEAPON NORM SET ID]: %NAME%{%NAME%%GREEN%This Item%WHITE%, %ORANGE%Ral%WHITE%, %ORANGE%Sol%WHITE%, Perf %GREEN%O}%CONTINUE%
+ItemDisplay[WEAPON EXC SET ID]: %NAME%{%NAME%%GREEN%This Item%WHITE%, %ORANGE%Lum%WHITE%, %ORANGE%Pul%WHITE%, Perf %GREEN%O}%CONTINUE%
 
 
 //Exactly Requirements after upgrade
@@ -8083,6 +8677,7 @@ ItemDisplay[(NOTICEME08)]: %NAME%{%DARK_GREEN%Lower Resist Charges%CL%%NAME%}%CO
 //Life Tap Charges
 ItemDisplay[(NOTICEME09)]: %NAME%{%DARK_GREEN%Life Tap Charges%CL%%NAME%}%CONTINUE%
 
+
 //ALL ITEM DESCRIPTIONS CLOSER - DESCRIPTIONS ABOVE THIS LINE
 
 //Show me quantitiy of all stackables
@@ -8358,6 +8953,8 @@ ItemDisplay[MAG]: %NAME%%BLUE%{%NAME%}%CONTINUE%
 ItemDisplay[(ARMOR OR WEAPON) NMAG !ETH (SOCK=0 OR THROWING) !opm]: %NAME%%WHITE%{%NAME%}%CONTINUE%
 ItemDisplay[(ARMOR OR WEAPON) NMAG !RW (SOCK>0 OR ETH)]: %NAME%%GRAY%{%NAME%}%CONTINUE%
 ItemDisplay[CRAFT]: %NAME%%ORANGE%{%NAME%}%CONTINUE%
+
+
 
 //Potentially expensive (Worth some GOLD) items
 ItemDisplay[(7tk OR 7bk OR 7ta) ((MAG OR RARE) !ID) FILTLVL<6 !EQUIPPED !SHOP]: %NAME%{%NAME%}
@@ -8869,10 +9466,12 @@ ItemDisplay[(GLOVES OR BOOTS OR BELT) NMAG !INF (CLVL<19 FILTLVL<6)]: %NAME%{%NA
 ItemDisplay[((CHEST OR HELM OR CIRC OR SHIELD) OR WEAPON) !INF (CLVL<31 FILTLVL<6)]: %NAME%{%NAME%}
 
 //HIDE EVERYTHING ELSE
-ItemDisplay[(ARMOR OR WEAPON) TOWN FILTLVL>0]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%}
-ItemDisplay[(ARMOR OR WEAPON) !TOWN FILTLVL>0]: {%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%}
-ItemDisplay[(ARMOR OR WEAPON) INF FILTLVL>0]: {%NAME%}
-ItemDisplay[(ARMOR OR WEAPON) !THROWPOTS ((CLVL>30 FILTLVL>0) OR FILTLVL>5)]: {%NAME%}
+//ItemDisplay[(ARMOR OR WEAPON) TOWN FILTLVL>0]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%}
+//ItemDisplay[(ARMOR OR WEAPON) !TOWN FILTLVL>0]: {%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%}
+//ItemDisplay[(ARMOR OR WEAPON) INF FILTLVL>0]: {%NAME%}
+//ItemDisplay[(ARMOR OR WEAPON) !THROWPOTS ((CLVL>30 FILTLVL>0) OR FILTLVL>5)]: {%NAME%}
+
+
 
 //It's just different sizes. BORDER > MAP > DOT > PX.
 //%TIER-X% - just minimap pin w/o chat notify when tier is higher
