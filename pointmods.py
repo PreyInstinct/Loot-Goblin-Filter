@@ -180,8 +180,8 @@ class Skill(object):
         # Else, there are no skills so no need for braces.
 
         # Construct the filter statements to open and close braces.
-        open_brace_template = 'ItemDisplay[{}]: %NAME%{} {{%CONTINUE%\n'
-        close_brace_template = 'ItemDisplay[{}]: %NAME%{}}}%CONTINUE%\n'
+        open_brace_template = 'ItemDisplay[!RW {}]: %NAME%{} |{{%NAME%}}%CONTINUE%\n'
+        close_brace_template = 'ItemDisplay[!RW {}]: %NAME%{}|{{%NAME%}}%CONTINUE%\n'
         openers = (open_brace_template.format(gray_braces, '%GRAY%') + \
                    open_brace_template.format(white_braces, '%WHITE%') + \
                    open_brace_template.format(nm_white_braces, '%WHITE%') + \
@@ -202,11 +202,11 @@ class Skill(object):
                    close_brace_template.format(nm_gold_braces, '%GOLD%') )
 
         # Construct the filter statements to hide NMAG items at higher stictness.
-        hide_template = 'ItemDisplay[FIELD {}]: {%FILTERWARN%}\nItemDisplay[!FIELD {}]: %NAME%{%FILTERWARN%}\n'
-        hiders = (hide_template.format('NMAG (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON) !PRIME1 FILTLVL>1') + \
-                  hide_template.format('NMAG PRIME1 !PRIME3 FILTLVL>3') + \
-                  hide_template.format('NMAG PRIME3 !SKSUM6 FILTLVL>5') + \
-                  hide_template.format('NMAG PRIME3 !SKSUM8 FILTLVL>7') )
+        hide_template = 'ItemDisplay[FIELD {0}]: {{%NAME%%CL%%FILTERWARN%}}\nItemDisplay[!FIELD {0}]: %NAME%{{%NAME%%CL%%FILTERWARN%}}\n'
+        hiders = (hide_template.format('NMAG !RW POINTMOD !PRIME1 FILTLVL>1') + \
+                  hide_template.format('NMAG !RW PRIME1 !PRIME3 FILTLVL>3') + \
+                  hide_template.format('NMAG !RW PRIME3 !SKSUM6 FILTLVL>5') + \
+                  hide_template.format('NMAG !RW PRIME3 !SKSUM8 FILTLVL>7') )
         
         print(aliases)
         print("// Hide non-magic bases with poor rolls based on strictness")
@@ -223,10 +223,10 @@ class Skill(object):
 
 
     def print_filter_block(self):
-        template = ("ItemDisplay[!UNI !SET !RW {SKID}=1]: %NAME%%ORANGE%+%BLUE%1{COLOR}{ABRV}%CONTINUE%\n" +\
-                    "ItemDisplay[!UNI !SET !RW {SKID}=2]: %NAME%%ORANGE%+%YELLOW%2{COLOR}{ABRV}%CONTINUE%\n" +\
-                    "ItemDisplay[!UNI !SET !RW {SKID}=3]: %NAME%%ORANGE%+%GOLD%3{COLOR}{ABRV}%CONTINUE%\n" +\
-                    "ItemDisplay[!UNI !SET !RW {SKID}>3]: %NAME%%ORANGE%>%GOLD%3{COLOR}{ABRV}%CONTINUE%\n")
+        template = ("ItemDisplay[!UNI !SET !RW {SKID}=1]: %NAME%%ORANGE%+%BLUE%1{COLOR}{ABRV}{{%NAME%}}%CONTINUE%\n" +\
+                    "ItemDisplay[!UNI !SET !RW {SKID}=2]: %NAME%%ORANGE%+%YELLOW%2{COLOR}{ABRV}{{%NAME%}}%CONTINUE%\n" +\
+                    "ItemDisplay[!UNI !SET !RW {SKID}=3]: %NAME%%ORANGE%+%GOLD%3{COLOR}{ABRV}{{%NAME%}}%CONTINUE%\n" +\
+                    "ItemDisplay[!UNI !SET !RW {SKID}>3]: %NAME%%ORANGE%>%GOLD%3{COLOR}{ABRV}{{%NAME%}}%CONTINUE%\n")
         if self.ID.isdigit():
             color = '%WHITE%'
         elif self.ID.startswith('TABSK'):
