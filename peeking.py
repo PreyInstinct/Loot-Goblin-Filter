@@ -2,23 +2,14 @@
 
 import sys
 
-low_uni = ['ba6', 'dr2', 'ne6', 'ulb', '7cm', '7fb', '7pa', '7bt', 'ltp', 'xcl', '9tw', 'xtp', 'xth', '7kr', 'xpl', 'xld', '7b7', '8hx', '7cs', 'xmb', 'tbt', 'amb', '7sc', '7ha', '7ls', '7bl', '9b8', '6hx', 'uml', 'upk', '7gl', '9gm', '7br', 'ush', 'uul']
-low_eth_uni = ['am5', '7ga', 'mau', '9st', 'uvb']
-okay_uni = ['drf', 'utp', 'ned', 'ulg', 'ung', 'urg', 'drc', 'paf', 'dr6', 'neg', 'uhc', '7st', 'ame', '7di', '7tw', 'amc', '7xf', 'ztb', 'zlb', 'zvb', 'zhb', 'umc', 'uvc', 'xea', 'uui', 'xhn', 'xlt', 'upl', 'uld', 'utu', 'uvg', 'uhg', 'umg', 'xh9', 'usk', 'ci2', 'baa', 'bac', 'dra', 'dre', 'uh9', 'xhm', 'drd', 'bae', 'ulm', 'lbt', 'xhb', 'uhb', 'xvb', 'nee', 'pa9', 'nea', 'uts', 'uow', 'xsh', 'xow', 'pae', 'nef', 'pac', '7ts', '7s8', '9bw', '7wc', '7bw', '7ws', '7fl', '7cr', '7gm', 'oba', 'ama', 'obc', 'amf', '7wh', '7p7', '7wa', '7lw']
-okay_eth_uni = ['xpl', 'uul', '7gi', '7m7', '8ls', '7gl', '7b8', '7bk', '7ha', '7b7', '7sr', '9b8', '9la']
-gg_uni = ['uhl', 'uth', 'utb', '7bs', '7qr', 'rar', 'rbe', 'ram', 'baf', '7qs', '6bs', 'utg', 'rin', 'amu', '6ws', 'uar', 'ulc', 'urn', 'uap', 'ci3', 'xtb', 'uit', '6lw', '7gw', '7gd', 'obf', 'uhm']
-gg_eth_uni = ['utp', '7st', 'uhc', '7cm', '7fb', '9gm', '7gm', '7s8', '7p7', '7wa', '7wh']
-okay_eth_set = ['7fb', '7gd', '7ls', '7m7', '7qr']
-okay_set = ['amu', 'rin', 'uar', 'ci3', '7qr', 'uth', 'paf', 'urn', '7ws']
-
 # « ¿ Item Name - Item Type ? »
 
 unid_formatter = '¿ {} ?'
 padding = {'S': ('ItemDisplay[{}]: %BORDER-{}%{}«««« {} »»»»', 36),
            'A': ('ItemDisplay[{}]: %MAP-{}%{}««« {} »»»', 38),
-           'B': ('ItemDisplay[{}]: %MAP-{}%{}«« {} »»', 34),
-           'C': ('ItemDisplay[{}]: %DOT-{}%{}« {} »', 30),
-           'D': ('ItemDisplay[{}]: %PX-{}%{}{}', 12)}
+           'B': ('ItemDisplay[{}]: %MAP-{}%%TIER-7%{}«« {} »»', 34),
+           'C': ('ItemDisplay[{}]: %DOT-{}%%TIER-5%{}« {} »', 30),
+           'D': ('ItemDisplay[{}]: %PX-{}%%TIER-3%{}{}', 12)}
 
 def pad(s, l):
     # Pad string s to length l with spaces symetrically
@@ -33,6 +24,8 @@ def pad(s, l):
 
 infh = open('sets_and_uniques.tsv', 'r')
 header = infh.readline()
+first_uni = True
+first_set = True
 for line in infh:
     fields = line.strip().split('\t')
     if len(fields) == 5:
@@ -67,9 +60,18 @@ for line in infh:
     if 'UNI' in code:
         text_color = '%GOLD%'
         map_color = 'D3'
+        if first_uni:
+            print('// --- 3.3 Uniques (Peeking) ---')
+            print()
+            first_uni = False
     else:
         text_color = '%GREEN%'
         map_color = '7D'
+        if first_set:
+            print()
+            print('// --- 3.4 Sets (Peeking) ---')
+            print()
+            first_set = False
 
     if not eth_tier:
         template, pad_length = padding[tier]
