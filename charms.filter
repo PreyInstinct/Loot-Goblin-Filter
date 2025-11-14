@@ -1,0 +1,3 @@
+//Notes on Charms
+ItemDisplay[cm2 UNI]: %NAME%{%TAN%Note%WHITE%: Cube with %GRAY%key %WHITE%to Destroy Into: %ORANGE%Hellfire Ashes}%CONTINUE%
+ItemDisplay[cm3 MAG ID ILVL>90]: %NAME%{%WHITE%Cube with 3xPerf Gem%NL%%TAN%Note%WHITE%: Ilvl%ORANGE%91+ %BLUE%Grand Charm%WHITE%, to Reroll:%NL%%NAME%}%CONTINUE%

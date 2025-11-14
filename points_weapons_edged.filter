@@ -1,0 +1,282 @@
+// 300% ED + 150% ED & 250 AR - physical weapons
+// 
+// 400% ED - Missile weapons, amazon javelins, knife, club, tipped mace, throwing axe
+//  + 200% ED & 300 AR Missile weapons
+// 
+// 40 max damage - physical weapons
+// 63 max damage - missile weapons
+// 
+// 300% damage to demons, 350% damage to undead - missile weapons
+// 200% damage to demons, 275% damage to undead - physical weapons + staffs
+// 
+// 30% res - non-rods
+// 40% res - rods
+// 
+// -10 enemy res - missile weapon, scepter, crystal sword, orb, claw
+// -15 enemy res - staffs
+// 
+// ignore target defense - rod, knife, claw
+// 
+// 40 aspd - !(orb wand staff)
+// 20 aspd - weaponPS = !(orb wand)
+// 
+// 40 fcr - staff
+// 30 fcr - other rods, orbs, clubs
+// 
+// +30 dex - missile weapons
+// +30 ene - orb, wand, staff
+// +15 ene - scepter
+// +30 str - club, hammer
+// +20 str - scepter, tipped mace
+// +15 str - non-blunt melee weapons
+// 
+// +240 AR & light radius - missile weapon
+// 
+// 9% ll - melee weapons
+// 5% ll - missile weapons
+// 9% ml - melee weapons
+// 5% ll - missile weapons
+// 
+// % chance to cast lvl 30 on casting - staffs
+// 
+// life tap charges - axe, wand, knife
+// 
+// 12% ctc lvl 31 amp - physical weapons
+// 12% ctc lvl 15 lower res - physical weapons
+// 12% ctc lvl 15 lower res on casting - staff
+// 
+// DS, OW, CB - physical weapons
+//
+// --- Charged/Proc Skill Attributes ---
+// Charge Skill: MULTI204,{ATTRIBUTE_ID} = current_charges + (max_charges * 256)
+// Cast on Striking: MULTI198,{ATTRIBUTE_ID} = % chanc
+// Cast on Casting: MULTI200,{ATTRIBUTE_ID} = % chanc
+// ATTRIBUTE_ID = (skill_id * 64) + skill_level
+//    10 bits for skill_ID, 6 bits for skill_level
+//    bits:  IIIIIIIIIILLLLLL
+//           31    
+//           268421         
+//           731000521      
+//           689942152631   
+//           8426842684268421
+//    82,1 = 0001010010000001 = life tap, level 1
+//    = 1+128+1024+4096 = 5249
+//    = 82*64+1 = 5249
+// ItemDisplay[EDGED RARE MULTI204,5249>0]: %NAME%{%NAME%%TEAL%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
+
+Alias[EDGED]: ((AXE OR SWORD OR DAGGER OR SPEAR OR POLEARM OR SIN) !THROWING)
+
+ItemDisplay[EDGED !DAGGER !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 6+8=14
+ItemDisplay[DAGGER !THROWING RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[ZON SPEAR RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE% // 8+8=16
+ItemDisplay[EDGED !DAGGER !ZON CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••%CL%%NAME%}%CONTINUE% // 4+6+3=13
+ItemDisplay[DAGGER !THROWING CRAFT]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 5+6+3=14
+ItemDisplay[ZON SPEAR CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 6+6+3=15
+
+// Prefixes (max 6 pts, 7 daggers, 8 zon spears)
+// Suffixes (max 8 pts)
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Ethereal/repair	%GRAY%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Ethereal & Self Repair (2 pts)
+ItemDisplay[EDGED (RARE OR CRAFT) ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
+
+// Damage		%RED%
+//--------------------------------
+
+// --- Prefixes ---
+// # Enhanced Damage (4 pts, 5 pts daggers) +2 Blood, Hitpower, & Safety; +1 Brilliant
+// Most edged weapons: 300%+150%=450%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED !DAGGER (RARE OR CRAFT) ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Daggers: 400%+150%=550%; Most crafted weapons: 300%+150%+80=530%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Crafted Daggers: 400%+150%+80%=630%
+ItemDisplay[EDGED CRAFT ED>550]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT ED>600]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Maximum Damage per Level (2 pts)
+ItemDisplay[EDGED (RARE OR CRAFT) STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Damage to Demons (1 pt) +1 crafted
+ItemDisplay[EDGED (RARE OR CRAFT) STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT STAT121>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Undead (1 pt) +1 crafted
+ItemDisplay[EDGED (RARE OR CRAFT) STAT122>225]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT STAT122>325]: %NAME%{%NAME%%RED%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Damage (1 pt)
+ItemDisplay[EDGED (RARE OR CRAFT) MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Chance to Cast on Striking (3 pts)
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+
+// Damage Effects	%CORAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Crushing Blow (2 pts)
+ItemDisplay[EDGED (RARE OR CRAFT) STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Deadly Strike (2 pts)
+ItemDisplay[EDGED !DAGGER (RARE OR CRAFT) STAT141>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED !DAGGER (RARE OR CRAFT) STAT141>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING (RARE OR CRAFT) STAT141>36]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[DAGGER !THROWING (RARE OR CRAFT) STAT141>53]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+
+// --- Combined Prefixes & Suffixes ---
+// # Open Wounds (2 pts)
+// [P: 20% +563, S: 10% +325, Total: +888]
+ItemDisplay[EDGED (RARE OR CRAFT) STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+
+// Elemental Damage	%ORANGE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Enemy Resistances (2 pts, crystal sword and claws only)
+ItemDisplay[(SIN OR crs OR 9cr OR 7cr) (RARE OR CRAFT) (STAT333>4 OR STAT334>4 OR STAT335>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[(SIN OR crs OR 9cr OR 7cr) (RARE OR CRAFT) (STAT333>7 OR STAT334>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[SIN (RARE OR CRAFT) (STAT336>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison claws only
+ItemDisplay[SIN (RARE OR CRAFT) (STAT336>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison claws only
+
+// --- Suffixes ---
+// # Chance to Cast on Striking (3 pts)
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
+
+// --- Combined Prefixes & Suffixes ---
+// # Elemental Damage (3 pts each)
+// Fire [P: 306-432 (738), S: 214-302 (516)]
+ItemDisplay[EDGED (RARE OR CRAFT) STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[EDGED (RARE OR CRAFT) STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[EDGED (RARE OR CRAFT) STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// Lightning [P: 1-576 (577), S: 6-403 (409)]
+ItemDisplay[EDGED (RARE OR CRAFT) STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[EDGED (RARE OR CRAFT) STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[EDGED (RARE OR CRAFT) STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// Cold [P: 112-348 (460), S: 118-365 (483)]
+ItemDisplay[EDGED (RARE OR CRAFT) STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[EDGED (RARE OR CRAFT) STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[EDGED (RARE OR CRAFT) STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+
+// Skills		%GOLD%
+//--------------------------------
+
+// --- Prefixes ---
+// # Skills (2 pts, 1 pt polearms, 4 pts zon spears) +1 Caster & Bountiful
+// zon spears: class 2, tree 6
+// non-zon spears: class 2, tree 3
+// claws, crystal swords, axes, daggers, swords: class 2 tree 2
+// polearms: tree 2
+ItemDisplay[EDGED CRAFT ALLSK>0)]: %NAME%{%NAME%%GOLD%•1}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${class1})]: %NAME%{%NAME%%GOLD%•2}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${class2}]: %NAME%{%NAME%%GOLD%•3}%CONTINUE%
+ItemDisplay[EDGED !ZON (RARE OR CRAFT) ${tree2}]: %NAME%{%NAME%%GOLD%•4}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${tree3}]: %NAME%{%NAME%%GOLD%•5}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${tree4}]: %NAME%{%NAME%%GOLD%•6}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${tree5}]: %NAME%{%NAME%%GOLD%•7}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${tree6}]: %NAME%{%NAME%%GOLD%•8}%CONTINUE%
+
+// --- Suffixes ---
+
+
+// Speed		%YELLOW%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Increased Attack Speed (3 pts) +2 Brilliant
+ItemDisplay[EDGED (RARE OR CRAFT) IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT IAS>45]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT IAS>55]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+
+// Other		%SAGE%
+//--------------------------------
+
+// --- Prefixes ---
+// Socketed (1 pt)
+ItemDisplay[EDGED (RARE OR CRAFT) SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Prevent Monster Heal (1 pt)
+ItemDisplay[EDGED (RARE OR CRAFT) STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// # Ignore Target's Defense (2 pts, dagger & claw only)
+ItemDisplay[EDGED (RARE OR CRAFT) STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+// # -% Target's Defense +1 Hitpower
+ItemDisplay[EDGED CRAFT STAT116>9]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Stats		%DARK_GREEN%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// HP/MP		%TEAL%
+//--------------------------------
+
+// --- Prefixes ---
+// Life after each Kill (1 pt)
+ItemDisplay[EDGED (RARE OR CRAFT) STAT86>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// Mana after each Kill (1 pt)
+ItemDisplay[EDGED (RARE OR CRAFT) STAT138>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Life Steal (1 pt) +1 Blood
+ItemDisplay[EDGED (RARE OR CRAFT) STAT60>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT STAT60>6]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Mana Steal (1 pt)
+ItemDisplay[EDGED (RARE OR CRAFT) STAT62>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Life Tap Charges (2 pt, axe & dagger only)
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI204,5249>0]: %NAME%{%NAME%%TEAL%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
+
+// Defense/Block/PDR	%BLUE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Resistances/MDR	%PURPLE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Resistances (4 pts total)
+ItemDisplay[EDGED (RARE OR CRAFT) (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// --- Suffixes ---
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+
+//Open
+ItemDisplay[EDGED (RARE OR CRAFT)]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%

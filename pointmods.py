@@ -2,6 +2,8 @@
 
 import sys
 
+from hiding_highlighting import hide
+
 class Skill(object):
     def __init__(self, ID, cls, name, abrv, parent, role):
         self.ID = ID
@@ -202,27 +204,34 @@ class Skill(object):
                    close_brace_template.format(nm_gold_braces, '%GOLD%') )
 
         # Construct the filter statements to hide NMAG items at higher stictness.
-        hide_template = 'ItemDisplay[FIELD {0}]: {{%NAME%%CL%%FILTERWARN%}}\nItemDisplay[!FIELD {0}]: %NAME%{{%NAME%%CL%%FILTERWARN%}}\n'
-        hiders = (hide_template.format('NMAG !RW POINTMOD !PRIME1 FILTLVL>1') + \
-                  hide_template.format('NMAG !RW PRIME1 !PRIME3 FILTLVL>3') + \
-                  hide_template.format('NMAG !RW PRIME3 !SKSUM6 FILTLVL>5') + \
-                  hide_template.format('NMAG !RW PRIME3 !SKSUM8 FILTLVL>7') )
-        
-        print(aliases)
-        print("// Hide non-magic bases with poor rolls based on strictness")
-        print(hiders)
+        #hide_template = 'ItemDisplay[FIELD {0}]: {{%NAME%%CL%%FILTERWARN%}}\nItemDisplay[!FIELD {0}]: %NAME%{{%NAME%%CL%%FILTERWARN%}}\n'
+        #hiders = (hide_template.format('NMAG !RW POINTMOD !PRIME1 FILTLVL>1') + \
+        #          hide_template.format('NMAG !RW PRIME1 !PRIME3 FILTLVL>3') + \
+        #          hide_template.format('NMAG !RW PRIME3 !SKSUM6 FILTLVL>5') + \
+        #          hide_template.format('NMAG !RW PRIME3 !SKSUM8 FILTLVL>7') )
+        hiders = (hide('(ARMOR OR WEAPON) ${pointmod} !PRIME1', 1, 'NMAG', '!RW') + \
+                  hide('(ARMOR OR WEAPON) PRIME1 !PRIME3', 3, 'NMAG', '!RW') + \
+                  hide('(ARMOR OR WEAPON) PRIME3 !SKSUM6', 5, 'NMAG', '!RW') + \
+                  hide('(ARMOR OR WEAPON) PRIME3 !SKSUM8', 7, 'NMAG', '!RW') )
+
+        section = []
+        section.append(aliases)
+        section.append("// Hide non-magic bases with poor rolls based on strictness")
+        section.extend(hiders)
         # Start with bracket closers because things are constructed backwards
-        print("// Open bracket")
-        print(openers)
+        section.append("// Open bracket")
+        section.append(openers)
         # Fill the space between the brackets with the pointmods, working backwards
         for skill in self.bottom_up():
-            skill.print_filter_block()
+            skill.print_filter_block(section)
         # Close the block with the opening brackets
-        print("// Close bracket")
-        print(closers)
+        section.append("// Close bracket")
+        section.append(closers)
+
+        return section
 
 
-    def print_filter_block(self):
+    def print_filter_block(self, section):
         template = ("ItemDisplay[!UNI !SET !RW {SKID}=1]: %NAME%%ORANGE%+%BLUE%1{COLOR}{ABRV}{{%NAME%}}%CONTINUE%\n" +\
                     "ItemDisplay[!UNI !SET !RW {SKID}=2]: %NAME%%ORANGE%+%YELLOW%2{COLOR}{ABRV}{{%NAME%}}%CONTINUE%\n" +\
                     "ItemDisplay[!UNI !SET !RW {SKID}=3]: %NAME%%ORANGE%+%GOLD%3{COLOR}{ABRV}{{%NAME%}}%CONTINUE%\n" +\
@@ -235,7 +244,7 @@ class Skill(object):
             color = '%YELLOW%'
         else:
             color = '%GOLD%'
-        print(template.format(SKID=self.sID, COLOR=color, ABRV=self.abrv))        
+        section.append(template.format(SKID=self.sID, COLOR=color, ABRV=self.abrv))        
 
         
 def read_skills(infile = 'All.skills'):
@@ -256,8 +265,12 @@ def read_skills(infile = 'All.skills'):
     return skill_tree
 
 
-skill_tree = read_skills()
-#skill_tree.generate_point_flags()
-skill_tree.generate_skillmod_filters()
+def build():
+    skill_tree = read_skills()
+    section = skill_tree.generate_skillmod_filters()
+    return section
 
-
+if __name__ == '__main__':
+    lines = build()
+    for l in lines:
+        print(l)

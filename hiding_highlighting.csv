@@ -1,0 +1,386 @@
+Rarity	Property	Group	Description	Filter Level	Marker Level	Notification Level
+# Broad quality classes						
+NMAG	INF	(ARMOR OR WEAPON)	Inferior equipment	0	0	0
+NMAG !RW	NORM	(ARMOR OR WEAPON) !${pointmod}	Normal tier equipment except pointmod items	2	0	0
+NMAG !RW	EXC	(ARMOR OR WEAPON) !${pointmod}	Exceptional tier equipment except pointmod items	3	0	0
+NMAG !RW		SOCKETS=1	Single-socket Items of any quality	0	0	0
+NMAG !RW	SUP ED=0	(ARMOR OR WEAPON) !${pointmod}	Non-ED superior equipment	3	0	0
+NMAG !RW	SUP ED~1-5	(ARMOR OR WEAPON) !${pointmod}	Low roll ED superior equipment	4	0	0
+NMAG !RW	SUP ED~6-10	(ARMOR OR WEAPON) !${pointmod}	Mid roll ED superior equipment	5	0	0
+NMAG !RW	SUP ED~11-15	(ARMOR OR WEAPON) !${pointmod}	High roll ED superior equipment	5	0	0
+# Non-magical, regular quality equipment						
+NMAG !RW	!SUP !ETH	HELM !DRU !BAR	Helms	1	0	0
+NMAG !RW	!SUP !ETH	CIRC	Circlets	1	0	0
+NMAG !RW	!SUP !ETH	CHEST	Chest Armor	1	0	0
+NMAG !RW	!SUP !ETH	SHIELD !DIN !NEC	Shields	1	0	0
+NMAG !RW	!SUP !ETH	GLOVES	Gloves	1	0	0
+NMAG !RW	!SUP !ETH	BOOTS	Boots	1	0	0
+NMAG !RW	!SUP !ETH	BELT	Belts	1	0	0
+NMAG !RW	!SUP !ETH	1H AXE !THROWING	1-Handed Axes	1	0	0
+NMAG !RW	!SUP !ETH	2H AXE	2-handed Axes	1	0	0
+NMAG !RW	!SUP !ETH	CLUB	Clubs	1	0	0
+NMAG !RW	!SUP !ETH	TMACE	Tipped Maces	1	0	0
+NMAG !RW	!SUP !ETH	1H HAMMER	1-Handed Hammers	1	0	0
+NMAG !RW	!SUP !ETH	2H HAMMER	2-Handed Hammers	1	0	0
+NMAG !RW	!SUP !ETH	1H SWORD	1-Handed Swords	1	0	0
+NMAG !RW	!SUP !ETH	2H SWORD	2-Handed Swords	1	0	0
+NMAG !RW	!SUP !ETH	THROWING	Throwing Weapons	1	0	0
+NMAG !RW	!SUP !ETH	SPEAR	Spears	1	0	0
+NMAG !RW	!SUP !ETH	POLEARM	Polearms	1	0	0
+NMAG !RW	!SUP !ETH	BOW	Bows	1	0	0
+NMAG !RW	!SUP !ETH	XBOW	Crossbows	1	0	0
+NMAG !RW	!SUP !ETH	(aqv OR cqv)	Quivers	0	0	0
+# Non-magical, regular quality pointmod items when class is a match						
+NMAG !RW	!SUP !ETH	DRU DRUID	Druid Helms	4	1	3
+NMAG !RW	!SUP !ETH	BAR BARBARIAN	Barbarian Helms	4	1	3
+NMAG !RW	!SUP !ETH	DIN PALADIN	Paladin Shields	4	1	3
+NMAG !RW	!SUP !ETH	NEC NECROMANCER	Necromancer Shields	4	1	3
+NMAG !RW	!SUP !ETH	SIN ASSASSIN	Claws	4	1	3
+NMAG !RW	!SUP !ETH	DAGGER !THROWING (ASSASSIN OR NECROMANCER)	Daggers	4	1	3
+NMAG !RW	!SUP !ETH	STAFF SORCERESS	Staves	5	2	4
+NMAG !RW	!SUP !ETH	WAND NECROMANCER	Wands	5	2	4
+NMAG !RW	!SUP !ETH	SCEPTER PALADIN	Scepters	4	1	3
+NMAG !RW	!SUP !ETH	SOR SORCERESS	Orbs	5	2	4
+# Non-magical, regular quality pointmod items when class DOES NOT match						
+NMAG !RW	!SUP !ETH	DRU !DRUID	Druid Helms	3	0	0
+NMAG !RW	!SUP !ETH	BAR !BARBARIAN	Barbarian Helms	3	0	0
+NMAG !RW	!SUP !ETH	DIN !PALADIN	Paladin Shields	3	0	0
+NMAG !RW	!SUP !ETH	NEC !NECROMANCER	Necromancer Shields	3	0	0
+NMAG !RW	!SUP !ETH	SIN !ASSASSIN	Claws	3	0	0
+NMAG !RW	!SUP !ETH	DAGGER !THROWING !(ASSASSIN OR NECROMANCER)	Daggers	3	0	0
+NMAG !RW	!SUP !ETH	STAFF !SORCERESS	Staves	3	0	0
+NMAG !RW	!SUP !ETH	WAND !NECROMANCER	Wands	3	0	0
+NMAG !RW	!SUP !ETH	SCEPTER !PALADIN	Scepters	3	0	0
+NMAG !RW	!SUP !ETH	SOR !SORCERESS	Orbs	3	0	0
+# Non-magical, superior equipment						
+NMAG !RW	SUP !ETH	HELM !DRU !BAR	Helms	5	0	0
+NMAG !RW	SUP !ETH	CIRC	Circlets	5	0	0
+NMAG !RW	SUP !ETH	CHEST	Chest Armor	5	0	0
+NMAG !RW	SUP !ETH	SHIELD !DIN !NEC	Shields	5	0	0
+NMAG !RW	SUP !ETH	GLOVES	Gloves	5	0	0
+NMAG !RW	SUP !ETH	BOOTS	Boots	5	0	0
+NMAG !RW	SUP !ETH	BELT	Belts	5	0	0
+NMAG !RW	SUP !ETH	1H AXE !THROWING	1-Handed Axes	4	0	0
+NMAG !RW	SUP !ETH	2H AXE	2-handed Axes	4	0	0
+NMAG !RW	SUP !ETH	CLUB	Clubs	5	0	0
+NMAG !RW	SUP !ETH	TMACE	Tipped Maces	4	0	0
+NMAG !RW	SUP !ETH	1H HAMMER	1-Handed Hammers	4	0	0
+NMAG !RW	SUP !ETH	2H HAMMER	2-Handed Hammers	4	0	0
+NMAG !RW	SUP !ETH	1H SWORD	1-Handed Swords	4	0	0
+NMAG !RW	SUP !ETH	2H SWORD	2-Handed Swords	4	0	0
+NMAG !RW	SUP !ETH	THROWING	Throwing Weapons	1	0	0
+NMAG !RW	SUP !ETH	SPEAR	Spears	4	0	0
+NMAG !RW	SUP !ETH	POLEARM	Polearms	4	0	0
+NMAG !RW	SUP !ETH	BOW	Bows	5	0	0
+NMAG !RW	SUP !ETH	XBOW	Crossbows	5	0	0
+# Non-magical, superior pointmod items when class is a match						
+NMAG !RW	SUP !ETH	DRU DRUID	Druid Helms	5	2	4
+NMAG !RW	SUP !ETH	BAR BARBARIAN	Barbarian Helms	5	2	4
+NMAG !RW	SUP !ETH	DIN PALADIN	Paladin Shields	5	2	4
+NMAG !RW	SUP !ETH	NEC NECROMANCER	Necromancer Shields	5	2	4
+NMAG !RW	SUP !ETH	SIN ASSASSIN	Daggers	4	1	3
+NMAG !RW	SUP !ETH	DAGGER !THROWING (ASSASSIN OR NECROMANCER)	Claws	4	1	3
+NMAG !RW	SUP !ETH	STAFF SORCERESS	Staves	5	2	4
+NMAG !RW	SUP !ETH	WAND NECROMANCER	Wands	5	2	4
+NMAG !RW	SUP !ETH	SCEPTER PALADIN	Scepters	4	1	3
+NMAG !RW	SUP !ETH	SOR SORCERESS	Orbs	5	2	4
+# Non-magical, superior pointmod items when class IS NOT a match						
+NMAG !RW	SUP !ETH	DRU !DRUID	Druid Helms	4	0	0
+NMAG !RW	SUP !ETH	BAR !BARBARIAN	Barbarian Helms	4	0	0
+NMAG !RW	SUP !ETH	DIN !PALADIN	Paladin Shields	4	0	0
+NMAG !RW	SUP !ETH	NEC !NECROMANCER	Necromancer Shields	4	0	0
+NMAG !RW	SUP !ETH	SIN !ASSASSIN	Daggers	3	0	0
+NMAG !RW	SUP !ETH	DAGGER !THROWING !(ASSASSIN OR NECROMANCER)	Claws	3	0	0
+NMAG !RW	SUP !ETH	STAFF !SORCERESS	Staves	4	0	0
+NMAG !RW	SUP !ETH	WAND !NECROMANCER	Wands	4	0	0
+NMAG !RW	SUP !ETH	SCEPTER !PALADIN	Scepters	3	0	0
+NMAG !RW	SUP !ETH	SOR !SORCERESS	Orbs	4	0	0
+# Non-magical, ethereal equipment						
+NMAG !RW	ETH !SUP	HELM !DRU !BAR	Helms	4	0	0
+NMAG !RW	ETH !SUP	CIRC	Circlets	5	0	0
+NMAG !RW	ETH !SUP	CHEST	Chest Armor	4	0	0
+NMAG !RW	ETH !SUP	SHIELD !DIN !NEC	Shields	4	0	0
+NMAG !RW	ETH !SUP	GLOVES	Gloves	4	0	0
+NMAG !RW	ETH !SUP	BOOTS	Boots	4	0	0
+NMAG !RW	ETH !SUP	BELT	Belts	4	0	0
+NMAG !RW	ETH !SUP	1H AXE !THROWING	1-Handed Axes	5	0	0
+NMAG !RW	ETH !SUP	2H AXE	2-handed Axes	5	0	0
+NMAG !RW	ETH !SUP	CLUB	Clubs	5	0	0
+NMAG !RW	ETH !SUP	TMACE	Tipped Maces	5	0	0
+NMAG !RW	ETH !SUP	1H HAMMER	1-Handed Hammers	5	0	0
+NMAG !RW	ETH !SUP	2H HAMMER	2-Handed Hammers	5	0	0
+NMAG !RW	ETH !SUP	1H SWORD	1-Handed Swords	5	0	0
+NMAG !RW	ETH !SUP	2H SWORD	2-Handed Swords	5	0	0
+NMAG !RW	ETH !SUP	THROWING	Throwing Weapons	5	0	0
+NMAG !RW	ETH !SUP	SPEAR	Spears	5	0	0
+NMAG !RW	ETH !SUP	POLEARM	Polearms	5	0	0
+# Non-magical, ethereal pointmod items when class is a match						
+NMAG !RW	ETH !SUP	DRU DRUID	Druid Helms	4	1	3
+NMAG !RW	ETH !SUP	BAR BARBARIAN	Barbarian Helms	4	1	3
+NMAG !RW	ETH !SUP	DIN PALADIN	Paladin Shields	4	1	3
+NMAG !RW	ETH !SUP	NEC NECROMANCER	Necromancer Shields	4	1	3
+NMAG !RW	ETH !SUP	SIN ASSASSIN	Daggers	5	2	4
+NMAG !RW	ETH !SUP	DAGGER !THROWING (ASSASSIN OR NECROMANCER)	Claws	5	2	4
+NMAG !RW	ETH !SUP	STAFF SORCERESS	Staves	5	2	4
+NMAG !RW	ETH !SUP	WAND NECROMANCER	Wands	5	2	4
+NMAG !RW	ETH !SUP	SCEPTER PALADIN	Scepters	5	2	4
+NMAG !RW	ETH !SUP	SOR SORCERESS	Orbs	5	2	4
+# Non-magical, ethereal pointmod items when class IS NOT a match						
+NMAG !RW	ETH !SUP	DRU !DRUID	Druid Helms	3	0	0
+NMAG !RW	ETH !SUP	BAR !BARBARIAN	Barbarian Helms	3	0	0
+NMAG !RW	ETH !SUP	DIN !PALADIN	Paladin Shields	3	0	0
+NMAG !RW	ETH !SUP	NEC !NECROMANCER	Necromancer Shields	3	0	0
+NMAG !RW	ETH !SUP	SIN !ASSASSIN	Daggers	4	0	0
+NMAG !RW	ETH !SUP	DAGGER !THROWING !(ASSASSIN OR NECROMANCER)	Claws	4	0	0
+NMAG !RW	ETH !SUP	STAFF !SORCERESS	Staves	4	0	0
+NMAG !RW	ETH !SUP	WAND !NECROMANCER	Wands	4	0	0
+NMAG !RW	ETH !SUP	SCEPTER !PALADIN	Scepters	4	0	0
+NMAG !RW	ETH !SUP	SOR !SORCERESS	Orbs	4	0	0
+# Non-magical, superior and ethereal equipment						
+NMAG !RW	SUP ETH	HELM !DRU !BAR	Helms	5	0	0
+NMAG !RW	SUP ETH	CIRC	Circlets	5	0	0
+NMAG !RW	SUP ETH	CHEST	Chest Armor	5	0	0
+NMAG !RW	SUP ETH	SHIELD !DIN !NEC	Shields	5	0	0
+NMAG !RW	SUP ETH	GLOVES	Gloves	5	0	0
+NMAG !RW	SUP ETH	BOOTS	Boots	5	0	0
+NMAG !RW	SUP ETH	BELT	Belts	5	0	0
+NMAG !RW	SUP ETH	1H AXE !THROWING	1-Handed Axes	5	0	0
+NMAG !RW	SUP ETH	2H AXE	2-handed Axes	5	0	0
+NMAG !RW	SUP ETH	CLUB	Clubs	5	0	0
+NMAG !RW	SUP ETH	TMACE	Tipped Maces	5	0	0
+NMAG !RW	SUP ETH	1H HAMMER	1-Handed Hammers	5	0	0
+NMAG !RW	SUP ETH	2H HAMMER	2-Handed Hammers	5	0	0
+NMAG !RW	SUP ETH	1H SWORD	1-Handed Swords	5	0	0
+NMAG !RW	SUP ETH	2H SWORD	2-Handed Swords	5	0	0
+NMAG !RW	SUP ETH	THROWING	Throwing Weapons	5	0	0
+NMAG !RW	SUP ETH	SPEAR	Spears	5	0	0
+NMAG !RW	SUP ETH	POLEARM	Polearms	5	0	0
+# Non-magical, superior and ethereal pointmod items when class is a match						
+NMAG !RW	ETH !SUP	DRU DRUID	Druid Helms	5	2	4
+NMAG !RW	ETH !SUP	BAR BARBARIAN	Barbarian Helms	5	2	4
+NMAG !RW	ETH !SUP	DIN PALADIN	Paladin Shields	5	2	4
+NMAG !RW	ETH !SUP	NEC NECROMANCER	Necromancer Shields	5	2	4
+NMAG !RW	ETH !SUP	SIN ASSASSIN	Daggers	5	2	5
+NMAG !RW	ETH !SUP	DAGGER !THROWING (ASSASSIN OR NECROMANCER)	Claws	5	2	5
+NMAG !RW	ETH !SUP	STAFF SORCERESS	Staves	5	2	4
+NMAG !RW	ETH !SUP	WAND NECROMANCER	Wands	5	2	4
+NMAG !RW	ETH !SUP	SCEPTER PALADIN	Scepters	5	2	5
+NMAG !RW	ETH !SUP	SOR SORCERESS	Orbs	5	2	4
+# Non-magical, superior and ethereal pointmod items when class IS NOT a match						
+NMAG !RW	ETH !SUP	DRU !DRUID	Druid Helms	5	0	0
+NMAG !RW	ETH !SUP	BAR !BARBARIAN	Barbarian Helms	5	0	0
+NMAG !RW	ETH !SUP	DIN !PALADIN	Paladin Shields	5	0	0
+NMAG !RW	ETH !SUP	NEC !NECROMANCER	Necromancer Shields	5	0	0
+NMAG !RW	ETH !SUP	SIN !ASSASSIN	Daggers	5	0	0
+NMAG !RW	ETH !SUP	DAGGER !THROWING !(ASSASSIN OR NECROMANCER)	Claws	5	0	0
+NMAG !RW	ETH !SUP	STAFF !SORCERESS	Staves	5	0	0
+NMAG !RW	ETH !SUP	WAND !NECROMANCER	Wands	5	0	0
+NMAG !RW	ETH !SUP	SCEPTER !PALADIN	Scepters	5	0	0
+NMAG !RW	ETH !SUP	SOR !SORCERESS	Orbs	5	0	0
+# Magical equipment						
+MAG	!ETH	HELM	Helms	2	0	0
+MAG	!ETH	CIRC	Circlets	2	0	0
+MAG	!ETH	CHEST	Chest Armor	2	0	0
+MAG	!ETH	SHIELD !DIN !NEC	Shields	2	0	0
+MAG	!ETH	GLOVES	Gloves	2	0	0
+MAG	!ETH	BOOTS	Boots	2	0	0
+MAG	!ETH	BELT	Belts	2	0	0
+MAG	!ETH	amu	Amulets	3	0	0
+MAG	!ETH	rin	Rings	3	0	0
+MAG	!ETH	1H AXE !THROWING	1-Handed Axes	2	0	0
+MAG	!ETH	2H AXE	2-handed Axes	2	0	0
+MAG	!ETH	CLUB	Clubs	2	0	0
+MAG	!ETH	TMACE	Tipped Maces	2	0	0
+MAG	!ETH	1H HAMMER	1-Handed Hammers	2	0	0
+MAG	!ETH	2H HAMMER	2-Handed Hammers	2	0	0
+MAG	!ETH	1H SWORD	1-Handed Swords	2	0	0
+MAG	!ETH	2H SWORD	2-Handed Swords	2	0	0
+MAG	!ETH	THROWING	Throwing Weapons	2	0	0
+MAG	!ETH	SPEAR	Spears	2	0	0
+MAG	!ETH	POLEARM	Polearms	2	0	0
+MAG	!ETH	BOW	Bows	2	0	0
+MAG	!ETH	XBOW	Crossbows	2	0	0
+MAG	!ETH	(aqv OR cqv)	Quivers	3	0	0
+MAG	!ETH	jew	Jewels	5	5	5
+MAG	!ETH	cm1	Small Charms	5	5	4
+MAG	!ETH	cm2	Large Charms	5	0	0
+MAG	!ETH	cm3	Grand Charms	5	5	4
+# Magical pointmod items when class is a match						
+MAG	!ETH	DRU DRUID	Druid Helms	4	1	3
+MAG	!ETH	BAR BARBARIAN	Barbarian Helms	4	1	3
+MAG	!ETH	DIN PALADIN	Paladin Shields	4	1	3
+MAG	!ETH	NEC NECROMANCER	Necromancer Shields	4	1	3
+MAG	!ETH	SIN ASSASSIN	Daggers	2	0	0
+MAG	!ETH	DAGGER !THROWING (ASSASSIN OR NECROMANCER)	Claws	2	0	0
+MAG	!ETH	STAFF SORCERESS	Staves	4	1	3
+MAG	!ETH	WAND NECROMANCER	Wands	4	1	3
+MAG	!ETH	SCEPTER PALADIN	Scepters	2	0	0
+MAG	!ETH	SOR SORCERESS	Orbs	4	1	3
+# Magical pointmod items when class IS NOT a match						
+MAG	!ETH	DRU !DRUID	Druid Helms	2	0	0
+MAG	!ETH	BAR !BARBARIAN	Barbarian Helms	2	0	0
+MAG	!ETH	DIN !PALADIN	Paladin Shields	2	0	0
+MAG	!ETH	NEC !NECROMANCER	Necromancer Shields	2	0	0
+MAG	!ETH	SIN !ASSASSIN	Daggers	2	0	0
+MAG	!ETH	DAGGER !THROWING !(ASSASSIN OR NECROMANCER)	Claws	2	0	0
+MAG	!ETH	STAFF !SORCERESS	Staves	2	0	0
+MAG	!ETH	WAND !NECROMANCER	Wands	2	0	0
+MAG	!ETH	SCEPTER !PALADIN	Scepters	2	0	0
+MAG	!ETH	SOR !SORCERESS	Orbs	2	0	0
+# Magical, ethereal equipment						
+MAG	ETH	HELM !DRU !BAR	Helms	3	0	0
+MAG	ETH	CIRC	Circlets	4	0	0
+MAG	ETH	CHEST	Chest Armor	3	0	0
+MAG	ETH	SHIELD !DIN !NEC	Shields	3	0	0
+MAG	ETH	GLOVES	Gloves	3	0	0
+MAG	ETH	BOOTS	Boots	3	0	0
+MAG	ETH	BELT	Belts	3	0	0
+MAG	ETH	1H AXE !THROWING	1-Handed Axes	5	0	0
+MAG	ETH	2H AXE	2-handed Axes	5	0	0
+MAG	ETH	CLUB	Clubs	5	0	0
+MAG	ETH	TMACE	Tipped Maces	5	0	0
+MAG	ETH	1H HAMMER	1-Handed Hammers	5	0	0
+MAG	ETH	2H HAMMER	2-Handed Hammers	5	0	0
+MAG	ETH	1H SWORD	1-Handed Swords	5	0	0
+MAG	ETH	2H SWORD	2-Handed Swords	5	0	0
+MAG	ETH	THROWING	Throwing Weapons	5	0	0
+MAG	ETH	SPEAR	Spears	5	0	0
+MAG	ETH	POLEARM	Polearms	5	0	0
+# Magical ethereal pointmod items when class is a match						
+MAG	ETH	DRU DRUID	Druid Helms	4	1	3
+MAG	ETH	BAR BARBARIAN	Barbarian Helms	4	1	3
+MAG	ETH	DIN PALADIN	Paladin Shields	4	1	3
+MAG	ETH	NEC NECROMANCER	Necromancer Shields	4	1	3
+MAG	ETH	SIN ASSASSIN	Daggers	5	2	4
+MAG	ETH	DAGGER !THROWING (ASSASSIN OR NECROMANCER)	Claws	5	2	4
+MAG	ETH	STAFF SORCERESS	Staves	4	1	3
+MAG	ETH	WAND NECROMANCER	Wands	4	1	3
+MAG	ETH	SCEPTER PALADIN	Scepters	5	2	4
+MAG	ETH	SOR SORCERESS	Orbs	4	1	3
+# Magical ethereal pointmod items when class IS NOT a match						
+MAG	ETH	DRU !DRUID	Druid Helms	3	0	0
+MAG	ETH	BAR !BARBARIAN	Barbarian Helms	3	0	0
+MAG	ETH	DIN !PALADIN	Paladin Shields	3	0	0
+MAG	ETH	NEC !NECROMANCER	Necromancer Shields	3	0	0
+MAG	ETH	SIN !ASSASSIN	Daggers	5	0	0
+MAG	ETH	DAGGER !THROWING !(ASSASSIN OR NECROMANCER)	Claws	5	0	0
+MAG	ETH	STAFF !SORCERESS	Staves	5	0	0
+MAG	ETH	WAND !NECROMANCER	Wands	5	0	0
+MAG	ETH	SCEPTER !PALADIN	Scepters	5	0	0
+MAG	ETH	SOR !SORCERESS	Orbs	5	0	0
+# Rare equipment						
+RARE	!ETH	HELM !DRU !BAR	Helms	3	0	0
+RARE	!ETH	CIRC	Circlets	5	3	5
+RARE	!ETH	CHEST	Chest Armor	4	0	0
+RARE	!ETH	SHIELD !DIN !NEC	Shields	4	0	0
+RARE	!ETH	GLOVES	Gloves	4	0	0
+RARE	!ETH	BOOTS	Boots	4	0	0
+RARE	!ETH	BELT	Belts	4	0	0
+RARE	!ETH	amu	Amulets	5	3	5
+RARE	!ETH	rin	Rings	5	3	5
+RARE	!ETH	1H AXE !THROWING	1-Handed Axes	4	0	0
+RARE	!ETH	2H AXE	2-handed Axes	4	0	0
+RARE	!ETH	CLUB	Clubs	4	0	0
+RARE	!ETH	TMACE	Tipped Maces	4	0	0
+RARE	!ETH	1H HAMMER	1-Handed Hammers	4	0	0
+RARE	!ETH	2H HAMMER	2-Handed Hammers	4	0	0
+RARE	!ETH	1H SWORD	1-Handed Swords	4	0	0
+RARE	!ETH	2H SWORD	2-Handed Swords	4	0	0
+RARE	!ETH	THROWING	Throwing Weapons	4	0	0
+RARE	!ETH	SPEAR	Spears	4	0	0
+RARE	!ETH	POLEARM	Polearms	4	0	0
+RARE	!ETH	BOW	Bows	4	0	0
+RARE	!ETH	XBOW	Crossbows	4	0	0
+RARE	!ETH	(aqv OR cqv)	Quivers	4	0	0
+RARE	!ETH	jew	Jewels	5	6	5
+# Rare pointmod items when class is a match						
+RARE	!ETH	DRU DRUID	Druid Helms	5	2	4
+RARE	!ETH	BAR BARBARIAN	Barbarian Helms	5	2	4
+RARE	!ETH	DIN PALADIN	Paladin Shields	5	2	4
+RARE	!ETH	NEC NECROMANCER	Necromancer Shields	5	2	4
+RARE	!ETH	SIN ASSASSIN	Daggers	5	2	4
+RARE	!ETH	DAGGER !THROWING (ASSASSIN OR NECROMANCER)	Claws	5	2	4
+RARE	!ETH	STAFF SORCERESS	Staves	5	2	4
+RARE	!ETH	WAND NECROMANCER	Wands	5	2	4
+RARE	!ETH	SCEPTER PALADIN	Scepters	5	2	4
+RARE	!ETH	SOR SORCERESS	Orbs	5	2	4
+# Rare pointmod items when class IS NOT a match						
+RARE	!ETH	DRU !DRUID	Druid Helms	4	0	0
+RARE	!ETH	BAR !BARBARIAN	Barbarian Helms	4	0	0
+RARE	!ETH	DIN !PALADIN	Paladin Shields	4	0	0
+RARE	!ETH	NEC !NECROMANCER	Necromancer Shields	4	0	0
+RARE	!ETH	SIN !ASSASSIN	Daggers	4	0	0
+RARE	!ETH	DAGGER !THROWING !(ASSASSIN OR NECROMANCER)	Claws	4	0	0
+RARE	!ETH	STAFF !SORCERESS	Staves	4	0	0
+RARE	!ETH	WAND !NECROMANCER	Wands	4	0	0
+RARE	!ETH	SCEPTER !PALADIN	Scepters	4	0	0
+RARE	!ETH	SOR !SORCERESS	Orbs	4	0	0
+# Rare, ethereal equipment						
+RARE	ETH	HELM !DRU !BAR	Helms	5	0	0
+RARE	ETH	CIRC	Circlets	5	0	0
+RARE	ETH	CHEST	Chest Armor	5	2	4
+RARE	ETH	SHIELD !DIN !NEC	Shields	5	0	0
+RARE	ETH	GLOVES	Gloves	5	0	0
+RARE	ETH	BOOTS	Boots	5	0	0
+RARE	ETH	BELT	Belts	5	0	0
+RARE	ETH	1H AXE !THROWING	1-Handed Axes	5	1	3
+RARE	ETH	2H AXE	2-handed Axes	5	2	4
+RARE	ETH	CLUB	Clubs	5	1	3
+RARE	ETH	TMACE	Tipped Maces	5	1	3
+RARE	ETH	1H HAMMER	1-Handed Hammers	5	1	3
+RARE	ETH	2H HAMMER	2-Handed Hammers	5	2	4
+RARE	ETH	1H SWORD	1-Handed Swords	5	1	3
+RARE	ETH	2H SWORD	2-Handed Swords	5	2	4
+RARE	ETH	THROWING	Throwing Weapons	5	3	5
+RARE	ETH	SPEAR	Spears	5	2	4
+RARE	ETH	POLEARM	Polearms	5	2	4
+# Rare, ethereal pointmod items when class is a match						
+RARE	ETH	DRU DRUID	Druid Helms	5	2	4
+RARE	ETH	BAR BARBARIAN	Barbarian Helms	5	2	4
+RARE	ETH	DIN PALADIN	Paladin Shields	5	2	4
+RARE	ETH	NEC NECROMANCER	Necromancer Shields	5	2	4
+RARE	ETH	SIN ASSASSIN	Daggers	5	3	5
+RARE	ETH	DAGGER !THROWING (ASSASSIN OR NECROMANCER)	Claws	5	3	5
+RARE	ETH	STAFF SORCERESS	Staves	5	2	4
+RARE	ETH	WAND NECROMANCER	Wands	5	2	4
+RARE	ETH	SCEPTER PALADIN	Scepters	5	2	4
+RARE	ETH	SOR SORCERESS	Orbs	5	2	4
+# Rare, ethereal pointmod items when class IS NOT a match						
+RARE	ETH	DRU !DRUID	Druid Helms	5	0	0
+RARE	ETH	BAR !BARBARIAN	Barbarian Helms	5	0	0
+RARE	ETH	DIN !PALADIN	Paladin Shields	5	0	0
+RARE	ETH	NEC !NECROMANCER	Necromancer Shields	5	0	0
+RARE	ETH	SIN !ASSASSIN	Daggers	5	1	3
+RARE	ETH	DAGGER !THROWING !(ASSASSIN OR NECROMANCER)	Claws	5	1	3
+RARE	ETH	STAFF !SORCERESS	Staves	5	0	0
+RARE	ETH	WAND !NECROMANCER	Wands	5	0	0
+RARE	ETH	SCEPTER !PALADIN	Scepters	5	1	3
+RARE	ETH	SOR !SORCERESS	Orbs	5	0	0
+# Set items (Tier assignments in sets_and_uniques.csv)						
+SET	!ETH	F	F Tier set items	2	1	1
+SET	!ETH	D	D Tier set items	3	1	2
+SET	!ETH	C	C tier set items	4	1	3
+SET	!ETH	B	B tier set items	5	2	4
+SET	!ETH	A	A tier set items	5	3	5
+SET	!ETH	S	S tier set items	5	4	5
+# Ethereal set items (Tier assignments in sets_and_uniques.csv)						
+SET	ETH	F	F Tier set items	5	2	3
+SET	ETH	D	D Tier set items	5	2	4
+SET	ETH	C	C tier set items	5	2	5
+SET	ETH	B	B tier set items	5	3	5
+SET	ETH	A	A tier set items	5	4	5
+SET	ETH	S	S tier set items	5	4	5
+# Unique items (Tier assignments in sets_and_uniques.csv)						
+UNI	!ETH	F	F Tier unique items	2	1	1
+UNI	!ETH	D	D Tier unique items	3	1	2
+UNI	!ETH	C	C tier unique items	4	1	3
+UNI	!ETH	B	B tier unique items	5	2	4
+UNI	!ETH	A	A tier unique items	5	3	5
+UNI	!ETH	S	S tier unique items	5	4	5
+# Ethereal unique items (Tier assignments in sets_and_uniques.csv)						
+UNI	ETH	F	F Tier unique items	5	2	3
+UNI	ETH	D	D Tier unique items	5	2	4
+UNI	ETH	C	C tier unique items	5	2	5
+UNI	ETH	B	B tier unique items	5	3	5
+UNI	ETH	A	A tier unique items	5	4	5
+UNI	ETH	S	S tier unique items	5	4	5

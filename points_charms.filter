@@ -1,0 +1,212 @@
+// Close: Show max theoretical points.
+ItemDisplay[MAG (cm1 OR cm2 OR cm3)]: %NAME%{%NAME%%LIGHT_GRAY%••••%CL%}%CONTINUE%
+
+// Prefixes (Up to 3pts)
+// Suffixes (1 pt)
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Ethereal/repair	%GRAY%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Damage		%RED%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// --- Combined Prefixes & Suffixes ---
+// # Damage
+ItemDisplay[MAG cm1 MINDMG+MAXDMG>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm1 MINDMG+MAXDMG>1]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm1 MINDMG+MAXDMG>2]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm1 MINDMG+MAXDMG>3]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm2 MINDMG+MAXDMG>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm2 MINDMG+MAXDMG>3]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm2 MINDMG+MAXDMG>5]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm2 MINDMG+MAXDMG>6]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm3 MINDMG+MAXDMG>2]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm3 MINDMG+MAXDMG>5]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm3 MINDMG+MAXDMG>8]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[MAG cm3 MINDMG+MAXDMG>10]: %NAME%{%NAME%%RED%*}%CONTINUE%
+
+// Damage Effects	%CORAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Elemental Damage	%ORANGE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Elemental Skill Damage
+ItemDisplay[MAG cm2 STAT329>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm2 STAT329>1]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm2 STAT329>2]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm2 STAT330>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm2 STAT330>1]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm2 STAT330>2]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm2 STAT331>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm2 STAT331>1]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm2 STAT331>2]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm2 STAT332>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison
+ItemDisplay[MAG cm2 STAT332>1]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison
+ItemDisplay[MAG cm2 STAT332>2]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Poison
+ItemDisplay[MAG cm2 STAT357>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Magic
+ItemDisplay[MAG cm2 STAT357>1]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Magic
+ItemDisplay[MAG cm2 STAT357>2]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Magic
+
+// --- Suffixes ---
+
+
+// --- Combined Prefixes & Suffixes ---
+// # Small Fire
+ItemDisplay[MAG cm1 STAT48+STAT49>26]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm1 STAT48+STAT49>38]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm1 STAT48+STAT49>50]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm1 STAT48+STAT49>62]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// # Small Lightning
+ItemDisplay[MAG cm1 STAT50+STAT51>27]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm1 STAT50+STAT51>40]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm1 STAT50+STAT51>52]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm1 STAT50+STAT51>64]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// # Small Cold
+ItemDisplay[MAG cm1 STAT54+STAT55>21]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm1 STAT54+STAT55>31]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm1 STAT54+STAT55>40]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm1 STAT54+STAT55>50]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+// # Large Fire
+ItemDisplay[MAG cm2 STAT48+STAT49>51]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm2 STAT48+STAT49>73]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm2 STAT48+STAT49>96]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm2 STAT48+STAT49>119]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// # Large Lightning
+ItemDisplay[MAG cm2 STAT50+STAT51>54]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm2 STAT50+STAT51>79]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm2 STAT50+STAT51>103]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm2 STAT50+STAT51>127]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// # Large Cold
+ItemDisplay[MAG cm2 STAT54+STAT55>43]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm2 STAT54+STAT55>62]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm2 STAT54+STAT55>81]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm2 STAT54+STAT55>100]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+// # Grand Fire
+ItemDisplay[MAG cm3 STAT48+STAT49>69]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm3 STAT48+STAT49>99]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm3 STAT48+STAT49>130]%NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[MAG cm3 STAT48+STAT49>161]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// # Grand Lightning
+ItemDisplay[MAG cm3 STAT50+STAT51>73]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm3 STAT50+STAT51>106]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm3 STAT50+STAT51>139]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[MAG cm3 STAT50+STAT51>172]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// # Grand Cold
+ItemDisplay[MAG cm3 STAT54+STAT55>58]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm3 STAT54+STAT55>84]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm3 STAT54+STAT55>110]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[MAG cm3 STAT54+STAT55>136]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+
+// Skills		%GOLD%
+//--------------------------------
+
+// --- Prefixes ---
+// # Skill Trees
+ItemDisplay[MAG cm3 (TABSK1=1 OR TABSK26=1 OR TABSK49=1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // Least desireable
+ItemDisplay[MAG cm3 (TABSK16=1 OR TABSK25=1 OR TABSK34=1 OR TABSK50=1)]: %NAME%{%NAME%%GOLD%••}%CONTINUE% // Desireable
+ItemDisplay[MAG cm3 (TABSK0=1 OR TABSK2=1 OR TABSK8=1 OR TABSK9=1 OR TABSK10=1 OR TABSK17=1 OR TABSK18=1 OR TABSK24=1 OR TABSK32=1 OR TABSK33=1 OR TABSK40=1 OR TABSK41=1 OR TABSK42=1 OR TABSK48=1)]: %NAME%{%NAME%%GOLD%•••}%CONTINUE% // Most desireable
+
+// --- Suffixes ---
+
+
+// Speed		%YELLOW%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Hit Recovery & Run/Walk
+ItemDisplay[MAG (cm1 OR cm2 OR cm3) (FHR>0 OR FRW>0)]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+
+// Other		%SAGE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Magic & Gold Find
+ItemDisplay[MAG cm1 (MFIND>5 OR GFIND>7)]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[MAG cm2 (MFIND>4 OR GFIND>14)]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[MAG cm3 (MFIND>9 OR GFIND>29)]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Stats		%DARK_GREEN%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Strength & Dex
+ItemDisplay[MAG cm1 (STR>1 OR DEX>1)]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+ItemDisplay[MAG cm2 (STR>3 OR DEX>3)]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+ItemDisplay[MAG cm3 (STR>4 OR DEX>4)]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+
+// HP/MP		%TEAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Life
+ItemDisplay[MAG cm1 LIFE>12]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[MAG cm2 LIFE>20]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[MAG cm3 LIFE>25]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// Defense/Block/PDR	%BLUE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Resistances/MDR	%PURPLE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Resistances
+ItemDisplay[MAG cm1 (FRES+CRES+LRES+PRES>8)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // High single res
+ItemDisplay[MAG cm1 (FRES+CRES+LRES+PRES>11)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // All res 3
+ItemDisplay[MAG cm1 (FRES+CRES+LRES+PRES>15)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // All res 4-5
+ItemDisplay[MAG cm2 (FRES+CRES+LRES+PRES>13)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // High single res or low all res
+ItemDisplay[MAG cm2 (FRES+CRES+LRES+PRES>20)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // All res 6
+ItemDisplay[MAG cm2 (FRES+CRES+LRES+PRES>27)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // All res 7-8
+ItemDisplay[MAG cm3 (FRES+CRES+LRES+PRES>19)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // High single res or low all res
+ItemDisplay[MAG cm3 (FRES+CRES+LRES+PRES>35)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // All res 9+
+ItemDisplay[MAG cm3 (FRES+CRES+LRES+PRES>47)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // All res 12+
+
+// --- Suffixes ---
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//Open
+ItemDisplay[MAG (cm1 OR cm2 OR cm3)]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
+
+

@@ -1,0 +1,223 @@
+// --- Magic Amulets ---
+
+// Note, ignores +3 Passive & Magic and +3 Defensive Auras because they are not primary trees for any serious build.
+// All +3 Skill amulets except Passive & Magic and Defensive Auras (because they are not primary trees for any serious build.)
+Alias[SKAMU]: (amu MAG STAT360=0 (TABSK0=3 OR TABSK2=3 OR TABSK8=3 OR TABSK9=3 OR TABSK10=3 OR TABSK16=3 OR TABSK17=3 OR TABSK18=3 OR TABSK24=3 OR TABSK25=3 OR TABSK32=3 OR TABSK33=3 OR TABSK34=3 OR TABSK40=3 OR TABSK41=3 OR TABSK42=3 OR TABSK48=3 OR TABSK49=3 OR TABSK50=3))
+//Alias[SKAMU]: (amu MAG STAT360=0 (TABSK10=3))
+// Physical attack
+Alias[PHYSAMU]: (amu MAG STAT360=0 (TABSK0=3 OR TABSK2=3 OR TABSK24=3 OR TABSK32=3 OR TABSK33=3 OR TABSK41=3 OR TABSK48=3 OR TABSK50=3))
+// Cast-rate dependent
+Alias[FCRAMU]: (amu MAG STAT360=0 (TABSK8=3 OR TABSK9=3 OR TABSK10=3 OR TABSK16=3 OR TABSK17=3 OR TABSK34=3 OR TABSK42=3))
+// Neither physical attack nor cast-rate dependent
+Alias[OTHERAMU]: (amu MAG STAT360=0 (TABSK0=3 OR TABSK2=3 OR TABSK18=3 OR TABSK24=3 OR TABSK25=3 OR TABSK40=3 OR TABSK49=3 OR TABSK50=3))
+
+// Squid, Whale, or Centaur
+ItemDisplay[SKAMU (LIFE>60 OR STAT216>0)]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« Life & Skills »»»%CL%}%CONTINUE%
+// Life Everlasting (Physical Damage Taken Reduced)
+ItemDisplay[(PHYSAMU OR OTHERAMU) STAT34>15]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« PDR & Skills »»»%CL%}%CONTINUE%
+// # Faster Cast Rate
+ItemDisplay[FCRAMU FCR>0]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« FCR & Skills »»»%CL%}%CONTINUE%
+// # Damage
+ItemDisplay[PHYSAMU MINDMG+MAXDMG>10]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« Damage & Skills »»»%CL%}%CONTINUE%
+// Less valuable +3 skill amulets.
+ItemDisplay[SKAMU !(LIFE>60 OR STAT216>0) STAT34<16 FCR=0 MINDMG+MAXDMG<11]: %BLUE%»»»%NAME%%BLUE%«««{%NAME%%CL%%BLUE%««« Skills »»»%CL%}%CONTINUE%
+
+// +2 Class Skills
+Alias[CLSAMU]: (amu MAG STAT360=0 (CLSK0=2 OR CLSK1=2 OR CLSK2=2 OR CLSK3=2 OR CLSK4=2 OR CLSK5=2 OR CLSK6=2))
+
+// Squid, Whale, or Centaur
+ItemDisplay[CLSAMU (LIFE>60 OR STAT216>0)]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« Life & Skills »»»%CL%}%CONTINUE%
+// Life Everlasting (Physical Damage Taken Reduced)
+ItemDisplay[CLSAMU STAT34>15]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« PDR & Skills »»»%CL%}%CONTINUE%
+// # Faster Cast Rate
+ItemDisplay[CLSAMU FCR>0]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« FCR & Skills »»»%CL%}%CONTINUE%
+// # Damage
+ItemDisplay[CLSAMU MINDMG+MAXDMG>10]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« Damage & Skills »»»%CL%}%CONTINUE%
+
+// --- Rare & Crafted Amulets ---
+
+// Close: Show max theoretical points.
+ItemDisplay[amu RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••%CL%%NAME%}%CONTINUE%
+ItemDisplay[amu CRAFT]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
+
+// Prefixes (max 7 pts rare, 6 pts crafted)
+// Suffixes (max 6 pts rare, 4 pts crafted)
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Ethereal/repair	%GRAY%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Damage		%RED%
+//--------------------------------
+
+// --- Prefixes ---
+// # Damage
+ItemDisplay[amu (RARE OR CRAFT) MINDMG+MAXDMG>7]: %NAME%{%NAME%%RED%•}%CONTINUE% // High single or 2 low
+ItemDisplay[amu (RARE OR CRAFT) MINDMG+MAXDMG>14]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 Affixes
+ItemDisplay[amu (RARE OR CRAFT) MINDMG+MAXDMG>20]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 High rolls
+
+// --- Suffixes ---
+
+
+// Damage Effects	%CORAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Elemental Damage	%ORANGE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Skills		%GOLD%
+//--------------------------------
+
+// --- Prefixes ---
+// # Skills
+ItemDisplay[amu (RARE OR CRAFT) (TABSK1=2 OR TABSK26=2 OR TABSK49=2)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) (TABSK0=1 OR TABSK2=1 OR TABSK8=1 OR TABSK9=1 OR TABSK10=1 OR TABSK17=1 OR TABSK18=1 OR TABSK24=1 OR TABSK32=1 OR TABSK33=1 OR TABSK40=1 OR TABSK41=1 OR TABSK42=1 OR TABSK48=1 OR TABSK16=1 OR TABSK25=1 OR TABSK34=1 OR TABSK50=1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) (TABSK0=2 OR TABSK2=2 OR TABSK8=2 OR TABSK9=2 OR TABSK10=2 OR TABSK17=2 OR TABSK18=2 OR TABSK24=2 OR TABSK32=2 OR TABSK33=2 OR TABSK40=2 OR TABSK41=2 OR TABSK42=2 OR TABSK48=2 OR TABSK16=2 OR TABSK25=2 OR TABSK34=2 OR TABSK50=2)]: %NAME%{%NAME%%GOLD%••}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) (CLSK0=1 OR CLSK1=1 OR CLSK2=1 OR CLSK3=1 OR CLSK4=1 OR CLSK5=1 OR CLSK6=1)]: %NAME%{%NAME%%GOLD%••}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) (CLSK0=2 OR CLSK1=2 OR CLSK2=2 OR CLSK3=2 OR CLSK4=2 OR CLSK5=2 OR CLSK6=2)]: %NAME%{%NAME%%GOLD%•••}%CONTINUE%
+
+// --- Suffixes ---
+
+
+// Speed		%YELLOW%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Faster Cast Rate
+ItemDisplay[amu (RARE OR CRAFT) FCR>0]: %NAME%{%NAME%%YELLOW%••}%CONTINUE%
+
+// Crafting
+// # Caster
+ItemDisplay[amu CRAFT FCR>14]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[amu CRAFT FCR>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// Hitpower
+ItemDisplay[amu CRAFT FHR>14]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[amu CRAFT FHR>18]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+
+
+// Other		%SAGE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Teleport Charges
+ItemDisplay[amu (RARE OR CRAFT) CHSK54>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+// # Attack Rating
+ItemDisplay[amu (RARE OR CRAFT) AR>120]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// # Magic & Gold Find
+ItemDisplay[amu (RARE OR CRAFT) (MFIND>15 OR GFIND>40)]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// --- Crafting ---
+// Bountiful
+ItemDisplay[amu CRAFT MFIND>30]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Stats		%DARK_GREEN%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Strength & Dexterity
+ItemDisplay[amu (RARE OR CRAFT) STR+DEX>20]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) STR+DEX>40]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+
+// --- Crafting ---
+// Bountiful
+ItemDisplay[amu CRAFT STAT223>15]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+// Brilliant
+ItemDisplay[amu (RARE OR CRAFT) STR+DEX>60]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+
+// HP/MP		%TEAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Life
+ItemDisplay[amu (RARE OR CRAFT) LIFE>30]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) LIFE>45]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Life Steal
+ItemDisplay[amu (RARE OR CRAFT) STAT60>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Mana Steal
+ItemDisplay[amu (RARE OR CRAFT) STAT62>4]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// --- Crafting ---
+// Blood
+ItemDisplay[amu CRAFT STAT86>4]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[amu CRAFT LIFE>60]: %NAME%{%NAME%%TEAL%•}%CONTINUE% // Blood
+
+// Defense/Block/PDR	%BLUE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Physical Damage Taken Reduced
+ItemDisplay[amu (RARE OR CRAFT) STAT34>10]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+
+// --- Crafting ---
+// Safety
+ItemDisplay[amu CRAFT STAT34>15]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+ItemDisplay[amu CRAFT STAT34>15]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+
+// Resistances/MDR	%PURPLE%
+//--------------------------------
+
+// --- Prefixes ---
+ItemDisplay[amu (RARE OR CRAFT) (FRES+CRES+LRES+PRES)>22)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) (FRES+CRES+LRES+PRES)>45)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) (FRES+CRES+LRES+PRES)>68)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // High all res value
+ItemDisplay[amu (RARE OR CRAFT) (FRES+CRES+LRES+PRES)>91)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) (FRES+CRES+LRES+PRES)>114)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[amu (RARE OR CRAFT) (FRES+CRES+LRES+PRES)>137)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Half Freeze Duration
+ItemDisplay[amu (RARE OR CRAFT) STAT118]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Poison Length Reduced
+ItemDisplay[amu (RARE OR CRAFT) STAT110>65]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// # Magic Damage Taken Reduced
+ItemDisplay[amu (RARE OR CRAFT) STAT35>10]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// --- Crafting ---
+// Safety
+ItemDisplay[amu CRAFT STAT35>15]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// Vampiric
+ItemDisplay[amu CRAFT STAT109>14]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[amu CRAFT STAT109>18]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+// Brilliant
+ItemDisplay[amu CRAFT (FRES+CRES+LRES+PRES)>160)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//Open
+ItemDisplay[amu (RARE OR CRAFT)]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
+
+

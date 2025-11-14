@@ -1,0 +1,65 @@
+//Runes Apperance
+ItemDisplay[RUNE<18]: %ORANGE%%RUNENAME% %GRAY%[%WHITE%%RUNENUM%%GRAY%]{%NAME%}%CONTINUE%
+ItemDisplay[RUNE~18-19]: %ORANGE%%RUNENAME% Rune %GRAY%[%BLUE%%RUNENUM%%GRAY%]{%NAME%}%CONTINUE%
+ItemDisplay[RUNE~20-25]: %ORANGE%%RUNENAME% Rune %GRAY%[%YELLOW%%RUNENUM%%GRAY%]{%NAME%}%CONTINUE%
+ItemDisplay[RUNE>25]: %ORANGE%%RUNENAME% Rune %GRAY%[%GOLD%%RUNENUM%%GRAY%]{%NAME%}%CONTINUE%
+
+// Rune Notifications and Highlighting
+ItemDisplay[${field} (RUNE<18)]: %PX-62%%TIER-3%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[${field} (RUNE~18-19)]: %PX-62%%ORANGE%«  %NAME%  %ORANGE%»{%NAME%}%CONTINUE%
+ItemDisplay[${field} RUNE>19 AND RUNE<26]: %DOT-62%%ORANGE%««     %NAME%     %ORANGE%»»{%NAME%}%CONTINUE%
+ItemDisplay[${field} RUNE>25]: %BORDER-62%%ORANGE%«««          %NAME%          %ORANGE%»»»{%NAME%}%CONTINUE%
+
+//Runes Notes
+ItemDisplay[(r01 OR r01s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%El %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Eld %GRAY%[%TAN%2%GRAY%]}%CONTINUE%
+ItemDisplay[(r02 OR r02s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Eld %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Tir %GRAY%[%TAN%3%GRAY%]}%CONTINUE%
+ItemDisplay[(r03 OR r03s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Tir %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Nef %GRAY%[%TAN%4%GRAY%]}%CONTINUE%
+ItemDisplay[(r04 OR r04s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Nef %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Eth %GRAY%[%TAN%5%GRAY%]}%CONTINUE%
+ItemDisplay[(r05 OR r05s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Eth %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Ith %GRAY%[%TAN%6%GRAY%]}%CONTINUE%
+ItemDisplay[(r06 OR r06s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Ith %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Tal %GRAY%[%TAN%7%GRAY%]}%CONTINUE%
+ItemDisplay[(r07 OR r07s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Tal %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Ral %GRAY%[%TAN%8%GRAY%]}%CONTINUE%
+ItemDisplay[(r08 OR r08s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Ral %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Ort %GRAY%[%TAN%9%GRAY%]}%CONTINUE%
+ItemDisplay[(r09 OR r09s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Ort %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Thul %GRAY%[%TAN%10%GRAY%]}%CONTINUE%
+ItemDisplay[(r10 OR r10s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Thul %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Amn %GRAY%[%TAN%11%GRAY%]}%CONTINUE%
+ItemDisplay[(r11 OR r11s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Amn %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Sol %GRAY%[%TAN%12%GRAY%]}%CONTINUE%
+ItemDisplay[(r12 OR r12s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Sol %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Shael %GRAY%[%TAN%13%GRAY%]}%CONTINUE%
+ItemDisplay[(r13 OR r13s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Shael %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Dol %GRAY%[%TAN%14%GRAY%]}%CONTINUE%
+ItemDisplay[(r14 OR r14s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Dol %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Hel %GRAY%[%TAN%15%GRAY%]}%CONTINUE%
+ItemDisplay[(r15 OR r15s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Hel %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Io %GRAY%[%TAN%16%GRAY%]}%CONTINUE%
+ItemDisplay[(r16 OR r16s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Io %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Lum %GRAY%[%TAN%17%GRAY%]}%CONTINUE%
+ItemDisplay[(r17 OR r17s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Lum %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Ko %GRAY%[%TAN%18%GRAY%]}%CONTINUE%
+ItemDisplay[(r18 OR r18s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Ko %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Fal %GRAY%[%TAN%19%GRAY%]}%CONTINUE%
+ItemDisplay[(r19 OR r19s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Fal %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Lem %GRAY%[%RED%20%GRAY%]}%CONTINUE%  
+ItemDisplay[(r20 OR r20s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 3x %ORANGE%Lem %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Pul %GRAY%[%RED%21%GRAY%]}%CONTINUE%
+ItemDisplay[(r21 OR r21s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Pul %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Um %GRAY%[%RED%22%GRAY%]}%CONTINUE%
+ItemDisplay[(r22 OR r22s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Um %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Mal %GRAY%[%RED%23%GRAY%]}%CONTINUE%
+ItemDisplay[(r23 OR r23s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Mal %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Ist %GRAY%[%RED%24%GRAY%]}%CONTINUE%
+ItemDisplay[(r24 OR r24s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Ist %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Gul %GRAY%[%RED%25%GRAY%]}%CONTINUE%
+ItemDisplay[(r25 OR r25s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Gul %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Vex %GRAY%[%GREEN%26%GRAY%]}%CONTINUE%
+ItemDisplay[(r26 OR r26s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Vex %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Ohm %GRAY%[%GREEN%27%GRAY%]}%CONTINUE%
+ItemDisplay[(r27 OR r27s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Ohm %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Lo %GRAY%[%GREEN%28%GRAY%]}%CONTINUE%
+ItemDisplay[(r28 OR r28s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Lo %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Sur %GRAY%[%GREEN%29%GRAY%]}%CONTINUE%
+ItemDisplay[(r29 OR r29s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Sur %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Ber %GRAY%[%GREEN%30%GRAY%]}%CONTINUE%
+ItemDisplay[(r30 OR r30s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Ber %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Jah %GRAY%[%GREEN%31%GRAY%]}%CONTINUE%
+ItemDisplay[(r31 OR r31s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Jah %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Cham %GRAY%[%GREEN%32%GRAY%]}%CONTINUE%
+ItemDisplay[(r32 OR r32s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: 2x %ORANGE%Cham %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Zod %GRAY%[%GREEN%33%GRAY%]}%CONTINUE%
+ItemDisplay[(r33 OR r33s)]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: %ORANGE%Zod %WHITE%+ Perf %GRAY%O %WHITE%= Repair any Item %GRAY%(even eth)}%CONTINUE%
+
+// Rune Values
+ItemDisplay[r17 OR r17s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.005 %GOLD%HR%WHITE%, %GREEN%0.5 %RED%WSS}%CONTINUE%
+ItemDisplay[r18 OR r18s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.01 %GOLD%HR%WHITE%, %GREEN%1 %RED%WSS}%CONTINUE%
+ItemDisplay[r19 OR r19s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.01 %GOLD%HR%WHITE%, %GREEN%1 %RED%WSS}%CONTINUE%
+ItemDisplay[r20 OR r20s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.02 %GOLD%HR%WHITE%, %GREEN%2 %RED%WSS}%CONTINUE%
+ItemDisplay[r21 OR r21s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.03 %GOLD%HR%WHITE%, %GREEN%3 %RED%WSS}%CONTINUE%
+ItemDisplay[r22 OR r22s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.05 %GOLD%HR%WHITE%, %GREEN%5 %RED%WSS}%CONTINUE%
+ItemDisplay[r23 OR r23s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.1 %GOLD%HR%WHITE%, %GREEN%10 %RED%WSS}%CONTINUE%
+ItemDisplay[r24 OR r24s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.15 %GOLD%HR%WHITE%, %GREEN%15 %RED%WSS}%CONTINUE%
+ItemDisplay[r25 OR r25s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.25 %GOLD%HR%WHITE%, %GREEN%25 %RED%WSS}%CONTINUE%
+ItemDisplay[r26 OR r26s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.50 %GOLD%HR%WHITE%, %GREEN%50 %RED%WSS}%CONTINUE%
+ItemDisplay[r27 OR r27s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%0.75 %GOLD%HR%WHITE%, %GREEN%75 %RED%WSS}%CONTINUE%
+ItemDisplay[r28 OR r28s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%1.0 %GOLD%HR%WHITE%, %GREEN%100 %RED%WSS}%CONTINUE%
+ItemDisplay[r29 OR r29s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%1.5 %GOLD%HR%WHITE%, %GREEN%150 %RED%WSS}%CONTINUE%
+ItemDisplay[r30 OR r30s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%3.0 %GOLD%HR%WHITE%, %GREEN%300 %RED%WSS}%CONTINUE%
+ItemDisplay[r31 OR r31s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%2.0 %GOLD%HR%WHITE%, %GREEN%200 %RED%WSS}%CONTINUE%
+ItemDisplay[r32 OR r32s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%2.25 %GOLD%HR%WHITE%, %GREEN%225 %RED%WSS}%CONTINUE%
+ItemDisplay[r33 OR r33s]: %NAME%{%NAME%%CL%%WHITE%Approximate Value: %GREEN%4.5 %GOLD%HR%WHITE%, %GREEN%450 %RED%WSS}%CONTINUE%

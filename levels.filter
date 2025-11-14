@@ -1,0 +1,11 @@
+// Define Filter Levels
+ItemDisplayFilterName[]: Only hide trash //1
+ItemDisplayFilterName[]: Only hide trash + potions //2
+ItemDisplayFilterName[]: Hide: ordinary equipment //3
+ItemDisplayFilterName[]: Hide: ordinary equipment + potions //4
+ItemDisplayFilterName[]: Hide: normal tier and most magic equipment //5
+ItemDisplayFilterName[]: Hide: normal tier and most magic equipment + potions //6
+ItemDisplayFilterName[]: Hide: exceptional tier and non-ethereal magic equipment //7
+ItemDisplayFilterName[]: Hide: exceptional tier and non-ethereal magic equipment + potions //8
+ItemDisplayFilterName[]: Hide: most rare equipment, non-eth weapon bases, non-sup armor bases, low tier sets & uniques //9
+ItemDisplayFilterName[]: Hide: most rare equipment, non-eth weapon bases, non-sup armor bases, low tier sets & uniques + potions //10

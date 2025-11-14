@@ -1,0 +1,56 @@
+// Note: double dollar signs are escaped for the build level alias system.
+// $$ will render as just $ in the final filter.
+
+// Larger piles as you level
+ItemDisplay[GOLD<100 (CLVL>8 OR FILTLVL>4)]: 
+ItemDisplay[GOLD<250 (CLVL>11 OR FILTLVL>6)]: 
+ItemDisplay[GOLD<500 (CLVL>15 OR FILTLVL>6)]: 
+ItemDisplay[GOLD<750 (CLVL>23 OR FILTLVL>6)]: 
+ItemDisplay[GOLD<1000 (CLVL>39 OR FILTLVL>6)]: 
+ItemDisplay[GOLD<2000 CLVL>79]:
+// Endgame based on filter level
+ItemDisplay[GOLD<2500 CLVL>79 FILTLVL>2]: 
+ItemDisplay[GOLD<5000 CLVL>79 FILTLVL>4]: 
+ItemDisplay[GOLD<7500 CLVL>79 FILTLVL>6]:
+ItemDisplay[GOLD<10000 CLVL>79 FILTLVL>8]:
+
+// Add $$ tags on small items of sufficient value.
+
+// Unidentified small items that could sell for enough to pick up.
+ItemDisplay[${small2} (MAG OR RARE) !(NORM BELT) !ETH !ID !${town} !SHOP]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+
+// Normal Act 1: 5k max
+ItemDisplay[DIFF=0 MAPID<40 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>2250]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID<40 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>4500]: %NAME%%DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID<40 DIFF=0 ${small2} !${town} !EQUIPPED !SHOP ID PRICE>4500]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+
+// Normal Act 2: 10k max
+ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>4500]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>9000]: %NAME%%DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~40-74 DIFF=0 ${small2} !${town} !EQUIPPED !SHOP ID PRICE>9000]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+
+// Normal Act 3: 15k max
+ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>6750]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>13500]: %NAME%%DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~75-102 DIFF=0 ${small2} !${town} !EQUIPPED !SHOP ID PRICE>13500]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+
+// Normal Act 4: 20k max
+ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>9000]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>18000]: %NAME%%DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID~103-108 DIFF=0 ${small2} !${town} !EQUIPPED !SHOP ID PRICE>18000]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+
+// Normal Act 5: 25k max
+ItemDisplay[DIFF=0 MAPID>108 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>11250]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID>108 DIFF=0 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>22500]: %NAME%%DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=0 MAPID>108 DIFF=0 ${small2} !${town} !EQUIPPED !SHOP ID PRICE>22500]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+
+// Nightmare: 30k max
+ItemDisplay[DIFF=1 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>13500]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=1 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>27000]: %NAME%%DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=1 ${small2} !${town} !EQUIPPED !SHOP ID PRICE>27000]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+
+// Hell: 35k max
+ItemDisplay[DIFF=2 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>15750]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=2 ${small1} !${town} !EQUIPPED !SHOP ID PRICE>31500]: %NAME%%DARK_GREEN%$${%NAME%}%CONTINUE%
+ItemDisplay[DIFF=2 ${small2} !${town} !EQUIPPED !SHOP ID PRICE>31500]: %NAME% %DARK_GREEN%$${%NAME%}%CONTINUE%
+

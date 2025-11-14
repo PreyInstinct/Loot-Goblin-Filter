@@ -1,0 +1,253 @@
+// 300% ED + 150% ED & 250 AR - physical weapons
+// 
+// 400% ED - Missile weapons, amazon javelins, knife, club, tipped mace, throwing axe
+//  + 200% ED & 300 AR Missile weapons
+// 
+// 40 max damage - physical weapons
+// 63 max damage - missile weapons
+// 
+// 300% damage to demons, 350% damage to undead - missile weapons
+// 200% damage to demons, 275% damage to undead - physical weapons + staffs
+// 
+// 30% res - non-rods
+// 40% res - rods
+// 
+// -10 enemy res - missile weapon, scepter, crystal sword, orb, claw
+// -15 enemy res - staffs
+// 
+// ignore target defense - rod, knife, claw
+// 
+// 40 aspd - !(orb wand staff)
+// 20 aspd - weaponPS = !(orb wand)
+// 
+// 40 fcr - staff
+// 30 fcr - other rods, orbs, clubs
+// 
+// +30 dex - missile weapons
+// +30 ene - orb, wand, staff
+// +15 ene - scepter
+// +30 str - club, hammer
+// +20 str - scepter, tipped mace
+// +15 str - non-blunt melee weapons
+// 
+// +240 AR & light radius - missile weapon
+// 
+// 9% ll - melee weapons
+// 5% ll - missile weapons
+// 9% ml - melee weapons
+// 5% ll - missile weapons
+// 
+// % chance to cast lvl 30 on casting - staffs
+// 
+// life tap charges - axe, wand, knife
+// 
+// 12% ctc lvl 31 amp - physical weapons
+// 12% ctc lvl 15 lower res - physical weapons
+// 12% ctc lvl 15 lower res on casting - staff
+// 
+// DS, OW, CB - physical weapons
+//
+// --- Charged/Proc Skill Attributes ---
+// Charge Skill: MULTI204,{ATTRIBUTE_ID} = current_charges + (max_charges * 256)
+// Cast on Striking: MULTI198,{ATTRIBUTE_ID} = % chanc
+// Cast on Casting: MULTI200,{ATTRIBUTE_ID} = % chanc
+// ATTRIBUTE_ID = (skill_id * 64) + skill_level
+//    10 bits for skill_ID, 6 bits for skill_level
+//    bits:  IIIIIIIIIILLLLLL
+//           31    
+//           268421         
+//           731000521      
+//           689942152631   
+//           8426842684268421
+//    82,1 = 0001010010000001 = life tap, level 1
+//    = 1+128+1024+4096 = 5249
+//    = 82*64+1 = 5249
+// ItemDisplay[EDGED RARE MULTI204,5249>0]: %NAME%{%NAME%%TEAL%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
+
+// Close: Show max theoretical points.
+ItemDisplay[THROWING !AXE !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 6+8=14
+ItemDisplay[THROWING AXE RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[THROWING ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE% // 8+8=16
+
+// Prefixes (max 6 pts, 7 pts axes, 8 pts zon javs)
+// Suffixes (max 8 pts)
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Ethereal/repair	%GRAY%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Damage		%RED%
+//--------------------------------
+
+// --- Prefixes ---
+// # Enhanced Damage (4 pts javs & daggers, 5 pts zon javs & axes)
+// Javelins & Throwing Knives: 300%+150%=450%
+ItemDisplay[THROWING RARE ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING RARE ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING RARE ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING !AXE !ZON RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Amazon Javelins & Throwing Axes: 400%+150%=550%
+ItemDisplay[THROWING RARE ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Maximum Damage per Level (2 pts)
+ItemDisplay[THROWING RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+// # Damage to Demons (1 pt)
+ItemDisplay[THROWING RARE STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Undead (1 pt)
+ItemDisplay[THROWING RARE STAT122>225]: %NAME%{%NAME%%RED%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Damage (1 pt)
+ItemDisplay[THROWING RARE MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Chance to Cast on Striking (3 pts)
+ItemDisplay[THROWING RARE MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
+ItemDisplay[THROWING RARE MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
+ItemDisplay[THROWING RARE MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+
+// Damage Effects	%CORAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Crushing Blow (2 pts)
+ItemDisplay[THROWING RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// # Deadly Strike (1 pt)
+ItemDisplay[THROWING RARE STAT141>19]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+
+// --- Combined Prefixes & Suffixes ---
+// # Open Wounds (2 pts)
+ItemDisplay[THROWING RARE STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[THROWING RARE STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+
+// Elemental Damage	%ORANGE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Enemy Resistances (2 pts, zon javs only)
+ItemDisplay[THROWING RARE (STAT334>4 OR STAT336>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[THROWING RARE (STAT334>7 OR STAT336>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Chance to Cast on Striking (3 pts)
+ItemDisplay[THROWING RARE MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
+ItemDisplay[THROWING RARE MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
+ItemDisplay[THROWING RARE MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
+
+// --- Combined Prefixes & Suffixes ---
+// # Elemental Damage (3 pts each)
+// Fire [P: 306-432 (738), S: 214-302 (516)]
+ItemDisplay[THROWING RARE STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[THROWING RARE STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[THROWING RARE STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+// Lightning [P: 1-576 (577), S: 6-403 (409)]
+ItemDisplay[THROWING RARE STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[THROWING RARE STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[THROWING RARE STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+// Cold [P: 112-348 (460), S: 118-365 (483)]
+ItemDisplay[THROWING RARE STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[THROWING RARE STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[THROWING RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+
+// Skills		%GOLD%
+//--------------------------------
+
+// --- Prefixes ---
+// # Skills (2 pts, 4 pts zon javs)
+ItemDisplay[THROWING RARE ${class1})]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[THROWING RARE ${class2}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE ${tree2}]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +2 affix
+ItemDisplay[THROWING RARE ${tree3}]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod or +3 affix
+ItemDisplay[THROWING RARE ${tree4}]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +1 affix, OR +2/+2
+ItemDisplay[THROWING RARE ${tree5}]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +2 affix
+ItemDisplay[THROWING RARE ${tree6}]: %NAME%{%NAME%%GOLD%•}%CONTINUE% // +3 automod and +3 affix
+
+// --- Suffixes ---
+
+
+// Speed		%YELLOW%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Increased Attack Speed (3 pts)
+ItemDisplay[THROWING RARE IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[THROWING RARE IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[THROWING RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+
+// Other		%SAGE%
+//--------------------------------
+
+// --- Prefixes ---
+// Socketed
+ItemDisplay[THROWING RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Knockback (1 pt)
+ItemDisplay[THROWING RARE STAT81>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Stats		%DARK_GREEN%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// HP/MP		%TEAL%
+//--------------------------------
+
+// --- Prefixes ---
+// Life after each Kill (1 pt)
+ItemDisplay[THROWING RARE STAT86>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// Mana after each Kill (1 pt)
+ItemDisplay[THROWING RARE STAT138>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Life Steal (1 pt)
+ItemDisplay[THROWING RARE STAT60>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Mana Steal (1 pt)
+ItemDisplay[THROWING RARE STAT62>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// Defense/Block/PDR	%BLUE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Resistances/MDR	%PURPLE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Resistances (4 pts total)
+ItemDisplay[THROWING RARE (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[THROWING RARE (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[THROWING RARE (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[THROWING RARE (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// --- Suffixes ---
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+
+//Open
+ItemDisplay[THROWING RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
+

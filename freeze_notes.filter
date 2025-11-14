@@ -1,0 +1,8 @@
+//Half Freeze Duration / Cannot Be Frozen Notes
+//Unequipped
+ItemDisplay[STAT118=1 !EQUIPPED]: %NAME%{%TAN%Note%WHITE%: 2 x %BLUE%HFD %WHITE%= %BLUE%Cannot Be Frozen%CL%%NAME%}%CONTINUE%
+//Equipped w/o other CBF source
+ItemDisplay[(CHARSTAT118=1 AND CHARSTAT153=0) STAT118=1 EQUIPPED]: %NAME%{%TAN%Note%WHITE%: (%CHARSTAT118%/2 %BLUE%HFD%WHITE%) = %GRAY%Cannot Be Frozen %WHITE%Inactive%CL%%NAME%}%CONTINUE%
+ItemDisplay[(CHARSTAT118>1 AND CHARSTAT153=0) STAT118=1 EQUIPPED]: %NAME%{%TAN%Note%WHITE%: (%CHARSTAT118%/2 %BLUE%HFD%WHITE%) = %BLUE%Cannot Be Frozen %WHITE%Activated%CL%%NAME%}%CONTINUE%
+//Equipped with other CBF source
+ItemDisplay[CHARSTAT153>0 STAT118=1 EQUIPPED]: %NAME%{%TAN%Note%WHITE%: %BLUE%Cannot Be Frozen %WHITE%Activated Elsewhere%CL%%NAME%}%CONTINUE%

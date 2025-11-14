@@ -1,0 +1,48 @@
+//Descriptions for GEMLEVEL1 and GEMLEVEL3
+ItemDisplay[GEM<5]:%NAME%{%WHITE%3x Gem of the same Type and Level = 1x Higher Level Gem%NL%%TAN% Note%WHITE%: Crafting Recipes:}%CONTINUE%
+ItemDisplay[GEM=1]:%NAME%{%WHITE%3x Any %RED%!%WHITE%H.Potion, 3x Any %BLUE%!%WHITE%M.Potion, Any Chip. Gem = %PURPLE%r %WHITE%35%%NL%%NAME%}%CONTINUE%
+ItemDisplay[GEM=3]:%NAME%{%WHITE%3x Any %RED%!%WHITE%H.Potion, 3x Any %BLUE%!%WHITE%M.Potion, Any Square Gem = %PURPLE%R %WHITE%Full%NL%%NAME%}%CONTINUE%
+//amethysts
+ItemDisplay[GEMTYPE=1 GEM<4 !(gzv OR gpv)]: %NAME% %ORANGE%[%PURPLE%·%ORANGE%]{%NAME%}%CONTINUE%
+ItemDisplay[GEMTYPE=1 GEM>3]: %NAME% %ORANGE%[%PURPLE%O%ORANGE%]%CONTINUE%
+//diamonds
+ItemDisplay[GEMTYPE=2 GEM<4 !(glw OR gpw)]: %NAME% %ORANGE%[%WHITE%·%ORANGE%]{%NAME%}%CONTINUE%
+ItemDisplay[GEMTYPE=2 GEM>3]: %NAME% %ORANGE%[%WHITE%O%ORANGE%]%CONTINUE%
+//emeralds
+ItemDisplay[GEMTYPE=3 GEM<4 !(glg OR gpg)]: %NAME% %ORANGE%[%GREEN%·%ORANGE%]{%NAME%}%CONTINUE%
+ItemDisplay[GEMTYPE=3 GEM>3]: %NAME% %ORANGE%[%GREEN%O%ORANGE%]%CONTINUE%
+//rubys
+ItemDisplay[GEMTYPE=4 GEM<4 !(glr OR gpr)]: %NAME% %ORANGE%[%RED%·%ORANGE%]{%NAME%}%CONTINUE%
+ItemDisplay[GEMTYPE=4 GEM>3]: %NAME% %ORANGE%[%RED%O%ORANGE%]%CONTINUE%
+//sapphires
+ItemDisplay[GEMTYPE=5 GEM<4 !(glb OR gpb)]: %NAME% %ORANGE%[%BLUE%·%ORANGE%]{%NAME%}%CONTINUE%
+ItemDisplay[GEMTYPE=5 GEM>3]: %NAME% %ORANGE%[%BLUE%O%ORANGE%]%CONTINUE%
+//topazes
+ItemDisplay[GEMTYPE=6 GEM<4 !(gly OR gpy)]: %NAME% %ORANGE%[%YELLOW%·%ORANGE%]{%NAME%}%CONTINUE%
+ItemDisplay[GEMTYPE=6 GEM>3]: %NAME% %ORANGE%[%YELLOW%O%ORANGE%]%CONTINUE%
+//skulls
+ItemDisplay[GEMTYPE=7 GEM<4 !(skl OR skz)]: %NAME% %ORANGE%[%GRAY%·%ORANGE%]{%NAME%}%CONTINUE%
+ItemDisplay[GEMTYPE=7 GEM>3]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]%CONTINUE%
+// Hide low level gems
+ItemDisplay[${field} GEMLEVEL<4 ((FILTLVL>0 DIFF>0) OR FILTLVL>6)]:{${filterwarn}}%CONTINUE%
+ItemDisplay[!${field} GEMLEVEL<4 ((FILTLVL>0 DIFF>0) OR FILTLVL>6)]: %NAME%{${filterwarn}}%CONTINUE%
+// Hide flawlesses on max filter level
+ItemDisplay[${field} GEMLEVEL=4 FILTLVL>8]:{${filterwarn}}%CONTINUE%
+ItemDisplay[!${field} GEMLEVEL=4 FILTLVL>8]: %NAME%{${filterwarn}}%CONTINUE%
+// Notify flawlesses and perfects
+ItemDisplay[GEMLEVEL=4 FILTLVL<9]: %DOT-70%%TIER-6%%NAME%%CONTINUE%
+ItemDisplay[GEMLEVEL=5]: %DOT-70%%TIER-8%%NAME%%CONTINUE%
+
+//Gems Notes
+ItemDisplay[gzvs OR glys OR glbs OR glgs OR glrs OR glws OR skls OR gzv OR glw OR glg OR glr OR glb OR gly OR skl]: %NAME%{%NAME%%TAN%Note%WHITE%: 3xFlawless + %GRAY%key %WHITE%= Perf}%CONTINUE%
+ItemDisplay[gzv OR glw OR glg OR glr OR glb OR gly OR skl]: %NAME%{%NAME%%NL%}%CONTINUE%
+
+ItemDisplay[(gpvs OR gpv)]: %NAME%{%NAME%%WHITE%You Can use %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Items as Bases%NL%Gloves: %ORANGE%Ort %BLACK%| %WHITE%Belt: %ORANGE%Ith %BLACK%| %WHITE%Boots: %ORANGE%Thul%NL%%WHITE%Weapon: %ORANGE%Tir %BLACK%| %WHITE%Chest: %ORANGE%Tal %BLACK%| %WHITE%Shield: %ORANGE%Eth%NL%%WHITE%Ring: %ORANGE%Amn %BLACK%| %WHITE%Helm: %ORANGE%Nef %BLACK%| %WHITE%Amulet: %ORANGE%Ral%NL%%TAN%Note%WHITE%: Caster Crafting Recipes: Perf %PURPLE%O%WHITE%, %BLUE%Jewel%WHITE%,}%CONTINUE%
+ItemDisplay[(gpys OR gpy)]: %NAME%{%NAME%%WHITE%You Can use %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Items as Bases%NL%Gloves: %ORANGE%Hel %BLACK%| %WHITE%Belt: %ORANGE%El %BLACK%| %WHITE%Boots: %ORANGE%Io%NL%%WHITE%Weapon: %ORANGE%Shael %BLACK%| %WHITE%Chest: %ORANGE%Eld %BLACK%| %WHITE%Shield: %ORANGE%Dol%NL%%WHITE%Ring: %ORANGE%Lum %BLACK%| %WHITE%Helm: %ORANGE%Tir %BLACK%| %WHITE%Amulet: %ORANGE%Ko%NL%%TAN%Note%WHITE%: Bountiful Crafting Recipes: Perf %YELLOW%O%WHITE%, %BLUE%Jewel%WHITE%,}%CONTINUE%
+ItemDisplay[(gpbs OR gpb)]: %NAME%{%NAME%%WHITE%You Can use %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Items as Bases%NL%Gloves: %ORANGE%Ort %BLACK%| %WHITE%Belt: %ORANGE%Tal %BLACK%| %WHITE%Boots: %ORANGE%Ral%NL%%WHITE%Weapon: %ORANGE%Tir %BLACK%| %WHITE%Chest: %ORANGE%Nef %BLACK%| %WHITE%Shield: %ORANGE%Eth%NL%%WHITE%Ring: %ORANGE%Amn %BLACK%| %WHITE%Helm: %ORANGE%Ith %BLACK%| %WHITE%Amulet: %ORANGE%Thul%NL%%TAN%Note%WHITE%: Hitpower Crafting Recipes: Perf %BLUE%O%WHITE%, %BLUE%Jewel%WHITE%,}%CONTINUE%
+ItemDisplay[(gpgs OR gpg)]: %NAME%{%NAME%%WHITE%You Can use %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Items as Bases%NL%Gloves: %ORANGE%Ral %BLACK%| %WHITE%Belt: %ORANGE%Tal %BLACK%| %WHITE%Boots: %ORANGE%Ort%NL%%WHITE%Weapon: %ORANGE%Sol %BLACK%| %WHITE%Chest: %ORANGE%Eth %BLACK%| %WHITE%Shield: %ORANGE%Nef%NL%%WHITE%Ring: %ORANGE%Amn %BLACK%| %WHITE%Helm: %ORANGE%Ith %BLACK%| %WHITE%Amulet: %ORANGE%Thul%NL%%TAN%Note%WHITE%: Safety Crafting Recipes: Perf %GREEN%O%WHITE%, %BLUE%Jewel%WHITE%,}%CONTINUE%
+ItemDisplay[(gprs OR gpr)]: %NAME%{%NAME%%WHITE%You Can use %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Items as Bases%NL%Gloves: %ORANGE%Nef %BLACK%| %WHITE%Belt: %ORANGE%Tal %BLACK%| %WHITE%Boots: %ORANGE%Eth%NL%%WHITE%Weapon: %ORANGE%Ort %BLACK%| %WHITE%Chest: %ORANGE%Thul %BLACK%| %WHITE%Shield: %ORANGE%Ith%NL%%WHITE%Ring: %ORANGE%Sol %BLACK%| %WHITE%Helm: %ORANGE%Ral %BLACK%| %WHITE%Amulet: %ORANGE%Amn%NL%%TAN%Note%WHITE%: Blood Crafting Recipes: Perf %RED%O%WHITE%, %BLUE%Jewel%WHITE%,}%CONTINUE%
+ItemDisplay[(gpws OR gpw)]: %NAME%{%NAME%%WHITE%You Can use %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Items as Bases%NL%Gloves: %ORANGE%Shael %BLACK%| %WHITE%Belt: %ORANGE%Io %BLACK%| %WHITE%Boots: %ORANGE%Ko%NL%%WHITE%Weapon: %ORANGE%Sol %BLACK%| %WHITE%Chest: %ORANGE%El %BLACK%| %WHITE%Shield: %ORANGE%Ort%NL%%WHITE%Ring: %ORANGE%Hel %BLACK%| %WHITE%Helm: %ORANGE%Eld %BLACK%| %WHITE%Amulet: %ORANGE%Tal%NL%%TAN%Note%WHITE%: Brilliant Crafting Recipes: Perf %GRAY%O%WHITE%, %BLUE%Jewel%WHITE%,}%CONTINUE%
+ItemDisplay[(skzs OR skz)]: %NAME%{%NAME%%WHITE%You Can use %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Items as Bases%NL%Gloves: %ORANGE%Io %BLACK%| %WHITE%Belt: %ORANGE%Eld %BLACK%| %WHITE%Boots: %ORANGE%El%NL%%WHITE%Weapon: %ORANGE%Shael %BLACK%| %WHITE%Chest: %ORANGE%Tir %BLACK%| %WHITE%Shield: %ORANGE%Sol%NL%%WHITE%Ring: %ORANGE%Hel %BLACK%| %WHITE%Helm: %ORANGE%Lum %BLACK%| %WHITE%Amulet: %ORANGE%Dol%NL%%TAN%Note%WHITE%: Vampiric Crafting Recipes: Perf %GRAY%O%WHITE%, %BLUE%Jewel%WHITE%,}%CONTINUE%
+
+

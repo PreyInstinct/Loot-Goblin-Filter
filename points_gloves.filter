@@ -1,0 +1,164 @@
+// --- Magic Gloves ---
+
+// +3 Skill gloves
+ItemDisplay[GLOVES MAG (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3 Gloves{%NAME%}%CONTINUE%
+ItemDisplay[GLOVES MAG IAS>9 (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3/10 Gloves{%NAME%}%CONTINUE%
+ItemDisplay[GLOVES MAG IAS>19 (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3/20 Gloves{%NAME%}%CONTINUE%
+
+// --- Rare/Crafted Gloves ---
+
+// Close: Show max theoretical points.
+ItemDisplay[GLOVES (RARE OR CRAFT)]: %NAME%{%LIGHT_GRAY%••••••••%CL%%NAME%}%CONTINUE%
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Ethereal/repair	%GRAY%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Damage		%RED%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Damage Effects	%CORAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// --- Craft Specific ---
+// Blood Crushing Blow
+ItemDisplay[GLOVES CRAFT STAT136>7]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[GLOVES CRAFT STAT136>9]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+// Vampiric Deadly Strike
+ItemDisplay[GLOVES CRAFT STAT141>7]: %NAME%{%NAME%%CORAL%•}%CONTINUE% // Vampiric DS
+ItemDisplay[GLOVES CRAFT STAT141>9]: %NAME%{%NAME%%CORAL%•}%CONTINUE% // Vampiric DS
+
+// Elemental Damage	%ORANGE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Skills		%GOLD%
+//--------------------------------
+
+// --- Prefixes ---
+// # Skills (2 pts)
+ItemDisplay[GLOVES (RARE OR CRAFT) (TABSK0>0 OR TABSK2>0 OR TABSK50>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[GLOVES (RARE OR CRAFT) (TABSK0>1 OR TABSK2>1 OR TABSK50>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[GLOVES (RARE OR CRAFT) (TABSK1>1)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+
+// --- Suffixes ---
+
+
+// Speed		%YELLOW%
+//--------------------------------
+
+// --- Prefixes ---
+// # Increased Attack Speed (2 pts)
+ItemDisplay[GLOVES (RARE OR CRAFT) IAS>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[GLOVES (RARE OR CRAFT) IAS>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[GLOVES CRAFT IAS>24]: %NAME%{%NAME%%YELLOW%•}%CONTINUE% // Brilliant
+ItemDisplay[GLOVES CRAFT IAS>29]: %NAME%{%NAME%%YELLOW%•}%CONTINUE% // Brilliant
+// # Faster Cast Rate (2 pts)
+ItemDisplay[GLOVES (RARE OR CRAFT) FCR>4]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[GLOVES (RARE OR CRAFT) FCR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[GLOVES CRAFT FCR>14]: %NAME%{%NAME%%YELLOW%•}%CONTINUE% // Caster
+ItemDisplay[GLOVES CRAFT FCR>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE% // Caster
+
+// --- Suffixes ---
+
+
+// Other		%SAGE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Attack Rating (1 pt)
+ItemDisplay[GLOVES (RARE OR CRAFT) AR>80]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Magic & Gold Find (1 pt each)
+ItemDisplay[GLOVES (RARE OR CRAFT) MFIND>19]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[GLOVES (RARE OR CRAFT) GFIND>60]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[GLOVES CRAFT MFIND>30]: %NAME%{%NAME%%SAGE%•}%CONTINUE% // Bountiful
+ItemDisplay[GLOVES CRAFT MFIND>40]: %NAME%{%NAME%%SAGE%•}%CONTINUE% // Bountiful
+
+// --- Craft Specific ---
+// Hitpower Target Def
+ItemDisplay[GLOVES CRAFT STAT116>14]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[GLOVES CRAFT STAT116>18]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Stats		%DARK_GREEN%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Strength & Dexterity (1 pt each)
+ItemDisplay[GLOVES (RARE OR CRAFT) STR+DEX>12]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+ItemDisplay[GLOVES (RARE OR CRAFT) STR+DEX>24]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+
+// HP/MP		%TEAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Life Steal (1 pt)
+ItemDisplay[GLOVES (RARE OR CRAFT) STAT60>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+// # Mana Steal (1 pt)
+ItemDisplay[GLOVES (RARE OR CRAFT) STAT62>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// Defense/Block/PDR	%BLUE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Defense (1 pt)
+ItemDisplay[GLOVES (RARE OR CRAFT) ED>100]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+
+// --- Suffixes ---
+
+
+// --- Craft Specific ---
+// Safety PDR
+ItemDisplay[GLOVES CRAFT STAT34>4]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+
+// Resistances/MDR	%PURPLE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Resistances (1 pt each)
+ItemDisplay[GLOVES (RARE OR CRAFT) (FRES+CRES+LRES+PRES>22)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[GLOVES (RARE OR CRAFT) (FRES+CRES+LRES+PRES>45)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[GLOVES (RARE OR CRAFT) (FRES+CRES+LRES+PRES>67)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[GLOVES CRAFT (FRES+CRES+LRES+PRES>82)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // Safety
+
+// --- Suffixes ---
+// # Half Freeze Duration (1 pt)
+ItemDisplay[GLOVES (RARE OR CRAFT) STAT118]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//Open
+ItemDisplay[GLOVES (RARE OR CRAFT)]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
+
+

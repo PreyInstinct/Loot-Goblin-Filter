@@ -1,0 +1,41 @@
+// Tier levels for armor bases.
+// "B" bases have the highest defense of any armor in its strength class.
+// "D" and "F" bases have unusually high requirements for their defense.
+// "A" and "S" tiers are reserved for superior/ethereal bases with good rolls.
+
+// Armor groups based on strength requirements.
+// Very Light: Dusk Shroud or lower
+// Light: Archon Plate or lower
+// Medium: Monarch or lower
+// Heavy: Unlimited strength requirement
+
+// Hide lower tier bases at higher filter levels.
+//ItemDisplay[${field} NMAG !RW ${FBase} FILTLVL>1]: {${filterwarn}}
+//ItemDisplay[!${field} NMAG !RW ${FBase} FILTLVL>1]: %NAME%{${filterwarn}}
+//ItemDisplay[${field} NMAG !RW !${pointmod} ${DBase} FILTLVL>4]: {${filterwarn}}
+//ItemDisplay[!${field} NMAG !RW !${pointmod} ${DBase} FILTLVL>4]: %NAME%{${filterwarn}}
+//ItemDisplay[${field} NMAG !RW !${pointmod} ${CBase} FILTLVL>6]: {${filterwarn}}
+//ItemDisplay[!${field} NMAG !RW !${pointmod} ${CBase} FILTLVL>6]: %NAME%{${filterwarn}}
+//ItemDisplay[${field} NMAG !RW !${pointmod} !(SUP OR ETH) ${BBase} FILTLVL>8]: {${filterwarn}}
+//ItemDisplay[!${field} NMAG !RW !${pointmod} !(SUP OR ETH) ${BBase} FILTLVL>8]: %NAME%{${filterwarn}}
+
+
+// Tag ideal armor bases
+ItemDisplay[${SBase} ELT NMAG !${pointmod} (HELM OR CHEST OR SHIELD OR WEAPON) ${vlight}]: %NAME% %LIGHT_GRAY%(VLight)%CONTINUE%
+ItemDisplay[${SBase} ELT NMAG !${pointmod} (HELM OR CHEST OR SHIELD OR WEAPON) ${light}]: %NAME% %LIGHT_GRAY%(Light)%CONTINUE%
+ItemDisplay[${SBase} ELT NMAG !${pointmod} (HELM OR CHEST OR SHIELD OR WEAPON) ${medium}]: %NAME% %LIGHT_GRAY%(Medium)%CONTINUE%
+ItemDisplay[${SBase} ELT NMAG !${pointmod} (HELM OR CHEST OR SHIELD OR WEAPON) ${heavy}]: %NAME% %LIGHT_GRAY%(Heavy)%CONTINUE%
+ItemDisplay[${BBase} (MAG OR RARE) ${vlight}]: %NAME% %ORANGE%(VLight)%CONTINUE%
+ItemDisplay[${BBase} (MAG OR RARE) ${light}]: %NAME% %ORANGE%(Light)%CONTINUE%
+ItemDisplay[${BBase} (MAG OR RARE) ${medium}]: %NAME% %ORANGE%(Medium)%CONTINUE%
+ItemDisplay[${BBase} (MAG OR RARE) ${heavy}]: %NAME% %ORANGE%(Heavy)%CONTINUE%
+
+// Specific Runeword Bases
+ItemDisplay[NMAG !RW (6cs OR 6bs OR 6ws) (SOCKETS=0 OR SOCKETS=4)]: %NAME% %LIGHT_GRAY%(Infinity){%NAME%%CL%%LIGHT_GRAY%Infinity: Ber•Mal•Ber•Ist}%CONTINUE%
+ItemDisplay[NMAG !RW 7cr (SOCKETS=0 OR SOCKETS=5) EDAM>13 ETH]: %NAME% %LIGHT_GRAY%(Zenith){%NAME%%CL%%LIGHT_GRAY%Zenith: Jah•Zod•Ort•Thul•Ral}%CONTINUE%
+ItemDisplay[NMAG !RW 7cr (SOCKETS=0 OR SOCKETS=5) EDAM>13 !ETH]: %NAME% %LIGHT_GRAY%(Doom){%NAME%%CL%%LIGHT_GRAY%Doom: Hel•Ohm•Um•Lo•Cham}%CONTINUE%
+ItemDisplay[NMAG !RW 7kr (SOCKETS=0 OR SOCKETS=3) !ETH SK73=3]: %NAME% %LIGHT_GRAY%(Venom){%NAME%%CL%%LIGHT_GRAY%Venom: Tal•Dol•Mal}%CONTINUE%
+ItemDisplay[NMAG !RW (7sr OR 7br OR 7s8 OR 7wc) (SOCKETS=0 OR SOCKETS=4) EDAM>13 ETH]: %NAME% %LIGHT_GRAY%(Pride){%NAME%%CL%%LIGHT_GRAY%Pride: Cham•Sur•Io•Lo}%CONTINUE%
+ItemDisplay[NMAG !RW (${CtABase}) !ETH]: %NAME% %LIGHT_GRAY%(CtA){%NAME%%CL%%LIGHT_GRAY%Call to Arms: Amn•Ral•Mal•Ist•Ohm}
+ItemDisplay[NMAG !RW CHEST (SOCKETS=0 OR SOCKETS=2) EDEF>0 ETH]: %NAME% %LIGHT_GRAY%(Prudence){%NAME%%CL%%LIGHT_GRAY%Prudence: Mal•Tir}%CONTINUE%
+

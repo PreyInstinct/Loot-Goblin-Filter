@@ -1,0 +1,94 @@
+// Close bracket
+ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%) %NAME%{%NAME%}%CONTINUE%
+// Ethereal
+ItemDisplay[ETH]: %LIGHT_GRAY%eth%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[ETH AND ((DIN NMAG !RW RES>0) OR (DIN  NMAG !RW EDAM>0) OR ${suped})]: %GRAY%|%NAME%{%NAME%}%CONTINUE%
+// Paladin Shield Automods
+// # Resistances
+ItemDisplay[DIN NMAG !RW RES~1-10]: %WHITE%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[DIN NMAG !RW RES~11-20]: %BLUE%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[DIN NMAG !RW RES~21-25]: %YELLOW%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[DIN NMAG !RW RES>25]: %GOLD%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
+// # Enhanced Damage
+ItemDisplay[DIN NMAG !RW EDAM~1-35]: %WHITE%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[DIN NMAG !RW EDAM~36-45]: %BLUE%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[DIN NMAG !RW EDAM~46-55]: %YELLOW%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[DIN NMAG !RW EDAM>55]: %GOLD%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[((DIN NMAG !RW (RES>0 OR EDAM>0)) AND ${suped}]: %GRAY%|%NAME%{%NAME%}%CONTINUE%
+// Superior
+ItemDisplay[${suped} !DIN EDAM~1-5]: %WHITE%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[${suped} !DIN EDAM~6-10]: %BLUE%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[${suped} !DIN EDAM~11-13]: %YELLOW%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[${suped} !DIN EDAM>13]: %GOLD%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[${suped} EDEF~1-5]: %WHITE%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[${suped} EDEF~6-10]: %BLUE%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[${suped} EDEF~11-13]: %YELLOW%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[${suped} EDEF>13]: %GOLD%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
+
+// Open bracket
+ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%(%NAME%{%NAME%}%CONTINUE%
+
+// Sockets
+//Sockets Opener
+ItemDisplay[SOCK>0]: %NAME% %TAN%[%WHITE%%SOCKETS%{%NAME%}%CONTINUE%
+
+//VARIABLE SOCKETS ROLLS
+//Varies up to 5 sockets
+//Rune Master - Ettin Axe - Varies: 4-5
+Alias[VSOCK501]: (72a UNI SOCK>0 IAS>0 ED>0 STAT44>0 STAT153>0)
+//Hellrack - Colossus Crossbow - Varies: 3-5
+Alias[VSOCK502]: (6hx UNI SOCK>0 IAS>0 ED>0 STAT333>0 STAT363>0)
+//Griswold's Redemption - Caduceus - Varies: 3-5
+Alias[VSOCK503]: (7ws SET SOCK>0 IAS>0 ED>0 STAT122>50 !STAT91=0)
+
+//Varies up to 4 sockets
+//Bonehew - Ogre Axe - Varies: 2-4
+Alias[VSOCK401]: (7o7 UNI SOCK>0 IAS>0 ED>0 STAT117>0 STAT504>0)
+//Tomb Reaver - Cryptic Axe - Varies: 2-4
+Alias[VSOCK402]: (7pa UNI SOCK>0 IAS>0 ED>0 STAT122>0 RES>0 MFIND>0 STAT86>0 STAT89>0)
+//Witchwild String - Short Siege Bow -> Diamond Bow - Varies: 2-4
+Alias[VSOCK403]: ((8s8 OR 6s7) UNI SOCK>0 ED>0 RES>0 STAT250>0)
+//Black Hades - Chaos Armor -> Shadow Plade - Varies: 3-4
+Alias[VSOCK404]: ((xul OR uul) UNI SOCK>0 STAT121>0 STAT123>0 STAT118>0)
+
+//Varies up to 3 sockets
+//Blade of Ali Baba - Tulwar -> Hydra Edge - Varies: 2-3
+Alias[VSOCK301]: ((9fc OR 7fc) UNI SOCK>0 ED>0 DEX>0 MANA>0 STAT239>0 STAT240>0)
+//Djinn Slayer - Ataghan - Varies: 2-3
+Alias[VSOCK302]: (7sm UNI SOCK>0 ED>0 STAT121>0 STAT62>0 STAT145>0)
+//Achilles Strike - Hurlbat -> Winged Axe - Varies: 2-3
+Alias[VSOCK303]: ((9b8 OR 7b8) UNI SOCK>0 TABSK32>0 STR>0 STAT150>0)
+//Heaven's Light - Mighty Scepter - Varies: 2-3
+Alias[VSOCK304]: (7sc UNI SOCK>0 ED>0 IAS>0 CLSK3>0 STAT116>0 STAT136>0 STAT89>0 STAT139>0)
+//Crown of Ages - Corona - Varies: 2-3
+Alias[VSOCK305]: (urn UNI SOCK>0 STAT152>0 FHR>0 RES>0 STAT36>0 STAT109>0)
+//Denmother - Sun Spirit - Varies: 2-3
+Alias[VSOCK306]: (drc UNI SOCK>0 CLSK5>0 FCR>0 GFIND>0 REPLIFE>0)
+//Head Hunter's Glory - Troll Nest - Varies: 1-3
+Alias[VSOCK307]: (ush UNI SOCK>0 STAT32>0 STAT504>0 STAT86>0)
+//Aldur's Rhythm - Jagged Star -> Devil Star - Varies: 1-3
+Alias[VSOCK308]: ((9mt OR 7mt) SET SOCK>0 IAS>0 STAT121>0 STAT122>0 STAT62>0 STAT60>0 STAT50>0)
+//Griswold's Valor - Corona - Varies: 2-3
+Alias[VSOCK309]: (urn SET SOCK>0 ED>0 RES>0 STAT234>0 MFIND>0 !STAT91=0)
+//Griswold's Heart - Ornate Plate -> Sacred Armor - Varies: 2-3
+Alias[VSOCK310]: ((xar OR uar) SET SOCK>0 CLSK3>0 !STAT91=0 STR>0)
+//Griswold's Honor - Vortex Shield - Varies: 2-3
+Alias[VSOCK311]: (paf SET SOCK>0 TABSK26>0 FBR>0 STAT20>0 RES>0 FCR>0)
+//Natalya's Shadow - Loricated Mail - Varies: 1-3
+Alias[VSOCK312]: (ucl SET SOCK>0 TABSK49>0 STAT216>0 STAT110>0)
+
+//Varies up to 2 sockets
+//Kalan's Legacy - Mummified Trophy - Varies: 1-2
+Alias[VSOCK201]: ((ne6 OR neb) UNI SOCK>0 CLSK2=1 FBR>0 STAT20>0)
+
+//Varies up to 5 sockets
+ItemDisplay[(VSOCK501 OR VSOCK502 OR VSOCK503)]: %NAME%%GRAY%/%LIGHT_GRAY%5{%NAME%}%CONTINUE%
+//Varies up to 4 sockets
+ItemDisplay[(VSOCK401 OR VSOCK402 OR VSOCK403 OR VSOCK404)]: %NAME%%GRAY%/%LIGHT_GRAY%4{%NAME%}%CONTINUE%
+//Varies up to 3 sockets
+ItemDisplay[(VSOCK301 OR VSOCK302 OR VSOCK303 OR VSOCK304 OR VSOCK305 OR VSOCK306 OR VSOCK307 OR VSOCK308 OR VSOCK309 OR VSOCK310 OR VSOCK311 OR VSOCK312)]: %NAME%%GRAY%/%LIGHT_GRAY%3{%NAME%}%CONTINUE%
+//Varies up to 2 sockets
+ItemDisplay[(VSOCK201)]: %NAME%%GRAY%/%LIGHT_GRAY%2{%NAME%}%CONTINUE%
+
+//Sockets Closer
+ItemDisplay[SOCK>0]: %NAME%%TAN%]{%NAME%}%CONTINUE%

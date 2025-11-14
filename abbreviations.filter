@@ -1,0 +1,174 @@
+// --- Abbreviation of Automodded & Pointmodded Items ---
+// Abbreviate names of items with automods to prevent truncation of long names.
+
+ItemDisplay[${random} clb]: Club{%NAME%}%CONTINUE%
+ItemDisplay[${random} spc]: Spiked Club{%NAME%}%CONTINUE%
+ItemDisplay[${random} dgr]: Dagger{%NAME%}%CONTINUE%
+ItemDisplay[${random} dir]: Dirk{%NAME%}%CONTINUE%
+ItemDisplay[${random} kri]: Kris{%NAME%}%CONTINUE%
+ItemDisplay[${random} bld]: Blade{%NAME%}%CONTINUE%
+ItemDisplay[${random} am5]: Maiden Javelin{%NAME%}%CONTINUE%
+ItemDisplay[${random} am3]: Maiden Spear{%NAME%}%CONTINUE%
+ItemDisplay[${random} am4]: Maiden Pike{%NAME%}%CONTINUE%
+ItemDisplay[${random} am1]: Stag Bow{%NAME%}%CONTINUE%
+ItemDisplay[${random} am2]: Reflex Bow{%NAME%}%CONTINUE%
+ItemDisplay[${random} ktr]: Katar{%NAME%}%CONTINUE%
+ItemDisplay[${random} wrb]: Wrist Blade{%NAME%}%CONTINUE%
+ItemDisplay[${random} axf]: Hatchet Hands{%NAME%}%CONTINUE%
+ItemDisplay[${random} ces]: Cestus{%NAME%}%CONTINUE%
+ItemDisplay[${random} clw]: Claws{%NAME%}%CONTINUE%
+ItemDisplay[${random} btl]: Blade Talons{%NAME%}%CONTINUE%
+ItemDisplay[${random} skr]: Scissors Katar{%NAME%}%CONTINUE%
+ItemDisplay[${random} scp]: Scepter{%NAME%}%CONTINUE%
+ItemDisplay[${random} gsc]: Grand Scepter{%NAME%}%CONTINUE%
+ItemDisplay[${random} wsp]: War Scepter{%NAME%}%CONTINUE%
+ItemDisplay[${random} sst]: Short Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} lst]: Long Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} cst]: Gnarled Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} bst]: Battle Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} wst]: War Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} wnd]: Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} ywn]: Yew Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} bwn]: Bone Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} gwn]: Grim Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob1]: Eagle Orb{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob2]: Sacred Globe{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob3]: Smoked Sphere{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob4]: Clasped Orb{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob5]: Jared's Stone{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9cl]: Cudgel{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9sp]: Barbed Club{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9dg]: Poignard{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9di]: Rondel{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9kr]: Cinquedeas{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9bl]: Stiletto{%NAME%}%CONTINUE%
+ItemDisplay[${random} ama]: Ceremonial Javelin{%NAME%}%CONTINUE%
+ItemDisplay[${random} am8]: Ceremonial Spear{%NAME%}%CONTINUE%
+ItemDisplay[${random} am9]: Ceremonial Pike{%NAME%}%CONTINUE%
+ItemDisplay[${random} am6]: Ashwood Bow{%NAME%}%CONTINUE%
+ItemDisplay[${random} am7]: Ceremonial Bow{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9ar]: Quhab{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9wb]: Wrist Spike{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9xf]: Fascia{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9cs]: Hand Scythe{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9lw]: Greater Claws{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9tw]: Greater Talons{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9qr]: Scissors Quhab{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9sc]: Rune Scepter{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9qs]: Holy Water Sprinkler{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9ws]: Divine Scepter{%NAME%}%CONTINUE%
+ItemDisplay[${random} 8ss]: Jo Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} 8ls]: Quarterstaff{%NAME%}%CONTINUE%
+ItemDisplay[${random} 8cs]: Cedar Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} 8bs]: Gothic Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} 8ws]: Rune Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9wn]: Burnt Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9yw]: Petrified Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9bw]: Tomb Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} 9gw]: Grave Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob6]: Glowing Orb{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob7]: Crystalline Globe{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob8]: Cloudy Sphere{%NAME%}%CONTINUE%
+ItemDisplay[${random} ob9]: Sparkling Ball{%NAME%}%CONTINUE%
+ItemDisplay[${random} oba]: Swirling Crystal{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7cl]: Truncheon{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7sp]: Tyrant Club{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7dg]: Bone Knife{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7di]: Mithril Point{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7kr]: Fanged Knife{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7bl]: Legend Spike{%NAME%}%CONTINUE%
+ItemDisplay[${random} amf]: Matriarchal Javelin{%NAME%}%CONTINUE%
+ItemDisplay[${random} amd]: Matriarchal Spear{%NAME%}%CONTINUE%
+ItemDisplay[${random} ame]: Matriarchal Pike{%NAME%}%CONTINUE%
+ItemDisplay[${random} amb]: Matriarchal Bow{%NAME%}%CONTINUE%
+ItemDisplay[${random} amc]: Grand Matron Bow{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7ar]: Suwayyah{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7wb]: Wrist Sword{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7xf]: War Fist{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7cs]: Battle Cestus{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7lw]: Feral Claws{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7tw]: Runic Talons{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7qr]: Scissors Suwayyah{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7sc]: Mighty Scepter{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7qs]: Seraph Rod{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7ws]: Caduceus{%NAME%}%CONTINUE%
+ItemDisplay[${random} 6ss]: Walking Stick{%NAME%}%CONTINUE%
+ItemDisplay[${random} 6ls]: Stalagmite{%NAME%}%CONTINUE%
+ItemDisplay[${random} 6cs]: Elder Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} 6bs]: Shillelagh{%NAME%}%CONTINUE%
+ItemDisplay[${random} 6ws]: Archon Staff{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7wn]: Polished Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7yw]: Ghost Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7bw]: Lich Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} 7gw]: Unearthed Wand{%NAME%}%CONTINUE%
+ItemDisplay[${random} obb]: Heavenly Stone{%NAME%}%CONTINUE%
+ItemDisplay[${random} obc]: Eldritch Orb{%NAME%}%CONTINUE%
+ItemDisplay[${random} obd]: Demon Heart{%NAME%}%CONTINUE%
+ItemDisplay[${random} obe]: Vortex Orb{%NAME%}%CONTINUE%
+ItemDisplay[${random} obf]: Dimensional Shard{%NAME%}%CONTINUE%
+ItemDisplay[${random} spk]: Spiked Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} bsh]: Bone Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa1]: Targe{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa2]: Rondache{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa3]: Heraldic Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa4]: Aerin Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa5]: Crown Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne1]: Preserved Head{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne2]: Zombie Head{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne3]: Unraveller Head{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne4]: Gargoyle Head{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne5]: Demon Head{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr1]: Wolf Head{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr2]: Hawk Helm{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr3]: Antlers{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr4]: Falcon Mask{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr5]: Spirit Mask{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba1]: Jawbone Cap{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba2]: Fanged Helm{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba3]: Horned Helm{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba4]: Assault Helmet{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba5]: Avenger Guard{%NAME%}%CONTINUE%
+ItemDisplay[${random} xpk]: Barbed Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} xsh]: Grim Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa6]: Akaran Targe{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa7]: Akaran Rondache{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa8]: Protector Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} pa9]: Gilded Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} paa]: Royal Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne6]: Mummified Trophy{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne7]: Fetish Trophy{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne8]: Sexton Trophy{%NAME%}%CONTINUE%
+ItemDisplay[${random} ne9]: Cantor Trophy{%NAME%}%CONTINUE%
+ItemDisplay[${random} nea]: Heirophant Trophy{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr6]: Alpha Helm{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr7]: Griffon Headress{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr8]: Hunter's Guise{%NAME%}%CONTINUE%
+ItemDisplay[${random} dr9]: Sacred Feathers{%NAME%}%CONTINUE%
+ItemDisplay[${random} dra]: Totemic Mask{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba6]: Jawbone Visor{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba7]: Lion Helm{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba8]: Rage Mask{%NAME%}%CONTINUE%
+ItemDisplay[${random} ba9]: Savage Helmet{%NAME%}%CONTINUE%
+ItemDisplay[${random} baa]: Slayer Guard{%NAME%}%CONTINUE%
+ItemDisplay[${random} upk]: Blade Barrier{%NAME%}%CONTINUE%
+ItemDisplay[${random} ush]: Troll Nest{%NAME%}%CONTINUE%
+ItemDisplay[${random} pab]: Sacred Targe{%NAME%}%CONTINUE%
+ItemDisplay[${random} pac]: Sacred Rondache{%NAME%}%CONTINUE%
+ItemDisplay[${random} pad]: Kurast Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} pae]: Zakarum Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} paf]: Vortex Shield{%NAME%}%CONTINUE%
+ItemDisplay[${random} neb]: Minion Skull{%NAME%}%CONTINUE%
+ItemDisplay[${random} neg]: Hellspawn Skull{%NAME%}%CONTINUE%
+ItemDisplay[${random} ned]: Overseer Skull{%NAME%}%CONTINUE%
+ItemDisplay[${random} nee]: Succubus Skull{%NAME%}%CONTINUE%
+ItemDisplay[${random} nef]: Bloodlord Skull{%NAME%}%CONTINUE%
+ItemDisplay[${random} drb]: Blood Spirt{%NAME%}%CONTINUE%
+ItemDisplay[${random} drc]: Sun Spirit{%NAME%}%CONTINUE%
+ItemDisplay[${random} drd]: Earth Spirit{%NAME%}%CONTINUE%
+ItemDisplay[${random} dre]: Sky Spirit{%NAME%}%CONTINUE%
+ItemDisplay[${random} drf]: Dream Spirit{%NAME%}%CONTINUE%
+ItemDisplay[${random} bab]: Carnage Helm{%NAME%}%CONTINUE%
+ItemDisplay[${random} bac]: Fury Visor{%NAME%}%CONTINUE%
+ItemDisplay[${random} bad]: Destroyer Helm{%NAME%}%CONTINUE%
+ItemDisplay[${random} bae]: Conquerer Crown{%NAME%}%CONTINUE%
+ItemDisplay[${random} baf]: Guardian Crown{%NAME%}%CONTINUE%

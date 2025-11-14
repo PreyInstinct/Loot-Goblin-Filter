@@ -1,0 +1,153 @@
+// Close: Show max theoretical points.
+ItemDisplay[BOOTS (RARE OR CRAFT)]: %NAME%{%LIGHT_GRAY%•••••••%CL%%NAME%}%CONTINUE%
+
+// Prefixes: 3 pts max
+// Suffixes: 4 pts max
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+// Ethereal/repair	%GRAY%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Damage		%RED%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Damage Effects	%CORAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Elemental Damage	%ORANGE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Skills		%GOLD%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// Speed		%YELLOW%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Faster Run/Walk (2 pts)
+ItemDisplay[BOOTS (RARE OR CRAFT) FRW>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BOOTS (RARE OR CRAFT) FRW>29]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Faster Hit Recovery (1 pt)
+ItemDisplay[BOOTS (RARE OR CRAFT) FHR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+
+// -- Crafted ---
+// Hitpower
+ItemDisplay[BOOTS CRAFT FHR>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BOOTS CRAFT FHR>26]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// Brilliant
+ItemDisplay[BOOTS CRAFT FRW>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+
+// Other		%SAGE%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Magic & Gold Find (1 pt each)
+ItemDisplay[BOOTS (RARE OR CRAFT) MFIND>19]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[BOOTS (RARE OR CRAFT) GFIND>60]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// --- Crafted ---
+// Bountiful
+ItemDisplay[BOOTS CRAFT MFIND>39]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+
+// Stats		%DARK_GREEN%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+// # Dexterity (1 pt)
+ItemDisplay[BOOTS (RARE OR CRAFT) DEX>12]: %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+
+// HP/MP		%TEAL%
+//--------------------------------
+
+// --- Prefixes ---
+
+
+// --- Suffixes ---
+
+
+// --- Crafted ---
+// Blood
+ItemDisplay[BOOTS CRAFT STAT60>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE% // Life leach
+// Caster
+ItemDisplay[BOOTS CRAFT STAT77>12]: %NAME%{%NAME%%TEAL%•}%CONTINUE% // Max mana %
+// Vampiric
+ItemDisplay[BOOTS CRAFT STAT62>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE% // Mana leach
+
+// Defense/Block/PDR	%BLUE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Defense (1 pt)
+ItemDisplay[BOOTS (RARE OR CRAFT) ED>100]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+
+// --- Suffixes ---
+
+// -- Crafted ---
+// Safety and Bountiful
+ItemDisplay[BOOTS CRAFT ED>200]: %NAME%{%NAME%%BLUE%•}%CONTINUE%
+// Safety
+ItemDisplay[BOOTS CRAFT STAT34>3]: %NAME%{%NAME%%BLUE%•}%CONTINUE% // flat PDR
+
+// Resistances/MDR	%PURPLE%
+//--------------------------------
+
+// --- Prefixes ---
+// # Resistances (1 pt each)
+ItemDisplay[BOOTS (RARE OR CRAFT) (FRES+CRES+LRES+PRES>30)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BOOTS (RARE OR CRAFT) (FRES+CRES+LRES+PRES>60)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BOOTS (RARE OR CRAFT) (FRES+CRES+LRES+PRES>90)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// --- Suffixes ---
+// # Half Freeze Duration (1 pt)
+ItemDisplay[BOOTS (RARE OR CRAFT) STAT118]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+
+// --- Crafted ---
+// Vampiric
+ItemDisplay[BOOTS CRAFT STAT110>15]: %NAME%{%NAME%%PURPLE%•}%CONTINUE% // Poison length reduced
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//Open
+ItemDisplay[BOOTS (RARE OR CRAFT)]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
+
+

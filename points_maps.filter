@@ -1,0 +1,71 @@
+// Magic Find: STAT370
+// Density: STAT372
+// Experience: STAT373
+// Rarity: STAT375
+
+//ItemDisplay[${varmap}]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Stat Quality: }
+
+//Open (max theoretical points unknown)
+ItemDisplay[${varmap}]: %NAME%{%NAME%%CL%%TEAL%Map Quality: }%CONTINUE%
+
+// Points awarded at 50th, 75th, and 90th percentiles.
+
+// Density
+ItemDisplay[${varmap}]: %NAME%{%NAME%%RED%}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT372>71]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT372>84]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT372>95]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT372>80]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT372>94]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT372>106]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT372>94]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT372>110]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT372>124]: %NAME%{%NAME%•}%CONTINUE%
+// Experience
+ItemDisplay[${varmap}]: %NAME%{%NAME%%BLUE%}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT373>11]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT373>14]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT373>17]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT373>12]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT373>16]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT373>19]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT373>15]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT373>20]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT373>24]: %NAME%{%NAME%•}%CONTINUE%
+// Magic Find
+ItemDisplay[${varmap}]: %NAME%{%NAME%%YELLOW%}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT370>55]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT370>73]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=1 STAT370>91]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT370>79]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT370>101]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=2 STAT370>122]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT370>125]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT370>155]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} MAPTIER=3 STAT370>182]: %NAME%{%NAME%•}%CONTINUE%
+// Rarity
+ItemDisplay[${varmap}]: %NAME%{%NAME%%PURPLE%}%CONTINUE%
+ItemDisplay[${varmap} STAT375>29]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT375>39]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT375>49]: %NAME%{%NAME%•}%CONTINUE%
+// Extra Jewelry
+ItemDisplay[${varmap}]: %NAME%{%NAME%%GOLD%}%CONTINUE%
+ItemDisplay[${varmap} STAT494>0]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT494>1]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT494>2]: %NAME%{%NAME%•}%CONTINUE%
+// Extra Weapons
+ItemDisplay[${varmap} STAT495>0]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT495>1]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT495>2]: %NAME%{%NAME%•}%CONTINUE%
+// Extra Armor
+ItemDisplay[${varmap} STAT496>0]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT496>1]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT496>2]: %NAME%{%NAME%•}%CONTINUE%
+// Extra Crafting
+ItemDisplay[${varmap} STAT497>0]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT497>1]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT497>2]: %NAME%{%NAME%•}%CONTINUE%
+// Extra Charms
+ItemDisplay[${varmap} STAT502>0]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT502>1]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[${varmap} STAT502>2]: %NAME%{%NAME%•}%CONTINUE%

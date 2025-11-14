@@ -32,7 +32,7 @@
 //     13. Skill Modifying Items (pointmods)
 //     14. Scrolls & Potions
 //     15. Keys
-//         15.1 Runeword Info
+//         15.1 General Info
 //         15.2 Navigation Hints
 //     16. Gems & Runes
 //         16.1 Gems
@@ -83,7 +83,6 @@ ItemDisplay[box FILTLVL=5]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Setting
 ItemDisplay[box FILTLVL=6]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%6 - %ORANGE%Strict Filter%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=7]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%7 - %ORANGE%Strict Filter %WHITE%- %RED%w/o Potions%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=8]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%8 - %RED%Max-Strictness Filter%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
-
 
 //----------------------------------------------------------------------------------------------------------------
 // 2. Common Aliases
@@ -1491,15 +1490,24 @@ Alias[MEDIUM]: (tbl OR ztb OR utc OR mbt OR xmb OR umb OR scl OR xcl OR ucl OR t
 // Heavy: Unlimited strength requirement
 Alias[HEAVY]: (hbl OR zhb OR uhc OR hbt OR xhb OR uhb OR aar OR xar OR uar OR hgl OR xhg OR uhg OR crn OR xrn OR urn OR ba5 OR baa OR baf OR tow OR xow OR uow OR tbt OR xtb OR utb OR ful OR xul OR uul OR gth OR xth OR uth OR plt OR xlt OR ult OR ghm OR xhm OR uhm OR ba4 OR ba9 OR bae OR gts OR xts OR uts OR fld OR xld OR uld OR spl OR xpl OR upl OR chn OR xhn OR uhn)
 
+// Utility items where base stats may not matter
+// Pointmodded items: (STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON OR DAGGER OR CLUB)
+
+Alias[CTABASE]: ((1H AND SOCKETS=5) OR (SOCKETS=0 AND (2ax OR 92a OR 72a OR fla OR 9fl OR 7fl OR wsp OR 9ws OR 7ws)))
+Alias[UTILITY]: ((POINTMOD) OR (CTABASE) OR leg) // these parens around CTABASE are necessary - something weird about how aliases strip parens
+
+ItemDisplay[UTILITY]: utility
+ItemDisplay[FIELD !(UTILITY)]: not utility
+
 // Hide inferior items
-ItemDisplay[FIELD (ARMOR OR WEAPON) INF !POINTMOD !leg FiltLVL>1]: {%FILTERWARN%}
-ItemDisplay[!FIELD (ARMOR OR WEAPON) INF !POINTMOD !leg FiltLVL>1]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD (ARMOR OR WEAPON) INF !UTILITY FiltLVL>1]: {%FILTERWARN%}
+ItemDisplay[!FIELD (ARMOR OR WEAPON) INF !UTILITY FiltLVL>1]: %NAME%{%FILTERWARN%}
 
 // Hide normal and exceptional bases
-ItemDisplay[FIELD NMAG !RW !POINTMOD !leg NORM FILTLVL>3]: {%FILTERWARN%}
-ItemDisplay[!FIELD NMAG !RW !POINTMOD !leg NORM FILTLVL>3]: %NAME%{%FILTERWARN%}
-ItemDisplay[FIELD NMAG !RW !POINTMOD !leg EXC FILTLVL>5]: {%FILTERWARN%}
-ItemDisplay[!FIELD NMAG !RW !POINTMOD !leg EXC FILTLVL>5]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG !RW !UTILITY NORM FILTLVL>3]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW !UTILITY NORM FILTLVL>3]: %NAME%{%FILTERWARN%}
+ItemDisplay[FIELD NMAG !RW !UTILITY EXC FILTLVL>5]: {%FILTERWARN%}
+ItemDisplay[!FIELD NMAG !RW !UTILITY EXC FILTLVL>5]: %NAME%{%FILTERWARN%}
 
 // Hide non-magical equipment that can't be used for runewords.
 ItemDisplay[FIELD NMAG (GLOVES OR BOOTS OR BELT OR SOCKETS=1) FILTLVL>1]: {%FILTERWARN%}
@@ -1532,8 +1540,6 @@ ItemDisplay[FIELD MAG !ID (ARMOR OR WEAPON) !(aqv OR cqv) !POINTMOD !(SUP OR ETH
 ItemDisplay[!FIELD MAG !ID (ARMOR OR WEAPON) !(aqv OR cqv) !POINTMOD !(SUP OR ETH) FILTLVL>5]: %NAME%{%FILTERWARN%}
 
 // Highlight ideal armor bases
-
-
 ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) VLIGHT]: %NAME% %LIGHT_GRAY%(VLight)%CONTINUE%
 ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) LIGHT]: %NAME% %LIGHT_GRAY%(Light)%CONTINUE%
 ItemDisplay[SBASE ELT NMAG !POINTMOD (HELM OR CHEST OR SHIELD OR WEAPON) MEDIUM]: %NAME% %LIGHT_GRAY%(Medium)%CONTINUE%
@@ -1547,6 +1553,10 @@ ItemDisplay[BBASE (MAG OR RARE) HEAVY]: %NAME% %ORANGE%(Heavy)%CONTINUE%
 ItemDisplay[NMAG !RW (6cs OR 6bs OR 6ws) (SOCKETS=0 OR SOCKETS=4)]: %NAME% %LIGHT_GRAY%(Infinity){%NAME%%CL%%LIGHT_GRAY%Infinity: Ber•Mal•Ber•Ist}%CONTINUE%
 ItemDisplay[NMAG !RW 7cr (SOCKETS=0 OR SOCKETS=5) EDAM>13 ETH]: %NAME% %LIGHT_GRAY%(Zenith){%NAME%%CL%%LIGHT_GRAY%Zenith: Jah•Zod•Ort•Thul•Ral}%CONTINUE%
 ItemDisplay[NMAG !RW 7cr (SOCKETS=0 OR SOCKETS=5) EDAM>13 !ETH]: %NAME% %LIGHT_GRAY%(Doom){%NAME%%CL%%LIGHT_GRAY%Doom: Hel•Ohm•Um•Lo•Cham}%CONTINUE%
+ItemDisplay[NMAG !RW 7kr (SOCKETS=0 OR SOCKETS=3) !ETH SK73=3]: %NAME% %LIGHT_GRAY%(Venom){%NAME%%CL%%LIGHT_GRAY%Venom: Tal•Dol•Mal}%CONTINUE%
+ItemDisplay[NMAG !RW (7sr OR 7br OR 7s8 OR 7wc) (SOCKETS=0 OR SOCKETS=4) EDAM>13 ETH]: %NAME% %LIGHT_GRAY%(Pride){%NAME%%CL%%LIGHT_GRAY%Pride: Cham•Sur•Io•Lo}%CONTINUE%
+ItemDisplay[NMAG !RW (CTABASE) !ETH]: %NAME% %LIGHT_GRAY%(CtA){%NAME%%CL%%LIGHT_GRAY%Call to Arms: Amn•Ral•Mal•Ist•Ohm}
+ItemDisplay[NMAG !RW CHEST (SOCKETS=0 OR SOCKETS=2) EDEF>0 ETH]: %NAME% %LIGHT_GRAY%(Prudence){%NAME%%CL%%LIGHT_GRAY%Prudence: Mal•Tir}%CONTINUE%
 
 
 //----------------------------------------------------------------------------------------------------------------

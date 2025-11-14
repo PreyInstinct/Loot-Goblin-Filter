@@ -1,0 +1,12 @@
+ItemDisplay[key]: %GRAY%key %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+
+//keys description in inventory
+ItemDisplay[key (${town} OR MAPID>132)]: %NAME%{%TAN%Pro-Tip%WHITE%: You can buy many}%CONTINUE%
+ItemDisplay[key (${town} OR MAPID>132)]: %NAME%{%ORANGE%Crafting %WHITE%Bases from Vendors%NL%%NAME%}%CONTINUE%
+ItemDisplay[key (${town} OR MAPID>132)]: %NAME%{%WHITE%Type %GRAY%"%TAN%.help%GRAY%" %WHITE%on chat to list useful commands%CL%%NL%%NAME%}%CONTINUE%
+
+// Skeleton Key
+ItemDisplay[rkey (${town} OR MAPID>132)]: %NAME%{%TAN%Note%WHITE%: You won't lose it in Cube recipes}%CONTINUE%
+
+// Hide keys at higher filter levels
+ItemDisplay[key ((FILTLVL>0 ASSASSIN) OR FILTLVL>1) !${town}]: {%NAME%}%CONTINUE%

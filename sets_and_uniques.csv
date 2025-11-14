@@ -1,0 +1,501 @@
+Order	Rarity	Base	Name	Tier	Eth Tier	Base Tier
+1	UNI	cm2	Hellfire Torch - Large Charm	S		0
+2	UNI	cm1	Annihilus - Small Charm	S		0
+3	UNI	cm3	Gheeds Fortune - Grand Charm	S		0
+4	UNI	jew	Rainbow Facet	S		0
+5	UNI	ram	The Third Eye - Amulet	S		0
+6	UNI	rar	Cage of the Unsullied - Boneweave	S		3
+7	UNI	rbe	Band of Skulls - Troll Belt	S		3
+8	UNI	amu	Amulet	S		0
+9	UNI	rin	Ring	S		0
+10	UNI	ci2	Kiras Guardian - Tiara	A		2
+11	UNI	ci3	Griffons Eye - Diadem	S		3
+12	UNI	am7	Lycanders Aim - Ceremonial Bow			3
+13	UNI	amb	Bloodravens Charge - Matriarchal Bow	B		3
+14	UNI	amc	Ebonbane - Grand Matron Bow	A		3
+15	UNI	am5	True Silver - Maiden Javelin	C	B	1
+16	UNI	ama	Titans Revenge - Ceremonial Javelin	A		2
+17	UNI	amf	Thunderstroke - Matriarchal Javelin	A		3
+18	UNI	am9	Lycanders Flank - Ceremonial Pike			2
+19	UNI	amd	Stoneraven - Matriarchal Spear			3
+20	UNI	ame	Zerae's Resolve - Matriarchal Pike	A		3
+21	UNI	9ar	Mage Slayer - Quhab			2
+22	UNI	9tw	Bartucs Cut-Throat - Greater Talons	B		2
+23	UNI	7wb	Jade Talon - Wrist Sword			3
+24	UNI	7xf	War Fist - Whispering Mirage	A		3
+25	UNI	7cs	Shadowkiller - Battle Cestus	B		3
+26	UNI	7lw	Firelizards Talons - Feral Claws	A		3
+27	UNI	7tw	Stalker's Cull - Runic Talons	A		3
+28	UNI	7qr	Aidans Scar - Scissors Suwayyah	S		3
+29	UNI	ba6	Cyclopean Roar - Jawbone Visor	B		2
+30	UNI	ba7	Wildspeaker - Lion Helm			2
+31	UNI	baa	Arreats Face - Slayer Guard	A		2
+32	UNI	bac	Wolfhowl - Fury Visor	A		3
+33	UNI	bad	Demonhorns Edge - Destroyer Helm			3
+34	UNI	bae	Halaberds Reign - Conqueror Crown	A		3
+35	UNI	baf	Raekor's Virtue - Guardian Crown	S		3
+36	UNI	dr2	Quetzalcoatl - Hawk Helm	B		1
+37	UNI	dr6	Fenris - Alpha Helm	A		2
+38	UNI	dra	Jalals Mane - Totemic Mask	A		2
+39	UNI	drb	Cerebus Bite - Blood Spirit			3
+40	UNI	drc	Denmother - Sun Spirit	A		3
+41	UNI	drd	Spirit Keeper - Earth Spirit	A		3
+42	UNI	dre	Ravenlore - Sky Spirit	A		3
+43	UNI	drf	Ursa's Nightmare - Dream Spirit	A		3
+44	UNI	ne6	Kalans Legacy - Mummified Trophy	B		2
+45	UNI	nea	Homunculus - Hierophant Trophy	A		2
+46	UNI	neg	Sacred Totem - Hellspawn Skull	A		3
+47	UNI	ned	Martyrdom - Overseer Skull	A		3
+48	UNI	nee	Boneflame - Succubus Skull	A		3
+49	UNI	nef	Darkforce - Spawn Bloodlord Skull	A		3
+50	UNI	pa3	Sankekurs Fall - Heraldic Shield			1
+51	UNI	pa9	Herald of Zakarum - Gilded Shield	A		2
+52	UNI	pac	Alma Negra - Sacred Rondache	A		3
+53	UNI	pae	Dragonscale - Zakarum Shield	A		3
+54	UNI	paf	Skywarden - Vortex Shield	A		3
+55	UNI	ob6	Tempest - Glowing Orb			2
+56	UNI	ob7	Skorn - Crystalline Globe			2
+57	UNI	oba	The Oculus - Swirling Crystal	A		2
+58	UNI	obc	Eschutas Temper - Eldritch Orb	A		3
+59	UNI	obf	Deaths Fathom - Dimensional Shard	S		3
+60	UNI	qui	Greyform - Quilted Armor			1
+61	UNI	lea	Blinkbats Form - Leather Armor			1
+62	UNI	hla	The Centurion - Hard Leather Armor			1
+63	UNI	stu	Twitchthroe - Studded Leather			1
+64	UNI	rng	Darkglow - Ring Mail			1
+65	UNI	scl	Hawkmail - Scale Mail			1
+66	UNI	brs	Venom Ward - Breast Plate			1
+67	UNI	chn	Sparking Mail - Chain Mail			1
+68	UNI	spl	Iceblink - Splint Mail			1
+69	UNI	ltp	Heavenly Garb - Light Plate	B		1
+70	UNI	fld	Rockfleece - Field Plate			1
+71	UNI	plt	Boneflesh - Plate Mail	C		1
+72	UNI	gth	Rattlecage - Gothic Plate			1
+73	UNI	ful	Goldskin - Full Plate Mail			1
+74	UNI	aar	Silks of the Victor - Ancient Armor			1
+75	UNI	xui	The Spirit Shroud - Ghost Armor	C		2
+76	UNI	xea	Skin of the Vipermagi - Serpentskin Armor	A		2
+77	UNI	xla	Skin of the Flayed One - Demonhide Armor			2
+78	UNI	xtu	Iron Pelt - Trellised Armor			2
+79	UNI	xng	Spirit Forge - Linked Mail			2
+80	UNI	xcl	Crow Caw - Tigulated Mail	B		2
+81	UNI	xrs	Duriels Shell - Cuirass	C		2
+82	UNI	xhn	Shaftstop - Mesh Armor	A		2
+83	UNI	xpl	Skullders Ire - Russet Armor	B	A	2
+84	UNI	xtp	Que-Hegans Wisdom - Mage Plate	B		2
+85	UNI	xld	Toothrow - Sharktooth Armor	B		2
+86	UNI	xlt	Guardian Angel - Templar Coat	A		2
+87	UNI	xth	Atmas Wail - Embossed Plate	B		2
+88	UNI	xul	Black Hades - Chaos Armor			2
+89	UNI	xar	Corpsemourn - Ornate Plate	C		2
+90	UNI	uui	Ormus Robes - Dusk Shroud	A		3
+91	UNI	utu	Gladiators Bane - Wire Fleece	A		3
+92	UNI	ung	Wraithskin - Diamond Mail	A		3
+93	UNI	upl	Arkaines Valor - Balrog Skin	A		3
+94	UNI	utp	Purgatory - Archon Plate	A	S	3
+95	UNI	uld	Leviathan - Kraken Shell	A		3
+96	UNI	uth	Dark Abyss - Lacquered Plate	S		3
+97	UNI	uul	Steel Carapace - Shadow Plate	B	A	3
+98	UNI	uar	Templars Might/Tyraels Might - Sacred Armor	S		3
+99	UNI	lbl	Lenymo - Sash			1
+100	UNI	vbl	Snakecord - Light Belt			1
+101	UNI	mbl	Nightsmoke - Belt			1
+102	UNI	tbl	Goldwrap - Heavy Belt	C		1
+103	UNI	hbl	Bladebuckle - Plated Belt	C		1
+104	UNI	zlb	String of Ears - Demonhide Sash	A		2
+105	UNI	zvb	Razortail - Sharkskin Belt	A		2
+106	UNI	zmb	Glooms Trap - Mesh Belt			2
+107	UNI	ztb	Snowclash - Battle Belt	A		2
+108	UNI	zhb	Thundergods Vigor - War Belt	A		2
+109	UNI	ulc	Arachnid Mesh - Spiderweb Sash	S		3
+110	UNI	uvc	Nosferatus Coil - Vampirefang Belt	A		3
+112	UNI	umc	Verdungos Hearty Cord - Mithril Coil	A		3
+113	UNI	uhc	Siggard's Staunch - Colossus Girdle	A	S	3
+114	UNI	lbt	Hotspur - Boots	A		1
+115	UNI	vbt	Gorefoot - Heavy Boots			1
+116	UNI	mbt	Treads of Cthon - Chain Boots			1
+117	UNI	tbt	Goblin Toe - Light Plated Boots	B		1
+118	UNI	hbt	Tearhaunch - Greaves			1
+119	UNI	xlb	Infernostride - Demonhide Boots	C		2
+120	UNI	xvb	Waterwalk - Sharkskin Boots	A		2
+121	UNI	xmb	Silkweave - Mesh Boots	B		2
+122	UNI	xtb	War Traveler - Battle Boots	S		2
+123	UNI	xhb	Gore Rider - War Boots	A		3
+124	UNI	ulb	Merman's Spocket - Wyrmhide Boots	B		3
+125	UNI	uvb	Sandstorm Trek - Scarabshell Boots	C	B	3
+126	UNI	umb	Marrowwalk - Boneweave Boots	C		3
+127	UNI	utb	Itheraels Path - Mirrored Boots	S		3
+128	UNI	uhb	Shadow Dancer - Myrmidon Greaves	A		3
+129	UNI	lgl	The Hand of Broc - Leather Gloves			1
+130	UNI	vgl	Bloodfist - Heavy Gloves			1
+131	UNI	mgl	Chance Guards - Chain Gloves	C		1
+132	UNI	tgl	Magefist - Light Gauntlets	C		1
+133	UNI	hgl	Frostburn - Gauntlets	C		1
+134	UNI	xlg	Venom Grip - Demonhide Gloves			2
+135	UNI	xvg	Gravepalm - Sharkskin Gloves			2
+136	UNI	xmg	Ghoulhide - Heavy Bracers			2
+137	UNI	xtg	Lava Gout - Battle Gauntlets	C		2
+138	UNI	xhg	Hellmouth - War Gauntlets	C		2
+139	UNI	ulg	Titans Grip - Bramble Mitts	A		3
+140	UNI	uvg	Draculs Grasp - Vampirebone Gloves	A		3
+141	UNI	umg	Soul Drainer - Vambraces	A		3
+142	UNI	utg	Occultist - Crusader Gauntlets	S		3
+143	UNI	uhg	Steelrend - Ogre Gauntlets	A		3
+144	UNI	cap	Biggins Bonnet - Cap			1
+145	UNI	skp	Tarnhelm - Skull Cap			1
+146	UNI	hlm	Coif of Glory - Helm			1
+147	UNI	fhl	Duskdeep - Full Helm			1
+148	UNI	ghm	Howltusk - Great Helm			1
+149	UNI	msk	The Face of Horror - Mask			1
+150	UNI	crn	Undead Crown - Crown			1
+151	UNI	bhm	Wormskull - Bone Helm			1
+152	UNI	xap	Peasant Crown - War Hat			2
+153	UNI	xkp	Rockstopper - Sallet			2
+154	UNI	xlm	Stealskull - Casque			2
+155	UNI	xhl	Darksight Helm - Basinet	C		2
+156	UNI	xhm	Valkyrie Wing - Winged Helm	A		2
+157	UNI	xsk	Blackhorns Face - Death Mask			2
+158	UNI	xrn	Crown of Thieves - Grand Crown	C		2
+159	UNI	xh9	Vampire Gaze - Grim Helm	A		2
+160	UNI	uap	Harlequin Crest - Shako	S		3
+161	UNI	ulm	Steel Shade - Armet	A		3
+162	UNI	uhl	Overlords Helm - Giant Conch	S		3
+163	UNI	uhm	Veil of Steel/Nightwings Veil - Spired Helm	S		3
+164	UNI	usk	Andariels Visage - Demonhead	A		3
+165	UNI	urn	Crown of Ages - Corona	S		3
+166	UNI	uh9	Giant Skull - Bone Visage	A		3
+167	UNI	buc	Pelta Lunata - Buckler			1
+168	UNI	sml	Umbral Disk - Small Shield			1
+169	UNI	lrg	Stormguild - Large Shield			1
+170	UNI	kit	Steelclash - Kite Shield			1
+171	UNI	spk	Swordback Hold - Spiked Shield			1
+172	UNI	tow	Bverrit Keep - Tower Shield			1
+173	UNI	bsh	Wall of the Eyeless - Bone Shield			1
+174	UNI	gts	The Ward - Gothic Shield			1
+175	UNI	xuc	Visceratuant Defender - Defender			2
+176	UNI	xml	Mosers Blessed Circle - Round Shield			2
+177	UNI	xrg	Stormchaser - Scutum	C		2
+178	UNI	xpk	Lance Guard - Barbed Shield			2
+179	UNI	xit	Tiamats Rebuke - Dragon Shield	C		2
+180	UNI	xsh	Lidless Wall - Grim Shield	A		2
+181	UNI	xow	Gerkes Sanctuary - Pavise	A		2
+182	UNI	xts	Radaments Sphere - Ancient Shield			2
+183	UNI	uml	Blackoak Shield - Luna	B		3
+184	UNI	urg	Twilights Reflection - Hyperion	A		3
+185	UNI	uit	Stormshield - Monarch	S		3
+186	UNI	upk	Spike Thorn - Blade Barrier	B		3
+187	UNI	uow	Medusas Gaze - Aegis	A		3
+188	UNI	ush	Head Hunters Glory - Troll Nest	B		3
+189	UNI	uts	Spirit Ward - Ward	A		3
+190	UNI	hax	The Gnasher - Hand Axe			1
+191	UNI	axe	Deathspade - Axe			1
+192	UNI	2ax	Bladebone - Double Axe			1
+193	UNI	mpi	Skull Splitter - Military Pick			1
+194	UNI	wax	Rakescar - War Axe			1
+195	UNI	lax	Axe of Fechmar - Large Axe			1
+196	UNI	bax	Goreshovel - Broad Axe			1
+197	UNI	btx	The Chieftain - Battle Axe			1
+198	UNI	gax	Brainhew - Great Axe			1
+199	UNI	gix	Humongous - Giant Axe			1
+200	UNI	9ha	Coldkill - Hatchet			2
+201	UNI	9ax	Butchers Pupil - Cleaver			2
+202	UNI	92a	Islestrike -  Twin Axe			2
+203	UNI	9mp	Pompeiis Wrath - Crowbill			2
+204	UNI	9wa	Guardian Naga - Naga			2
+205	UNI	9la	Warlords Trust - Military Axe	C	A	2
+206	UNI	9ba	Spellsteel - Bearded Axe			2
+207	UNI	9bt	Stormrider - Tabar			2
+208	UNI	9ga	Boneslayer Blade - Gothic Axe			2
+209	UNI	9gi	The Minotaur - Ancient Axe			2
+210	UNI	7ha	Razors Edge - Tomahawk	B	A	3
+211	UNI	72a	Rune Master - Ettin Axe			3
+212	UNI	7mp	Cranebeak - War Spike			3
+213	UNI	7wa	Death Cleaver - Berserker Axe	A	S	3
+214	UNI	7ba	Ethereal Edge - Silver-Edged Axe			3
+215	UNI	7bt	Hellslayer - Decapitator	B		3
+216	UNI	7ga	Messerschmidts Reaver - Champion Axe	C	B	3
+217	UNI	7gi	Executioners Justice - Glorious Axe	C	A	3
+218	UNI	sbw	Pluckeye - Short Bow			1
+219	UNI	hbw	Witherstring - Hunters Bow			1
+220	UNI	lbw	Raven Claw - Long Bow			1
+221	UNI	cbw	Rogues Bow - Composite Bow			1
+222	UNI	sbb	Stormstrike - Short Battle Bow			1
+223	UNI	lbb	Wizendraw - Long Battle Bow			1
+224	UNI	swb	Hellclap - Short War Bow			1
+225	UNI	lwb	Blastbark - Long War Bow			1
+226	UNI	8sb	Skystrike - Edge Bow			2
+227	UNI	8hb	Riphook - Razor Bow			2
+228	UNI	8lb	Kuko Shakaku - Cedar Bow			2
+229	UNI	8cb	Endlesshail - Double Bow			2
+230	UNI	8s8	Witchwild String - Short Siege Bow			2
+231	UNI	8l8	Cliffkiller - Large Siege Bow			2
+232	UNI	8sw	Magewrath - Rune Bow			2
+233	UNI	8lw	Goldstrike - Arch Gothic Bow			2
+234	UNI	6l7	Eaglehorn - Crusader Bow			3
+235	UNI	6sw	Widowmaker - Ward Bow			3
+236	UNI	6lw	Windforce - Hydra Bow	S		3
+237	UNI	lxb	Leadcrow - Light Crossbow			3
+238	UNI	mxb	Ichorsting - Crossbow			1
+239	UNI	hxb	Hellcast - Heavy Crossbow			1
+240	UNI	rxb	Doomslinger - Repeating Crossbow			1
+241	UNI	8lx	Langer Briser - Arbalest			2
+242	UNI	8mx	Pus Spitter - Siege Crossbow	C		2
+243	UNI	8hx	Buriza-Do Kyanon - Ballista	B		2
+244	UNI	8rx	Demon Machine - Chu-Ko-Nu	C		2
+245	UNI	6hx	Hellrack - Colossus Crossbow	B		3
+246	UNI	6rx	Gut Siphon - Demon Crossbow			3
+247	UNI	dgr	Gull Dagger			1
+248	UNI	dir	The Diggler - Dirk			1
+249	UNI	kri	The Jade Tan Do - Kris			1
+250	UNI	bld	Spectral Shard - Blade			1
+251	UNI	9dg	Spineripper - Poignard			2
+252	UNI	9di	Heart Carver - Rondel			2
+253	UNI	9kr	Blackbogs Sharp - Cinquedeas			2
+254	UNI	9bl	Stormspike - Stiletto			2
+255	UNI	7dg	Wizardspike - Bone Knife			3
+256	UNI	7di	Shatterblade - Mithril Point	A		3
+257	UNI	7kr	Fleshripper - Fanged Knife	B		3
+258	UNI	7bl	Ghostflame - Legend Spike	B		3
+259	UNI	7s7	Demons Arch - Balrog Spear			3
+260	UNI	7gl	Wraith Flight - Ghost Glaive	B	A	3
+261	UNI	7ts	Gargoyles Bite - Winged Harpoon	A		3
+262	UNI	clb	Felloak - Club			1
+263	UNI	spc	Stoutnail - Spiked Club			1
+264	UNI	mac	Crushflange - Mace			1
+265	UNI	mst	Bloodrise - Morning Star			1
+266	UNI	fla	The Generals Tan Do Li Ga - Flail			1
+267	UNI	whm	Ironstone - War Hammer			1
+268	UNI	mau	Bonesnap - Maul	C	B	1
+269	UNI	gma	Steeldriver - Great Maul			1
+270	UNI	9cl	Dark Clan Crusher - Cudgel			2
+271	UNI	9sp	Fleshrender - Barbed Club			2
+272	UNI	9ma	Sureshrill Frost - Flanged Mace			2
+273	UNI	9mt	Moonfall - Jagged Star			2
+274	UNI	9fl	Baezils Vortex - Knout			2
+275	UNI	9wh	Earthshaker - Battle Hammer			2
+276	UNI	9m9	Bloodtree Stump - War Club			2
+277	UNI	9gm	The Gavel Of Pain - Martel de Fer	B	S	2
+278	UNI	7cl	Nords Tenderizer - Truncheon			3
+279	UNI	7sp	Demon Limb - Tyrant Club			3
+280	UNI	7mt	Baranars Star - Devil Star			3
+281	UNI	7fl	Horizons Tornado/Stormlash - Scourge	A		3
+282	UNI	7wh	Stone Crusher/Schaefers - Legendary Mallet	A	S	3
+283	UNI	7m7	Windhammer - Ogre Maul	C	A	3
+284	UNI	7gm	Earth Shifter/Cranium Basher - Thunder Maul	A	S	3
+285	UNI	bar	Dimoaks Hew - Bardiche			1
+286	UNI	vou	Steelgoad - Voulge			1
+287	UNI	scy	Soul Harvest - Scythe			1
+288	UNI	pax	The Battlebranch - Poleaxe			1
+289	UNI	hal	Woestave - Halberd			1
+290	UNI	wsc	The Grim Reaper - War Scythe			1
+291	UNI	9b7	The Meat Scraper - Lochaber Axe			2
+292	UNI	9vo	Blackleach Blade - Bill			2
+293	UNI	9s8	Athenas Wrath - Battle Scythe			2
+294	UNI	9pa	Pierre Tombale Couant - Partizan			2
+295	UNI	9h9	Husoldal Evo - Bec-de-Corbin			2
+296	UNI	9wc	Grims Burning Dead - Grim Scythe			2
+297	UNI	7o7	Bonehew - Ogre Axe			3
+298	UNI	7s8	The Reapers Toll - Thresher	A	S	3
+299	UNI	7pa	Tomb Reaver - Cryptic Axe	B		3
+300	UNI	7wc	Stormspire - Giant Thresher	A		3
+301	UNI	scp	Knell Striker - Scepter			1
+302	UNI	gsc	Rusthandle - Grand Scepter			1
+303	UNI	wsp	Stormeye - War Scepter			1
+304	UNI	9sc	Zakarums Hand - Rune Scepter			2
+305	UNI	9qs	The Fetid Sprinkler - Holy Water Sprinkler			2
+306	UNI	9ws	Hand of Blessed Light - Divine Scepter			2
+307	UNI	7sc	Heavens Light/The Redeemer - Mighty Scepter	B		3
+308	UNI	7qs	Akarat's Devotion - Seraph Rod	S		3
+309	UNI	7ws	Astreons Iron Ward - Caduceus	A		3
+310	UNI	spr	The Dragon Chang - Spear			1
+311	UNI	tri	Razortine - Trident			1
+312	UNI	brn	Bloodthief - Brandistock			1
+313	UNI	spt	Lance of Yaggai - Spetum			1
+314	UNI	pik	The Tannr Gorerod - Pike			1
+315	UNI	9sr	The Impaler - War Spear			2
+316	UNI	9tr	Kelpie Snare - Fuscina			2
+317	UNI	9br	Soulfeast Tine - War Fork			2
+318	UNI	9st	Hone Sundan - Yari	C	B	2
+319	UNI	9p9	Spire of Honor - Lance			2
+320	UNI	7sr	Ariocs Needle - Hyperion Spear	C	A	3
+321	UNI	7br	Viperfork - Mancatcher	B		3
+322	UNI	7st	Uldyssians Awakening - Ghost Spear	A	S	3
+323	UNI	7p7	Steel Pillar - War Pike	A	S	3
+324	UNI	sst	Bane Ash - Short Staff			1
+325	UNI	lst	Serpent - Lord Long Staff			1
+326	UNI	cst	Spire of Lazarus - Gnarled Staff			1
+327	UNI	bst	The Salamander - Battle Staff			1
+328	UNI	wst	The Iron Jang Bong - War Staff			1
+329	UNI	8ss	Razorswitch - Jo Staff			2
+330	UNI	8ls	Ribcracker - Quarterstaff	C	A	2
+331	UNI	8cs	Chromatic Ire - Cedar Staff			2
+332	UNI	8bs	Warpspear - Gothic Staff			2
+333	UNI	8ws	Skull Collector - Rune Staff			2
+334	UNI	6cs	Ondals Wisdom - Elder Staff			3
+335	UNI	6bs	Brimstone Rain - Shillelagh	S		3
+336	UNI	6ws	Mang Songs Lesson - Archon Staff	S		3
+337	UNI	ssd	Rixots Keen - Short Sword			1
+338	UNI	scm	Blood Crescent - Scimitar			1
+339	UNI	sbr	Skewer of Krintiz - Sabre			1
+340	UNI	flc	Gleamscythe - Falchion			1
+341	UNI	bsd	Griswolds Edge - Broad Sword			1
+342	UNI	lsd	Hellplague - Long Sword			1
+343	UNI	wsd	Culwens Point - War Sword			1
+344	UNI	2hs	Shadowfang - Two-handed Sword			1
+345	UNI	clm	Soulflay - Claymore			1
+346	UNI	gis	Kinemils Awl - Giant Sword			1
+347	UNI	bsw	Blacktongue - Bastard Sword			1
+348	UNI	flb	Ripsaw - Flamberge			1
+349	UNI	gsd	The Patriarch - Great Sword			1
+350	UNI	9ss	Bloodletter - Gladius	C		2
+351	UNI	9sm	Coldsteel Eye - Cutlass			2
+352	UNI	9sb	Hexfire - Shamshir			2
+353	UNI	9fc	Blade of Ali Baba - Tulwar			2
+354	UNI	9cr	Ginthers Rift - Dimensional Blade			2
+355	UNI	9bs	Headstriker - Battle Sword	C		2
+356	UNI	9ls	Plague Bearer - Rune Sword			2
+357	UNI	9wd	The Atlantean - Ancient Sword			2
+358	UNI	92h	Crainte Vomir - Espandon			2
+359	UNI	9cm	Bing Sz Wang - Dacian Falx			2
+360	UNI	9gs	The Vile Husk - Tusk Sword			2
+361	UNI	9b9	Cloudcrack - Gothic Sword			2
+362	UNI	9fb	Todesfaelle Flamme - Zweihander			2
+363	UNI	9gd	Swordguard - Executioner Sword			2
+364	UNI	7sm	Djinn Slayer - Ataghan			3
+365	UNI	7sb	Bloodmoon - Elegant Blade			3
+366	UNI	7cr	Lightsabre/Azurewrath - Phase Blade	A		3
+367	UNI	7bs	Hadriels Hand - Conquest Sword	S		3
+368	UNI	7ls	Frostwind - Cryptic Sword	B		3
+369	UNI	7cm	Leorics Mithril Bane - Highland Blade	B	S	3
+370	UNI	7gs	Flamebellow - Balrog Blade			3
+371	UNI	7b7	Doombringer - Champion Sword	B	A	3
+372	UNI	7fb	Odium - Colossus Sword	B	S	3
+373	UNI	7gd	The Grandfather - Colossus Blade	S		3
+374	UNI	9tk	Deathbit - Battle Dart			2
+375	UNI	9ta	The Scalper - Francisca			2
+376	UNI	9b8	Achilles Strike - Hurlbat	B	A	2
+377	UNI	7bk	Warshrike - Winged Knife	C	A	3
+378	UNI	7ta	Gimmershred - Flying Axe			3
+379	UNI	7b8	Lacerator - Winged Axe	C	A	3
+380	UNI	wnd	Torch of Iro - Wand			1
+381	UNI	ywn	Maelstrom - Yew Wand			1
+382	UNI	bwn	Gravenspine - Bone Wand			1
+383	UNI	gwn	Umes Lament - Grim Wand			1
+384	UNI	9wn	Suicide Branch - Burnt Wand			1
+385	UNI	9yw	Carin Shard - Petrified Wand			1
+386	UNI	9bw	Arm of King Leoric - Tomb Wand	A		1
+387	UNI	9gw	Blackhand Key - Grave Wand			1
+388	UNI	7bw	Boneshade - Lich Wand	A		1
+389	UNI	7gw	Deaths Web - Unearthed Wand	S		1
+390	SET	amu	Amulet	A		0
+391	SET	rin	Ring	A		0
+392	SET	cap	Infernal/Sanders - Cap			1
+393	SET	crn	Iratha/Milabrega - Crown			1
+394	SET	mbl	Hsarus/Hwanin - Belt			1
+395	SET	tbl	Infernal/Iratha - Heavy Belt			1
+396	SET	tgl	Arctic/Iratha - Light Gauntlet			1
+397	SET	vbt	Cow King/Sander - Heavy Boots			1
+398	SET	rng	Angelic Mantle - Ring Mail			1
+399	SET	sbr	Angelic Sickle - Sabre			1
+400	SET	skp	Arcanna's Head - Skull Cap			1
+401	SET	ltp	Arcanna's Flesh - Light Plate			1
+402	SET	wst	Arcanna's Deathwand - War Staff			1
+403	SET	qui	Arctic Furs - Quilted Armor			1
+404	SET	vbl	Arctic Binding - Light Belt			1
+405	SET	swb	Arctic Horn - Short War Bow			1
+406	SET	hlm	Berserker's Headgear - Helm			1
+407	SET	spl	Berserker's Hauberk - Splint Mail			1
+408	SET	2ax	Berserker's Hatchet - Double Axe			1
+409	SET	msk	Cathan's Visage - Mask			1
+410	SET	chn	Cathan's Mesh - Chain Mail			1
+411	SET	bst	Cathan's Rule - Battle Staff			1
+412	SET	gsc	Civerb's Cudgel - Grand Scepter			1
+413	SET	lrg	Civerb's Ward - Large Shield			1
+414	SET	lsd	Cleglaw's Tooth - Long Sword			1
+415	SET	mgl	Cleglaw's Pincers - Chain Gloves			1
+416	SET	sml	Cleglaw's Claw - Small Shield			1
+417	SET	wsd	Death's Touch - War Sword			1
+418	SET	lgl	Death's Hand - Leather Gloves			1
+419	SET	lbl	Death's Guard - Sash			1
+420	SET	buc	Hsarus Iron Fist - Buckler			1
+421	SET	mbt	Hsarus Iron Heel - Chain Boots			1
+422	SET	dgr	Infernal Spine - Dagger			1
+423	SET	bsd	Isenhart's Lightbrand - Broad Sword			1
+424	SET	fhl	Isenhart's Horns - Full Helm			1
+425	SET	brs	Isenhart's Case - Breast Plate			1
+426	SET	gts	Isenhart's Parry - Gothic Shield			1
+427	SET	aar	Milabrega's Robe - Ancient Armor			1
+428	SET	kit	Milabrega's Orb - Kite Shield			1
+429	SET	wsp	Milabrega's Rod - War Scepter			1
+430	SET	ghm	Sigon's Visor - Great Helm			1
+431	SET	gth	Sigon's Shelter - Gothic Plate			1
+432	SET	hbt	Sigon's Sabot - Greaves			1
+433	SET	tow	Sigon's Guard - Tower Shield			1
+434	SET	hbl	Sigon's Wrap - Plated Belt			1
+435	SET	hgl	Sigon's Gage - Gauntlets			1
+436	SET	bhm	Tancred's Skull - Bone Helm			1
+437	SET	ful	Tancred's Spine - Full Plate Mail			1
+438	SET	lbt	Tancred's Hobnails - Boots			1
+439	SET	mpi	Tancred's Crowbill - Military Pick			1
+440	SET	lbb	Vidala's Barb Long - Battle Bow			1
+441	SET	lea	Vidala's Ambush - Leather Armor			1
+442	SET	tbt	Vidala's Fetlock - Light Plated Boots			1
+443	SET	dr8	Aldur's Stony Gaze - Hunters Guise			1
+444	SET	xtb	Aldur's Advance - Battle Boots			1
+445	SET	uul	Aldur's Deception - Shadow Plate			1
+446	SET	9mt	Aldur's Rhythm - Jagged Star			2
+447	SET	7gd	Bul-Katho's Sacred Charge - Colossus Blade	B	A	3
+448	SET	7fb	Bul-Katho's Tribal Guardian - Colossus Sword	B	A	3
+449	SET	xap	Cow King's Horns - War Hat			2
+450	SET	stu	Cow King's Hide - Studded Leather			1
+451	SET	ulg	Laying of Hands - Bramble Mitts			3
+452	SET	uui	Dark Adherent - Dusk Shroud			3
+453	SET	xlb	Rite of Passage - Demonhide Boots			2
+454	SET	umc	Credendum - Mithril Coil			3
+455	SET	xar	Griswold's Heart - Ornate Plate	C		2
+456	SET	urn	Griswold's Valor - Corona	A		3
+457	SET	7ws	Griswold's Redemption - Caduceus	A		3
+458	SET	paf	Griswold's Honor - Vortex Shield	A		3
+459	SET	xrs	Haemosus Adament - Cuirass			2
+460	SET	7ma	Dangoons Teaching - Reinforced Mace			3
+461	SET	uts	Taebaeks Glory - Ward			3
+462	SET	uhm	Ondals Almighty - Spired Helm			3
+463	SET	xrn	Hwanin's Splendor - Grand Crown			2
+464	SET	9vo	Hwanin's Justice - Bill			2
+465	SET	xcl	Hwanin's Refuge - Tigulated Mail			2
+466	SET	ba5	Immortal Kings Will - Avenger Guard	C		2
+467	SET	7m7	Immortal Kings Stone Crusher - Ogre Maul	B	A	3
+468	SET	uar	Immortal Kings Soul Cage - Sacred Armor	A		3
+469	SET	zhb	Immortal Kings Detail - War Belt	C		2
+470	SET	xhg	Immortal Kings Forge - War Gauntlets	C		2
+471	SET	xhb	Immortal Kings Pillar - War Boots	C		2
+472	SET	ci3	Mavinas True Sight - Diadem	A		3
+473	SET	amc	Mavinas Caster - Grand Matron Bow	C		3
+474	SET	uld	Mavinas Embrace - Kraken Shell	C		3
+475	SET	xtg	Mavinas Icy Clutch - Battle Gauntlets	C		2
+476	SET	zvb	Mavinas Tenet - Sharkskin Belt	C		2
+477	SET	xh9	Natalya's Totem - Grim Helm	C		2
+478	SET	7qr	Natalya's Mark - Scissors Suwayyah	A		3
+479	SET	ucl	Natalya's Shadow - Loricated Mail	C		3
+480	SET	xmb	Natalya's Soul - Mesh Boots	C		2
+481	SET	ci0	Naj's Circlet - Circlet			1
+482	SET	ult	Naj's Light Plate - Hellforge Plate			3
+483	SET	6cs	Naj's Puzzler - Elder Staff			3
+484	SET	xhm	Guillaumes Face - Winged Helm			2
+485	SET	xml	Whitstans Guard - Round Shield			2
+486	SET	xvg	Magnus Skin - Sharkskin Gloves			2
+487	SET	ztb	Wilhelms Pride - Battle Belt			2
+488	SET	bwn	Sanders Superstition - Bone Wand			1
+489	SET	vgl	Sanders Taboo - Heavy Gloves			1
+490	SET	xhl	Sazabis Mental Sheath - Basinet	C		2
+491	SET	7ls	Sazabis Cobalt Redeemer - Cryptic Sword	C	A	3
+492	SET	upl	Sazabis Ghost Liberator - Balrog Skin	C		3
+493	SET	oba	Tal Rasha's Lidless Eye - Swirling Crystal	C		2
+494	SET	xsk	Tal Rasha's Horadric Crest - Death Mask	C		2
+495	SET	uth	Tal Rasha's Guardianship - Lacquered Plate	A		3
+496	SET	zmb	Tal Rasha's Fine-Spun Cloth - Mesh Belt	C		2
+497	SET	uh9	Trang-Oul's Guise - Bone Visage	C		3
+498	SET	xul	Trang-Oul's Scales - Chaos Armor	C		2
+499	SET	ne9	Trang-Oul's Wing - Cantor Trophy	C		2
+500	SET	utc	Trang-Oul's Girthquake - Troll Belt	C		3
+501	SET	xmg	Trang-Oul's Claws - Heavy Bracers	C		2

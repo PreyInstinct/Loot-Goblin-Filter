@@ -1,0 +1,3 @@
+// Note on imbuing phase blade
+ItemDisplay[7cr NMAG SOCK=0]: %NAME%{%TAN%grant a %GOLD%Legendary Weapon %TAN%of the Paladin%CL%%GRAY%Psst... %TAN%It is said that %YELLOW%Imbuing %TAN%this base may%CL%%TAN%Note%WHITE%: You can %YELLOW%Imbue %WHITE%it using Charsi quest%CL%%NAME%}%CONTINUE%
+
