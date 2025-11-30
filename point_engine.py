@@ -10,10 +10,10 @@ from pysat.solvers import Glucose3
 def learn_regions(disjoint_config = 'config/item_groups_disjoint.csv',
                   subset_config = 'config/item_groups_subset.csv',
                   composite_config = 'config/item_groups_composites.csv',
-                  prefix_config = 'config/prefixes_config.csv',
-                  suffix_config = 'config/suffixes_config.csv',
-                  craft_config = 'config/crafting_config.csv',
-                  point_config = 'config/points_config.csv',
+                  prefix_config = 'config/prefixes.csv',
+                  suffix_config = 'config/suffixes.csv',
+                  craft_config = 'config/crafting.csv',
+                  point_config = 'config/points.csv',
                   verbose = False):
     """
     Read various configuration files and produce a set of equivalency regions

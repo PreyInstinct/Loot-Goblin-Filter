@@ -1,57 +1,109 @@
 # Loot Goblin PD2 Loot-Filter
 
-This filter is forked from [Kryszard's PD2 Loot Filter](https://github.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter). Please see the documentation there regarding filter levels and other features not described here. Thank you, Kryszard, for all your good work.
+This filter was originally forked from [Kryszard's PD2 Loot Filter](https://github.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter), and still uses Kryszard's code for some features. Please see the documentation there regarding features not described here. Thank you, Kryszard, for all your good work.
+
+# Installation
+
+Download Loot_Goblin.filter from this repository to [your PD2 Directory]/filters/local. Then, from your PD2 launcher, navigate to "Item Filter Profiles" and select it from the Local Filter category.
+
+# Building from source
+
+The generation pipeline is written in Python3, and requires the PySat (python-sat) library.
+
+```
+git clone https://github.com/PreyInstinct/Loot-Goblin-Filter.git
+pip install -r requirements.txt
+python3 build_filter.py [target.filter] --verbose
+```
 
 # About
 
-This filter is still very much a work in progress. Some features may not be fully polished, and vestiges of obsolete features may linger.
+This filter is in a functional alpha state. Some features may not be fully polished, and vestiges of obsolete features may linger. It works well enough for me to use, however, and I will be refining the filter as I encounter inadequacies. Expect frequent updates during the early part of the season.
 
 ## Points
 
-The main feature this filter introduces is a visual point-based system for some item types (and hopefully most magic/rare types in the future.) This feature is designed to help you quickly sort out loot that might have some use or value from Charsi food. It is not intended to accurately assess the value of items or call out GG gear, but merely to signal if the full item description is even worth looking at.
+The main feature this filter introduces is a visual point-based system for randomly generated item types (magic, rare, and crafted.) This feature is designed to help you quickly sort out loot that might have some use or value from Charsi food. It is not intended to accurately assess the value of items or call out GG gear, but merely to signal if the full item description is even worth looking at.
 
 A point represents a well rolled affix - either a rare/highly sought after affix, a high roll on a desireable affix, or both. Not all points are equal, though I try to weight the most desireable affixes higher by making them worth multiple points, nor are points equivalent between item classes. The gray row of points shows you the maximum possible number of points (not including corruptions) for an item of a given type.
 
 Points are color coded by their broad utility class. Since you are usually trying to min-max your build, lots of the same or similar colored points will probably be better than "rainbow" arrays, but if something has a lot of points of any color on it you should probably take a look and assess for yourself.
 
-|Category           |Color      |Description                        |
-|-------------------|-----------|-----------------------------------|
-|Skills             |Gold       |Includes +% elemental damage       |
-|Speed              |Yellow     |IAS, FHR, FCR, FBR                 |
-|Physical Damage    |Red        |% ED and flat min/max              |
-|Damage Effects     |Coral      |CB, DS, wounds, etc                |
-|Elemental Damage   |Orange     |Flat elemental/magic damage        |
-|Magic Protection   |Purple     |Resistances & Magic Damage Reduced |
-|HP/MP              |Blue       |HP/MP, LL/ML, LaeK/MaeK            |
-|Physical Protection|Teal       |Defense, Block, & PDR              |
-|Statistics         |Dark Green |Str, Dex, Vit, Ene                 |
-|Etherealness       |Gray       |Ethereal w/ repair/indestructable  |
-|Other              |Sage       |AR, pierce, tele charges, etc      |
+|Category           |Color      |Description                                 |
+|-------------------|-----------|--------------------------------------------|
+|Etherealness       |Gray       |Ethereal w/ repair/indestructable           |
+|Physical Damage    |Red        |% ED and flat min/max                       |
+|Damage Effects     |Coral      |CB, DS, wounds, Amp Dmg proc, etc           |
+|Elemental Damage   |Orange     |Flat, mastery, pierce, Lower Res proc, etc  |
+|Skills             |Gold       |Skill bonuses and combos                    |
+|Speed              |Yellow     |IAS, FHR, FCR, FBR                          |
+|Statistics         |Dark Green |Str, Dex, Vit, Ene                          |
+|Other              |Sage       |AR, pierce, tele charges, etc               |
+|HP/MP              |Teal       |HP/MP, LL/ML, LaeK/MaeK                     |
+|Physical Protection|Blue       |Defense, Block, & PDR                       |
+|Magic Protection   |Purple     |Resistances & Magic Damage Reduced          |
 
-Point systems are currently implemented for:
- - Charms
- - Quivers
- - Jewels
- - Rings
- - Amulets
- - Gloves
- - Belts
- - Boots
- - Chests
- - Shields, including Paladin shields 
+## Configurable Features
+
+The point system and other features are configurable with the tab-separated ".csv" text files. I recommend opening these in a spreadsheet program like LibreOffice Calc or Microsoft Excel. The headers are just for human convenience and fields are hardcoded by column order, so don't go shuffling the columns about or creating new columns.
+
+### Point System Config Files
+
+`config/points.csv` Is the main file for adjusting point values.
+ - "Item Code": Filter syntax conditional statement you would use for creating an ItemDisplay rule.
+ - "Item Description": Human readable equivalent. Optional - not used internally.
+ - "Quality Requirements": Additional syntax conditionals that determine when a point is awarded, but does not create new classes of items (termed Regions in the machine learning algorithm). Most likely use case is applying points only when an item is ethereal.
+ - "Stat": Filter syntax attribute code or sum of attributes (e.g. STR+DEX). The vocabulary here must be *exactly* the same as the vocaulary used in `prefixes.csv`, `suffixes.csv`, and `crafting.csv`. So, for example, you must use the "STR" alias instead of "STAT0". When such synonyms exist, check the affix config files to see which version to use. In general, I tried to only use the named attribute codes, except for FOOLS.
+ - "Stat Description": Human readable equivalent. Optional - not used interrnally.
+ - "Point Color": One of the valid colors described in the filter documentation.
+ - "Point Category": Human readable classifier. Not currently used internally.
+ - "Thresholds": A tab separated list of the thresholds at which to award points. The resulting conditions will be of the form "STAT>T" for each threshold value. You can include the same threshold multiple times to award multiple points.
+
+`config/prefixes.csv`, `suffixes.csv`, and `crafting.csv`: Contain information regarding the highest level affixes possible. Redundancy is removed as much as possible, as build time increases exponentially with the number of affixes to search through, especially when there aree multiple affixes in the same group. Editting these files has the potential to break things in exciting ways with minor errors, so 
+do so with care. Let me know if something needs correction or updating and I will try to update these files.
+ - "Affix": The affix name. Maintained just for human readible attribution/debugging. These names don't show up in the final filter.
+ - "Affix Item Types": Categories as they appear on the Affixes wiki page. Human readable for convenience only.
+ - "Filter Definition": Filter sytax conditional used to define the items the affix can apply to. All terms must be defined in the `item_groups_*.csv` config files; you cannot use aliases here unless they are added there. Typos will result in exciting errors.
+ - "magic only": 1 if the affix can only apply to magic items, 0 or blank if it can apply to rares and crafts.
+ - "group": The item group. Correct groups are essential.
+ - "Stat": Filter syntax attribute code/s. Multiple attributes from the same affiixx should be separated with semi-colons (e.g. STAT123;STAT121 for AR and ED to Undead). This vocabulary must match exactly with the vocabulary used in `points.csv`.
+ - "Min Value": Not currently used, but maybe will be used for future features.
+ - "Max Value": The maximum value possible for "Stat", separated with ";" for multiple stats.
+ - "Attribute Description": Human readable affix description. Not used internally but some value is mandatory to prevent parsing errors.
+
+`config/item_groups_composites.csv` Defines item descriptors that are subsets of combinations of other descriptors. E.g. Amazon Weapons (ZON) is a category composed of part of spears, javelins, and bows (SPEAR OR JAV OR BOW). The left-most term is contained entirely within all terms to the right.
+
+`config/item_groups_subsets.csv` Defines item groups which are strict subsets of other groups. 1 if the group from row i is a subset of the group from column j, 0 or blank otherwise. Values above the diagonal (marked with "x"s) are not used, so ordering matters (supersets should always precede subsets).
+
+`config/item_groups_disjoint.csv` Defines item groups which are entirely disjoint (non-overlapping), through the inverse relationship (null values signify disjointness). 1 if any item exists that is both a member of row i and column j, 0 or blank otherwise. Values above the diagonal are not used (would be symetric anyways).
+
+### Other Config Files
+
+`sets_and_uniques.csv` Defines tier values for set and unique items. Blank fields indicate "D" tier, on a scale from "F" to "S". Lower tier sets and uniques will have less highlighting/notification, and at high filter levels low tier uniques will be filtered out. The name values here are displayed for unidentified items, so you can create a version without revealed sets & uniques by replacing the names with %BASENAME%.
+
+`All.skills` Defines the relationship between classes, skill trees, and skills; skill name abbreviations; and primary, support, and niche skills. Primary skills are given increased emphasis when they appear as pointmods.
+
+`hiding_highlighting.csv` Defines when certain items are hiden, notified, and given map markers.
+- "Rarity": Rarity conditional codes (i.e. NMAG, MAG, RARE, CRAFT, SET, UNI, RW).
+- "Property": NMAG properties (i.e. SUP ETH INF NORM EXC ELT)
+- "Group": Item groups (e.g. ARMOR, CLUB, amu). Some of these use build-level aliasing (e.g. "${alias}") defined in `aliases.py`.
+- "Descrition": Human readable group description for convenience.
+- "Filter Level": The filter level at which the category will start to be filtered. Odd filter levels are reserved for toggling potions on/off, so the actual filter level will be twice the value here.
+- "Marker Level": The size of the map marker when this group is notified, from 0 (no marker) to 4 (largest marker).
+- "Notification Level": The filter level at which the category will no longer be notified, from 0 (never notify) to 5 (always notify). Odd filter levels are reserved for toggling potions on/off, so the actual filter level will be twice the value here.
+
+### Advanced Aliasing
+
+Aliases are defined in aliases.py as Python string variables. They can be called in the filter source using "${ALIAS}", and will be substitued with the string value at build time.
+
+This is very similar to the filter's Aliasing functionality, but is significantly more flexible. First, these Python-level aliases may be nested inside each other (e.g. QUIVER = "(${ARROWS} OR ${BOLTS})" without breaking. Second, these are true variables and could be used to compose values dynamically.
+
+If you want to use this functionality for your own filter, `aliases.py` should be portable and fairly self-evident. Also grab the top level script `build_filter.py` if you don't want to implement your own pipeline. Just edit the "structure" and "file_header" in `build_filter.py` to point to your source filter file/s and define your aliases in `aliases.py`.
 
 ## Item Tier Superscripts
 
 Normal Item<sup>1</sup>
 Exceptional Item<sup>2</sup>
 Elite Item<sup>3</sup>
-
-## Magic Item Callouts
-
-Some magic items with useful affix combinations have their names completely changed and colored to draw attention to them. This is similar to Kryszard's "Shop Hunting" tips, but puts the information right at the top. Right now my approach is a little bespoke depending on the item type, so I may unify the style in the future. It should be easy to spot the following, though:
- - +3 skill gloves (w & w/o IAS)
- - +3 skill amulets (w & w/o good combo affixes)
- - Allres & FCR/DMG magic rings
 
 ## Skill Tags (Pointmods)
 
@@ -62,6 +114,7 @@ While generally very good, I have re-worked Kryszard's pointmod tags to suit my 
 Class-focused items don't have all +ALLSK, +CLSK (e.g. Paladin Skills), or +TABSK (e.g. Combat Skills) automods, with the exception of Amazon bows, which don't have +SK (single skill) automods, so there is no need to worry about these mods when hunting for bases. However, magic and rare items that combine +TABSK and +SK can be quite useful. Kryszard's approach to these is to add a "+High Skill Roll" tag on these items, which is quite reasonable considering these mods can't be seen until IDed. I like having this information in a consistent place (the name line), though, so I've opted to include them.
 
 ### New Skill Abbreviations
+
 I personally find the three letter skill abbreviations a bit obtuse. I think there are just too many skills, with many of them having very similar names, for a three letter system to be legible. I have thus implemented a slightly more complex, but hopefully more legible and intuitive system.
  - All Skills is ALL(caps).
  - Acronyms are also in ALLCAPS. E.g. SS (Shape Shifting), BO (Battle Orders), CDM (Claw & Dagger Mastery), ES (Energy Shield).
@@ -70,35 +123,12 @@ I personally find the three letter skill abbreviations a bit obtuse. I think the
  - Where possible, skills that have common words in the same tree are shortened as much as possible and always in the same way. E.g. Assasin "Dragon" skills are dTal, dClaw, dTail, and dFlt, while Amazon "Arrow" skills are magA, firA, colA, expA, iceA, gudA, immA, and frzA, and "Strike" skills are powA, chgS, litS, tigS, cbrS, PhoS, psnS.
  - Some simple skills are named after their primary affect, rather than the actual skill name. E.g. +def, +hp, +spd, +res, and bleed for Barb masteries, and +AR for Amazon's Penetrate.
 
-See All.skills for the full list of abbreviations.
+See `All.skills` for the full list of abbreviations.
 
-### Color Coding
+## Color Coding
 
-Skill bonuses use the D2 rarity colors: +1 is rendered blue, +2 is rendered yellow, and +3 is rendered gold.
+Many tags use the D2 rarity colors, including skill bonuses, superior ED bonuses, and more. For example, for skill bonuses +1 is rendered blue, +2 is rendered yellow, and +3 or higher is rendered gold. Simlarly, the skills themselves use the D2 rarity colors: single skills are white, skill tabs are blue, class skills are yellow, and all skills is gold.
 
-Simlarly, the skills themselves use the D2 rarity colors: single skills are white, skill tabs are blue, class skills are yellow, and all skills is gold.
-
-Last, the braces themselves use the same rarity colors to denote potentially desirable combos.
-
-First, I categorized the skills into a few types - most importantly "primary" skills, which are those skills that some build is likely to spam or try to maximize. You can see all the categorizations in All.skills. My knowledge is not encyclopedic, and I welcome suggestions for recategorization.
-
-For non-magic items (i.e. class-focused bases), the bonus to a primary skill and the total value of pointmods determines the color of the {braces}.
- - Gray: The item only has bonuses to non-primary skills, even if those bonuses are large.
- - White: +1-+2 in a primary skill.
- - Blue: +3 in a primary skill and a total of +3-5.
- - Yellow: +3 in a primary skill and a total of +6-7.
- - Gold: +3 in a primary skill and a total of +7-8.
-
-Next, the highest total bonus to a primary skill determines the color of the {braces}.
- - Gray: The item only has bonuses to non-primary skills, even if those bonuses are large.
- - White: +1-2 in a primary skill.
- - Blue: +3 in a primary skill.
- - Yellow: +4 in a primary skill.
- - Gold: +5 or greater in a primary skill.
-
-### +High Skills Roll
-
-For the time being, I left Kryszard's colorful tag in, though at some point in the future I may replace this with more nuanced tags.
 
 ## Gold and Sellables
 
@@ -106,4 +136,4 @@ I dramatically increased the thresholds at which gold piles will be visible comp
 
 ## Revealed Unique Names
 
-The names of unidentified unique items will also show up, as in some other filters.
+The names of unidentified unique items will also show up when possible, as in some other filters.
