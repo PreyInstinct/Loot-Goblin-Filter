@@ -8,7 +8,7 @@ Download Loot_Goblin.filter from this repository to [your PD2 Directory]/filters
 
 # Building from source
 
-The generation pipeline is written in Python3, and requires the PySat (python-sat) library.
+The generation pipeline is written in Python3, and requires the PySat (python-sat) library. The machine learning algorithms used to calculate maximum point values take ~10 minutes to run on my 12 core processor, and just over 1 hour when running on a single thread.
 
 ```
 git clone https://github.com/PreyInstinct/Loot-Goblin-Filter.git
