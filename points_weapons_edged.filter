@@ -1,80 +1,16 @@
-// 300% ED + 150% ED & 250 AR - physical weapons
-// 
-// 400% ED - Missile weapons, amazon javelins, knife, club, tipped mace, throwing axe
-//  + 200% ED & 300 AR Missile weapons
-// 
-// 40 max damage - physical weapons
-// 63 max damage - missile weapons
-// 
-// 300% damage to demons, 350% damage to undead - missile weapons
-// 200% damage to demons, 275% damage to undead - physical weapons + staffs
-// 
-// 30% res - non-rods
-// 40% res - rods
-// 
-// -10 enemy res - missile weapon, scepter, crystal sword, orb, claw
-// -15 enemy res - staffs
-// 
-// ignore target defense - rod, knife, claw
-// 
-// 40 aspd - !(orb wand staff)
-// 20 aspd - weaponPS = !(orb wand)
-// 
-// 40 fcr - staff
-// 30 fcr - other rods, orbs, clubs
-// 
-// +30 dex - missile weapons
-// +30 ene - orb, wand, staff
-// +15 ene - scepter
-// +30 str - club, hammer
-// +20 str - scepter, tipped mace
-// +15 str - non-blunt melee weapons
-// 
-// +240 AR & light radius - missile weapon
-// 
-// 9% ll - melee weapons
-// 5% ll - missile weapons
-// 9% ml - melee weapons
-// 5% ll - missile weapons
-// 
-// % chance to cast lvl 30 on casting - staffs
-// 
-// life tap charges - axe, wand, knife
-// 
-// 12% ctc lvl 31 amp - physical weapons
-// 12% ctc lvl 15 lower res - physical weapons
-// 12% ctc lvl 15 lower res on casting - staff
-// 
-// DS, OW, CB - physical weapons
-//
-// --- Charged/Proc Skill Attributes ---
-// Charge Skill: MULTI204,{ATTRIBUTE_ID} = current_charges + (max_charges * 256)
-// Cast on Striking: MULTI198,{ATTRIBUTE_ID} = % chanc
-// Cast on Casting: MULTI200,{ATTRIBUTE_ID} = % chanc
-// ATTRIBUTE_ID = (skill_id * 64) + skill_level
-//    10 bits for skill_ID, 6 bits for skill_level
-//    bits:  IIIIIIIIIILLLLLL
-//           31    
-//           268421         
-//           731000521      
-//           689942152631   
-//           8426842684268421
-//    82,1 = 0001010010000001 = life tap, level 1
-//    = 1+128+1024+4096 = 5249
-//    = 82*64+1 = 5249
-// ItemDisplay[EDGED RARE MULTI204,5249>0]: %NAME%{%NAME%%TEAL%••}%CONTINUE% // life tap, level 1 (82,1): 82*64+1 = 5249
-
 Alias[EDGED]: ((AXE OR SWORD OR DAGGER OR SPEAR OR POLEARM OR SIN) !THROWING)
 
-ItemDisplay[EDGED !DAGGER !ZON RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 6+8=14
-ItemDisplay[DAGGER !THROWING RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[EDGED !DAGGER !ZON !SIN RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 6+8=14
 ItemDisplay[ZON SPEAR RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE% // 8+8=16
-ItemDisplay[EDGED !DAGGER !ZON CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••%CL%%NAME%}%CONTINUE% // 4+6+3=13
-ItemDisplay[DAGGER !THROWING CRAFT]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 5+6+3=14
+ItemDisplay[SIN RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%CL%%NAME%}%CONTINUE% // 9+8=17
+ItemDisplay[DAGGER !THROWING RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••••••%CL%%NAME%}%CONTINUE% // 10+8=18
+ItemDisplay[EDGED !DAGGER !ZON !SIN CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••%CL%%NAME%}%CONTINUE% // 4+6+3=13
 ItemDisplay[ZON SPEAR CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 6+6+3=15
+ItemDisplay[SIN CRAFT]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE% // 7+6+3=16
+ItemDisplay[DAGGER !THROWING CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%CL%%NAME%}%CONTINUE% // 8+6+3=17
 
-// Prefixes (max 6 pts, 7 daggers, 8 zon spears)
-// Suffixes (max 8 pts)
+// Prefixes (max 6 pts, 8 zon spears, 9 claws, 10 daggers)
+// Suffixes (max 8 pts; -1 crafted)
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
@@ -157,9 +93,9 @@ ItemDisplay[SIN (RARE OR CRAFT) (STAT336>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE
 
 // --- Suffixes ---
 // # Chance to Cast on Striking (3 pts)
-ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
-ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
-ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 5 (447,5): 447*64+5 = 28613
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 10 (447,10): 447*64+10 = 28618
+ItemDisplay[EDGED (RARE OR CRAFT) MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 15 (447,15): 447*64+15 = 28623
 
 // --- Combined Prefixes & Suffixes ---
 // # Elemental Damage (3 pts each)
@@ -180,19 +116,24 @@ ItemDisplay[EDGED (RARE OR CRAFT) STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%
 //--------------------------------
 
 // --- Prefixes ---
-// # Skills (2 pts, 1 pt polearms, 4 pts zon spears) +1 Caster & Bountiful
+// # Skills (2 pts, 1 pt polearms, 4 pts zon spears, 5 pts claws & daggers) +1 Caster & Bountiful
 // zon spears: class 2, tree 6
 // non-zon spears: class 2, tree 3
 // claws, crystal swords, axes, daggers, swords: class 2 tree 2
 // polearms: tree 2
-ItemDisplay[EDGED CRAFT ALLSK>0)]: %NAME%{%NAME%%GOLD%•1}%CONTINUE%
-ItemDisplay[EDGED (RARE OR CRAFT) ${class1})]: %NAME%{%NAME%%GOLD%•2}%CONTINUE%
-ItemDisplay[EDGED (RARE OR CRAFT) ${class2}]: %NAME%{%NAME%%GOLD%•3}%CONTINUE%
-ItemDisplay[EDGED !ZON (RARE OR CRAFT) ${tree2}]: %NAME%{%NAME%%GOLD%•4}%CONTINUE%
-ItemDisplay[EDGED (RARE OR CRAFT) ${tree3}]: %NAME%{%NAME%%GOLD%•5}%CONTINUE%
-ItemDisplay[EDGED (RARE OR CRAFT) ${tree4}]: %NAME%{%NAME%%GOLD%•6}%CONTINUE%
-ItemDisplay[EDGED (RARE OR CRAFT) ${tree5}]: %NAME%{%NAME%%GOLD%•7}%CONTINUE%
-ItemDisplay[EDGED (RARE OR CRAFT) ${tree6}]: %NAME%{%NAME%%GOLD%•8}%CONTINUE%
+ItemDisplay[EDGED CRAFT ALLSK>0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${class1})]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${class2}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED !ZON (RARE OR CRAFT) ${tree2}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${tree3}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${tree4}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${tree5}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[EDGED (RARE OR CRAFT) ${tree6}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// ### Bonus points for claws and daggers with high skill combos
+ItemDisplay[(SIN OR (DAGGER !THROWING)) (RARE OR CRAFT) (PRIME3 ALLSK=0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[(SIN OR (DAGGER !THROWING)) (RARE OR CRAFT) PRIME4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[(SIN OR (DAGGER !THROWING)) (RARE OR CRAFT) PRIME5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[(SIN OR (DAGGER !THROWING)) CRAFT PRIME6]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 
 // --- Suffixes ---
 
@@ -224,7 +165,7 @@ ItemDisplay[EDGED (RARE OR CRAFT) STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Ignore Target's Defense (2 pts, dagger & claw only)
 ItemDisplay[EDGED (RARE OR CRAFT) STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
 // # -% Target's Defense +1 Hitpower
-ItemDisplay[EDGED CRAFT STAT116>9]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[EDGED CRAFT STAT116>17]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 // Stats		%DARK_GREEN%
 //--------------------------------

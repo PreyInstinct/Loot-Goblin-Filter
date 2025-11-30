@@ -12,16 +12,16 @@
 ItemDisplay[rvl]: %PURPLE%R %WHITE%Full{%WHITE%Full Rejuvenation Potion}%CONTINUE%
 ItemDisplay[rvs]: %PURPLE%r %WHITE%35%{%PURPLE%r %WHITE%35%, Perf %YELLOW%O%WHITE%, %BLUE%Ring %WHITE%= Light Res %BLUE%Ring%NL%%WHITE%3x%PURPLE%r %WHITE%35% = %PURPLE%R%WHITE% Full%NL%%TAN% Note%WHITE%: Crafting Recipes:%NL%Rejuvenation Potion}%CONTINUE%
 ItemDisplay[rvs FILTLVL>7]: {%NAME%}%CONTINUE%
-ItemDisplay[hp5]: %RED%º HP5{%WHITE%Super Healing Potion}%CONTINUE%
-ItemDisplay[mp5]: %BLUE%º MP5{%WHITE%Super Mana Potion}%CONTINUE%
-ItemDisplay[hp1]: %RED%º HP1{%WHITE%Minor Healing Potion}%CONTINUE%
-ItemDisplay[hp2]: %RED%º HP2{%WHITE%Light Healing Potion}%CONTINUE%
-ItemDisplay[hp3]: %RED%º HP3{%WHITE%Healing Potion}%CONTINUE%
-ItemDisplay[hp4]: %RED%º HP4{%WHITE%Greater Healing Potion}%CONTINUE%
-ItemDisplay[mp1]: %BLUE%º MP1{%WHITE%Minor Mana Potion}%CONTINUE%
-ItemDisplay[mp2]: %BLUE%º MP2{%WHITE%Light Mana Potion}%CONTINUE%
-ItemDisplay[mp3]: %BLUE%º MP3{%WHITE%Mana Potion}%CONTINUE%
-ItemDisplay[mp4]: %BLUE%º MP4{%WHITE%Greater Mana Potion}%CONTINUE%
+ItemDisplay[hp5]: %RED%º%WHITE% HP5{%WHITE%Super Healing Potion}%CONTINUE%
+ItemDisplay[mp5]: %BLUE%º%WHITE% MP5{%WHITE%Super Mana Potion}%CONTINUE%
+ItemDisplay[hp1]: %RED%º%WHITE% HP1{%WHITE%Minor Healing Potion}%CONTINUE%
+ItemDisplay[hp2]: %RED%º%WHITE% HP2{%WHITE%Light Healing Potion}%CONTINUE%
+ItemDisplay[hp3]: %RED%º%WHITE% HP3{%WHITE%Healing Potion}%CONTINUE%
+ItemDisplay[hp4]: %RED%º%WHITE% HP4{%WHITE%Greater Healing Potion}%CONTINUE%
+ItemDisplay[mp1]: %BLUE%º%WHITE% MP1{%WHITE%Minor Mana Potion}%CONTINUE%
+ItemDisplay[mp2]: %BLUE%º%WHITE% MP2{%WHITE%Light Mana Potion}%CONTINUE%
+ItemDisplay[mp3]: %BLUE%º%WHITE% MP3{%WHITE%Mana Potion}%CONTINUE%
+ItemDisplay[mp4]: %BLUE%º%WHITE% MP4{%WHITE%Greater Mana Potion}%CONTINUE%
 // Hide low level HP/MP potions in Nightmare and beyond
 ItemDisplay[(hp1 OR hp2 OR hp3 OR mp1 OR mp2 OR mp3) (FILTLVL>0 DIFF>0) !SHOP]: {%NAME%}
 // Hide greater HP/MP potions in Hell
@@ -33,24 +33,24 @@ ItemDisplay[(hp1 OR hp2 OR hp3 OR hp4 OR hp5 OR mp1 OR mp2 OR mp3 OR mp4 OR mp5)
 ItemDisplay[tsc]: %BLUE%§ %WHITE%TP{%RED%Warning%WHITE%: You will lose socketed Runes/Gems/Jewels%NL%Socketed Item, %BLUE%TP%WHITE%, %ORANGE%Hel%NL%%TAN%Note%WHITE%: To remove Runes/Gems/Jewels from Item:%NL%Scroll of Town Portal}%CONTINUE%
 ItemDisplay[isc]: %RED%§ %WHITE%ID{%WHITE%Scroll of Identify}%CONTINUE%
 ItemDisplay[vps]: %WHITE%º stamina{%GRAY%(duration stacks)%NL%%WHITE%then provides infinite stamina for 30s%NL%%TAN%Note%WHITE%: Instantly restores stamina%NL%Stamina Potion}%CONTINUE%
-ItemDisplay[wms]: %YELLOW%º thaw{%YELLOW%º%WHITE%, Perf %BLUE%O%WHITE%, %BLUE%Ring %WHITE%= Cold Res %BLUE%Ring%NL%%GRAY%(duration stack)%NL%%WHITE%Gives +25 Cold Res for 30s%NL%%TAN%Note%WHITE%: Instantly thaws character%NL%Thawing Potion}%CONTINUE%
-ItemDisplay[yps]: %GREEN%º ant{%GREEN%º%WHITE%, Perf %GREEN%O%WHITE%, %BLUE%Ring %WHITE%= Psn Res %BLUE%Ring%NL%%GRAY%(duration stack)%NL%%WHITE%Gives +25 Psn Res for 30s%NL%%TAN%Note%WHITE%: Instantly cures poison%NL%Antidote Potion}
+ItemDisplay[wms]: %YELLOW%º%WHITE% thaw{%YELLOW%º%WHITE%, Perf %BLUE%O%WHITE%, %BLUE%Ring %WHITE%= Cold Res %BLUE%Ring%NL%%GRAY%(duration stack)%NL%%WHITE%Gives +25 Cold Res for 30s%NL%%TAN%Note%WHITE%: Instantly thaws character%NL%Thawing Potion}%CONTINUE%
+ItemDisplay[yps]: %GREEN%º%WHITE% ant{%GREEN%º%WHITE%, Perf %GREEN%O%WHITE%, %BLUE%Ring %WHITE%= Psn Res %BLUE%Ring%NL%%GRAY%(duration stack)%NL%%WHITE%Gives +25 Psn Res for 30s%NL%%TAN%Note%WHITE%: Instantly cures poison%NL%Antidote Potion}
 // Hide misc potions and scrolls at higher filter levels
 ItemDisplay[(tsc OR isc OR vps OR wms OR yps) ((FILTLVL>0 CLVL>30) OR FILTLVL>2) !SHOP]: {%NAME%}%CONTINUE%
 
 // Throwing Potions
-ItemDisplay[tpfs]: %CORAL%º Fire1 {%NAME%}%CONTINUE%
-ItemDisplay[tpfm]: %CORAL%º Fire2 {%CORAL%º Fire2%WHITE%, Perf %RED%O%WHITE%, %BLUE%Ring %WHITE%= Fire Res %BLUE%Ring%NL%%TAN%Note%WHITE%: Crafting Recipe:%CL%%NAME%}%CONTINUE%
-ItemDisplay[tpfl]: %CORAL%º Fire3 {%NAME%}%CONTINUE%
-ItemDisplay[tpgs]: %GREEN%º Gas1 {%NAME%}%CONTINUE%
-ItemDisplay[tpgm]: %GREEN%º Gas2 {%NAME%}%CONTINUE%
-ItemDisplay[tpgl]: %GREEN%º Gas3 {%NAME%}%CONTINUE%
-ItemDisplay[tpcs]: %BLUE%º Cold1 {%NAME%}%CONTINUE%
-ItemDisplay[tpcm]: %BLUE%º Cold2 {%NAME%}%CONTINUE%
-ItemDisplay[tpcl]: %BLUE%º Cold3 {%NAME%}%CONTINUE%
-ItemDisplay[tpls]: %YELLOW%º Light1 {%NAME%}%CONTINUE%
-ItemDisplay[tplm]: %YELLOW%º Light2 {%NAME%}%CONTINUE%
-ItemDisplay[tpll]: %YELLOW%º Light3 {%NAME%}%CONTINUE%
+ItemDisplay[tpfs]: %CORAL%º%WHITE% Fire1 {%NAME%}%CONTINUE%
+ItemDisplay[tpfm]: %CORAL%º%WHITE% Fire2 {%CORAL%º Fire2%WHITE%, Perf %RED%O%WHITE%, %BLUE%Ring %WHITE%= Fire Res %BLUE%Ring%NL%%TAN%Note%WHITE%: Crafting Recipe:%CL%%NAME%}%CONTINUE%
+ItemDisplay[tpfl]: %CORAL%º%WHITE% Fire3 {%NAME%}%CONTINUE%
+ItemDisplay[tpgs]: %GREEN%º%WHITE% Gas1 {%NAME%}%CONTINUE%
+ItemDisplay[tpgm]: %GREEN%º%WHITE% Gas2 {%NAME%}%CONTINUE%
+ItemDisplay[tpgl]: %GREEN%º%WHITE% Gas3 {%NAME%}%CONTINUE%
+ItemDisplay[tpcs]: %BLUE%º%WHITE% Cold1 {%NAME%}%CONTINUE%
+ItemDisplay[tpcm]: %BLUE%º%WHITE% Cold2 {%NAME%}%CONTINUE%
+ItemDisplay[tpcl]: %BLUE%º%WHITE% Cold3 {%NAME%}%CONTINUE%
+ItemDisplay[tpls]: %YELLOW%º%WHITE% Light1 {%NAME%}%CONTINUE%
+ItemDisplay[tplm]: %YELLOW%º%WHITE% Light2 {%NAME%}%CONTINUE%
+ItemDisplay[tpll]: %YELLOW%º%WHITE% Light3 {%NAME%}%CONTINUE%
 
 // Hide throwing potions at higher filter levels
 ItemDisplay[(tpfs OR tpgs OR tpcs OR tpls) ((FILTLVL>0 CLVL>17) OR FILTLVL>4)]: {%NAME%}

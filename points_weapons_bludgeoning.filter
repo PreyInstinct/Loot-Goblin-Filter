@@ -2,11 +2,14 @@ Alias[BLUDGEON]: (MACE OR SCEPTER)
 
 // Close: Show max theoretical points.
 ItemDisplay[HAMMER RARE]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 6+8=14
-ItemDisplay[(CLUB OR TMACE) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
-ItemDisplay[SCEPTER RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%CL%%NAME%}%CONTINUE% // 9+8=17
+ItemDisplay[TMACE RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE% // 7+8=15
+ItemDisplay[(CLUB OR SCEPTER) RARE]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%CL%%NAME%}%CONTINUE% // 9+8=17
+ItemDisplay[HAMMER CRAFT]: %NAME%{%LIGHT_GRAY%•••••••••••••%CL%%NAME%}%CONTINUE% // 6+7=13
+ItemDisplay[TMACE CRAFT]: %NAME%{%LIGHT_GRAY%••••••••••••••%CL%%NAME%}%CONTINUE% // 7+7=14
+ItemDisplay[(CLUB OR SCEPTER) CRAFT]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE% // 9+7=16
 
-// Prefixes (max 6 pts hammers, 7 clubs & tipped maces, 9 scepters)
-// Suffixes (max 8 pts)
+// Prefixes (max 6 pts hammers, 7 tipped maces, 9 clubs & scepters)
+// Suffixes (max 8 pts, -1 crafted)
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
@@ -17,7 +20,7 @@ ItemDisplay[SCEPTER RARE]: %NAME%{%LIGHT_GRAY%•••••••••••�
 
 // --- Suffixes ---
 // # Ethereal & Self Repair (2 pts)
-ItemDisplay[BLUDGEON RARE ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
 
 // Damage		%RED%
 //--------------------------------
@@ -25,28 +28,41 @@ ItemDisplay[BLUDGEON RARE ETH REPAIR>0]: %NAME%{%NAME%%GRAY%••}%CONTINUE%
 // --- Prefixes ---
 // # Enhanced Damage (4 pts hammers & scepters, 5 pts clubs & tipped maces)
 // Hammers & Scepters: 300%+150%=450%
-ItemDisplay[BLUDGEON RARE ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[(HAMMER OR SCEPTER) RARE ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ED>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ED>250]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ED>350]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(HAMMER OR SCEPTER) (RARE OR CRAFT) ED>400]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // Clubs & Tipped Maces: 400%+150%=550%
-ItemDisplay[BLUDGEON RARE ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Maximum Damage per Level (2 pts)
-ItemDisplay[BLUDGEON RARE STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT218>0]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT218>1]: %NAME%{%NAME%%RED%•}%CONTINUE% // 2 prefixes
 // # Damage to Demons (1 pt)
-ItemDisplay[BLUDGEON RARE STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT121>150]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Damage to Undead (1 pt)
-ItemDisplay[BLUDGEON RARE STAT122>275]: %NAME%{%NAME%%RED%•}%CONTINUE% // Account for 50% automod
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT122>275]: %NAME%{%NAME%%RED%•}%CONTINUE% // Account for 50% automod
 
 // --- Suffixes ---
 // # Damage (1 pt)
-ItemDisplay[BLUDGEON RARE MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) MINDMG+MAXDMG>30]: %NAME%{%NAME%%RED%•}%CONTINUE%
 // # Chance to Cast on Striking (3 pts)
-ItemDisplay[BLUDGEON RARE MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
-ItemDisplay[BLUDGEON RARE MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
-ItemDisplay[BLUDGEON RARE MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+ItemDisplay[BLUDGEON (RARE OR CRAFT) MULTI198,28303>0]: %NAME%{%NAME%%RED%•}%CONTINUE% // amplify damage, level 15 (442,15): 442*64+15 = 28303
+ItemDisplay[BLUDGEON (RARE OR CRAFT) MULTI198,28311>0]: %NAME%{%NAME%%RED%••}%CONTINUE% // amplify damage, level 23 (442,23): 442*64+23 = 28311
+ItemDisplay[BLUDGEON (RARE OR CRAFT) MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTINUE% // amplify damage, level 31 (442,31): 442*64+31 = 28319
+
+// --- Crafted ---
+// # Enhanced Damage (+2 Blood, Hitpower, & Safety, +1 Brilliant)
+// Hammers & Scepters: 450%+
+ItemDisplay[(HAMMER OR SCEPTER) CRAFT ED>450]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[(HAMMER OR SCEPTER) CRAFT ED>500]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// Clubs & Tipped Maces: 550%+
+ItemDisplay[BLUDGEON CRAFT ED>550]: %NAME%{%NAME%%RED%•}%CONTINUE%
+ItemDisplay[BLUDGEON CRAFT ED>600]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Demons (Vampiric)
+ItemDisplay[BLUDGEON CRAFT STAT121>200]: %NAME%{%NAME%%RED%•}%CONTINUE%
+// # Damage to Undead (Vampiric)
+ItemDisplay[BLUDGEON CRAFT STAT122>325]: %NAME%{%NAME%%RED%•}%CONTINUE% // Account for 50% automod
 
 // Damage Effects	%CORAL%
 //--------------------------------
@@ -55,62 +71,68 @@ ItemDisplay[BLUDGEON RARE MULTI198,28319>0]: %NAME%{%NAME%%RED%•••}%CONTIN
 
 // --- Suffixes ---
 // # Crushing Blow (2 pts)
-ItemDisplay[BLUDGEON RARE STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT136>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT136>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
 // # Deadly Strike (2 pt)
-ItemDisplay[BLUDGEON RARE STAT141>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE STAT141>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT141>16]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT141>23]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
 
 // --- Combined Prefixes & Suffixes ---
 // # Open Wounds (2 pts)
 // [P: 20% +563, S: 10% +325, Total: +888]
-ItemDisplay[BLUDGEON RARE STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT501>222]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT501>444]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT501>666]: %NAME%{%NAME%%CORAL%•}%CONTINUE%
 
 // Elemental Damage	%ORANGE%
 //--------------------------------
 
 // --- Prefixes ---
 // # Enemy Resistances (2 pts, scepters only)
-ItemDisplay[SCEPTER RARE (STAT333>4 OR STAT334>4 OR STAT335>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
-ItemDisplay[SCEPTER RARE (STAT333>7 OR STAT334>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[SCEPTER (RARE OR CRAFT) (STAT333>4 OR STAT334>4 OR STAT335>4)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
+ItemDisplay[SCEPTER (RARE OR CRAFT) (STAT333>7 OR STAT334>7 OR STAT335>7)]: %NAME%{%NAME%%ORANGE%•}%CONTINUE%
 
 // --- Suffixes ---
 // # Chance to Cast on Striking (3 pts)
-ItemDisplay[BLUDGEON RARE MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
-ItemDisplay[BLUDGEON RARE MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
-ItemDisplay[BLUDGEON RARE MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
+ItemDisplay[BLUDGEON (RARE OR CRAFT) MULTI198,28613>0]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // lower resist, level 15 (447,5): 447*64+5 = 28613
+ItemDisplay[BLUDGEON (RARE OR CRAFT) MULTI198,28618>0]: %NAME%{%NAME%%ORANGE%••}%CONTINUE% // lower resist, level 23 (447,10): 447*64+10 = 28618
+ItemDisplay[BLUDGEON (RARE OR CRAFT) MULTI198,28623>0]: %NAME%{%NAME%%ORANGE%•••}%CONTINUE% // lower resist, level 31 (447,15): 447*64+15 = 28623
 
 // --- Combined Prefixes & Suffixes ---
 // # Elemental Damage (3 pts each)
 // Fire [P: 306-432 (738), S: 214-302 (516)]
-ItemDisplay[BLUDGEON RARE STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
-ItemDisplay[BLUDGEON RARE STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
-ItemDisplay[BLUDGEON RARE STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT48+STAT49>313]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT48+STAT49>627]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT48+STAT49>940]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Fire
 // Lightning [P: 1-576 (577), S: 6-403 (409)]
-ItemDisplay[BLUDGEON RARE STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
-ItemDisplay[BLUDGEON RARE STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
-ItemDisplay[BLUDGEON RARE STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT50+STAT51>246]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT50+STAT51>493]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT50+STAT51>739]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Lightning
 // Cold [P: 112-348 (460), S: 118-365 (483)]
-ItemDisplay[BLUDGEON RARE STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
-ItemDisplay[BLUDGEON RARE STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
-ItemDisplay[BLUDGEON RARE STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT54+STAT55>235]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT54+STAT55>471]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT54+STAT55>707]: %NAME%{%NAME%%ORANGE%•}%CONTINUE% // Cold
 
 // Skills		%GOLD%
 //--------------------------------
 
 // --- Prefixes ---
-// # Skills (2 pts, 5 pts scepters)
-ItemDisplay[BLUDGEON RARE ${class1})]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE ${class2}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE ${tree2}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// # Skills (2 pts, 5 pts clubs and septers)
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ${class1}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ${class2}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) ${tree2}]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 // ### Extra points for high skill combos on clubs and scepters
-ItemDisplay[BLUDGEON RARE PRIME3]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE PRIME4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE PRIME5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) (PRIME3 ALLSK=0)]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) PRIME4]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) PRIME5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 
 // --- Suffixes ---
+
+// --- Crafted ---
+// # All Skills (Caster & Bountiful)
+ItemDisplay[BLUDGEON CRAFT ALLSK>0]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
+// ### Extra points for high skill combos on clubs and scepters
+ItemDisplay[BLUDGEON CRAFT PRIME6]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 
 // Speed		%YELLOW%
 //--------------------------------
@@ -119,26 +141,41 @@ ItemDisplay[BLUDGEON RARE PRIME5]: %NAME%{%NAME%%GOLD%•}%CONTINUE%
 
 // --- Suffixes ---
 // # Increased Attack Speed (3 pts)
-ItemDisplay[BLUDGEON RARE IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) IAS>15]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) IAS>25]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) IAS>35]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
 // # Faster Cast Rate (3 pts)
-ItemDisplay[BLUDGEON RARE FCR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE FCR>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE FCR>29]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) FCR>9]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) FCR>19]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) FCR>29]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+
+// --- Crafted ---
+// # Increased Attack Speed (Brillaint)
+ItemDisplay[BLUDGEON CRAFT IAS>45]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON CRAFT IAS>55]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+// # Faster Cast Rate (Caster)
+ItemDisplay[BLUDGEON CRAFT FCR>39]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ItemDisplay[BLUDGEON CRAFT FCR>45]: %NAME%{%NAME%%YELLOW%•}%CONTINUE%
+ 
 
 // Other		%SAGE%
 //--------------------------------
 
 // --- Prefixes ---
 // Socketed (1 pt)
-ItemDisplay[BLUDGEON RARE SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) SOCK>2]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 // --- Suffixes ---
 // # Prevent Monster Heal (1 pt)
-ItemDisplay[BLUDGEON RARE STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT117>0]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 // # Ignore Target's Defense (2 pts, scepter only)
-ItemDisplay[BLUDGEON RARE STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
+
+// --- Crafted ---
+// # -% Target Defense (Hitpower)
+ItemDisplay[BLUDGEON CRAFT STAT116>17]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
+// # Magic Find (Bountiful)
+ItemDisplay[BLUDGEON CRAFT MFIND>25]: %NAME%{%NAME%%SAGE%•}%CONTINUE%
 
 // Stats		%DARK_GREEN%
 //--------------------------------
@@ -147,22 +184,26 @@ ItemDisplay[BLUDGEON RARE STAT115>0]: %NAME%{%NAME%%SAGE%••}%CONTINUE%
 
 // --- Suffixes ---
 // # Strength (1 pt, club & hammer only)
-ItemDisplay[BLUDGEON RARE STR>20]:  %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STR>20]:  %NAME%{%NAME%%DARK_GREEN%•}%CONTINUE%
 
 // HP/MP		%TEAL%
 //--------------------------------
 
 // --- Prefixes ---
 // Life after each Kill (1 pt)
-ItemDisplay[BLUDGEON RARE STAT86>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT86>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 // Mana after each Kill (1 pt)
-ItemDisplay[BLUDGEON RARE STAT138>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT138>2]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 
 // --- Suffixes ---
 // # Life Steal (1 pt)
-ItemDisplay[BLUDGEON RARE STAT60>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT60>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 // # Mana Steal (1 pt)
-ItemDisplay[BLUDGEON RARE STAT62>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) STAT62>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
+
+// --- Crafted ---
+// # Life Steal (Blood)
+ItemDisplay[BLUDGEON CRAFT STAT60>6]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 
 // Defense/Block/PDR	%BLUE%
 //--------------------------------
@@ -178,14 +219,14 @@ ItemDisplay[BLUDGEON RARE STAT62>3]: %NAME%{%NAME%%TEAL%•}%CONTINUE%
 
 // --- Prefixes ---
 // # Resistances (3 pts total, 4 scepters)
-ItemDisplay[BLUDGEON RARE (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
-ItemDisplay[BLUDGEON RARE (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) (FRES+CRES+LRES+PRES>24)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) (FRES+CRES+LRES+PRES>48)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) (FRES+CRES+LRES+PRES>72)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT) (FRES+CRES+LRES+PRES>96)]: %NAME%{%NAME%%PURPLE%•}%CONTINUE%
 
 // --- Suffixes ---
 
 //----------------------------------------------------------------------------------------------------------------
 
 //Open
-ItemDisplay[BLUDGEON RARE]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%
+ItemDisplay[BLUDGEON (RARE OR CRAFT)]: %NAME%{%NAME%%CL%%LIGHT_GRAY%Affix Quality:%CL%}%CONTINUE%

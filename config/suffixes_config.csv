@@ -1,0 +1,198 @@
+Affix	Affix Item Types	Filter Definition	magic only	group	Stat	Min Value	Max Value	Attribute Description
+Divinity	Rod, Missile Weapon, Amulet, Chest	(STAFF OR WAND OR SCEPTER OR BOW OR XBOW OR amu OR CHEST)		25	STAT89;AR	5;120	5;240	+5 to Light Radius, +[120-240] to Attack Rating
+Radiance	Rod, Missile Weapon, Helm, Chest, Quiver	QUIVER		25	STAT89;AR	3;30	3;60	+3 to Light Radius, +[30-60] to Attack Rating
+Clarity	Rod, Missile Weapon, Amulet, Helm, Chest, Ring	(HELM OR rin)		25	STAT89;AR	4;60	4;120	+4 to Light Radius, +[60-120] to Attack Rating
+Sun	Rod, Missile Weapon, Gloves, Ring, Amulet, Helm, Chest	(STAFF OR WAND OR SCEPTER OR GLOVES OR rin OR amu OR HELM OR CHEST)		25	STAT89;ARPER	5;10	5;20	+5 to Light Radius, [10-20]% Bonus to Attack Rating
+Precision	Amulet, Missile Weapon, Circlet, Quiver, Helm, Chest, Boots, Shield, Ring, Gloves	(amu OR BOW OR XBOW OR CIRC OR QUIVER OR HELM OR CHEST OR BOOTS OR SHIELD OR rin OR GLOVES)		17	DEX	10	15	+[10-15] to Dexterity
+Nirvana	Amulet, Missile Weapon, Circlet, Helm, Shield, Chest	(amu OR BOW OR XBOW OR CIRC OR HELM OR SHIELD OR CHEST)		17	DEX	21	30	+[21-30] to Dexterity
+Deflecting	Shield	SHIELD		8	STAT20;FBR	20;30	20;30	20% Increased Chance of Blocking, +30% Faster Block Rate
+Apprentice	Rod, Ring, Amulet, Orb, Circlet, Club, Gloves, Belt	(STAFF OR WAND OR SCEPTER OR rin OR amu OR SOR OR CIRC OR CLUB OR GLOVES OR BELT)		9	FCR	10	10	+10% Faster Cast Rate
+Magus	Rod, Orb, Circlet, Club, Chest, Shield, Paladin Shield	(STAFF OR WAND OR SCEPTER OR SOR OR CIRC OR CLUB OR CHEST OR SHIELD OR DIN)		9	FCR	20	20	+20% Faster Cast Rate
+Archmage	non-Staff Rods, Orb, Club	(WAND OR SCEPTER OR SOR OR CLUB)		9	FCR	30	30	+30% Faster Cast Rate
+Archmage	Staff	STAFF		9	FCR	40	40	+40% Faster Cast Rate
+Balance	Non-Gloves Armor, Helm, Shield	(ARMOR !GLOVES)		18	FHR	10	10	+10% Faster Hit Recovery
+Stability	Chest, Belt, Helm, Shield	(CHEST OR BELT OR SHIELD OR HELM)		18	FHR	24	24	+24% Faster Hit Recovery
+Haste	Amazon Weapon, Quiver	(ZON OR QUIVER)		35	FRW	20	20	+20% Faster Run/Walk
+Speed	Boots, Circlet	(BOOTS OR CIRC)		35	FRW	30	30	+30% Faster Run/Walk
+Transportation	Boots	BOOTS		35	FRW;STAT154	30;80	30;90	+30% Faster Run/Walk, [80-90]% Slower Stamina Drain
+Greed	Ring, Amulet, Circlet, Quiver	(rin OR amu OR CIRC OR QUIVER)		21	GFIND	25	40	[25-40]% Extra Gold from Monsters
+Wealth	Boots, Gloves, Belt, Amulet, Circlet, Quiver	(BOOTS OR GLOVES OR BELT OR amu OR CIRC OR QUIVER)		21	GFIND	41	80	[41-80]% Extra Gold from Monsters
+Alacrity	WeaponPS, Quiver, Gloves	((WEAPON !SOR !WAND) OR QUIVER OR GLOVES)		7	IAS	20	20	+20% Increased Attack Speed
+Quickness	Melee WeaponP, Missile Weapon	(WEAPON !STAFF !WAND !SOR)		7	IAS	40	40	+40% Increased Attack Speed
+Mammoth	Chest, Belt, Amulet, Barbarian Helm, Circlet, Quiver, Any Mace, Ring, Helm	(QUIVER OR MACE OR rin OR (HELM !CLASS))		26	LIFE	31	40	+[31-40] to Life
+Colossus	Chest, Belt, Amulet, Barbarian Helm, Circlet, Shield, Druid Helm	(amu OR DRU)		26	LIFE	41	60	+[41-60] to Life
+Whale	Chest, Belt, Barbarian Helm, Circlet, Shield	(CHEST OR BELT OR BAR OR CIRC OR SHIELD)		26	LIFE	81	100	+[81-100] to Life
+Maiming	Shield, Ring, Amulet	SHIELD		14	MAXDMG	3	4	+[3-4] to Maximum Damage
+Carnage	Ring, Amulet, Circlet, Helm	(rin OR amu OR CIRC OR HELM)		14	MAXDMG	11	14	+[11-14] to Maximum Damage
+Butchery	WeaponP	(WEAPON !STAFF !WAND !SOR)		14	MAXDMG	21	40	+[21-40] to Maximum Damage
+Evisceration	Missile Weapon	(BOW OR XBOW)		14	MAXDMG	41	63	+[41-63] to Maximum Damage
+Fortune	Boots, Gloves, Amulet, Circlet, Helm, Quiver, Ring	(BOOTS OR GLOVES OR amu OR CIRC OR HELM OR QUIVER OR rin)		22	MFIND	16	25	[16-25]% Better Chance of Getting Magic Items
+Performance	Ring, Amulet, Circlet, Helm	(rin OR amu OR CIRC OR HELM)		15	MINDMG	10	13	+[10-13] to Minimum Damage
+Transcendence	WeaponP	(WEAPON !STAFF !WAND !SOR)		15	MINDMG	15	20	+[15-20] to Minimum Damage
+Fast Repair	Non-Throwing Melee WeaponPS, Armor	((WEAPON !BOW !XBOW !THROWING !SOR !WAND) OR ARMOR)		37	REPAIR	0	5	Repairs 1 Durability in 20 seconds
+Regeneration	Scepter, Belt, Ring, Amulet, Circlet, Shield, Gloves, Chest, Non-Scepter Weapon, Boots	(WEAPON OR BELT OR rin OR amu OR CIRC OR SHIELD OR GLOVES OR CHEST OR BOOTS)		19	REPLIFE	6	10	Replenish Life +[6-10]
+Regrowth	Belt, Ring	(BELT OR rin)		19	REPLIFE	12	18	Replenish Life +[12-18]
+Revivification	Scepter, Amulet, Circlet	(SCEPTER OR amu OR CIRC)		19	REPLIFE	22	30	Replenish Life +[22-30]
+Sorcery	Amulet, Orb, Circlet, Wand, Staff, Quiver, Helm, Chest, Shield, Helm, Scepter, Ring	(QUIVER OR SCEPTER OR rin)		23	STAT1	11	15	+[11-15] to Energy
+Enlightenment	Amulet, Orb, Circlet, Wand, Staff, Helm, Chest, Shield	(amu OR SOR OR CIRC OR WAND OR STAFF OR HELM OR CHEST OR SHIELD)		23	STAT1	21	30	+[21-30] to Energy
+Remedy	Armor, Ring, Amulet, Circlet, Quiver	(ARMOR OR rin OR amu OR CIRC OR QUIVER)		29	STAT110	25	25	Poison Length Reduced by 25%
+Defiance	Chest, Shield, Amulet, Circlet, Quiver	(CHEST OR SHIELD OR amu OR CIRC OR QUIVER)		29	STAT110	75	75	Poison Length Reduced by 75%
+Piercing	Rod, Knife, Claw	(STAFF OR WAND OR SCEPTER OR DAGGER OR SIN)		4	STAT115	1	1	Ignore Target's Defense
+Vileness	Melee WeaponPS, Quiver	((WEAPON !WAND !SOR) OR QUIVER)		20	STAT117	1	1	Prevent Monster Heal
+Warmth	Shield, Boots, Gloves, Ring, Amulet, Circlet, Orb	(SHIELD OR BOOTS OR GLOVES OR rin OR amu OR CIRC OR SOR)		11	STAT118	1	1	Half Freeze Duration
+Pulverizing	WeaponP, Quiver	((WEAPON !STAFF !WAND !SOR) OR QUIVER)		252	STAT136	25	30	[25-30]% Chance of Crushing Blow
+Desolation	WeaponP, Quiver	((WEAPON !STAFF !WAND !SOR) OR QUIVER)		252	STAT141	25	30	[25-30]% Deadly Strike
+Centaur	Chest, Druid Helm, Barbarian Helm, Shield	(CHEST OR DRU OR BAR OR SHIELD)		41	STAT216	0.75	0.75	+[0-74] to Life (+0.75 per Level)
+Elephant	Circlet, Druid Helm	(CIRC OR DRU)		41	STAT216;STAT217	0.5;0.25	0.5;0.25	+[0-49] to Life (+0.5 per Level), +[0-24] to Mana (+0.25 per Level)
+Mnemonic	Circlet, Amulet, Druid Helm	(CIRC OR amu OR DRU)		41	STAT217	0.75	0.75	+[0-74] to Mana (+0.75 per Level)
+Life	Amulet, Circlet, Quiver	QUIVER		1	STAT34	4	4	Physical Damage Taken Reduced by 4
+Life	Chest, Shield, Circlet, Ring	rin		1	STAT34	4	7	Physical Damage Taken Reduced by [4-7]
+Amicae	Chest, Shield, Circlet, Amulet	(CIRC OR amu)		1	STAT34	8	15	Physical Damage Taken Reduced by [8-15]
+Life Everlasting	Chest, Shield	(CHEST OR SHIELD)		1	STAT34	10	25	Physical Damage Taken Reduced by [10-25]
+Sentinel	Ring, Amulet, Orb, Circlet, Quiver	SOR		2	STAT35	2	4	Magic Damage Taken Reduced by [2-4]
+Guarding	Chest, Shield, Circlet, Ring	(CHEST OR SHIELD OR rin)		2	STAT35	3	6	Magic Damage Taken Reduced by [3-6]
+Defending	Belt	BELT		251	STAT36	5	10	Physical Damage Taken Reduced by [5-10]%
+Negation	Amulet, Orb, Circlet, Quiver	(amu OR SOR OR CIRC OR QUIVER)		2	STAT35	8	12	Magic Damage Taken Reduced by [8-12]
+Guardianship	Chest, Shield	(CHEST OR SHIELD)		251	STAT36	15	20	Physical Damage Taken Reduced by [15-20]%
+Flame	Gloves, Ring, Amulet	(GLOVES OR rin OR amu)		12	STAT48;STAT49	1;2	1;6	Adds 1 to [2-6] Fire Damage
+Burning	WeaponPS, Quiver	(BOW OR XBOW)		12	STAT48;STAT49	20;37	30;72	Adds [20-30] to [37-72] Fire Damage
+Ashes	Melee WeaponP, Quiver	((WEAPON !WAND !SOR !STAFF !BOW !XBOW) OR QUIVER)		12	STAT48;STAT49	152;228	214;302	Adds [152-214] to [228-302] Fire Damage
+Shock	Boots, Ring, Amulet	(BOOTS OR rin OR amu)		13	STAT50;STAT51	1;11	1;23	Adds 1 to [11-23] Lightning Damage
+Thunder	WeaponPS, Quiver	(BOW OR XBOW)		13	STAT50;STAT51	1;34	1;84	Adds 1 to [34-84] Lightning Damage
+Maelstrom	Melee WeaponP, Quiver	((WEAPON !WAND !SOR !STAFF !BOW !XBOW) OR QUIVER)		13	STAT50;STAT51	1;303	6;403	Adds [1-6] to [303-403] Lightning Damage
+Hematic	WeaponP, Quiver	((WEAPON !STAFF !WAND !SOR) OR QUIVER)		252	STAT135;STAT501	10;235	10;325	10% Chance of Open Wounds, +[235-325] Open Wounds Damage per Second
+Frost	Belt, Amulet	(BELT OR amu)		10	STAT54;STAT55	1;3	1;6	Adds 1 to [3-6] Cold Damage (2 second chill)
+Glacier	WeaponPS, Quiver	(BOW OR XBOW)		10	STAT54;STAT55	14;45	21;71	Adds [14-21] to [45-71] Cold Damage (4 second chill)
+Hypothermia	Melee WeaponP, Quiver	((WEAPON !WAND !SOR !STAFF !BOW !XBOW) OR QUIVER)		10	STAT54;STAT55	63;238	118;365	Adds [63-118] to [238-365] Cold Damage (6 second chill)
+Leech	Gloves	GLOVES		27	STAT60	3	3	3% Life Stolen per Hit
+Leech	Melee Weapon, Missile Weapon, Quiver	(BOW OR XBOW)		27	STAT60	4	5	[4-5]% Life Stolen per Hit
+Lamprey	Amulet	amu		27	STAT60	6	6	6% Life Stolen per Hit
+Locust	Ring, Circlet, Helm	HELM		27	STAT60	5	6	[5-6]% Life Stolen per Hit
+Locust	Melee Weapon, Quiver	QUIVER		27	STAT60	6	7	[6-7]% Life Stolen per Hit
+Lamprey	Ring, Circlet	(rin OR CIRC)		27	STAT60	7	8	[7-8]% Life Stolen per Hit
+Lamprey	Melee Weapon	(WEAPON !BOW !XBOW !SOR !WAND)		27	STAT60	8	9	[8-9]% Life Stolen per Hit
+Bat	Gloves	GLOVES		28	STAT62	3	3	3% Mana Stolen per Hit
+Bat	Melee Weapon, Missile Weapon, Quiver	(BOW OR XBOW)		28	STAT62	4	5	[4-5]% Mana Stolen per Hit
+Vampire	Ring	rin		28	STAT62	6	6	6% Mana Stolen per Hit
+Wraith	Amulet, Circlet, Helm	HELM		28	STAT62	5	6	[5-6]% Mana Stolen per Hit
+Wraith	Melee Weapon, Quiver	QUIVER		28	STAT62	6	7	[6-7]% Mana Stolen per Hit
+Vampire	Amulet, Circlet	(amu OR CIRC)		28	STAT62	7	8	[7-8]% Mana Stolen per Hit
+Vampire	Melee Weapon	(WEAPON !BOW !XBOW !SOR !WAND)		28	STAT62	8	9	[8-9]% Mana Stolen per Hit
+Swords	Chest, Shield, Circlet	(CHEST OR SHIELD OR CIRC)		6	STAT78	200	400	Attacker Takes Damage of [200-400]
+Bear	Melee Weapon, Quiver	((WEAPON !BOW !XBOW !SOR) OR QUIVER)		24	STAT81	1	1	Knockback
+Simplicity	Chest, WeaponPS, Shield	(CHEST OR (WEAPON !WAND !SOR) OR SHIELD)		30	STAT91	30	30	Requirements -30%
+Giant	Non-Blunt Melee Weapon, Gloves, Amulet, Belt, Club, Hammer, Circlet, Quiver, Helm	((WEAPON !MACE !STAFF !WAND !SCEPTER) OR GLOVES OR QUIVER)		31	STR	10	15	+[10-15] to Strength
+Titan	Ring, Scepter, Tipped Mace, Chest, Shield, Amulet, Belt, Club, Hammer, Circlet, Helm	(rin OR SCEPTER OR TMACE)		31	STR	16	20	+[16-20] to Strength
+Atlas	Amulet, Belt, Club, Hammer, Circlet, Helmet, Shield, Chest	(amu OR BELT OR CLUB OR HAMMER OR CIRC OR HELM OR SHIELD OR CHEST)		31	STR	21	30	+[21-30] to Strength
+Damage Amplification	Staff	STAFF		44	MULTI200,28303	8	8	8% Chance to Cast Level 15 Amplify Damage on Casting
+Damage Amplification	Staff	STAFF		44	MULTI200,28311	10	10	10% Chance to Cast Level 23 Amplify Damage on Casting
+Damage Amplification	Staff	STAFF		44	MULTI200,28319	12	12	12% Chance to Cast Level 31 Amplify Damage on Casting
+Chain Lightning	Staff	STAFF		44	MULTI200,3410	12	12	12% Chance to Cast Level 18 Chain Lightning on Casting
+Chain Lightning	Staff	STAFF		44	MULTI200,3416	12	12	12% Chance to Cast Level 24 Chain Lightning on Casting
+Chain Lightning	Staff	STAFF		44	MULTI200,3422	12	12	12% Chance to Cast Level 30 Chain Lightning on Casting
+Charged Bolt	Staff	STAFF		44	MULTI200,2450	18	18	18% Chance to Cast Level 18 Charged Bolt on Casting
+Charged Bolt	Staff	STAFF		44	MULTI200,2456	18	18	18% Chance to Cast Level 24 Charged Bolt on Casting
+Charged Bolt	Staff	STAFF		44	MULTI200,2462	18	18	18% Chance to Cast Level 30 Charged Bolt on Casting
+Fireball	Staff	STAFF		44	MULTI200,3026	14	14	14% Chance to Cast Level 18 Fire Ball on Casting
+Fireball	Staff	STAFF		44	MULTI200,3032	14	14	14% Chance to Cast Level 24 Fire Ball on Casting
+Fireball	Staff	STAFF		44	MULTI200,3038	14	14	14% Chance to Cast Level 30 Fire Ball on Casting
+Frost Nova	Staff	STAFF		44	MULTI200,2834	16	16	16% Chance to Cast Level 18 Frost Nova on Casting
+Frost Nova	Staff	STAFF		44	MULTI200,2840	16	16	16% Chance to Cast Level 24 Frost Nova on Casting
+Frost Nova	Staff	STAFF		44	MULTI200,2846	16	16	16% Chance to Cast Level 30 Frost Nova on Casting
+Ice Barrage	Staff	STAFF		44	MULTI200,23634	10	10	10% Chance to Cast Level 18 Ice Barrage on Casting
+Ice Barrage	Staff	STAFF		44	MULTI200,23640	10	10	10% Chance to Cast Level 24 Ice Barrage on Casting
+Ice Barrage	Staff	STAFF		44	MULTI200,23646	10	10	10% Chance to Cast Level 30 Ice Barrage on Casting
+Lightning	Staff	STAFF		44	MULTI200,3154	14	14	14% Chance to Cast Level 18 Lightning on Casting
+Lightning	Staff	STAFF		44	MULTI200,3160	14	14	14% Chance to Cast Level 24 Lightning on Casting
+Lightning	Staff	STAFF		44	MULTI200,3166	14	14	14% Chance to Cast Level 30 Lightning on Casting
+Lower Resist	Staff	STAFF		44	MULTI200,28613	8	8	8% Chance to Cast Level 5 Lower Resist on Casting
+Lower Resist	Staff	STAFF		44	MULTI200,28618	10	10	10% Chance to Cast Level 10 Lower Resist on Casting
+Lower Resist	Staff	STAFF		44	MULTI200,28623	12	12	12% Chance to Cast Level 15 Lower Resist on Casting
+Nova	Staff	STAFF		44	MULTI200,3090	14	14	14% Chance to Cast Level 18 Nova on Casting
+Nova	Staff	STAFF		44	MULTI200,3096	14	14	14% Chance to Cast Level 24 Nova on Casting
+Nova	Staff	STAFF		44	MULTI200,3102	14	14	14% Chance to Cast Level 30 Nova on Casting
+Damage Amplification	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,28311	10	10	10% Chance to Cast Level 23 Amplify Damage on Striking
+Damage Amplification	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,28319	12	12	12% Chance to Cast Level 31 Amplify Damage on Striking
+Chain Lightning	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3410	14	14	14% Chance to Cast Level 18 Chain Lightning on Striking
+Chain Lightning	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3416	14	14	14% Chance to Cast Level 24 Chain Lightning on Striking
+Chain Lightning	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3422	14	14	14% Chance to Cast Level 30 Chain Lightning on Striking
+Charged Bolt	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3410	20	20	20% Chance to Cast Level 18 Charged Bolt on Striking
+Charged Bolt	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,2456	20	20	20% Chance to Cast Level 24 Charged Bolt on Striking
+Charged Bolt	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,2462	20	20	20 Chance to Cast Level 30 Charged Bolt on Striking
+Fireball	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,2450	16	16	16% Chance to Cast Level 18 Fire Ball on Striking
+Fireball	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3032	16	16	16% Chance to Cast Level 24 Fire Ball on Striking
+Fireball	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3038	16	16	16% Chance to Cast Level 30 Fire Ball on Striking
+Frost Nova	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3026	18	18	18% Chance to Cast Level 18 Frost Nova on Striking
+Frost Nova	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,2840	18	18	18% Chance to Cast Level 24 Frost Nova on Striking
+Frost Nova	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,2846	18	18	18% Chance to Cast Level 30 Frost Nova on Striking
+Ice Barrage	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,2834	12	12	12% Chance to Cast Level 18 Ice Barrage on Striking
+Ice Barrage	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,23640	12	12	12% Chance to Cast Level 24 Ice Barrage on Striking
+Ice Barrage	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,23646	12	12	12% Chance to Cast Level 30 Ice Barrage on Striking
+Lightning	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,23634	16	16	16% Chance to Cast Level 18 Lightning on Striking
+Lightning	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3160	16	16	16% Chance to Cast Level 24 Lightning on Striking
+Lightning	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3166	16	16	16% Chance to Cast Level 30 Lightning on Striking
+Lower Resist	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3141	8	8	8% Chance to Cast Level 5 Lower Resist on Striking
+Lower Resist	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,28618	10	10	10% Chance to Cast Level 10 Lower Resist on Striking
+Lower Resist	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,28623	12	12	12% Chance to Cast Level 15 Lower Resist on Striking
+Nova	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,28626	16	16	16% Chance to Cast Level 18 Nova on Striking
+Nova	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3096	16	16	16% Chance to Cast Level 24 Nova on Striking
+Nova	WeaponP	(WEAPON !STAFF !WAND !SOR)		44	MULTI198,3102	16	16	16% Chance to Cast Level 30 Nova on Striking
+Teleportation	Amulet, Circlet	(amu OR CIRC)		44	CHSK54	1	1	Level [1-3] Teleport ([22-27] charges)
+Life Tap	Axe	AXE		44	CHSK445	1	1	Level 1 Life Tap ([22-27] charges)
+Telekinesis	Ring	rin		44	CHSK43	1	1	Level 5 Telekinesis (32 charges)
+Teleportation	Staff	STAFF		44	CHSK54	1	1	Level [1-6] Teleport ([33-52] charges)
+Life Tap	Wand, Knife, Necromancer Shield	(WAND OR DAGGER OR NEC)		44	CHSK445	1	1	Level 1 Life Tap ([67-105] charges)
+Lower Resistance	Wand, Knife, Necromancer Shield, Staff	(WAND OR DAGGER OR NEC OR STAFF)		44	CHSK447	1	1	Level 15 Lower Resist ([28-82] charges)
+Malice	Jewel	jew		6	STAT78	30	40	Attacker Takes Damage of [30-40]
+Fervor	Jewel	jew	1	7	IAS	15	15	+15% Increased Attack Speed
+Icicle	Jewel	jew		10	STAT54;STAT55	2;6	3;10	Adds [2-3] to [6-10] Cold Damage (2 second chill)
+Glacier	Jewel	jew	1	10	STAT54;STAT55	4;11	5;15	Adds [4-5] to [11-15] Cold Damage (2 second chill)
+Burning	Jewel	jew		12	STAT48;STAT49	11;31	25;50	Adds [11-25] to [31-50] Fire Damage
+Thunder	Jewel	jew		13	STAT50;STAT51	1;61	1;100	Adds 1 to [61-100] Lightning Damage
+Carnage	Jewel	jew		14	MAXDMG	11	15	+[11-15] to Maximum Damage
+Bliss	Jewel	jew		15	MINDMG	5	10	+[5-10] to Minimum Damage
+Envy	Jewel	jew		16	STAT58	3	3	+20 Poison Damage over 2 seconds
+Daring	Jewel	jew		17	DEX	7	9	+[7-9] to Dexterity
+Truth	Jewel	jew		18	FHR	7	7	+7% Faster Hit Recovery
+Honor	Jewel	jew		19	REPLIFE	1	4	Replenish Life +[1-4]
+Avarice	Jewel	jew		21	GFIND	10	30	[10-30]% Extra Gold from Monsters
+Prosperity	Jewel	jew		22	MFIND	5	10	[5-10]% Better Chance of Getting Magic Items
+Knowledge	Jewel	jew		23	STAT1	7	9	+[7-9] to Energy
+Spirit	Jewel	jew		26	LIFE	3	8	+[3-8] to Life
+Hope	Jewel	jew	1	26	LIFE	9	20	+[9-20] to Life
+Freedom	Jewel	jew		30	STAT91	15	15	Requirements -15%
+Virility	Jewel	jew		31	STR	7	9	+[7-9] to Strength
+Winter	Small Charm	cm1	1	10	STAT54;STAT55	6;10	7;13	Adds [6-7] to [10-13] Cold Damage (1 second chill)
+Incineration	Small Charm	cm1	1	12	STAT48;STAT49	6;10	8;15	Adds [6-8] to [10-15] Fire Damage
+Storms	Small Charm	cm1	1	13	STAT50;STAT51	1;17	1;25	Adds 1 to [17-25] Lightning Damage
+Craftsmanship	Small Charm	cm1	1	14	MAXDMG	1	1	+1 to Maximum Damage
+Anthrax	Small Charm	cm1	1	16	STAT58	102	102	+20 Poison Damage over 2 seconds
+Balance	Small Charm	cm1	1	18	FHR	5	5	+5% Faster Hit Recovery
+Greed	Small Charm	cm1	1	21	GFIND	5	10	[5-10]% Extra Gold from Monsters
+Good Luck	Small Charm	cm1	1	22	MFIND	6	7	[6-7]% Better Chance of Getting Magic Items
+Vita	Small Charm	cm1	1	26	LIFE	16	20	+[16-20] to Life
+Strength	Small Charm	cm1	1	31	STR	2	2	+2 to Strength
+Dexterity	Small Charm	cm1	1	31	DEX	2	2	+2 to Dexterity
+Inertia	Small Charm	cm1	1	35	FRW	3	3	+3% Faster Run/Walk
+Winter	Large Charm	cm2	1	10	STAT54;STAT55	12;20	14;26	Adds [12-14] to [20-26] Cold Damage (1 second chill)
+Incineration	Large Charm	cm2	1	12	STAT48;STAT49	12;20	16;30	Adds [12-16] to [20-30] Fire Damage
+Storms	Large Charm	cm2	1	13	STAT50;STAT51	1;34	1;50	Adds 1 to [34-50] Lightning Damage
+Quality	Large Charm	cm2	1	14	MAXDMG	2	2	+2 to Maximum Damage
+Anthrax	Large Charm	cm2	1	16	STAT58	261	261	+41 Poison Damage over 2 seconds
+Balance	Large Charm	cm2	1	18	FHR	8	8	+8% Faster Hit Recovery
+Greed	Large Charm	cm2	1	21	GFIND	11	22	[11-22]% Extra Gold from Monsters
+Vita	Large Charm	cm2	1	26	LIFE	31	35	+[31-35] to Life
+Strength	Large Charm	cm2	1	31	STR	4	5	+[4-5] to Strength
+Dexterity	Large Charm	cm2	1	31	DEX	4	5	+[4-5] to Dexterity
+Inertia	Large Charm	cm2	1	35	FRW	5	5	+5% Faster Run/Walk
+Winter	Grand Charm	cm3	1	10	STAT54;STAT55	16;27	19;35	Adds [16-19] to [27-35] Cold Damage (1 second chill)
+Incineration	Grand Charm	cm3	1	12	STAT48;STAT49	16;27	22;41	Adds [16-22] to [27-41] Fire Damage
+Storms	Grand Charm	cm3	1	13	STAT50;STAT51	1;46	1;68	Adds 1 to [46-68] Lightning Damage
+Maiming	Grand Charm	cm3	1	14	MAXDMG	3	4	+[3-4] to Maximum Damage
+Anthrax	Grand Charm	cm3	1	16	STAT58	788	788	+154 Poison Damage over 2 seconds
+Balance	Grand Charm	cm3	1	18	FHR	12	12	+12% Faster Hit Recovery
+Greed	Grand Charm	cm3	1	21	GFIND	31	40	[31-40]% Extra Gold from Monsters
+Vita	Grand Charm	cm3	1	26	LIFE	41	45	+[41-45] to Life
+Strength	Grand Charm	cm3	1	31	STR	5	6	+[5-6] to Strength
+Dexterity	Grand Charm	cm3	1	31	DEX	5	6	+[5-6] to Dexterity
+Inertia	Grand Charm	cm3	1	35	FRW	7	7	+7% Faster Run/Walk

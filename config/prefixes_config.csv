@@ -1,0 +1,210 @@
+Affix	Affix Item Types	Filter Definition	magic only	group	Stat	Min Value	Max Value	Attribute Description
+Bronze	WeaponP, Ring, Circlet, Helm, Chest, Gloves, Amulet	amu		110	AR	10	20	+[10-20] to Attack Rating
+Platinum	WeaponP, Ring, Circlet, Helm, Chest, Gloves, Quiver	(rin OR CIRC OR HELM OR CHEST OR GLOVES)		110	AR	101	120	+[101-120] to Attack Rating
+Meteoric	WeaponP, Quiver	QUIVER		110	AR	121	150	+[121-150] to Attack Rating
+Strange	WeaponP	(WEAPON !(SOR OR WAND OR STAFF))		110	AR	151	300	+[151-300] to Attack Rating
+Master's	WeaponP	(WEAPON !(SOR OR WAND OR STAFF OR BOW OR XBOW))		111	AR;EDAM	151;101	250;150	[151-250] to Attack Rating, +[101-150]% Enhanced Damage
+Grandmaster's	Missile Weapon	(BOW OR XBOW)		111	AR;EDAM	251;151	300;200	+[251-300] to Attack Rating, +[151-200]% Enhanced Damage
+Maiden's	Missile Weapon, Spear, Chest, ShieldNC, HelmNC	(CHEST OR ((SHIELD OR HELM) !CLASS))		125	CLSK0	1	1	+1 to Amazon Skill Levels
+Valkyrie's	Missile Weapon, Spear, Amulet, Circlet	(BOW OR XBOW OR SPEAR OR JAV OR amu OR CIRC)		125	CLSK0	2	2	+2 to Amazon Skill Levels
+Angel's	Chest, ShieldNC, HelmNC	(CHEST OR ((SHIELD OR HELM) !CLASS))		125	CLSK1	1	1	+1 to Sorceress Skill Levels
+Arch-Angel's	Staff, Orb	(STAFF OR SOR OR amu OR CIRC)		125	CLSK1	2	2	+2 to Sorceress Skill Levels
+Summoner's	Chest, Non-Paladin Shield, HelmNC	(CHEST OR (SHIELD !CLASS) OR (HELM !CLASS))		125	CLSK2	1	1	+1 to Necromancer Skill Levels
+Necromancer's	Wand, Dagger, Necromancer Shield, Amulet, Circlet	(WAND OR DAGGER OR NEC OR amu OR CIRC)		125	CLSK2	2	2	+2 to Necromancer Skill Levels
+Monk's	Chest, Non-Necromancer Shield, HelmNC, Scepter, Paladin Shield	(CHEST OR (HELM !CLASS))		125	CLSK3	1	1	+1 to Paladin Skill Levels
+Priest's	Sword, Tipped Mace, Hammer, Non-Necromancer Shield, Amulet, Circlet, Scepter, Paladin Shield	(SWORD OR TMACE OR HAMMER OR (SHIELD !NEC) OR amu OR CIRC OR SCEPTER)		125	CLSK3	2	2	+2 to Paladin Skill Levels
+Slayer's	Chest, ShieldNC, Non-Druid Helm	(CHEST OR (SHIELD !CLASS) OR (HELM !CLASS))		125	CLSK4	1	1	+1 to Barbarian Skill Levels
+Berserker's	Axe, Any Mace, Sword, Throwing Knife, Two-Handed SpearNC, Barbarian Helm, Amulet, Circlet	(AXE OR MACE OR SWORD OR (THROWING DAGGER) OR (SPEAR !CLASS) OR BAR OR amu OR CIRC)		125	CLSK4	2	2	+2 to Barbarian Skill Levels
+Shaman's	Chest, ShieldNC, Non-Barbarian Helm	(CHEST OR (SHIELD !CLASS) OR (HELM !CLASS))		125	CLSK5	1	1	+1 to Druid Skill Levels
+Hierophant's	Club, Druid Helm, Amulet, Circlet	(CLUB OR DRU OR amu OR CIRC)		125	CLSK5	2	2	+2 to Druid Skill Levels
+Magekiller's	Chest, ShieldNC, HelmNC	(CHEST OR (SHIELD !CLASS))		125	CLSK6	1	1	+1 to Assassin Skills
+Witch-hunter's	Claw, Dagger, Amulet, Circlet	(SIN OR DAGGER OR amu OR CIRC)		125	CLSK6	2	2	+2 to Assassin Skills
+Cobalt	Armor, Ring, Amulet, Orb, Circlet, Quiver, Non-Orb Weapon	((WEAPON !STAFF !WAND !SCEPTER) OR BELT OR GLOVES OR rin OR QUIVER)		117	CRES	21	30	Cold Resist +[21-30]%
+Sapphire	Rod, Boots, Amulet, Orb, Circlet, Chest, Helm, Shield	(STAFF OR WAND OR SCEPTER OR BOOTS OR amu OR SOR OR CIRC OR CHEST OR HELM OR SHIELD)		117	CRES	31	40	Cold Resist +[31-40]%
+Devious	orbs, staves, shields, amulets	(SOR OR STAFF OR SHIELD OR amu)		107	DTM	21	30	[21-30]% damage taken goes to mana
+Deadly	WeaponP, Circlet	CIRC		105	EDAM	21	30	+[21-30]% Enhanced Damage
+Massive	Quiver	QUIVER		105	EDAM	51	65	+[51-65]% Enhanced Damage
+Embattled	Chest, Shield	SHIELD		105	EDAM	120	160	+[120-160]% Enhanced Damage
+Rampaging	Chest	CHEST		105	EDAM	160	200	+[160-200]% Enhanced Damage
+Cruel	WeaponP	(WEAPON !(SOR OR WAND OR STAFF))		105	EDAM	201	300	+[201-300]% Enhanced Damage
+Visceral	Amazon Javelin, Knife, Club, Tipped Mace, Throwing Axe	((ZON JAV) OR DAGGER OR CLUB OR TMACE OR (THROWING AXE))		105	EDAM	301	400	+[301-400]% Enhanced Damage
+Godly	Armor	ARMOR		101	EDEF	101	200	+[101-200]% Enhanced Defense
+Garnet	Armor, Ring, Amulet, Orb, Circlet, Quiver, Non-Orb Weapon	((WEAPON !STAFF !WAND !SCEPTER) OR BELT OR GLOVES OR rin OR QUIVER)		118	FRES	21	30	Fire Resist +[21-30]%
+Ruby	Rod, Boots, Amulet, Orb, Circlet, Chest, Helm, Shield	(STAFF OR WAND OR SCEPTER OR BOOTS OR amu OR SOR OR CIRC OR CHEST OR HELM OR SHIELD)		118	FRES	31	40	Fire Resist +[31-40]%
+Coral	Armor, Ring, Amulet, Orb, Circlet, Quiver, Non-Orb Weapon	((WEAPON !STAFF !WAND !SCEPTER) OR BELT OR GLOVES OR rin OR QUIVER)		119	LRES	21	30	Lightning Resist +[21-30]%
+Amber	Rod, Boots, Amulet, Orb, Circlet, Chest, Helm, Shield	(STAFF OR WAND OR SCEPTER OR BOOTS OR amu OR SOR OR CIRC OR CHEST OR HELM OR SHIELD)		119	LRES	31	40	Lightning Resist +[31-40]%
+Triumphant	Weapon, Ring, Circlet, Chest, Helm, Shield, Quiver	rin		121	MAEK	1	1	+1 to Mana after each Kill
+Victorious	Weapon, Circlet, Chest, Helm, Shield, Quiver	(WEAPON OR CIRC OR CHEST OR HELM OR SHIELD OR QUIVER)		121	MAEK	2	5	+[2-5] to Mana after each Kill
+New MAEK	Staff, Orb, Wand	(STAFF OR SOR OR WAND)		121	MAEK	4	8	+[4-8] to Mana after each Kill
+Serpent's	Belt, Ring, Amulet, Shield, Rod, Circlet, Quiver, Chest, Non-Rod Weapon, Boots, Gloves	(BELT OR (WEAPON !(STAFF OR WAND OR SCEPTER)))		115	MANA	11	20	+[11-20] to Mana
+Dragon's	Rod, Ring, Amulet, Orb, Circlet, Quiver, Chest, Boots, Gloves	(BOOTS OR GLOVES OR QUIVER)		115	MANA	31	40	+[31-40] to Mana
+Great Wyrm's	Rod, Ring, Amulet, Orb, Circlet, Chest, Shield	(CHEST OR SHIELD)		115	MANA	61	90	+[61-90] to Mana
+Bahamut's	Rod, Ring, Amulet, Orb, Circlet	(STAFF OR WAND OR SCEPTER OR rin OR amu OR SOR OR CIRC)		115	MANA	91	120	+[91-120] to Mana
+Vermillion	Quiver	QUIVER		104	MAXDMG	11	15	+[11-15] to Maximum Damage
+Fortuitous	Ring, Amulet, Circlet, Helm	(rin OR amu OR CIRC OR HELM)		114	MFIND	11	15	[11-15]% Better Chance of Getting Magic Items
+Cardinal	Quiver	QUIVER		103	MINDMG	10	14	+[10-14] to Minimum Damage
+Jade	Armor, Ring, Amulet, Orb, Circlet, Quiver, Non-Orb Weapon	((WEAPON !STAFF !WAND !SCEPTER) OR BELT OR GLOVES OR rin OR QUIVER)		120	PRES	21	30	Poison Resist +[21-30]%
+Emerald	Rod, Boots, Amulet, Orb, Circlet, Chest, Helm, Shield	(STAFF OR WAND OR SCEPTER OR BOOTS OR amu OR SOR OR CIRC OR CHEST OR HELM OR SHIELD)		120	PRES	31	40	Poison Resist +[31-40]%
+Rainbow	Ring	rin		116	RES	8	11	All Resistances +[8-11]
+Scintillating	Amulet, Circlet, Quiver, Helm	QUIVER		116	RES	12	15	All Resistances +[12-15]
+Prismatic	Amulet, Circlet	(amu OR CIRC)		116	RES	16	20	All Resistances +[16-20]
+Chromatic	Shield, Chest, Helm	(SHIELD OR CHEST OR HELM)		116	RES	21	30	All Resistances +[21-30]
+Mechanist's	Weapon, Shield, Helm, Chest, Circlet	(HELM OR CIRC)		122	SOCKETS	1	2	Socketed ([1-2])
+Artisan's	Weapon, Shield, Chest	(WEAPON OR SHIELD OR CHEST)		122	SOCKETS	1	3	Socketed (3)
+Howling	Missile Weapon	(BOW OR XBOW)		113	STAT112	18	18	Hit Causes Monster to Flee 18%
+Wailing	Mace, Scepter, Knife, Claw	(MACE OR SCEPTER OR DAGGER OR SIN)		113	STAT112	100	100	Hit Causes Monster to Flee 100%
+Arcadian	WeaponPS, Circlet, Helm, Quiver	(CIRC OR HELM OR QUIVER)		123	STAT123;STAT121	51;26	100;50	+[51-100] to Attack Rating against Demons, +[26-50]% Damage to Demons
+Elysian	WeaponPS	(WEAPON !(SOR OR WAND))		123	STAT123;STAT121	201;151	300;200	+[201-300] to Attack Rating against Demons, +[151-200]% Damage to Demons
+Celestial	Missile Weapon	(BOW OR XBOW)		123	STAT123;STAT121	301;201	400;300	+[301-400] to Attack Rating against Demons, +[201-300]% Damage to Demons
+Hallowed	WeaponPS	(WEAPON !(SOR OR WAND))		142	STAT124;STAT122	251;201	325;275	+[251-325] to Attack Rating against Undead, +[201-275]% Damage to Undead
+Divine	Missile Weapon	(BOW OR XBOW)		142	STAT124;STAT122	326;276	450;350	+[326-450] to Attack Rating against Undead, +[276-350]% Damage to Undead
+Consecrated	Quiver	QUIVER		142	STAT124;STAT122	25;25	75;75	+[25-75] to Attack Rating against Undead, +[25-75]% Damage to Undead
+Gorelust's	WeaponP, Quiver	((WEAPON !(SOR OR WAND OR STAFF)) OR QUIVER)		170	STAT135;STAT501	20;407	20;563	20% Chance of Open Wounds, +[407-563] Open Wounds Damage per Second
+Piercing	Quiver	QUIVER		143	STAT156	21	30	+[21-30]% Chance to Pierce
+Impaling	Quiver	QUIVER	1	143	STAT156	31	40	+[31-40]% Chance to Pierce
+Faithful (Paleoscene)	Gloves, Boots, Belt, Shield	(GLOVES OR BOOTS OR BELT OR SHIELD)		101	STAT214	0.5	0.5	+[0-49] Defense (+0.5 per Level)
+Faithful (Paleoscene)	Chest	CHEST		101	STAT214	3	3	+[3-297] Defense (+3 per Level)
+Mnemonic	Helm	HELM		115	STAT217	0.75	0.75	+[0-74] to Mana (+0.75 per Level)
+Gritty	WeaponP	(WEAPON !(SOR OR WAND OR STAFF))		105	STAT218	0.75	0.75	+[0-74] to Maximum Damage (+0.75 per Level)
+Fool's	WeaponP	(WEAPON !(SOR OR WAND OR STAFF))		111	STAT218;STAT224	0.5;16.5	0.5;16.5	+[0-49] to Maximum Damage (+0.5 per Level), +[16-1633] to Attack Rating (+16.5 per Level)
+Visionary	Helm, Missile Weapon	(HELM OR BOW OR XBOW)		111	STAT225	1	1	[1-99]% Bonus to Attack Rating (1% per Level)
+Infernal	Missile Weapon, Scepter, Crystal Sword, Orb, Claw, Druid Helm	(BOW OR XBOW OR SCEPTER OR CRYSTAL OR SOR OR SIN OR DRU)		171	STAT333	6	10	-[6-10] to Enemy Fire Resistance
+Infernal	Staff	STAFF		171	STAT333	10	15	-[10-15] to Enemy Fire Resistance
+Surging	Amazon Javelin, Scepter, Crystal Sword, Orb, Claw	((JAV ZON) OR SCEPTER OR SOR OR SIN OR CRYSTAL)		171	STAT334	6	10	-[6-10] to Enemy Lightning Resistance
+Surging	Staff, Amazon Spear	STAFF OR (ZON !BOW)		171	STAT334	10	15	-[10-15] to Enemy Lightning Resistance
+Subzero	Missile Weapon, Scepter, Crystal Sword, Orb, Claw, Druid Helm	(BOW OR XBOW OR SCEPTER OR CRYSTAL OR SOR OR SIN OR DRU)		171	STAT335	6	10	-[6-10] to Enemy Cold Resistance
+Subzero	Staff	STAFF		171	STAT335	10	15	-[10-15] to Enemy Cold Resistance
+Necrotic	Amazon Javelin, Wand, Claw	(JAV ZON) OR WAND OR SIN		171	STAT336	6	10	-[6-10] to Enemy Poison Resistance
+Fiery	Circlet	CIRC		138	STAT48;STAT49	16;31	25;60	Adds [16-25] to [31-60] Fire Damage
+Scorching	Weapon, Quiver	((WEAPON !(STAFF OR SOR OR WAND)) OR QUIVER)		138	STAT48;STAT49	217;325	306;432	Adds [217-306] to [325-432] Fire Damage
+Static	Weapon, Circlet, Quiver	CIRC		139	STAT50;STAT51	1;49	1;120	Adds 1 to [49-120] Lightning Damage
+Shocking	Weapon, Quiver	((WEAPON !(STAFF OR SOR OR WAND)) OR QUIVER)		139	STAT50;STAT51	1;433	1;576	Adds 1 to [433-576] Lightning Damage
+Hibernal	Weapon, Quiver	((WEAPON !(STAFF OR SOR OR WAND)) OR QUIVER)		137	STAT54;STAT55	60;226	112;348	Adds [60-112] to [226-348] Cold Damage (4 second chill)
+Snowy	Weapon, Circlet, Quiver	CIRC		137	STAT54;STAT55	20;64	30;101	Adds [20-30] to [64-101] Cold Damage (1 second chill)
+Virulent	Weapon, Quiver	((WEAPON !(STAFF OR SOR OR WAND)) OR QUIVER)		140	STAT58	3778	3778	+738 Poison Damage over 2 seconds
+Infectious	Dagger, Scythe	(DAGGER OR SCYTHE)		140	STAT58	4531	4531	+885 Poison Damage over 2 seconds
+Blood Sucking	Chest, Helm, Shield, Weapon, Ring, Quiver	rin		200	STAT86	1	3	+[1-3] Life after each Kill
+Murderous	Weapon, Circlet, Chest, Helm, Shield, Quiver	(WEAPON OR CIRC OR CHEST OR HELM OR SHIELD OR QUIVER)		200	STAT86	2	5	+[2-5] Life after each Kill
+New LAEK	Staff, Orb, Wand	(STAFF OR SOR OR WAND)		121	STAT86	4	8	+[4-8] to Life after each Kill
+Bowyer's	Missile Weapon, Gloves, Circlet, Quiver, Amulet	(((BOW OR XBOW) CLASS) OR GLOVES OR CIRC OR QUIVER OR amu)		125	TABSK0	2	2	+2 to Bow and Crossbow Skills (Amazon Only)
+Archer's	Missile WeaponNC	((BOW OR XBOW) !CLASS)		125	TABSK0	3	3	+3 to Bow and Crossbow Skills (Amazon Only)
+Gymnast's	Gloves, Amulet, Circlet, Quiver	(GLOVES OR amu OR CIRC OR QUIVER)		125	TABSK1	2	2	+2 to Passive and Magic Skills (Amazon Only)
+Freezing	Staff, Orb, Amulet, Circlet	(STAFF OR SOR OR amu OR CIRC)		125	TABSK10	2	2	+2 to Cold Spells (Sorceress Only)
+Blighting	Wand, Necromancer Shield, Amulet, Circlet	(WAND OR NEC OR amu OR CIRC)		125	TABSK16	2	2	+2 to Curses (Necromancer Only)
+Noxious	Wand, Necromancer Shield, Amulet, Dagger, Circlet	(WAND OR NEC OR amu OR DAGGER OR CIRC)		125	TABSK17	2	2	+2 to Poison and Bone Spells (Necromancer Only)
+Vodoun	Wand, Necromancer Shield, Amulet, Circlet	(WAND OR NEC OR amu OR CIRC)		125	TABSK18	2	2	+2 to Summoning Spells (Necromancer Only)
+Spearmaiden's	Spear, Gloves, Amulet, Circlet	(GLOVES OR amu OR CIRC)		125	TABSK2	2	2	+2 to Javelin and Spear Skills (Amazon Only)
+Lancer's	Spear	(SPEAR OR JAV)		125	TABSK2	3	3	+3 to Javelin and Spear Skills (Amazon Only)
+Hawk Branded	Scepter, Sword, Tipped Mace, Non-Necromancer Shield, Amulet, Circlet	(SCEPTER OR SWORD OR TMACE OR (SHIELD !NEC) OR amu OR CIRC)		125	TABSK24	2	2	+2 to Combat Skills (Paladin Only)
+Commander's	Scepter, Sword, Tipped Mace, Non-Necromancer Shield, Amulet, Circlet	(SCEPTER OR SWORD OR TMACE OR (SHIELD !NEC) OR amu OR CIRC)		125	TABSK25	2	2	+2 to Offensive Auras (Paladin Only)
+Warder's	Non-Necromancer Shield, Amulet, Circlet	((SHIELD !NEC) OR amu OR CIRC)		125	TABSK26	2	2	+2 to Defensive Auras (Paladin Only)
+Veteran's	Axe, Any Mace, Sword, Polearm, SpearNC, Non-Druid Helm	(AXE OR MACE OR SWORD OR POLEARM OR ((SPEAR OR JAV) !CLASS) OR (HELM !DRU))		125	TABSK32	2	2	+2 to Combat Skills (Barbarian Only)
+Raging	Axe, Any Mace, Sword, Polearm, SpearNC, Barbarian Helm, Amulet	(AXE OR MACE OR SWORD OR POLEARM OR ((SPEAR OR JAV) !CLASS) OR BAR OR amu)		125	TABSK33	2	2	+2 to Combat Masteries (Barbarian Only)
+Resonant	Axe, Any Mace, Sword, Polearm, SpearNC, Barbarian Helm, Amulet	(AXE OR MACE OR SWORD OR POLEARM OR ((SPEAR OR JAV) !CLASS) OR BAR OR amu)		125	TABSK34	2	2	+2 to Warcries (Barbarian Only)
+Caretaker's	Club, Druid Helm, Amulet, Circlet	(CLUB OR DRU OR amu OR CIRC)		125	TABSK40	2	2	+2 to Summoning Skills (Druid Only)
+Feral	Club, Druid Helm, Amulet, Circlet	(CLUB OR DRU OR amu OR CIRC)		125	TABSK41	2	2	+2 to Shape Shifting Skills (Druid Only)
+Terra's	Club, Druid Helm, Amulet, Circlet	(CLUB OR DRU OR amu OR CIRC)		125	TABSK42	2	2	+2 to Elemental Skills (Druid Only)
+Trickster's	Claw, Dagger, Amulet, Circlet	(SIN OR DAGGER OR amu OR CIRC)		125	TABSK48	2	2	+2 to Traps (Assassin Only)
+Psychic	Claw, Dagger, Amulet, HelmNC, Circlet	(SIN OR DAGGER OR amu OR (HELM !CLASS) OR CIRC)		125	TABSK49	2	2	+2 to Shadow Disciplines (Assassin Only)
+Sensei's	Claw, Dagger, Amulet, Gloves, Circlet	(SIN OR DAGGER OR amu OR GLOVES OR CIRC)		125	TABSK50	2	2	+2 to Martial Arts (Assassin Only)
+Blazing	Staff, Orb, Amulet, Circlet	(STAFF OR SOR OR amu OR CIRC)		125	TABSK8	2	2	+2 to Fire Spells (Sorceress Only)
+Charged	Staff, Orb, Amulet, Circlet	(STAFF OR SOR OR amu OR CIRC)		125	TABSK9	2	2	+2 to Lightning Spells (Sorceress Only)
+Bone	Jewels	jew		101	DEF	21	40	+[21-40] Defense
+Ivory	Jewels	jew	1	101	DEF	41	64	+[41-64] Defense
+Cardinal	Jewels	jew		103	MINDMG	10	14	+[10-14] to Minimum Damage
+Vermillion	Jewels	jew		104	MAXDMG	11	15	+[11-15] to Maximum Damage
+Ruby	Jewels	jew		105	EDAM	31	40	+[31-40]% Enhanced Damage
+Dun	Jewels	jew		107	DTM	7	12	[7-12]% Damage Taken Gained as Mana when Hit
+Argent	Jewels	jew		110	AR	61	100	+[61-100] to Attack Rating
+Cerulean	Jewels	jew		115	MANA	21	30	+[21-30] to Mana
+Shimmering	Jewels	jew		116	RES	5	10	All Resistances +[5-10]
+Scintillating	Jewels	jew	1	116	RES	11	15	All Resistances +[11-15]
+Sapphire	Jewels	jew		117	CRES	16	30	Cold Resist +[16-30]%
+Ruby	Jewels	jew		117	FRES	16	30	Fire Resist +[16-30]%
+Ambergris	Jewels	jew		117	LRES	16	30	Lightning Resist +[16-30]%
+Jade	Jewels	jew		117	PRES	16	30	Poison Resist +[16-30]%
+Aureolic	Jewels	jew		121	MAEK	1	3	+[1-3] to Mana after each Kill
+Diamond	Jewels	jew		123	STAT123;STAT121	25;25	50;40	+[25-50] to Attack Rating against Demons,+[25-40]% Damage to Demons
+Pearl	Jewels	jew		142	STAT124;STAT122	25;25	50;50	+[25-50] to Attack Rating against Undead,+[25-50]% Damage to Undead
+Gorelust's	Jewels	jew		170	STAT135;STAT501	5;95	5;125	5% Chance of Open Wounds,+[95-125] Open Wounds Damage per Second
+Blood Sucking	Jewels	jew		200	STAT86	1	3	+[1-3] Life after each Kill
+Fortuitous	Jewels	jew		114	MFIND	11	15	+[11-15]% magic find
+Stalwart	Small Charm	cm1	1	101	DEF	20	30	+[20-30] Defense
+Red	Small Charm	cm1	1	103	MINDMG	1	1	+1 to Minimum Damage
+Steel	Small Charm	cm1	1	110	AR	25	36	+[25-36] to Attack Rating
+Fine	Small Charm	cm1	1	111	AR;MAXDMG	10;1	20;3	+[10-20] to Attack Rating, +[1-3] to Maximum Damage
+Serpent's	Small Charm	cm1	1	115	MANA	13	17	+[13-17] to Mana
+Shimmering	Small Charm	cm1	1	116	RES	3	5	All Resistances +[3-5]
+Sapphire	Small Charm	cm1	1	117	CRES	10	11	Cold Resist +[10-11]%
+Ruby	Small Charm	cm1	1	118	FRES	10	11	Fire Resist +[10-11]%
+Amber	Small Charm	cm1	1	119	LRES	10	11	Lightning Resist +[10-11]%
+Emerald	Small Charm	cm1	1	120	PRES	10	11	Poison Resist +[10-11]%
+Hibernal	Small Charm	cm1	1	137	STAT54;STAT55	11;20	13;27	Adds [11-13] to [20-27] Cold Damage (1 second chill)
+Flaming	Small Charm	cm1	1	138	STAT48;STAT49	10;20	19;29	Adds [10-19] to [20-29] Fire Damage
+Shocking	Small Charm	cm1	1	139	STAT50;STAT51	1;31	1;50	Adds 1 to [31-50] Lightning Damage
+Pestilent	Small Charm	cm1	1	140	STAT58	332	332	+65 Poison Damage over 2 seconds
+NewFCR	Large Charm	cm2	1	202	FCR	5	6	[5-6]% Faster Cast Rate
+NewASPD	Large Charm	cm2	1	202	IAS	4	7	[4-7]% Increased Attack Speed
+Stalwart	Large Charm	cm2	1	101	DEF	45	60	+[45-60] Defense
+Sanguinary	Large Charm	cm2	1	103	MINDMG	2	2	+2 to Minimum Damage
+Steel	Large Charm	cm2	1	110	AR	65	77	+[65-77] to Attack Rating
+Sharp	Large Charm	cm2	1	111	AR;MAXDMG	21;4	48;6	+[21-48] to Attack Rating, +[4-6] to Maximum Damage
+Lucky	Large Charm	cm2	1	114	MFIND	4	6	[4-6]% Better Chance of Getting Magic Items
+Serpent's	Large Charm	cm2	1	115	MANA	30	34	+[30-34] to Mana
+Shimmering	Large Charm	cm2	1	116	RES	6	8	All Resistances +[6-8]
+Sapphire	Large Charm	cm2	1	117	CRES	13	15	Cold Resist +[13-15]%
+Ruby	Large Charm	cm2	1	118	FRES	13	15	Fire Resist +[13-15]%
+Amber	Large Charm	cm2	1	119	LRES	13	15	Lightning Resist +[13-15]%
+Emerald	Large Charm	cm2	1	120	PRES	13	15	Poison Resist +[13-15]%
+Hibernal	Large Charm	cm2	1	137	STAT54;STAT55	22;40	26;54	Adds [22-26] to [40-54] Cold Damage (1 second chill)
+Flaming	Large Charm	cm2	1	138	STAT48;STAT49	20;40	38;58	Adds [20-38] to [40-58] Fire Damage
+Shocking	Large Charm	cm2	1	139	STAT50;STAT51	1;62	1;100	Adds 1 to [62-100] Lightning Damage
+Pestilent	Large Charm	cm2	1	140	STAT58	660	660	+129 Poison Damage over 2 seconds
+Conduit	Large Charm	cm2	1	201	STAT330	3	4	+[3-4]% to Lightning Skill Damage
+Numbing	Large Charm	cm2	1	201	STAT331	3	4	+[3-4]% to Cold Skill Damage
+Inferno	Large Charm	cm2	1	201	STAT329	3	4	+[3-4]% to Fire Skill Damage
+Infectious	Large Charm	cm2	1	201	STAT332	3	4	+[3-4]% to Poison Skill Damage
+Scintillating	Large Charm	cm2	1	201	STAT357	3	4	+[3-4]% to Magic Skill Damage
+Stalwart	Grand Charm	cm3	1	101	DEF	60	100	+[60-100] Defense
+Bloody	Grand Charm	cm3	1	103	MINDMG	3	3	+3 to Minimum Damage
+Steel	Grand Charm	cm3	1	110	AR	118	132	+[118-132] to Attack Rating
+Sharp	Grand Charm	cm3	1	111	AR;MAXDMG	49;7	76;10	+[49-76] to Attack Rating, +[7-10] to Maximum Damage
+Lucky	Grand Charm	cm3	1	114	MFIND	8	12	[8-12]% Better Chance of Getting Magic Items
+Serpent's	Grand Charm	cm3	1	115	MANA	53	59	+[53-59] to Mana
+Shimmering	Grand Charm	cm3	1	116	RES	13	15	All Resistances +[13-15]
+Sapphire	Grand Charm	cm3	1	117	CRES	26	30	Cold Resist +[26-30]%
+Ruby	Grand Charm	cm3	1	118	FRES	26	30	Fire Resist +[26-30]%
+Amber	Grand Charm	cm3	1	119	LRES	26	30	Lightning Resist +[26-30]%
+Emerald	Grand Charm	cm3	1	120	PRES	26	30	Poison Resist +[26-30]%
+Fletcher's	Grand Charm	cm3	1	125	TABSK0	1	1	+1 to Bow and Crossbow Skills (Amazon Only)
+Acrobat's	Grand Charm	cm3	1	125	TABSK1	1	1	+1 to Passive and Magic Skills (Amazon Only)
+Harpoonist's	Grand Charm	cm3	1	125	TABSK2	1	1	+1 to Javelin and Spear Skills (Amazon Only)
+Burning	Grand Charm	cm3	1	125	TABSK8	1	1	+1 to Fire Spells (Sorceress Only)
+Sparking	Grand Charm	cm3	1	125	TABSK9	1	1	+1 to Lightning Spells (Sorceress Only)
+Chilling	Grand Charm	cm3	1	125	TABSK10	1	1	+1 to Cold Spells (Sorceress Only)
+Hexing	Grand Charm	cm3	1	125	TABSK16	1	1	+1 to Curses (Necromancer Only)
+Fungal	Grand Charm	cm3	1	125	TABSK17	1	1	+1 to Poison and Bone Spells (Necromancer Only)
+Graverobber's	Grand Charm	cm3	1	125	TABSK18	1	1	+1 to Summoning Spells (Necromancer Only)
+Lion Branded	Grand Charm	cm3	1	125	TABSK24	1	1	+1 to Combat Skills (Paladin Only)
+Captain's	Grand Charm	cm3	1	125	TABSK25	1	1	+1 to Offensive Auras (Paladin Only)
+Preserver's	Grand Charm	cm3	1	125	TABSK26	1	1	+1 to Defensive Auras (Paladin Only)
+Expert's	Grand Charm	cm3	1	125	TABSK32	1	1	+1 to Combat Skills (Barbarian Only)
+Fanatic	Grand Charm	cm3	1	125	TABSK33	1	1	+1 to Combat Masteries (Barbarian Only)
+Sounding	Grand Charm	cm3	1	125	TABSK34	1	1	+1 to Warcries (Barbarian Only)
+Trainer's	Grand Charm	cm3	1	125	TABSK40	1	1	+1 to Summoning Skills (Druid Only)
+Spiritual	Grand Charm	cm3	1	125	TABSK41	1	1	+1 to Shape Shifting Skills (Druid Only)
+Nature's	Grand Charm	cm3	1	125	TABSK42	1	1	+1 to Elemental Skills (Druid Only)
+Entrapping	Grand Charm	cm3	1	125	TABSK48	1	1	+1 to Traps (Assassin Only)
+Mentalist's	Grand Charm	cm3	1	125	TABSK49	1	1	+1 to Shadow Disciplines (Assassin Only)
+Shogukusha's	Grand Charm	cm3	1	125	TABSK50	1	1	+1 to Martial Arts (Assassin Only)
+Hibernal	Grand Charm	cm3	1	137	STAT54;STAT55	30;54	35;73	Adds [30-35] to [54-73] Cold Damage (1 second chill)
+Flaming	Grand Charm	cm3	1	138	STAT48;STAT49	27;54	51;78	Adds [27-51] to [54-78] Fire Damage
+Shocking	Grand Charm	cm3	1	139	STAT50;STAT51	1;84	1;135	Adds 1 to [84-135] Lightning Damage
+Pestilent	Grand Charm	cm3	1	140	STAT58	890	890	+174 Poison Damage over 2 seconds
+KLUDGE	KLUDGE	DIN		9999	KLUDGE	0	1	Include minimal descriptor to force positive framing of region characteristic.
+KLUDGE	KLUDGE	(!ZON (BOW OR XBOW))		9999	KLUDGE	0	1	Include minimal descriptor to force positive framing of region characteristic.
+KLUDGE	KLUDGE	(!ZON JAV)		9999	KLUDGE	0	1	Include minimal descriptor to force positive framing of region characteristic.
+KLUDGE	KLUDGE	(!ZON SPEAR)		9999	KLUDGE	0	1	Include minimal descriptor to force positive framing of region characteristic.
+KLUDGE	KLUDGE	(ZON SPEAR)		9999	KLUDGE	0	1	Include minimal descriptor to force positive framing of region characteristic.
+KLUDGE	KLUDGE	POLEARM		9999	KLUDGE	0	1	Include minimal descriptor to force positive framing of region characteristic.
+KLUDGE	KLUDGE	SWORD		9999	KLUDGE	0	1	Include minimal descriptor to force positive framing of region characteristic.

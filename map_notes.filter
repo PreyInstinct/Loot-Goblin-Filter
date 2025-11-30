@@ -119,3 +119,6 @@ ItemDisplay[t54]: %NAME%{%RED%F%WHITE%:65 %BLACK%| %BLUE%C%WHITE%:65 %BLACK%| %Y
 //Outer Void
 ItemDisplay[t55]: %NAME%{%WHITE%Boss Damage: %GRAY%Missing Data %BLACK%| %WHITE%Monsters Highest Res:%CL%%NAME%}%CONTINUE%
 ItemDisplay[t55]: %NAME%{%RED%F%WHITE%:75 %BLACK%| %BLUE%C%WHITE%:50 %BLACK%| %YELLOW%L%WHITE%:75 %BLACK%| %GREEN%P%WHITE%:30 %BLACK%| %ORANGE%M%WHITE%:50 %BLACK%| %GOLD%P%WHITE%:50%CL%%NAME%}%CONTINUE%
+//City of Ureh
+ItemDisplay[t56]: %NAME%{%WHITE%Boss Damage: %GRAY%Missing Data %BLACK%| %WHITE%Monsters Highest Res:%CL%%NAME%}%CONTINUE%
+ItemDisplay[t56]: %NAME%{%RED%F%WHITE%:?? %BLACK%| %BLUE%C%WHITE%:?? %BLACK%| %YELLOW%L%WHITE%:?? %BLACK%| %GREEN%P%WHITE%:?? %BLACK%| %ORANGE%M%WHITE%:?? %BLACK%| %GOLD%P%WHITE%:??%CL%%NAME%}%CONTINUE%

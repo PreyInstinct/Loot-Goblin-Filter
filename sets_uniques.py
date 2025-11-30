@@ -53,7 +53,7 @@ def parse_sets_uniques():
             eth_tier = tier
         yield order, rarity, base, name, tier, eth_tier, base_tier
 
-def build():
+def build(verbose=False):
     levels, eth_levels = get_levels()
     
     uniques = ['// --- Uniques ---',
@@ -124,8 +124,11 @@ def build():
     return uniques+sets
 
 
-if __name__ == '__main__':
-    lines = build()
+def main():
+    lines = build(verbose=True)
     for l in lines:
         print(l)
+
+if __name__ == '__main__':
+    main()
     

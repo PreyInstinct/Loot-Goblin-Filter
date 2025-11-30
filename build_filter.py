@@ -1,40 +1,10 @@
 #!/usr/bin/env python3
 import sys
 import importlib
+import argparse
 
 from aliases import _Aliaser
 Aliaser = _Aliaser()
-
-bar = '//'+'-'*100
-
-def build_filter(structure):
-    lines = []
-    for section_name, section_source in structure.items():
-        header =  ['',
-                  bar,
-                  '// '+section_name,
-                  bar,
-                  '']
-        lines.extend(header)
-        if type(section_source) == str:
-            section = parse_source(section_source)
-        elif type(section_source) == dict:
-            section = build_filter(section_source)
-        else:
-            raise ValueError("Unknown datatype in filter structure definition: {}".format(section_source))
-        lines.extend(section)
-    return lines
-
-def parse_source(sourcefile):
-    if sourcefile.endswith('.filter'):
-        infh = open(sourcefile, 'r')
-        lines = [Aliaser.process(line.strip('\n')) for line in infh]
-    elif sourcefile.endswith('.py'):
-        module = importlib.import_module(sourcefile[:-3])
-        lines = [Aliaser.process(line) for line in module.build()]
-    else:
-        raise ValueError("Unknown filetype in filter structure definition: {}".format(sourcefile))
-    return lines
 
 structure = {
     'Filter Levels': 'levels.filter',
@@ -60,22 +30,8 @@ structure = {
         'Miscellaneous Items': 'misc_items.filter'},
     'Item Descriptions': {
         'Point System': {
-            'Amulets': 'points_amulets.filter',
-            'Belts': 'points_belts.filter',
-            'Boots': 'points_boots.filter',
-            'Charms': 'points_charms.filter',
-            'Chests': 'points_chests.filter',
-            'Gloves': 'points_gloves.filter',
-            'Hats': 'points_hats.filter',
-            'Jewels': 'points_jewels.filter',
-            'Maps': 'points_maps.filter',
-            'Quivers': 'points_quivers.filter',
-            'Rings': 'points_rings.filter',
-            'Shields': 'points_shields.filter',
-            'Weapons, Bludgeoning': 'points_weapons_bludgeoning.filter',
-            'Weapons, Edged': 'points_weapons_edged.filter',
-            'Weapons, Missile': 'points_weapons_missile.filter',
-            'Weapons, Throwing': 'points_weapons_throwing.filter'},
+            'Generated': 'point_system.py',
+            'Maps': 'points_maps.filter'},
         'Resistance Totals': 'resistances.filter',
         'Notes on Socketing Non-magical Items': 'socketing_notes_nmag.filter',
         'Notes on Socketing Magical (or better) Items': 'socketing_notes_mag.filter',
@@ -89,17 +45,9 @@ structure = {
         'Notes on Maps': 'map_notes.filter',
         'Unknown Item Catch-all': 'unknown_items.filter'}}
         
-
-
-
         
 # Unused/to-do
 #        'Sound Effects': 'sound_effects.filter',
-# weapons, wands
-# weapons, staffs
-# weapons, orbs
-# crafting for most craftable types
-
 
 file_header = ["-*- coding: windows-1252 -*-",
              "",
@@ -112,8 +60,66 @@ file_header = ["-*- coding: windows-1252 -*-",
              "//	Note: This file must be edited and saved using Windows-1225 (ANSI) encoding, otherwise some symbols will not render properly.",
              "//"]
 
-outfh = open(sys.argv[1], 'w', encoding='windows-1252')
-for l in file_header:
-    print(l, file=outfh)
-for l in build_filter(structure):
-    print(l, file=outfh)
+
+def get_args():
+    parser = argparse.ArgumentParser(
+        description="Loot Goblin Filter Builder."
+    )
+
+    parser.add_argument(
+        "-v", "--verbose",
+        action="store_true",
+        help="Output progress and logging messages."
+    )
+
+    parser.add_argument(
+        "target",
+        type=str,
+        help="Target filename."
+    )
+
+    return parser.parse_args()
+
+
+bar = '//'+'-'*100
+
+def build_filter():
+    args = get_args()
+    outfh = open(args.target, 'w', encoding='windows-1252')
+    outfh.writelines(line+'\n' for line in file_header)
+    walk_structure(structure, outfh, verbose=args.verbose)
+        
+def walk_structure(source, outfh, verbose):
+    for section_name, section_source in source.items():
+        header =  ['',
+                   bar,
+                  '// '+section_name,
+                  bar,
+                  '']
+        outfh.writelines(line+'\n' for line in header)
+        if type(section_source) == str:
+            section = parse_source(section_source, verbose=verbose)
+            outfh.writelines(line+'\n' for line in section)
+        elif type(section_source) == dict:
+            section = walk_structure(section_source, outfh, verbose)
+        else:
+            raise ValueError("Unknown datatype in filter structure definition: {}".format(section_source))
+        
+
+def parse_source(sourcefile, verbose=False):
+    if sourcefile.endswith('.filter'):
+        infh = open(sourcefile, 'r')
+        lines = [Aliaser.process(line.strip('\n')) for line in infh]
+    elif sourcefile.endswith('.py'):
+        module = importlib.import_module(sourcefile[:-3])
+        lines = [Aliaser.process(line) for line in module.build(verbose=verbose)]
+    else:
+        raise ValueError("Unknown filetype in filter structure definition: {}".format(sourcefile))
+    return lines
+
+
+
+
+if __name__ == '__main__':
+    build_filter()
+

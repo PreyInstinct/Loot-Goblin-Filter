@@ -1,0 +1,54 @@
+	ARMOR	HELM	CIRC	CHEST	SHIELD	GLOVES	BOOTS	BELT	amu	rin	WEAPON	1H	2H	MACE	TMACE	CLUB	HAMMER	AXE	SWORD	DAGGER	SPEAR	POLEARM	THROWING	JAV	BOW	XBOW	STAFF	WAND	SCEPTER	CLASS	DRU	BAR	DIN	NEC	SIN	SOR	ZON	CHARM	cm1	cm2	cm3	jew	QUIVER	ARROWS	BOLTS	aqv	aqv2	aqv3	cqv	cqv2	cqv3	SCYTHE	CRYSTAL
+ARMOR	x																																																				
+HELM	1	x																																																			
+CIRC	1		x																																																		
+CHEST	1			x																																																	
+SHIELD	1				x																																																
+GLOVES	1					x																																															
+BOOTS	1						x																																														
+BELT	1							x																																													
+amu									x																																												
+rin										x																																											
+WEAPON											x																																										
+1H											1	x																																									
+2H											1		x																																								
+MACE											1	1	1	x																																							
+TMACE											1	1		1	x																																						
+CLUB											1	1		1		x																																					
+HAMMER											1	1	1	1			x																																				
+AXE											1	1	1					x																																			
+SWORD											1	1	1						x																																		
+DAGGER											1	1								x																																	
+SPEAR											1		1								x																																
+POLEARM											1		1									x																															
+THROWING											1	1						1		1			x																														
+JAV											1	1											1	x																													
+BOW											1		1												x																												
+XBOW											1		1													x																											
+STAFF											1		1														x																										
+WAND											1	1																x																									
+SCEPTER											1	1																	x																								
+CLASS	1	1			1						1	1	1								1		1	1	1					x																							
+DRU	1	1																												1	x																						
+BAR	1	1																												1		x																					
+DIN	1				1																									1			x																				
+NEC	1				1																									1				x																			
+SIN											1	1																		1					x																		
+SOR											1	1																		1						x																	
+ZON											1	1	1								1		1	1	1					1							x																
+CHARM																																						x															
+cm1																																						1	x														
+cm2																																						1		x													
+cm3																																						1			x												
+jew																																										x											
+QUIVER																																											x										
+ARROWS																																											1	x									
+BOLTS																																											1		x								
+aqv																																											1	1		x							
+aqv2																																											1	1			x						
+aqv3																																											1	1				x					
+cqv																																											1		1				x				
+cqv2																																											1		1					x			
+cqv3																																											1		1						x		
+SCYTHE											1		1									1																														x	
+CRYSTAL											1	1							1																																		x

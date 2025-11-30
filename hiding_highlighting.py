@@ -79,7 +79,7 @@ def parse_filter_config():
     fh.close()
     return lines
 
-def build():
+def build(verbose=False):
     rules = []
     for rarity, properties, group, filter_level, marker_level, notification_level in parse_filter_config():
         if rarity in ['SET', 'UNI']:
@@ -93,9 +93,12 @@ def build():
         rules.extend(notification_rule)
     return rules
 
-if __name__ == '__main__':
-    rules = build()
+def main():
+    rules = build(verbose=True)
     for r in rules:
         print(r)
+
+if __name__ == '__main__':
+    main()
         
         

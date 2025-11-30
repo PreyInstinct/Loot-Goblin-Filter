@@ -1,0 +1,215 @@
+Recipe	Item Type	Filter Definition	magic only (unused)	group	Stat	Min Value	Max Value	Attribute Description
+Blood	Amulet	amu		1	FRW	10	10	+10% Faster Run/Walk
+Blood	Amulet	amu		1	LIFE	10	20	+[10-20] to Life
+Blood	Amulet	amu		1	STAT86	3	6	+[3-6] Life after each Kill
+Blood	Belt	BELT		1	LIFE	10	20	+[10-20] to Life
+Blood	Belt	BELT		1	STAT135	10	20	[10-20]% Chance of Open Wounds
+Blood	Belt	BELT		1	STAT60	3	6	[3-6]% Life Stolen per Hit
+Blood	Boots	BOOTS		1	LIFE	10	20	+[10-20] to Life
+Blood	Boots	BOOTS		1	REPLIFE	15	30	Replenish Life +[15-30]
+Blood	Boots	BOOTS		1	STAT60	2	4	[2-4]% Life Stolen per Hit
+Blood	Chest	CHEST		1	LIFE	20	40	+[20-40] to Life
+Blood	Chest	CHEST		1	STAT60	3	6	[3-6]% Life Stolen per Hit
+Blood	Chest	CHEST		1	STAT86	3	6	+[3-6] Life after each Kill
+Blood	Gloves	GLOVES		1	LIFE	10	20	+[10-20] to Life
+Blood	Gloves	GLOVES		1	STAT136	5	10	[5-10]% Chance of Crushing Blow
+Blood	Gloves	GLOVES		1	STAT60	2	4	[2-4]% Life Stolen per Hit
+Blood	Helm	HELM		1	LIFE	10	20	+[10-20] to Life
+Blood	Helm	HELM		1	STAT136	10	20	[10-20]% Chance of Crushing Blow
+Blood	Helm	HELM		1	STAT60	2	4	[2-4]% Life Stolen per Hit
+Blood	Ring	rin		1	LIFE	10	20	+[10-20] to Life
+Blood	Ring	rin		1	STAT60	1	3	[1-3]% Life Stolen per Hit
+Blood	Ring	rin		1	STR	5	10	+[5-10] to Strength
+Blood	Shield	SHIELD		1	LIFE	10	20	+[10-20] to Life
+Blood	Shield	SHIELD		1	STAT20	10	20	[10-20]% Increased Chance of Blocking
+Blood	Shield	SHIELD		1	STAT60	3	6	[3-6]% Life Stolen per Hit
+Blood	Weapon	WEAPON		1	EDAM	50	80	+[50-80]% Enhanced Damage
+Blood	Weapon	WEAPON		1	LIFE	10	20	+[10-20] to Life
+Blood	Weapon	WEAPON		1	STAT60	3	6	[3-6]% Life Stolen per Hit 
+Bountiful	Amulet	amu		6	MFIND	20	30	[20-30]% Better Chance of Getting Magic Items
+Bountiful	Amulet	amu		6	STAT3	10	20	+[10-20] to Vitality
+Bountiful	Amulet	amu		6	STAT89	1	3	+[1-3] to Light Radius
+Bountiful	Belt	BELT		6	EDEF	25	50	+[25-50]% Enhanced Defense
+Bountiful	Belt	BELT		6	MFIND	20	30	[20-30]% Better Chance of Getting Magic Items
+Bountiful	Belt	BELT		6	STAT89	1	3	+[1-3] to Light Radius
+Bountiful	Boots	BOOTS		6	EDEF	25	50	+[25-50]% Enhanced Defense
+Bountiful	Boots	BOOTS		6	MFIND	15	25	[15-25]% Better Chance of Getting Magic Items
+Bountiful	Boots	BOOTS		6	STAT89	1	3	+[1-3] to Light Radius
+Bountiful	Chest	CHEST		6	EDEF	25	50	+[25-50]% Enhanced Defense
+Bountiful	Chest	CHEST		6	MFIND	20	30	[20-30]% Better Chance of Getting Magic Items
+Bountiful	Chest	CHEST		6	STAT89	1	3	+[1-3] to Light Radius
+Bountiful	Gloves	GLOVES		6	EDEF	25	50	+[25-50]% Enhanced Defense
+Bountiful	Gloves	GLOVES		6	MFIND	15	25	[15-25]% Better Chance of Getting Magic Items
+Bountiful	Gloves	GLOVES		6	STAT89	1	3	+[1-3] to Light Radius
+Bountiful	Helm	HELM		6	EDEF	25	50	+[25-50]% Enhanced Defense
+Bountiful	Helm	HELM		6	MFIND	20	30	[20-30]% Better Chance of Getting Magic Items
+Bountiful	Helm	HELM		6	STAT89	1	3	+[1-3] to Light Radius
+Bountiful	Ring	rin		6	MFIND	10	20	[10-20]% Better Chance of Getting Magic Items
+Bountiful	Ring	rin		6	STAT3	5	10	+[5-10] to Vitality
+Bountiful	Ring	rin		6	STAT89	1	3	+[1-3] to Light Radius
+Bountiful	Shield	SHIELD		6	MFIND	20	30	[20-30]% Better Chance of Getting Magic Items
+Bountiful	Shield	SHIELD		6	STAT20	10	20	[10-20]% Increased Chance of Blocking
+Bountiful	Shield	SHIELD		6	STAT89	1	3	+[1-3] to Light Radius
+Bountiful	Weapon	WEAPON		6	ALLSK	1	1	+1 to All Skills
+Bountiful	Weapon	WEAPON		6	MFIND	20	30	[20-30]% Better Chance of Getting Magic Items
+Bountiful	Weapon	WEAPON		6	STAT89	1	3	+[1-3] to Light Radius
+Brilliant	Amulet	amu		7	RES	5	10	All Resistances +[5-10]
+Brilliant	Amulet	amu		7	STAT32	100	150	+[100-150] Defense vs. Missile
+Brilliant	Amulet	amu		7	STR;DEX;STAT1;STAT3	4;4;4;4	8;8;8;8	+[4-8] to All Attributes
+Brilliant	Belt	BELT		7	EDEF	25	50	+[25-50]% Enhanced Defense
+Brilliant	Belt	BELT		7	IAS	5	10	+[5-10]% Increased Attack Speed
+Brilliant	Belt	BELT		7	STAT118	0	1	Half Freeze Duration
+Brilliant	Boots	BOOTS		7	FRW	5	10	+[5-10]% Faster Run/Walk
+Brilliant	Boots	BOOTS		7	STAT118	0	1	Half Freeze Duration
+Brilliant	Boots	BOOTS		7	STAT32	100	150	+[100-150] Defense vs. Missile
+Brilliant	Chest	CHEST		7	EDEF	25	50	+[25-50]% Enhanced Defense
+Brilliant	Chest	CHEST		7	RES	5	10	All Resistances +[5-10]
+Brilliant	Chest	CHEST		7	STAT20	10	20	[10-20]% Increased Chance of Blocking
+Brilliant	Gloves	GLOVES		7	ARPER	10	20	[10-20]% Bonus to Attack Rating
+Brilliant	Gloves	GLOVES		7	EDEF	25	50	+[25-50]% Enhanced Defense
+Brilliant	Gloves	GLOVES		7	IAS	5	10	+[5-10]% Increased Attack Speed
+Brilliant	Helm	HELM		7	EDEF	25	50	+[25-50]% Enhanced Defense
+Brilliant	Helm	HELM		7	IAS	5	10	+[5-10]% Increased Attack Speed
+Brilliant	Helm	HELM		7	STAT118	0	1	Half Freeze Duration
+Brilliant	Ring	rin		7	RES	3	5	All Resistances +[3-5]
+Brilliant	Ring	rin		7	STAT118	0	1	Half Freeze Duration
+Brilliant	Ring	rin		7	STAT32	50	100	+[50-100] Defense vs. Missile
+Brilliant	Shield	SHIELD		7	RES	5	10	All Resistances +[5-10]
+Brilliant	Shield	SHIELD		7	STAT118	0	1	Half Freeze Duration
+Brilliant	Shield	SHIELD		7	STAT20	10	20	[10-20]% Increased Chance of Blocking
+Brilliant	Weapon	WEAPON		7	AR	50	100	+[50-100] to Attack Rating
+Brilliant	Weapon	WEAPON		7	EDAM	20	40	+[20-40]% Enhanced Damage
+Brilliant	Weapon	WEAPON		7	IAS	20	20	+20% Increased Attack Speed
+Caster	Amulet	amu		2	FCR	5	10	+[5-10]% Faster Cast Rate
+Caster	Amulet	amu		2	MANA	10	20	+[10-20] to Mana
+Caster	Amulet	amu		2	STAT27	4	10	Regenerate Mana [4-10]%
+Caster	Belt	BELT		2	FCR	10	10	+10% Faster Cast Rate
+Caster	Belt	BELT		2	MANA	10	20	+[10-20] to Mana
+Caster	Belt	BELT		2	STAT27	4	10	Regenerate Mana [4-10]%
+Caster	Boots	BOOTS		2	MANA	10	20	+[10-20] to Mana
+Caster	Boots	BOOTS		2	STAT27	4	10	Regenerate Mana [4-10]%
+Caster	Boots	BOOTS		2	STAT77	10	15	Increase Maximum Mana [10-15]%
+Caster	Chest	CHEST		2	FCR	5	10	+[5-10]% Faster Cast Rate
+Caster	Chest	CHEST		2	MAEK	3	6	+[3-6] to Mana after each Kill
+Caster	Chest	CHEST		2	MANA	20	30	+[20-30] to Mana
+Caster	Gloves	GLOVES		2	FCR	5	10	+[5-10]% Faster Cast Rate
+Caster	Gloves	GLOVES		2	MAEK	1	3	+[1-3] to Mana after each Kill
+Caster	Gloves	GLOVES		2	MANA	10	20	+[10-20] to Mana
+Caster	Helm	HELM		2	FCR	5	10	+[5-10]% Faster Cast Rate
+Caster	Helm	HELM		2	MANA	10	20	+[10-20] to Mana
+Caster	Helm	HELM		2	STAT27	4	10	Regenerate Mana [4-10]%
+Caster	Ring	rin		2	MAEK	1	2	+[1-2] to Mana after each Kill
+Caster	Ring	rin		2	MANA	10	20	+[10-20] to Mana
+Caster	Ring	rin		2	STAT1	5	10	+[5-10] to Energy
+Caster	Shield	SHIELD		2	FCR	5	10	+[5-10]% Faster Cast Rate
+Caster	Shield	SHIELD		2	MANA	20	30	+[20-30] to Mana
+Caster	Shield	SHIELD		2	STAT20	10	20	[10-20]% Increased Chance of Blocking
+Caster	Weapon	WEAPON		2	ALLSK	1	1	+1 to All Skills
+Caster	Weapon	WEAPON		2	FCR	10	20	+[10-20]% Faster Cast Rate
+Caster	Weapon	WEAPON		2	MANA	10	20	+[10-20] to Mana
+Hitpower	Amulet	amu		3	AR	150	250	+[150-250] to Attack Rating
+Hitpower	Amulet	amu		3	FHR	10	20	+[10-20]% Faster Hit Recovery
+Hitpower	Amulet	amu		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Belt	BELT		3	DTM	5	10	[5-10]% Damage Taken Gained as Mana when Hit
+Hitpower	Belt	BELT		3	FHR	10	20	+[10-20]% Faster Hit Recovery
+Hitpower	Belt	BELT		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Boots	BOOTS		3	FHR	10	20	+[10-20]% Faster Hit Recovery
+Hitpower	Boots	BOOTS		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Boots	BOOTS		3	STAT33	60	120	+[60-120] Defense vs. Melee
+Hitpower	Chest	CHEST		3	EDEF	25	50	+[25-50]% Enhanced Defense
+Hitpower	Chest	CHEST		3	FHR	20	40	+[20-40]% Faster Hit Recovery
+Hitpower	Chest	CHEST		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Gloves	GLOVES		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Gloves	GLOVES		3	STAT116	10	20	-[10-20]% Target Defense
+Hitpower	Gloves	GLOVES		3	STAT81	0	1	Knockback
+Hitpower	Helm	HELM		3	AR	100	200	+[100-200] to Attack Rating
+Hitpower	Helm	HELM		3	FHR	10	20	+[10-20]% Faster Hit Recovery
+Hitpower	Helm	HELM		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Ring	rin		3	DEX	5	10	+[5-10] to Dexterity
+Hitpower	Ring	rin		3	MAXDMG	2	4	+[2-4] to Maximum Damage
+Hitpower	Ring	rin		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Shield	SHIELD		3	FBR	20	30	+[20-30]% Faster Block Rate
+Hitpower	Shield	SHIELD		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Shield	SHIELD		3	STAT20	10	20	[10-20]% Increased Chance of Blocking
+Hitpower	Weapon	WEAPON		3	EDAM	50	80	+[50-80]% Enhanced Damage
+Hitpower	Weapon	WEAPON		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Weapon	WEAPON		3	STAT116	10	20	-[10-20]% Target Defense
+Safety	Amulet	amu		4	STAT20	10	10	10% Increased Chance of Blocking
+Safety	Amulet	amu		4	STAT34	4	7	Physical Damage Taken Reduced by [4-7]
+Safety	Amulet	amu		4	STAT35	4	7	Magic Damage Taken Reduced by [4-7]
+Safety	Belt	BELT		4	EDEF	10	30	+[10-30]% Enhanced Defense
+Safety	Belt	BELT		4	PRES	10	20	Poison Resist +[10-20]%
+Safety	Belt	BELT		4	STAT34	2	5	Physical Damage Taken Reduced by [2-5]
+Safety	Belt	BELT		4	STAT35	2	5	Magic Damage Taken Reduced by [2-5]
+Safety	Boots	BOOTS		4	EDEF	20	60	+[20-60]% Enhanced Defense
+Safety	Boots	BOOTS		4	FRES	10	20	Fire Resist +[10-20]%
+Safety	Boots	BOOTS		4	STAT34	2	5	Physical Damage Taken Reduced by [2-5]
+Safety	Boots	BOOTS		4	STAT35	2	5	Magic Damage Taken Reduced by [2-5]
+Safety	Chest	CHEST		4	EDEF	20	60	+[20-60]% Enhanced Defense
+Safety	Chest	CHEST		4	STAT33	100	150	+[100-150] Defense vs. Melee
+Safety	Chest	CHEST		4	STAT36	5	10	Physical Damage Taken Reduced by [5-10]%
+Safety	Gloves	GLOVES		4	CRES	10	20	Cold Resist +[10-20]%
+Safety	Gloves	GLOVES		4	EDEF	10	30	+[10-30]% Enhanced Defense
+Safety	Gloves	GLOVES		4	STAT34	2	5	Physical Damage Taken Reduced by [2-5]
+Safety	Gloves	GLOVES		4	STAT35	2	5	Magic Damage Taken Reduced by [2-5]
+Safety	Helm	HELM		4	EDEF	20	60	+[20-60]% Enhanced Defense
+Safety	Helm	HELM		4	LRES	10	20	Lightning Resist +[10-20]%
+Safety	Helm	HELM		4	STAT36	5	10	Physical Damage Taken Reduced by [5-10]%
+Safety	Ring	rin		4	STAT3	5	10	+[5-10] to Vitality
+Safety	Ring	rin		4	STAT34	2	5	Physical Damage Taken Reduced by [2-5]
+Safety	Ring	rin		4	STAT35	2	5	Magic Damage Taken Reduced by [2-5]
+Safety	Shield	SHIELD		4	EDEF	20	60	+[20-60]% Enhanced Defense
+Safety	Shield	SHIELD		4	STAT33	100	150	+[100-150] Defense vs. Melee
+Safety	Shield	SHIELD		4	STAT36	5	10	Physical Damage Taken Reduced by [5-10]%
+Safety	Weapon	WEAPON		4	EDAM	50	80	+[50-80]% Enhanced Damage
+Safety	Weapon	WEAPON		4	STAT34	2	5	Physical Damage Taken Reduced by [2-5]
+Safety	Weapon	WEAPON		4	STAT35	2	5	Magic Damage Taken Reduced by [2-5]
+Safety	Weapon	WEAPON		4	STAT81	0	1	Knockback
+Vampiric	Amulet	amu		5	REPLIFE	5	10	Replenish Life +[5-10]
+Vampiric	Amulet	amu		5	STAT109	10	20	[10-20]% Curse Duration Reduction
+Vampiric	Amulet	amu		5	STAT62	3	6	[3-6]% Mana Stolen per Hit
+Vampiric	Belt	BELT		5	REPLIFE	5	10	Replenish Life +[5-10]
+Vampiric	Belt	BELT		5	STAT110	10	20	[10-20]% Poison Length Reduction
+Vampiric	Belt	BELT		5	STAT62	3	6	[3-6]% Mana Stolen per Hit
+Vampiric	Boots	BOOTS		5	REPLIFE	5	10	Replenish Life +[5-10]
+Vampiric	Boots	BOOTS		5	STAT110	10	20	[10-20]% Poison Length Reduction
+Vampiric	Boots	BOOTS		5	STAT62	2	4	[2-4]% Mana Stolen per Hit
+Vampiric	Chest	CHEST		5	REPLIFE	5	10	Replenish Life +[5-10]
+Vampiric	Chest	CHEST		5	STAT110	20	30	[20-30]% Poison Length Reduction
+Vampiric	Chest	CHEST		5	STAT62	3	6	[3-6]% Mana Stolen per Hit
+Vampiric	Gloves	GLOVES		5	REPLIFE	5	10	Replenish Life +[5-10]
+Vampiric	Gloves	GLOVES		5	STAT141	5	10	[5-10]% Deadly Strike
+Vampiric	Gloves	GLOVES		5	STAT62	2	4	[2-4]% Mana Stolen per Hit
+Vampiric	Helm	HELM		5	REPLIFE	5	10	Replenish Life +[5-10]
+Vampiric	Helm	HELM		5	STAT141	10	20	[10-20]% Deadly Strike
+Vampiric	Helm	HELM		5	STAT62	2	4	[2-4]% Mana Stolen per Hit
+Vampiric	Ring	rin		5	REPLIFE	5	10	Replenish Life +[5-10]
+Vampiric	Ring	rin		5	STAT110	10	20	[10-20]% Poison Length Reduction
+Vampiric	Ring	rin		5	STAT62	1	3	[1-3]% Mana Stolen per Hit
+Vampiric	Shield	SHIELD		5	STAT110	20	30	[20-30]% poison length reduction
+Vampiric	Shield	SHIELD		5	STAT20	10	20	[10-20]% Increased Chance of Blocking
+Vampiric	Shield	SHIELD		5	STAT62	3	6	[3-6]% Mana Stolen per Hit
+Vampiric	Weapon	WEAPON		5	REPLIFE	10	15	Replenish Life +[10-15]
+Vampiric	Weapon	WEAPON		5	STAT121	100	140	+[100-140]% Damage to Demons
+Vampiric	Weapon	WEAPON		5	STAT122	100	140	+[100-140]% Damage to Undead
+Vampiric	Weapon	WEAPON		5	STAT62	3	6	[3-6]% Mana Stolen per Hit
+Blood	Quiver	QUIVER		1	STAT136	5	10	5-10 cb
+Blood	Quiver	QUIVER		1	LIFE	10	20	10-20 Life
+Blood	Quiver	QUIVER		1	STAT60	2	4	2-4 life leach
+Caster	Quiver	QUIVER		2	FCR	5	10	5-10 FCR
+Caster	Quiver	QUIVER		2	MAEK	2	4	new
+Hitpower	Quiver	QUIVER		3	MULTI201,2820	5	5	5% Chance to Cast Level 4 Frost Nova when Struck
+Hitpower	Quiver	QUIVER		3	STAT116	10	20	-10-20 target def
+Hitpower	Quiver	QUIVER		3	STAT81	1	1	knockback
+Safety	Quiver	QUIVER		4	STAT35	4	7	4-7 MDR
+Safety	Quiver	QUIVER		4	STAT34	4	7	4-7 PDR flat
+Safety	Quiver	QUIVER		4	FRW	10	10	10 FRW
+Vampiric	Quiver	QUIVER		5	STAT62	2	4	2-4 mana leach
+Vampiric	Quiver	QUIVER		5	STAT110	20	30	20-30 PLR
+Vampiric	Quiver	QUIVER		5	REPLIFE	5	10	5-10 repl
+Bountiful	Quiver	QUIVER		6	STAT3	5	10	5-10 vit
+Bountiful	Quiver	QUIVER		6	MFIND	15	25	15-25 mfind
+Bountiful	Quiver	QUIVER		6	GFIND	20	30	new
+Brilliant	Quiver	QUIVER		7	RES	5	10	new
+Brilliant	Quiver	QUIVER		7	STAT32	100	150	def v missile
+Brilliant	Quiver	QUIVER		7	FHR	10	10	new

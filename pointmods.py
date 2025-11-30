@@ -265,12 +265,15 @@ def read_skills(infile = 'All.skills'):
     return skill_tree
 
 
-def build():
+def build(verbose=False):
     skill_tree = read_skills()
     section = skill_tree.generate_skillmod_filters()
     return section
 
-if __name__ == '__main__':
+def main():
     lines = build()
     for l in lines:
         print(l)
+
+if __name__ == '__main__':
+    main()
