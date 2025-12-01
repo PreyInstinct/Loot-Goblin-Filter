@@ -1,8 +1,19 @@
 #!/usr/bin/env python3
 
 import sys
+from pathlib import Path
 
 from hiding_highlighting import hide
+
+HERE = Path(__file__).parent
+PROJECT_DIR = HERE / '..'
+PROJECT_DIR = PROJECT_DIR.resolve()
+CONFIG_DIR = PROJECT_DIR / 'config'
+CONFIG_DIR = CONFIG_DIR.resolve()
+DATA_DIR = PROJECT_DIR / 'data'
+DATA_DIR = DATA_DIR.resolve()
+
+CONFIG_FILE = CONFIG_DIR / 'skills.csv'
 
 class Skill(object):
     def __init__(self, ID, cls, name, abrv, parent, role):
@@ -247,7 +258,7 @@ class Skill(object):
         section.append(template.format(SKID=self.sID, COLOR=color, ABRV=self.abrv))        
 
         
-def read_skills(infile = 'All.skills'):
+def read_skills(infile = CONFIG_FILE):
     fh = open(infile, 'r')
     header = fh.readline() # 'CLASS\tID\tDESCRIPTION\tABRV\tPARENT\tTYPE\n'
     for line in fh:

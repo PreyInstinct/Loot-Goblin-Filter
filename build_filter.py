@@ -2,48 +2,53 @@
 import sys
 import importlib
 import argparse
+from pathlib import Path
 
 from aliases import _Aliaser
 Aliaser = _Aliaser()
 
+PROJECT_DIR = Path(__file__).parent
+TEMPLATE_DIR = PROJECT_DIR / 'templates'
+GENERATOR_DIR = PROJECT_DIR / 'generators'
+
 structure = {
-    'Filter Levels': 'levels.filter',
+    'Filter Levels': TEMPLATE_DIR / 'levels.filter',
     'Item Names': {
-        'Abbreviations': 'abbreviations.filter',
-        'Inferior & Superior': 'inferior_superior.filter',
-        'General Tags and Appearance': 'general_tags_appearance.filter',
-        'Base Item Tags': 'base_items.filter',
-        'Gold and Sale Prices': 'gold_sales.filter',
-        'Non-magic Modifiers': 'nonmagic_mods.filter',
-        'Skill Modifying Items (pointmods)': 'pointmods.py',
+        'Abbreviations': TEMPLATE_DIR / 'abbreviations.filter',
+        'Inferior & Superior': TEMPLATE_DIR / 'inferior_superior.filter',
+        'General Tags and Appearance': TEMPLATE_DIR / 'general_tags_appearance.filter',
+        'Base Item Tags': TEMPLATE_DIR / 'base_items.filter',
+        'Gold and Sale Prices': TEMPLATE_DIR / 'gold_sales.filter',
+        'Non-magic Modifiers': TEMPLATE_DIR / 'nonmagic_mods.filter',
+        'Skill Modifying Items (pointmods)': GENERATOR_DIR / 'pointmods.py',
         'Hiding and Highlighting': {
-            'Set & Uniques': 'sets_uniques.py',
-            'Rare and Lower': 'hiding_highlighting.py'},
-        'Gambling Screen': 'gambling.filter',
-        'Scrolls & Potions': 'scrolls_potions.filter',
+            'Set & Uniques': GENERATOR_DIR / 'sets_uniques.py',
+            'Rare and Lower': GENERATOR_DIR / 'hiding_highlighting.py'},
+        'Gambling Screen': TEMPLATE_DIR / 'gambling.filter',
+        'Scrolls & Potions': TEMPLATE_DIR / 'scrolls_potions.filter',
         'Keys': {
-            'General Info': 'key_info.filter',
-            'Navigation Hints': 'navigation.filter'},
-        'Gems': 'gems.filter',
-        'Runes': 'runes.filter',
-        'Charms': 'charms.filter',
-        'Miscellaneous Items': 'misc_items.filter'},
+            'General Info': TEMPLATE_DIR / 'key_info.filter',
+            'Navigation Hints': TEMPLATE_DIR / 'navigation.filter'},
+        'Gems': TEMPLATE_DIR / 'gems.filter',
+        'Runes': TEMPLATE_DIR / 'runes.filter',
+        'Charms': TEMPLATE_DIR / 'charms.filter',
+        'Miscellaneous Items': TEMPLATE_DIR / 'misc_items.filter'},
     'Item Descriptions': {
         'Point System': {
-            'Generated': 'point_system.py',
-            'Maps': 'points_maps.filter'},
-        'Resistance Totals': 'resistances.filter',
-        'Notes on Socketing Non-magical Items': 'socketing_notes_nmag.filter',
-        'Notes on Socketing Magical (or better) Items': 'socketing_notes_mag.filter',
-        'Notes on Upgrading': 'upgrade_notes.filter',
-        'Notes on Crafting': 'crafting_notes.filter',
-        'Notes on CBF/HFD': 'freeze_notes.filter',
-        'Notes on Imbuing': 'imbuing_notes.filter',
-        'Notes on Rerolling and Destroying Jewels': 'jewel_notes.filter',
-        'Shop Highlights': 'shop_hunting.filter',
-        'Affix Callouts': 'affix_callouts.filter',
-        'Notes on Maps': 'map_notes.filter',
-        'Unknown Item Catch-all': 'unknown_items.filter'}}
+            'Generated': GENERATOR_DIR / 'point_system.py',
+            'Maps': TEMPLATE_DIR / 'points_maps.filter'},
+        'Resistance Totals': TEMPLATE_DIR / 'resistances.filter',
+        'Notes on Socketing Non-magical Items': TEMPLATE_DIR / 'socketing_notes_nmag.filter',
+        'Notes on Socketing Magical (or better) Items': TEMPLATE_DIR / 'socketing_notes_mag.filter',
+        'Notes on Upgrading': TEMPLATE_DIR / 'upgrade_notes.filter',
+        'Notes on Crafting': TEMPLATE_DIR / 'crafting_notes.filter',
+        'Notes on CBF/HFD': TEMPLATE_DIR / 'freeze_notes.filter',
+        'Notes on Imbuing': TEMPLATE_DIR / 'imbuing_notes.filter',
+        'Notes on Rerolling and Destroying Jewels': TEMPLATE_DIR / 'jewel_notes.filter',
+        'Shop Highlights': TEMPLATE_DIR / 'shop_hunting.filter',
+        'Affix Callouts': TEMPLATE_DIR / 'affix_callouts.filter',
+        'Notes on Maps': TEMPLATE_DIR / 'map_notes.filter',
+        'Unknown Item Catch-all': TEMPLATE_DIR / 'unknown_items.filter'}}
         
         
 # Unused/to-do

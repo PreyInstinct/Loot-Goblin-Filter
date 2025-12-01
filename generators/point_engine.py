@@ -4,16 +4,25 @@ import re
 import sys
 from copy import copy
 from types import SimpleNamespace
+from pathlib import Path
 
 from pysat.solvers import Glucose3
 
-def learn_regions(disjoint_config = 'config/item_groups_disjoint.csv',
-                  subset_config = 'config/item_groups_subset.csv',
-                  composite_config = 'config/item_groups_composites.csv',
-                  prefix_config = 'config/prefixes.csv',
-                  suffix_config = 'config/suffixes.csv',
-                  craft_config = 'config/crafting.csv',
-                  point_config = 'config/points.csv',
+HERE = Path(__file__).parent
+PROJECT_DIR = HERE / '..'
+PROJECT_DIR = PROJECT_DIR.resolve()
+CONFIG_DIR = PROJECT_DIR / 'config'
+CONFIG_DIR = CONFIG_DIR.resolve()
+DATA_DIR = PROJECT_DIR / 'data'
+DATA_DIR = DATA_DIR.resolve()
+
+def learn_regions(disjoint_config = DATA_DIR / 'item_groups_disjoint.csv',
+                  subset_config = DATA_DIR / 'item_groups_subset.csv',
+                  composite_config = DATA_DIR / 'item_groups_composites.csv',
+                  prefix_config = DATA_DIR / 'prefixes.csv',
+                  suffix_config = DATA_DIR / 'suffixes.csv',
+                  craft_config = DATA_DIR / 'crafting.csv',
+                  point_config = CONFIG_DIR / 'points.csv',
                   verbose = False):
     """
     Read various configuration files and produce a set of equivalency regions

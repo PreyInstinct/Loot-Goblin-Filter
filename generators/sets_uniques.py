@@ -1,8 +1,19 @@
 #!/usr/bin/env python3
 
 import sys
+from pathlib import Path
 
 from hiding_highlighting import hide, highlight, parse_filter_config
+
+HERE = Path(__file__).parent
+PROJECT_DIR = HERE / '..'
+PROJECT_DIR = PROJECT_DIR.resolve()
+CONFIG_DIR = PROJECT_DIR / 'config'
+CONFIG_DIR = CONFIG_DIR.resolve()
+DATA_DIR = PROJECT_DIR / 'data'
+DATA_DIR = DATA_DIR.resolve()
+
+CONFIG_FILE = CONFIG_DIR / 'sets_and_uniques.csv'
 
 # « ¿ Item Name - Item Type ? »
 
@@ -42,7 +53,7 @@ def get_levels():
         
 
 def parse_sets_uniques():
-    infh = open('sets_and_uniques.csv', 'r')
+    infh = open(CONFIG_FILE, 'r')
     header = infh.readline()
     for line in infh:
         fields = line.strip().split('\t')

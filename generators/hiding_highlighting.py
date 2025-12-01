@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 
+from pathlib import Path
+
+HERE = Path(__file__).parent
+PROJECT_DIR = HERE / '..'
+PROJECT_DIR = PROJECT_DIR.resolve()
+CONFIG_DIR = PROJECT_DIR / 'config'
+CONFIG_DIR = CONFIG_DIR.resolve()
+DATA_DIR = PROJECT_DIR / 'data'
+DATA_DIR = DATA_DIR.resolve()
+
+CONFIG_FILE = CONFIG_DIR / 'hiding_highlighting.csv'
+
+
 class Tracer(object):
     def __init__(self, active=False):
         self.ID = 0
@@ -63,7 +76,7 @@ def highlight(group, marker_level, notification_level, rarity, properties, name=
 adjusted_levels = [-1, 1, 3, 5, 7, 9]
 
 def parse_filter_config():
-    fh = open('hiding_highlighting.csv', 'r')
+    fh = open(CONFIG_FILE, 'r')
     header = fh.readline()
     lines = []
     for line in fh:
