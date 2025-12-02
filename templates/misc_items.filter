@@ -1,40 +1,44 @@
 // Standard of Heroes
-ItemDisplay[std]: ${'icon_greenM'}%GREEN%%NAME%{%NAME%}//{%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
+ItemDisplay[std]: ${icon_greenM}%GREEN%%NAME%{%NAME%}//{%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
 // Worldstone Shard
-ItemDisplay[wss]: ${'icon_redL'}${'icon_yellowM'}%RED%%NAME%{%RED%Warning%WHITE%: It can Brick your Item%NL%%TAN%Note%WHITE%: Use to %RED%Corrupt %WHITE%Item/Map:}
+ItemDisplay[wss]: ${icon_redL}${icon_yellowS}%RED%%NAME%{%NAME%%CL%%SAGE%Unsocketable%WHITE%: %WHITE%36% %BLUE%mod %WHITE%24% %YELLOW%mod %WHITE%15% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
+ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%2H Weapon%WHITE%: 25% %GRAY%3-6 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
+ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%1H Weapon%WHITE%: 25% %GRAY%2-4 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
+ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%Armor%WHITE%: 25% %GRAY%1-3 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
+ItemDisplay[wss]: %NAME%{%NAME%%CL%%WHITE%Non-magic %SAGE%Equipment%WHITE%: 50% %GRAY%sockets %WHITE%50% %YELLOW%rare}
 // Demonic Cube
-ItemDisplay[imrn]: ${'icon_goldXL'}${'icon_redL'}%GOLD%-=¦       %RED%%NAME%       %GOLD%¦=-{%TAN%Note%WHITE%: Use to %CORAL%Reroll %WHITE%an %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}
+ItemDisplay[imrn]: ${icon_goldXL}${icon_redL}%GOLD%-=¦       %RED%%NAME%       %GOLD%¦=-{%TAN%Note%WHITE%: Use to %CORAL%Reroll %WHITE%an %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}
 // Larzuk's Puzzlebox
-ItemDisplay[lbox]: ${'icon_goldXL'}${'icon_redL'}%GOLD%-=¦       %NAME%       %GOLD%¦=-{%NAME%%CL%%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield, Quiver = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
+ItemDisplay[lbox]: ${icon_goldXL}${icon_redL}%GOLD%-=¦       %NAME%       %GOLD%¦=-{%NAME%%CL%%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield, Quiver = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
 // Larzuk's Puzzlepiece
-ItemDisplay[lpp]: ${'icon_goldL'}${'icon_redM'}%GOLD%-=    %NAME%    %GOLD%=-{%NAME%%CL%%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Item}
+ItemDisplay[lpp]: ${icon_goldL}${icon_redM}%GOLD%-=    %NAME%    %GOLD%=-{%NAME%%CL%%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Item}
 // Larzuk's Malus
 ItemDisplay[lmal]: %GOLD%%NAME%{%NAME%%CL%%WHITE%All Types of Items = 1 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
 // Jewel Fragments
 ItemDisplay[jewf]: %BLUE%%NAME%{%NAME%}
 // Tainted Worldstone Shard
-ItemDisplay[cwss]: ${'icon_dark_redL'}%RED%%NAME%{%RED%Warning%WHITE%: You can actually BRICK it%NL%%TAN%Note%WHITE%: Use to %RED%Corrupt %GOLD%Annihilus}
+ItemDisplay[cwss]: ${icon_dark_redL}%RED%%NAME%{%RED%Warning%WHITE%: You can actually BRICK it%NL%%TAN%Note%WHITE%: Use to %RED%Corrupt %GOLD%Annihilus}
 // Horadrim Navigator
-ItemDisplay[rtp]: ${'icon_goldL'}${'icon_tealM'}%TEAL%-=   %NAME%   %TEAL%=-{%TAN%Note%WHITE%: You won't lose it in Cube recipes}
+ItemDisplay[rtp]: ${icon_goldL}${icon_tealM}%TEAL%-=   %NAME%   %TEAL%=-{%TAN%Note%WHITE%: You won't lose it in Cube recipes}
 // Horadrim Almanac
-ItemDisplay[rid]: ${'icon_goldL'}${'icon_tealM'}%TEAL%-=   %NAME%   %TEAL%=-{%NAME%}
+ItemDisplay[rid]: ${icon_goldL}${icon_tealM}%TEAL%-=   %NAME%   %TEAL%=-{%NAME%}
 // Skeleton Key
-ItemDisplay[rkey]: ${'icon_goldL'}${'icon_tealM'}%TEAL%-=   %NAME%   %TEAL%=-{%NAME%}
+ItemDisplay[rkey]: ${icon_goldL}${icon_tealM}%TEAL%-=   %NAME%   %TEAL%=-{%NAME%}
 // Vial of Lightsong
-ItemDisplay[lsvl]: ${'icon_goldXL'}${'icon_grayM'}%GOLD%-=¦       %LIGHT_GRAY%%NAME%       %GOLD%¦=-{%NAME%%CL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%..%NL%%WHITE%Used to make an item %GRAY%ethereal.}
+ItemDisplay[lsvl]: ${icon_goldXL}${icon_grayM}%GOLD%-=¦       %LIGHT_GRAY%%NAME%       %GOLD%¦=-{%NAME%%CL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%..%NL%%WHITE%Used to make an item %GRAY%ethereal.}
 // Lilith's Mirror
-ItemDisplay[llmr]: ${'icon_goldXL'}${'icon_blackL'}${'icon_blackS'}%GOLD%-=¦       %BLACK%L%WHITE%i%BLACK%l%WHITE%i%BLACK%t%WHITE%h%BLACK%'s %WHITE%M%BLACK%i%WHITE%r%BLACK%r%WHITE%o%BLACK%r       %GOLD%¦=-{%NAME%%CL%%RED%You Can't remove socketed Misc from it%NL%%WHITE%Their colors will be changed to Black and White.%NL%Can't be used in any cube recipes.%NL%%RED%Warning%WHITE%: Items will be marked as %PURPLE%Mirrored %WHITE%and%NL%%WHITE%Only works with %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%equipment%NL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%.}
+ItemDisplay[llmr]: ${icon_goldXL}${icon_blackL}${icon_blackS}%GOLD%-=¦       %BLACK%L%WHITE%i%BLACK%l%WHITE%i%BLACK%t%WHITE%h%BLACK%'s %WHITE%M%BLACK%i%WHITE%r%BLACK%r%WHITE%o%BLACK%r       %GOLD%¦=-{%NAME%%CL%%RED%You Can't remove socketed Misc from it%NL%%WHITE%Their colors will be changed to Black and White.%NL%Can't be used in any cube recipes.%NL%%RED%Warning%WHITE%: Items will be marked as %PURPLE%Mirrored %WHITE%and%NL%%WHITE%Only works with %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%equipment%NL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%.}
 // Deuling Mana Potion
 ItemDisplay[pvpp]: %NAME%{%NAME%}
 
 // Craft Infusions
-ItemDisplay[crfb]: ${'icon_orangeS'}%ORANGE%[%RED%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfc]: ${'icon_orangeS'}%ORANGE%[%PURPLE%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfs]: ${'icon_orangeS'}%ORANGE%[%GREEN%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfh]: ${'icon_orangeS'}%ORANGE%[%BLUE%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfv]: ${'icon_orangeS'}%ORANGE%[%GRAY%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfu]: ${'icon_orangeS'}%ORANGE%[%YELLOW%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfp]: ${'icon_orangeS'}%ORANGE%[%WHITE%·%ORANGE%] %NAME%{%NAME%}
+ItemDisplay[crfb]: ${icon_orangeS}%ORANGE%[%RED%·%ORANGE%] %NAME%{%NAME%}
+ItemDisplay[crfc]: ${icon_orangeS}%ORANGE%[%PURPLE%·%ORANGE%] %NAME%{%NAME%}
+ItemDisplay[crfs]: ${icon_orangeS}%ORANGE%[%GREEN%·%ORANGE%] %NAME%{%NAME%}
+ItemDisplay[crfh]: ${icon_orangeS}%ORANGE%[%BLUE%·%ORANGE%] %NAME%{%NAME%}
+ItemDisplay[crfv]: ${icon_orangeS}%ORANGE%[%GRAY%·%ORANGE%] %NAME%{%NAME%}
+ItemDisplay[crfu]: ${icon_orangeS}%ORANGE%[%YELLOW%·%ORANGE%] %NAME%{%NAME%}
+ItemDisplay[crfp]: ${icon_orangeS}%ORANGE%[%WHITE%·%ORANGE%] %NAME%{%NAME%}
 
 
 // Catalyst Shard

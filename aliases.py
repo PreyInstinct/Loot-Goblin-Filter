@@ -148,4 +148,5 @@ if __name__ == '__main__':
     Aliaser = _Aliaser()
     for k,v in Aliaser.aliases.items():
         print(k, v)
+        
 
