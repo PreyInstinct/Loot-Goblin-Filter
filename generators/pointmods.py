@@ -3,7 +3,7 @@
 import sys
 from pathlib import Path
 
-from hiding_highlighting import hide
+from .hiding_highlighting import hide
 
 HERE = Path(__file__).parent
 PROJECT_DIR = HERE / '..'

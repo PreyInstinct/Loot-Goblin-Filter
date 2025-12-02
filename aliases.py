@@ -97,6 +97,53 @@ small2 = '(BELT OR WAND OR (SOR !(ob5 OR oba OR obf)) OR dgr OR dir OR 9dg OR 9d
 
 hat = '(HELM OR CIRC)'
 
+# Named map icons
+def _generate_icons():
+    colors = {'white': '20',
+              'gray': '1D',
+              'light_gray': '1F',
+              'blue': '97',
+              'royal_blue': '91',
+              'sky_blue': '9E',
+              'yellow': '6D',
+              'light_yellow': 'A8',
+              'gold': '53',
+              'green': '84',
+              'dark_green': '77',
+              'keylimepie': 'A9',
+              'tan': '5A',
+              'black': '21',
+              'purple': '9B',
+              'royal_purple': '8F',
+              'red': '62',
+              'dark_red': '0A',
+              'vdark_red': '08',
+              'redbrown': '05',
+              'salmon': '66',
+              'orange': '60',
+              'light_orange': '68',
+              'teal': '9F'}
+    dots = {'S': 'PX',
+            'M': 'DOT',
+            'L': 'MAP',
+            'XL': 'BORDER'}
+    icons = {}
+    for dotname, dot in dots.items():
+        for colorname, color in colors.items():
+            icon_name = f'{colorname}{dotname}' # e.g. redXL
+            icon = f'%{dot}-{color}%' # e.g. %BORDER-0A%
+            icons[icon_name] = icon
+    return icons
+
+def _export_dict_to_globals(d, prefix='dict_'):
+    g = globals()
+    for k, v in d.items():
+        g[f'{prefix}{k}'] = v
+
+_export_dict_to_globals(_generate_icons(), prefix='icon_')
+
+
+
 if __name__ == '__main__':
     Aliaser = _Aliaser()
     for k,v in Aliaser.aliases.items():

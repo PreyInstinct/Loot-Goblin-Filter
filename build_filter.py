@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import os
 import importlib
 import argparse
 from pathlib import Path
@@ -102,25 +103,37 @@ def walk_structure(source, outfh, verbose):
                   bar,
                   '']
         outfh.writelines(line+'\n' for line in header)
-        if type(section_source) == str:
+        if isinstance(section_source, (str, os.PathLike)):
             section = parse_source(section_source, verbose=verbose)
             outfh.writelines(line+'\n' for line in section)
-        elif type(section_source) == dict:
+        elif isinstance(section_source, dict):
             section = walk_structure(section_source, outfh, verbose)
         else:
             raise ValueError("Unknown datatype in filter structure definition: {}".format(section_source))
         
 
 def parse_source(sourcefile, verbose=False):
-    if sourcefile.endswith('.filter'):
-        infh = open(sourcefile, 'r')
-        lines = [Aliaser.process(line.strip('\n')) for line in infh]
-    elif sourcefile.endswith('.py'):
-        module = importlib.import_module(sourcefile[:-3])
-        lines = [Aliaser.process(line) for line in module.build(verbose=verbose)]
+    sourcefile = Path(sourcefile)
+    
+    if sourcefile.suffix == '.filter':
+        with sourcefile.open('r') as infh:
+            return [Aliaser.process(line.strip('\n')) for line in infh]
+    elif sourcefile.suffix == '.py':
+        root = sourcefile.parent.parent
+        # Add project dir to path -> make generators importable
+        if str(root) not in sys.path:
+            sys.path.insert(0, str(root))
+
+        modname = f'generators.{sourcefile.stem}'
+        module = importlib.import_module(modname)
+        
+        if not hasattr(module, 'build'):
+            raise AttributeError(f'{sourcefile} has no "build" function')
+        
+        return [Aliaser.process(line) for line in module.build(verbose=verbose)]
     else:
-        raise ValueError("Unknown filetype in filter structure definition: {}".format(sourcefile))
-    return lines
+        raise ValueError(f"Unknown filetype in filter structure definition: {sourcefile}")
+
 
 
 

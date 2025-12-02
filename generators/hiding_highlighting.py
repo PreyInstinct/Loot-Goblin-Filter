@@ -47,7 +47,7 @@ marker_levels = ['marker level 0 should never be used because it indicates no ma
                  '%BORDER-{MC}%{tier}%{TC}%«««« {name} %{TC}%»»»»',
                  '%DOT-{MC}%{tier}%PURPLE%- %{TC}%{name} %PURPLE%-',
                  '%DOT-{MC}%{tier}%PURPLE%-= %{TC}%{name} %PURPLE%=-',
-                 '%DOT-{MC}%{tier}%PURPLE%-=­¦ %{TC}%{name} %PURPLE%¦=-']
+                 '%DOT-{MC}%{tier}%PURPLE%-=¦ %{TC}%{name} %PURPLE%¦=-']
 
 color_key = {'NMAG !RW': ('WHITE', '1f'),
              'MAG': ('BLUE', '94'),

@@ -10,7 +10,7 @@ from math import prod, factorial
 from bisect import bisect_left
 from multiprocessing import Pool, cpu_count
 
-from point_engine import learn_regions
+from .point_engine import learn_regions
 
 ### TO DO
 # the following aliases are ESSENTIAL for this to work
