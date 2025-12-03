@@ -6,7 +6,8 @@ ItemDisplay[GOLD<100 (CLVL>8 OR FILTLVL>4)]:
 ItemDisplay[GOLD<250 (CLVL>11 OR FILTLVL>6)]: 
 ItemDisplay[GOLD<500 (CLVL>15 OR FILTLVL>6)]: 
 ItemDisplay[GOLD<750 (CLVL>23 OR FILTLVL>6)]: 
-ItemDisplay[GOLD<1000 (CLVL>39 OR FILTLVL>6)]: 
+ItemDisplay[GOLD<1000 (CLVL>39 OR FILTLVL>6)]:
+ItemDisplay[GOLD<1500 (CLVL>59 OR FILTLVL>6)]: 
 ItemDisplay[GOLD<2000 CLVL>79]:
 // Endgame based on filter level
 ItemDisplay[GOLD<2500 CLVL>79 FILTLVL>2]: 
