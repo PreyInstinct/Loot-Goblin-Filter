@@ -579,8 +579,8 @@ ItemDisplay[CRAFT !ID]: %ORANGE%¿ %NAME% %ORANGE%?%CONTINUE%
 // Add red "*" Stars on Corrupted items in Unique Stygian Caverns Map
 ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv OR rin OR amu)) (MAG OR RARE OR SET OR UNI OR CRAFT) !ID (MAPID=181 OR MAPID=182)]: %RED%*%NAME%%RED%*%CONTINUE%
 
-// Show quantitiy of all stackables
-ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR QUIVER OR key OR (MAPTIER>0 !NMAG)) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+// Show quantitiy of stackables
+ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR QUIVER OR key OR (MAPTIER>0 !NMAG)) QTY>1]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
 
 
 //----------------------------------------------------------------------------------------------------
@@ -641,7 +641,8 @@ ItemDisplay[GOLD<100 (CLVL>8 OR FILTLVL>4)]:
 ItemDisplay[GOLD<250 (CLVL>11 OR FILTLVL>6)]: 
 ItemDisplay[GOLD<500 (CLVL>15 OR FILTLVL>6)]: 
 ItemDisplay[GOLD<750 (CLVL>23 OR FILTLVL>6)]: 
-ItemDisplay[GOLD<1000 (CLVL>39 OR FILTLVL>6)]: 
+ItemDisplay[GOLD<1000 (CLVL>39 OR FILTLVL>6)]:
+ItemDisplay[GOLD<1500 (CLVL>59 OR FILTLVL>6)]: 
 ItemDisplay[GOLD<2000 CLVL>79]:
 // Endgame based on filter level
 ItemDisplay[GOLD<2500 CLVL>79 FILTLVL>2]: 
