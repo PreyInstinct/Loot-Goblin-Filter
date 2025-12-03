@@ -4530,7 +4530,8 @@ ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll) ((FILTLVL>0 CLVL>39) OR FILTLVL>4)]: 
 // General Info
 //----------------------------------------------------------------------------------------------------
 
-ItemDisplay[key]: %GRAY%key %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+ItemDisplay[key]: %TAN%¶ %WHITE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[key QTY>1]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
 
 //keys description in inventory
 ItemDisplay[key ((MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) OR MAPID>132)]: %NAME%{%TAN%Pro-Tip%WHITE%: You can buy many}%CONTINUE%
