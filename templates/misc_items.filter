@@ -1,101 +1,168 @@
-// Standard of Heroes
-ItemDisplay[std]: ${icon_greenM}%GREEN%%NAME%{%NAME%}//{%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
-// Worldstone Shard
-ItemDisplay[wss]: ${icon_redL}${icon_yellowS}%RED%%NAME%{%NAME%%CL%%SAGE%Unsocketable%WHITE%: %WHITE%36% %BLUE%mod %WHITE%24% %YELLOW%mod %WHITE%15% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
+// Item Modification
+ItemDisplay[wss]: %MAP-62%%PX-6D%%RED%Worldstone Shard{%NAME%}%CONTINUE%
+ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%Unsocketable%WHITE%: %WHITE%36% %BLUE%mod %WHITE%24% %YELLOW%mod %WHITE%15% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
 ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%2H Weapon%WHITE%: 25% %GRAY%3-6 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
 ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%1H Weapon%WHITE%: 25% %GRAY%2-4 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
 ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%Armor%WHITE%: 25% %GRAY%1-3 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
-ItemDisplay[wss]: %NAME%{%NAME%%CL%%WHITE%Non-magic %SAGE%Equipment%WHITE%: 50% %GRAY%sockets %WHITE%50% %YELLOW%rare}
-// Demonic Cube
-ItemDisplay[imrn]: ${icon_goldXL}${icon_redL}%GOLD%-=¦       %RED%%NAME%       %GOLD%¦=-{%TAN%Note%WHITE%: Use to %CORAL%Reroll %WHITE%an %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}
-// Larzuk's Puzzlebox
-ItemDisplay[lbox]: ${icon_goldXL}${icon_redL}%GOLD%-=¦       %NAME%       %GOLD%¦=-{%NAME%%CL%%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield, Quiver = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
-// Larzuk's Puzzlepiece
-ItemDisplay[lpp]: ${icon_goldL}${icon_redM}%GOLD%-=    %NAME%    %GOLD%=-{%NAME%%CL%%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Item}
-// Larzuk's Malus
-ItemDisplay[lmal]: %GOLD%%NAME%{%NAME%%CL%%WHITE%All Types of Items = 1 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
-// Jewel Fragments
-ItemDisplay[jewf]: %BLUE%%NAME%{%NAME%}
-// Tainted Worldstone Shard
-ItemDisplay[cwss]: ${icon_dark_redL}%RED%%NAME%{%RED%Warning%WHITE%: You can actually BRICK it%NL%%TAN%Note%WHITE%: Use to %RED%Corrupt %GOLD%Annihilus}
-// Horadrim Navigator
-ItemDisplay[rtp]: ${icon_goldL}${icon_tealM}%TEAL%-=   %NAME%   %TEAL%=-{%TAN%Note%WHITE%: You won't lose it in Cube recipes}
-// Horadrim Almanac
-ItemDisplay[rid]: ${icon_goldL}${icon_tealM}%TEAL%-=   %NAME%   %TEAL%=-{%NAME%}
-// Skeleton Key
-ItemDisplay[rkey]: ${icon_goldL}${icon_tealM}%TEAL%-=   %NAME%   %TEAL%=-{%NAME%}
-// Vial of Lightsong
-ItemDisplay[lsvl]: ${icon_goldXL}${icon_grayM}%GOLD%-=¦       %LIGHT_GRAY%%NAME%       %GOLD%¦=-{%NAME%%CL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%..%NL%%WHITE%Used to make an item %GRAY%ethereal.}
-// Lilith's Mirror
-ItemDisplay[llmr]: ${icon_goldXL}${icon_blackL}${icon_blackS}%GOLD%-=¦       %BLACK%L%WHITE%i%BLACK%l%WHITE%i%BLACK%t%WHITE%h%BLACK%'s %WHITE%M%BLACK%i%WHITE%r%BLACK%r%WHITE%o%BLACK%r       %GOLD%¦=-{%NAME%%CL%%RED%You Can't remove socketed Misc from it%NL%%WHITE%Their colors will be changed to Black and White.%NL%Can't be used in any cube recipes.%NL%%RED%Warning%WHITE%: Items will be marked as %PURPLE%Mirrored %WHITE%and%NL%%WHITE%Only works with %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%equipment%NL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%.}
-// Deuling Mana Potion
-ItemDisplay[pvpp]: %NAME%{%NAME%}
+ItemDisplay[wss]: %NAME%{%NAME%%CL%%WHITE%Non-magic %SAGE%Equipment%WHITE%: 50% %GRAY%sockets %WHITE%50% %YELLOW%rare}%CONTINUE%
+
+ItemDisplay[imrn (!GROUND OR ${town})]: %RED%Demonic Cube{%NAME%}%CONTINUE%
+ItemDisplay[imrn GROUND !${town}]: %DOT-83%%RED%¡¡¡ Demonic Cube !!!{%NAME%}%CONTINUE%
+ItemDisplay[imrn]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Use to Reroll a %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}%CONTINUE%
+
+ItemDisplay[lbox (!GROUND OR ${town})]: %RED%Larzuk’s Puzzlebox{%NAME%}%CONTINUE%
+ItemDisplay[lbox GROUND !${town}]:  %BORDER-6D%%DOT-62%%RED%¡¡          Larzuk’s Puzzlebox          !!{%NAME%}%CONTINUE%
+ItemDisplay[lbox]: %NAME%{%SAGE%2H Weapon%WHITE%: %GRAY% 2-4 sockets}%CONTINUE%
+ItemDisplay[lbox]: %NAME%{%NAME%%CL%%SAGE%1H Weapon%WHITE%: %GRAY% 1-2 sockets}%CONTINUE%
+ItemDisplay[lbox]: %NAME%{%NAME%%CL%%SAGE%Helmet, Chest, Shield, Quiver%WHITE%: %GRAY% 1-2 sockets}%CONTINUE%
+ItemDisplay[lbox]: %NAME%{%NAME%%CL%%WHITE%Cube with a %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%item to add %GRAY%Sockets }%CONTINUE%
+
+ItemDisplay[lpp (!GROUND OR ${town})]: %RED%Larzuk’s Puzzlepiece{%NAME%}%CONTINUE%
+ItemDisplay[lpp GROUND !${town}]: %BORDER-6D%%DOT-62%%RED%¡     Larzuk’s Puzzlepiece     !{%NAME%}%CONTINUE%
+ItemDisplay[lpp]: %NAME%{%SAGE%2H Weapon%WHITE%: %GRAY% 2-4 sockets}%CONTINUE%
+ItemDisplay[lpp]: %NAME%{%NAME%%CL%%SAGE%1H Weapon%WHITE%: %GRAY% 1-2 sockets}%CONTINUE%
+ItemDisplay[lpp]: %NAME%{%NAME%%CL%%SAGE%Helmet, Chest, Shield, Quiver%WHITE%: %GRAY% 1-2 sockets}%CONTINUE%
+ItemDisplay[lpp]: %NAME%{%NAME%%CL%%WHITE%Cube with a Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%item to add %GRAY%Sockets }%CONTINUE%
+
+ItemDisplay[lmal]: %RED%Larzuk’s Malus{%NAME%}%CONTINUE%
+ItemDisplay[lmal]: %NAME%{%WHITE%: Cube with an item to add %GRAY%1 Socket}%CONTINUE%
+
+ItemDisplay[cwss (!GROUND OR ${town})]: %RED%Tainted Worldstone Shard{%NAME%}%CONTINUE%
+ItemDisplay[cwss GROUND !${town}]: %MAP-0A%%RED%Tainted Worldstone Shard{%NAME%}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%RED%BRICK}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%WHITE%+[3-5]% to Experience Gained}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%WHITE%+[5-10] All Resistances}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%WHITE%+[20-25] ot Vitality, +[10-15] to Energy}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%WHITE%+1 to All Skills}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%TAN%20% Chance of each of the following}%CONTINUE%
+
+ItemDisplay[lsvl (!GROUND OR ${town})]: %RED%Vial of Lightsong{%NAME%}%CONTINUE%
+ItemDisplay[lsvl GROUND !${town}]: %MAP-53%%PX-9F%%RED%¡¡¡¡          Vial of Lightsong          !!!!{%NAME%}%CONTINUE%
+ItemDisplay[lsvl]: %NAME%{%NAME%%CL%%WHITE%Cube with an item to make it %GRAY%ethereal%WHITE%.}%CONTINUE%
+ItemDisplay[lsvl]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%.}%CONTINUE%
+
+ItemDisplay[llmr (!GROUND OR ${town})]: %RED%%WHITE%L%BLACK%i%WHITE%l%BLACK%i%WHITE%t%BLACK%h%WHITE%’s M%BLACK%i%WHITE%r%BLACK%r%WHITE%o%BLACK%r{%NAME%}%CONTINUE%
+ItemDisplay[llmr GROUND !${town}]: %MAP-53%%PX-9F%%RED%¡¡¡¡        %WHITE%L%BLACK%i%WHITE%l%BLACK%i%WHITE%t%BLACK%h%WHITE%’s M%BLACK%i%WHITE%r%BLACK%r%WHITE%o%BLACK%r        %RED%!!!!{%NAME%}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%RED%including recipes to remove items from sockets.}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%WHITE%and they will %RED%no longer work in cube recipes,}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%WHITE%their colors will be changed to black and white,}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%WHITE%Items will be marked as %PURPLE%Mirrored%WHITE%,}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%WHITE%Cube with a %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%piece of equipment to duplicate it.}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%.}%CONTINUE%
+
+// Utility Items
+ItemDisplay[rtp (!GROUND OR ${town})]: %TAN%Horadrim Navigator{%NAME%}%CONTINUE%
+ItemDisplay[rtp GROUND !${town}]: %MAP-53%%PX-9F%%TAN%¡¡     Horadrim Navigator     !!{%NAME%}%CONTINUE%
+ItemDisplay[rtp]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Won’t be lost in cube recipes.}%CONTINUE%
+
+ItemDisplay[rid (!GROUND OR ${town})]: %TAN%Horadrim Almanac{%NAME%}%CONTINUE%
+ItemDisplay[rid GROUND !${town}]: %MAP-53%%PX-9F%%TAN%¡¡     Horadrim Almanac     !!{%NAME%}%CONTINUE%
+
+ItemDisplay[rkey (!GROUND OR ${town})]: %TAN%Skeleton Key{%NAME%}%CONTINUE%
+ItemDisplay[rkey GROUND !${town}]: %MAP-53%%PX-9F%%TAN%¡¡     Skeleton Key     !!{%NAME%}%CONTINUE%
+ItemDisplay[rkey]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Won’t be lost in cube recipes.}%CONTINUE%
+
+// Other Misc
+ItemDisplay[jewf]: %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[pvpp]: %NAME%{%NAME%}%CONTINUE%
+
+// Map Modification
+ItemDisplay[std (!GROUND OR ${town})]: %SAGE%Standard of Heroes{%NAME%}%CONTINUE%
+ItemDisplay[std GROUND !${town}]: %DOT-83%%SAGE%Standard of Heroes{%NAME%}%CONTINUE%
+ItemDisplay[imma]: %SAGE%Arcane Orb{%NAME%}%CONTINUE%
+ItemDisplay[imma]: %NAME%{%NAME%%CL%%GRAY%(Skip Map to make %SAGE%Infused Orb%GRAY%)}%CONTINUE%
+ItemDisplay[irma]: %SAGE%Infused Arcane Orb{%NAME%}%CONTINUE%
+ItemDisplay[imra]: %SAGE%Zakarum Orb{%NAME%}%CONTINUE%
+ItemDisplay[imra]: %NAME%{%NAME%%CL%%GRAY%(Skip Map to make %SAGE%Infused Orb%GRAY%)}%CONTINUE%
+ItemDisplay[irra]: %SAGE%Infused Zakarum Orb{%NAME%}%CONTINUE%
+ItemDisplay[upma]: %SAGE%Angelic Orb{%NAME%}%CONTINUE%
+ItemDisplay[upma]: %NAME%{%NAME%%CL%%GRAY%(Skip Map to make %SAGE%Infused Orb%GRAY%)}%CONTINUE%
+ItemDisplay[urma]: %SAGE%Infused Angelic Orb{%NAME%}%CONTINUE%
+ItemDisplay[rera]: %SAGE%Horadrim Orb{%NAME%}%CONTINUE%
+ItemDisplay[rera]: %NAME%{%NAME%%CL%%GRAY%(Skip Map to make %SAGE%Infused Orb%GRAY%)}%CONTINUE%
+ItemDisplay[rrra]: %SAGE%Infused Horadrim Orb{%NAME%}%CONTINUE%
+ItemDisplay[scou]: %SAGE%Orb of Destruction{%NAME%}%CONTINUE%
+ItemDisplay[fort]: %SAGE%Orb of Fortification{%NAME%}%CONTINUE%
+ItemDisplay[upmp]: %SAGE%Cartographer’s Orb{%NAME%}%CONTINUE%
+ItemDisplay[scrb (!GROUND OR ${town})]: %SAGE%Horadrim Scarab{%NAME%}%CONTINUE%
+ItemDisplay[scrb GROUND !${town}]: %MAP-83%%SAGE%Horadrim Scarab{%NAME%}%CONTINUE%
+ItemDisplay[iwss (!GROUND OR ${town})]: %SAGE%Catalyst Shard{%NAME%}%CONTINUE%
+ItemDisplay[iwss GROUND !${town}]: %MAP-83%%SAGE%Catalyst Shard{%NAME%}%CONTINUE%
+
+// Uber Tristram Keys
+ItemDisplay[pk1 (!GROUND OR ${town})]: %PURPLE%Key of Terror{%NAME%}%CONTINUE%
+ItemDisplay[pk1 GROUND !${town}]: %MAP-9B%%PURPLE%¡    Key of Terror    !{%NAME%}%CONTINUE%
+ItemDisplay[pk2 (!GROUND OR ${town})]: %PURPLE%Key of Hate{%NAME%}%CONTINUE%
+ItemDisplay[pk2 GROUND !${town}]: %MAP-9B%%PURPLE%¡    Key of Hate    !{%NAME%}%CONTINUE%
+ItemDisplay[pk3 (!GROUND OR ${town})]: %PURPLE%Key of Destruction{%NAME%}%CONTINUE%
+ItemDisplay[pk3 GROUND !${town}]: %MAP-9B%%PURPLE%¡    Key of Destruction    !{%NAME%}%CONTINUE%
+ItemDisplay[dhn (!GROUND OR ${town})]: %PURPLE%Diablo’s Horn{%NAME%}%CONTINUE%
+ItemDisplay[dhn GROUND !${town}]: %MAP-9B%%PURPLE%¡  Diablo’s Horn  !{%NAME%}%CONTINUE%
+ItemDisplay[bey (!GROUND OR ${town})]: %PURPLE%Baal’s Eye{%NAME%}%CONTINUE%
+ItemDisplay[bey GROUND !${town}]: %MAP-9B%%PURPLE%¡  Baal’s Eye  !{%NAME%}%CONTINUE%
+ItemDisplay[mbr (!GROUND OR ${town})]: %PURPLE%Mephisto’s Brain{%NAME%}%CONTINUE%
+ItemDisplay[mbr GROUND !${town}]: %MAP-9B%%PURPLE%¡  Mephisto’s Brain  !{%NAME%}%CONTINUE%
+ItemDisplay[ubtm]: %PURPLE%Pandemonium Talisman{%NAME%}%CONTINUE%
+
+// Uber Ancients Keys
+ItemDisplay[ubaa (!GROUND OR ${town})]: %PURPLE%Sigil of Madawc{%NAME%}%CONTINUE%
+ItemDisplay[ubaa GROUND !${town}]: %MAP-9B%%PURPLE%¡   Sigil of Madawc   !{%NAME%}%CONTINUE%
+ItemDisplay[ubab (!GROUND OR ${town})]: %PURPLE%Sigil of Talic{%NAME%}%CONTINUE%
+ItemDisplay[ubab GROUND !${town}]: %MAP-9B%%PURPLE%¡   Sigil of Talic   !{%NAME%}%CONTINUE%
+ItemDisplay[ubac (!GROUND OR ${town})]: %PURPLE%Sigil of Korlic{%NAME%}%CONTINUE%
+ItemDisplay[ubac GROUND !${town}]: %MAP-9B%%PURPLE%¡   Sigil of Korlic   !{%NAME%}%CONTINUE%
+ItemDisplay[uba]: %PURPLE%Relic of the Ancients{%NAME%}%CONTINUE%
+
+// Diablo Clone Keys
+ItemDisplay[dcso (!GROUND OR ${town})]: %PURPLE%Prime Evil Soul{%NAME%}%CONTINUE%
+ItemDisplay[dcso GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Prime Evil Soul      !!!{%NAME%}%CONTINUE%
+ItemDisplay[dcbl (!GROUND OR ${town})]: %PURPLE%Pure Demonic Essence{%NAME%}%CONTINUE%
+ItemDisplay[dcbl GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Pure Demonic Essence      !!!{%NAME%}%CONTINUE%
+ItemDisplay[dcho (!GROUND OR ${town})]: %PURPLE%Black Soulstone{%NAME%}%CONTINUE%
+ItemDisplay[dcho GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Black Soulstone      !!!{%NAME%}%CONTINUE%
+ItemDisplay[dcma]: %PURPLE%Vision of Terror{%NAME%}%CONTINUE%
+
+// Rathma Keys
+ItemDisplay[rtmv (!GROUND OR ${town})]: %PURPLE%Splinter of the Void{%NAME%}%CONTINUE%
+ItemDisplay[rtmv GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Splinter of the Void      !!!{%NAME%}%CONTINUE%
+ItemDisplay[rtmo (!GROUND OR ${town})]: %PURPLE%Trang-Oul’s Jawbone{%NAME%}%CONTINUE%
+ItemDisplay[rtmo GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Trang-Oul’s Jawbone      !!!{%NAME%}%CONTINUE%
+ItemDisplay[cm2f (!GROUND OR ${town})]: %PURPLE%Hellfire Ashes{%NAME%}%CONTINUE%
+ItemDisplay[cm2f GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Hellfire Ashes      !!!{%NAME%}%CONTINUE%
+ItemDisplay[rtma]: %PURPLE%Voidstone{%NAME%}%CONTINUE%
+
+// Lucion Keys
+ItemDisplay[lucb (!GROUND OR ${town})]: %PURPLE%Demonic Insignia{%NAME%}%CONTINUE%
+ItemDisplay[lucb GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Demonic Insignia      !!!{%NAME%}%CONTINUE%
+ItemDisplay[lucc (!GROUND OR ${town})]: %PURPLE%Talisman of Transgression{%NAME%}%CONTINUE%
+ItemDisplay[lucc GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Talisman of Transgression      !!!{%NAME%}%CONTINUE%
+ItemDisplay[lucd (!GROUND OR ${town})]: %PURPLE%Flesh of Malic{%NAME%}%CONTINUE%
+ItemDisplay[lucd GROUND !${town}]: %MAP-9B%%PURPLE%¡¡¡      Flesh of Malic      !!!{%NAME%}%CONTINUE%
+ItemDisplay[luca]: %PURPLE%Shadow of Hatred{%NAME%}%CONTINUE%
+
+// Essences of Absolution
+ItemDisplay[tes (!GROUND OR ${town})]: %TAN%Twisted Essence of Suffering{%NAME%}%CONTINUE%
+ItemDisplay[tes GROUND !${town}]: %MAP-5A%%TAN%¡    Twisted Essence of Suffering    !{%NAME%}%CONTINUE%
+ItemDisplay[ceh (!GROUND OR ${town})]: %TAN%Charged Essence of Hatred{%NAME%}%CONTINUE%
+ItemDisplay[ceh GROUND !${town}]: %MAP-5A%%TAN%¡    Charged Essence of Hatred    !{%NAME%}%CONTINUE%
+ItemDisplay[bet (!GROUND OR ${town})]: %TAN%Burning Essence of Terror{%NAME%}%CONTINUE%
+ItemDisplay[bet GROUND !${town}]: %MAP-5A%%TAN%¡    Burning Essence of Terror    !{%NAME%}%CONTINUE%
+ItemDisplay[fed (!GROUND OR ${town})]: %TAN%Festering Essence of Destruction{%NAME%}%CONTINUE%
+ItemDisplay[fed GROUND !${town}]: %MAP-5A%%TAN%¡    Festering Essence of Destruction    !{%NAME%}%CONTINUE%
+ItemDisplay[toa]: %TAN%Token of Absolution{%NAME%}%CONTINUE%
 
 // Craft Infusions
-ItemDisplay[crfb]: ${icon_orangeS}%ORANGE%[%RED%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfc]: ${icon_orangeS}%ORANGE%[%PURPLE%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfs]: ${icon_orangeS}%ORANGE%[%GREEN%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfh]: ${icon_orangeS}%ORANGE%[%BLUE%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfv]: ${icon_orangeS}%ORANGE%[%GRAY%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfu]: ${icon_orangeS}%ORANGE%[%YELLOW%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfp]: ${icon_orangeS}%ORANGE%[%WHITE%·%ORANGE%] %NAME%{%NAME%}
-
-
-// Catalyst Shard
-ItemDisplay[iwss]: %MAP-0A%%DOT-66%%RED%%NAME% %ORANGE%*{%WHITE%Random Event to Your Map%NL%%TAN%Note%WHITE%: Use to %PURPLE%Add %WHITE%a Guaranteed}
-// Horadrim Scarab
-ItemDisplay[scrb]: %MAP-A9%%NAME% %ORANGE%*{%NAME%}//{%RED%Group Dungeon%NL%%TAN%Note%WHITE%: Cube it with %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Map to Make:}
-ItemDisplay[ubtm]: %MAP-A9%%GRAY%* %NAME% %GRAY%*{%GRAY%(It will create 3 Portals to come back Max 3 Times)%NL%%TAN%Note%WHITE%: Entrance to Uber Tristram}
-ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Any Rune%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[rera]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Any Rune%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:%NL%}%CONTINUE%
-ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem %WHITE%+ %ORANGE%Any Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[imma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb%NL%%WHITE%Reroll %BLUE%Magic %WHITE%Map:%NL%%NL%%GRAY%(Skip Map to make %GOLD%Infused Orb%GRAY%)%NL%%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:%NL%}
-ItemDisplay[fort]: %GOLD%%NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb%NL%%WHITE%2x Health, 2x Exp, 20% Damage, 2x Loot%NL%%TAN% Note%WHITE%: Reduces Base Density by Half, Monsters Gain:%NL%}
-ItemDisplay[upmp]: %NAME% %ORANGE%*{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:%NL%}
-ItemDisplay[(imra OR rera OR upma)]: %NAME%{%GRAY%(Skip Map to make %GOLD%Infused Orb%GRAY%)%NL%%NAME%}%CONTINUE%
-ItemDisplay[imma FILTLVL>7 !SHOP !${town}]: {%NAME%}%CONTINUE%
-ItemDisplay[irra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:%NL%}
-ItemDisplay[rrra]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:%NL%}
-ItemDisplay[urma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:%NL%}
-ItemDisplay[irma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb%NL%%WHITE%Reroll %BLUE%Magic %WHITE%Map:%NL%%NL%%WHITE%Map + %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:%NL%}
-
-
-
-//DClone/Rathma/Lucion Materials & items
-ItemDisplay[(dcma OR rtma OR luca) STAT185=0]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%BLUE%Tier: 0 (Default)%NL%%RED%Enter at your own risk!%NL%%TAN%Note%WHITE%: %GRAY%Many have entered... Few have returned.}
-ItemDisplay[(dcma OR rtma OR luca) STAT185>0]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%RED%Enter at your own risk!%NL%%TAN%Note%WHITE%: %GRAY%Many have entered... Few have returned.}
-ItemDisplay[lucb]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[lucc]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[lucd]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[dcbl OR dcho]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Diablo Clone %GRAY%walks nearby...}
-ItemDisplay[dcso]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Contains Soul of %RED%Diablo Clone}
-ItemDisplay[rtmf]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: 2x %ORANGE%Bone Fragments %WHITE%+ %GOLD%Hellfire Torch %WHITE%= %ORANGE%Trang-Oul's Jawbone}
-ItemDisplay[rtmv]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
-ItemDisplay[rtmo]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
-ItemDisplay[cm2f]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
-
-
-//Uber Ancients
-ItemDisplay[ubaa]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%DARK_GREEN%T1%GRAY%] %WHITE%Maps}
-ItemDisplay[ubab]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%TAN%T2%GRAY%] %WHITE%Maps}
-ItemDisplay[ubac]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Maps}
-ItemDisplay[uba]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%TAN%Note%WHITE%: Challenge Yourself, Fight for the Great Loot!}
-
-//Essences
-ItemDisplay[tes]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}
-ItemDisplay[ceh]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %TAN%Mephisto}
-ItemDisplay[bet]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %RED%Diablo}
-ItemDisplay[fed]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}
-
-//Uber Keys
-ItemDisplay[pk1]: %DOT-9D%%NAME%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}
-ItemDisplay[pk2]: %DOT-9D%%NAME%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}
-ItemDisplay[pk3]: %DOT-9D%%NAME%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}
-
-//Organs
-ItemDisplay[(mbr OR bey OR dhn)]: %PX-9D%%NAME%{%WHITE%to get %RED%Pandemonium Talisman%NL%%TAN%Note%WHITE%: Cube %ORANGE%One of each %WHITE%of the three Organs}
-
-
-
-
+ItemDisplay[crfb (!GROUND OR ${town})]: %ORANGE%Blood Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfb GROUND !${town}]: %PX-60%%ORANGE%¡  Blood Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfc (!GROUND OR ${town})]: %ORANGE%Caster Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfc GROUND !${town}]: %PX-60%%ORANGE%¡  Caster Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfs (!GROUND OR ${town})]: %ORANGE%Safety Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfs GROUND !${town}]: %PX-60%%ORANGE%¡  Safety Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfh (!GROUND OR ${town})]: %ORANGE%Hitpower Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfh GROUND !${town}]: %PX-60%%ORANGE%¡  Hitpower Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfv (!GROUND OR ${town})]: %ORANGE%Vampiric Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfv GROUND !${town}]: %PX-60%%ORANGE%¡  Vampiric Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfu (!GROUND OR ${town})]: %ORANGE%Bountiful Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfu GROUND !${town}]: %PX-60%%ORANGE%¡  Bountiful Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfp (!GROUND OR ${town})]: %ORANGE%Brilliant Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfp GROUND !${town}]: %PX-60%%ORANGE%¡  Brilliant Craft Infusion  !{%NAME%}%CONTINUE%

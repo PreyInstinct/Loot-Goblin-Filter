@@ -5154,107 +5154,174 @@ ItemDisplay[cm3 MAG ID ILVL>90]: %NAME%{%WHITE%Cube with 3xPerf Gem%NL%%TAN%Note
 // Miscellaneous Items
 //----------------------------------------------------------------------------------------------------
 
-// Standard of Heroes
-ItemDisplay[std]: %DOT-84%%GREEN%%NAME%{%NAME%}//{%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
-// Worldstone Shard
-ItemDisplay[wss]: %MAP-62%%DOT-6D%%RED%%NAME%{%NAME%%CL%%SAGE%Unsocketable%WHITE%: %WHITE%36% %BLUE%mod %WHITE%24% %YELLOW%mod %WHITE%15% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
+// Item Modification
+ItemDisplay[wss]: %MAP-62%%PX-6D%%RED%Worldstone Shard{%NAME%}%CONTINUE%
+ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%Unsocketable%WHITE%: %WHITE%36% %BLUE%mod %WHITE%24% %YELLOW%mod %WHITE%15% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
 ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%2H Weapon%WHITE%: 25% %GRAY%3-6 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
 ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%1H Weapon%WHITE%: 25% %GRAY%2-4 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
 ItemDisplay[wss]: %NAME%{%NAME%%CL%%SAGE%Armor%WHITE%: 25% %GRAY%1-3 os %WHITE%24% %BLUE%mod %WHITE%16% %YELLOW%mod %WHITE%10% %GOLD%mod %WHITE%25% %RED%BRICK}%CONTINUE%
-ItemDisplay[wss]: %NAME%{%NAME%%CL%%WHITE%Non-magic %SAGE%Equipment%WHITE%: 50% %GRAY%sockets %WHITE%50% %YELLOW%rare}
-// Demonic Cube
-ItemDisplay[imrn]: %BORDER-53%%MAP-62%%GOLD%-=¦       %RED%%NAME%       %GOLD%¦=-{%TAN%Note%WHITE%: Use to %CORAL%Reroll %WHITE%an %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}
-// Larzuk's Puzzlebox
-ItemDisplay[lbox]: %BORDER-53%%MAP-62%%GOLD%-=¦       %NAME%       %GOLD%¦=-{%NAME%%CL%%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield, Quiver = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
-// Larzuk's Puzzlepiece
-ItemDisplay[lpp]: %MAP-53%%DOT-62%%GOLD%-=    %NAME%    %GOLD%=-{%NAME%%CL%%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Item}
-// Larzuk's Malus
-ItemDisplay[lmal]: %GOLD%%NAME%{%NAME%%CL%%WHITE%All Types of Items = 1 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
-// Jewel Fragments
-ItemDisplay[jewf]: %BLUE%%NAME%{%NAME%}
-// Tainted Worldstone Shard
-ItemDisplay[cwss]: %MAP-0A%%RED%%NAME%{%RED%Warning%WHITE%: You can actually BRICK it%NL%%TAN%Note%WHITE%: Use to %RED%Corrupt %GOLD%Annihilus}
-// Horadrim Navigator
-ItemDisplay[rtp]: %MAP-53%%DOT-9F%%TEAL%-=   %NAME%   %TEAL%=-{%TAN%Note%WHITE%: You won't lose it in Cube recipes}
-// Horadrim Almanac
-ItemDisplay[rid]: %MAP-53%%DOT-9F%%TEAL%-=   %NAME%   %TEAL%=-{%NAME%}
-// Skeleton Key
-ItemDisplay[rkey]: %MAP-53%%DOT-9F%%TEAL%-=   %NAME%   %TEAL%=-{%NAME%}
-// Vial of Lightsong
-ItemDisplay[lsvl]: %BORDER-53%%DOT-1D%%GOLD%-=¦       %LIGHT_GRAY%%NAME%       %GOLD%¦=-{%NAME%%CL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%..%NL%%WHITE%Used to make an item %GRAY%ethereal.}
-// Lilith's Mirror
-ItemDisplay[llmr]: %BORDER-53%%MAP-21%%PX-21%%GOLD%-=¦       %BLACK%L%WHITE%i%BLACK%l%WHITE%i%BLACK%t%WHITE%h%BLACK%'s %WHITE%M%BLACK%i%WHITE%r%BLACK%r%WHITE%o%BLACK%r       %GOLD%¦=-{%NAME%%CL%%RED%You Can't remove socketed Misc from it%NL%%WHITE%Their colors will be changed to Black and White.%NL%Can't be used in any cube recipes.%NL%%RED%Warning%WHITE%: Items will be marked as %PURPLE%Mirrored %WHITE%and%NL%%WHITE%Only works with %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%equipment%NL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%.}
-// Deuling Mana Potion
-ItemDisplay[pvpp]: %NAME%{%NAME%}
+ItemDisplay[wss]: %NAME%{%NAME%%CL%%WHITE%Non-magic %SAGE%Equipment%WHITE%: 50% %GRAY%sockets %WHITE%50% %YELLOW%rare}%CONTINUE%
+
+ItemDisplay[imrn (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %RED%Demonic Cube{%NAME%}%CONTINUE%
+ItemDisplay[imrn GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %DOT-83%%RED%¡¡¡ Demonic Cube !!!{%NAME%}%CONTINUE%
+ItemDisplay[imrn]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Use to Reroll a %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}%CONTINUE%
+
+ItemDisplay[lbox (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %RED%Larzuk’s Puzzlebox{%NAME%}%CONTINUE%
+ItemDisplay[lbox GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:  %BORDER-6D%%DOT-62%%RED%¡¡          Larzuk’s Puzzlebox          !!{%NAME%}%CONTINUE%
+ItemDisplay[lbox]: %NAME%{%SAGE%2H Weapon%WHITE%: %GRAY% 2-4 sockets}%CONTINUE%
+ItemDisplay[lbox]: %NAME%{%NAME%%CL%%SAGE%1H Weapon%WHITE%: %GRAY% 1-2 sockets}%CONTINUE%
+ItemDisplay[lbox]: %NAME%{%NAME%%CL%%SAGE%Helmet, Chest, Shield, Quiver%WHITE%: %GRAY% 1-2 sockets}%CONTINUE%
+ItemDisplay[lbox]: %NAME%{%NAME%%CL%%WHITE%Cube with a %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%item to add %GRAY%Sockets }%CONTINUE%
+
+ItemDisplay[lpp (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %RED%Larzuk’s Puzzlepiece{%NAME%}%CONTINUE%
+ItemDisplay[lpp GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %BORDER-6D%%DOT-62%%RED%¡     Larzuk’s Puzzlepiece     !{%NAME%}%CONTINUE%
+ItemDisplay[lpp]: %NAME%{%SAGE%2H Weapon%WHITE%: %GRAY% 2-4 sockets}%CONTINUE%
+ItemDisplay[lpp]: %NAME%{%NAME%%CL%%SAGE%1H Weapon%WHITE%: %GRAY% 1-2 sockets}%CONTINUE%
+ItemDisplay[lpp]: %NAME%{%NAME%%CL%%SAGE%Helmet, Chest, Shield, Quiver%WHITE%: %GRAY% 1-2 sockets}%CONTINUE%
+ItemDisplay[lpp]: %NAME%{%NAME%%CL%%WHITE%Cube with a Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%item to add %GRAY%Sockets }%CONTINUE%
+
+ItemDisplay[lmal]: %RED%Larzuk’s Malus{%NAME%}%CONTINUE%
+ItemDisplay[lmal]: %NAME%{%WHITE%: Cube with an item to add %GRAY%1 Socket}%CONTINUE%
+
+ItemDisplay[cwss (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %RED%Tainted Worldstone Shard{%NAME%}%CONTINUE%
+ItemDisplay[cwss GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-0A%%RED%Tainted Worldstone Shard{%NAME%}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%RED%BRICK}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%WHITE%+[3-5]% to Experience Gained}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%WHITE%+[5-10] All Resistances}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%WHITE%+[20-25] ot Vitality, +[10-15] to Energy}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%WHITE%+1 to All Skills}%CONTINUE%
+ItemDisplay[cwss]: %NAME%{%NAME%%CL%%TAN%20% Chance of each of the following}%CONTINUE%
+
+ItemDisplay[lsvl (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %RED%Vial of Lightsong{%NAME%}%CONTINUE%
+ItemDisplay[lsvl GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-53%%PX-9F%%RED%¡¡¡¡          Vial of Lightsong          !!!!{%NAME%}%CONTINUE%
+ItemDisplay[lsvl]: %NAME%{%NAME%%CL%%WHITE%Cube with an item to make it %GRAY%ethereal%WHITE%.}%CONTINUE%
+ItemDisplay[lsvl]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%.}%CONTINUE%
+
+ItemDisplay[llmr (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %RED%%WHITE%L%BLACK%i%WHITE%l%BLACK%i%WHITE%t%BLACK%h%WHITE%’s M%BLACK%i%WHITE%r%BLACK%r%WHITE%o%BLACK%r{%NAME%}%CONTINUE%
+ItemDisplay[llmr GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-53%%PX-9F%%RED%¡¡¡¡        %WHITE%L%BLACK%i%WHITE%l%BLACK%i%WHITE%t%BLACK%h%WHITE%’s M%BLACK%i%WHITE%r%BLACK%r%WHITE%o%BLACK%r        %RED%!!!!{%NAME%}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%RED%including recipes to remove items from sockets.}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%WHITE%and they will %RED%no longer work in cube recipes,}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%WHITE%their colors will be changed to black and white,}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%WHITE%Items will be marked as %PURPLE%Mirrored%WHITE%,}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%WHITE%Cube with a %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%piece of equipment to duplicate it.}%CONTINUE%
+ItemDisplay[llmr]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: This item is %GOLD%EXTREMELY RARE%WHITE%.}%CONTINUE%
+
+// Utility Items
+ItemDisplay[rtp (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %TAN%Horadrim Navigator{%NAME%}%CONTINUE%
+ItemDisplay[rtp GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-53%%PX-9F%%TAN%¡¡     Horadrim Navigator     !!{%NAME%}%CONTINUE%
+ItemDisplay[rtp]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Won’t be lost in cube recipes.}%CONTINUE%
+
+ItemDisplay[rid (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %TAN%Horadrim Almanac{%NAME%}%CONTINUE%
+ItemDisplay[rid GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-53%%PX-9F%%TAN%¡¡     Horadrim Almanac     !!{%NAME%}%CONTINUE%
+
+ItemDisplay[rkey (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %TAN%Skeleton Key{%NAME%}%CONTINUE%
+ItemDisplay[rkey GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-53%%PX-9F%%TAN%¡¡     Skeleton Key     !!{%NAME%}%CONTINUE%
+ItemDisplay[rkey]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Won’t be lost in cube recipes.}%CONTINUE%
+
+// Other Misc
+ItemDisplay[jewf]: %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[pvpp]: %NAME%{%NAME%}%CONTINUE%
+
+// Map Modification
+ItemDisplay[std (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %SAGE%Standard of Heroes{%NAME%}%CONTINUE%
+ItemDisplay[std GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %DOT-83%%SAGE%Standard of Heroes{%NAME%}%CONTINUE%
+ItemDisplay[imma]: %SAGE%Arcane Orb{%NAME%}%CONTINUE%
+ItemDisplay[imma]: %NAME%{%NAME%%CL%%GRAY%(Skip Map to make %SAGE%Infused Orb%GRAY%)}%CONTINUE%
+ItemDisplay[irma]: %SAGE%Infused Arcane Orb{%NAME%}%CONTINUE%
+ItemDisplay[imra]: %SAGE%Zakarum Orb{%NAME%}%CONTINUE%
+ItemDisplay[imra]: %NAME%{%NAME%%CL%%GRAY%(Skip Map to make %SAGE%Infused Orb%GRAY%)}%CONTINUE%
+ItemDisplay[irra]: %SAGE%Infused Zakarum Orb{%NAME%}%CONTINUE%
+ItemDisplay[upma]: %SAGE%Angelic Orb{%NAME%}%CONTINUE%
+ItemDisplay[upma]: %NAME%{%NAME%%CL%%GRAY%(Skip Map to make %SAGE%Infused Orb%GRAY%)}%CONTINUE%
+ItemDisplay[urma]: %SAGE%Infused Angelic Orb{%NAME%}%CONTINUE%
+ItemDisplay[rera]: %SAGE%Horadrim Orb{%NAME%}%CONTINUE%
+ItemDisplay[rera]: %NAME%{%NAME%%CL%%GRAY%(Skip Map to make %SAGE%Infused Orb%GRAY%)}%CONTINUE%
+ItemDisplay[rrra]: %SAGE%Infused Horadrim Orb{%NAME%}%CONTINUE%
+ItemDisplay[scou]: %SAGE%Orb of Destruction{%NAME%}%CONTINUE%
+ItemDisplay[fort]: %SAGE%Orb of Fortification{%NAME%}%CONTINUE%
+ItemDisplay[upmp]: %SAGE%Cartographer’s Orb{%NAME%}%CONTINUE%
+ItemDisplay[scrb (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %SAGE%Horadrim Scarab{%NAME%}%CONTINUE%
+ItemDisplay[scrb GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-83%%SAGE%Horadrim Scarab{%NAME%}%CONTINUE%
+ItemDisplay[iwss (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %SAGE%Catalyst Shard{%NAME%}%CONTINUE%
+ItemDisplay[iwss GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-83%%SAGE%Catalyst Shard{%NAME%}%CONTINUE%
+
+// Uber Tristram Keys
+ItemDisplay[pk1 (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Key of Terror{%NAME%}%CONTINUE%
+ItemDisplay[pk1 GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡    Key of Terror    !{%NAME%}%CONTINUE%
+ItemDisplay[pk2 (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Key of Hate{%NAME%}%CONTINUE%
+ItemDisplay[pk2 GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡    Key of Hate    !{%NAME%}%CONTINUE%
+ItemDisplay[pk3 (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Key of Destruction{%NAME%}%CONTINUE%
+ItemDisplay[pk3 GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡    Key of Destruction    !{%NAME%}%CONTINUE%
+ItemDisplay[dhn (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Diablo’s Horn{%NAME%}%CONTINUE%
+ItemDisplay[dhn GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡  Diablo’s Horn  !{%NAME%}%CONTINUE%
+ItemDisplay[bey (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Baal’s Eye{%NAME%}%CONTINUE%
+ItemDisplay[bey GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡  Baal’s Eye  !{%NAME%}%CONTINUE%
+ItemDisplay[mbr (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Mephisto’s Brain{%NAME%}%CONTINUE%
+ItemDisplay[mbr GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡  Mephisto’s Brain  !{%NAME%}%CONTINUE%
+ItemDisplay[ubtm]: %PURPLE%Pandemonium Talisman{%NAME%}%CONTINUE%
+
+// Uber Ancients Keys
+ItemDisplay[ubaa (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Sigil of Madawc{%NAME%}%CONTINUE%
+ItemDisplay[ubaa GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡   Sigil of Madawc   !{%NAME%}%CONTINUE%
+ItemDisplay[ubab (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Sigil of Talic{%NAME%}%CONTINUE%
+ItemDisplay[ubab GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡   Sigil of Talic   !{%NAME%}%CONTINUE%
+ItemDisplay[ubac (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Sigil of Korlic{%NAME%}%CONTINUE%
+ItemDisplay[ubac GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡   Sigil of Korlic   !{%NAME%}%CONTINUE%
+ItemDisplay[uba]: %PURPLE%Relic of the Ancients{%NAME%}%CONTINUE%
+
+// Diablo Clone Keys
+ItemDisplay[dcso (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Prime Evil Soul{%NAME%}%CONTINUE%
+ItemDisplay[dcso GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Prime Evil Soul      !!!{%NAME%}%CONTINUE%
+ItemDisplay[dcbl (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Pure Demonic Essence{%NAME%}%CONTINUE%
+ItemDisplay[dcbl GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Pure Demonic Essence      !!!{%NAME%}%CONTINUE%
+ItemDisplay[dcho (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Black Soulstone{%NAME%}%CONTINUE%
+ItemDisplay[dcho GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Black Soulstone      !!!{%NAME%}%CONTINUE%
+ItemDisplay[dcma]: %PURPLE%Vision of Terror{%NAME%}%CONTINUE%
+
+// Rathma Keys
+ItemDisplay[rtmv (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Splinter of the Void{%NAME%}%CONTINUE%
+ItemDisplay[rtmv GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Splinter of the Void      !!!{%NAME%}%CONTINUE%
+ItemDisplay[rtmo (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Trang-Oul’s Jawbone{%NAME%}%CONTINUE%
+ItemDisplay[rtmo GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Trang-Oul’s Jawbone      !!!{%NAME%}%CONTINUE%
+ItemDisplay[cm2f (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Hellfire Ashes{%NAME%}%CONTINUE%
+ItemDisplay[cm2f GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Hellfire Ashes      !!!{%NAME%}%CONTINUE%
+ItemDisplay[rtma]: %PURPLE%Voidstone{%NAME%}%CONTINUE%
+
+// Lucion Keys
+ItemDisplay[lucb (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Demonic Insignia{%NAME%}%CONTINUE%
+ItemDisplay[lucb GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Demonic Insignia      !!!{%NAME%}%CONTINUE%
+ItemDisplay[lucc (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Talisman of Transgression{%NAME%}%CONTINUE%
+ItemDisplay[lucc GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Talisman of Transgression      !!!{%NAME%}%CONTINUE%
+ItemDisplay[lucd (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %PURPLE%Flesh of Malic{%NAME%}%CONTINUE%
+ItemDisplay[lucd GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-9B%%PURPLE%¡¡¡      Flesh of Malic      !!!{%NAME%}%CONTINUE%
+ItemDisplay[luca]: %PURPLE%Shadow of Hatred{%NAME%}%CONTINUE%
+
+// Essences of Absolution
+ItemDisplay[tes (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %TAN%Twisted Essence of Suffering{%NAME%}%CONTINUE%
+ItemDisplay[tes GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-5A%%TAN%¡    Twisted Essence of Suffering    !{%NAME%}%CONTINUE%
+ItemDisplay[ceh (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %TAN%Charged Essence of Hatred{%NAME%}%CONTINUE%
+ItemDisplay[ceh GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-5A%%TAN%¡    Charged Essence of Hatred    !{%NAME%}%CONTINUE%
+ItemDisplay[bet (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %TAN%Burning Essence of Terror{%NAME%}%CONTINUE%
+ItemDisplay[bet GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-5A%%TAN%¡    Burning Essence of Terror    !{%NAME%}%CONTINUE%
+ItemDisplay[fed (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %TAN%Festering Essence of Destruction{%NAME%}%CONTINUE%
+ItemDisplay[fed GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %MAP-5A%%TAN%¡    Festering Essence of Destruction    !{%NAME%}%CONTINUE%
+ItemDisplay[toa]: %TAN%Token of Absolution{%NAME%}%CONTINUE%
 
 // Craft Infusions
-ItemDisplay[crfb]: %PX-60%%ORANGE%[%RED%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfc]: %PX-60%%ORANGE%[%PURPLE%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfs]: %PX-60%%ORANGE%[%GREEN%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfh]: %PX-60%%ORANGE%[%BLUE%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfv]: %PX-60%%ORANGE%[%GRAY%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfu]: %PX-60%%ORANGE%[%YELLOW%·%ORANGE%] %NAME%{%NAME%}
-ItemDisplay[crfp]: %PX-60%%ORANGE%[%WHITE%·%ORANGE%] %NAME%{%NAME%}
-
-
-// Catalyst Shard
-ItemDisplay[iwss]: %MAP-0A%%DOT-66%%RED%%NAME% %ORANGE%*{%WHITE%Random Event to Your Map%NL%%TAN%Note%WHITE%: Use to %PURPLE%Add %WHITE%a Guaranteed}
-// Horadrim Scarab
-ItemDisplay[scrb]: %MAP-A9%%NAME% %ORANGE%*{%NAME%}//{%RED%Group Dungeon%NL%%TAN%Note%WHITE%: Cube it with %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Map to Make:}
-ItemDisplay[ubtm]: %MAP-A9%%GRAY%* %NAME% %GRAY%*{%GRAY%(It will create 3 Portals to come back Max 3 Times)%NL%%TAN%Note%WHITE%: Entrance to Uber Tristram}
-ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Any Rune%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[rera]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Any Rune%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:%NL%}%CONTINUE%
-ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem %WHITE%+ %ORANGE%Any Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[imma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb%NL%%WHITE%Reroll %BLUE%Magic %WHITE%Map:%NL%%NL%%GRAY%(Skip Map to make %GOLD%Infused Orb%GRAY%)%NL%%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:%NL%}
-ItemDisplay[fort]: %GOLD%%NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb%NL%%WHITE%2x Health, 2x Exp, 20% Damage, 2x Loot%NL%%TAN% Note%WHITE%: Reduces Base Density by Half, Monsters Gain:%NL%}
-ItemDisplay[upmp]: %NAME% %ORANGE%*{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:%NL%}
-ItemDisplay[(imra OR rera OR upma)]: %NAME%{%GRAY%(Skip Map to make %GOLD%Infused Orb%GRAY%)%NL%%NAME%}%CONTINUE%
-ItemDisplay[imma FILTLVL>7 !SHOP !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: {%NAME%}%CONTINUE%
-ItemDisplay[irra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:%NL%}
-ItemDisplay[rrra]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:%NL%}
-ItemDisplay[urma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:%NL%}
-ItemDisplay[irma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb%NL%%WHITE%Reroll %BLUE%Magic %WHITE%Map:%NL%%NL%%WHITE%Map + %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:%NL%}
-
-
-
-//DClone/Rathma/Lucion Materials & items
-ItemDisplay[(dcma OR rtma OR luca) STAT185=0]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%BLUE%Tier: 0 (Default)%NL%%RED%Enter at your own risk!%NL%%TAN%Note%WHITE%: %GRAY%Many have entered... Few have returned.}
-ItemDisplay[(dcma OR rtma OR luca) STAT185>0]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%RED%Enter at your own risk!%NL%%TAN%Note%WHITE%: %GRAY%Many have entered... Few have returned.}
-ItemDisplay[lucb]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[lucc]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[lucd]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[dcbl OR dcho]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Diablo Clone %GRAY%walks nearby...}
-ItemDisplay[dcso]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Contains Soul of %RED%Diablo Clone}
-ItemDisplay[rtmf]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: 2x %ORANGE%Bone Fragments %WHITE%+ %GOLD%Hellfire Torch %WHITE%= %ORANGE%Trang-Oul's Jawbone}
-ItemDisplay[rtmv]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
-ItemDisplay[rtmo]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
-ItemDisplay[cm2f]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
-
-
-//Uber Ancients
-ItemDisplay[ubaa]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%DARK_GREEN%T1%GRAY%] %WHITE%Maps}
-ItemDisplay[ubab]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%TAN%T2%GRAY%] %WHITE%Maps}
-ItemDisplay[ubac]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Maps}
-ItemDisplay[uba]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%TAN%Note%WHITE%: Challenge Yourself, Fight for the Great Loot!}
-
-//Essences
-ItemDisplay[tes]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}
-ItemDisplay[ceh]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %TAN%Mephisto}
-ItemDisplay[bet]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %RED%Diablo}
-ItemDisplay[fed]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}
-
-//Uber Keys
-ItemDisplay[pk1]: %DOT-9D%%NAME%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}
-ItemDisplay[pk2]: %DOT-9D%%NAME%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}
-ItemDisplay[pk3]: %DOT-9D%%NAME%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}
-
-//Organs
-ItemDisplay[(mbr OR bey OR dhn)]: %PX-9D%%NAME%{%WHITE%to get %RED%Pandemonium Talisman%NL%%TAN%Note%WHITE%: Cube %ORANGE%One of each %WHITE%of the three Organs}
-
-
-
-
+ItemDisplay[crfb (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %ORANGE%Blood Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfb GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %PX-60%%ORANGE%¡  Blood Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfc (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %ORANGE%Caster Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfc GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %PX-60%%ORANGE%¡  Caster Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfs (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %ORANGE%Safety Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfs GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %PX-60%%ORANGE%¡  Safety Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfh (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %ORANGE%Hitpower Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfh GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %PX-60%%ORANGE%¡  Hitpower Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfv (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %ORANGE%Vampiric Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfv GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %PX-60%%ORANGE%¡  Vampiric Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfu (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %ORANGE%Bountiful Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfu GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %PX-60%%ORANGE%¡  Bountiful Craft Infusion  !{%NAME%}%CONTINUE%
+ItemDisplay[crfp (!GROUND OR (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109))]: %ORANGE%Brilliant Craft Infusion{%NAME%}%CONTINUE%
+ItemDisplay[crfp GROUND !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %PX-60%%ORANGE%¡  Brilliant Craft Infusion  !{%NAME%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------
 // Item Descriptions
@@ -5282,8 +5349,8 @@ ItemDisplay[MAG BAR]: %NAME%{%LIGHT_GRAY%••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAG DRU]: %NAME%{%LIGHT_GRAY%••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAG GLOVES]: %NAME%{%LIGHT_GRAY%••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAG rin]: %NAME%{%LIGHT_GRAY%•••%CL%%NAME%}%CONTINUE%
-ItemDisplay[MAG QUIVER !cqv3 !cqv !cqv2]: %NAME%{%LIGHT_GRAY%•••••%CL%%NAME%}%CONTINUE%
-ItemDisplay[MAG cqv OR cqv2 OR cqv3]: %NAME%{%LIGHT_GRAY%•••••%CL%%NAME%}%CONTINUE%
+ItemDisplay[MAG !BOLTS QUIVER]: %NAME%{%LIGHT_GRAY%•••••%CL%%NAME%}%CONTINUE%
+ItemDisplay[MAG BOLTS]: %NAME%{%LIGHT_GRAY%•••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAG !ZON SPEAR]: %NAME%{%LIGHT_GRAY%•••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAG ZON THROWING]: %NAME%{%LIGHT_GRAY%••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAG ZON !BOW !THROWING]: %NAME%{%LIGHT_GRAY%••••••%CL%%NAME%}%CONTINUE%
@@ -5324,8 +5391,8 @@ ItemDisplay[RARE BAR]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[RARE DRU]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[RARE GLOVES]: %NAME%{%LIGHT_GRAY%•••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[RARE rin]: %NAME%{%LIGHT_GRAY%••••••••••%CL%%NAME%}%CONTINUE%
-ItemDisplay[RARE QUIVER !cqv3 !cqv !cqv2]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
-ItemDisplay[RARE cqv OR cqv2 OR cqv3]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
+ItemDisplay[RARE !BOLTS QUIVER]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
+ItemDisplay[RARE BOLTS]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[RARE !ZON SPEAR]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[RARE ZON THROWING]: %NAME%{%LIGHT_GRAY%••••••••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[RARE ZON !BOW !THROWING]: %NAME%{%LIGHT_GRAY%••••••••••••••••%CL%%NAME%}%CONTINUE%
@@ -5366,8 +5433,8 @@ ItemDisplay[CRAFT BAR]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[CRAFT DRU]: %NAME%{%LIGHT_GRAY%••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[CRAFT GLOVES]: %NAME%{%LIGHT_GRAY%••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[CRAFT rin]: %NAME%{%LIGHT_GRAY%•••••••••%CL%%NAME%}%CONTINUE%
-ItemDisplay[CRAFT QUIVER !cqv3 !cqv !cqv2]: %NAME%{%LIGHT_GRAY%••••••••••%CL%%NAME%}%CONTINUE%
-ItemDisplay[CRAFT cqv OR cqv2 OR cqv3]: %NAME%{%LIGHT_GRAY%••••••••••%CL%%NAME%}%CONTINUE%
+ItemDisplay[CRAFT !BOLTS QUIVER]: %NAME%{%LIGHT_GRAY%••••••••••%CL%%NAME%}%CONTINUE%
+ItemDisplay[CRAFT BOLTS]: %NAME%{%LIGHT_GRAY%••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[CRAFT !ZON SPEAR]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[CRAFT ZON THROWING]: %NAME%{%LIGHT_GRAY%•••••••••••••••••%CL%%NAME%}%CONTINUE%
 ItemDisplay[CRAFT ZON !BOW !THROWING]: %NAME%{%LIGHT_GRAY%•••••••••••••••%CL%%NAME%}%CONTINUE%
@@ -5461,14 +5528,14 @@ ItemDisplay[((MAG OR RARE OR CRAFT)) jew MINDMG+MAXDMG>11]: %NAME%{%NAME%•}%CONT
 ItemDisplay[((MAG OR RARE OR CRAFT)) jew MINDMG+MAXDMG>22]: %NAME%{%NAME%•}%CONTINUE%
 ItemDisplay[((MAG OR RARE OR CRAFT)) jew MINDMG+MAXDMG>32]: %NAME%{%NAME%•}%CONTINUE%
 ItemDisplay[((MAG OR RARE OR CRAFT)) jew MINDMG+MAXDMG>43]: %NAME%{%NAME%•}%CONTINUE%
-ItemDisplay[((MAG OR RARE OR CRAFT)) (aqv OR aqv2 OR aqv3) MINDMG+MAXDMG>23]: %NAME%{%NAME%•}%CONTINUE%
-ItemDisplay[((MAG OR RARE OR CRAFT)) (aqv OR aqv2 OR aqv3) MINDMG+MAXDMG>29]: %NAME%{%NAME%•}%CONTINUE%
-ItemDisplay[((MAG OR RARE OR CRAFT)) (aqv OR aqv2 OR aqv3) MINDMG+MAXDMG>35]: %NAME%{%NAME%•}%CONTINUE%
-ItemDisplay[((MAG OR RARE OR CRAFT)) (aqv OR aqv2 OR aqv3) MINDMG+MAXDMG>41]: %NAME%{%NAME%•}%CONTINUE%
-ItemDisplay[((MAG OR RARE OR CRAFT)) (cqv OR cqv2 OR cqv3) MINDMG+MAXDMG>5]: %NAME%{%NAME%•}%CONTINUE%
-ItemDisplay[((MAG OR RARE OR CRAFT)) (cqv OR cqv2 OR cqv3) MINDMG+MAXDMG>11]: %NAME%{%NAME%•}%CONTINUE%
-ItemDisplay[((MAG OR RARE OR CRAFT)) (cqv OR cqv2 OR cqv3) MINDMG+MAXDMG>17]: %NAME%{%NAME%•}%CONTINUE%
-ItemDisplay[((MAG OR RARE OR CRAFT)) (cqv OR cqv2 OR cqv3) MINDMG+MAXDMG>23]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[((MAG OR RARE OR CRAFT)) ARROWS MINDMG+MAXDMG>23]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[((MAG OR RARE OR CRAFT)) ARROWS MINDMG+MAXDMG>29]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[((MAG OR RARE OR CRAFT)) ARROWS MINDMG+MAXDMG>35]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[((MAG OR RARE OR CRAFT)) ARROWS MINDMG+MAXDMG>41]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[((MAG OR RARE OR CRAFT)) BOLTS MINDMG+MAXDMG>5]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[((MAG OR RARE OR CRAFT)) BOLTS MINDMG+MAXDMG>11]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[((MAG OR RARE OR CRAFT)) BOLTS MINDMG+MAXDMG>17]: %NAME%{%NAME%•}%CONTINUE%
+ItemDisplay[((MAG OR RARE OR CRAFT)) BOLTS MINDMG+MAXDMG>23]: %NAME%{%NAME%•}%CONTINUE%
 ItemDisplay[((MAG OR RARE OR CRAFT)) (GLOVES OR BOOTS OR HELM OR CIRC) STAT121>38]: %NAME%{%NAME%•}%CONTINUE%
 ItemDisplay[((MAG OR RARE OR CRAFT)) (WEAPON !STAFF !WAND !SOR) STAT121>150]: %NAME%{%NAME%•}%CONTINUE%
 ItemDisplay[((MAG OR RARE OR CRAFT)) (WEAPON !STAFF !WAND !SOR) STAT121>250]: %NAME%{%NAME%•}%CONTINUE%
@@ -8614,4 +8681,4 @@ ItemDisplay[t56]: %NAME%{%RED%F%WHITE%:?? %BLACK%| %BLUE%C%WHITE%:?? %BLACK%| %Y
 //----------------------------------------------------------------------------------------------------
 
 //Notifying for Unknown Items (future proofing) (Thanks to BetweenWalls)
-ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1) !(ARMOR OR WEAPON OR amu OR rin OR aqv OR cqv OR cm1 OR cm2 OR cm3 OR jew OR jewf OR RUNE>0 OR GEMTYPE>0 OR MAPTIER>-1 OR hp1 OR mp1 OR hp2 OR mp2 OR hp3 OR mp3 OR hp4 OR mp4 OR hp5 OR mp5 OR pvpp OR rvs OR rvl OR vps OR wms OR yps OR key OR tsc OR isc OR tbk OR ibk OR ear OR bks OR bkd OR box OR vip OR tr1 OR ass OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR toa OR tes OR ceh OR bet OR fed OR dhn OR bey OR mbr OR pk1 OR pk2 OR pk3 OR std OR wss OR cwss OR lpp OR lbox OR lmal OR crfb OR crfc OR crfh OR crfs OR crfv OR crfu OR crfp OR rtp OR rid OR rkey OR lsvl OR llmr OR ubtm OR uba OR ubaa OR ubab OR ubac OR dcma OR dcso OR dcho OR dcbl OR rtma OR rtmv OR rtmo OR cm2f OR rtmf OR iwss OR scrb OR upmp OR scou OR irma OR irra OR urma OR rrra OR imma OR imra OR upma OR rera OR fort OR ram OR luca OR lucb OR lucc OR lucd OR imrn OR cm1p OR cm2p OR cm3p)]: %SOUNDID-705%%MAP-0A%%PX-62%%NAME%{%NAME%%CL%%WHITE%Item description will be adjusted later during the season.%CL%%TAN%Note%WHITE%: This item is recently added to the game.}	// notifications for unknown items (the first group of conditions including ilvl/qty/price is a workaround for !GOLD>0 since that doesn't work like other conditions)
+ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1) !(ARMOR OR WEAPON OR amu OR rin OR QUIVER OR cm1 OR cm2 OR cm3 OR jew OR jewf OR RUNE>0 OR GEMTYPE>0 OR MAPTIER>-1 OR hp1 OR mp1 OR hp2 OR mp2 OR hp3 OR mp3 OR hp4 OR mp4 OR hp5 OR mp5 OR pvpp OR rvs OR rvl OR vps OR wms OR yps OR key OR tsc OR isc OR tbk OR ibk OR ear OR bks OR bkd OR box OR vip OR tr1 OR ass OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR toa OR tes OR ceh OR bet OR fed OR dhn OR bey OR mbr OR pk1 OR pk2 OR pk3 OR std OR wss OR cwss OR lpp OR lbox OR lmal OR crfb OR crfc OR crfh OR crfs OR crfv OR crfu OR crfp OR rtp OR rid OR rkey OR lsvl OR llmr OR ubtm OR uba OR ubaa OR ubab OR ubac OR dcma OR dcso OR dcho OR dcbl OR rtma OR rtmv OR rtmo OR cm2f OR rtmf OR iwss OR scrb OR upmp OR scou OR irma OR irra OR urma OR rrra OR imma OR imra OR upma OR rera OR fort OR ram OR luca OR lucb OR lucc OR lucd OR imrn OR cm1p OR cm2p OR cm3p)]: %SOUNDID-9%%MAP-0A%%PX-62%%NAME%{%NAME%%CL%%WHITE%Item description will be adjusted later during the season.%CL%%TAN%Note%WHITE%: This item is recently added to the game.}	// notifications for unknown items (the first group of conditions including ilvl/qty/price is a workaround for !GOLD>0 since that doesn't work like other conditions)

@@ -190,8 +190,8 @@ cm1	Small Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	0	1	2	3
 cm2	Large Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	0	3	5	6						
 cm3	Grand Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	2	5	8	10						
 jew	Jewels		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	11	22	32	43						
-(aqv OR aqv2 OR aqv3)	Arrows		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	23	29	35	41						
-(cqv OR cqv2 OR cqv3)	Bolts		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	5	11	17	23						
+ARROWS	Arrows		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	23	29	35	41						
+BOLTS	Bolts		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	5	11	17	23						
 (GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT121	Damage to Demons	RED	Physical Damage	38									
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT121	Damage to Demons	RED	Physical Damage	150	250								
 jew	Jewels		STAT121	Damage to Demons	RED	Physical Damage	33									

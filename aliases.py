@@ -109,6 +109,7 @@ def _generate_icons():
               'light_yellow': 'A8',
               'gold': '53',
               'green': '84',
+              'sage': '83',
               'dark_green': '77',
               'keylimepie': 'A9',
               'tan': '5A',
