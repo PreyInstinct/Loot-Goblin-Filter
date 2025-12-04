@@ -4,6 +4,7 @@ Radiance	Rod, Missile Weapon, Helm, Chest, Quiver	QUIVER		25	STAT89;AR	3;30	3;60
 Clarity	Rod, Missile Weapon, Amulet, Helm, Chest, Ring	(HELM OR rin)		25	STAT89;AR	4;60	4;120	+4 to Light Radius, +[60-120] to Attack Rating
 Sun	Rod, Missile Weapon, Gloves, Ring, Amulet, Helm, Chest	(STAFF OR WAND OR SCEPTER OR GLOVES OR rin OR amu OR HELM OR CHEST)		25	STAT89;ARPER	5;10	5;20	+5 to Light Radius, [10-20]% Bonus to Attack Rating
 Precision	Amulet, Missile Weapon, Circlet, Quiver, Helm, Chest, Boots, Shield, Ring, Gloves	(amu OR BOW OR XBOW OR CIRC OR QUIVER OR HELM OR CHEST OR BOOTS OR SHIELD OR rin OR GLOVES)		17	DEX	10	15	+[10-15] to Dexterity
+Perfection	Ring, Gloves	(rin OR GLOVES)	1	17	DEX	16	20	+[16-20] to Dexterity
 Nirvana	Amulet, Missile Weapon, Circlet, Helm, Shield, Chest	(amu OR BOW OR XBOW OR CIRC OR HELM OR SHIELD OR CHEST)		17	DEX	21	30	+[21-30] to Dexterity
 Deflecting	Shield	SHIELD		8	STAT20;FBR	20;30	20;30	20% Increased Chance of Blocking, +30% Faster Block Rate
 Apprentice	Rod, Ring, Amulet, Orb, Circlet, Club, Gloves, Belt	(STAFF OR WAND OR SCEPTER OR rin OR amu OR SOR OR CIRC OR CLUB OR GLOVES OR BELT)		9	FCR	10	10	+10% Faster Cast Rate
@@ -15,6 +16,7 @@ Stability	Chest, Belt, Helm, Shield	(CHEST OR BELT OR SHIELD OR HELM)		18	FHR	24
 Haste	Amazon Weapon, Quiver	(ZON OR QUIVER)		35	FRW	20	20	+20% Faster Run/Walk
 Speed	Boots, Circlet	(BOOTS OR CIRC)		35	FRW	30	30	+30% Faster Run/Walk
 Transportation	Boots	BOOTS		35	FRW;STAT154	30;80	30;90	+30% Faster Run/Walk, [80-90]% Slower Stamina Drain
+Acceleration	Boots	BOOTS	1	35	FRW	40	40	+40% Faster Run/Walk
 Greed	Ring, Amulet, Circlet, Quiver	(rin OR amu OR CIRC OR QUIVER)		21	GFIND	25	40	[25-40]% Extra Gold from Monsters
 Wealth	Boots, Gloves, Belt, Amulet, Circlet, Quiver	(BOOTS OR GLOVES OR BELT OR amu OR CIRC OR QUIVER)		21	GFIND	41	80	[41-80]% Extra Gold from Monsters
 Alacrity	WeaponPS, Quiver, Gloves	((WEAPON !SOR !WAND) OR QUIVER OR GLOVES)		7	IAS	20	20	+20% Increased Attack Speed
@@ -22,18 +24,25 @@ Quickness	Melee WeaponP, Missile Weapon	(WEAPON !STAFF !WAND !SOR)		7	IAS	40	40	
 Mammoth	Chest, Belt, Amulet, Barbarian Helm, Circlet, Quiver, Any Mace, Ring, Helm	(QUIVER OR MACE OR rin OR (HELM !CLASS))		26	LIFE	31	40	+[31-40] to Life
 Colossus	Chest, Belt, Amulet, Barbarian Helm, Circlet, Shield, Druid Helm	(amu OR DRU)		26	LIFE	41	60	+[41-60] to Life
 Whale	Chest, Belt, Barbarian Helm, Circlet, Shield	(CHEST OR BELT OR BAR OR CIRC OR SHIELD)		26	LIFE	81	100	+[81-100] to Life
+Whale	Amulet	amu	1	26	LIFE	81	100	+[81-100] to Life
 Maiming	Shield, Ring, Amulet	SHIELD		14	MAXDMG	3	4	+[3-4] to Maximum Damage
+Maiming	Circlet, Helm	(CIRC OR HELM)	1	14	MAXDMG	11	12	+[11-12] to Maximum Damage
 Carnage	Ring, Amulet, Circlet, Helm	(rin OR amu OR CIRC OR HELM)		14	MAXDMG	11	14	+[11-14] to Maximum Damage
 Butchery	WeaponP	(WEAPON !STAFF !WAND !SOR)		14	MAXDMG	21	40	+[21-40] to Maximum Damage
 Evisceration	Missile Weapon	(BOW OR XBOW)		14	MAXDMG	41	63	+[41-63] to Maximum Damage
+Evisceration	WeaponP	(WEAPON !STAFF !WAND !SOR !BOW !XBOW)	1	14	MAXDMG	41	63	+[41-63] to Maximum Damage
 Fortune	Boots, Gloves, Amulet, Circlet, Helm, Quiver, Ring	(BOOTS OR GLOVES OR amu OR CIRC OR HELM OR QUIVER OR rin)		22	MFIND	16	25	[16-25]% Better Chance of Getting Magic Items
+Luck	Boots, Amulet, Circlet, Quiver	(BOOTS OR amu OR CIRC OR QUIVER)	1	22	MFIND	26	35	[26-35]% Better Chance of Getting Magic Items
 Performance	Ring, Amulet, Circlet, Helm	(rin OR amu OR CIRC OR HELM)		15	MINDMG	10	13	+[10-13] to Minimum Damage
 Transcendence	WeaponP	(WEAPON !STAFF !WAND !SOR)		15	MINDMG	15	20	+[15-20] to Minimum Damage
 Fast Repair	Non-Throwing Melee WeaponPS, Armor	((WEAPON !BOW !XBOW !THROWING !SOR !WAND) OR ARMOR)		37	REPAIR	0	5	Repairs 1 Durability in 20 seconds
 Regeneration	Scepter, Belt, Ring, Amulet, Circlet, Shield, Gloves, Chest, Non-Scepter Weapon, Boots	(WEAPON OR BELT OR rin OR amu OR CIRC OR SHIELD OR GLOVES OR CHEST OR BOOTS)		19	REPLIFE	6	10	Replenish Life +[6-10]
 Regrowth	Belt, Ring	(BELT OR rin)		19	REPLIFE	12	18	Replenish Life +[12-18]
 Revivification	Scepter, Amulet, Circlet	(SCEPTER OR amu OR CIRC)		19	REPLIFE	22	30	Replenish Life +[22-30]
-Sorcery	Amulet, Orb, Circlet, Wand, Staff, Quiver, Helm, Chest, Shield, Helm, Scepter, Ring	(QUIVER OR SCEPTER OR rin)		23	STAT1	11	15	+[11-15] to Energy
+Brialiance	Helm, Scepter	SCEPTER		23	STAT1	7	10	+[7-10] to Energy
+Sorcery	Amulet, Orb, Circlet, Wand, Staff, Quiver, Helm, Chest, Shield, Helm, Ring	(QUIVER OR rin)		23	STAT1	11	15	+[11-15] to Energy
+Sorcery	Helm, Scepter	SCEPTER	1	23	STAT1	11	15	+[11-15] to Energy
+Wizardry	Ring	rin	1	23	STAT1	16	20	+[16-20] to Energy
 Enlightenment	Amulet, Orb, Circlet, Wand, Staff, Helm, Chest, Shield	(amu OR SOR OR CIRC OR WAND OR STAFF OR HELM OR CHEST OR SHIELD)		23	STAT1	21	30	+[21-30] to Energy
 Remedy	Armor, Ring, Amulet, Circlet, Quiver	(ARMOR OR rin OR amu OR CIRC OR QUIVER)		29	STAT110	25	25	Poison Length Reduced by 25%
 Defiance	Chest, Shield, Amulet, Circlet, Quiver	(CHEST OR SHIELD OR amu OR CIRC OR QUIVER)		29	STAT110	75	75	Poison Length Reduced by 75%
@@ -43,16 +52,19 @@ Warmth	Shield, Boots, Gloves, Ring, Amulet, Circlet, Orb	(SHIELD OR BOOTS OR GLO
 Pulverizing	WeaponP, Quiver	((WEAPON !STAFF !WAND !SOR) OR QUIVER)		252	STAT136	25	30	[25-30]% Chance of Crushing Blow
 Desolation	WeaponP, Quiver	((WEAPON !STAFF !WAND !SOR) OR QUIVER)		252	STAT141	25	30	[25-30]% Deadly Strike
 Centaur	Chest, Druid Helm, Barbarian Helm, Shield	(CHEST OR DRU OR BAR OR SHIELD)		41	STAT216	0.75	0.75	+[0-74] to Life (+0.75 per Level)
+Centaur	Amulet	amu	1	41	STAT216	0.75	0.75	+[0-74] to Life (+0.75 per Level)
 Elephant	Circlet, Druid Helm	(CIRC OR DRU)		41	STAT216;STAT217	0.5;0.25	0.5;0.25	+[0-49] to Life (+0.5 per Level), +[0-24] to Mana (+0.25 per Level)
 Mnemonic	Circlet, Amulet, Druid Helm	(CIRC OR amu OR DRU)		41	STAT217	0.75	0.75	+[0-74] to Mana (+0.75 per Level)
 Life	Amulet, Circlet, Quiver	QUIVER		1	STAT34	4	4	Physical Damage Taken Reduced by 4
 Life	Chest, Shield, Circlet, Ring	rin		1	STAT34	4	7	Physical Damage Taken Reduced by [4-7]
 Amicae	Chest, Shield, Circlet, Amulet	(CIRC OR amu)		1	STAT34	8	15	Physical Damage Taken Reduced by [8-15]
 Life Everlasting	Chest, Shield	(CHEST OR SHIELD)		1	STAT34	10	25	Physical Damage Taken Reduced by [10-25]
+Life Everlasting	Amulet, Circlet	(CIRC OR amu)	1	1	STAT34	10	25	Physical Damage Taken Reduced by [10-25]
 Sentinel	Ring, Amulet, Orb, Circlet, Quiver	SOR		2	STAT35	2	4	Magic Damage Taken Reduced by [2-4]
 Guarding	Chest, Shield, Circlet, Ring	(CHEST OR SHIELD OR rin)		2	STAT35	3	6	Magic Damage Taken Reduced by [3-6]
 Defending	Belt	BELT		251	STAT36	5	10	Physical Damage Taken Reduced by [5-10]%
 Negation	Amulet, Orb, Circlet, Quiver	(amu OR SOR OR CIRC OR QUIVER)		2	STAT35	8	12	Magic Damage Taken Reduced by [8-12]
+Fortification	Chest, Shield	(CHEST OR SHIELD)	1	2	STAT35	12	16	Magic Damage Taken Reduced by [12-16]
 Guardianship	Chest, Shield	(CHEST OR SHIELD)		251	STAT36	15	20	Physical Damage Taken Reduced by [15-20]%
 Flame	Gloves, Ring, Amulet	(GLOVES OR rin OR amu)		12	STAT48;STAT49	1;2	1;6	Adds 1 to [2-6] Fire Damage
 Burning	WeaponPS, Quiver	(BOW OR XBOW)		12	STAT48;STAT49	20;37	30;72	Adds [20-30] to [37-72] Fire Damage
@@ -67,6 +79,7 @@ Hypothermia	Melee WeaponP, Quiver	((WEAPON !WAND !SOR !STAFF !BOW !XBOW) OR QUIV
 Leech	Gloves	GLOVES		27	STAT60	3	3	3% Life Stolen per Hit
 Leech	Melee Weapon, Missile Weapon, Quiver	(BOW OR XBOW)		27	STAT60	4	5	[4-5]% Life Stolen per Hit
 Lamprey	Amulet	amu		27	STAT60	6	6	6% Life Stolen per Hit
+Lamprey	Quiver	QUIVER	1	27	STAT60	6	9	[6-9]% Life Stolen per Hit
 Locust	Ring, Circlet, Helm	HELM		27	STAT60	5	6	[5-6]% Life Stolen per Hit
 Locust	Melee Weapon, Quiver	QUIVER		27	STAT60	6	7	[6-7]% Life Stolen per Hit
 Lamprey	Ring, Circlet	(rin OR CIRC)		27	STAT60	7	8	[7-8]% Life Stolen per Hit
@@ -74,6 +87,7 @@ Lamprey	Melee Weapon	(WEAPON !BOW !XBOW !SOR !WAND)		27	STAT60	8	9	[8-9]% Life S
 Bat	Gloves	GLOVES		28	STAT62	3	3	3% Mana Stolen per Hit
 Bat	Melee Weapon, Missile Weapon, Quiver	(BOW OR XBOW)		28	STAT62	4	5	[4-5]% Mana Stolen per Hit
 Vampire	Ring	rin		28	STAT62	6	6	6% Mana Stolen per Hit
+Vampire	Quiver	QUIVER	1	28	STAT62	6	9	[6-9]% Mana Stolen per Hit
 Wraith	Amulet, Circlet, Helm	HELM		28	STAT62	5	6	[5-6]% Mana Stolen per Hit
 Wraith	Melee Weapon, Quiver	QUIVER		28	STAT62	6	7	[6-7]% Mana Stolen per Hit
 Vampire	Amulet, Circlet	(amu OR CIRC)		28	STAT62	7	8	[7-8]% Mana Stolen per Hit
