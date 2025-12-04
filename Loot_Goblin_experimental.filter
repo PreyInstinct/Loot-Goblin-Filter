@@ -37,7 +37,7 @@ ItemDisplayFilterName[]: Hide: most rare equipment, non-eth weapon bases, non-su
 // --- Abbreviation of Automodded & Pointmodded Items ---
 // Abbreviate names of items with automods to prevent truncation of long names.
 
-ItemDisplay[!(UNI OR RW OR SET) ((STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON OR DAGGER OR CLUB) OR DIN): %BASENAME%{%NAME%}%CONTINUE%
+ItemDisplay[!(UNI OR RW OR SET) ((STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON OR DAGGER OR CLUB) OR DIN)]: %BASENAME%{%NAME%}%CONTINUE%
 
 //----------------------------------------------------------------------------------------------------
 // Inferior & Superior
@@ -545,7 +545,7 @@ ItemDisplay[(SUP OR INF) !RW amf]: Matriarchal Javelin%CONTINUE%
 //----------------------------------------------------------------------------------------------------
 
 // Show filter version info in description of Horadric Cube
-ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%Loot Goblin Filter ver 0.2 %BLACK%| %GRAY% updated: 03-11-25}%CONTINUE%
+ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%Loot Goblin Filter ver 0.3 %BLACK%| %GRAY% updated: 03-12-25}%CONTINUE%
 
 // Orginal coloring for items
 ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%

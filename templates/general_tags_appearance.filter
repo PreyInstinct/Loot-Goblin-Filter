@@ -1,5 +1,5 @@
 // Show filter version info in description of Horadric Cube
-ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%Loot Goblin Filter ver 0.2 %BLACK%| %GRAY% updated: 03-11-25}%CONTINUE%
+ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%Loot Goblin Filter ver 0.3 %BLACK%| %GRAY% updated: 03-12-25}%CONTINUE%
 
 // Orginal coloring for items
 ItemDisplay[UNI]: %GOLD%%NAME%%CONTINUE%
