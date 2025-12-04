@@ -18,7 +18,7 @@ python3 build_filter.py [target.filter] --verbose
 
 # About
 
-This filter is in a functional alpha state. Some features may not be fully polished, and vestiges of obsolete features may linger. It works well enough for me to use, however, and I will be refining the filter as I encounter inadequacies. Expect frequent updates during the early part of the season.
+This filter is in a beta state. Some features may not be fully polished, and vestiges of obsolete features may linger. I will be refining the filter as I encounter inadequacies, and welcome bugs reports and feedback. Expect frequent updates during the early part of the season.
 
 ## Points
 
@@ -46,19 +46,21 @@ Points are color coded by their broad utility class. Since you are usually tryin
 
 The point system and other features are configurable with the tab-separated ".csv" text files. I recommend opening these in a spreadsheet program like LibreOffice Calc or Microsoft Excel. The headers are just for human convenience and fields are hardcoded by column order, so don't go shuffling the columns about or creating new columns.
 
+The point rules are built using a machine learning algorithm that automatically discovers classes of items which can have the same affixes and follow the same rules. For each class, all combinations of affixes for magic, rare, and crafted items are exhaustivly searched to determine the maximum number of points possible for that item class. This makes modifying my point system or creating your own point system relatively simple, and I hope other filter authors will use this engine to add point sytems to their own filters.
+
 ### Point System Config Files
 
 `config/points.csv` Is the main file for adjusting point values.
  - "Item Code": Filter syntax conditional statement you would use for creating an ItemDisplay rule.
  - "Item Description": Human readable equivalent. Optional - not used internally.
- - "Quality Requirements": Additional syntax conditionals that determine when a point is awarded, but does not create new classes of items (termed Regions in the machine learning algorithm). Most likely use case is applying points only when an item is ethereal.
+ - "Quality Requirements": Additional syntax conditionals that determine when a point is awarded, but does not create new classes of items. Designed to allow points for self-repair to apply only when an item is ethereal, but could also be used to encode other combos (e.g. High ED + Amp Proc = 2 bonus points).
  - "Stat": Filter syntax attribute code or sum of attributes (e.g. STR+DEX). The vocabulary here must be *exactly* the same as the vocaulary used in `prefixes.csv`, `suffixes.csv`, and `crafting.csv`. So, for example, you must use the "STR" alias instead of "STAT0". When such synonyms exist, check the affix config files to see which version to use. In general, I tried to only use the named attribute codes, except for FOOLS.
  - "Stat Description": Human readable equivalent. Optional - not used interrnally.
  - "Point Color": One of the valid colors described in the filter documentation.
  - "Point Category": Human readable classifier. Not currently used internally.
  - "Thresholds": A tab separated list of the thresholds at which to award points. The resulting conditions will be of the form "STAT>T" for each threshold value. You can include the same threshold multiple times to award multiple points.
 
-`config/prefixes.csv`, `suffixes.csv`, and `crafting.csv`: Contain information regarding the highest level affixes possible. Redundancy is removed as much as possible, as build time increases exponentially with the number of affixes to search through, especially when there aree multiple affixes in the same group. Editting these files has the potential to break things in exciting ways with minor errors, so 
+`data/prefixes.csv`, `suffixes.csv`, and `crafting.csv`: Contain information regarding the highest level affixes possible. Redundancy is removed as much as possible, as build time increases exponentially with the number of affixes to search through, especially when there aree multiple affixes in the same group. Editting these files has the potential to break things in exciting ways with minor errors, so 
 do so with care. Let me know if something needs correction or updating and I will try to update these files.
  - "Affix": The affix name. Maintained just for human readible attribution/debugging. These names don't show up in the final filter.
  - "Affix Item Types": Categories as they appear on the Affixes wiki page. Human readable for convenience only.
@@ -70,17 +72,17 @@ do so with care. Let me know if something needs correction or updating and I wil
  - "Max Value": The maximum value possible for "Stat", separated with ";" for multiple stats.
  - "Attribute Description": Human readable affix description. Not used internally but some value is mandatory to prevent parsing errors.
 
-`config/item_groups_composites.csv` Defines item descriptors that are subsets of combinations of other descriptors. E.g. Amazon Weapons (ZON) is a category composed of part of spears, javelins, and bows (SPEAR OR JAV OR BOW). The left-most term is contained entirely within all terms to the right.
+`data/item_groups_composites.csv` Defines item descriptors that are subsets of combinations of other descriptors. E.g. Amazon Weapons (ZON) is a category composed of part of spears, javelins, and bows (SPEAR OR JAV OR BOW). The left-most term is contained entirely within all terms to the right.
 
-`config/item_groups_subsets.csv` Defines item groups which are strict subsets of other groups. 1 if the group from row i is a subset of the group from column j, 0 or blank otherwise. Values above the diagonal (marked with "x"s) are not used, so ordering matters (supersets should always precede subsets).
+`data/item_groups_subsets.csv` Defines item groups which are strict subsets of other groups. 1 if the group from row i is a subset of the group from column j, 0 or blank otherwise. Values above the diagonal (marked with "x"s) are not used, so ordering matters (supersets should always precede subsets).
 
-`config/item_groups_disjoint.csv` Defines item groups which are entirely disjoint (non-overlapping), through the inverse relationship (null values signify disjointness). 1 if any item exists that is both a member of row i and column j, 0 or blank otherwise. Values above the diagonal are not used (would be symetric anyways).
+`data/item_groups_disjoint.csv` Defines item groups which are entirely disjoint (non-overlapping), through the inverse relationship (null values signify disjointness). 1 if any item exists that is both a member of row i and column j, 0 or blank otherwise. Values above the diagonal are not used (would be symetric anyways).
 
 ### Other Config Files
 
-`sets_and_uniques.csv` Defines tier values for set and unique items. Blank fields indicate "D" tier, on a scale from "F" to "S". Lower tier sets and uniques will have less highlighting/notification, and at high filter levels low tier uniques will be filtered out. The name values here are displayed for unidentified items, so you can create a version without revealed sets & uniques by replacing the names with %BASENAME%.
+`config/sets_and_uniques.csv` Defines tier values for set and unique items. Blank fields indicate "D" tier, on a scale from "F" to "S". Lower tier sets and uniques will have less highlighting/notification, and at high filter levels low tier uniques will be filtered out. The name values here are displayed for unidentified items, so you can create a version without revealed sets & uniques by replacing the names with %BASENAME%.
 
-`All.skills` Defines the relationship between classes, skill trees, and skills; skill name abbreviations; and primary, support, and niche skills. Primary skills are given increased emphasis when they appear as pointmods.
+`config/skills.csv` Defines the relationship between classes, skill trees, and skills; skill name abbreviations; and primary, support, and niche skills. Primary skills are given increased emphasis when they appear as pointmods.
 
 `hiding_highlighting.csv` Defines when certain items are hiden, notified, and given map markers.
 - "Rarity": Rarity conditional codes (i.e. NMAG, MAG, RARE, CRAFT, SET, UNI, RW).
@@ -88,16 +90,16 @@ do so with care. Let me know if something needs correction or updating and I wil
 - "Group": Item groups (e.g. ARMOR, CLUB, amu). Some of these use build-level aliasing (e.g. "${alias}") defined in `aliases.py`.
 - "Descrition": Human readable group description for convenience.
 - "Filter Level": The filter level at which the category will start to be filtered. Odd filter levels are reserved for toggling potions on/off, so the actual filter level will be twice the value here.
-- "Marker Level": The size of the map marker when this group is notified, from 0 (no marker) to 4 (largest marker).
+- "Marker Level": The size of the map marker when this group is notified, from 0 (no marker) to 4 (largest marker), as well as the degree of bracketting used to highlight the item name. Ranks 5-7 all use DOT size markers, and have alternative purple bracketting for charms and jewels.
 - "Notification Level": The filter level at which the category will no longer be notified, from 0 (never notify) to 5 (always notify). Odd filter levels are reserved for toggling potions on/off, so the actual filter level will be twice the value here.
 
 ### Advanced Aliasing
 
 Aliases are defined in aliases.py as Python string variables. They can be called in the filter source using "${ALIAS}", and will be substitued with the string value at build time.
 
-This is very similar to the filter's Aliasing functionality, but is significantly more flexible. First, these Python-level aliases may be nested inside each other (e.g. QUIVER = "(${ARROWS} OR ${BOLTS})" without breaking. Second, these are true variables and could be used to compose values dynamically.
+This is very similar to the filter's Aliasing functionality, but is significantly more flexible. First, these Python-level aliases may be nested inside each other (e.g. QUIVER = "(${ARROWS} OR ${BOLTS})" without breaking. Second, this extends aliasing functionailty with Python so that aliases could be composed dynamically.
 
-If you want to use this functionality for your own filter, `aliases.py` should be portable and fairly self-evident. Also grab the top level script `build_filter.py` if you don't want to implement your own pipeline. Just edit the "structure" and "file_header" in `build_filter.py` to point to your source filter file/s and define your aliases in `aliases.py`.
+If you want to use this functionality for your own filter, `aliases.py` should be portable and fairly self-evident. Also grab the top level script `build_filter.py` if you don't want to implement your own pipeline. Just edit the "structure" and "file_header" in `build_filter.py` to point to your source filter file/s and define your aliases in `aliases.py`. Variables in the global namespace of `aliases.py` will not be used as aliases if they start with an underscore `_`.
 
 ## Item Tier Superscripts
 
@@ -129,6 +131,7 @@ See `All.skills` for the full list of abbreviations.
 
 Many tags use the D2 rarity colors, including skill bonuses, superior ED bonuses, and more. For example, for skill bonuses +1 is rendered blue, +2 is rendered yellow, and +3 or higher is rendered gold. Simlarly, the skills themselves use the D2 rarity colors: single skills are white, skill tabs are blue, class skills are yellow, and all skills is gold.
 
+Misc items also use new colors to distinguish them: red for item modification (e.g. WSS, Puzzlebox), sage for map modification (e.g. Standard of Heroes), purple for boss keys or portals, tan for new utility items (e.g. Horadric Almanac), and orange for crafting related items (e.g. infusions).
 
 ## Gold and Sellables
 
