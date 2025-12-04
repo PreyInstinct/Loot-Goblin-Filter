@@ -1,40 +1,59 @@
-//NOTICE ME, THAT's ME SECTION
+// +3 Skill gloves
+ItemDisplay[GLOVES MAG IAS<10 (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3 Gloves{%NAME%}%CONTINUE%
+ItemDisplay[GLOVES MAG IAS~10-19 (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3/10 Gloves{%NAME%}%CONTINUE%
+ItemDisplay[GLOVES MAG FCR>9 TABSK1>2]: %TAN%+3/10 Gloves{%NAME%}%CONTINUE%
+ItemDisplay[GLOVES MAG IAS>19 (TABSK0>2 OR TABSK2>2 OR TABSK50>2)]: %TAN%+3/20 Gloves{%NAME%}%CONTINUE%
 
-//High ED Amp Proc Combo
-Alias[NOTICEME01]: (WEAPON (MAG OR RARE OR CRAFT) (ED>299 AND (SUFFIX=662 OR SUFFIX=898 OR SUFFIX=899)) !RW !SHOP !EQUIPPED)
-//High ED Weapon
-Alias[NOTICEME02]: (WEAPON (MAG OR RARE OR CRAFT) ED>399 !SHOP !EQUIPPED)
-//3sk, 20ias Gloves
-Alias[NOTICEME03]: (GLOVES (MAG OR RARE OR CRAFT) (TABSK0>2 OR TABSK2>2 OR TABSK50>2) AND IAS>19 !RW !SHOP !EQUIPPED)
-//3sk, 10fcr Gloves
-Alias[NOTICEME04]: (GLOVES (MAG OR RARE OR CRAFT) (TABSK1>2 AND FCR>9) !RW !SHOP !EQUIPPED)
-//Teleport Charges
-Alias[NOTICEME05]: (STAFF (MAG OR RARE OR CRAFT) CHSK54>0 !RW !SHOP !EQUIPPED)
-//Lower Resist CTC
-Alias[NOTICEME06]: (WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=909 OR SUFFIX=912) !RW !SHOP !EQUIPPED)
-//Amplify Damage CTC
-Alias[NOTICEME07]: (WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=899 OR SUFFIX=906) !RW !SHOP !EQUIPPED)
-//Lower Resist Charges
-Alias[NOTICEME08]: (WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=594 OR SUFFIX=595) !RW !SHOP !EQUIPPED)
-//Life Tap Charges
-Alias[NOTICEME09]: (WEAPON (MAG OR RARE OR CRAFT) (SUFFIX=578 OR SUFFIX=579) !RW !SHOP !EQUIPPED)
+// Scintillating Ring of the Apprentice/Carnage/Performance
+// Worth corrupting in some cases.
+ItemDisplay[rin MAG STAT360=0 RES>11 (FCR>0 OR MINDMG+MAXDMG>9)]: %TAN%Cool Ring{%BLUE%Very special. Corrupt.}
 
-//High ED Amp Proc Combo
-ItemDisplay[(NOTICEME01)]: %NAME%{%RED%***   %GREEN%High ED %ORANGE%Amp Proc %GREEN%Combo%RED%   ***%CL%%NAME%}%CONTINUE%
-//High ED Weapon
-ItemDisplay[(NOTICEME02) !(NOTICEME01)]: %NAME%{%RED%***   %GREEN%High ED Weapon%RED%   ***%CL%%NAME%}%CONTINUE%
-//3sk, 20ias Gloves
-ItemDisplay[(NOTICEME03)]: %NAME%{%RED%***   %GREEN%3sk, 20ias Gloves%RED%   ***%CL%%NAME%}%CONTINUE%
-//3sk, 10fcr Gloves
-ItemDisplay[(NOTICEME04)]: %NAME%{%RED%***   %GREEN%3sk, 10fcr Gloves%RED%   ***%CL%%NAME%}%CONTINUE%
-//Teleport Charges
-ItemDisplay[(NOTICEME05)]: %NAME%{%RED%***   %GREEN%Teleport Charges%RED%   ***%CL%%NAME%}%CONTINUE%
-//Lower Resist CTC
-ItemDisplay[(NOTICEME06)]: %NAME%{%LIGHT_GRAY%High %PURPLE%Lower Resist %GREEN%CTC %LIGHT_GRAY%Proc%CL%%NAME%}%CONTINUE%
-//Amplify Damage CTC
-ItemDisplay[(NOTICEME07) !(NOTICEME01)]: %NAME%{%LIGHT_GRAY%High %ORANGE%Amplify Damage %GREEN%CTC %LIGHT_GRAY%Proc%CL%%NAME%}%CONTINUE%
-//Lower Resist Charges
-ItemDisplay[(NOTICEME08)]: %NAME%{%DARK_GREEN%Lower Resist Charges%CL%%NAME%}%CONTINUE%
-//Life Tap Charges
-ItemDisplay[(NOTICEME09)]: %NAME%{%DARK_GREEN%Life Tap Charges%CL%%NAME%}%CONTINUE%
+//------- Magic Amulets -------
+// All +3 Skill amulets except Defensive Auras (because it is not a primary tree for any build atm.)
+Alias[SKAMU]: (amu MAG STAT360=0 (TABSK0=3 OR TABSK1=3 OR TABSK2=3 OR TABSK8=3 OR TABSK9=3 OR TABSK10=3 OR TABSK16=3 OR TABSK17=3 OR TABSK18=3 OR TABSK24=3 OR TABSK25=3 OR TABSK32=3 OR TABSK33=3 OR TABSK34=3 OR TABSK40=3 OR TABSK41=3 OR TABSK42=3 OR TABSK48=3 OR TABSK49=3 OR TABSK50=3))
+
+// Physical attack
+Alias[PHYSAMU]: (amu MAG STAT360=0 (TABSK0=3 OR TABSK2=3 OR TABSK24=3 OR TABSK32=3 OR TABSK33=3 OR TABSK41=3 OR TABSK48=3 OR TABSK50=3))
+// Cast-rate dependent
+Alias[FCRAMU]: (amu MAG STAT360=0 (TABSK1=3 OR TABSK8=3 OR TABSK9=3 OR TABSK10=3 OR TABSK16=3 OR TABSK17=3 OR TABSK34=3 OR TABSK42=3))
+// Neither physical attack nor cast-rate dependent
+Alias[OTHERAMU]: (amu MAG STAT360=0 (TABSK0=3 OR TABSK2=3 OR TABSK18=3 OR TABSK24=3 OR TABSK25=3 OR TABSK40=3 OR TABSK49=3 OR TABSK50=3))
+
+// Squid, Whale, or Centaur
+ItemDisplay[SKAMU (LIFE>60 OR STAT216>0)]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« Life & Skills »»»%CL%}%CONTINUE%
+// Life Everlasting (Physical Damage Taken Reduced)
+ItemDisplay[(PHYSAMU OR OTHERAMU) STAT34>15]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« PDR & Skills »»»%CL%}%CONTINUE%
+// # Faster Cast Rate
+ItemDisplay[FCRAMU FCR>0]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« FCR & Skills »»»%CL%}%CONTINUE%
+// # Damage
+ItemDisplay[PHYSAMU MINDMG+MAXDMG>10]: %MAP-94%%GOLD%»»»%NAME%%GOLD%«««{%NAME%%CL%%GOLD%««« Damage & Skills »»»%CL%}%CONTINUE%
+// Less valuable +3 skill amulets.
+ItemDisplay[SKAMU !(LIFE>60 OR STAT216>0) STAT34<16 FCR=0 MINDMG+MAXDMG<11]: %BLUE%»»»%NAME%%BLUE%«««{%NAME%%CL%%BLUE%««« Skills »»»%CL%}%CONTINUE%
+
+// +2 Class Skills
+Alias[CLSAMU]: (amu MAG STAT360=0 (CLSK0=2 OR CLSK1=2 OR CLSK2=2 OR CLSK3=2 OR CLSK4=2 OR CLSK5=2 OR CLSK6=2))
+
+// Squid, Whale, or Centaur
+ItemDisplay[CLSAMU (LIFE>60 OR STAT216>0)]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« Life & Skills »»»%CL%}%CONTINUE%
+// Life Everlasting (Physical Damage Taken Reduced)
+ItemDisplay[CLSAMU STAT34>15]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« PDR & Skills »»»%CL%}%CONTINUE%
+// # Faster Cast Rate
+ItemDisplay[CLSAMU FCR>0]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« FCR & Skills »»»%CL%}%CONTINUE%
+// # Damage
+ItemDisplay[CLSAMU MINDMG+MAXDMG>10]: %MAP-94%%YELLOW%»»»%NAME%%YELLOW%«««{%NAME%%CL%%YELLOW%««« Damage & Skills »»»%CL%}%CONTINUE%
+
+//----------------------------
+
+
+// Proc Skills
+ItemDisplay[WEAPON MULTI198,28319]: %NAME%{%NAME%%CL%%CORAL%~~~ High Amplify Damage on Strike ~~~}%CONTINUE%
+ItemDisplay[WEAPON MULTI200,28319]: %NAME%{%NAME%%CL%%CORAL%~~~ High Amplify Damage on Cast ~~~}%CONTINUE%
+ItemDisplay[WEAPON MULTI198,28623]: %NAME%{%NAME%%CL%%CORAL%~~~ High Lower Resist on Strike ~~~}%CONTINUE%
+ItemDisplay[WEAPON MULTI200,28623]: %NAME%{%NAME%%CL%%CORAL%~~~ High Lower Resist on Cast ~~~}%CONTINUE%
+
+// Utility Charges
+ItemDisplay[CHSK54>0 !RW]: %NAME%{%NAME%%CL%%SAGE%~~~ Teleport Charges ~~~}%CONTINUE%
+ItemDisplay[CHSK447>0 !RW]: %NAME%{%NAME%%CL%%ORANGE%~~~ Lower Resist Charges ~~~}%CONTINUE%
+ItemDisplay[CHSK445>0 !RW]: %NAME%{%NAME%%CL%%TEAL%~~~ Life Tap Charges ~~}%CONTINUE%
+
 
