@@ -113,6 +113,8 @@ Elite Item<sup>3</sup>
 
 ## Skill Tags (Pointmods)
 
+[Collage item names with pointmods.](screenshots/Pointmods.png)
+
 While generally very good, I have re-worked Kryszard's pointmod tags to suit my preference. In general, my aims have been to 1) improve legibility, 2) show more information while using as litte additional space as possible, and 3) extend the usefulness of this feature to magic, rare, and crafted item hunting in addition to picking bases.
 
 ### Inclusion of Skill Trees
@@ -129,11 +131,13 @@ I personally find the three letter skill abbreviations a bit obtuse. I think the
  - Where possible, skills that have common words in the same tree are shortened as much as possible and always in the same way. E.g. Assasin "Dragon" skills are dTal, dClaw, dTail, and dFlt, while Amazon "Arrow" skills are magA, firA, colA, expA, iceA, gudA, immA, and frzA, and "Strike" skills are powA, chgS, litS, tigS, cbrS, PhoS, psnS.
  - Some simple skills are named after their primary affect, rather than the actual skill name. E.g. +def, +hp, +spd, +res, and bleed for Barb masteries, and +AR for Amazon's Penetrate.
 
-See `All.skills` for the full list of abbreviations.
+See `config/skills.csv` for the full list of abbreviations.
 
 ## Color Coding
 
 Many tags use the D2 rarity colors, including skill bonuses, superior ED bonuses, and more. For example, for skill bonuses +1 is rendered blue, +2 is rendered yellow, and +3 or higher is rendered gold. Simlarly, the skills themselves use the D2 rarity colors: single skills are white, skill tabs are blue, class skills are yellow, and all skills is gold.
+
+[Collage of superior item names showing formatting](screenshots/Superior.png "White/Blue/Yellow/Gold color coding is used for enhanced damage and defense values, tier superscripts, skill bonus values, and the brackets enclosing skill bonuses.")
 
 Misc items also use new colors to distinguish them: red for item modification (e.g. WSS, Puzzlebox), sage for map modification (e.g. Standard of Heroes), purple for boss keys or portals, tan for new utility items (e.g. Horadric Almanac), and orange for crafting related items (e.g. infusions).
 
