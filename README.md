@@ -1,5 +1,7 @@
 # Loot Goblin PD2 Loot-Filter
 
+![Screenshot of filter in action.](screenshots/FilterEffect.png "Filter Off overlaid on Filter On")
+
 This filter was originally forked from [Kryszard's PD2 Loot Filter](https://github.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter), and still uses Kryszard's code for some features. Please see the documentation there regarding features not described here. Thank you, Kryszard, for all your good work.
 
 # Installation
@@ -21,6 +23,8 @@ python3 build_filter.py [target.filter] --verbose
 This filter is in a beta state. Some features may not be fully polished, and vestiges of obsolete features may linger. I will be refining the filter as I encounter inadequacies, and welcome bugs reports and feedback. Expect frequent updates during the early part of the season.
 
 ## Points
+
+![Screenshot showing points for a rare dagger.](screenshots/Dagger_Points.png)
 
 The main feature this filter introduces is a visual point-based system for randomly generated item types (magic, rare, and crafted.) This feature is designed to help you quickly sort out loot that might have some use or value from Charsi food. It is not intended to accurately assess the value of items or call out GG gear, but merely to signal if the full item description is even worth looking at.
 
