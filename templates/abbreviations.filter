@@ -1,4 +1,4 @@
 // --- Abbreviation of Automodded & Pointmodded Items ---
 // Abbreviate names of items with automods to prevent truncation of long names.
 
-ItemDisplay[${random} (${POINTMOD} OR DIN): %BASENAME%{%NAME%}%CONTINUE%
+ItemDisplay[${random} (${pointmod} OR DIN): %BASENAME%{%NAME%}%CONTINUE%
