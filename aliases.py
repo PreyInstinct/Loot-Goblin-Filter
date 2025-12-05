@@ -76,7 +76,7 @@ heavy = '(hbl OR zhb OR uhc OR hbt OR xhb OR uhb OR aar OR xar OR uar OR hgl OR 
 
 # Utility items where base stats may not matter.
 pointmod = '(STAFF OR WAND OR SCEPTER OR DRU OR BAR OR NEC OR SIN OR SOR OR ZON OR DAGGER OR CLUB)'
-CtABase = '(NMAG ((1H AND SOCKETS=5) OR (SOCKETS=0 AND (2ax OR 92a OR 72a OR fla OR 9fl OR 7fl OR wsp OR 9ws OR 7ws))))'
+CtABase = '(NMAG ((1H SOCKETS=5 (NORM OR ELT)) OR (SOCKETS=0 AND (2ax OR 72a OR 7fl OR wsp OR 7ws))))'
 utility = '(${CtABase} OR leg OR 7cr)'
 
 # Skill tree bonuses
