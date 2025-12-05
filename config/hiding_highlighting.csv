@@ -57,9 +57,9 @@ NMAG !RW	SUP !ETH	HELM !DRU !BAR	Helms	5	0	0
 NMAG !RW	SUP !ETH	CIRC	Circlets	5	0	0
 NMAG !RW	SUP !ETH	CHEST	Chest Armor	5	0	0
 NMAG !RW	SUP !ETH	SHIELD !DIN !NEC	Shields	5	0	0
-NMAG !RW	SUP !ETH	GLOVES	Gloves	5	0	0
-NMAG !RW	SUP !ETH	BOOTS	Boots	5	0	0
-NMAG !RW	SUP !ETH	BELT	Belts	5	0	0
+NMAG !RW	SUP !ETH	GLOVES	Gloves	2	0	0
+NMAG !RW	SUP !ETH	BOOTS	Boots	2	0	0
+NMAG !RW	SUP !ETH	BELT	Belts	2	0	0
 NMAG !RW	SUP !ETH	1H AXE !THROWING	1-Handed Axes	4	0	0
 NMAG !RW	SUP !ETH	2H AXE	2-handed Axes	4	0	0
 NMAG !RW	SUP !ETH	CLUB	Clubs	5	0	0
@@ -100,9 +100,9 @@ NMAG !RW	ETH !SUP	HELM !DRU !BAR	Helms	4	0	0
 NMAG !RW	ETH !SUP	CIRC	Circlets	5	0	0
 NMAG !RW	ETH !SUP	CHEST	Chest Armor	4	0	0
 NMAG !RW	ETH !SUP	SHIELD !DIN !NEC	Shields	4	0	0
-NMAG !RW	ETH !SUP	GLOVES	Gloves	4	0	0
-NMAG !RW	ETH !SUP	BOOTS	Boots	4	0	0
-NMAG !RW	ETH !SUP	BELT	Belts	4	0	0
+NMAG !RW	ETH !SUP	GLOVES	Gloves	2	0	0
+NMAG !RW	ETH !SUP	BOOTS	Boots	2	0	0
+NMAG !RW	ETH !SUP	BELT	Belts	2	0	0
 NMAG !RW	ETH !SUP	1H AXE !THROWING	1-Handed Axes	5	0	0
 NMAG !RW	ETH !SUP	2H AXE	2-handed Axes	5	0	0
 NMAG !RW	ETH !SUP	CLUB	Clubs	5	0	0
@@ -141,9 +141,9 @@ NMAG !RW	SUP ETH	HELM !DRU !BAR	Helms	5	0	0
 NMAG !RW	SUP ETH	CIRC	Circlets	5	0	0
 NMAG !RW	SUP ETH	CHEST	Chest Armor	5	0	0
 NMAG !RW	SUP ETH	SHIELD !DIN !NEC	Shields	5	0	0
-NMAG !RW	SUP ETH	GLOVES	Gloves	5	0	0
-NMAG !RW	SUP ETH	BOOTS	Boots	5	0	0
-NMAG !RW	SUP ETH	BELT	Belts	5	0	0
+NMAG !RW	SUP ETH	GLOVES	Gloves	2	0	0
+NMAG !RW	SUP ETH	BOOTS	Boots	2	0	0
+NMAG !RW	SUP ETH	BELT	Belts	2	0	0
 NMAG !RW	SUP ETH	1H AXE !THROWING	1-Handed Axes	5	0	0
 NMAG !RW	SUP ETH	2H AXE	2-handed Axes	5	0	0
 NMAG !RW	SUP ETH	CLUB	Clubs	5	0	0
@@ -201,10 +201,10 @@ MAG	!ETH	POLEARM	Polearms	2	0	0
 MAG	!ETH	BOW	Bows	2	0	0
 MAG	!ETH	XBOW	Crossbows	2	0	0
 MAG	!ETH	(aqv OR cqv)	Quivers	3	0	0
-MAG	!ETH	jew	Jewels	5	5	5
-MAG	!ETH	cm1	Small Charms	5	5	4
-MAG	!ETH	cm2	Large Charms	5	0	0
-MAG	!ETH	cm3	Grand Charms	5	5	4
+MAG	!ETH	jew	Jewels	5	6	5
+MAG	!ETH	cm1	Small Charms	5	6	4
+MAG	!ETH	cm2	Large Charms	5	6	4
+MAG	!ETH	cm3	Grand Charms	5	6	4
 # Magical pointmod items when class is a match						
 MAG	!ETH	DRU DRUID	Druid Helms	4	1	3
 MAG	!ETH	BAR BARBARIAN	Barbarian Helms	4	1	3
@@ -292,7 +292,7 @@ RARE	!ETH	POLEARM	Polearms	4	0	0
 RARE	!ETH	BOW	Bows	4	0	0
 RARE	!ETH	XBOW	Crossbows	4	0	0
 RARE	!ETH	(aqv OR cqv)	Quivers	4	0	0
-RARE	!ETH	jew	Jewels	5	6	5
+RARE	!ETH	jew	Jewels	5	7	5
 # Rare pointmod items when class is a match						
 RARE	!ETH	DRU DRUID	Druid Helms	5	2	4
 RARE	!ETH	BAR BARBARIAN	Barbarian Helms	5	2	4
