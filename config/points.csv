@@ -158,16 +158,23 @@ CHEST	Chests		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66
 cm1	Small Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	8	11	15							
 cm2	Large Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	13	20	27							
 cm3	Grand Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	19	35	47							
-DIN	Paladin Shields		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	45	91	137	182	228	274				
 jew	Jewels		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	20	40	60	80						
 QUIVER	Quivers		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	36									
 rin	Rings		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	17	34	52	69	86					
+DIN	Paladin Shields (no ED)	EDAM=0	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	80	113	146	180	213	246				
+DIN	Paladin Shields (low ED)	EDAM~1-65	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	68	101	134	167	200	233				
+DIN	Paladin Shields (mid ED)	EDAM~66-112	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	56	89	122	155	188	221				
+DIN	Paladin Shields (high ED)	EDAM~113-160	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	44	77	110	143	176	209				
+DIN	Paladin Shields (overcap ED)	EDAM>160	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66	100	133	166					
+DIN	Paladin Shields (no RES)	(FRES+CRES+LRES+PRES=0)	EDAM	Enhanced Damage	RED	Physical Damage	43	83	123	163						
+DIN	Paladin Shields (low RES)	(FRES+CRES+LRES+PRES>0 FRES+CRES+LRES+PRES<121)	EDAM	Enhanced Damage	RED	Physical Damage	42	82	122	162						
+DIN	Paladin Shields (mid RES)	(FRES+CRES+LRES+PRES>120 FRES+CRES+LRES+PRES<161)	EDAM	Enhanced Damage	RED	Physical Damage	41	81	121	161						
+DIN	Paladin Shields (high RES)	(FRES+CRES+LRES+PRES>160 FRES+CRES+LRES+PRES<201)	EDAM	Enhanced Damage	RED	Physical Damage	40	80	120	160						
+DIN	Paladin Shields (overcap RES)	(FRES+CRES+LRES+PRES>200)	EDAM	Enhanced Damage	RED	Physical Damage	39	79	119							
 amu	Amulets		STAT109	Reduced Curse Duration	PURPLE	Magical Defense	17									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT110	Poison Length Reduced	PURPLE	Magical Defense	33	66	99	133	166					
-amu	Amulets		STAT110	Poison Length Reduced	PURPLE	Magical Defense	65									
-BELT	Belts		STAT110	Poison Length Reduced	PURPLE	Magical Defense	45									
-CHEST	Chests		STAT110	Poison Length Reduced	PURPLE	Magical Defense	33	66								
-SHIELD	Shields		STAT110	Poison Length Reduced	PURPLE	Magical Defense	33	66								
+(ARMOR !BELT)	Armor except belts		STAT110	Poison Length Reduced	PURPLE	Magical Defense	65	115	165							
+amu	Amulets		STAT110	Poison Length Reduced	PURPLE	Magical Defense	65	115	165							
+BELT	Belts		STAT110	Poison Length Reduced	PURPLE	Magical Defense	45	90								
 (GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
 (SOR OR WAND OR STAFF)	Caster Weapons		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
 amu	Amulets		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
@@ -177,10 +184,9 @@ amu	Amulets		STAT35	MDR	PURPLE	Magical Defense	10	15
 rin	Rings		STAT35	MDR	PURPLE	Magical Defense	5									
 rin	Rings		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	7	14	20	27						
 (GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		EDAM	Enhanced Damage	RED	Physical Damage	24									
-(SHIELD !DIN)	Non-Paladin Shields		EDAM	Enhanced Damage	RED	Physical Damage	30	80	120							
+(SHIELD !DIN)	Non-Paladin Shields		EDAM	Enhanced Damage	RED	Physical Damage	39	79	119							
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		EDAM	Enhanced Damage	RED	Physical Damage	150	250	350	400	450	500	550	600	650	700
 CHEST	Chests		EDAM	Enhanced Damage	RED	Physical Damage	100	150								
-DIN	Paladin Shields		EDAM	Enhanced Damage	RED	Physical Damage	53	106	159	212						
 jew	Jewels		EDAM	Enhanced Damage	RED	Physical Damage	26	33								
 QUIVER	Quivers		EDAM	Enhanced Damage	RED	Physical Damage	27	46								
 (GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	10	20								
