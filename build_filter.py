@@ -17,8 +17,7 @@ structure = {
     'Item Names': {
         'Abbreviations': TEMPLATE_DIR / 'abbreviations.filter',
         'Miscellaneous Items': TEMPLATE_DIR / 'misc_items.filter'},
-        'Inferior & Superior': TEMPLATE_DIR / 'inferior_superior.filter',
-        'General Tags and Appearance': TEMPLATE_DIR / 'general_tags_appearance.filter',
+        'General Tags and Appearance': GENERATOR_DIR / 'style.py',
         'Base Item Tags': TEMPLATE_DIR / 'base_items.filter',
         'Gold and Sale Prices': TEMPLATE_DIR / 'gold_sales.filter',
         'Non-magic Modifiers': TEMPLATE_DIR / 'nonmagic_mods.filter',

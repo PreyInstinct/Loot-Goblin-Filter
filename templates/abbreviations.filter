@@ -1,4 +1,5 @@
-// --- Abbreviation of Automodded & Pointmodded Items ---
 // Abbreviate names of items with automods to prevent truncation of long names.
-
 ItemDisplay[${random} (${pointmod} OR DIN)]: %BASENAME%{%NAME%}%CONTINUE%
+
+// Shorten names of Superior and Inferior (tags will be applied at later step).
+ItemDisplay[(SUP OR INF) !RW]: %BASENAME%{%NAME%}%CONTINUE%
