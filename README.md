@@ -84,6 +84,12 @@ do so with care. Let me know if something needs correction or updating and I wil
 
 ### Other Config Files
 
+`config/style.csv` Allows you to edit the general appearance of item names, including brackets unidentified items or GG drops etc, text colors, and tags before and after the name. Organized into blocks - do not delete or edit the block headers or the file won't parse correctly. You can add or remove additional lines to the blocks, however.
+- "Brackets" section is used to set any characters or formatting that comes to the left and right of item names, such as for unidentified items. The marker levels correspond to the "Marker Level" column of `hiding_highlighting.csv`.
+- "Name Colors" allows you to change the color of broad classes of items, if you don't like the default colors. The first field is the conditional statement in filter syntax, and the right should be a color code (though really any valid filter syntax code will work).
+- "Right of Name" sets tags that appear to the right of the item name. The first field is a filter syntax conditional statement to apply the tag to, and the second field is the filter syntax tag. The tag appears immediately after tha name, so include leading spaces if you want.
+- "Left of Name" is just like "Right of Name", except to the left. Trailing spaces are trimmed from the tag, so a single space is hardcoded inbetween the tag and the rest of the name.
+
 `config/sets_and_uniques.csv` Defines tier values for set and unique items. Blank fields indicate "D" tier, on a scale from "F" to "S". Lower tier sets and uniques will have less highlighting/notification, and at high filter levels low tier uniques will be filtered out. The name values here are displayed for unidentified items, so you can create a version without revealed sets & uniques by replacing the names with %BASENAME%.
 
 `config/skills.csv` Defines the relationship between classes, skill trees, and skills; skill name abbreviations; and primary, support, and niche skills. Primary skills are given increased emphasis when they appear as pointmods.
