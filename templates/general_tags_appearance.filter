@@ -34,5 +34,5 @@ ItemDisplay[CRAFT !ID]: %ORANGE%¿ %NAME% %ORANGE%?%CONTINUE%
 ItemDisplay[(ARMOR OR WEAPON OR (aqv OR cqv OR rin OR amu)) (MAG OR RARE OR SET OR UNI OR CRAFT) !ID (MAPID=181 OR MAPID=182)]: %RED%*%NAME%%RED%*%CONTINUE%
 
 // Show quantitiy of stackables
-ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR QUIVER OR key OR (MAPTIER>0 !NMAG)) QTY>1]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR QUIVER) QTY>1]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
 

@@ -1,5 +1,4 @@
 ItemDisplay[key]: %TAN%¶ %WHITE%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[key QTY>1]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
 
 //keys description in inventory
 ItemDisplay[key (${town} OR MAPID>132)]: %NAME%{%TAN%Pro-Tip%WHITE%: You can buy many}%CONTINUE%

@@ -16,6 +16,7 @@ structure = {
     'Filter Levels': TEMPLATE_DIR / 'levels.filter',
     'Item Names': {
         'Abbreviations': TEMPLATE_DIR / 'abbreviations.filter',
+        'Miscellaneous Items': TEMPLATE_DIR / 'misc_items.filter'},
         'Inferior & Superior': TEMPLATE_DIR / 'inferior_superior.filter',
         'General Tags and Appearance': TEMPLATE_DIR / 'general_tags_appearance.filter',
         'Base Item Tags': TEMPLATE_DIR / 'base_items.filter',
@@ -33,7 +34,6 @@ structure = {
         'Gems': TEMPLATE_DIR / 'gems.filter',
         'Runes': TEMPLATE_DIR / 'runes.filter',
         'Charms': TEMPLATE_DIR / 'charms.filter',
-        'Miscellaneous Items': TEMPLATE_DIR / 'misc_items.filter'},
     'Item Descriptions': {
         'Point System': {
             'Generated': GENERATOR_DIR / 'point_system.py',
