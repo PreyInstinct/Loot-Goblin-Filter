@@ -37,8 +37,8 @@ def hide(group, filter_level, rarity, properties):
     conditions = [c for c in [rarity, properties, group, filter_level] if c]
     conditions = ' '.join(conditions)
     tag = tracer.generate_tag()
-    rules = ['ItemDisplay[${field} !${utility} '+conditions+']: {${filterwarn}'+tag+'}',
-             'ItemDisplay[!${field} !${utility} '+conditions+']: %NAME%{${filterwarn}'+tag+'}']
+    rules = ['ItemDisplay[GROUND !${utility} '+conditions+']: {${filterwarn}'+tag+'}',
+             'ItemDisplay[!GROUND !SHOP !${utility} '+conditions+']: %NAME%{${filterwarn}'+tag+'}']
     return rules
 
 brackets, name_colors, right_tags, left_tags = get_style()
