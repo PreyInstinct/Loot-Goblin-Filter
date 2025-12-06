@@ -193,11 +193,11 @@ Hibernal	Large Charm	cm2	1	137	STAT54;STAT55	22;40	26;54	Adds [22-26] to [40-54]
 Flaming	Large Charm	cm2	1	138	STAT48;STAT49	20;40	38;58	Adds [20-38] to [40-58] Fire Damage
 Shocking	Large Charm	cm2	1	139	STAT50;STAT51	1;62	1;100	Adds 1 to [62-100] Lightning Damage
 Pestilent	Large Charm	cm2	1	140	STAT58	660	660	+129 Poison Damage over 2 seconds
-Conduit	Large Charm	cm2	1	201	STAT330	3	4	+[3-4]% to Lightning Skill Damage
-Numbing	Large Charm	cm2	1	201	STAT331	3	4	+[3-4]% to Cold Skill Damage
-Inferno	Large Charm	cm2	1	201	STAT329	3	4	+[3-4]% to Fire Skill Damage
-Infectious	Large Charm	cm2	1	201	STAT332	3	4	+[3-4]% to Poison Skill Damage
-Scintillating	Large Charm	cm2	1	201	STAT357	3	4	+[3-4]% to Magic Skill Damage
+Discharging	Large Charm	cm2	1	201	STAT330	2	3	+[2-3]% to Lightning Skill Damage
+Frigid	Large Charm	cm2	1	201	STAT331	2	3	+[2-3]% to Cold Skill Damage
+Wildfire	Large Charm	cm2	1	201	STAT329	2	3	+[2-3]% to Fire Skill Damage
+Malicious	Large Charm	cm2	1	201	STAT332	2	3	+[2-3]% to Poison Skill Damage
+Effervescent	Large Charm	cm2	1	201	STAT357	2	3	+[2-3]% to Magic Skill Damage
 Stalwart	Grand Charm	cm3	1	101	DEF	60	100	+[60-100] Defense
 Bloody	Grand Charm	cm3	1	103	MINDMG	3	3	+3 to Minimum Damage
 Steel	Grand Charm	cm3	1	110	AR	118	132	+[118-132] to Attack Rating
