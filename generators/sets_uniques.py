@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 
 from .hiding_highlighting import hide, highlight, parse_filter_config
+from .style import read_config as get_style
 
 HERE = Path(__file__).parent
 PROJECT_DIR = HERE / '..'
@@ -17,7 +18,8 @@ CONFIG_FILE = CONFIG_DIR / 'sets_and_uniques.csv'
 
 # « ¿ Item Name - Item Type ? »
 
-unid_formatter = '¿ {} ?'
+brackets, name_colors, right_tags, left_tags = get_style()
+unid_formatter = brackets['unid_left']+' {} '+brackets['unid_right']
 padding = {'S': 38,
            'A': 38,
            'B': 34,

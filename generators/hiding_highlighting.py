@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from pathlib import Path
+from .style import read_config as get_style
 
 HERE = Path(__file__).parent
 PROJECT_DIR = HERE / '..'
@@ -40,14 +41,16 @@ def hide(group, filter_level, rarity, properties):
              'ItemDisplay[!${field} !${utility} '+conditions+']: %NAME%{${filterwarn}'+tag+'}']
     return rules
 
+brackets, name_colors, right_tags, left_tags = get_style()
+
 marker_levels = ['marker level 0 should never be used because it indicates no marker',
-                 '%PX-{MC}%{tier}%{TC}%« {name} %{TC}%»',
-                 '%DOT-{MC}%{tier}%{TC}%«« {name} %{TC}%»»',
-                 '%MAP-{MC}%{tier}%{TC}%««« {name} %{TC}%»»»',
-                 '%BORDER-{MC}%{tier}%{TC}%«««« {name} %{TC}%»»»»',
-                 '%DOT-{MC}%{tier}%PURPLE%- %{TC}%{name} %PURPLE%-',
-                 '%DOT-{MC}%{tier}%PURPLE%-= %{TC}%{name} %PURPLE%=-',
-                 '%DOT-{MC}%{tier}%PURPLE%-=¦ %{TC}%{name} %PURPLE%¦=-']
+                 '%PX-{MC}%{tier}%{TC}%'+brackets['marker_level_1_left']+' {name} %{TC}%'+brackets['marker_level_1_right'],
+                 '%DOT-{MC}%{tier}%{TC}%'+brackets['marker_level_2_left']+' {name} %{TC}%'+brackets['marker_level_2_right'],
+                 '%MAP-{MC}%{tier}%{TC}%'+brackets['marker_level_3_left']+' {name} %{TC}%'+brackets['marker_level_3_right'],
+                 '%BORDER-{MC}%{tier}%{TC}%'+brackets['marker_level_4_left']+' {name} %{TC}%'+brackets['marker_level_4_right'],
+                 '%DOT-{MC}%{tier}%{TC}%'+brackets['marker_level_5_left']+' {name} %{TC}%'+brackets['marker_level_5_right'],
+                 '%DOT-{MC}%{tier}%{TC}%'+brackets['marker_level_6_left']+' {name} %{TC}%'+brackets['marker_level_6_right'],
+                 '%DOT-{MC}%{tier}%{TC}%'+brackets['marker_level_7_left']+' {name} %{TC}%'+brackets['marker_level_7_right']]
 
 color_key = {'NMAG !RW': ('WHITE', '1f'),
              'MAG': ('BLUE', '94'),
