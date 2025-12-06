@@ -19,7 +19,7 @@ CRAFT	%ORANGE%
 (ARMOR OR WEAPON) NMAG (SOCK>0 OR ETH)	%GRAY%		
 			
 Right of Name	Tag		
-NORM	%WHITE%¹		
+NORM !MISC	%WHITE%¹		
 EXC	%BLUE%²		
 ELT	%YELLOW%³		
 			

@@ -27,13 +27,13 @@ class Tracer(object):
         else:
             return ''
 
-tracer = Tracer(active=True)
+tracer = Tracer(active=False)
 
 def hide(group, filter_level, rarity, properties):
     if filter_level >= adjusted_levels[-1]:
         # Never hide, even at max filter level
         return []
-    filter_level = 'FILTLVL>{}'.format(filter_level+1)
+    filter_level = 'FILTLVL>{}'.format(filter_level)
     conditions = [c for c in [rarity, properties, group, filter_level] if c]
     conditions = ' '.join(conditions)
     tag = tracer.generate_tag()
@@ -76,7 +76,7 @@ def highlight(group, marker_level, notification_level, rarity, properties, name=
 
 # Adjust levels so odd levels increment strictness
 # and even levels are no-potion versions.
-adjusted_levels = [-1, 1, 3, 5, 7, 9]
+adjusted_levels = [0, 2, 4, 6, 8, 10]
 
 def parse_filter_config():
     fh = open(CONFIG_FILE, 'r')
