@@ -8,6 +8,7 @@ ItemDisplay[wss]: %NAME%{%NAME%%CL%%WHITE%Non-magic %SAGE%Equipment%WHITE%: 50% 
 
 ItemDisplay[imrn (!GROUND OR ${town})]: %RED%Demonic Cube{%NAME%}%CONTINUE%
 ItemDisplay[imrn GROUND !${town}]: %DOT-83%%RED%¡¡¡ Demonic Cube !!!{%NAME%}%CONTINUE%
+ItemDisplay[imrn]: %NAME%{%NAME%%CL%%RED%Warning%WHITE%: Will also reroll the "anniversery” condition of the item, resulting in loss of anniversary colors.}%CONTINUE%
 ItemDisplay[imrn]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Use to Reroll a %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}%CONTINUE%
 
 ItemDisplay[lbox (!GROUND OR ${town})]: %RED%Larzuk’s Puzzlebox{%NAME%}%CONTINUE%
@@ -25,7 +26,7 @@ ItemDisplay[lpp]: %NAME%{%NAME%%CL%%SAGE%Helmet, Chest, Shield, Quiver%WHITE%: %
 ItemDisplay[lpp]: %NAME%{%NAME%%CL%%WHITE%Cube with a Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%item to add %GRAY%Sockets }%CONTINUE%
 
 ItemDisplay[lmal]: %RED%Larzuk’s Malus{%NAME%}%CONTINUE%
-ItemDisplay[lmal]: %NAME%{%WHITE%: Cube with an item to add %GRAY%1 Socket}%CONTINUE%
+ItemDisplay[lmal]: %NAME%{%WHITE%Cube with an item to add %GRAY%1 Socket}%CONTINUE%
 
 ItemDisplay[cwss (!GROUND OR ${town})]: %RED%Tainted Worldstone Shard{%NAME%}%CONTINUE%
 ItemDisplay[cwss GROUND !${town}]: %MAP-0A%%RED%Tainted Worldstone Shard{%NAME%}%CONTINUE%
