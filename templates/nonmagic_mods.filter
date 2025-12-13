@@ -1,8 +1,9 @@
 // Close bracket
-ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%) %NAME%{%NAME%}%CONTINUE%
+//ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%) %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%) %NAME%{%NAME%}%CONTINUE%
 // Ethereal
-ItemDisplay[ETH]: %LIGHT_GRAY%eth%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[ETH AND ((DIN NMAG !RW RES>0) OR (DIN  NMAG !RW EDAM>0) OR ${suped})]: %GRAY%|%NAME%{%NAME%}%CONTINUE%
+//ItemDisplay[ETH]: %LIGHT_GRAY%eth%NAME%{%NAME%}%CONTINUE%
+//ItemDisplay[ETH AND ((DIN NMAG !RW RES>0) OR (DIN  NMAG !RW EDAM>0) OR ${suped})]: %GRAY%|%NAME%{%NAME%}%CONTINUE%
 // Paladin Shield Automods
 // # Resistances
 ItemDisplay[DIN NMAG !RW RES~1-10]: %WHITE%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
@@ -26,7 +27,8 @@ ItemDisplay[${suped} EDEF~11-13]: %YELLOW%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE
 ItemDisplay[${suped} EDEF>13]: %GOLD%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
 
 // Open bracket
-ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%(%NAME%{%NAME%}%CONTINUE%
+//ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%(%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%(%NAME%{%NAME%}%CONTINUE%
 
 // Sockets
 //Sockets Opener

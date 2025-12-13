@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import sys
 from pathlib import Path
 from .style import read_config as get_style
 
@@ -13,6 +14,23 @@ DATA_DIR = DATA_DIR.resolve()
 
 CONFIG_FILE = CONFIG_DIR / 'hiding_highlighting.csv'
 
+# Adjust levels so odd levels increment strictness
+# and even levels are no-potion versions.
+adjusted_levels = [0, 2, 4, 6, 8, 10]
+
+def parse_filter_config():
+    with open(CONFIG_FILE, 'r') as fh:
+        header = fh.readline()
+        for line in fh:
+            if line.startswith('#'):
+                # Comment lines
+                continue
+            line = line.strip().split('\t')
+            rarity, properties, group, description, filter_level, marker_level, notification_level = line
+            filter_level = adjusted_levels[int(filter_level)]
+            marker_level = int(marker_level)
+            notification_level = adjusted_levels[int(notification_level)]
+            yield (rarity, properties, group, filter_level, marker_level, notification_level)
 
 class Tracer(object):
     def __init__(self, active=False):
@@ -29,6 +47,14 @@ class Tracer(object):
 
 tracer = Tracer(active=False)
 
+def show(group, rarity, properties, name='%NAME%'):
+    conditions = ['GROUND', '!ID', rarity, properties, group]
+    conditions = [c for c in conditions if c]
+    conditions = ' '.join(conditions)
+    tag = tracer.generate_tag()
+    rule = 'ItemDisplay['+conditions+']: '+str(name)+'{%NAME%'+tag+'}'
+    return [rule]
+
 def hide(group, filter_level, rarity, properties):
     if filter_level >= adjusted_levels[-1]:
         # Never hide, even at max filter level
@@ -41,61 +67,36 @@ def hide(group, filter_level, rarity, properties):
              'ItemDisplay[!GROUND !SHOP !${utility} '+conditions+']: %NAME%{${filterwarn}'+tag+'}']
     return rules
 
-brackets, name_colors, right_tags, left_tags = get_style()
+def set_style():
+    st = get_style()
 
-marker_levels = ['marker level 0 should never be used because it indicates no marker',
-                 '%PX-{MC}%{tier}%{TC}%'+brackets['marker_level_1_left']+' {name} %{TC}%'+brackets['marker_level_1_right'],
-                 '%DOT-{MC}%{tier}%{TC}%'+brackets['marker_level_2_left']+' {name} %{TC}%'+brackets['marker_level_2_right'],
-                 '%MAP-{MC}%{tier}%{TC}%'+brackets['marker_level_3_left']+' {name} %{TC}%'+brackets['marker_level_3_right'],
-                 '%BORDER-{MC}%{tier}%{TC}%'+brackets['marker_level_4_left']+' {name} %{TC}%'+brackets['marker_level_4_right'],
-                 '%DOT-{MC}%{tier}%{TC}%'+brackets['marker_level_5_left']+' {name} %{TC}%'+brackets['marker_level_5_right'],
-                 '%DOT-{MC}%{tier}%{TC}%'+brackets['marker_level_6_left']+' {name} %{TC}%'+brackets['marker_level_6_right'],
-                 '%DOT-{MC}%{tier}%{TC}%'+brackets['marker_level_7_left']+' {name} %{TC}%'+brackets['marker_level_7_right']]
+    def highlight(marker_lvl, notification_lvl, rarity, name='%NAME%'):
+        marker_color = st.colors['markers'][rarity]
+        marker_style = st.markers[marker_lvl]
+        map_marker = f'%{marker_style}-{marker_color}%'
+    
+        if notification_lvl < 9:
+            notify_tag = f'%TIER-{notification_lvl}%'
+        else:
+            # Notification lvl 10 and up = always notify
+            notify_tag = ''
 
-color_key = {'NMAG !RW': ('WHITE', '1f'),
-             'MAG': ('BLUE', '94'),
-             'RARE': ('YELLOW', '6A'),
-             'SET': ('GREEN', '7D'),
-             'UNI': ('GOLD', 'D3')}
+        text_color = st.colors['text'][rarity]
+        l_bracket, r_bracket = st.brackets[marker_lvl]
+        left_side = f'{text_color}{l_bracket} '
+        right_side = f' {text_color}{r_bracket}'
 
-def highlight(group, marker_level, notification_level, rarity, properties, name='%NAME%'):
-    if not marker_level:
-        # Never notify
-        return []
-    conditions = [c for c in [rarity, properties, group] if c]
-    conditions = ' '.join(conditions)
-    text_color, map_color = color_key[rarity]
-    if notification_level < 9:
-        tier = '%TIER-{}%'.format(notification_level+1)
-    else:
-        tier = ''
-    marker = marker_levels[marker_level].format(MC=map_color, tier=tier, TC=text_color, name=name)
-    tag = tracer.generate_tag()
-    rule = 'ItemDisplay[${field} !ID '+conditions+']: '+marker+'{%NAME%'+tag+'}'
-    return [rule]
+        return ''.join([
+            map_marker,
+            notify_tag,
+            left_side,
+            name,
+            right_side])
 
-# Adjust levels so odd levels increment strictness
-# and even levels are no-potion versions.
-adjusted_levels = [0, 2, 4, 6, 8, 10]
-
-def parse_filter_config():
-    fh = open(CONFIG_FILE, 'r')
-    header = fh.readline()
-    lines = []
-    for line in fh:
-        if line.startswith('#'):
-            # Comment lines
-            continue
-        line = line.strip().split('\t')
-        rarity, properties, group, description, filter_level, marker_level, notification_level = line
-        filter_level = adjusted_levels[int(filter_level)]
-        marker_level = int(marker_level)
-        notification_level = adjusted_levels[int(notification_level)]
-        lines.append((rarity, properties, group, filter_level, marker_level, notification_level))
-    fh.close()
-    return lines
+    return highlight
 
 def build(verbose=False):
+    highlight = set_style()
     rules = []
     for rarity, properties, group, filter_level, marker_level, notification_level in parse_filter_config():
         if rarity in ['SET', 'UNI']:
@@ -105,8 +106,12 @@ def build(verbose=False):
         hide_rules = hide(group, filter_level, rarity, properties)
         rules.extend(hide_rules)
         # Create a notification rule if necessary.
-        notification_rule = highlight(group, marker_level, notification_level, rarity, properties)
-        rules.extend(notification_rule)
+        if marker_level:
+            # level 0 is no notify
+            marker_index = marker_level - 1
+            highlighted = highlight(marker_index, notification_level, rarity)
+            notification_rule = show(group, rarity, properties, name=highlighted)
+            rules.extend(notification_rule)
     return rules
 
 def main():

@@ -104,7 +104,6 @@ class Skill(object):
 
         # Begin constructing different conditions for highlighting/tagging.
 
-
         # If there is a non-prime skill bonus AND no prime skill bonus, use gray braces.
         subprime = []
 
@@ -121,9 +120,9 @@ class Skill(object):
         # NMAG conditions
         # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
         # If any prime skill is 3 AND the total number of points is not greater than 5, use blue braces.
-        sksum = ''
         # If any prime skill is 3 AND the total number of points is 6-7, use yellow braces.
         # If any prime skill is 3 AND the total number of points is 8-9, use gold braces.
+        sksum = ''
 
         # Else, there are no skills so no need for braces.
 
@@ -168,27 +167,27 @@ class Skill(object):
                    sksum_template.format('SKSUM8', sksum, '7'))
 
         # If there is a non-prime skill bonus AND no prime skill bonus, use gray braces.
-        gray_braces = 'SUBPRIME !PRIME1'
+        gray_braces = '${pointmod} SUBPRIME !PRIME1'
 
         # MAG/RARE item conditions
         # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
-        white_braces = '(MAG OR RARE OR CRAFT) PRIME1 !PRIME3'
+        white_braces = '${pointmod} (MAG OR RARE OR CRAFT) PRIME1 !PRIME3'
         # If any prime skill is 3 or greater AND no prime skill is 4 or greater, use blue braces.
-        blue_braces = '(MAG OR RARE OR CRAFT) PRIME3 !PRIME4'
+        blue_braces = '${pointmod} (MAG OR RARE OR CRAFT) PRIME3 !PRIME4'
         # If any prime skill is 4 AND no prime skill is 5 or greater, use yellow braces.
-        yellow_braces = '(MAG OR RARE OR CRAFT) PRIME4 !PRIME5'
+        yellow_braces = '{pointmod} (MAG OR RARE OR CRAFT) PRIME4 !PRIME5'
         # If any prime skill is 5 or greater, use gold braces.
-        gold_braces = '(MAG OR RARE OR CRAFT) PRIME5'
+        gold_braces = '${pointmod} (MAG OR RARE OR CRAFT) PRIME5'
 
         # NMAG conditions
         # If any prime skill is 1 or greater AND no prime skill is 3 or greater, use white braces.
-        nm_white_braces = 'NMAG PRIME1 !PRIME3'
+        nm_white_braces = '${pointmod} NMAG PRIME1 !PRIME3'
         # If any prime skill is 3 AND the total number of points is not greater than 5, use blue braces.
-        nm_blue_braces = 'NMAG PRIME3 !SKSUM6'
+        nm_blue_braces = '${pointmod} NMAG PRIME3 !SKSUM6'
         # If any prime skill is 3 AND the total number of points is 6-7, use yellow braces.
-        nm_yellow_braces = 'NMAG PRIME3 SKSUM6 !SKSUM8'
+        nm_yellow_braces = '${pointmod} NMAG PRIME3 SKSUM6 !SKSUM8'
         # If any prime skill is 3 AND the total number of points is 8-9, use gold braces.
-        nm_gold_braces = 'NMAG PRIME3 SKSUM8'
+        nm_gold_braces = '${pointmod} NMAG PRIME3 SKSUM8'
         
         # Else, there are no skills so no need for braces.
 

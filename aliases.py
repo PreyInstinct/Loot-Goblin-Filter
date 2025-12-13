@@ -39,6 +39,12 @@ filterwarn = '%PURPLE%Decrease Your Filter Level in Settings to Display It All T
 town = '(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)'
 field = '(!EQUIPPED !SHOP !MAPID=1 !MAPID=40 !MAPID=75 !MAPID=103 !MAPID=109)'
 
+# Disjoint NMAG subgroups
+ordinary = '((ARMOR OR WEAPON OR QUIVER) NMAG !RW !ETH SOCKETS=0)'
+ordsock = '((ARMOR OR WEAPON OR QUIVER) NMAG !RW !ETH SOCKETS>0)'
+ethereal = '((ARMOR OR WEAPON OR QUIVER) NMAG !RW ETH SOCKETS=0)'
+ethsock = '((ARMOR OR WEAPON OR QUIVER) NMAG !RW ETH SOCKETS?0)'
+
 # Misc item groups
 quest = '(bks OR bkd OR tr1 OR ass OR box OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR hdm OR msf OR vip OR hst OR g33 OR qf1 OR qf2 OR hfh OR tes OR ceh OR bet OR fed OR toa OR pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr)'
 throwpots = '(opm OR gpm OR opl OR ops OR gps OR gpl OR tpfs OR tpgs OR tpcs OR tpls OR tpfm OR tpgm OR tpcm OR tplm OR tpfl OR tpgl OR tpcl OR tpll)'
