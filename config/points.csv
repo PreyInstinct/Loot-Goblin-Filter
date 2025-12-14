@@ -187,7 +187,7 @@ rin	Rings		STAT35	MDR	PURPLE	Magical Defense	5
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		EDAM	Enhanced Damage	RED	Physical Damage	150	250	350	400	450	500	550	600	650	700
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	27	55								
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT121	Damage to Demons	RED	Physical Damage	150	250								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT218	Max Damage per Level	RED	Physical Damage	0									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT218	Max Damage per Level (measured as X/8)	RED	Physical Damage	2	5								
 amu	Amulets		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	7	14	20							
 ARROWS	Arrows		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	23	29	35	41						
 BOLTS	Bolts		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	5	11	17	23						
