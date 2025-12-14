@@ -2,7 +2,7 @@
 
 ![Screenshot of filter in action.](screenshots/FilterEffect.png "Filter Off overlaid on Filter On")
 
-This filter was originally forked from [Kryszard's PD2 Loot Filter](https://github.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter), and still uses Kryszard's code for some features. Please see the documentation there regarding features not described here. Thank you, Kryszard, for all your good work.
+This filter was originally forked from [Kryszard's PD2 Loot Filter](https://github.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter), and still uses Kryszard's code for some features. Please see the documentation there regarding features not described here, and the section on attribution at the end of this readme for details. Thank you, Kryszard, for all your good work.
 
 # Installation
 
@@ -154,3 +154,29 @@ I dramatically increased the thresholds at which gold piles will be visible comp
 ## Revealed Unique Names
 
 The names of unidentified unique items will also show up when possible, as in some other filters.
+
+## Attribution
+
+The following sections remain as is, with only minor edits, from Kryszard's loot filter (currently ~36% of the final filter):
+- charms.filter
+- freeze_notes.filter
+- gambling.filter
+- gems.filter
+- imbuing_notes.filter
+- map_notes.filter
+- navigation.filter
+- nonmagic_mods.filter
+- runes.filter
+- shop_hunting.filter
+- socketing_notes_mag.filter
+- socketing_notes.nmag.filter
+- unknown_items.filter
+- upgrade_notes.filter
+
+The following sections are substantially edited versions of Kryszard's loot filter (currently ~4% of the final filter):
+ - crafting_notes.filter
+ - gold_sellables.filter
+ - jewel_notes.filter
+ - key_info.filter
+ - misc_items.filter
+ - scrolls_potions.filter
