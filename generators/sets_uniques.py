@@ -90,7 +90,17 @@ def set_style():
         else:
             right_inner = Token(text_color)
         if is_eth:
-            eth_tag = Token(st.tags['ETH'])
+            try:
+                eth_tag = Token(st.left_tags['ETH'])
+            except KeyError:
+                try:
+                    eth_tag = Token(st.right_tags['ETH'])
+                except KeyError:
+                    raise ValueError(
+                        'A tag for "ETH" items must be set in style.json, '
+                        'even if the value is empty ("").\n'
+                        'Please include an entry (e.g. "ETH": "eth") under '
+                        'left_tags or right_tags.')
         else:
             eth_tag = Token('')
         tier_tag = Token(st.tier_tags[base_tier][1])

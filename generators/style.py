@@ -194,17 +194,7 @@ class Name:
         return self
 
     def __repr__(self):
-        return (
-            'Name('
-            f'\tfrontmatter={self.frontmatter!r}'
-            f'\tbrackets_left={self.brackets_left!r}'
-            f'\ttags_left={self.tags_left!r}'
-            f'\tbasecolor={self.basecolor!r}'
-            f'\tbasename={self.basename!r}'
-            f'\ttags_right={self.tags_right!r}'
-            f'\tbrackets_right={self.brackets_right!r}'
-            ')'
-        )
+        return f'Name({self.parts!r})'
 
     def __str__(self):
         return ''.join(str(p) for p in self.parts)
@@ -227,9 +217,13 @@ def build(verbose=False):
     for cond, tag in style.tier_tags:
         general.append(f'ItemDisplay[{cond}]: %NAME%{tag}%CONTINUE%')
 
-    general.append('// Tags')
-    for cond, tag in style.tags.items():
-        general.append(f'ItemDisplay[{cond}]: {tag} %NAME%%CONTINUE%')
+    general.append('// Tags on left')
+    for cond, tag in style.left_tags.items():
+        general.append(f'ItemDisplay[{cond}]: {tag}%NAME%%CONTINUE%')
+
+    general.append('// Tags on right')
+    for cond, tag in style.right_tags.items():
+        general.append(f'ItemDisplay[{cond}]: %NAME%{tag}%CONTINUE%')
 
     general.append('// Bracketing for unidentified items')
     unidL, unidR = style.unid_brackets

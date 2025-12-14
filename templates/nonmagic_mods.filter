@@ -1,35 +1,3 @@
-// Close bracket
-//ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%) %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%) %NAME%{%NAME%}%CONTINUE%
-// Ethereal
-//ItemDisplay[ETH]: %LIGHT_GRAY%eth%NAME%{%NAME%}%CONTINUE%
-//ItemDisplay[ETH AND ((DIN NMAG !RW RES>0) OR (DIN  NMAG !RW EDAM>0) OR ${suped})]: %GRAY%|%NAME%{%NAME%}%CONTINUE%
-// Paladin Shield Automods
-// # Resistances
-ItemDisplay[DIN NMAG !RW RES~1-10]: %WHITE%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES~11-20]: %BLUE%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES~21-25]: %YELLOW%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[DIN NMAG !RW RES>25]: %GOLD%%RES%%PURPLE%r%NAME%{%NAME%}%CONTINUE%
-// # Enhanced Damage
-ItemDisplay[DIN NMAG !RW EDAM~1-35]: %WHITE%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[DIN NMAG !RW EDAM~36-45]: %BLUE%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[DIN NMAG !RW EDAM~46-55]: %YELLOW%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[DIN NMAG !RW EDAM>55]: %GOLD%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[((DIN NMAG !RW (RES>0 OR EDAM>0)) AND ${suped}]: %GRAY%|%NAME%{%NAME%}%CONTINUE%
-// Superior
-ItemDisplay[${suped} !DIN EDAM~1-5]: %WHITE%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[${suped} !DIN EDAM~6-10]: %BLUE%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[${suped} !DIN EDAM~11-13]: %YELLOW%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[${suped} !DIN EDAM>13]: %GOLD%%EDAM%%RED%dmg%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[${suped} EDEF~1-5]: %WHITE%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[${suped} EDEF~6-10]: %BLUE%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[${suped} EDEF~11-13]: %YELLOW%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[${suped} EDEF>13]: %GOLD%%EDEF%%TEAL%def%NAME%{%NAME%}%CONTINUE%
-
-// Open bracket
-//ItemDisplay[ETH OR (DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%(%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(DIN NMAG !RW (RES>0 OR EDAM>0)) OR ${suped}]: %GRAY%(%NAME%{%NAME%}%CONTINUE%
-
 // Sockets
 //Sockets Opener
 ItemDisplay[SOCK>0]: %NAME% %TAN%[%WHITE%%SOCKETS%{%NAME%}%CONTINUE%
