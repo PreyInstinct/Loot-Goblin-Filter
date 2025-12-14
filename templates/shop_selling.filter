@@ -1,0 +1,5 @@
+// Show sale value in description
+ItemDisplay[PRICE>0]: %NAME%{%NAME%%CL%%YELLOW%Sell Value%WHITE% %PRICE%%GOLD%g}%CONTINUE%
+
+// Show sale price in white in shops
+ItemDisplay[SHOP]: %NAME%%WHITE%
