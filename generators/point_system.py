@@ -31,7 +31,10 @@ def write_points(rules):
         if rule.kind != 'point':
             continue
         for threshold in rule.fields['thresholds']:
-            stat_cond = f"{rule.fields['stat']}>{threshold}"
+            if threshold >= 0:
+                stat_cond = f"{rule.fields['stat']}>{threshold}"
+            else:
+                stat_cond = f"{rule.fields['stat']}<{abs(threshold)}"
             if rule.fields['quality_reqs']:
                 condition = f"({rarity_cond}) {rule.condition_str} {rule.fields['quality_reqs']} {stat_cond}"
             else:
@@ -153,16 +156,33 @@ def calculate_points(args):
             except KeyError:
                 total_stats[stat] = value
                 
-    # Tally the number of points acheived by those stats
+    # Tally the number of points achieved by those stats
     points = 0
     for point_rule in region_rules:
         sum_stats = point_rule.fields['stat'].split('+')
-        acheived = sum([total_stats[stat] for stat in sum_stats if stat in total_stats])
+        achieved = sum([total_stats[stat] for stat in sum_stats if stat in total_stats])
         # rule.fields['thresholds'] is sorted list of integer thresholds
         # Use bisect_left because it tells you how many values the query is >
         # bisect_right (aka bisect) gives you >=
-        points += bisect_left(point_rule.fields['thresholds'], acheived)
+        if all_positive(point_rule.fields['thresholds']):
+            points += bisect_left(point_rule.fields['thresholds'], achieved)
+        else:
+            # Compute all negative or mixed points using O(N) tallying
+            for threshold in point_rule.fields['thresholds']:
+                if ((threshold >= 0) and (achieved > threshold)):
+                    points += 1
+                elif ((threshold <0) and (achieved < abs(threshold))):
+                    points += 1
+                else:
+                    pass
+            
     return points, total_stats, affix_names
+
+def all_positive(numbers):
+    for number in numbers:
+        if number < 0:
+            return False
+    return True
 
 def describe_shape(region):
     region_shape = f'{len(region.applicable_prefixes)} prefixes, '

@@ -1,4 +1,51 @@
 Item Code	Item Description	Quality Requirements	Stat	Stat Description	Point Color	Point Category	Thresholds	2	3	4	5	6	7	8	9	10
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		EDEF	Enhanced Defense	BLUE	Physical Defense	80	140	200							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT34	Flat PDR	BLUE	Physical Defense	11									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT36	% PDR	BLUE	Physical Defense	7									
+amu	Amulets		STAT34	Flat PDR	BLUE	Physical Defense	10	15								
+BELT	Belts		EDEF	Enhanced Defense	BLUE	Physical Defense	100	200								
+BELT	Belts		STAT34	Flat PDR	BLUE	Physical Defense	4									
+BELT	Belts		STAT36	% PDR	BLUE	Physical Defense	4	8								
+CHEST	Chests		EDEF	Enhanced Defense	BLUE	Physical Defense	80	140	200							
+CHEST	Chests		STAT20	Block Chance	BLUE	Physical Defense	9	19								
+CHEST	Chests		STAT34	Flat PDR	BLUE	Physical Defense	11	18								
+CHEST	Chests		STAT36	% PDR	BLUE	Physical Defense	6	13	20							
+rin	Rings		STAT34	Flat PDR	BLUE	Physical Defense	5	10								
+SHIELD	Shields		EDEF	Enhanced Defense	BLUE	Physical Defense	80	140								
+SHIELD	Shields	CRAFT	STAT33	Defense vs Melee (proxy for Safety craft); negative value indicates bonus point to other crafts (for block chance)	BLUE	Physical Defense	-1									
+SHIELD	Shields		FBR	Faster Block Rate	BLUE	Physical Defense	15	25	35	45	55					
+SHIELD	Shields		STAT34	Flat PDR	BLUE	Physical Defense	11	18								
+SHIELD	Shields		STAT36	% PDR	BLUE	Physical Defense	6	13	20							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT136	Crushing Blow	CORAL	Damage Effects	7	14								
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT141	Deadly Strike	CORAL	Damage Effects	7	14								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28303	Amp Dmg cast proc Low	CORAL	Damage Effects	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28311	Amp Dmg cast proc Mid	CORAL	Damage Effects	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28319	Amp Dmg cast proc High	CORAL	Damage Effects	0	0	0							
+(THROWING OR BOW OR XBOW)	Ranged Weapons		STAT136+STAT136+STAT136+STAT141+STAT141	Crushing Blow & Deadly Strike	CORAL	Damage Effects	35	70	105							
+(WEAPON !STAFF !WAND !SOR !THROWING !DAGGER !BOW !XBOW)	Other DS Weapons		STAT141	Deadly Strike	CORAL	Damage Effects	16	23								
+(WEAPON !STAFF !WAND !SOR !THROWING)	Non-caster Non-throwing Weapons		STAT136	Crushing Blow	CORAL	Damage Effects	16	23								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28303	Amp Dmg proc Low	CORAL	Damage Effects	0									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28311	Amp Dmg proc Mid	CORAL	Damage Effects	0	0								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28319	Amp Dmg proc High	CORAL	Damage Effects	0	0	0							
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT501	Open Wounds Damage	CORAL	Damage Effects	222	444	666							
+BELT	Belts		STAT135	Open Wounds Chance	CORAL	Damage Effects	14	18								
+DAGGER	Melee Daggers		STAT141	Deadly Strike	CORAL	Damage Effects	36	53								
+jew	Jewels		STAT501	Open Wounds Damage	CORAL	Damage Effects	61	93								
+QUIVER	Quivers		STAT136+STAT136+STAT136+STAT141+STAT141	Crushing Blow & Deadly Strike	CORAL	Damage Effects	35	70	105							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	13	26	39							
+(SOR OR WAND OR STAFF)	Caster Weapons		STAT1	Energy	DARK_GREEN	Stats	20									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	20									
+amu	Amulets		STAT3	Vitality	DARK_GREEN	Stats	15									
+amu	Amulets		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	20	40	60							
+BELT	Belts		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	15									
+CHEST	Chests		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	20	40								
+cm1	Small Charms		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	1									
+cm2	Large Charms		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	3									
+cm3	Grand Charms		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	4									
+jew	Jewels		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	4	9								
+rin	Rings		STAT3	Vitality	DARK_GREEN	Stats	7									
+rin	Rings		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	12	23								
+SHIELD	Shields		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	20	40								
 (amu OR CHEST OR HELM OR CIRC OR SHIELD OR WEAPON)	Class skill items		CLSK0	Amazon Skills	GOLD	Skills	1	1	2	3						
 (amu OR CHEST OR HELM OR CIRC OR SHIELD OR WEAPON)	Class skill items		CLSK1	Sorceress Skills	GOLD	Skills	1	1	2	3						
 (amu OR CHEST OR HELM OR CIRC OR SHIELD OR WEAPON)	Class skill items		CLSK2	Necromancer Skills	GOLD	Skills	1	1	2	3						
@@ -27,189 +74,8 @@ Item Code	Item Description	Quality Requirements	Stat	Stat Description	Point Colo
 (amu OR GLOVES OR HELM OR CIRC OR SHIELD OR QUIVER OR WEAPON)	Tree skill items		TABSK50	Martial Arts	GOLD	Skills	1	2	3							
 (amu OR GLOVES OR HELM OR CIRC OR SHIELD OR QUIVER OR WEAPON)	Tree skill items		TABSK8	Fire Spells	GOLD	Skills	1	2	3							
 (amu OR GLOVES OR HELM OR CIRC OR SHIELD OR QUIVER OR WEAPON)	Tree skill items		TABSK9	Lightning Spells	GOLD	Skills	1	2	3							
-(ARMOR !BELT)	Armor except belts		STAT110	Poison Length Reduced	PURPLE	Magical Defense	65	115	165							
-(BOW OR XBOW)	Missile Weapons		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	246	492								
-(BOW OR XBOW)	Missile Weapons		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	192	384								
-(BOW OR XBOW)	Missile Weapons		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	153	306								
-(BOW OR XBOW)	Missile Weapons		STAT112	Hit Causes Monster to Flee	SAGE	Other	0									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT136	Crushing Blow	CORAL	Damage Effects	7	14								
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT141	Deadly Strike	CORAL	Damage Effects	7	14								
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors	ETH	REPAIR	Ethereal & Self-repair	GRAY	Ethereal	0									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		LIFE	Life 	TEAL	Life & Mana	34	68								
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		MAEK	Mana after each kill	TEAL	Life & Mana	2	4	6							
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT216	Life per level	TEAL	Life & Mana	0									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT60	Life Steal	TEAL	Life & Mana	2	5	10							
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT62	Mana Steal	TEAL	Life & Mana	2									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT77	Max mana %	TEAL	Life & Mana	12	24								
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT86	Life after each kill	TEAL	Life & Mana	2	4	6							
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	30	60	90	120	150	180	210			
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		AR	Attack Rating	SAGE	Other	80	160	240							
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		CHSK54	Teleport Charges	SAGE	Other	0									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		GFIND	Gold Find	SAGE	Other	59									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		MFIND	Magic Find	SAGE	Other	19	39								
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT116	-N% Target Defense	SAGE	Other	14	18								
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT225	AR per level	SAGE	Other	0									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		EDAM	Enhanced Damage	RED	Physical Damage	24									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	10	20								
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT121	Damage to Demons	RED	Physical Damage	38									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		EDEF	Enhanced Defense	BLUE	Physical Defense	80	140	200							
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT34	Flat PDR	BLUE	Physical Defense	11									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT36	% PDR	BLUE	Physical Defense	7									
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		FCR	Faster Cast Rate	YELLOW	Speed	4	9	14	19						
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		FHR	Faster Hit Recovery	YELLOW	Speed	9	19	26							
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		FRW	Faster Run/Walk	YELLOW	Speed	19	29	35							
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		IAS	Increased Attack Speed	YELLOW	Speed	7	17	27							
-(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	13	26	39							
-(MACE OR SCEPTER)	Bludgeoning Weapons		STAT122	Damage to Undead	RED	Physical Damage	275	375								
-(QUIVER OR THROWING OR BOW OR XBOW)	Quivers, Throwing Weapons, Missile Weapons		STAT81	Knockback	SAGE	Other	0									
-(SHIELD !DIN)	Non-Paladin Shields		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66	100	133	166					
-(SHIELD !DIN)	Non-Paladin Shields		EDAM	Enhanced Damage	RED	Physical Damage	39	79	119							
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28303	Amp Dmg cast proc Low	CORAL	Damage Effects	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28311	Amp Dmg cast proc Mid	CORAL	Damage Effects	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28319	Amp Dmg cast proc High	CORAL	Damage Effects	0	0	0							
-(SOR OR WAND OR STAFF)	Caster Weapons		CHSK447	Lower Res Charges	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,23640	10% Chance to Cast Level 24 Ice Barrage on Casting	ORANGE	Elemental Damage	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,23646	10% Chance to Cast Level 30 Ice Barrage on Casting	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,2456	18% Chance to Cast Level 24 Charged Bolt on Casting	ORANGE	Elemental Damage	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,2462	18% Chance to Cast Level 30 Charged Bolt on Casting	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,2840	16% Chance to Cast Level 24 Frost Nova on Casting	ORANGE	Elemental Damage	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,2846	16% Chance to Cast Level 30 Frost Nova on Casting	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28613	Lower Res cast proc Low	ORANGE	Elemental Damage	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28618	Lower Res cast proc Mid	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28623	Lower Res cast proc High	ORANGE	Elemental Damage	0	0	0							
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3032	14% Chance to Cast Level 24 Fire Ball on Casting	ORANGE	Elemental Damage	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3038	14% Chance to Cast Level 30 Fire Ball on Casting	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3096	14% Chance to Cast Level 24 Nova on Casting	ORANGE	Elemental Damage	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3102	14% Chance to Cast Level 30 Nova on Casting	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3160	14% Chance to Cast Level 24 Lightning on Casting	ORANGE	Elemental Damage	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3166	14% Chance to Cast Level 30 Lightning on Casting	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3416	12% Chance to Cast Level 24 Chain Lightning on Casting	ORANGE	Elemental Damage	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3422	12% Chance to Cast Level 30 Chain Lightning on Casting	ORANGE	Elemental Damage	0	0								
-(SOR OR WAND OR STAFF)	Caster Weapons		DTM	Damage taken gained as mana	TEAL	Life & Mana	15	25								
-(SOR OR WAND OR STAFF)	Caster Weapons		MAEK	Mana after each kill	TEAL	Life & Mana	3	6								
-(SOR OR WAND OR STAFF)	Caster Weapons		MANA	Mana 	TEAL	Life & Mana	60	90	120							
-(SOR OR WAND OR STAFF)	Caster Weapons		STAT86	Life after each kill	TEAL	Life & Mana	3	6								
-(SOR OR WAND OR STAFF)	Caster Weapons		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
-(SOR OR WAND OR STAFF)	Caster Weapons		STAT1	Energy	DARK_GREEN	Stats	20									
-(SOR OR WAND)	Small Weapons		SOCK	Sockets	SAGE	Other	1									
-(SOR OR WAND)	Non-staff Caster Weapons		FCR	Faster Cast Rate	YELLOW	Speed	9	19	29	39	45					
-(THROWING OR BOW OR XBOW)	Ranged Weapons		STAT136+STAT136+STAT136+STAT141+STAT141	Crushing Blow & Deadly Strike	CORAL	Damage Effects	35	70	105							
-(WEAPON !STAFF !WAND !SOR !BOW !XBOW)	Non-caster Non-missile Weapons		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	313	627	940							
-(WEAPON !STAFF !WAND !SOR !BOW !XBOW)	Non-caster Non-missile Weapons		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	246	493	739							
-(WEAPON !STAFF !WAND !SOR !BOW !XBOW)	Non-caster Non-missile Weapons		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	235	471	707							
-(WEAPON !STAFF !WAND !SOR !MACE !SCEPTER)	Non-caster Non-bludgeoning Weapons		STAT122	Damage to Undead	RED	Physical Damage	225	325								
-(WEAPON !STAFF !WAND !SOR !THROWING !DAGGER !BOW !XBOW)	Other DS Weapons		STAT141	Deadly Strike	CORAL	Damage Effects	16	23								
-(WEAPON !STAFF !WAND !SOR !THROWING)	Non-caster Non-throwing Weapons		STAT136	Crushing Blow	CORAL	Damage Effects	16	23								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28303	Amp Dmg proc Low	CORAL	Damage Effects	0									
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28311	Amp Dmg proc Mid	CORAL	Damage Effects	0	0								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28319	Amp Dmg proc High	CORAL	Damage Effects	0	0	0							
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT501	Open Wounds Damage	CORAL	Damage Effects	222	444	666							
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28613	Lower Res proc Low	ORANGE	Elemental Damage	0									
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28618	Lower Res proc Mid	ORANGE	Elemental Damage	0	0								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28623	Lower Res proc High	ORANGE	Elemental Damage	0	0	0							
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons	ETH	REPAIR	Ethereal & Self-repair	GRAY	Ethereal	0	0								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		CHSK445	Life Tap Charges	TEAL	Life & Mana	0	0								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MAEK	Mana after each kill	TEAL	Life & Mana	2									
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT60	Life Steal	TEAL	Life & Mana	3	6								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT62	Mana Steal	TEAL	Life & Mana	3									
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT86	Life after each kill	TEAL	Life & Mana	2									
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	24	48	72	96						
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT115	Ignore Target’s Defense	SAGE	Other	0	0								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT116	-N% Target Defense	SAGE	Other	17									
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT117	Prevent Monster Heal	SAGE	Other	0									
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		EDAM	Enhanced Damage	RED	Physical Damage	150	250	350	400	450	500	550	600	650	700
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	27	55								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT121	Damage to Demons	RED	Physical Damage	150	250								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT218	Max Damage per Level	RED	Physical Damage	0	1								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		FCR	Faster Cast Rate	YELLOW	Speed	9	19	29	39	45					
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		IAS	Increased Attack Speed	YELLOW	Speed	15	25	35	45	55					
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	20									
-(WEAPON !WAND !SOR)	Medium-Large Weapons		SOCK	Sockets	SAGE	Other	2									
 (ZON (SPEAR OR JAV))	Amazon Spears & Javelins		TABSK2	Javelin and Spear Skills	GOLD	Skills	2	3	4	5						
 (ZON BOW)	Amazon Bows		TABSK0	Bow and Crossbow Skills	GOLD	Skills	2	3	4	5						
-amu	Amulets		LIFE	Life 	TEAL	Life & Mana	30	45	60							
-amu	Amulets		STAT60	Life Steal	TEAL	Life & Mana	3									
-amu	Amulets		STAT62	Mana Steal	TEAL	Life & Mana	4									
-amu	Amulets		STAT86	Life after each kill	TEAL	Life & Mana	4									
-amu	Amulets		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	22	45	68	91	114	137	160			
-amu	Amulets		STAT109	Reduced Curse Duration	PURPLE	Magical Defense	17									
-amu	Amulets		STAT110	Poison Length Reduced	PURPLE	Magical Defense	65	115	165							
-amu	Amulets		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
-amu	Amulets		STAT35	MDR	PURPLE	Magical Defense	10	15								
-amu	Amulets		AR	Attack Rating	SAGE	Other	119									
-amu	Amulets		CHSK54	Teleport Charges	SAGE	Other	0	0								
-amu	Amulets		GFIND	Gold Find	SAGE	Other	40									
-amu	Amulets		MFIND	Magic Find	SAGE	Other	15	30								
-amu	Amulets		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	7	14	20							
-amu	Amulets		STAT34	Flat PDR	BLUE	Physical Defense	10	15								
-amu	Amulets		FCR	Faster Cast Rate	YELLOW	Speed	4	9	14	19						
-amu	Amulets		FHR	Faster Hit Recovery	YELLOW	Speed	14	18								
-amu	Amulets		STAT3	Vitality	DARK_GREEN	Stats	15									
-amu	Amulets		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	20	40	60							
-ARROWS	Arrows		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	23	29	35	41						
-BELT	Belts		STAT135	Open Wounds Chance	CORAL	Damage Effects	14	18								
-BELT	Belts		DTM	Damage taken gained as mana	TEAL	Life & Mana	8									
-BELT	Belts		LIFE	Life 	TEAL	Life & Mana	46	73								
-BELT	Belts		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	22	45	67							
-BELT	Belts		STAT110	Poison Length Reduced	PURPLE	Magical Defense	45	90								
-BELT	Belts		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
-BELT	Belts		GFIND	Gold Find	SAGE	Other	51									
-BELT	Belts		MFIND	Magic Find	SAGE	Other	25									
-BELT	Belts		EDEF	Enhanced Defense	BLUE	Physical Defense	100	200								
-BELT	Belts		STAT34	Flat PDR	BLUE	Physical Defense	4									
-BELT	Belts		STAT36	% PDR	BLUE	Physical Defense	4	8								
-BELT	Belts		FCR	Faster Cast Rate	YELLOW	Speed	4	9	14	19						
-BELT	Belts		FHR	Faster Hit Recovery	YELLOW	Speed	8	18	28							
-BELT	Belts		IAS	Increased Attack Speed	YELLOW	Speed	7									
-BELT	Belts		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	15									
-BOLTS	Bolts		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	5	11	17	23						
-CHARM	All Charms		FHR	Faster Hit Recovery	YELLOW	Speed	0									
-CHARM	All Charms		FRW	Faster Run/Walk	YELLOW	Speed	0									
-CHARM	All Charms		FCR	Faster Hit Recovery	YELLOW	Speed	1	3	5							
-CHARM	All Charms		IAS	Faster Run/Walk	YELLOW	Speed	2	4	6							
-CHEST	Chests	ETH	REPAIR	Ethereal & Self-repair	GRAY	Ethereal	0	0								
-CHEST	Chests		LIFE	Life 	TEAL	Life & Mana	40	80	100							
-CHEST	Chests		MAEK	Mana after each kill	TEAL	Life & Mana	2	5								
-CHEST	Chests		STAT216	Life per level	TEAL	Life & Mana	0									
-CHEST	Chests		STAT86	Life after each kill	TEAL	Life & Mana	2	5								
-CHEST	Chests		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66	100	133	166					
-CHEST	Chests		MFIND	Magic Find	SAGE	Other	25									
-CHEST	Chests		SOCK	Sockets	SAGE	Other	2									
-CHEST	Chests		STAT91	-N% Requirements	SAGE	Other	15									
-CHEST	Chests		EDAM	Enhanced Damage	RED	Physical Damage	100	150								
-CHEST	Chests		EDEF	Enhanced Defense	BLUE	Physical Defense	80	140	200							
-CHEST	Chests		STAT20	Block Chance	BLUE	Physical Defense	9	19								
-CHEST	Chests		STAT34	Flat PDR	BLUE	Physical Defense	11	18								
-CHEST	Chests		STAT36	% PDR	BLUE	Physical Defense	6	13	20							
-CHEST	Chests		FCR	Faster Cast Rate	YELLOW	Speed	9	19	27							
-CHEST	Chests		FHR	Faster Hit Recovery	YELLOW	Speed	11	23	27							
-CHEST	Chests		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	20	40								
-cm1	Small Charms		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	26	38	50	62						
-cm1	Small Charms		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	27	40	52	64						
-cm1	Small Charms		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	21	31	40	50						
-cm1	Small Charms		LIFE	Life 	TEAL	Life & Mana	12									
-cm1	Small Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	8	11	15							
-cm1	Small Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	0	1	2	3						
-cm1	Small Charms		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	1									
-cm2	Large Charms		STAT329	Fire Mastery	ORANGE	Elemental Damage	0	1	2							
-cm2	Large Charms		STAT330	Lightning Mastery	ORANGE	Elemental Damage	0	1	2							
-cm2	Large Charms		STAT331	Cold Mastery	ORANGE	Elemental Damage	0	1	2							
-cm2	Large Charms		STAT332	Poison Mastery	ORANGE	Elemental Damage	0	1	2							
-cm2	Large Charms		STAT357	Magic Mastery	ORANGE	Elemental Damage	0	1	2							
-cm2	Large Charms		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	51	73	96	119						
-cm2	Large Charms		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	54	79	103	127						
-cm2	Large Charms		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	43	62	81	100						
-cm2	Large Charms		LIFE	Life 	TEAL	Life & Mana	20									
-cm2	Large Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	13	20	27							
-cm2	Large Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	0	3	5	6						
-cm2	Large Charms		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	3									
-cm3	Grand Charms		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	69	99	130	161						
-cm3	Grand Charms		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	73	106	139	172						
-cm3	Grand Charms		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	58	84	110	136						
-cm3	Grand Charms		LIFE	Life 	TEAL	Life & Mana	25									
-cm3	Grand Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	19	35	47							
-cm3	Grand Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	2	5	8	10						
 cm3	Grand Charms		TABSK0	Bow and Crossbow Skills	GOLD	Skills	0	0	0							
 cm3	Grand Charms		TABSK1	Passive and Magic Skills	GOLD	Skills	0									
 cm3	Grand Charms		TABSK10	Cold Spells	GOLD	Skills	0	0	0							
@@ -231,83 +97,217 @@ cm3	Grand Charms		TABSK49	Shadow Disciplines	GOLD	Skills	0
 cm3	Grand Charms		TABSK50	Martial Arts	GOLD	Skills	0	0								
 cm3	Grand Charms		TABSK8	Fire Spells	GOLD	Skills	0	0	0							
 cm3	Grand Charms		TABSK9	Lightning Spells	GOLD	Skills	0	0	0							
-cm3	Grand Charms		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	4									
-DAGGER	Melee Daggers		STAT141	Deadly Strike	CORAL	Damage Effects	36	53								
-DIN	Paladin Shields (no ED)	EDAM=0	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	80	113	146	180	213	246				
-DIN	Paladin Shields (low ED)	EDAM~1-65	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	68	101	134	167	200	233				
-DIN	Paladin Shields (mid ED)	EDAM~66-112	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	56	89	122	155	188	221				
-DIN	Paladin Shields (high ED)	EDAM~113-160	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	44	77	110	143	176	209				
+WEAPON	Weapons		ALLSK	All Skills	GOLD	Skills	1	1	2	3						
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors	ETH	REPAIR	Ethereal & Self-repair	GRAY	Ethereal	0									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons	ETH	REPAIR	Ethereal & Self-repair	GRAY	Ethereal	0	0								
+CHEST	Chests	ETH	REPAIR	Ethereal & Self-repair	GRAY	Ethereal	0	0								
+SHIELD	Shields	ETH	REPAIR	Ethereal & Self-repair	GRAY	Ethereal	0	0								
+(BOW OR XBOW)	Missile Weapons		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	246	492								
+(BOW OR XBOW)	Missile Weapons		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	192	384								
+(BOW OR XBOW)	Missile Weapons		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	153	306								
+(SOR OR WAND OR STAFF)	Caster Weapons		CHSK447	Lower Res Charges	ORANGE	Elemental Damage	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,23640	10% Chance to Cast Level 24 Ice Barrage on Casting	ORANGE	Elemental Damage	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,23646	10% Chance to Cast Level 30 Ice Barrage on Casting	ORANGE	Elemental Damage	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,2456	18% Chance to Cast Level 24 Charged Bolt on Casting	ORANGE	Elemental Damage	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,2462	18% Chance to Cast Level 30 Charged Bolt on Casting	ORANGE	Elemental Damage	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,2840	16% Chance to Cast Level 24 Frost Nova on Casting	ORANGE	Elemental Damage	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,2846	16% Chance to Cast Level 30 Frost Nova on Casting	ORANGE	Elemental Damage	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28613	Lower Res cast proc Low	ORANGE	Elemental Damage	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28618	Lower Res cast proc Mid	ORANGE	Elemental Damage	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,28623	Lower Res cast proc High	ORANGE	Elemental Damage	0	0	0							
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3032	14% Chance to Cast Level 24 Fire Ball on Casting	ORANGE	Elemental Damage	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3038	14% Chance to Cast Level 30 Fire Ball on Casting	ORANGE	Elemental Damage	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3096	14% Chance to Cast Level 24 Nova on Casting	ORANGE	Elemental Damage	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3102	14% Chance to Cast Level 30 Nova on Casting	ORANGE	Elemental Damage	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3160	14% Chance to Cast Level 24 Lightning on Casting	ORANGE	Elemental Damage	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3166	14% Chance to Cast Level 30 Lightning on Casting	ORANGE	Elemental Damage	0	0								
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3416	12% Chance to Cast Level 24 Chain Lightning on Casting	ORANGE	Elemental Damage	0									
+(SOR OR WAND OR STAFF)	Caster Weapons		MULTI200,3422	12% Chance to Cast Level 30 Chain Lightning on Casting	ORANGE	Elemental Damage	0	0								
+(WEAPON !STAFF !WAND !SOR !BOW !XBOW)	Non-caster Non-missile Weapons		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	313	627	940							
+(WEAPON !STAFF !WAND !SOR !BOW !XBOW)	Non-caster Non-missile Weapons		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	246	493	739							
+(WEAPON !STAFF !WAND !SOR !BOW !XBOW)	Non-caster Non-missile Weapons		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	235	471	707							
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28613	Lower Res proc Low	ORANGE	Elemental Damage	0									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28618	Lower Res proc Mid	ORANGE	Elemental Damage	0	0								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MULTI198,28623	Lower Res proc High	ORANGE	Elemental Damage	0	0	0							
+cm1	Small Charms		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	26	38	50	62						
+cm1	Small Charms		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	27	40	52	64						
+cm1	Small Charms		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	21	31	40	50						
+cm2	Large Charms		STAT329	Fire Mastery	ORANGE	Elemental Damage	0	1	2							
+cm2	Large Charms		STAT330	Lightning Mastery	ORANGE	Elemental Damage	0	1	2							
+cm2	Large Charms		STAT331	Cold Mastery	ORANGE	Elemental Damage	0	1	2							
+cm2	Large Charms		STAT332	Poison Mastery	ORANGE	Elemental Damage	0	1	2							
+cm2	Large Charms		STAT357	Magic Mastery	ORANGE	Elemental Damage	0	1	2							
+cm2	Large Charms		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	51	73	96	119						
+cm2	Large Charms		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	54	79	103	127						
+cm2	Large Charms		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	43	62	81	100						
+cm3	Grand Charms		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	69	99	130	161						
+cm3	Grand Charms		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	73	106	139	172						
+cm3	Grand Charms		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	58	84	110	136						
+QUIVER	Quivers		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	313	627	940							
+QUIVER	Quivers		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	246	493	739							
+QUIVER	Quivers		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	235	471	707							
+WEAPON	Weapons		STAT333	-N% Enemy Fire Resistance	ORANGE	Elemental Damage	4	7	12							
+WEAPON	Weapons		STAT334	-N% Enemy Lightning Resistance	ORANGE	Elemental Damage	4	7	12							
+WEAPON	Weapons		STAT335	-N% Enemy Cold Resistance	ORANGE	Elemental Damage	4	7	12							
+WEAPON	Weapons		STAT336	-N% Enemy Poison Resistance	ORANGE	Elemental Damage	4	7	12							
+(ARMOR !BELT)	Armor except belts		STAT110	Poison Length Reduced	PURPLE	Magical Defense	65	115	165							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	30	60	90	120	150	180	210			
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
+(SHIELD !DIN)	Non-Paladin Shields		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66	100	133	166					
+(SOR OR WAND OR STAFF)	Caster Weapons		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	24	48	72	96						
+amu	Amulets		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	22	45	68	91	114	137	160			
+amu	Amulets		STAT109	Reduced Curse Duration	PURPLE	Magical Defense	17									
+amu	Amulets		STAT110	Poison Length Reduced	PURPLE	Magical Defense	65	115	165							
+amu	Amulets		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
+amu	Amulets		STAT35	MDR	PURPLE	Magical Defense	10	15								
+BELT	Belts		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	22	45	67							
+BELT	Belts		STAT110	Poison Length Reduced	PURPLE	Magical Defense	45	90								
+BELT	Belts		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
+CHEST	Chests		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66	100	133	166					
+cm1	Small Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	8	11	15							
+cm2	Large Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	13	20	27							
+cm3	Grand Charms		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	19	35	47							
 DIN	Paladin Shields (overcap ED)	EDAM>160	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66	100	133	166					
-DIN	Paladin Shields (no RES)	(FRES+CRES+LRES+PRES=0)	EDAM	Enhanced Damage	RED	Physical Damage	43	83	123	163						
-DIN	Paladin Shields (low RES)	(FRES+CRES+LRES+PRES>0 FRES+CRES+LRES+PRES<121)	EDAM	Enhanced Damage	RED	Physical Damage	42	82	122	162						
-DIN	Paladin Shields (mid RES)	(FRES+CRES+LRES+PRES>120 FRES+CRES+LRES+PRES<161)	EDAM	Enhanced Damage	RED	Physical Damage	41	81	121	161						
-DIN	Paladin Shields (high RES)	(FRES+CRES+LRES+PRES>160 FRES+CRES+LRES+PRES<201)	EDAM	Enhanced Damage	RED	Physical Damage	40	80	120	160						
-DIN	Paladin Shields (overcap RES)	(FRES+CRES+LRES+PRES>200)	EDAM	Enhanced Damage	RED	Physical Damage	39	79	119							
-jew	Jewels		STAT501	Open Wounds Damage	CORAL	Damage Effects	61	93								
-jew	Jewels		LIFE	Life 	TEAL	Life & Mana	15									
-jew	Jewels		MAEK	Mana after each kill	TEAL	Life & Mana	1									
-jew	Jewels		STAT86	Life after each kill	TEAL	Life & Mana	1									
+DIN	Paladin Shields (high ED)	EDAM~113-160	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	44	77	110	143	176	209				
+DIN	Paladin Shields (mid ED)	EDAM~66-112	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	56	89	122	155	188	221				
+DIN	Paladin Shields (low ED)	EDAM~1-65	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	68	101	134	167	200	233				
+DIN	Paladin Shields (no ED)	EDAM=0	FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	80	113	146	180	213	246				
 jew	Jewels		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	20	40	60	80						
-jew	Jewels		GFIND	Gold Find	SAGE	Other	25									
-jew	Jewels		MFIND	Magic Find	SAGE	Other	14									
+QUIVER	Quivers		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	36									
+rin	Rings		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	17	34	52	69	86					
+rin	Rings		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
+rin	Rings		STAT35	MDR	PURPLE	Magical Defense	5									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		EDAM	Enhanced Damage	RED	Physical Damage	24									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	10	20								
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT121	Damage to Demons	RED	Physical Damage	38									
+(MACE OR SCEPTER)	Bludgeoning Weapons		STAT122	Damage to Undead	RED	Physical Damage	275	375								
+(SHIELD !DIN)	Non-Paladin Shields		EDAM	Enhanced Damage	RED	Physical Damage	39	79	119							
+(WEAPON !STAFF !WAND !SOR !MACE !SCEPTER)	Non-caster Non-bludgeoning Weapons		STAT122	Damage to Undead	RED	Physical Damage	225	325								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		EDAM	Enhanced Damage	RED	Physical Damage	150	250	350	400	450	500	550	600	650	700
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	27	55								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT121	Damage to Demons	RED	Physical Damage	150	250								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT218	Max Damage per Level	RED	Physical Damage	0									
+amu	Amulets		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	7	14	20							
+ARROWS	Arrows		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	23	29	35	41						
+BOLTS	Bolts		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	5	11	17	23						
+CHEST	Chests		EDAM	Enhanced Damage	RED	Physical Damage	100	150								
+cm1	Small Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	0	1	2	3						
+cm2	Large Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	0	3	5	6						
+cm3	Grand Charms		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	2	5	8	10						
+DIN	Paladin Shields (overcap RES)	(FRES+CRES+LRES+PRES>200)	EDAM	Enhanced Damage	RED	Physical Damage	39	79	119							
+DIN	Paladin Shields (high RES)	(FRES+CRES+LRES+PRES>160 FRES+CRES+LRES+PRES<201)	EDAM	Enhanced Damage	RED	Physical Damage	40	80	120	160						
+DIN	Paladin Shields (mid RES)	(FRES+CRES+LRES+PRES>120 FRES+CRES+LRES+PRES<161)	EDAM	Enhanced Damage	RED	Physical Damage	41	81	121	161						
+DIN	Paladin Shields (low RES)	(FRES+CRES+LRES+PRES>0 FRES+CRES+LRES+PRES<121)	EDAM	Enhanced Damage	RED	Physical Damage	42	82	122	162						
+DIN	Paladin Shields (no RES)	(FRES+CRES+LRES+PRES=0)	EDAM	Enhanced Damage	RED	Physical Damage	43	83	123	163						
 jew	Jewels		EDAM	Enhanced Damage	RED	Physical Damage	26	33								
 jew	Jewels		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	11	22	32	43						
 jew	Jewels		STAT121	Damage to Demons	RED	Physical Damage	33									
 jew	Jewels		STAT122	Damage to Undead	RED	Physical Damage	33									
-jew	Jewels		FHR	Faster Hit Recovery	YELLOW	Speed	4	7								
-jew	Jewels		IAS	Increased Attack Speed	YELLOW	Speed	5	10								
-jew	Jewels		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	4	9								
-QUIVER	Quivers		STAT136+STAT136+STAT136+STAT141+STAT141	Crushing Blow & Deadly Strike	CORAL	Damage Effects	35	70	105							
-QUIVER	Quivers		STAT48+STAT49	Fire Damage	ORANGE	Elemental Damage	313	627	940							
-QUIVER	Quivers		STAT50+STAT51	Lightning Damage	ORANGE	Elemental Damage	246	493	739							
-QUIVER	Quivers		STAT54+STAT55	Cold Damage	ORANGE	Elemental Damage	235	471	707							
+QUIVER	Quivers		EDAM	Enhanced Damage	RED	Physical Damage	27	46								
+rin	Rings		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	7	14	20	27						
+(BOW OR XBOW)	Missile Weapons		STAT112	Hit Causes Monster to Flee	SAGE	Other	0									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		AR	Attack Rating	SAGE	Other	80	160	240							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		CHSK54	Teleport Charges	SAGE	Other	0									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		GFIND	Gold Find	SAGE	Other	59									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		MFIND	Magic Find	SAGE	Other	19	39								
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT116	-N% Target Defense	SAGE	Other	14	18								
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT225	AR per level	SAGE	Other	0									
+(QUIVER OR THROWING OR BOW OR XBOW)	Quivers, Throwing Weapons, Missile Weapons		STAT81	Knockback	SAGE	Other	0									
+(SOR OR WAND)	Small Weapons		SOCK	Sockets	SAGE	Other	1									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT115	Ignore Target’s Defense	SAGE	Other	0	0								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT116	-N% Target Defense	SAGE	Other	17									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT117	Prevent Monster Heal	SAGE	Other	0									
+(WEAPON !WAND !SOR)	Medium-Large Weapons		SOCK	Sockets	SAGE	Other	2									
+amu	Amulets		AR	Attack Rating	SAGE	Other	119									
+amu	Amulets		CHSK54	Teleport Charges	SAGE	Other	0	0								
+amu	Amulets		GFIND	Gold Find	SAGE	Other	40									
+amu	Amulets		MFIND	Magic Find	SAGE	Other	15	30								
+BELT	Belts		GFIND	Gold Find	SAGE	Other	51									
+BELT	Belts		MFIND	Magic Find	SAGE	Other	25									
+CHEST	Chests		MFIND	Magic Find	SAGE	Other	25									
+CHEST	Chests		SOCK	Sockets	SAGE	Other	2									
+CHEST	Chests		STAT91	-N% Requirements	SAGE	Other	15									
+jew	Jewels		GFIND	Gold Find	SAGE	Other	25									
+jew	Jewels		MFIND	Magic Find	SAGE	Other	14									
+QUIVER	Quivers		STAT156	Pierce	SAGE	Other	15	25	35							
+SHIELD	Shields		MFIND	Magic Find	SAGE	Other	25									
+SHIELD	Shields		SOCK	Sockets	SAGE	Other	2									
+SHIELD	Shields		STAT91	-N% Requirements	SAGE	Other	15									
+WEAPON	Weapons		AR	Attack Rating	SAGE	Other	150	300	450	600						
+WEAPON	Weapons		MFIND	Magic Find	SAGE	Other	25									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		LIFE	Life 	TEAL	Life & Mana	34	68								
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		MAEK	Mana after each kill	TEAL	Life & Mana	2	4	6							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT216	Life per level	TEAL	Life & Mana	0									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT60	Life Steal	TEAL	Life & Mana	2	5	10							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT62	Mana Steal	TEAL	Life & Mana	2									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT77	Max mana %	TEAL	Life & Mana	12	24								
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		STAT86	Life after each kill	TEAL	Life & Mana	2	4	6							
+(SOR OR WAND OR STAFF)	Caster Weapons		DTM	Damage taken gained as mana	TEAL	Life & Mana	15	25								
+(SOR OR WAND OR STAFF)	Caster Weapons		MAEK	Mana after each kill	TEAL	Life & Mana	3	6								
+(SOR OR WAND OR STAFF)	Caster Weapons		MANA	Mana 	TEAL	Life & Mana	60	90	120							
+(SOR OR WAND OR STAFF)	Caster Weapons		STAT86	Life after each kill	TEAL	Life & Mana	3	6								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		CHSK445	Life Tap Charges	TEAL	Life & Mana	0	0								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MAEK	Mana after each kill	TEAL	Life & Mana	2									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT60	Life Steal	TEAL	Life & Mana	3	6								
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT62	Mana Steal	TEAL	Life & Mana	3									
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT86	Life after each kill	TEAL	Life & Mana	2									
+amu	Amulets		LIFE	Life 	TEAL	Life & Mana	30	45	60							
+amu	Amulets		STAT60	Life Steal	TEAL	Life & Mana	3									
+amu	Amulets		STAT62	Mana Steal	TEAL	Life & Mana	4									
+amu	Amulets		STAT86	Life after each kill	TEAL	Life & Mana	4									
+BELT	Belts		DTM	Damage taken gained as mana	TEAL	Life & Mana	8									
+BELT	Belts		LIFE	Life 	TEAL	Life & Mana	46	73								
+CHEST	Chests		LIFE	Life 	TEAL	Life & Mana	40	80	100							
+CHEST	Chests		MAEK	Mana after each kill	TEAL	Life & Mana	2	5								
+CHEST	Chests		STAT216	Life per level	TEAL	Life & Mana	0									
+CHEST	Chests		STAT86	Life after each kill	TEAL	Life & Mana	2	5								
+cm1	Small Charms		LIFE	Life 	TEAL	Life & Mana	12									
+cm2	Large Charms		LIFE	Life 	TEAL	Life & Mana	20									
+cm3	Grand Charms		LIFE	Life 	TEAL	Life & Mana	25									
+jew	Jewels		LIFE	Life 	TEAL	Life & Mana	15									
+jew	Jewels		MAEK	Mana after each kill	TEAL	Life & Mana	1									
+jew	Jewels		STAT86	Life after each kill	TEAL	Life & Mana	1									
 QUIVER	Quivers		MAEK	Mana after each kill	TEAL	Life & Mana	3									
 QUIVER	Quivers		STAT60	Life Steal	TEAL	Life & Mana	3									
 QUIVER	Quivers		STAT62	Mana Steal	TEAL	Life & Mana	3									
 QUIVER	Quivers		STAT86	Life after each kill	TEAL	Life & Mana	3									
-QUIVER	Quivers		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	36									
-QUIVER	Quivers		STAT156	Pierce	SAGE	Other	15	25	35							
-QUIVER	Quivers		EDAM	Enhanced Damage	RED	Physical Damage	27	46								
-QUIVER	Quivers		IAS	Increased Attack Speed	YELLOW	Speed	9	19								
+rin	Rings		AR	Attack Rating	TEAL	Other	65									
+rin	Rings		GFIND	Gold Find	TEAL	Other	32									
 rin	Rings		LIFE	Life 	TEAL	Life & Mana	20	30	40							
 rin	Rings		MAEK	Mana after each kill	TEAL	Life & Mana	0	2								
+rin	Rings		MFIND	Magic Find	TEAL	Other	15	25								
 rin	Rings		STAT60	Life Steal	TEAL	Life & Mana	4									
 rin	Rings		STAT62	Mana Steal	TEAL	Life & Mana	3									
 rin	Rings		STAT86	Life after each kill	TEAL	Life & Mana	1									
-rin	Rings		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	17	34	52	69	86					
-rin	Rings		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
-rin	Rings		STAT35	MDR	PURPLE	Magical Defense	5									
-rin	Rings		AR	Attack Rating	TEAL	Other	65									
-rin	Rings		GFIND	Gold Find	TEAL	Other	32									
-rin	Rings		MFIND	Magic Find	TEAL	Other	15	25								
-rin	Rings		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	7	14	20	27						
-rin	Rings		STAT34	Flat PDR	BLUE	Physical Defense	5	10								
-rin	Rings		FCR	Faster Cast Rate	YELLOW	Speed	4	9								
-rin	Rings		STAT3	Vitality	DARK_GREEN	Stats	7									
-rin	Rings		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	12	23								
-SHIELD	Shields	ETH	REPAIR	Ethereal & Self-repair	GRAY	Ethereal	0	0								
 SHIELD	Shields		LIFE	Life 	TEAL	Life & Mana	40	80								
 SHIELD	Shields		MAEK	Mana after each kill	TEAL	Life & Mana	2									
 SHIELD	Shields		STAT216	Life per level	TEAL	Life & Mana	0									
 SHIELD	Shields		STAT60	Life Steal	TEAL	Life & Mana	3									
 SHIELD	Shields		STAT62	Mana Steal	TEAL	Life & Mana	3									
 SHIELD	Shields		STAT86	Life after each kill	TEAL	Life & Mana	2									
-SHIELD	Shields		MFIND	Magic Find	SAGE	Other	25									
-SHIELD	Shields		SOCK	Sockets	SAGE	Other	2									
-SHIELD	Shields		STAT91	-N% Requirements	SAGE	Other	15									
-SHIELD	Shields		EDEF	Enhanced Defense	BLUE	Physical Defense	80	140								
-SHIELD	Shields		STAT20	Block Chance	BLUE	Physical Defense	9	19	29	36						
-SHIELD	Shields		STAT34	Flat PDR	BLUE	Physical Defense	11	18								
-SHIELD	Shields		STAT36	% PDR	BLUE	Physical Defense	6	13	20							
-SHIELD	Shields		FBR	Faster Block Rate	YELLOW	Speed	49									
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		FCR	Faster Cast Rate	YELLOW	Speed	4	9	14	19						
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		FHR	Faster Hit Recovery	YELLOW	Speed	9	19	26							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		FRW	Faster Run/Walk	YELLOW	Speed	19	29	35							
+(GLOVES OR BOOTS OR HELM OR CIRC)	4x4 armors		IAS	Increased Attack Speed	YELLOW	Speed	7	17	27							
+(SOR OR WAND)	Non-staff Caster Weapons		FCR	Faster Cast Rate	YELLOW	Speed	9	19	29	39	45					
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		FCR	Faster Cast Rate	YELLOW	Speed	9	19	29	39	45					
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		IAS	Increased Attack Speed	YELLOW	Speed	15	25	35	45	55					
+amu	Amulets		FCR	Faster Cast Rate	YELLOW	Speed	4	9	14	19						
+amu	Amulets		FHR	Faster Hit Recovery	YELLOW	Speed	14	18								
+BELT	Belts		FCR	Faster Cast Rate	YELLOW	Speed	4	9	14	19						
+BELT	Belts		FHR	Faster Hit Recovery	YELLOW	Speed	8	18	28							
+BELT	Belts		IAS	Increased Attack Speed	YELLOW	Speed	7									
+CHARM	All Charms		FCR	Faster Hit Recovery	YELLOW	Speed	1	3	5							
+CHARM	All Charms		FHR	Faster Hit Recovery	YELLOW	Speed	0									
+CHARM	All Charms		FRW	Faster Run/Walk	YELLOW	Speed	0									
+CHARM	All Charms		IAS	Faster Run/Walk	YELLOW	Speed	2	4	6							
+CHEST	Chests		FCR	Faster Cast Rate	YELLOW	Speed	9	19	27							
+CHEST	Chests		FHR	Faster Hit Recovery	YELLOW	Speed	11	23	27							
+jew	Jewels		FHR	Faster Hit Recovery	YELLOW	Speed	4	7								
+jew	Jewels		IAS	Increased Attack Speed	YELLOW	Speed	5	10								
+QUIVER	Quivers		IAS	Increased Attack Speed	YELLOW	Speed	9	19								
+rin	Rings		FCR	Faster Cast Rate	YELLOW	Speed	4	9								
 SHIELD	Shields		FCR	Faster Cast Rate	YELLOW	Speed	9	19	27							
 SHIELD	Shields		FHR	Faster Hit Recovery	YELLOW	Speed	11	23								
-SHIELD	Shields		STR+DEX	Strength & Dexterity	DARK_GREEN	Stats	20	40								
 STAFF	Staffs		FCR	Faster Cast Rate	YELLOW	Speed	59	69	79	89	99	105				
-WEAPON	Weapons		STAT333	-N% Enemy Fire Resistance	ORANGE	Elemental Damage	4	7	12							
-WEAPON	Weapons		STAT334	-N% Enemy Lightning Resistance	ORANGE	Elemental Damage	4	7	12							
-WEAPON	Weapons		STAT335	-N% Enemy Cold Resistance	ORANGE	Elemental Damage	4	7	12							
-WEAPON	Weapons		STAT336	-N% Enemy Poison Resistance	ORANGE	Elemental Damage	4	7	12							
-WEAPON	Weapons		AR	Attack Rating	SAGE	Other	150	300	450	600						
-WEAPON	Weapons		MFIND	Magic Find	SAGE	Other	25									
-WEAPON	Weapons		ALLSK	All Skills	GOLD	Skills	1	1	2	3						
