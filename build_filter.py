@@ -19,7 +19,7 @@ structure = {
         'Miscellaneous Items': TEMPLATE_DIR / 'misc_items.filter'},
         'General Tags and Appearance': GENERATOR_DIR / 'style.py',
         'Base Item Tags': TEMPLATE_DIR / 'base_items.filter',
-        'Gold and Sale Prices': TEMPLATE_DIR / 'gold_sales.filter',
+        'Gold and Sellables': TEMPLATE_DIR / 'gold_sellables.filter',
         'Non-magic Modifiers': TEMPLATE_DIR / 'nonmagic_mods.filter',
         'Skill Modifying Items (pointmods)': GENERATOR_DIR / 'pointmods.py',
         'Hiding and Highlighting': {
@@ -48,6 +48,7 @@ structure = {
         'Shop Highlights': TEMPLATE_DIR / 'shop_hunting.filter',
         'Affix Callouts': TEMPLATE_DIR / 'affix_callouts.filter',
         'Notes on Maps': TEMPLATE_DIR / 'map_notes.filter',
+        'Sale Value and Shops': TEMPLATE_DIR / 'shop_selling.filter',
         'Unknown Item Catch-all': TEMPLATE_DIR / 'unknown_items.filter'}}
         
         
