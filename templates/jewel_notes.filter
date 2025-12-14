@@ -1,12 +1,15 @@
 //Jewel notes
 
-ItemDisplay[jew ID RARE ILVL~98-99 STAT486=0]: %NAME%{%NAME%68}%CONTINUE%
-ItemDisplay[jew ID RARE STAT486=0 REROLLALVL>67]: %NAME%{%CL%%NAME%%WHITE%Level After Reroll:%GREEN%%REROLLALVL%%CL%}%CONTINUE%
-ItemDisplay[jew ID RARE STAT486=0 REROLLALVL~66-67]: %NAME%{%CL%%NAME%%WHITE%Level After Reroll:%GREEN%%REROLLALVL%%CL%}%CONTINUE%
-ItemDisplay[jew ID RARE STAT486=0 REROLLALVL<66]: %NAME%{%CL%%NAME%%WHITE%Level After Reroll:%RED%%REROLLALVL%%CL%}%CONTINUE%
+// STAT486 is mirrored state (cannot reroll, and wouldn't want to anyway)
+ItemDisplay[jew ID RARE STAT486=0 REROLLALVL>67]: %NAME%{%CL%%NAME%%WHITE%Level After Reroll:%GREEN%%REROLLALVL% (Reroll!)%CL%}%CONTINUE%
+ItemDisplay[jew ID RARE STAT486=0 REROLLALVL~66-67]: %NAME%{%CL%%NAME%%WHITE%Level After Reroll:%YELLOW%%REROLLALVL% (No bleed affix)most affixes%CL%}%CONTINUE%
+ItemDisplay[jew ID RARE STAT486=0 REROLLALVL<66]: %NAME%{%CL%%NAME%%WHITE%Level After Reroll:%RED%%REROLLALVL% (Don't reroll)%CL%}%CONTINUE%
 
-ItemDisplay[jew ID RARE ILVL>67 STAT486=0]: %NAME%{%CL%%NAME%%WHITE%To %YELLOW%Reroll %WHITE%Cube with 3 x Perf %GRAY%O%CL%}%CONTINUE%
-ItemDisplay[jew ID]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Cube with %GRAY%key %WHITE%to Destroy Into: %BLUE%Jewel Fragments%CL%}%CONTINUE%
+ItemDisplay[jew ID RARE ILVL>67 STAT486=0]: %NAME%{%CL%%NAME%%WHITE%To %YELLOW%Reroll %WHITE%Cube with 3 x Perf %GRAY%·%CL%}%CONTINUE%
+ItemDisplay[jew ID]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Cube with %TAN%key %WHITE%to shatter into: %BLUE%Jewel Fragments%CL%}%CONTINUE%
+
+// Show colors of mirrored jewels
 ItemDisplay[jew STAT477=21 ]: %NAME%{%TAN%Note%WHITE%: White %BLUE%Jewel}
 ItemDisplay[jew STAT477=4 ]: %NAME%{%TAN%Note%WHITE%: %GRAY%Black %BLUE%Jewel}
-ItemDisplay[jewf ID]: %BLUE%%NAME%{%GRAY%(Stackable Jewel)%NL%%TAN%Note%WHITE%: Use Those in Cube Recipes}
+
+ItemDisplay[jewf ID]: %BLUE%%NAME%{%NAME%%CL%Stackable jewel for use in recipes.}
