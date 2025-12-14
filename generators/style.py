@@ -63,6 +63,13 @@ class Padder:
 
     def set_length(self, length):
         """Allow p=Padder.set_length(3)"""
+        if length < 1:
+            warnings.warn(
+                f"Attempted to set padder length to {length}."
+                f"Using minimum length of 1 instead.",
+                UserWarning,
+                stacklevel=2
+                )
         self.length = length
         return self
 
@@ -146,26 +153,27 @@ class Name:
                 total += len(str(part))
         return total
 
-    def set_padding(self, total_len = 52):
+    def set_padding(self, total_len = 55):
         """Distribute total padding between all padders"""
-        if total_len > 52:
-            raise ValueError(f"Cannot pad name to length {total_len} (exceeds maximum of 52 characters).")
+        if total_len > 55:
+            raise ValueError(f"Cannot pad name to length {total_len} (exceeds maximum of 55 characters).")
         
         # Get the unpadded length
         # Also grab all the padders for subsequent length distribution.
         padders = []
         for p in self.parts:
             if hasattr(p, 'length'):
-                p.length = 0
+                p.set_length(1)
                 padders.append(p)
         unpadded_len = self.render_length
         padding = total_len - unpadded_len
         
-        if unpadded_len > 52:
+        if unpadded_len > 55:
             # This name exceeds the maximum length limit of the filter
+            # Testing seems to indicate that actual maximum length is 57 characters. -2 for safety.
             warnings.warn(
-                f"Displayed item name exceeds maximum length of 52 characters.\n"
-                f"  Length={unpadded_len}\n:"
+                f"Displayed item name exceeds maximum length of 55 characters.\n"
+                f"  Length={unpadded_len}:\n"
                 f"  {str(self)}",
                 UserWarning,
                 stacklevel=2
@@ -189,7 +197,8 @@ class Name:
         i = 0
         quotient, remainder = divmod(padding, len(padders))
         for i, padder in enumerate(padders):
-            padder.length = quotient + (1 if i < remainder else 0)
+            l = max(quotient + (1 if i < remainder else 0), 1)
+            padder.set_length(l)
 
         return self
 
