@@ -156,7 +156,7 @@ WEAPON	Weapons		STAT336	-N% Enemy Poison Resistance	ORANGE	Elemental Damage	4	7	
 (SHIELD !DIN)	Non-Paladin Shields		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66	100	133	166					
 (SOR OR WAND OR STAFF)	Caster Weapons		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	24	48	72	96						
-amu	Amulets		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	22	45	68	91	114	137	160			
+amu	Amulets		FRES+CRES+LRES+PRES	Total Resistances	PURPLE	Magical Defense	33	66	100	133	166					
 amu	Amulets		STAT109	Reduced Curse Duration	PURPLE	Magical Defense	17									
 amu	Amulets		STAT110	Poison Length Reduced	PURPLE	Magical Defense	65	115	165							
 amu	Amulets		STAT118	Half Freeze Duration	PURPLE	Magical Defense	0									
@@ -184,7 +184,7 @@ rin	Rings		STAT35	MDR	PURPLE	Magical Defense	5
 (MACE OR SCEPTER)	Bludgeoning Weapons		STAT122	Damage to Undead	RED	Physical Damage	275	375								
 (SHIELD !DIN)	Non-Paladin Shields		EDAM	Enhanced Damage	RED	Physical Damage	39	79	119							
 (WEAPON !STAFF !WAND !SOR !MACE !SCEPTER)	Non-caster Non-bludgeoning Weapons		STAT122	Damage to Undead	RED	Physical Damage	225	325								
-(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		EDAM	Enhanced Damage	RED	Physical Damage	150	250	350	400	450	500	550	600	650	700
+(WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		EDAM	Enhanced Damage	RED	Physical Damage	100	200	275	350	400	450	500	550	600	650
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		MINDMG+MAXDMG	Flat Damage	RED	Physical Damage	27	55								
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT121	Damage to Demons	RED	Physical Damage	150	250								
 (WEAPON !STAFF !WAND !SOR)	Non-caster Weapons		STAT218	Max Damage per Level (measured as X/8)	RED	Physical Damage	2	5								

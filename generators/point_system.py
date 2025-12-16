@@ -199,7 +199,7 @@ def discard_worthless_affixes(regions, verbose=False):
             print('   Characteristic:', region.characteristic)
             print('   Initial shape:', describe_shape(region))
         
-        relevant_stats = set()
+        relevant_stats = set(['RES'])
         for rule in region.applicable_points:
             relevant_stats.add(rule.fields['stat'])
             if '+' in rule.fields['stat']:
@@ -242,7 +242,7 @@ def extract_stats(rules):
         assert (len(stats) == len(max_values)), unequal_message
         # Convert allres to four individual resistances
         if 'RES' in stats:
-            stats , max_values = convert_res(stats, vals)
+            stats , max_values = convert_res(stats, max_values)
         rule_stats = {}
         for stat, max_val in zip(stats, max_values):
             if '.' in max_val:
