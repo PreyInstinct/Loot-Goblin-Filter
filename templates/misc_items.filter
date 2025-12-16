@@ -8,7 +8,6 @@ ItemDisplay[wss]: %NAME%{%NAME%%CL%%WHITE%Non-magic %SAGE%Equipment%WHITE%: 50% 
 
 ItemDisplay[imrn (!GROUND OR ${town})]: %RED%Demonic Cube{%NAME%}%CONTINUE%
 ItemDisplay[imrn GROUND !${town}]: %DOT-83%%RED%¡¡¡ Demonic Cube !!!{%NAME%}%CONTINUE%
-ItemDisplay[imrn]: %NAME%{%NAME%%CL%%RED%Warning%WHITE%: Will also reroll the "anniversery” condition of the item, resulting in loss of anniversary colors.}%CONTINUE%
 ItemDisplay[imrn]: %NAME%{%NAME%%CL%%TAN%Note%WHITE%: Use to Reroll a %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}%CONTINUE%
 
 ItemDisplay[lbox (!GROUND OR ${town})]: %RED%Larzuk’s Puzzlebox{%NAME%}%CONTINUE%
@@ -97,13 +96,27 @@ ItemDisplay[pk2 (!GROUND OR ${town})]: %PURPLE%Key of Hate{%NAME%}%CONTINUE%
 ItemDisplay[pk2 GROUND !${town}]: %MAP-9B%%PURPLE%¡    Key of Hate    !{%NAME%}%CONTINUE%
 ItemDisplay[pk3 (!GROUND OR ${town})]: %PURPLE%Key of Destruction{%NAME%}%CONTINUE%
 ItemDisplay[pk3 GROUND !${town}]: %MAP-9B%%PURPLE%¡    Key of Destruction    !{%NAME%}%CONTINUE%
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %NAME%{%PURPLE%Key of Destruction%WHITE%: %GOLD%Nihlithak %WHITE%(12.6%) or %GOLD%Izual %WHITE%(12.1%)}%CONTINUE%
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %NAME%{%NAME%%CL%%PURPLE%Key of Hate%WHITE%: %GOLD%Summoner %WHITE%(13.5%) or %GOLD%Bloodwitch %WHITE%(12.1%)}%CONTINUE%
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %NAME%{%NAME%%CL%%PURPLE%Key of Terror%WHITE%: %GOLD%Countess %WHITE%(7.4%) or %GOLD%Blood Raven %WHITE%(12.1%)}%CONTINUE%
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %NAME%{%NAME%%CL%%TAN%Key Locations:}%CONTINUE%
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %NAME%{%NAME%%CL%%WHITE%Save up 3 sets (3x3) and open 3 portals in the same game to ensure one of each Mini-Uber.}%CONTINUE%
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %NAME%{%NAME%%CL%%WHITE%Combine 1 of each in cube to open a portal to %GOLD%Uber-Duriel%WHITE%, %GOLD%Uber-Izual%WHITE%, or %GOLD%Lillith%WHITE%.}%CONTINUE%
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %NAME%{%NAME%%CL%%WHITE%1 of 3 Mini-Uber keys.}
 ItemDisplay[dhn (!GROUND OR ${town})]: %PURPLE%Diablo’s Horn{%NAME%}%CONTINUE%
 ItemDisplay[dhn GROUND !${town}]: %MAP-9B%%PURPLE%¡  Diablo’s Horn  !{%NAME%}%CONTINUE%
 ItemDisplay[bey (!GROUND OR ${town})]: %PURPLE%Baal’s Eye{%NAME%}%CONTINUE%
 ItemDisplay[bey GROUND !${town}]: %MAP-9B%%PURPLE%¡  Baal’s Eye  !{%NAME%}%CONTINUE%
 ItemDisplay[mbr (!GROUND OR ${town})]: %PURPLE%Mephisto’s Brain{%NAME%}%CONTINUE%
 ItemDisplay[mbr GROUND !${town}]: %MAP-9B%%PURPLE%¡  Mephisto’s Brain  !{%NAME%}%CONTINUE%
+ItemDisplay[(dhn OR bey OR mbr)]: %NAME%{%PURPLE%Pandemonium Talisman %WHITE%opens portals to Uber Tristram.}%CONTINUE%
+ItemDisplay[(dhn OR bey OR mbr)]: %NAME%{%NAME%%CL%%WHITE%Combine 1 of each in cube to create a %PURPLE%Pandemonium Talisman%WHITE%.}%CONTINUE%
+ItemDisplay[(dhn OR bey OR mbr)]: %NAME%{%NAME%%CL%%WHITE%1 of 3 Uber keys.}
 ItemDisplay[ubtm]: %PURPLE%Pandemonium Talisman{%NAME%}%CONTINUE%
+ItemDisplay[ubtm]: %NAME%{%RED%Warning%WHITE%: It is highly advised to consult a guide before attempting Uber Tristram.}%CONTINUE%
+ItemDisplay[ubtm]: %NAME%{%NAME%%CL%%WHITE%Defeating all 3 Uber Prime Evils rewards a %GOLD%Hellfire Torch %WHITE%and a %PURPLE%Black Soulstone%WHITE%.}%CONTINUE%
+ItemDisplay[ubtm]: %NAME%{%NAME%%CL%%WHITE%Also creates 3 single-use portals back to Uber Tristram near the blood fountain.}%CONTINUE%
+ItemDisplay[ubtm]: %NAME%{%NAME%%CL%%WHITE%Grants access to Uber Tristram for all players near the blood fountain in Harrogath.}
 
 // Uber Ancients Keys
 ItemDisplay[ubaa (!GROUND OR ${town})]: %PURPLE%Sigil of Madawc{%NAME%}%CONTINUE%
@@ -112,7 +125,17 @@ ItemDisplay[ubab (!GROUND OR ${town})]: %PURPLE%Sigil of Talic{%NAME%}%CONTINUE%
 ItemDisplay[ubab GROUND !${town}]: %MAP-9B%%PURPLE%¡   Sigil of Talic   !{%NAME%}%CONTINUE%
 ItemDisplay[ubac (!GROUND OR ${town})]: %PURPLE%Sigil of Korlic{%NAME%}%CONTINUE%
 ItemDisplay[ubac GROUND !${town}]: %MAP-9B%%PURPLE%¡   Sigil of Korlic   !{%NAME%}%CONTINUE%
+ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%PURPLE%Sigil of Madawc%WHITE%: %BLUE%T1 %WHITE%Maps (1:6400 from all monsters).}%CONTINUE%
+ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%CL%%PURPLE%Sigil of Talic%WHITE%: %YELLOW%T2 %WHITE%Maps (1:6400 from all monsters).}%CONTINUE%
+ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%CL%%PURPLE%Sigil of Korlic%WHITE%: %GOLD%T3 %WHITE%Maps (1:6400 from all monsters).}%CONTINUE%
+ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%CL%%TAN%Key Locations:}%CONTINUE%
+ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%CL%%WHITE%Combine 1 of each in cube to create a %PURPLE%Relic of the Ancients%WHITE%.}%CONTINUE%
+ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%CL%%WHITE%1 of 3 Uber Ancients keys.}
 ItemDisplay[uba]: %PURPLE%Relic of the Ancients{%NAME%}%CONTINUE%
+ItemDisplay[uba]: %NAME%{%RED%Warning%WHITE%: Level 80+ advised.}%CONTINUE%
+ItemDisplay[uba]: %NAME%{%NAME%%CL%%WHITE%Each Uber Ancient defeated drops a %SAGE%Standard of Heroes %WHITE%used to add Heroic bonuses to maps.}%CONTINUE%
+ItemDisplay[uba]: %NAME%{%NAME%%CL%%WHITE%Click the statues before the altar to activate 1 to 3 Uber Ancients.}%CONTINUE%
+ItemDisplay[uba]: %NAME%{%NAME%%CL%%WHITE%Grants access to Uber Ancients for all players near the blood fountain in Harrogath.}
 
 // Diablo Clone Keys
 ItemDisplay[dcso (!GROUND OR ${town})]: %PURPLE%Prime Evil Soul{%NAME%}%CONTINUE%
